@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 /// Brand palette extension. Bold & modern aesthetic: Pure White,
-/// Deep Black, and Vibrant Orange (#FF9100).
+/// Deep Black, and Fiery Orange (#FF5F1F).
 class AppColors {
   AppColors._();
-  static const Color primary = Color(0xFFFF9100); // vibrant orange #FF9100
-  static const Color primaryDark = Color(0xFFE08100); // deeper orange tone
-  static const Color primaryLight = Color(0xFFFFA726); // light amber orange
+  static const Color primary = Color(0xFFFF5F1F); // fiery orange #FF5F1F
+  static const Color primaryDark = Color(0xFFE04A0B); // deeper fiery orange tone
+  static const Color primaryLight = Color(0xFFFF7E47); // soft fiery orange tint
   static const Color secondary = Color(0xFF121214); // rich deep black
   static const Color tertiary = Color(0xFF2C2C32); // graphite charcoal
   static const Color surfaceLight = Color(0xFFFFFFFF); // crisp white

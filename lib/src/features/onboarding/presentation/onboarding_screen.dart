@@ -61,7 +61,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-    // Palette: White, Black, Vibrant Orange (#FF9100)
+    // Palette: White, Black, Fiery Orange (#FF5F1F)
     final bg = isDark ? AppColors.surfaceDark : Colors.white;
     final textPrimary = isDark ? Colors.white : AppColors.secondary;
     final textSecondary = isDark
@@ -570,7 +570,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             child: FilledButton(
               onPressed: _committing ? null : _onNext,
               style: FilledButton.styleFrom(
-                backgroundColor: AppColors.primary, // Vibrant Orange #FF9100
+                backgroundColor: AppColors.primary, // Fiery Orange #FF5F1F
                 foregroundColor: Colors.white, // Crisp white text on orange CTA
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
