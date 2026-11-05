@@ -61,7 +61,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-    // Palette: White, Black, Coral Red (#FFA69E)
+    // Palette: White, Black, Fresh Mint Sage (#D1F3BB)
     final bg = isDark ? AppColors.surfaceDark : Colors.white;
     final textPrimary = isDark ? Colors.white : AppColors.secondary;
     final textSecondary = isDark
@@ -650,7 +650,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             child: FilledButton(
               onPressed: _committing ? null : _onNext,
               style: FilledButton.styleFrom(
-                backgroundColor: AppColors.primary, // Coral Red #FFA69E
+                backgroundColor: AppColors.primary, // Mint Sage #D1F3BB
                 foregroundColor: AppColors.secondary, // high-contrast black
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
@@ -714,7 +714,7 @@ class _SelectableCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Colors according to user's White, Black, Coral Red (#FFA69E) palette
+    // Colors according to user's White, Black, Mint Sage (#D1F3BB) palette
     final bgColor = isSelected
         ? (isDark
             ? AppColors.primary.withValues(alpha: 0.18)

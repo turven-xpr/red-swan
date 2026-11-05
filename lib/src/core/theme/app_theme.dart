@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 /// Brand palette extension. Bold & modern aesthetic: Pure White,
-/// Deep Black, and Soft Coral Red (#FFA69E).
+/// Deep Black, and Fresh Mint Sage (#D1F3BB).
 class AppColors {
   AppColors._();
-  static const Color primary = Color(0xFFFFA69E); // soft coral red #FFA69E
-  static const Color primaryDark = Color(0xFFE58880); // deeper coral tone
-  static const Color primaryLight = Color(0xFFFFBFB9); // light pastel coral
+  static const Color primary = Color(0xFFD1F3BB); // fresh mint sage #D1F3BB
+  static const Color primaryDark = Color(0xFFB4E299); // deeper mint tone
+  static const Color primaryLight = Color(0xFFE4F9D6); // light pastel mint
   static const Color secondary = Color(0xFF121214); // rich deep black
   static const Color tertiary = Color(0xFF2C2C32); // graphite charcoal
   static const Color surfaceLight = Color(0xFFFFFFFF); // crisp white
