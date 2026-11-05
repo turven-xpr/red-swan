@@ -61,7 +61,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-    // Palette: White, Black, Fresh Mint Sage (#D1F3BB)
+    // Palette: White, Black, Vibrant Orange (#FF9100)
     final bg = isDark ? AppColors.surfaceDark : Colors.white;
     final textPrimary = isDark ? Colors.white : AppColors.secondary;
     final textSecondary = isDark
@@ -280,9 +280,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: _selectedLanguage == item.code
-                      ? AppColors.primary
-                      : (isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5)),
+                  color: isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5),
                   borderRadius: BorderRadius.circular(14),
                 ),
                 alignment: Alignment.center,
@@ -371,9 +369,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: _selectedReason == item.reason
-                      ? AppColors.primary
-                      : (isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5)),
+                  color: isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5),
                   borderRadius: BorderRadius.circular(14),
                 ),
                 alignment: Alignment.center,
@@ -457,10 +453,14 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: _selectedLevel == item.level
-                      ? AppColors.primary
-                      : (isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5)),
+                  color: isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5),
                   borderRadius: BorderRadius.circular(14),
+                  border: Border.all(
+                    color: _selectedLevel == item.level
+                        ? AppColors.primary
+                        : Colors.transparent,
+                    width: 1.5,
+                  ),
                 ),
                 alignment: Alignment.center,
                 child: Text(
@@ -469,7 +469,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     fontWeight: FontWeight.w900,
                     fontSize: 16,
                     color: _selectedLevel == item.level
-                        ? AppColors.secondary
+                        ? AppColors.primary
                         : (isDark ? Colors.white70 : AppColors.secondary),
                   ),
                 ),
@@ -555,9 +555,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: _selectedGoalMinutes == item.minutes
-                      ? AppColors.primary
-                      : (isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5)),
+                  color: isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5),
                   borderRadius: BorderRadius.circular(14),
                 ),
                 alignment: Alignment.center,
@@ -650,8 +648,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             child: FilledButton(
               onPressed: _committing ? null : _onNext,
               style: FilledButton.styleFrom(
-                backgroundColor: AppColors.primary, // Mint Sage #D1F3BB
-                foregroundColor: AppColors.secondary, // high-contrast black
+                backgroundColor: AppColors.primary, // Vibrant Orange #FF9100
+                foregroundColor: Colors.white, // Crisp white text on orange CTA
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
@@ -663,7 +661,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                       height: 22,
                       child: CircularProgressIndicator(
                         strokeWidth: 2.5,
-                        color: AppColors.secondary,
+                        color: Colors.white,
                       ),
                     )
                   : Row(
@@ -714,13 +712,11 @@ class _SelectableCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Colors according to user's White, Black, Mint Sage (#D1F3BB) palette
-    final bgColor = isSelected
-        ? (isDark
-            ? AppColors.primary.withValues(alpha: 0.18)
-            : AppColors.primary.withValues(alpha: 0.14))
-        : (isDark ? const Color(0xFF141418) : const Color(0xFFF9F9FB));
+    // Keep background clean & neutral for both selected and unselected states.
+    // Absolutely NO color tint / fill on selection — selection is indicated strictly via border.
+    final bgColor = isDark ? const Color(0xFF141418) : Colors.white;
 
+    // Selection shown strictly by the card border
     final borderColor = isSelected
         ? AppColors.primary
         : (isDark ? const Color(0xFF26262E) : const Color(0xFFE5E5EB));
@@ -733,14 +729,21 @@ class _SelectableCard extends StatelessWidget {
     return PressScaleEffect(
       onTap: onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
+        duration: const Duration(milliseconds: 180),
         decoration: BoxDecoration(
           color: bgColor,
           borderRadius: BorderRadius.circular(18),
           border: Border.all(
             color: borderColor,
-            width: isSelected ? 2 : 1,
+            width: isSelected ? 2.0 : 1.0,
           ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: isDark ? 0.2 : 0.03),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
+          ],
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
@@ -756,7 +759,7 @@ class _SelectableCard extends StatelessWidget {
                       title,
                       style: TextStyle(
                         fontSize: 16,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: isSelected ? FontWeight.w700 : FontWeight.w600,
                         color: titleColor,
                       ),
                     ),
@@ -774,7 +777,7 @@ class _SelectableCard extends StatelessWidget {
               ),
               const SizedBox(width: 12),
               AnimatedContainer(
-                duration: const Duration(milliseconds: 200),
+                duration: const Duration(milliseconds: 180),
                 width: 24,
                 height: 24,
                 decoration: BoxDecoration(
@@ -784,14 +787,14 @@ class _SelectableCard extends StatelessWidget {
                     color: isSelected
                         ? AppColors.primary
                         : (isDark ? Colors.white24 : Colors.black26),
-                    width: 2,
+                    width: isSelected ? 2 : 1.5,
                   ),
                 ),
                 child: isSelected
                     ? const Icon(
                         Icons.check_rounded,
                         size: 16,
-                        color: AppColors.secondary,
+                        color: Colors.white,
                       )
                     : null,
               ),

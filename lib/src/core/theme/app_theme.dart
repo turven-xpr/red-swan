@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 /// Brand palette extension. Bold & modern aesthetic: Pure White,
-/// Deep Black, and Fresh Mint Sage (#D1F3BB).
+/// Deep Black, and Vibrant Orange (#FF9100).
 class AppColors {
   AppColors._();
-  static const Color primary = Color(0xFFD1F3BB); // fresh mint sage #D1F3BB
-  static const Color primaryDark = Color(0xFFB4E299); // deeper mint tone
-  static const Color primaryLight = Color(0xFFE4F9D6); // light pastel mint
+  static const Color primary = Color(0xFFFF9100); // vibrant orange #FF9100
+  static const Color primaryDark = Color(0xFFE08100); // deeper orange tone
+  static const Color primaryLight = Color(0xFFFFA726); // light amber orange
   static const Color secondary = Color(0xFF121214); // rich deep black
   static const Color tertiary = Color(0xFF2C2C32); // graphite charcoal
   static const Color surfaceLight = Color(0xFFFFFFFF); // crisp white
@@ -39,7 +39,7 @@ class AppTheme {
       seedColor: AppColors.primary,
       brightness: Brightness.light,
       primary: AppColors.primary,
-      onPrimary: AppColors.secondary,
+      onPrimary: Colors.white,
       secondary: AppColors.secondary,
       tertiary: AppColors.tertiary,
       surface: AppColors.surfaceLight,
@@ -58,7 +58,7 @@ class AppTheme {
       seedColor: AppColors.primary,
       brightness: Brightness.dark,
       primary: AppColors.primary,
-      onPrimary: AppColors.secondary,
+      onPrimary: Colors.white,
       secondary: const Color(0xFFD4D4D8),
       tertiary: AppColors.primaryLight,
       surface: AppColors.surfaceDark,
