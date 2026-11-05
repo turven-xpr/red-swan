@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: deutschy-proxy
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: GEMINI_API_KEY
+        sync: false   # set this in the Render dashboard
+      - key: ALLOWED_ORIGINS
+        sync: false   # optional, set in the dashboard

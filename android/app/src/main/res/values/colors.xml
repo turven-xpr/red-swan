@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand cobalt-blue used by the splash background and the
+         adaptive icon foreground scrim.  Matches `AppColors.primary`
+         in Dart (`lib/src/core/theme/app_theme.dart`). -->
+    <color name="splash_bg">#1F3A93</color>
+    <color name="primary">#1F3A93</color>
+</resources>

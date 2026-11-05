@@ -1,0 +1,42 @@
+# Fly.io free-tier configuration for the Deutschy Gemini proxy.
+# Docs: https://fly.io/docs/reference/configuration/
+
+app = "deutschy-proxy"
+primary_region = "ams"
+kill_signal = "SIGINT"
+kill_timeout = "5s"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "8080"
+
+# GEMINI_API_KEY is set with:
+#   fly secrets set GEMINI_API_KEY=...
+# ALLOWED_ORIGINS (optional) likewise via `fly secrets`.
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+  auto_start_machines = true
+  auto_stop_machines = true
+  min_machines_running = 0
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [services.concurrency]
+    type = "connections"
+    hard_limit = 200
+    soft_limit = 100
+
+[[healthcheck]]
+  method = "GET"
+  path = "/healthz"

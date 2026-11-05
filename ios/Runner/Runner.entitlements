@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Enter your Team ID on Apple Developer Portal, e.g. ABCDE12345 -->
+    <key>com.apple.developer.teamid</key>
+    <string>YOUR_TEAM_ID</string>
+    <!-- Required for Sign-In with Apple on iOS 13+ devices. -->
+    <key>com.apple.developer.applesignin</key>
+    <array>
+        <string>Default</string>
+    </array>
+    <!-- App-Groups if you ever add shared containers; harmless to leave. -->
+    <key>com.apple.security.application-groups</key>
+    <array/>
+</dict>
+</plist>

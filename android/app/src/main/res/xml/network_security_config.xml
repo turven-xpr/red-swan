@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Network security configuration for Deutschy.
+
+  Android 9+ blocks cleartext (http://) traffic by default.  For the
+  production app talking to our Gemini proxy over HTTPS, the default
+  policy is fine — leaving the file empty would be sufficient.
+
+  HOWEVER, when developing locally we still need to talk to the
+  emulator-loopback proxy on `http://10.0.2.2:3000`.  We restrict the
+  cleartext exception to that one address — production traffic stays
+  encrypted.
+
+  Domains listed under `domain-config cleartextTrafficPermitted=true`
+  are the only ones where `http://` is allowed.  All other domains
+  fall under the default rule and require TLS.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Android emulator loopback to the host machine. -->
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <!-- Local-loopback for iOS Simulator development. -->
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+</network-security-config>

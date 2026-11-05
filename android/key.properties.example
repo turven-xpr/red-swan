@@ -1,0 +1,16 @@
+# Sample `key.properties` for the Deutschy Android release signing.
+# Copy or rename to `key.properties` (NOT committed) and fill in:
+#
+#   storeFile             absolute path or project-relative path to
+#                         the .jks / .keystore file (e.g. /secrets/deutschy-upload.jks)
+#   storePassword         password for the keystore
+#   keyAlias              alias for the upload key (e.g. deutschy-upload)
+#   keyPassword           password for the upload key
+#
+# When `key.properties` is absent, the release buildType falls back to
+# debug signing so local builds work — but Play Store will reject those.
+
+storeFile=
+storePassword=
+keyAlias=
+keyPassword=

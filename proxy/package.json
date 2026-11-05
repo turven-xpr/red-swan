@@ -1,0 +1,23 @@
+{
+  "name": "deutschy-proxy",
+  "version": "1.0.0",
+  "description": "Secure Gemini free-tier proxy for the Deutschy app — keeps the API key off the device.",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "zod": "^3.23.8"
+  },
+  "keywords": ["deutschy", "gemini", "proxy", "german-learning"],
+  "license": "MIT"
+}
