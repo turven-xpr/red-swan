@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-/// Brand palette extension.  Warm-but-clean: deep cobalt seed, warm
-/// coral secondary, mint tertiary accent.  These raw hexes are only
-/// used as fallbacks for surfaces we want to *override* the auto-
-/// generated `ColorScheme.fromSeed` palette.
+/// Brand palette extension. Bold & modern aesthetic: Pure White,
+/// Deep Black, and Crimson Red (#830000) merged with black gradients.
 class AppColors {
   AppColors._();
-  static const Color primary = Color(0xFF2547A0); // cobalt
-  static const Color secondary = Color(0xFFFF7A59); // warm coral
-  static const Color tertiary = Color(0xFF1BB388); // mint accent
-  static const Color surfaceLight = Color(0xFFFBFBFD);
-  static const Color surfaceLightAlt = Color(0xFFF0F2F8);
-  static const Color surfaceDark = Color(0xFF0E1016);
-  static const Color surfaceDarkAlt = Color(0xFF1B1D27);
-  static const Color bodyLight = Color(0xFF161A23);
-  static const Color bodyDark = Color(0xFFE9E9F1);
+  static const Color primary = Color(0xFF830000); // deep crimson red
+  static const Color primaryDark = Color(0xFF4A0000); // black-crimson blend
+  static const Color primaryLight = Color(0xFFA81C1C); // rich ruby crimson
+  static const Color secondary = Color(0xFF121214); // rich deep black
+  static const Color tertiary = Color(0xFF2C2C32); // graphite charcoal
+  static const Color surfaceLight = Color(0xFFFFFFFF); // crisp white
+  static const Color surfaceLightAlt = Color(0xFFF6F6F9); // light neutral surface
+  static const Color surfaceDark = Color(0xFF0C0C0E); // pure obsidian black
+  static const Color surfaceDarkAlt = Color(0xFF16161A); // dark elevated surface
+  static const Color bodyLight = Color(0xFF101012); // black text
+  static const Color bodyDark = Color(0xFFF7F7FA); // white text
 }
 
 /// Decoupled `AppTheme` — Material 3 enabled, brand-tonal palette via
@@ -56,15 +56,15 @@ class AppTheme {
     final cs = ColorScheme.fromSeed(
       seedColor: AppColors.primary,
       brightness: Brightness.dark,
-      primary: const Color(0xFF9DAEFB),
-      secondary: const Color(0xFFFF9F83),
-      tertiary: const Color(0xFF7BDDC0),
+      primary: const Color(0xFFFF5252),
+      secondary: const Color(0xFFD4D4D8),
+      tertiary: AppColors.primaryLight,
       surface: AppColors.surfaceDark,
       surfaceContainerLowest: AppColors.surfaceDark,
       surfaceContainerLow: AppColors.surfaceDark,
       surfaceContainer: AppColors.surfaceDarkAlt,
       surfaceContainerHigh: AppColors.surfaceDarkAlt,
-      surfaceContainerHighest: AppColors.surfaceDarkAlt,
+      surfaceContainerHighest: const Color(0xFF24242A),
       onSurface: AppColors.bodyDark,
     );
     return _build(cs, Brightness.dark);

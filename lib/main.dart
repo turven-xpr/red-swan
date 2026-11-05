@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -94,6 +96,7 @@ class _DeutschyAppState extends ConsumerState<DeutschyApp> {
       themeMode: themeMode,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
+      scrollBehavior: const AppScrollBehavior(),
       builder: (context, child) {
         return AnimatedSwitcher(
           duration: const Duration(milliseconds: 600),
@@ -132,4 +135,17 @@ class _DeutschyAppState extends ConsumerState<DeutschyApp> {
     if (!mounted) return;
     setState(() => _showSplash = false);
   }
+}
+
+/// Enables mouse and trackpad drag scrolling on Web and Desktop platforms.
+class AppScrollBehavior extends MaterialScrollBehavior {
+  const AppScrollBehavior();
+
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+        PointerDeviceKind.touch,
+        PointerDeviceKind.mouse,
+        PointerDeviceKind.trackpad,
+        PointerDeviceKind.stylus,
+      };
 }
