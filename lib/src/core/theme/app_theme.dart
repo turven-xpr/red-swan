@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 /// Brand palette extension. Bold & modern aesthetic: Pure White,
-/// Deep Black, and Crimson Red (#830000) merged with black gradients.
+/// Deep Black, and Soft Coral Red (#FFA69E).
 class AppColors {
   AppColors._();
-  static const Color primary = Color(0xFF830000); // deep crimson red
-  static const Color primaryDark = Color(0xFF4A0000); // black-crimson blend
-  static const Color primaryLight = Color(0xFFA81C1C); // rich ruby crimson
+  static const Color primary = Color(0xFFFFA69E); // soft coral red #FFA69E
+  static const Color primaryDark = Color(0xFFE58880); // deeper coral tone
+  static const Color primaryLight = Color(0xFFFFBFB9); // light pastel coral
   static const Color secondary = Color(0xFF121214); // rich deep black
   static const Color tertiary = Color(0xFF2C2C32); // graphite charcoal
   static const Color surfaceLight = Color(0xFFFFFFFF); // crisp white
@@ -39,6 +39,7 @@ class AppTheme {
       seedColor: AppColors.primary,
       brightness: Brightness.light,
       primary: AppColors.primary,
+      onPrimary: AppColors.secondary,
       secondary: AppColors.secondary,
       tertiary: AppColors.tertiary,
       surface: AppColors.surfaceLight,
@@ -56,7 +57,8 @@ class AppTheme {
     final cs = ColorScheme.fromSeed(
       seedColor: AppColors.primary,
       brightness: Brightness.dark,
-      primary: const Color(0xFFFF5252),
+      primary: AppColors.primary,
+      onPrimary: AppColors.secondary,
       secondary: const Color(0xFFD4D4D8),
       tertiary: AppColors.primaryLight,
       surface: AppColors.surfaceDark,

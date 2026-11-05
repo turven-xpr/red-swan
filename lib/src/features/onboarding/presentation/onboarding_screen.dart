@@ -61,7 +61,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-    // Palette: White, Black, Crimson Red (#830000)
+    // Palette: White, Black, Coral Red (#FFA69E)
     final bg = isDark ? AppColors.surfaceDark : Colors.white;
     final textPrimary = isDark ? Colors.white : AppColors.secondary;
     final textSecondary = isDark
@@ -469,7 +469,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     fontWeight: FontWeight.w900,
                     fontSize: 16,
                     color: _selectedLevel == item.level
-                        ? Colors.white
+                        ? AppColors.secondary
                         : (isDark ? Colors.white70 : AppColors.secondary),
                   ),
                 ),
@@ -650,8 +650,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             child: FilledButton(
               onPressed: _committing ? null : _onNext,
               style: FilledButton.styleFrom(
-                backgroundColor: AppColors.primary, // Crimson Red #830000
-                foregroundColor: Colors.white,
+                backgroundColor: AppColors.primary, // Coral Red #FFA69E
+                foregroundColor: AppColors.secondary, // high-contrast black
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
@@ -663,7 +663,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                       height: 22,
                       child: CircularProgressIndicator(
                         strokeWidth: 2.5,
-                        color: Colors.white,
+                        color: AppColors.secondary,
                       ),
                     )
                   : Row(
@@ -714,11 +714,11 @@ class _SelectableCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Colors according to user's White, Black, Crimson Red palette
+    // Colors according to user's White, Black, Coral Red (#FFA69E) palette
     final bgColor = isSelected
         ? (isDark
-            ? AppColors.primary.withValues(alpha: 0.22)
-            : const Color(0xFFFFF0F0))
+            ? AppColors.primary.withValues(alpha: 0.18)
+            : AppColors.primary.withValues(alpha: 0.14))
         : (isDark ? const Color(0xFF141418) : const Color(0xFFF9F9FB));
 
     final borderColor = isSelected
@@ -791,7 +791,7 @@ class _SelectableCard extends StatelessWidget {
                     ? const Icon(
                         Icons.check_rounded,
                         size: 16,
-                        color: Colors.white,
+                        color: AppColors.secondary,
                       )
                     : null,
               ),
