@@ -256,14 +256,13 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       children: [
         const SizedBox(height: 8),
         _buildHeader(
-          icon: Icons.language_rounded,
           title: 'What language do you speak?',
           subtitle:
               'Choose the language you will use to learn German.',
           textPrimary: textPrimary,
           textSecondary: textSecondary,
         ),
-        const SizedBox(height: 28),
+        const SizedBox(height: 24),
         for (final item in languages)
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
@@ -276,18 +275,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     .read(appLocaleProvider.notifier)
                     .setLocale(Locale(item.code));
               },
-              leading: Container(
-                width: 48,
-                height: 48,
-                decoration: BoxDecoration(
-                  color: isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5),
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  item.flag,
-                  style: const TextStyle(fontSize: 24),
-                ),
+              leading: Text(
+                item.flag,
+                style: const TextStyle(fontSize: 24),
               ),
               title: item.nativeName,
               subtitle: item.desc,
@@ -351,33 +341,19 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       children: [
         const SizedBox(height: 8),
         _buildHeader(
-          icon: Icons.track_changes_rounded,
           title: 'Why are you learning German?',
           subtitle:
               'We will tailor your vocabulary, exercises and dialogues to match your goals.',
           textPrimary: textPrimary,
           textSecondary: textSecondary,
         ),
-        const SizedBox(height: 28),
+        const SizedBox(height: 24),
         for (final item in reasons)
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: _SelectableCard(
               isSelected: _selectedReason == item.reason,
               onTap: () => setState(() => _selectedReason = item.reason),
-              leading: Container(
-                width: 48,
-                height: 48,
-                decoration: BoxDecoration(
-                  color: isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5),
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  item.emoji,
-                  style: const TextStyle(fontSize: 22),
-                ),
-              ),
               title: item.title,
               subtitle: item.subtitle,
               isDark: isDark,
@@ -435,45 +411,19 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       children: [
         const SizedBox(height: 8),
         _buildHeader(
-          icon: Icons.military_tech_rounded,
           title: 'What is your German level?',
           subtitle:
               'Choose your current proficiency to start at the right difficulty.',
           textPrimary: textPrimary,
           textSecondary: textSecondary,
         ),
-        const SizedBox(height: 28),
+        const SizedBox(height: 24),
         for (final item in levels)
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: _SelectableCard(
               isSelected: _selectedLevel == item.level,
               onTap: () => setState(() => _selectedLevel = item.level),
-              leading: Container(
-                width: 48,
-                height: 48,
-                decoration: BoxDecoration(
-                  color: isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5),
-                  borderRadius: BorderRadius.circular(14),
-                  border: Border.all(
-                    color: _selectedLevel == item.level
-                        ? AppColors.primary
-                        : Colors.transparent,
-                    width: 1.5,
-                  ),
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  item.code,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 16,
-                    color: _selectedLevel == item.level
-                        ? AppColors.primary
-                        : (isDark ? Colors.white70 : AppColors.secondary),
-                  ),
-                ),
-              ),
               title: item.title,
               subtitle: item.desc,
               isDark: isDark,
@@ -537,33 +487,19 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       children: [
         const SizedBox(height: 8),
         _buildHeader(
-          icon: Icons.timer_outlined,
           title: 'What is your daily goal?',
           subtitle:
               'Set a realistic goal. Consistency builds fluency faster than cramming.',
           textPrimary: textPrimary,
           textSecondary: textSecondary,
         ),
-        const SizedBox(height: 28),
+        const SizedBox(height: 24),
         for (final item in goals)
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: _SelectableCard(
               isSelected: _selectedGoalMinutes == item.minutes,
               onTap: () => setState(() => _selectedGoalMinutes = item.minutes),
-              leading: Container(
-                width: 48,
-                height: 48,
-                decoration: BoxDecoration(
-                  color: isDark ? const Color(0xFF222228) : const Color(0xFFF2F2F5),
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  item.emoji,
-                  style: const TextStyle(fontSize: 22),
-                ),
-              ),
               title: item.title,
               subtitle: item.subtitle,
               isDark: isDark,
@@ -573,9 +509,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     );
   }
 
-  // Common Header Helper
+  // Common Header Helper (clean typography, no generic badges)
   Widget _buildHeader({
-    required IconData icon,
     required String title,
     required String subtitle,
     required Color textPrimary,
@@ -583,20 +518,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   }) {
     return Column(
       children: [
-        Container(
-          width: 64,
-          height: 64,
-          decoration: BoxDecoration(
-            color: AppColors.primary.withValues(alpha: 0.12),
-            shape: BoxShape.circle,
-          ),
-          child: Icon(
-            icon,
-            size: 32,
-            color: AppColors.primary,
-          ),
-        ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 8),
         Text(
           title,
           textAlign: TextAlign.center,
@@ -697,7 +619,7 @@ class _SelectableCard extends StatelessWidget {
   const _SelectableCard({
     required this.isSelected,
     required this.onTap,
-    required this.leading,
+    this.leading,
     required this.title,
     required this.subtitle,
     required this.isDark,
@@ -705,7 +627,7 @@ class _SelectableCard extends StatelessWidget {
 
   final bool isSelected;
   final VoidCallback onTap;
-  final Widget leading;
+  final Widget? leading;
   final String title;
   final String subtitle;
   final bool isDark;
@@ -746,11 +668,13 @@ class _SelectableCard extends StatelessWidget {
           ],
         ),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
           child: Row(
             children: [
-              leading,
-              const SizedBox(width: 16),
+              if (leading != null) ...[
+                leading!,
+                const SizedBox(width: 14),
+              ],
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
