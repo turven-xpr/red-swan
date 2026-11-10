@@ -3,8 +3,10 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'src/core/config/app_locale.dart';
+import 'src/core/config/supabase_config.dart';
 import 'src/core/config/theme_pref.dart';
 import 'src/core/providers.dart';
 import 'src/core/router/app_router.dart';
@@ -14,11 +16,21 @@ import 'src/features/splash/presentation/splash_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // Initialise Firebase Auth lazily — reads google-services.json +
-  // GoogleService-Info.plist. No raw API keys ever live in source.
+
+  // Initialize Supabase backend if configured with credentials
+  if (SupabaseConfig.isConfigured) {
+    try {
+      await Supabase.initialize(
+        url: SupabaseConfig.url,
+        publishableKey: SupabaseConfig.publishableKey,
+      );
+    } catch (e) {
+      debugPrint('[Supabase] Initialization error: $e');
+    }
+  }
+
   final container = ProviderContainer();
-  // Kick Firebase init off the critical path so the first frame paints
-  // immediately (avoids the black-screen while the native splash is still up).
+  // Kick auth init lazily off the critical path
   // ignore: unawaited_futures
   container.read(authServiceProvider).init();
   runApp(

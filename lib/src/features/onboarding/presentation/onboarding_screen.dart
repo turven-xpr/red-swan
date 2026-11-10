@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/config/app_locale.dart';
 import '../../../core/config/onboarding_pref.dart';
+import '../../../core/providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/animations/premium_animations.dart';
 
@@ -48,12 +49,26 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     if (_committing) return;
     setState(() => _committing = true);
 
+    final level = _selectedLevel ?? StartLevel.a0;
+    final reason = _selectedReason ?? LearningReason.study;
+
+    // 1. Save to local preferences
     await ref.read(onboardingPrefsProvider.notifier).setComplete(
-          level: _selectedLevel ?? StartLevel.a0,
+          level: level,
           nativeLanguage: _selectedLanguage,
-          reason: _selectedReason ?? LearningReason.study,
+          reason: reason,
           dailyGoalMinutes: _selectedGoalMinutes,
         );
+
+    // 2. Sync to Supabase cloud profile
+    try {
+      await ref.read(authServiceProvider).syncProfile(
+            nativeLanguage: _selectedLanguage,
+            reason: reason.name,
+            targetLevel: level.name.toUpperCase(),
+            dailyGoalMinutes: _selectedGoalMinutes,
+          );
+    } catch (_) {}
   }
 
   @override

@@ -1,21 +1,16 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
-import 'package:firebase_core/firebase_core.dart' show Firebase;
 import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:sign_in_with_apple/sign_in_with_apple.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../../core/config/app_config.dart';
-import '../../../../firebase_options.dart';
+import '../../../core/config/supabase_config.dart';
 
 /// Identity snapshot for the authenticated user.
-///
-/// Source of truth — `firebase_auth.User`.  We mirror a few fields
-/// locally so screens that don't have a Firebase connection (offline
-/// or pre-init) still get an immediate snapshot.
 class AuthUser {
   AuthUser({
     required this.uid,
@@ -31,10 +26,7 @@ class AuthUser {
   final String? photoUrl;
   final AuthProvider provider;
 
-  /// Avatars / names update sometimes (e.g. user changes Google profile
-  /// photo).  To pick those up we mirror what we *store* in prefs but
-  /// always show the live `firebase_auth.User` snapshot.
-  static AuthUser? fromMongo(Map<String, dynamic>? json) {
+  static AuthUser? fromJson(Map<String, dynamic>? json) {
     if (json == null) return null;
     return AuthUser(
       uid: (json['uid'] as String?) ?? '',
@@ -48,20 +40,22 @@ class AuthUser {
     );
   }
 
-  Map<String, dynamic> toMongo() => {
+  // Backward compatibility with previous schema
+  static AuthUser? fromMongo(Map<String, dynamic>? json) => fromJson(json);
+
+  Map<String, dynamic> toJson() => {
         'uid': uid,
         'displayName': displayName,
         'email': email,
         'photoUrl': photoUrl,
         'provider': provider.name,
       };
+
+  Map<String, dynamic> toMongo() => toJson();
 }
 
-enum AuthProvider { google, apple, anonymous, local }
+enum AuthProvider { google, apple, anonymous, email, local }
 
-/// Domain-specific exception so the UI can differentiate configuration
-/// errors (missing SHA-1, wrong OAuth client id, etc.) from plain
-/// user-cancellation.
 class _AuthException implements Exception {
   _AuthException(this.message, [this.cause, this.stackTrace]);
   final String message;
@@ -72,214 +66,196 @@ class _AuthException implements Exception {
   String toString() => message;
 }
 
-/// Auth service backed by Firebase Auth.
-///
-/// Apple Sign-In is the **only** social provider App Store review
-/// *requires* on iOS when another social provider is offered, so we
-/// ship it; sign-in fires through Firebase to unify identity.
+/// Authentication and Profile synchronization service backed by Supabase.
 class AuthService {
   AuthService();
 
-  firebase_auth.FirebaseAuth get _auth => firebase_auth.FirebaseAuth.instance;
   final GoogleSignIn _googleSignIn = GoogleSignIn.instance;
-
-  /// True once `Firebase.initializeApp` has been awaited.  Re-call is a
-  /// no-op.  Call from `main.dart` before the router mounts.
   bool _bootstrapped = false;
-
-  /// Set of auth-state-changed listeners registered by callers.
   final Set<void Function(AuthUser?)> _listeners = {};
+  StreamSubscription<AuthState>? _supabaseAuthSub;
+  AuthUser? _cachedUser;
 
-  /// Subscribes the Firebase auth stream once and forwards every state
-  /// change to local listeners.  Returns the controller's lifecycle.
-  StreamSubscription<firebase_auth.User?>? _firebaseSub;
+  static const String _prefsKey = 'auth_user_supabase_v1';
 
-  static const String _prefsKey = 'auth_user_v1';
-
-  /// Boot Firebase.  Idempotent.
-  ///
-  /// On web preview builds, skips Firebase entirely and emits a local
-  /// guest user so the app is immediately usable in Chrome.
+  /// Boot Supabase Auth. Safe to call multiple times.
   Future<AuthService> init() async {
     if (_bootstrapped) return this;
     _bootstrapped = true;
 
-    // ── Web Preview: skip Firebase, emit guest user immediately ──
-    if (kIsWeb) {
-      debugPrint('[AuthService] Web preview mode — using guest user.');
-      final guest = AuthUser(
-        uid: 'web_preview_user',
-        displayName: 'Web Learner',
-        email: 'preview@deutschy.app',
-        photoUrl: null,
-        provider: AuthProvider.local,
-      );
-      _dispatch(guest);
+    // Hydrate local cache first
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final cachedJson = prefs.getString(_prefsKey);
+      if (cachedJson != null) {
+        _cachedUser = AuthUser.fromJson(jsonDecode(cachedJson) as Map<String, dynamic>?);
+        _dispatch(_cachedUser);
+      }
+    } catch (_) {}
+
+    // ── Fallback when Supabase is not yet configured or on web preview ──
+    if (!SupabaseConfig.isConfigured || kIsWeb) {
+      if (_cachedUser == null) {
+        _cachedUser = AuthUser(
+          uid: 'learner_${DateTime.now().millisecondsSinceEpoch % 10000}',
+          displayName: 'Deutschy Learner',
+          email: 'learner@deutschy.app',
+          photoUrl: null,
+          provider: AuthProvider.local,
+        );
+        await _persist(_cachedUser!);
+      }
+      _dispatch(_cachedUser);
       return this;
     }
-    // ── Native path (Android / iOS) — unchanged ──
 
-    if (Firebase.apps.isEmpty) {
-      try {
-        await Firebase.initializeApp(
-          options: DefaultFirebaseOptions.currentPlatform,
-        );
-      } catch (e) {
-        // Swallow duplicate-app race on hot restart / isolate reuse.
-        if (!e.toString().contains('duplicate-app')) rethrow;
-      }
-    }
-    // Hand the Web OAuth client id to google_sign_in.  Without it
-    // `GoogleSignIn.authenticate()` raises
-    // `GoogleSignInExceptionCode.clientConfigurationError` on Android.
+    // ── Supabase Production Path ──
     try {
-      await _googleSignIn.initialize(
-        serverClientId: kGoogleServerClientId,
-      );
+      final client = SupabaseConfig.client;
+      final currentSupabaseUser = client.auth.currentUser;
+      if (currentSupabaseUser != null) {
+        _cachedUser = _userFromSupabase(currentSupabaseUser);
+        _dispatch(_cachedUser);
+      }
+
+      // Initialize Google Sign In client id
+      try {
+        await _googleSignIn.initialize(serverClientId: kGoogleServerClientId);
+      } catch (e) {
+        debugPrint('[AuthService] GoogleSignIn.initialize: $e');
+      }
+
+      // Listen to live Supabase auth transitions
+      _supabaseAuthSub = client.auth.onAuthStateChange.listen((data) {
+        final session = data.session;
+        final user = _userFromSupabase(session?.user);
+        _cachedUser = user;
+        if (user != null) {
+          _persist(user);
+        } else {
+          _clearPersisted();
+        }
+        _dispatch(user);
+      });
     } catch (e) {
-      debugPrint('GoogleSignIn.initialize failed: $e');
+      debugPrint('[AuthService] Supabase init warning: $e');
     }
-    _firebaseSub = _auth
-        .authStateChanges()
-        .listen((user) => _dispatch(_userFromFirebase(user)));
+
     return this;
   }
 
-  /// Reactive subscription.  Fires both the current snapshot and every
-  /// firebase change thereafter.  Wire to a Riverpod `StreamProvider`.
+  /// Reactive stream for Riverpod providers
   Stream<AuthUser?> watch() async* {
     await init();
+    yield _cachedUser;
 
-    // ── Web Preview: emit persistent guest, no Firebase stream ──
-    if (kIsWeb) {
-      yield AuthUser(
-        uid: 'web_preview_user',
-        displayName: 'Web Learner',
-        email: 'preview@deutschy.app',
-        photoUrl: null,
-        provider: AuthProvider.local,
-      );
-      // Keep the stream alive but idle so the provider doesn't close.
+    if (SupabaseConfig.isConfigured && !kIsWeb) {
+      await for (final data in SupabaseConfig.client.auth.onAuthStateChange) {
+        yield _userFromSupabase(data.session?.user);
+      }
+    } else {
+      // Idle stream to keep provider active
       await Future<void>.delayed(const Duration(days: 365));
-      return;
-    }
-    // ── Native path ──
-
-    yield _userFromFirebase(_auth.currentUser);
-    await for (final fbUser in _auth.authStateChanges()) {
-      yield _userFromFirebase(fbUser);
     }
   }
 
-  /// Synchronous fallback (used during cold start before Firebase boots).
-  AuthUser? currentUser() {
-    if (kIsWeb) {
-      return AuthUser(
-        uid: 'web_preview_user',
-        displayName: 'Web Learner',
-        email: 'preview@deutschy.app',
-        photoUrl: null,
-        provider: AuthProvider.local,
-      );
-    }
-    if (Firebase.apps.isEmpty) return null;
-    return _userFromFirebase(_auth.currentUser);
-  }
+  /// Synchronous snapshot
+  AuthUser? currentUser() => _cachedUser;
 
-  /// Friendly accessor.  We rebuild the AuthUser projection on demand.
-  AuthUser? _userFromFirebase(firebase_auth.User? fb) {
-    if (fb == null) return null;
-    final provider = fb.providerData.isNotEmpty
-        ? _providerFromString(fb.providerData.first.providerId)
-        : AuthProvider.local;
+  AuthUser? _userFromSupabase(User? su) {
+    if (su == null) return null;
+    final meta = su.userMetadata ?? {};
+    final name = (meta['full_name'] as String?) ??
+        (meta['name'] as String?) ??
+        su.email?.split('@').first;
+    final photo = meta['avatar_url'] as String?;
+    final providerStr = su.appMetadata['provider'] as String? ?? '';
+
+    AuthProvider prov = AuthProvider.local;
+    if (su.isAnonymous) {
+      prov = AuthProvider.anonymous;
+    } else if (providerStr.contains('google')) {
+      prov = AuthProvider.google;
+    } else if (providerStr.contains('apple')) {
+      prov = AuthProvider.apple;
+    } else if (su.email != null) {
+      prov = AuthProvider.email;
+    }
+
     return AuthUser(
-      uid: fb.uid,
-      displayName: fb.displayName,
-      email: fb.email,
-      photoUrl: fb.photoURL,
-      provider: provider,
+      uid: su.id,
+      displayName: name,
+      email: su.email,
+      photoUrl: photo,
+      provider: prov,
     );
   }
 
-  /// Hydrate the mirror in SharedPreferences so the splash -> dashboard
-  /// transition feels instant.
   Future<void> _persist(AuthUser user) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_prefsKey, jsonEncode(user.toMongo()));
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_prefsKey, jsonEncode(user.toJson()));
+    } catch (_) {}
   }
 
-  AuthProvider _providerFromString(String id) {
-    if (id == 'google.com') return AuthProvider.google;
-    if (id == 'apple.com') return AuthProvider.apple;
-    if (id == 'anonymous') return AuthProvider.anonymous;
-    return AuthProvider.local;
+  Future<void> _clearPersisted() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove(_prefsKey);
+    } catch (_) {}
   }
 
   // --------------------------------------------------------------
-  // PUBLIC: SIGN-IN FLOWS
+  // PUBLIC SIGN-IN FLOWS
   // --------------------------------------------------------------
 
-  /// Returns a [firebase_auth.User] on success, or throws an exception on
-  /// failure so callers can distinguish user cancellation from config errors.
-  ///
-  /// On Android we let `firebase_auth` handle the lower-level Google
-  /// dialog via native APIs as well as on iOS.  On Windows / Web we
-  /// fall back to opening a hosted OAuth tab in the browser.
+  /// Google Sign-In with Supabase
   Future<AuthUser?> signInWithGoogle() async {
     await init();
-    GoogleSignInAccount? account;
-    // 1. Try silent restore first.
+    if (!SupabaseConfig.isConfigured) {
+      debugPrint('[AuthService] Supabase not configured — using guest user.');
+      return _cachedUser;
+    }
+
     try {
-      account = await _googleSignIn.attemptLightweightAuthentication();
-    } on GoogleSignInException catch (e, s) {
-      debugPrint('lightweight auth failed: ${e.code} / ${e.description}');
-      // Re-throw non-cancellation errors so the UI can show a real message.
-      if (e.code != GoogleSignInExceptionCode.canceled &&
-          e.code != GoogleSignInExceptionCode.interrupted &&
-          e.code != GoogleSignInExceptionCode.uiUnavailable) {
-        throw _AuthException('Google Sign-In error: ${e.description}', e, s);
-      }
-    }
-    // 2. Interactive sign-in if silent restore returned nothing.
-    if (account == null) {
+      GoogleSignInAccount? account;
       try {
-        account = await _googleSignIn.authenticate(
-          scopeHint: const ['email', 'profile'],
-        );
-      } on GoogleSignInException catch (e, s) {
-        debugPrint('interactive auth failed: ${e.code} / ${e.description}');
-        if (e.code == GoogleSignInExceptionCode.canceled ||
-            e.code == GoogleSignInExceptionCode.interrupted ||
-            e.code == GoogleSignInExceptionCode.uiUnavailable) {
-          return null; // User genuinely cancelled.
-        }
-        throw _AuthException('Google Sign-In error: ${e.description}', e, s);
+        account = await _googleSignIn.attemptLightweightAuthentication();
+      } catch (_) {}
+
+      account ??= await _googleSignIn.authenticate(scopeHint: const ['email', 'profile']);
+
+      final googleAuth = account.authentication;
+      final idToken = googleAuth.idToken;
+      if (idToken == null) {
+        throw _AuthException('Missing Google ID Token.');
       }
-    }
-    final googleAuth = account.authentication;
-    // Guard: if we couldn't grab a valid idToken, surface the real error
-    // instead of letting Firebase throw an opaque "cancelled" exception.
-    if (googleAuth.idToken == null) {
-      throw _AuthException(
-        'Missing idToken from Google.  '
-        'Check that the SHA-1 fingerprint of your signing keystore is '
-        'registered in the Firebase console for this Android app.',
+
+      final response = await SupabaseConfig.client.auth.signInWithIdToken(
+        provider: OAuthProvider.google,
+        idToken: idToken,
       );
+
+      final user = _userFromSupabase(response.user);
+      if (user != null) {
+        _cachedUser = user;
+        await _persist(user);
+        _dispatch(user);
+      }
+      return user;
+    } catch (e, s) {
+      debugPrint('[AuthService] Google Sign In error: $e');
+      throw _AuthException('Google Sign-In failed: $e', e, s);
     }
-    final credential = firebase_auth.GoogleAuthProvider.credential(
-      idToken: googleAuth.idToken,
-    );
-    final userCredential = await _auth.signInWithCredential(credential);
-    final fbUser = userCredential.user;
-    final user = _userFromFirebase(fbUser);
-    if (user != null) await _persist(user);
-    return user;
   }
 
-  /// Apple Sign-In routed through Firebase Auth.  Apple is required by
-  /// App Store review alongside any other social provider.
+  /// Apple Sign-In with Supabase
   Future<AuthUser?> signInWithApple() async {
     await init();
+    if (!SupabaseConfig.isConfigured) {
+      return _cachedUser;
+    }
+
     try {
       final appleCred = await SignInWithApple.getAppleIDCredential(
         scopes: [
@@ -288,55 +264,145 @@ class AuthService {
         ],
       );
       if (appleCred.identityToken == null) return null;
-      // Apple -> Firebase: only the identityToken is required for the
-      // mobile (iOS) flow.  `rawNonce` is for server-side flows; on
-      // device we simply omit it.  Firebase's Apple provider in v5
-      // ignores `authorizationCode` here.
-      final oauthCredential = firebase_auth.OAuthProvider('apple.com')
-          .credential(idToken: appleCred.identityToken!);
-      final userCredential =
-          await _auth.signInWithCredential(oauthCredential);
-      final fbUser = userCredential.user;
-      final user = _userFromFirebase(fbUser);
-      if (user != null) await _persist(user);
+
+      final response = await SupabaseConfig.client.auth.signInWithIdToken(
+        provider: OAuthProvider.apple,
+        idToken: appleCred.identityToken!,
+      );
+
+      final user = _userFromSupabase(response.user);
+      if (user != null) {
+        _cachedUser = user;
+        await _persist(user);
+        _dispatch(user);
+      }
       return user;
     } catch (e) {
-      debugPrint('apple sign-in: $e');
+      debugPrint('[AuthService] Apple Sign In error: $e');
       return null;
     }
   }
 
-  /// Anonymous sign-in.  Useful as fallback if a user hits "Continue
-  /// without sign-in" — they get a stable UID linked to this device so
-  /// their data still has a key.  No password required.
+  /// Anonymous / Guest Sign-In
   Future<AuthUser?> signInAnonymously() async {
     await init();
+    if (!SupabaseConfig.isConfigured) {
+      return _cachedUser;
+    }
+
     try {
-      final userCredential = await _auth.signInAnonymously();
-      final user = _userFromFirebase(userCredential.user);
-      if (user != null) await _persist(user);
+      final response = await SupabaseConfig.client.auth.signInAnonymously();
+      final user = _userFromSupabase(response.user);
+      if (user != null) {
+        _cachedUser = user;
+        await _persist(user);
+        _dispatch(user);
+      }
       return user;
     } catch (e) {
-      debugPrint('anonymous sign-in: $e');
-      return null;
+      debugPrint('[AuthService] Anonymous sign-in error: $e');
+      return _cachedUser;
     }
   }
 
-  /// Hand-off: detach the local mirror and log out of Firebase.
-  Future<void> signOut() async {
-    if (kIsWeb) {
-      debugPrint('[AuthService] Web preview — sign-out is a no-op.');
-      return;
+  /// Email & Password Sign-In
+  Future<AuthUser?> signInWithEmail(String email, String password) async {
+    await init();
+    if (!SupabaseConfig.isConfigured) return _cachedUser;
+
+    try {
+      final response = await SupabaseConfig.client.auth.signInWithPassword(
+        email: email.trim(),
+        password: password,
+      );
+      final user = _userFromSupabase(response.user);
+      if (user != null) {
+        _cachedUser = user;
+        await _persist(user);
+        _dispatch(user);
+      }
+      return user;
+    } catch (e) {
+      debugPrint('[AuthService] Email sign-in error: $e');
+      rethrow;
     }
+  }
+
+  /// Email & Password Registration
+  Future<AuthUser?> signUpWithEmail(String email, String password) async {
+    await init();
+    if (!SupabaseConfig.isConfigured) return _cachedUser;
+
+    try {
+      final response = await SupabaseConfig.client.auth.signUp(
+        email: email.trim(),
+        password: password,
+      );
+      final user = _userFromSupabase(response.user);
+      if (user != null) {
+        _cachedUser = user;
+        await _persist(user);
+        _dispatch(user);
+      }
+      return user;
+    } catch (e) {
+      debugPrint('[AuthService] Email sign-up error: $e');
+      rethrow;
+    }
+  }
+
+  /// Sign Out
+  Future<void> signOut() async {
     try {
       await _googleSignIn.signOut();
     } catch (_) {}
-    try {
-      await _auth.signOut();
-    } catch (_) {}
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_prefsKey);
+
+    if (SupabaseConfig.isConfigured) {
+      try {
+        await SupabaseConfig.client.auth.signOut();
+      } catch (_) {}
+    }
+
+    _cachedUser = null;
+    await _clearPersisted();
     _dispatch(null);
+  }
+
+  // --------------------------------------------------------------
+  // CLOUD PROFILE SYNC (Syncs onboarding preferences to Supabase)
+  // --------------------------------------------------------------
+  Future<void> syncProfile({
+    String? nativeLanguage,
+    String? reason,
+    String? targetLevel,
+    int? dailyGoalMinutes,
+  }) async {
+    if (!SupabaseConfig.isConfigured) {
+      debugPrint('[AuthService] Profile sync: Supabase not configured, saved locally.');
+      return;
+    }
+
+    final user = _cachedUser;
+    if (user == null) return;
+
+    try {
+      final updates = <String, dynamic>{
+        'id': user.uid,
+        'updated_at': DateTime.now().toIso8601String(),
+      };
+      if (nativeLanguage != null) updates['native_language'] = nativeLanguage;
+      if (reason != null) updates['reason'] = reason;
+      if (targetLevel != null) {
+        updates['start_level'] = targetLevel;
+        updates['current_level'] = targetLevel;
+      }
+      if (dailyGoalMinutes != null) updates['daily_goal_minutes'] = dailyGoalMinutes;
+
+      await SupabaseConfig.client.from('profiles').upsert(updates);
+      debugPrint('[AuthService] Profile synced to Supabase successfully: $updates');
+    } catch (e) {
+      debugPrint('[AuthService] Cloud profile sync error: $e');
+    }
   }
 
   void addListener(void Function(AuthUser?) cb) => _listeners.add(cb);
@@ -350,7 +416,7 @@ class AuthService {
   }
 
   Future<void> dispose() async {
-    await _firebaseSub?.cancel();
+    await _supabaseAuthSub?.cancel();
     _listeners.clear();
   }
 }
