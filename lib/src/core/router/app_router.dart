@@ -15,6 +15,10 @@ import '../../features/writing/presentation/writing_screen.dart';
 import '../../features/grammar/presentation/grammar_screen.dart';
 import '../../features/reading/presentation/reading_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
+import '../../features/profile/presentation/settings_screen.dart';
+import '../../features/study/presentation/study_screen.dart';
+import '../../features/tests/presentation/tests_screen.dart';
+import '../../features/ai_tutor/presentation/ai_tutor_screen.dart';
 import '../../features/games/presentation/games_home_screen.dart';
 import '../../features/games/presentation/memory_match_screen.dart';
 import '../../features/games/presentation/word_chain_screen.dart';
@@ -51,7 +55,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
     },
     refreshListenable: _AuthListenable(ref),
     routes: [
-      GoRoute(path: '/', redirect: (_, _) => '/home'),
+      GoRoute(path: '/', redirect: (_, _) => '/study'),
       GoRoute(
         path: '/onboarding',
         builder: (_, _) => const OnboardingScreen(),
@@ -76,6 +80,27 @@ final goRouterProvider = Provider<GoRouter>((ref) {
       ShellRoute(
         builder: (context, state, child) => AppShell(child: child),
         routes: [
+          GoRoute(
+            path: '/study',
+            builder: (_, _) => const StudyScreen(),
+          ),
+          GoRoute(
+            path: '/tests',
+            builder: (_, _) => const TestsScreen(),
+          ),
+          GoRoute(
+            path: '/ai-tutor',
+            builder: (_, _) => const AiTutorScreen(),
+          ),
+          GoRoute(
+            path: '/profile',
+            builder: (_, _) => const ProfileScreen(),
+          ),
+          GoRoute(
+            path: '/settings',
+            builder: (_, _) => const SettingsScreen(),
+          ),
+          // Preserved existing routes (accessible without breaking any functionality)
           GoRoute(
             path: '/home',
             builder: (_, _) => const DashboardScreen(),

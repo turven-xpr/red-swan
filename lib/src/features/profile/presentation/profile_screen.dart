@@ -1,28 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
-import '../../../core/config/profile_photo.dart';
-import '../../../core/i18n/strings.dart';
-import '../../../core/i18n/translations.dart';
 import '../../../core/providers.dart';
-import '../../../core/widgets/animations/deutschy_animations.dart';
-import '../../../core/widgets/animations/premium_animations.dart';
+import '../../../core/theme/app_theme.dart';
 
-import '../../../shared/widgets/audio_speed_picker.dart';
-import 'settings_widgets.dart';
-
-/// Profile + Settings hub.
-///
-/// Combines:
-///   * Profile avatar & display name (top)
-///   * Theme picker  (light / dark / system)
-///   * Display language picker (de / en / fr / ar)
-///   * Notifications master switch + daily reminder
-///   * Sign-out
-///   * About dialog
-///
-/// All controls read from providers in `lib/src/core/config/*` and
-/// rebuild when the user changes them.
+/// Profile Page (placeholder for streak, XP, stats, and achievements)
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
 
@@ -30,202 +13,102 @@ class ProfileScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final userAsync = ref.watch(currentUserProvider);
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
+    final user = userAsync.value;
+    final displayName = user?.displayName?.trim() ?? 'Learner';
+    final email = user?.email ?? '';
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text(t(context, Str.navProfile)),
-      ),
-      body: userAsync.when(
-        data: (user) => SingleChildScrollView(
-          padding: const EdgeInsets.only(left: 20, right: 20, top: 16, bottom: 120),
-          child: StaggerCascade(
-            delayMs: 70,
+      backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
+      body: Center(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const _ProfileHeader(),
-              const SizedBox(height: 28),
-              SettingsSection(
-                title: t(context, Str.settingsTheme),
-                child: const ThemeControl(),
+              Container(
+                width: 84,
+                height: 84,
+                decoration: BoxDecoration(
+                  color: AppColors.primary.withValues(alpha: 0.12),
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.person_rounded,
+                  size: 44,
+                  color: AppColors.primary,
+                ),
               ),
-              const SizedBox(height: 16),
-              SettingsSection(
-                title: t(context, Str.settingsLanguage),
-                child: const LanguageControl(),
+              const SizedBox(height: 18),
+              Text(
+                displayName,
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w800,
+                  color: isDark ? Colors.white : AppColors.secondary,
+                ),
               ),
-              const SizedBox(height: 16),
-              SettingsSection(
-                title: 'Audio-Geschwindigkeit',
-                child: const AudioSpeedPicker(),
-              ),
-              const SizedBox(height: 16),
-              SettingsSection(
-                title: t(context, Str.settingsNotifications),
-                child: const NotificationsControl(),
-              ),
-              const SizedBox(height: 16),
-              SettingsSection(
-                title: t(context, Str.settingsAccount),
-                child: const AccountControl(),
-              ),
-              const SizedBox(height: 24),
-              const AboutControl(),
-            ],
-          ),
-        ),
-        loading: () => const Center(child: FadingRing(size: 32)),
-        error: (err, stack) => Center(
-          child: Padding(
-            padding: const EdgeInsets.all(24),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.error_outline_rounded, size: 48, color: theme.colorScheme.error),
-                const SizedBox(height: 12),
-                Text('Profil konnte nicht geladen werden', style: theme.textTheme.bodyLarge),
-                const SizedBox(height: 12),
-                FilledButton.tonalIcon(
-                  onPressed: () => ref.invalidate(currentUserProvider),
-                  icon: const Icon(Icons.refresh),
-                  label: const Text('Erneut versuchen'),
+              if (email.isNotEmpty) ...[
+                const SizedBox(height: 4),
+                Text(
+                  email,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: isDark ? Colors.white60 : Colors.black54,
+                  ),
                 ),
               ],
-            ),
-          ),
-        ),
-      ),
-      backgroundColor: theme.colorScheme.surface,
-    );
-  }
-}
-
-// ---------------------------------------------------------------------------
-// Header (avatar + name + change-photo button).
-// ---------------------------------------------------------------------------
-
-class _ProfileHeader extends ConsumerWidget {
-  const _ProfileHeader();
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final userAsync = ref.watch(currentUserProvider);
-    final photo = ref.watch(profilePhotoProvider);
-    final theme = Theme.of(context);
-
-    final initial = userAsync.maybeWhen(
-      data: (u) {
-        final name = u?.displayName?.trim() ?? '';
-        return name.isNotEmpty ? name.characters.first.toUpperCase() : 'G';
-      },
-      orElse: () => 'G',
-    );
-
-    return Center(
-      child: Column(
-        children: [
-          Stack(
-            children: [
-              CircleAvatar(
-                radius: 52,
-                backgroundColor: theme.colorScheme.primary,
-                foregroundImage: photo != null
-                    ? MemoryImage(photo)
-                    : null,
-                child: photo == null
-                    ? Text(
-                        initial,
-                        style: TextStyle(
-                          fontSize: 40,
-                          color: Theme.of(context).colorScheme.onPrimary,
-                        ),
-                      )
-                    : null,
-              ),
-              Positioned(
-                bottom: 0,
-                right: 0,
-                child: Material(
-                  color: theme.colorScheme.secondary,
-                  shape: const CircleBorder(),
-                  elevation: 2,
-                  child: InkWell(
-                    customBorder: const CircleBorder(),
-                    onTap: () => _pickPhoto(context, ref),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Icon(
-                        Icons.camera_alt,
-                        color: theme.colorScheme.onSecondary,
+              const SizedBox(height: 24),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                decoration: BoxDecoration(
+                  color: isDark ? const Color(0xFF16161A) : const Color(0xFFF6F6F9),
+                  borderRadius: BorderRadius.circular(18),
+                  border: Border.all(
+                    color: isDark ? const Color(0xFF26262E) : const Color(0xFFE5E5EB),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Text(
+                      'Learning Stats & Achievements',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        color: isDark ? Colors.white : AppColors.secondary,
                       ),
                     ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Daily streak counters, CEFR level progression, and test scores will be built here.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 13.5,
+                        height: 1.4,
+                        color: isDark ? Colors.white60 : Colors.black54,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 24),
+              OutlinedButton.icon(
+                icon: const Icon(Icons.settings_outlined, size: 18),
+                label: const Text('App Settings & Language'),
+                onPressed: () => context.push('/settings'),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(14),
                   ),
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 16),
-          Text(
-            userAsync.maybeWhen(
-              data: (u) {
-                final name = u?.displayName?.trim() ?? '';
-                return name.isNotEmpty ? name : 'Gast';
-              },
-              orElse: () => '…',
-            ),
-            style: theme.textTheme.titleLarge,
-          ),
-          TextButton.icon(
-            icon: const Icon(Icons.edit, size: 16),
-            label: Text(t(context, Str.settingsChangePhoto)),
-            onPressed: () => _pickPhoto(context, ref),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Future<void> _pickPhoto(BuildContext context, WidgetRef ref) async {
-    final notifier = ref.read(profilePhotoProvider.notifier);
-    final source = await showModalBottomSheet<ImagePickerSource>(
-      context: context,
-      builder: (ctx) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              leading: const Icon(Icons.photo_library_outlined),
-              title: Text(t(ctx, Str.photoGallery)),
-              onTap: () => Navigator.of(ctx).pop(ImagePickerSource.gallery),
-            ),
-            ListTile(
-              leading: const Icon(Icons.camera_outlined),
-              title: Text(t(ctx, Str.photoCamera)),
-              onTap: () => Navigator.of(ctx).pop(ImagePickerSource.camera),
-            ),
-            if (ref.read(profilePhotoProvider) != null)
-              ListTile(
-                leading: const Icon(Icons.delete_outline),
-                title: Text(t(ctx, Str.photoRemove)),
-                onTap: () async {
-                  Navigator.of(ctx).pop(ImagePickerSource.gallery);
-                  await notifier.clear();
-                },
-              ),
-          ],
         ),
       ),
     );
-    if (source == ImagePickerSource.gallery) {
-      await notifier.pickFromGallery();
-
-    } else if (source == ImagePickerSource.camera) {
-      await notifier.pickFromCamera();
-    }
   }
 }
-
-enum ImagePickerSource { gallery, camera }
-
-
-// ---------------------------------------------------------------------------
-// Settings section classes live in `settings_widgets.dart`.  This file
-// keeps only the screen scaffold + the avatar header.
-// ---------------------------------------------------------------------------
