@@ -9,9 +9,9 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 class SupabaseConfig {
   SupabaseConfig._();
 
-  // You can replace these default placeholders with your actual Supabase project keys
-  static const String defaultUrl = 'https://placeholder.supabase.co';
-  static const String defaultAnonKey = 'placeholder-anon-key';
+  static const String defaultUrl = 'https://aesrkewhcmvusitdlznr.supabase.co';
+  static const String defaultAnonKey =
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFlc3JrZXdoY212dXNpdGRsem5yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQzNDE0NDYsImV4cCI6MjEwOTkxNzQ0Nn0.ziZg_U2osR--gFEgqHJqJpwetq7dT-cmdwQoOmcD5D8';
 
   static const String url = String.fromEnvironment(
     'SUPABASE_URL',
@@ -28,10 +28,9 @@ class SupabaseConfig {
 
   /// Returns true when valid Supabase credentials have been configured.
   static bool get isConfigured {
-    return url != defaultUrl &&
-        anonKey != defaultAnonKey &&
-        url.trim().isNotEmpty &&
-        anonKey.trim().isNotEmpty;
+    return url.trim().isNotEmpty &&
+        anonKey.trim().isNotEmpty &&
+        !url.contains('placeholder.supabase.co');
   }
 
   /// Convenience getter for the global Supabase client.

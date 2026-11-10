@@ -93,8 +93,8 @@ class AuthService {
       }
     } catch (_) {}
 
-    // ── Fallback when Supabase is not yet configured or on web preview ──
-    if (!SupabaseConfig.isConfigured || kIsWeb) {
+    // ── Fallback only when Supabase is not configured ──
+    if (!SupabaseConfig.isConfigured) {
       if (_cachedUser == null) {
         _cachedUser = AuthUser(
           uid: 'learner_${DateTime.now().millisecondsSinceEpoch % 10000}',
@@ -109,20 +109,33 @@ class AuthService {
       return this;
     }
 
-    // ── Supabase Production Path ──
+    // ── Supabase Production Path (Web & Native) ──
     try {
       final client = SupabaseConfig.client;
-      final currentSupabaseUser = client.auth.currentUser;
+      var currentSupabaseUser = client.auth.currentUser;
+
+      // Auto-bootstrap guest session if none exists so user always has a valid cloud profile
+      if (currentSupabaseUser == null) {
+        try {
+          final res = await client.auth.signInAnonymously();
+          currentSupabaseUser = res.user;
+        } catch (e) {
+          debugPrint('[AuthService] Anonymous bootstrap note: $e');
+        }
+      }
+
       if (currentSupabaseUser != null) {
         _cachedUser = _userFromSupabase(currentSupabaseUser);
         _dispatch(_cachedUser);
       }
 
-      // Initialize Google Sign In client id
-      try {
-        await _googleSignIn.initialize(serverClientId: kGoogleServerClientId);
-      } catch (e) {
-        debugPrint('[AuthService] GoogleSignIn.initialize: $e');
+      // Initialize Google Sign In client id on mobile
+      if (!kIsWeb) {
+        try {
+          await _googleSignIn.initialize(serverClientId: kGoogleServerClientId);
+        } catch (e) {
+          debugPrint('[AuthService] GoogleSignIn.initialize: $e');
+        }
       }
 
       // Listen to live Supabase auth transitions
@@ -149,7 +162,7 @@ class AuthService {
     await init();
     yield _cachedUser;
 
-    if (SupabaseConfig.isConfigured && !kIsWeb) {
+    if (SupabaseConfig.isConfigured) {
       await for (final data in SupabaseConfig.client.auth.onAuthStateChange) {
         yield _userFromSupabase(data.session?.user);
       }
