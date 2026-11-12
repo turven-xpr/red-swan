@@ -129,3 +129,4 @@ final lessonsByUnitProvider = Provider.family<List<CurriculumLesson>, int>((ref,
   final repo = ref.watch(contentRepositoryProvider);
   return repo.getLessonsForUnit(unitId);
 });
+
