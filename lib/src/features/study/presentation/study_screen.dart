@@ -60,6 +60,10 @@ class _SyllabusLevelDef {
   final String? badgeAsset;
   final IconData? badgeIcon;
   final List<_SyllabusUnitDef> units;
+
+  String get descriptionEn => subtitleEn;
+  String get descriptionAr => subtitleAr;
+  List<Color> get gradient => [cardBgColor, cardBgColor];
 }
 
 const List<_SyllabusLevelDef> _syllabusLevels = [
