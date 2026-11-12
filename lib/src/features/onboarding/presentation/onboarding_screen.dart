@@ -390,8 +390,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final levels = [
       (
         level: StartLevel.a0,
-        code: 'A0',
-        title: 'A0 · Absolute Beginner',
+        code: 'Intro',
+        title: 'Intro · Absolute Beginner',
         desc: 'I know zero German or just a few basic words',
       ),
       (

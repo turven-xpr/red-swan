@@ -156,7 +156,7 @@ final onboardingPrefsProvider =
 String startLevelLabel(StartLevel level) {
   switch (level) {
     case StartLevel.a0:
-      return 'A0 · Absolute Beginner';
+      return 'Intro · Absolute Beginner';
     case StartLevel.a1:
       return 'A1 · Beginner+';
     case StartLevel.a2:
@@ -188,7 +188,7 @@ String startLevelDescription(StartLevel level) {
 String startLevelCEFR(StartLevel level) {
   switch (level) {
     case StartLevel.a0:
-      return 'A0';
+      return 'Intro';
     case StartLevel.a1:
       return 'A1';
     case StartLevel.a2:

@@ -53,20 +53,20 @@ class _SyllabusLevelDef {
 }
 
 const List<_SyllabusLevelDef> _syllabusLevels = [
-  // SECTION 1: A0
+  // SECTION 1: Intro
   _SyllabusLevelDef(
-    level: 'A0',
+    level: 'Intro',
     sectionNumber: 1,
-    titleDe: 'A0: Absolute Grundlagen',
-    titleEn: 'A0: Absolute Foundations',
-    titleAr: 'A0: الأساسيات الأولى',
+    titleDe: 'Einführung: Grundlagen',
+    titleEn: 'Intro: Absolute Foundations',
+    titleAr: 'المقدمة: الأساسيات الأولى',
     descriptionEn: 'Alphabet, pronunciation, numbers 0-100, and first greetings.',
     descriptionAr: 'الأبجدية الألمانية، قواعد النطق، الأرقام حتى 100، والتحيات اليومية.',
     gradient: [Color(0xFF2C3E50), Color(0xFF34495E)],
     units: [
       _SyllabusUnitDef(
         unitNumber: 1,
-        level: 'A0',
+        level: 'Intro',
         titleDe: 'Das Alphabet & Aussprache',
         titleEn: 'Alphabet & Pronunciation',
         titleAr: 'الأبجدية وقواعد النطق',
@@ -74,7 +74,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
       ),
       _SyllabusUnitDef(
         unitNumber: 2,
-        level: 'A0',
+        level: 'Intro',
         titleDe: 'Erste Wörter & Zahlen',
         titleEn: 'First Words & Numbers',
         titleAr: 'الكلمات الأولى والأرقام',
@@ -342,7 +342,7 @@ class StudyScreen extends ConsumerStatefulWidget {
 class _StudyScreenState extends ConsumerState<StudyScreen> {
   final ScrollController _scrollController = ScrollController();
   final Map<String, GlobalKey> _levelKeys = {
-    'A0': GlobalKey(),
+    'Intro': GlobalKey(),
     'A1': GlobalKey(),
     'A2': GlobalKey(),
     'B1': GlobalKey(),
@@ -445,7 +445,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: ['A0', 'A1', 'A2', 'B1', 'B2'].map((lvl) {
+                children: ['Intro', 'A1', 'A2', 'B1', 'B2'].map((lvl) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 3),
                     child: InkWell(
@@ -548,10 +548,10 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
             child: Center(
               child: Text(
                 section.level,
-                style: const TextStyle(
+                style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
-                  fontSize: 19,
+                  fontSize: section.level.length > 2 ? 14 : 19,
                 ),
               ),
             ),
@@ -830,6 +830,8 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
     bool isDark,
     bool isArabic,
   ) {
+    final isIntro = section.level == 'Intro';
+
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
@@ -871,9 +873,11 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      isArabic
-                          ? 'اختبار اجتياز المستوى ${section.level}'
-                          : '${section.level} Gate Test Checkpoint',
+                      isIntro
+                          ? (isArabic ? 'نقطة تثبيت الأساسيات (Intro Checkpoint)' : 'Intro Checkpoint')
+                          : (isArabic
+                              ? 'اختبار اجتياز المستوى ${section.level}'
+                              : '${section.level} Gate Test Checkpoint'),
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w800,
@@ -882,9 +886,13 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      isArabic
-                          ? 'احصل على 75% لفتح المستوى التالي وتثبيت شهادتك'
-                          : 'Score 75% to pass & unlock the next level',
+                      isIntro
+                          ? (isArabic
+                              ? 'احصل على 75% لتثبيت الأساسيات وفتح المستوى A1'
+                              : 'Score 75% to master the basics & unlock Level A1')
+                          : (isArabic
+                              ? 'احصل على 75% لفتح المستوى التالي وتثبيت شهادتك'
+                              : 'Score 75% to pass & unlock the next level'),
                       style: TextStyle(
                         fontSize: 11,
                         color: isDark ? Colors.white60 : Colors.black54,
@@ -918,9 +926,11 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
               context.push('/study/lesson/10011');
             },
             child: Text(
-              isArabic
-                  ? 'بدء اختبار اجتياز ${section.level}'
-                  : 'Start ${section.level} Gate Test',
+              isIntro
+                  ? (isArabic ? 'بدء اختبار الأساسيات' : 'Start Intro Checkpoint')
+                  : (isArabic
+                      ? 'بدء اختبار اجتياز ${section.level}'
+                      : 'Start ${section.level} Gate Test'),
               style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 13),
             ),
           ),

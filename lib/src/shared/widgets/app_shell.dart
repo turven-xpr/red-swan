@@ -63,7 +63,8 @@ class _AppShellState extends ConsumerState<AppShell> {
     final index = _currentIndex;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final onboarding = ref.watch(onboardingPrefsProvider);
-    final levelCode = onboarding.startLevel?.name.toUpperCase() ?? 'A0';
+    final rawLevel = onboarding.startLevel?.name.toUpperCase() ?? 'INTRO';
+    final levelCode = rawLevel == 'A0' ? 'INTRO' : rawLevel;
 
     // Show top streak navbar on main tabs
     final isMainTab = _tabs.any((t) => loc == t.route || loc == '${t.route}/');

@@ -404,13 +404,13 @@ const Map<String, _Group> _table = {
   ),
   Str.onboardingBody: (
     de:
-        'Wähle dein Startlevel (A0, A1, A2, B1). Wir passen deinen Lernplan an — kostenlos und offline-fähig.',
+        'Wähle dein Startlevel (Intro, A1, A2, B1, B2). Wir passen deinen Lernplan an — kostenlos und offline-fähig.',
     en:
-        'Pick your starting level (A0, A1, A2, B1). We will tailor a study plan to it — free, ready offline.',
+        'Pick your starting level (Intro, A1, A2, B1, B2). We will tailor a study plan to it — free, ready offline.',
     fr:
-        'Choisis ton niveau (A0, A1, A2, B1). Nous adapterons ton plan d\'apprentissage — gratuit, prêt hors-ligne.',
+        'Choisis ton niveau (Intro, A1, A2, B1, B2). Nous adapterons ton plan d\'apprentissage — gratuit, prêt hors-ligne.',
     ar:
-        'اختر مستوى البداية (A0, A1, A2, B1). سنخصص خطة تعلمك — مجانًا وجاهزة بدون اتصال.',
+        'اختر مستوى البداية (المقدمة، A1, A2, B1, B2). سنخصص خطة تعلمك — مجانًا وجاهزة بدون اتصال.',
   ),
   Str.onboardingPickLevel: (
     de: 'Startlevel',
