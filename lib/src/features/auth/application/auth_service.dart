@@ -121,6 +121,20 @@ class AuthService {
           currentSupabaseUser = res.user;
         } catch (e) {
           debugPrint('[AuthService] Anonymous bootstrap note: $e');
+          // If anonymous auth is disabled, fall back to a local guest user
+          // so the app still works without requiring sign-in
+          if (_cachedUser == null) {
+            _cachedUser = AuthUser(
+              uid: 'guest_${DateTime.now().millisecondsSinceEpoch % 100000}',
+              displayName: 'Deutschy Learner',
+              email: null,
+              photoUrl: null,
+              provider: AuthProvider.local,
+            );
+            await _persist(_cachedUser!);
+            _dispatch(_cachedUser);
+            return this;
+          }
         }
       }
 
@@ -222,7 +236,9 @@ class AuthService {
   // PUBLIC SIGN-IN FLOWS
   // --------------------------------------------------------------
 
-  /// Google Sign-In with Supabase
+  /// Google Sign-In with Supabase.
+  /// On web: uses OAuth redirect flow (no native google_sign_in needed).
+  /// On mobile: uses native google_sign_in + signInWithIdToken.
   Future<AuthUser?> signInWithGoogle() async {
     await init();
     if (!SupabaseConfig.isConfigured) {
@@ -230,6 +246,22 @@ class AuthService {
       return _cachedUser;
     }
 
+    // ── Web: use Supabase OAuth redirect (no native SDK) ──
+    if (kIsWeb) {
+      try {
+        await SupabaseConfig.client.auth.signInWithOAuth(
+          OAuthProvider.google,
+          redirectTo: Uri.base.origin, // redirect back to current page
+        );
+        // The browser will redirect; on return, onAuthStateChange fires.
+        return _cachedUser;
+      } catch (e, s) {
+        debugPrint('[AuthService] Google OAuth (web) error: $e');
+        throw _AuthException('Google Sign-In failed: $e', e, s);
+      }
+    }
+
+    // ── Mobile: use native Google Sign-In + ID token ──
     try {
       GoogleSignInAccount? account;
       try {
