@@ -1,6 +1,6 @@
 {
   "_next_word": 66,
-  "_next_lesson": 10012,
+  "_next_lesson": 10014,
   "_next_sentence": 20108,
   "_next_exercise": 30227,
   "_next_unit": 50002,
@@ -83,7 +83,9 @@
     "a1_family_review_8": 10008,
     "a1_family_vocab_7": 10009,
     "a1_family_grammar_1": 10010,
-    "a1_family_unit_test": 10011
+    "a1_family_unit_test": 10011,
+    "a1_family_text_1": 10012,
+    "a1_family_story_1": 10013
   },
   "sentences": {
     "Meine Mutter kocht sehr gut.": 20001,

@@ -2607,7 +2607,8 @@
       "sort_order": 1,
       "lesson_type": "vocabulary",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10002,
@@ -2618,7 +2619,8 @@
       "sort_order": 2,
       "lesson_type": "vocabulary",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10003,
@@ -2629,7 +2631,8 @@
       "sort_order": 3,
       "lesson_type": "vocabulary",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10004,
@@ -2640,7 +2643,8 @@
       "sort_order": 4,
       "lesson_type": "review",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10005,
@@ -2651,7 +2655,8 @@
       "sort_order": 5,
       "lesson_type": "vocabulary",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10006,
@@ -2662,7 +2667,8 @@
       "sort_order": 6,
       "lesson_type": "vocabulary",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10007,
@@ -2673,7 +2679,8 @@
       "sort_order": 7,
       "lesson_type": "vocabulary",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10008,
@@ -2684,7 +2691,8 @@
       "sort_order": 8,
       "lesson_type": "review",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10009,
@@ -2695,7 +2703,8 @@
       "sort_order": 9,
       "lesson_type": "vocabulary",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
     },
     {
       "id": 10010,
@@ -2706,7 +2715,8 @@
       "sort_order": 10,
       "lesson_type": "grammar",
       "pass_threshold": 0.7,
-      "grammar_content": "# أدوات التعريف في الألمانية — Der, Die, Das\n# German Definite Articles\n\n## 🇩🇪 Deutsch | 🇬🇧 English | 🇸🇦 عربي\n\nكلّ اسم في الألمانية له **جنس نحوي**: مذكر أو مؤنث أو محايد.\nEvery noun in German has a **grammatical gender**: masculine, feminine, or neuter.\n\n| Article | Gender | Example | Translation |\n|---------|--------|---------|-------------|\n| **der** | مذكر (masculine) | der Vater | الأب |\n| **die** | مؤنث (feminine) | die Mutter | الأم |\n| **das** | محايد (neuter) | das Kind | الطفل |\n| **die** | جمع (plural) | die Eltern | الوالدان |\n\n### 💡 نصيحة / Tip\nاحفظ كلّ اسم مع أداته! لا تقل *Mutter* فقط، بل قل **die Mutter**.\nAlways memorize nouns with their article! Don't just say *Mutter*, say **die Mutter**.\n\n### العائلة مع الأدوات / Family with Articles\n| الألمانية | المعنى | English |\n|-----------|--------|---------|\n| **der** Vater | الأب | father |\n| **die** Mutter | الأم | mother |\n| **das** Kind | الطفل | child |\n| **der** Bruder | الأخ | brother |\n| **die** Schwester | الأخت | sister |\n| **der** Sohn | الابن | son |\n| **die** Tochter | الابنة | daughter |\n| **die** Eltern | الوالدان | parents |\n"
+      "grammar_content": "# أدوات التعريف في الألمانية — Der, Die, Das\n# German Definite Articles\n\n## 🇩🇪 Deutsch | 🇬🇧 English | 🇸🇦 عربي\n\nكلّ اسم في الألمانية له **جنس نحوي**: مذكر أو مؤنث أو محايد.\nEvery noun in German has a **grammatical gender**: masculine, feminine, or neuter.\n\n| Article | Gender | Example | Translation |\n|---------|--------|---------|-------------|\n| **der** | مذكر (masculine) | der Vater | الأب |\n| **die** | مؤنث (feminine) | die Mutter | الأم |\n| **das** | محايد (neuter) | das Kind | الطفل |\n| **die** | جمع (plural) | die Eltern | الوالدان |\n\n### 💡 نصيحة / Tip\nاحفظ كلّ اسم مع أداته! لا تقل *Mutter* فقط، بل قل **die Mutter**.\nAlways memorize nouns with their article! Don't just say *Mutter*, say **die Mutter**.\n\n### العائلة مع الأدوات / Family with Articles\n| الألمانية | المعنى | English |\n|-----------|--------|---------|\n| **der** Vater | الأب | father |\n| **die** Mutter | الأم | mother |\n| **das** Kind | الطفل | child |\n| **der** Bruder | الأخ | brother |\n| **die** Schwester | الأخت | sister |\n| **der** Sohn | الابن | son |\n| **die** Tochter | الابنة | daughter |\n| **die** Eltern | الوالدان | parents |\n",
+      "content_json": null
     },
     {
       "id": 10011,
@@ -2714,10 +2724,35 @@
       "level": "A1",
       "title_de": "Einheitstest",
       "title_en": "Unit Test",
-      "sort_order": 11,
+      "sort_order": 13,
       "lesson_type": "unit_test",
       "pass_threshold": 0.7,
-      "grammar_content": null
+      "grammar_content": null,
+      "content_json": null
+    },
+    {
+      "id": 10012,
+      "unit_id": 50001,
+      "level": "A1",
+      "title_de": "Lesetext: Ein Brief aus Berlin",
+      "title_en": "Reading: A Letter from Berlin",
+      "sort_order": 11,
+      "lesson_type": "text",
+      "pass_threshold": 0.7,
+      "grammar_content": null,
+      "content_json": "{\"title_de\": \"Ein Brief an die Familie\", \"title_ar\": \"رسالة إلى العائلة\", \"title_en\": \"A Letter to the Family\", \"type\": \"letter\", \"sender\": \"Layla\", \"recipient\": \"Liebe Familie\", \"sentences\": [{\"de\": \"Liebe Familie, wie geht es euch?\", \"ar\": \"عائلتي الحبيبة، كيف حالكم جميعاً؟\", \"en\": \"Dear family, how are you all?\"}, {\"de\": \"Ich wohne jetzt seit drei Monaten in Berlin und lerne jeden Tag fleißig Deutsch.\", \"ar\": \"أنا أسكن الآن منذ ثلاثة أشهر في برلين وأتعلم الألمانية بجد واجتهاد كل يوم.\", \"en\": \"I have been living in Berlin for three months now and study German diligently every day.\"}, {\"de\": \"Meine Wohnung ist klein, aber sehr gemütlich.\", \"ar\": \"شقتي صغيرة، لكنها مريحة جداً ومحببة.\", \"en\": \"My apartment is small, but very cozy.\"}, {\"de\": \"Mein Nachbar Herr Weber ist sehr freundlich und hilft mir oft beim Einkaufen.\", \"ar\": \"جاري السيد فيبر ودود للغاية ويساعدني كثيراً في التسوق.\", \"en\": \"My neighbor Mr. Weber is very friendly and often helps me with shopping.\"}, {\"de\": \"Am Wochenende koche ich zusammen mit meinen neuen Freunden aus dem Sprachkurs.\", \"ar\": \"في عطلة نهاية الأسبوع أطبخ مع أصدقائي الجدد من دورة اللغة.\", \"en\": \"On the weekend I cook together with my new friends from the language course.\"}, {\"de\": \"Ich vermisse euch sehr und hoffe, dass wir uns bald wiedersehen.\", \"ar\": \"أفتقدكم كثيراً وآمل من قلبي أن نلتقي قريباً.\", \"en\": \"I miss you all very much and hope that we see each other again soon.\"}, {\"de\": \"Herzliche Grüße aus Berlin, eure Layla.\", \"ar\": \"تحياتي القلبية الحارة من برلين، ابنتكم ليلى.\", \"en\": \"Warm regards from Berlin, your Layla.\"}], \"vocabulary_notes\": [{\"word\": \"die Wohnung\", \"gender\": \"die\", \"ar\": \"الشقة السكنية\", \"en\": \"apartment\"}, {\"word\": \"gemütlich\", \"gender\": \"\", \"ar\": \"مريح / دافئ\", \"en\": \"cozy / comfortable\"}, {\"word\": \"der Nachbar\", \"gender\": \"der\", \"ar\": \"الجار\", \"en\": \"neighbor\"}, {\"word\": \"vermissen\", \"gender\": \"\", \"ar\": \"يشتاق / يفتقد\", \"en\": \"to miss\"}, {\"word\": \"hoffen\", \"gender\": \"\", \"ar\": \"يأمل / يتمنى\", \"en\": \"to hope\"}], \"questions\": [{\"question_de\": \"Wo wohnt Layla jetzt?\", \"question_ar\": \"أين تسكن ليلى الآن؟\", \"question_en\": \"Where does Layla live now?\", \"options\": [\"In Berlin\", \"In München\", \"In Hamburg\", \"In Wien\"], \"correct\": \"In Berlin\"}, {\"question_de\": \"Wie ist ihr Nachbar Herr Weber?\", \"question_ar\": \"كيف يصف النص جارها السيد فيبر؟\", \"question_en\": \"How is her neighbor Mr. Weber?\", \"options\": [\"Sehr freundlich\", \"Sehr unfreundlich\", \"Laut und böse\", \"Alt und müde\"], \"correct\": \"Sehr freundlich\"}, {\"question_de\": \"Was macht Layla am Wochenende?\", \"question_ar\": \"ماذا تفعل ليلى في عطلة نهاية الأسبوع؟\", \"question_en\": \"What does Layla do on the weekend?\", \"options\": [\"Sie kocht mit Freunden\", \"Sie arbeitet im Büro\", \"Sie schläft nur\", \"Sie reist nach Rom\"], \"correct\": \"Sie kocht mit Freunden\"}]}"
+    },
+    {
+      "id": 10013,
+      "unit_id": 50001,
+      "level": "A1",
+      "title_de": "Geschichte: Der Überraschungsbesuch",
+      "title_en": "Story: The Surprise Visit",
+      "sort_order": 12,
+      "lesson_type": "story",
+      "pass_threshold": 0.7,
+      "grammar_content": null,
+      "content_json": "{\"title_de\": \"Der Überraschungsbesuch\", \"title_ar\": \"الزيارة المفاجئة\", \"title_en\": \"The Surprise Visit\", \"level\": \"A1\", \"chapters\": [{\"sentence_de\": \"Es ist Samstagmorgen in München.\", \"sentence_ar\": \"إنه صباح يوم السبت في ميونيخ.\", \"sentence_en\": \"It is Saturday morning in Munich.\", \"tokens\": [{\"text\": \"Es\", \"lemma\": \"es\", \"ar\": \"هو/إنه\", \"en\": \"it\"}, {\"text\": \"ist\", \"lemma\": \"sein\", \"ar\": \"يكون\", \"en\": \"is\"}, {\"text\": \"Samstagmorgen\", \"lemma\": \"Samstagmorgen\", \"gender\": \"der\", \"ar\": \"صباح السبت\", \"en\": \"Saturday morning\"}, {\"text\": \"in\", \"lemma\": \"in\", \"ar\": \"في\", \"en\": \"in\"}, {\"text\": \"München.\", \"lemma\": \"München\", \"ar\": \"ميونيخ\", \"en\": \"Munich\"}]}, {\"sentence_de\": \"Ahmad sitzt in der Küche und trinkt heißen Kaffee.\", \"sentence_ar\": \"أحمد يجلس في المطبخ ويشرب قهوة ساخنة.\", \"sentence_en\": \"Ahmad sits in the kitchen and drinks hot coffee.\", \"tokens\": [{\"text\": \"Ahmad\", \"lemma\": \"Ahmad\", \"ar\": \"أحمد\", \"en\": \"Ahmad\"}, {\"text\": \"sitzt\", \"lemma\": \"sitzen\", \"ar\": \"يجلس\", \"en\": \"sits\"}, {\"text\": \"in\", \"lemma\": \"in\", \"ar\": \"في\", \"en\": \"in\"}, {\"text\": \"der\", \"lemma\": \"der\", \"ar\": \"الـ\", \"en\": \"the\"}, {\"text\": \"Küche\", \"lemma\": \"Küche\", \"gender\": \"die\", \"ar\": \"المطبخ\", \"en\": \"kitchen\"}, {\"text\": \"und\", \"lemma\": \"und\", \"ar\": \"و\", \"en\": \"and\"}, {\"text\": \"trinkt\", \"lemma\": \"trinken\", \"ar\": \"يشرب\", \"en\": \"drinks\"}, {\"text\": \"heißen\", \"lemma\": \"heiß\", \"ar\": \"ساخناً\", \"en\": \"hot\"}, {\"text\": \"Kaffee.\", \"lemma\": \"Kaffee\", \"gender\": \"der\", \"ar\": \"قهوة\", \"en\": \"coffee\"}]}, {\"sentence_de\": \"Plötzlich klingelt es laut an der Tür.\", \"sentence_ar\": \"فجأة يدق جرس الباب بصوت عالٍ.\", \"sentence_en\": \"Suddenly the doorbell rings loudly at the door.\", \"tokens\": [{\"text\": \"Plötzlich\", \"lemma\": \"plötzlich\", \"ar\": \"فجأة\", \"en\": \"suddenly\"}, {\"text\": \"klingelt\", \"lemma\": \"klingeln\", \"ar\": \"يدق الجرس\", \"en\": \"rings\"}, {\"text\": \"es\", \"lemma\": \"es\", \"ar\": \"هو\", \"en\": \"it\"}, {\"text\": \"laut\", \"lemma\": \"laut\", \"ar\": \"بصوت عالٍ\", \"en\": \"loudly\"}, {\"text\": \"an\", \"lemma\": \"an\", \"ar\": \"على / عند\", \"en\": \"at\"}, {\"text\": \"der\", \"lemma\": \"der\", \"ar\": \"الـ\", \"en\": \"the\"}, {\"text\": \"Tür.\", \"lemma\": \"Tür\", \"gender\": \"die\", \"ar\": \"الباب\", \"en\": \"door\"}]}, {\"sentence_de\": \"Er öffnet die Tür und sieht seinen Bruder Ali!\", \"sentence_ar\": \"يفتح الباب ويرى أخاه علي!\", \"sentence_en\": \"He opens the door and sees his brother Ali!\", \"tokens\": [{\"text\": \"Er\", \"lemma\": \"er\", \"ar\": \"هو\", \"en\": \"he\"}, {\"text\": \"öffnet\", \"lemma\": \"öffnen\", \"ar\": \"يفتح\", \"en\": \"opens\"}, {\"text\": \"die\", \"lemma\": \"die\", \"ar\": \"الـ\", \"en\": \"the\"}, {\"text\": \"Tür\", \"lemma\": \"Tür\", \"gender\": \"die\", \"ar\": \"الباب\", \"en\": \"door\"}, {\"text\": \"und\", \"lemma\": \"und\", \"ar\": \"و\", \"en\": \"and\"}, {\"text\": \"sieht\", \"lemma\": \"sehen\", \"ar\": \"يرى\", \"en\": \"sees\"}, {\"text\": \"seinen\", \"lemma\": \"sein\", \"ar\": \"ـه (ملكية)\", \"en\": \"his\"}, {\"text\": \"Bruder\", \"lemma\": \"Bruder\", \"gender\": \"der\", \"ar\": \"أخ\", \"en\": \"brother\"}, {\"text\": \"Ali!\", \"lemma\": \"Ali\", \"ar\": \"علي\", \"en\": \"Ali\"}]}, {\"sentence_de\": \"Ali lacht fröhlich und sagt: 'Überraschung!'\", \"sentence_ar\": \"علي يضحك فرحاً ويقول: 'مفاجأة!'\", \"sentence_en\": \"Ali laughs happily and says: 'Surprise!'\", \"tokens\": [{\"text\": \"Ali\", \"lemma\": \"Ali\", \"ar\": \"علي\", \"en\": \"Ali\"}, {\"text\": \"lacht\", \"lemma\": \"lachen\", \"ar\": \"يضحك\", \"en\": \"laughs\"}, {\"text\": \"fröhlich\", \"lemma\": \"fröhlich\", \"ar\": \"بفرح ومرح\", \"en\": \"happily\"}, {\"text\": \"und\", \"lemma\": \"und\", \"ar\": \"و\", \"en\": \"and\"}, {\"text\": \"sagt:\", \"lemma\": \"sagen\", \"ar\": \"يقول\", \"en\": \"says\"}, {\"text\": \"'Überraschung!'\", \"lemma\": \"Überraschung\", \"gender\": \"die\", \"ar\": \"مفاجأة!\", \"en\": \"surprise!\"}]}, {\"sentence_de\": \"Die beiden Brüder umarmen sich herzlich.\", \"sentence_ar\": \"الأخوان يتعانقان بحرارة ومحبة.\", \"sentence_en\": \"The two brothers hug each other warmly.\", \"tokens\": [{\"text\": \"Die\", \"lemma\": \"die\", \"ar\": \"الـ\", \"en\": \"the\"}, {\"text\": \"beiden\", \"lemma\": \"beide\", \"ar\": \"كلا / الاثنين\", \"en\": \"both\"}, {\"text\": \"Brüder\", \"lemma\": \"Bruder\", \"gender\": \"der\", \"ar\": \"الإخوة\", \"en\": \"brothers\"}, {\"text\": \"umarmen\", \"lemma\": \"umarmen\", \"ar\": \"يتعانقان\", \"en\": \"hug\"}, {\"text\": \"sich\", \"lemma\": \"sich\", \"ar\": \"بعضهما\", \"en\": \"each other\"}, {\"text\": \"herzlich.\", \"lemma\": \"herzlich\", \"ar\": \"بحرارة ومن القلب\", \"en\": \"warmly\"}]}, {\"sentence_de\": \"Sie frühstücken zusammen und erzählen alte Familiengeschichten.\", \"sentence_ar\": \"يتناولان الفطور معاً ويرويان قصص العائلة القديمة.\", \"sentence_en\": \"They have breakfast together and share old family stories.\", \"tokens\": [{\"text\": \"Sie\", \"lemma\": \"sie\", \"ar\": \"هما / هم\", \"en\": \"they\"}, {\"text\": \"frühstücken\", \"lemma\": \"frühstücken\", \"ar\": \"يتناولان الفطور\", \"en\": \"eat breakfast\"}, {\"text\": \"zusammen\", \"lemma\": \"zusammen\", \"ar\": \"معاً\", \"en\": \"together\"}, {\"text\": \"und\", \"lemma\": \"und\", \"ar\": \"و\", \"en\": \"and\"}, {\"text\": \"erzählen\", \"lemma\": \"erzählen\", \"ar\": \"يرويان / يحكيان\", \"en\": \"tell / share\"}, {\"text\": \"alte\", \"lemma\": \"alt\", \"ar\": \"قديمة\", \"en\": \"old\"}, {\"text\": \"Familiengeschichten.\", \"lemma\": \"Familiengeschichte\", \"gender\": \"die\", \"ar\": \"قصص عائلية\", \"en\": \"family stories\"}]}], \"questions\": [{\"question_de\": \"Was trinkt Ahmad am Morgen?\", \"question_ar\": \"ماذا يشرب أحمد في الصباح؟\", \"question_en\": \"What does Ahmad drink in the morning?\", \"options\": [\"Heißen Kaffee\", \"Kalten Tee\", \"Frischen Orangensaft\", \"Mineralwasser\"], \"correct\": \"Heißen Kaffee\"}, {\"question_de\": \"Wer steht überraschend an der Tür?\", \"question_ar\": \"من يقف فجأة عند الباب كزيارة مفاجئة؟\", \"question_en\": \"Who is standing at the door as a surprise?\", \"options\": [\"Sein Bruder Ali\", \"Sein Nachbar Herr Weber\", \"Seine Großmutter\", \"Sein Arbeitskollege\"], \"correct\": \"Sein Bruder Ali\"}, {\"question_de\": \"Was machen die beiden Brüder am Ende?\", \"question_ar\": \"ماذا يفعل الأخوان في نهاية القصة؟\", \"question_en\": \"What do the two brothers do at the end?\", \"options\": [\"Sie frühstücken zusammen\", \"Sie gehen einkaufen\", \"Sie streiten laut\", \"Sie fahren nach Berlin\"], \"correct\": \"Sie frühstücken zusammen\"}]}"
     }
   ],
   "lesson_items": [

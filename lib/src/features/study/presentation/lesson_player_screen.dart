@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -25,8 +27,19 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
   String? _selectedOption;
   final TextEditingController _textController = TextEditingController();
 
+  // State for Text lessons
+  final Map<int, String> _textAnswers = {};
+  bool _showTextTranslations = true;
+
+  // State for Story lessons
+  final Map<int, String> _storyAnswers = {};
+  int? _activeStorySentenceIndex;
+  Timer? _storyTimer;
+  bool _isStoryPlaying = false;
+
   @override
   void dispose() {
+    _storyTimer?.cancel();
     _textController.dispose();
     super.dispose();
   }
@@ -103,22 +116,24 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     final isArabic = locale.languageCode == 'ar';
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    final lessons = repo.getLessonsForLevel('A1');
-    final lesson = lessons.firstWhere(
-      (l) => l.id == widget.lessonId,
-      orElse: () => CurriculumLesson(
-        id: widget.lessonId,
-        level: 'A1',
-        titleDe: 'Lektion',
-        titleEn: 'Lesson',
-        sortOrder: 1,
-        type: LessonType.vocabulary,
-      ),
+    final lesson = repo.getLessonById(widget.lessonId) ?? CurriculumLesson(
+      id: widget.lessonId,
+      level: 'A1',
+      titleDe: 'Lektion',
+      titleEn: 'Lesson',
+      sortOrder: 1,
+      type: LessonType.vocabulary,
     );
 
-    // Grammar lesson view
+    // Specialized curriculum lesson views
     if (lesson.type == LessonType.grammar) {
       return _buildGrammarView(context, lesson, isDark, isArabic);
+    }
+    if (lesson.type == LessonType.text) {
+      return _buildTextView(context, lesson, isDark, isArabic);
+    }
+    if (lesson.type == LessonType.story) {
+      return _buildStoryView(context, lesson, isDark, isArabic);
     }
 
     final exercises = repo.getExercisesForLesson(widget.lessonId);
@@ -583,6 +598,902 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  /// Interactive Text Lesson (النصوص: حوارات، رسائل، مقالات)
+  /// - Sentence-by-sentence German text + audio speak buttons
+  /// - Arabic translation for every sentence
+  /// - Vocabulary & grammar callout notes
+  /// - Comprehension exercises
+  Widget _buildTextView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic) {
+    Map<String, dynamic> data = {};
+    if (lesson.contentJson != null && lesson.contentJson!.isNotEmpty) {
+      try {
+        data = jsonDecode(lesson.contentJson!) as Map<String, dynamic>;
+      } catch (_) {}
+    }
+
+    final sentences = (data['sentences'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+    final vocabularyNotes = (data['vocabulary_notes'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+    final questions = (data['questions'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+    final title = isArabic ? (data['title_ar'] ?? lesson.titleDe) : (data['title_en'] ?? lesson.titleDe);
+
+    return Scaffold(
+      backgroundColor: isDark ? AppColors.surfaceDark : const Color(0xFFF9FAFC),
+      appBar: AppBar(
+        title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+        leading: IconButton(
+          icon: const Icon(Icons.close_rounded),
+          onPressed: () => context.pop(),
+        ),
+        actions: [
+          IconButton(
+            tooltip: isArabic ? 'إظهار / إخفاء الترجمة' : 'Toggle Translations',
+            icon: Icon(
+              _showTextTranslations ? Icons.subtitles_rounded : Icons.subtitles_off_rounded,
+              color: _showTextTranslations ? AppColors.primary : Colors.grey,
+            ),
+            onPressed: () => setState(() => _showTextTranslations = !_showTextTranslations),
+          ),
+          IconButton(
+            tooltip: isArabic ? 'قراءة النص كاملاً' : 'Read Full Text',
+            icon: const Icon(Icons.volume_up_rounded, color: AppColors.primary),
+            onPressed: () {
+              final fullText = sentences.map((s) => s['de'] as String? ?? '').join(' ');
+              if (fullText.isNotEmpty) _playAudio(fullText);
+            },
+          ),
+        ],
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Header Card
+              Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                  color: isDark ? const Color(0xFF1F2430) : const Color(0xFFE8EEFD),
+                  borderRadius: BorderRadius.circular(18),
+                  border: Border.all(
+                    color: const Color(0xFF3B82F6).withValues(alpha: 0.25),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 48,
+                      height: 48,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFF3B82F6),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(Icons.menu_book_rounded, color: Colors.white, size: 26),
+                    ),
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            data['title_de'] ?? lesson.titleDe,
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w900,
+                              color: isDark ? Colors.white : const Color(0xFF1E3A8A),
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            isArabic ? 'استمع إلى كل جملة، واقرأ الترجمة والشروحات' : 'Read & listen sentence by sentence',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: isDark ? Colors.white70 : const Color(0xFF3B82F6),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 18),
+
+              // Sentences List
+              ...List.generate(sentences.length, (idx) {
+                final s = sentences[idx];
+                final de = s['de'] as String? ?? '';
+                final ar = s['ar'] as String? ?? '';
+                final en = s['en'] as String? ?? '';
+
+                return Container(
+                  margin: const EdgeInsets.only(bottom: 12),
+                  padding: const EdgeInsets.all(14),
+                  decoration: BoxDecoration(
+                    color: isDark ? const Color(0xFF1E1E22) : Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(
+                      color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.06),
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.02),
+                        blurRadius: 6,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+                            decoration: BoxDecoration(
+                              color: AppColors.primary.withValues(alpha: 0.12),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Text(
+                              '${idx + 1}',
+                              style: const TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                color: AppColors.primary,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              de,
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w700,
+                                height: 1.4,
+                                color: isDark ? Colors.white : Colors.black87,
+                              ),
+                            ),
+                          ),
+                          IconButton(
+                            icon: const Icon(Icons.volume_up_rounded, color: AppColors.primary, size: 22),
+                            onPressed: () => _playAudio(de),
+                            tooltip: 'Aussprache',
+                          ),
+                        ],
+                      ),
+                      if (_showTextTranslations) ...[
+                        const SizedBox(height: 6),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 32),
+                          child: Text(
+                            isArabic ? ar : en,
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: isDark ? Colors.white60 : Colors.black54,
+                              height: 1.3,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                );
+              }),
+
+              // Vocabulary and Grammar Notes Section
+              if (vocabularyNotes.isNotEmpty) ...[
+                const SizedBox(height: 16),
+                Text(
+                  isArabic ? 'المفردات وقواعد النص' : 'Vocabulary & Grammar Notes',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w900,
+                    color: isDark ? Colors.white : Colors.black87,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: vocabularyNotes.map((vocab) {
+                    final word = vocab['word'] as String? ?? '';
+                    final gender = vocab['gender'] as String? ?? '';
+                    final ar = vocab['ar'] as String? ?? '';
+                    final en = vocab['en'] as String? ?? '';
+
+                    Color genderColor = Colors.grey;
+                    if (gender == 'der') genderColor = Colors.blue;
+                    if (gender == 'die') genderColor = Colors.red;
+                    if (gender == 'das') genderColor = Colors.green;
+
+                    return Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: isDark ? const Color(0xFF1E1E22) : Colors.white,
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                          color: gender.isNotEmpty
+                              ? genderColor.withValues(alpha: 0.4)
+                              : (isDark ? Colors.white10 : Colors.black12),
+                        ),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          if (gender.isNotEmpty) ...[
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
+                              decoration: BoxDecoration(
+                                color: genderColor.withValues(alpha: 0.15),
+                                borderRadius: BorderRadius.circular(6),
+                              ),
+                              child: Text(
+                                gender,
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.bold,
+                                  color: genderColor,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                          ],
+                          Text(
+                            word,
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? Colors.white : Colors.black87,
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            '· ${isArabic ? ar : en}',
+                            style: TextStyle(
+                              fontSize: 11.5,
+                              color: isDark ? Colors.white60 : Colors.black54,
+                            ),
+                          ),
+                          const SizedBox(width: 4),
+                          GestureDetector(
+                            onTap: () => _playAudio(word),
+                            child: const Icon(Icons.volume_up_rounded, size: 16, color: AppColors.primary),
+                          ),
+                        ],
+                      ),
+                    );
+                  }).toList(),
+                ),
+              ],
+
+              // Comprehension Quiz Section
+              if (questions.isNotEmpty) ...[
+                const SizedBox(height: 24),
+                Text(
+                  isArabic ? 'أسئلة فهم النص' : 'Comprehension Check',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w900,
+                    color: isDark ? Colors.white : Colors.black87,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                ...List.generate(questions.length, (qIdx) {
+                  final q = questions[qIdx];
+                  final questionText = isArabic
+                      ? (q['question_ar'] ?? q['question_de'])
+                      : (q['question_en'] ?? q['question_de']);
+                  final options = (q['options'] as List?)?.cast<String>() ?? [];
+                  final correct = q['correct'] as String? ?? '';
+                  final userChoice = _textAnswers[qIdx];
+
+                  return Container(
+                    margin: const EdgeInsets.only(bottom: 14),
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: isDark ? const Color(0xFF1E1E22) : Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.06),
+                      ),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '${qIdx + 1}. $questionText',
+                          style: TextStyle(
+                            fontSize: 14.5,
+                            fontWeight: FontWeight.bold,
+                            color: isDark ? Colors.white : Colors.black87,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        ...options.map((opt) {
+                          final isSelected = userChoice == opt;
+                          final isRightChoice = opt == correct;
+
+                          Color? btnBg;
+                          Color? btnBorder;
+                          if (userChoice != null) {
+                            if (isSelected) {
+                              btnBg = isRightChoice
+                                  ? Colors.green.withValues(alpha: 0.15)
+                                  : Colors.red.withValues(alpha: 0.15);
+                              btnBorder = isRightChoice ? Colors.green : Colors.red;
+                            } else if (isRightChoice) {
+                              btnBg = Colors.green.withValues(alpha: 0.08);
+                              btnBorder = Colors.green.withValues(alpha: 0.5);
+                            }
+                          }
+
+                          return Padding(
+                            padding: const EdgeInsets.only(bottom: 8),
+                            child: InkWell(
+                              onTap: () {
+                                setState(() {
+                                  _textAnswers[qIdx] = opt;
+                                });
+                              },
+                              borderRadius: BorderRadius.circular(12),
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
+                                decoration: BoxDecoration(
+                                  color: btnBg ?? (isDark ? Colors.white.withValues(alpha: 0.04) : const Color(0xFFF3F4F6)),
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(
+                                    color: btnBorder ?? (isSelected ? AppColors.primary : Colors.transparent),
+                                    width: 1.5,
+                                  ),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      isSelected
+                                          ? (isRightChoice ? Icons.check_circle_rounded : Icons.cancel_rounded)
+                                          : Icons.radio_button_unchecked_rounded,
+                                      size: 18,
+                                      color: isSelected
+                                          ? (isRightChoice ? Colors.green : Colors.red)
+                                          : (isDark ? Colors.white38 : Colors.black38),
+                                    ),
+                                    const SizedBox(width: 10),
+                                    Expanded(
+                                      child: Text(
+                                        opt,
+                                        style: TextStyle(
+                                          fontSize: 13.5,
+                                          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                                          color: isDark ? Colors.white : Colors.black87,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          );
+                        }),
+                      ],
+                    ),
+                  );
+                }),
+              ],
+
+              const SizedBox(height: 20),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                ),
+                onPressed: () {
+                  context.pop();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        isArabic ? 'أحسنت! أتممت دراسة النص بنجاح 🎉 +15 XP' : 'Great job! Reading completed 🎉 +15 XP',
+                      ),
+                      backgroundColor: Colors.green,
+                    ),
+                  );
+                },
+                child: Text(
+                  isArabic ? 'إتمام درس النص' : 'Complete Reading Lesson',
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
+              const SizedBox(height: 16),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Leveled Story Reader (القصص التفاعلية)
+  /// - Karaoka-style synchronized read along
+  /// - Interactive tap on ANY word to view full definition, gender & audio
+  /// - Comprehension exercises
+  Widget _buildStoryView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic) {
+    Map<String, dynamic> data = {};
+    if (lesson.contentJson != null && lesson.contentJson!.isNotEmpty) {
+      try {
+        data = jsonDecode(lesson.contentJson!) as Map<String, dynamic>;
+      } catch (_) {}
+    }
+
+    final chapters = (data['chapters'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+    final questions = (data['questions'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+    final title = isArabic ? (data['title_ar'] ?? lesson.titleDe) : (data['title_en'] ?? lesson.titleDe);
+
+    return Scaffold(
+      backgroundColor: isDark ? AppColors.surfaceDark : const Color(0xFFFAF7F2),
+      appBar: AppBar(
+        title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+        leading: IconButton(
+          icon: const Icon(Icons.close_rounded),
+          onPressed: () {
+            _storyTimer?.cancel();
+            context.pop();
+          },
+        ),
+        actions: [
+          IconButton(
+            tooltip: isArabic ? 'استماع وتتبع القصة' : 'Auto Read Story',
+            icon: Icon(
+              _isStoryPlaying ? Icons.pause_circle_filled_rounded : Icons.play_circle_fill_rounded,
+              color: AppColors.primary,
+              size: 28,
+            ),
+            onPressed: () => _toggleStoryPlay(chapters),
+          ),
+        ],
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Story Intro Banner
+              Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                  color: isDark ? const Color(0xFF2B2117) : const Color(0xFFFFF3E0),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(
+                    color: Colors.orange.withValues(alpha: 0.3),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 50,
+                      height: 50,
+                      decoration: const BoxDecoration(
+                        color: Colors.orange,
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(Icons.auto_stories_rounded, color: Colors.white, size: 26),
+                    ),
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            data['title_de'] ?? lesson.titleDe,
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.w900,
+                              color: isDark ? Colors.white : const Color(0xFF8C3E00),
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            isArabic
+                                ? 'اضغط على أي كلمة في القصة لمعرفة معناها ونطقها فوراً'
+                                : 'Tap on any word to look up its definition and audio',
+                            style: TextStyle(
+                              fontSize: 11.5,
+                              color: isDark ? Colors.white70 : const Color(0xFFB45309),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 18),
+
+              // Story Chapters / Sentences
+              ...List.generate(chapters.length, (cIdx) {
+                final ch = chapters[cIdx];
+                final sentenceDe = ch['sentence_de'] as String? ?? '';
+                final sentenceAr = ch['sentence_ar'] as String? ?? '';
+                final sentenceEn = ch['sentence_en'] as String? ?? '';
+                final tokens = (ch['tokens'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+                final isCurrentPlaying = _activeStorySentenceIndex == cIdx;
+
+                return AnimatedContainer(
+                  duration: const Duration(milliseconds: 300),
+                  margin: const EdgeInsets.only(bottom: 14),
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: isCurrentPlaying
+                        ? (isDark ? const Color(0xFF3B271A) : const Color(0xFFFFF7ED))
+                        : (isDark ? const Color(0xFF1E1E22) : Colors.white),
+                    borderRadius: BorderRadius.circular(18),
+                    border: Border.all(
+                      color: isCurrentPlaying
+                          ? AppColors.primary
+                          : (isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.06)),
+                      width: isCurrentPlaying ? 2 : 1,
+                    ),
+                    boxShadow: isCurrentPlaying
+                        ? [
+                            BoxShadow(
+                              color: AppColors.primary.withValues(alpha: 0.15),
+                              blurRadius: 10,
+                              offset: const Offset(0, 3),
+                            ),
+                          ]
+                        : null,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Interactive token words
+                      Wrap(
+                        spacing: 6,
+                        runSpacing: 6,
+                        children: tokens.map((token) {
+                          final text = token['text'] as String? ?? '';
+                          final gender = token['gender'] as String? ?? '';
+
+                          Color? underColor;
+                          if (gender == 'der') underColor = Colors.blue;
+                          if (gender == 'die') underColor = Colors.red;
+                          if (gender == 'das') underColor = Colors.green;
+
+                          return InkWell(
+                            onTap: () => _showTokenModal(context, token, isDark, isArabic),
+                            borderRadius: BorderRadius.circular(6),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                              decoration: BoxDecoration(
+                                color: (isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.04)),
+                                borderRadius: BorderRadius.circular(6),
+                                border: underColor != null
+                                    ? Border(bottom: BorderSide(color: underColor, width: 2))
+                                    : null,
+                              ),
+                              child: Text(
+                                text,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: isDark ? Colors.white : Colors.black87,
+                                ),
+                              ),
+                            ),
+                          );
+                        }).toList(),
+                      ),
+
+                      const SizedBox(height: 10),
+
+                      // Sentence Audio Speaker & Arabic Meaning
+                      Row(
+                        children: [
+                          IconButton(
+                            icon: const Icon(Icons.volume_up_rounded, color: AppColors.primary, size: 20),
+                            onPressed: () => _playAudio(sentenceDe),
+                          ),
+                          Expanded(
+                            child: Text(
+                              isArabic ? sentenceAr : sentenceEn,
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: isDark ? Colors.white60 : Colors.black54,
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                );
+              }),
+
+              // Story Comprehension Questions
+              if (questions.isNotEmpty) ...[
+                const SizedBox(height: 24),
+                Text(
+                  isArabic ? 'أسئلة فهم القصة' : 'Story Comprehension',
+                  style: TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w900,
+                    color: isDark ? Colors.white : Colors.black87,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                ...List.generate(questions.length, (qIdx) {
+                  final q = questions[qIdx];
+                  final questionText = isArabic
+                      ? (q['question_ar'] ?? q['question_de'])
+                      : (q['question_en'] ?? q['question_de']);
+                  final options = (q['options'] as List?)?.cast<String>() ?? [];
+                  final correct = q['correct'] as String? ?? '';
+                  final userChoice = _storyAnswers[qIdx];
+
+                  return Container(
+                    margin: const EdgeInsets.only(bottom: 14),
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: isDark ? const Color(0xFF1E1E22) : Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.06),
+                      ),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '${qIdx + 1}. $questionText',
+                          style: TextStyle(
+                            fontSize: 14.5,
+                            fontWeight: FontWeight.bold,
+                            color: isDark ? Colors.white : Colors.black87,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        ...options.map((opt) {
+                          final isSelected = userChoice == opt;
+                          final isRightChoice = opt == correct;
+
+                          Color? btnBg;
+                          Color? btnBorder;
+                          if (userChoice != null) {
+                            if (isSelected) {
+                              btnBg = isRightChoice
+                                  ? Colors.green.withValues(alpha: 0.15)
+                                  : Colors.red.withValues(alpha: 0.15);
+                              btnBorder = isRightChoice ? Colors.green : Colors.red;
+                            } else if (isRightChoice) {
+                              btnBg = Colors.green.withValues(alpha: 0.08);
+                              btnBorder = Colors.green.withValues(alpha: 0.5);
+                            }
+                          }
+
+                          return Padding(
+                            padding: const EdgeInsets.only(bottom: 8),
+                            child: InkWell(
+                              onTap: () {
+                                setState(() {
+                                  _storyAnswers[qIdx] = opt;
+                                });
+                              },
+                              borderRadius: BorderRadius.circular(12),
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
+                                decoration: BoxDecoration(
+                                  color: btnBg ?? (isDark ? Colors.white.withValues(alpha: 0.04) : const Color(0xFFF3F4F6)),
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(
+                                    color: btnBorder ?? (isSelected ? AppColors.primary : Colors.transparent),
+                                    width: 1.5,
+                                  ),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      isSelected
+                                          ? (isRightChoice ? Icons.check_circle_rounded : Icons.cancel_rounded)
+                                          : Icons.radio_button_unchecked_rounded,
+                                      size: 18,
+                                      color: isSelected
+                                          ? (isRightChoice ? Colors.green : Colors.red)
+                                          : (isDark ? Colors.white38 : Colors.black38),
+                                    ),
+                                    const SizedBox(width: 10),
+                                    Expanded(
+                                      child: Text(
+                                        opt,
+                                        style: TextStyle(
+                                          fontSize: 13.5,
+                                          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                                          color: isDark ? Colors.white : Colors.black87,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          );
+                        }),
+                      ],
+                    ),
+                  );
+                }),
+              ],
+
+              const SizedBox(height: 20),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                ),
+                onPressed: () {
+                  _storyTimer?.cancel();
+                  context.pop();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        isArabic ? 'أحسنت! أتممت دراسة القصة بنجاح 🎉 +20 XP' : 'Congratulations! Story finished 🎉 +20 XP',
+                      ),
+                      backgroundColor: Colors.green,
+                    ),
+                  );
+                },
+                child: Text(
+                  isArabic ? 'إنهاء القصة وحفظ التقدّم' : 'Finish Story & Save Progress',
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
+              const SizedBox(height: 16),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _toggleStoryPlay(List<Map<String, dynamic>> chapters) {
+    if (_isStoryPlaying) {
+      _storyTimer?.cancel();
+      ref.read(ttsServiceProvider).stop();
+      setState(() {
+        _isStoryPlaying = false;
+        _activeStorySentenceIndex = null;
+      });
+    } else {
+      setState(() {
+        _isStoryPlaying = true;
+        _activeStorySentenceIndex = 0;
+      });
+      _playStoryStep(chapters, 0);
+    }
+  }
+
+  void _playStoryStep(List<Map<String, dynamic>> chapters, int step) {
+    if (step >= chapters.length || !_isStoryPlaying) {
+      setState(() {
+        _isStoryPlaying = false;
+        _activeStorySentenceIndex = null;
+      });
+      return;
+    }
+
+    setState(() => _activeStorySentenceIndex = step);
+    final text = chapters[step]['sentence_de'] as String? ?? '';
+    _playAudio(text);
+
+    final delay = (text.length / 10).clamp(3, 7).toInt();
+    _storyTimer = Timer(Duration(seconds: delay), () {
+      if (!mounted || !_isStoryPlaying) return;
+      _playStoryStep(chapters, step + 1);
+    });
+  }
+
+  void _showTokenModal(BuildContext context, Map<String, dynamic> token, bool isDark, bool isArabic) {
+    final text = token['text'] as String? ?? '';
+    final lemma = token['lemma'] as String? ?? text;
+    final gender = token['gender'] as String? ?? '';
+    final ar = token['ar'] as String? ?? '';
+    final en = token['en'] as String? ?? '';
+
+    Color genderColor = Colors.grey;
+    if (gender == 'der') genderColor = Colors.blue;
+    if (gender == 'die') genderColor = Colors.red;
+    if (gender == 'das') genderColor = Colors.green;
+
+    _playAudio(text);
+
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(22)),
+      ),
+      builder: (ctx) {
+        return Container(
+          padding: const EdgeInsets.all(22),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                children: [
+                  if (gender.isNotEmpty) ...[
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                      decoration: BoxDecoration(
+                        color: genderColor.withValues(alpha: 0.15),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        gender,
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: genderColor,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                  ],
+                  Text(
+                    text,
+                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900),
+                  ),
+                  const Spacer(),
+                  IconButton(
+                    icon: const Icon(Icons.volume_up_rounded, color: AppColors.primary, size: 26),
+                    onPressed: () => _playAudio(text),
+                  ),
+                ],
+              ),
+              if (lemma != text) ...[
+                const SizedBox(height: 2),
+                Text(
+                  'Grundform: $lemma',
+                  style: const TextStyle(fontSize: 12, color: Colors.grey),
+                ),
+              ],
+              const Divider(height: 24),
+              Row(
+                children: [
+                  const Text('🇸🇦  ', style: TextStyle(fontSize: 18)),
+                  Expanded(
+                    child: Text(
+                      ar.isNotEmpty ? ar : '—',
+                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  const Text('🇬🇧  ', style: TextStyle(fontSize: 18)),
+                  Expanded(
+                    child: Text(
+                      en.isNotEmpty ? en : '—',
+                      style: TextStyle(fontSize: 14, color: Colors.grey.shade700),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+            ],
+          ),
+        );
+      },
     );
   }
 

@@ -35,9 +35,14 @@ class _SyllabusLevelDef {
     required this.titleDe,
     required this.titleEn,
     required this.titleAr,
-    required this.descriptionEn,
-    required this.descriptionAr,
-    required this.gradient,
+    required this.subtitleEn,
+    required this.subtitleAr,
+    required this.cardBgColor,
+    required this.cardDarkBgColor,
+    required this.textColor,
+    required this.accentColor,
+    this.badgeAsset,
+    this.badgeIcon,
     required this.units,
   });
 
@@ -46,9 +51,14 @@ class _SyllabusLevelDef {
   final String titleDe;
   final String titleEn;
   final String titleAr;
-  final String descriptionEn;
-  final String descriptionAr;
-  final List<Color> gradient;
+  final String subtitleEn;
+  final String subtitleAr;
+  final Color cardBgColor;
+  final Color cardDarkBgColor;
+  final Color textColor;
+  final Color accentColor;
+  final String? badgeAsset;
+  final IconData? badgeIcon;
   final List<_SyllabusUnitDef> units;
 }
 
@@ -57,12 +67,16 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
   _SyllabusLevelDef(
     level: 'Intro',
     sectionNumber: 1,
-    titleDe: 'Einführung: Grundlagen',
-    titleEn: 'Intro: Absolute Foundations',
-    titleAr: 'المقدمة: الأساسيات الأولى',
-    descriptionEn: 'Alphabet, pronunciation, numbers 0-100, and first greetings.',
-    descriptionAr: 'الأبجدية الألمانية، قواعد النطق، الأرقام حتى 100، والتحيات اليومية.',
-    gradient: [Color(0xFF2C3E50), Color(0xFF34495E)],
+    titleDe: 'Einführung',
+    titleEn: 'Intro',
+    titleAr: 'المقدمة',
+    subtitleEn: 'Alphabet, pronunciation & first words',
+    subtitleAr: 'الأبجدية وقواعد النطق والأرقام الأولى',
+    cardBgColor: Color(0xFFFDE8E4), // Warm soft rose/peach like template card 1
+    cardDarkBgColor: Color(0xFF2C1E1B),
+    textColor: Color(0xFFC0392B), // Deep reddish/rust tone
+    accentColor: Color(0xFFE74C3C),
+    badgeAsset: 'assets/brand/intro.png',
     units: [
       _SyllabusUnitDef(
         unitNumber: 1,
@@ -87,12 +101,16 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
   _SyllabusLevelDef(
     level: 'A1',
     sectionNumber: 2,
-    titleDe: 'A1: Elementare Sprachverwendung',
-    titleEn: 'A1: Beginner Elementary',
-    titleAr: 'A1: المستوى المبتدئ الأساسي',
-    descriptionEn: 'Essential everyday vocabulary, food, family, routine, and Goethe A1 exam prep.',
-    descriptionAr: 'مفردات الحياة اليومية، العائلة، الطعام، الروتين، والتجهيز لامتحان Goethe A1.',
-    gradient: [Color(0xFFFF5F1F), Color(0xFFE04A0B)], // Deutschy Fiery Orange
+    titleDe: 'A1 · Anfänger',
+    titleEn: 'A1 · Beginner',
+    titleAr: 'A1 · المستوى المبتدئ',
+    subtitleEn: 'Daily life, family, food & routine',
+    subtitleAr: 'الحياة اليومية، العائلة، الطعام والروتين',
+    cardBgColor: Color(0xFFE3EDFD), // Soft baby blue like template card 2
+    cardDarkBgColor: Color(0xFF1B2333),
+    textColor: Color(0xFF2962FF), // Deep vibrant blue
+    accentColor: Color(0xFF3D5AFE),
+    badgeIcon: Icons.translate_rounded,
     units: [
       _SyllabusUnitDef(
         unitNumber: 3,
@@ -173,12 +191,16 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
   _SyllabusLevelDef(
     level: 'A2',
     sectionNumber: 3,
-    titleDe: 'A2: Grundlegende Kenntnisse',
-    titleEn: 'A2: Pre-Intermediate',
-    titleAr: 'A2: المستوى الأساسي المتوسط',
-    descriptionEn: 'Travel, past tense (Perfekt), modal verbs, and living in Germany.',
-    descriptionAr: 'السفر، زمن الماضي، الأفعال المساعدة، والحياة العملية في ألمانيا.',
-    gradient: [Color(0xFF0D9488), Color(0xFF0F766E)], // Teal
+    titleDe: 'A2 · Grundstufe',
+    titleEn: 'A2 · Elementary',
+    titleAr: 'A2 · المستوى الأساسي',
+    subtitleEn: 'Travel, past tense & hobbies',
+    subtitleAr: 'السفر، زمن الماضي، والهوايات والمشاعر',
+    cardBgColor: Color(0xFFFDF0D5), // Soft pastel amber/sand like template card 3
+    cardDarkBgColor: Color(0xFF2C2415),
+    textColor: Color(0xFFB76E00), // Rich amber brown
+    accentColor: Color(0xFFD97706),
+    badgeIcon: Icons.explore_rounded,
     units: [
       _SyllabusUnitDef(
         unitNumber: 12,
@@ -267,12 +289,16 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
   _SyllabusLevelDef(
     level: 'B1',
     sectionNumber: 4,
-    titleDe: 'B1: Selbstständige Sprachverwendung',
-    titleEn: 'B1: Intermediate (Ausbildung Ready)',
-    titleAr: 'B1: المستوى المتوسط (جاهزية الأوسبيلدونغ)',
-    descriptionEn: 'Fluency in complex conversations, job interviews, and Ausbildung requirements.',
-    descriptionAr: 'الطلاقة في الحوارات المعقدة، مقابلات العمل، ومتطلبات الأوسبيلدونغ والجامعات.',
-    gradient: [Color(0xFF6366F1), Color(0xFF4F46E5)], // Indigo
+    titleDe: 'B1 · Mittelstufe',
+    titleEn: 'B1 · Intermediate',
+    titleAr: 'B1 · المستوى المتوسط',
+    subtitleEn: 'Ausbildung ready, work & fluent discussions',
+    subtitleAr: 'جاهزية الأوسبيلدونغ، العمل والحوارات المتقدمة',
+    cardBgColor: Color(0xFFE8F5E9), // Soft fresh mint green
+    cardDarkBgColor: Color(0xFF17291B),
+    textColor: Color(0xFF2E7D32), // Deep forest green
+    accentColor: Color(0xFF43A047),
+    badgeIcon: Icons.psychology_rounded,
     units: [
       _SyllabusUnitDef(
         unitNumber: 22,
@@ -305,12 +331,16 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
   _SyllabusLevelDef(
     level: 'B2',
     sectionNumber: 5,
-    titleDe: 'B2: Vertiefte Sprachkompetenz',
-    titleEn: 'B2: Upper Intermediate (University & Career)',
-    titleAr: 'B2: المستوى المتقدم (الدراسة الجامعية والمهنة)',
-    descriptionEn: 'Academic reading, professional discussions, and advanced grammar nuance.',
-    descriptionAr: 'القراءة الأكاديمية، النقاشات المهنية الدقيقة، ودقة التعبير المتقدمة.',
-    gradient: [Color(0xFF8B5CF6), Color(0xFF7C3AED)], // Violet
+    titleDe: 'B2 · Fortgeschritten',
+    titleEn: 'B2 · Upper Intermediate',
+    titleAr: 'B2 · المستوى المتقدم',
+    subtitleEn: 'University, professional & academic fluency',
+    subtitleAr: 'الدراسة الجامعية، المصطلحات التخصصية والطلاقة',
+    cardBgColor: Color(0xFFF3E8FF), // Soft lavender purple
+    cardDarkBgColor: Color(0xFF261A35),
+    textColor: Color(0xFF7E22CE), // Rich royal purple
+    accentColor: Color(0xFF9333EA),
+    badgeIcon: Icons.school_rounded,
     units: [
       _SyllabusUnitDef(
         unitNumber: 25,
@@ -482,12 +512,18 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
               ),
             ),
           ),
+          const SizedBox(width: 6),
+          IconButton(
+            tooltip: isArabic ? 'جلسات الاستماع' : 'Listening Sessions',
+            icon: const Icon(Icons.headphones_rounded, color: AppColors.primary, size: 22),
+            onPressed: () => context.push('/listening'),
+          ),
         ],
       ),
     );
   }
 
-  /// Single continuous scroll view showing A0 -> A1 -> A2 -> B1 -> B2 in one fluid path
+  /// Single continuous scroll view showing Intro -> A1 -> A2 -> B1 -> B2 in one fluid path
   Widget _buildContinuousPath(BuildContext context, bool isDark, bool isArabic) {
     final repo = ref.watch(contentRepositoryProvider);
 
@@ -495,6 +531,69 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
       controller: _scrollController,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       children: [
+        // Listening Sessions Card
+        GestureDetector(
+          onTap: () => context.push('/listening'),
+          child: Container(
+            margin: const EdgeInsets.only(bottom: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: isDark
+                    ? [const Color(0xFF1E2638), const Color(0xFF171B26)]
+                    : [const Color(0xFFE8F0FE), const Color(0xFFD6E4FF)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: const Color(0xFF2962FF).withValues(alpha: 0.25),
+              ),
+            ),
+            child: Row(
+              children: [
+                Container(
+                  width: 44,
+                  height: 44,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFF2962FF),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(Icons.headphones_rounded, color: Colors.white, size: 22),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isArabic ? 'جلسات الاستماع (15 / 30 / 60 دقيقة)' : 'Listening Sessions (15/30/60m)',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 14.5,
+                          color: isDark ? Colors.white : const Color(0xFF1A365D),
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        isArabic ? 'استماع متواصل في الخلفية لتقوية الأذن' : 'Continuous background audio immersion',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: isDark ? Colors.white70 : const Color(0xFF2B6CB0),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 16,
+                  color: isDark ? Colors.white60 : const Color(0xFF2962FF),
+                ),
+              ],
+            ),
+          ),
+        ),
         for (final section in _syllabusLevels) ...[
           // Section Level Banner (A0, A1, A2...)
           Container(
@@ -517,65 +616,211 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
     );
   }
 
-  /// Large, immersive Section Banner (like Duolingo Section Headers)
+  /// Section Banner styled precisely like the modern Food Delivery card template:
+  /// - Soft pastel background matching level theme
+  /// - Bold colored title + subtitle
+  /// - Meta row: rating, units/time, level badge
+  /// - Outer & inner circular "dish" badge on the right (with intro.png for Intro)
   Widget _buildSectionBanner(_SyllabusLevelDef section, bool isDark, bool isArabic) {
+    final bgColor = isDark ? section.cardDarkBgColor : section.cardBgColor;
+    final primaryTextColor = isDark ? Colors.white : section.textColor;
+    final secondaryTextColor = isDark ? Colors.white70 : section.textColor.withValues(alpha: 0.78);
+
     return Container(
-      padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: section.gradient,
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+        color: bgColor,
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(
+          color: isDark ? Colors.white10 : section.textColor.withValues(alpha: 0.12),
+          width: 1,
         ),
-        borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: section.gradient.first.withValues(alpha: 0.25),
-            blurRadius: 12,
-            offset: const Offset(0, 4),
+            color: (isDark ? Colors.black38 : section.textColor.withValues(alpha: 0.08)),
+            blurRadius: 16,
+            offset: const Offset(0, 5),
           ),
         ],
       ),
-      child: Row(
+      clipBehavior: Clip.antiAlias,
+      child: Stack(
+        alignment: isArabic ? Alignment.centerLeft : Alignment.centerRight,
         children: [
-          Container(
-            width: 52,
-            height: 52,
-            decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.2),
-              shape: BoxShape.circle,
-            ),
-            child: Center(
-              child: Text(
-                section.level,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w900,
-                  fontSize: section.level.length > 2 ? 14 : 19,
-                ),
+          // Background ambient circular ring accent
+          Positioned(
+            right: isArabic ? null : -24,
+            left: isArabic ? -24 : null,
+            top: -24,
+            bottom: -24,
+            child: Container(
+              width: 140,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: (isDark ? Colors.white : Colors.white).withValues(alpha: 0.15),
               ),
             ),
           ),
-          const SizedBox(width: 14),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+            child: Row(
               children: [
-                Text(
-                  isArabic ? section.titleAr : section.titleEn,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w900,
-                    fontSize: 17,
+                // Left Column: Content
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      // Level Title (Bold & Colored)
+                      Text(
+                        isArabic ? section.titleAr : section.titleDe,
+                        style: TextStyle(
+                          color: primaryTextColor,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 19,
+                          letterSpacing: -0.3,
+                        ),
+                      ),
+                      const SizedBox(height: 3),
+
+                      // Subtitle / Description
+                      Text(
+                        isArabic ? section.subtitleAr : section.subtitleEn,
+                        style: TextStyle(
+                          color: secondaryTextColor,
+                          fontSize: 12.5,
+                          fontWeight: FontWeight.w500,
+                          height: 1.25,
+                        ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      const SizedBox(height: 12),
+
+                      // Meta Info Row (Star rating, Unit count, Level pill)
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.star_rounded,
+                            size: 16,
+                            color: isDark ? Colors.amber : section.textColor,
+                          ),
+                          const SizedBox(width: 3),
+                          Text(
+                            '4.9',
+                            style: TextStyle(
+                              color: primaryTextColor,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          Icon(
+                            Icons.layers_rounded,
+                            size: 14,
+                            color: secondaryTextColor,
+                          ),
+                          const SizedBox(width: 3),
+                          Text(
+                            '${section.units.length} ${isArabic ? 'وحدات' : 'Units'}',
+                            style: TextStyle(
+                              color: secondaryTextColor,
+                              fontSize: 11.5,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: (isDark ? Colors.white12 : Colors.white.withValues(alpha: 0.7)),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Text(
+                              section.level,
+                              style: TextStyle(
+                                color: primaryTextColor,
+                                fontSize: 10.5,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 3),
-                Text(
-                  isArabic ? section.descriptionAr : section.descriptionEn,
-                  style: TextStyle(
-                    color: Colors.white.withValues(alpha: 0.88),
-                    fontSize: 12,
-                    height: 1.3,
+
+                const SizedBox(width: 14),
+
+                // Right Column: Circular "Plate" Badge (Template style)
+                Container(
+                  width: 84,
+                  height: 84,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: isDark ? const Color(0xFF1F1F24) : Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.10),
+                        blurRadius: 10,
+                        offset: const Offset(0, 4),
+                      ),
+                      BoxShadow(
+                        color: (isDark ? Colors.black26 : section.textColor.withValues(alpha: 0.08)),
+                        blurRadius: 3,
+                        offset: const Offset(0, 1),
+                      ),
+                    ],
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: isDark
+                            ? section.cardDarkBgColor
+                            : section.cardBgColor.withValues(alpha: 0.55),
+                      ),
+                      child: Center(
+                        child: section.badgeAsset != null
+                            ? ClipOval(
+                                child: Image.asset(
+                                  section.badgeAsset!,
+                                  width: 62,
+                                  height: 62,
+                                  fit: BoxFit.contain,
+                                  errorBuilder: (context, error, stackTrace) => Icon(
+                                    Icons.school_rounded,
+                                    size: 34,
+                                    color: section.accentColor,
+                                  ),
+                                ),
+                              )
+                            : Container(
+                                width: 54,
+                                height: 54,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: isDark
+                                      ? Colors.white.withValues(alpha: 0.08)
+                                      : Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: section.accentColor.withValues(alpha: 0.15),
+                                      blurRadius: 6,
+                                      offset: const Offset(0, 2),
+                                    ),
+                                  ],
+                                ),
+                                child: Icon(
+                                  section.badgeIcon ?? Icons.translate_rounded,
+                                  size: 28,
+                                  color: section.accentColor,
+                                ),
+                              ),
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -787,6 +1032,14 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
       case LessonType.vocabulary:
         icon = Icons.translate_rounded;
         iconColor = Colors.teal;
+        break;
+      case LessonType.text:
+        icon = Icons.menu_book_rounded;
+        iconColor = Colors.indigo;
+        break;
+      case LessonType.story:
+        icon = Icons.auto_stories_rounded;
+        iconColor = Colors.deepOrange;
         break;
     }
 

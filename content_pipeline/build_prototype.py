@@ -171,7 +171,8 @@ CREATE TABLE IF NOT EXISTS lessons (
     sort_order      INTEGER NOT NULL,
     lesson_type     TEXT NOT NULL,
     pass_threshold  REAL DEFAULT 0.70,
-    grammar_content TEXT
+    grammar_content TEXT,
+    content_json    TEXT
 );
 
 -- 7. Lesson items
@@ -619,6 +620,219 @@ READING_PASSAGE_FAMILY = {
     ),
 }
 
+# ──────────────────────────────────────────────
+# 1. TEXT LESSON (Dialogue / Letter / Short Article)
+# Sentence-by-sentence German + Arabic, vocabulary notes, audio, comprehension
+# ──────────────────────────────────────────────
+TEXT_LESSON_FAMILY = {
+    "title_de": "Ein Brief an die Familie",
+    "title_ar": "رسالة إلى العائلة",
+    "title_en": "A Letter to the Family",
+    "type": "letter",
+    "sender": "Layla",
+    "recipient": "Liebe Familie",
+    "sentences": [
+        {
+            "de": "Liebe Familie, wie geht es euch?",
+            "ar": "عائلتي الحبيبة، كيف حالكم جميعاً؟",
+            "en": "Dear family, how are you all?"
+        },
+        {
+            "de": "Ich wohne jetzt seit drei Monaten in Berlin und lerne jeden Tag fleißig Deutsch.",
+            "ar": "أنا أسكن الآن منذ ثلاثة أشهر في برلين وأتعلم الألمانية بجد واجتهاد كل يوم.",
+            "en": "I have been living in Berlin for three months now and study German diligently every day."
+        },
+        {
+            "de": "Meine Wohnung ist klein, aber sehr gemütlich.",
+            "ar": "شقتي صغيرة، لكنها مريحة جداً ومحببة.",
+            "en": "My apartment is small, but very cozy."
+        },
+        {
+            "de": "Mein Nachbar Herr Weber ist sehr freundlich und hilft mir oft beim Einkaufen.",
+            "ar": "جاري السيد فيبر ودود للغاية ويساعدني كثيراً في التسوق.",
+            "en": "My neighbor Mr. Weber is very friendly and often helps me with shopping."
+        },
+        {
+            "de": "Am Wochenende koche ich zusammen mit meinen neuen Freunden aus dem Sprachkurs.",
+            "ar": "في عطلة نهاية الأسبوع أطبخ مع أصدقائي الجدد من دورة اللغة.",
+            "en": "On the weekend I cook together with my new friends from the language course."
+        },
+        {
+            "de": "Ich vermisse euch sehr und hoffe, dass wir uns bald wiedersehen.",
+            "ar": "أفتقدكم كثيراً وآمل من قلبي أن نلتقي قريباً.",
+            "en": "I miss you all very much and hope that we see each other again soon."
+        },
+        {
+            "de": "Herzliche Grüße aus Berlin, eure Layla.",
+            "ar": "تحياتي القلبية الحارة من برلين، ابنتكم ليلى.",
+            "en": "Warm regards from Berlin, your Layla."
+        }
+    ],
+    "vocabulary_notes": [
+        {"word": "die Wohnung", "gender": "die", "ar": "الشقة السكنية", "en": "apartment"},
+        {"word": "gemütlich", "gender": "", "ar": "مريح / دافئ", "en": "cozy / comfortable"},
+        {"word": "der Nachbar", "gender": "der", "ar": "الجار", "en": "neighbor"},
+        {"word": "vermissen", "gender": "", "ar": "يشتاق / يفتقد", "en": "to miss"},
+        {"word": "hoffen", "gender": "", "ar": "يأمل / يتمنى", "en": "to hope"}
+    ],
+    "questions": [
+        {
+            "question_de": "Wo wohnt Layla jetzt?",
+            "question_ar": "أين تسكن ليلى الآن؟",
+            "question_en": "Where does Layla live now?",
+            "options": ["In Berlin", "In München", "In Hamburg", "In Wien"],
+            "correct": "In Berlin"
+        },
+        {
+            "question_de": "Wie ist ihr Nachbar Herr Weber?",
+            "question_ar": "كيف يصف النص جارها السيد فيبر؟",
+            "question_en": "How is her neighbor Mr. Weber?",
+            "options": ["Sehr freundlich", "Sehr unfreundlich", "Laut und böse", "Alt und müde"],
+            "correct": "Sehr freundlich"
+        },
+        {
+            "question_de": "Was macht Layla am Wochenende?",
+            "question_ar": "ماذا تفعل ليلى في عطلة نهاية الأسبوع؟",
+            "question_en": "What does Layla do on the weekend?",
+            "options": ["Sie kocht mit Freunden", "Sie arbeitet im Büro", "Sie schläft nur", "Sie reist nach Rom"],
+            "correct": "Sie kocht mit Freunden"
+        }
+    ]
+}
+
+# ──────────────────────────────────────────────
+# 2. STORY LESSON (Interactive Story with Tap-to-Translate & Karaoke Highlighting)
+# ──────────────────────────────────────────────
+STORY_LESSON_FAMILY = {
+    "title_de": "Der Überraschungsbesuch",
+    "title_ar": "الزيارة المفاجئة",
+    "title_en": "The Surprise Visit",
+    "level": "A1",
+    "chapters": [
+        {
+            "sentence_de": "Es ist Samstagmorgen in München.",
+            "sentence_ar": "إنه صباح يوم السبت في ميونيخ.",
+            "sentence_en": "It is Saturday morning in Munich.",
+            "tokens": [
+                {"text": "Es", "lemma": "es", "ar": "هو/إنه", "en": "it"},
+                {"text": "ist", "lemma": "sein", "ar": "يكون", "en": "is"},
+                {"text": "Samstagmorgen", "lemma": "Samstagmorgen", "gender": "der", "ar": "صباح السبت", "en": "Saturday morning"},
+                {"text": "in", "lemma": "in", "ar": "في", "en": "in"},
+                {"text": "München.", "lemma": "München", "ar": "ميونيخ", "en": "Munich"}
+            ]
+        },
+        {
+            "sentence_de": "Ahmad sitzt in der Küche und trinkt heißen Kaffee.",
+            "sentence_ar": "أحمد يجلس في المطبخ ويشرب قهوة ساخنة.",
+            "sentence_en": "Ahmad sits in the kitchen and drinks hot coffee.",
+            "tokens": [
+                {"text": "Ahmad", "lemma": "Ahmad", "ar": "أحمد", "en": "Ahmad"},
+                {"text": "sitzt", "lemma": "sitzen", "ar": "يجلس", "en": "sits"},
+                {"text": "in", "lemma": "in", "ar": "في", "en": "in"},
+                {"text": "der", "lemma": "der", "ar": "الـ", "en": "the"},
+                {"text": "Küche", "lemma": "Küche", "gender": "die", "ar": "المطبخ", "en": "kitchen"},
+                {"text": "und", "lemma": "und", "ar": "و", "en": "and"},
+                {"text": "trinkt", "lemma": "trinken", "ar": "يشرب", "en": "drinks"},
+                {"text": "heißen", "lemma": "heiß", "ar": "ساخناً", "en": "hot"},
+                {"text": "Kaffee.", "lemma": "Kaffee", "gender": "der", "ar": "قهوة", "en": "coffee"}
+            ]
+        },
+        {
+            "sentence_de": "Plötzlich klingelt es laut an der Tür.",
+            "sentence_ar": "فجأة يدق جرس الباب بصوت عالٍ.",
+            "sentence_en": "Suddenly the doorbell rings loudly at the door.",
+            "tokens": [
+                {"text": "Plötzlich", "lemma": "plötzlich", "ar": "فجأة", "en": "suddenly"},
+                {"text": "klingelt", "lemma": "klingeln", "ar": "يدق الجرس", "en": "rings"},
+                {"text": "es", "lemma": "es", "ar": "هو", "en": "it"},
+                {"text": "laut", "lemma": "laut", "ar": "بصوت عالٍ", "en": "loudly"},
+                {"text": "an", "lemma": "an", "ar": "على / عند", "en": "at"},
+                {"text": "der", "lemma": "der", "ar": "الـ", "en": "the"},
+                {"text": "Tür.", "lemma": "Tür", "gender": "die", "ar": "الباب", "en": "door"}
+            ]
+        },
+        {
+            "sentence_de": "Er öffnet die Tür und sieht seinen Bruder Ali!",
+            "sentence_ar": "يفتح الباب ويرى أخاه علي!",
+            "sentence_en": "He opens the door and sees his brother Ali!",
+            "tokens": [
+                {"text": "Er", "lemma": "er", "ar": "هو", "en": "he"},
+                {"text": "öffnet", "lemma": "öffnen", "ar": "يفتح", "en": "opens"},
+                {"text": "die", "lemma": "die", "ar": "الـ", "en": "the"},
+                {"text": "Tür", "lemma": "Tür", "gender": "die", "ar": "الباب", "en": "door"},
+                {"text": "und", "lemma": "und", "ar": "و", "en": "and"},
+                {"text": "sieht", "lemma": "sehen", "ar": "يرى", "en": "sees"},
+                {"text": "seinen", "lemma": "sein", "ar": "ـه (ملكية)", "en": "his"},
+                {"text": "Bruder", "lemma": "Bruder", "gender": "der", "ar": "أخ", "en": "brother"},
+                {"text": "Ali!", "lemma": "Ali", "ar": "علي", "en": "Ali"}
+            ]
+        },
+        {
+            "sentence_de": "Ali lacht fröhlich und sagt: 'Überraschung!'",
+            "sentence_ar": "علي يضحك فرحاً ويقول: 'مفاجأة!'",
+            "sentence_en": "Ali laughs happily and says: 'Surprise!'",
+            "tokens": [
+                {"text": "Ali", "lemma": "Ali", "ar": "علي", "en": "Ali"},
+                {"text": "lacht", "lemma": "lachen", "ar": "يضحك", "en": "laughs"},
+                {"text": "fröhlich", "lemma": "fröhlich", "ar": "بفرح ومرح", "en": "happily"},
+                {"text": "und", "lemma": "und", "ar": "و", "en": "and"},
+                {"text": "sagt:", "lemma": "sagen", "ar": "يقول", "en": "says"},
+                {"text": "'Überraschung!'", "lemma": "Überraschung", "gender": "die", "ar": "مفاجأة!", "en": "surprise!"}
+            ]
+        },
+        {
+            "sentence_de": "Die beiden Brüder umarmen sich herzlich.",
+            "sentence_ar": "الأخوان يتعانقان بحرارة ومحبة.",
+            "sentence_en": "The two brothers hug each other warmly.",
+            "tokens": [
+                {"text": "Die", "lemma": "die", "ar": "الـ", "en": "the"},
+                {"text": "beiden", "lemma": "beide", "ar": "كلا / الاثنين", "en": "both"},
+                {"text": "Brüder", "lemma": "Bruder", "gender": "der", "ar": "الإخوة", "en": "brothers"},
+                {"text": "umarmen", "lemma": "umarmen", "ar": "يتعانقان", "en": "hug"},
+                {"text": "sich", "lemma": "sich", "ar": "بعضهما", "en": "each other"},
+                {"text": "herzlich.", "lemma": "herzlich", "ar": "بحرارة ومن القلب", "en": "warmly"}
+            ]
+        },
+        {
+            "sentence_de": "Sie frühstücken zusammen und erzählen alte Familiengeschichten.",
+            "sentence_ar": "يتناولان الفطور معاً ويرويان قصص العائلة القديمة.",
+            "sentence_en": "They have breakfast together and share old family stories.",
+            "tokens": [
+                {"text": "Sie", "lemma": "sie", "ar": "هما / هم", "en": "they"},
+                {"text": "frühstücken", "lemma": "frühstücken", "ar": "يتناولان الفطور", "en": "eat breakfast"},
+                {"text": "zusammen", "lemma": "zusammen", "ar": "معاً", "en": "together"},
+                {"text": "und", "lemma": "und", "ar": "و", "en": "and"},
+                {"text": "erzählen", "lemma": "erzählen", "ar": "يرويان / يحكيان", "en": "tell / share"},
+                {"text": "alte", "lemma": "alt", "ar": "قديمة", "en": "old"},
+                {"text": "Familiengeschichten.", "lemma": "Familiengeschichte", "gender": "die", "ar": "قصص عائلية", "en": "family stories"}
+            ]
+        }
+    ],
+    "questions": [
+        {
+            "question_de": "Was trinkt Ahmad am Morgen?",
+            "question_ar": "ماذا يشرب أحمد في الصباح؟",
+            "question_en": "What does Ahmad drink in the morning?",
+            "options": ["Heißen Kaffee", "Kalten Tee", "Frischen Orangensaft", "Mineralwasser"],
+            "correct": "Heißen Kaffee"
+        },
+        {
+            "question_de": "Wer steht überraschend an der Tür?",
+            "question_ar": "من يقف فجأة عند الباب كزيارة مفاجئة؟",
+            "question_en": "Who is standing at the door as a surprise?",
+            "options": ["Sein Bruder Ali", "Sein Nachbar Herr Weber", "Seine Großmutter", "Sein Arbeitskollege"],
+            "correct": "Sein Bruder Ali"
+        },
+        {
+            "question_de": "Was machen die beiden Brüder am Ende?",
+            "question_ar": "ماذا يفعل الأخوان في نهاية القصة؟",
+            "question_en": "What do the two brothers do at the end?",
+            "options": ["Sie frühstücken zusammen", "Sie gehen einkaufen", "Sie streiten laut", "Sie fahren nach Berlin"],
+            "correct": "Sie frühstücken zusammen"
+        }
+    ]
+}
+
 
 # ──────────────────────────────────────────────
 # SKILL WEIGHTS
@@ -919,6 +1133,28 @@ def main():
         "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
         (gram_lid, unit_id, "A1", "Grammatik: Artikel", "Grammar: Articles",
          lesson_sort, "grammar", GRAMMAR_ARTICLES),
+    )
+    lesson_sort += 1
+
+    # ── Text Lesson (Brief / Dialog) ──
+    text_lid = reg.lesson_id("a1_family_text_1")
+    cur.execute(
+        "INSERT INTO lessons "
+        "(id, unit_id, level, title_de, title_en, sort_order, lesson_type, content_json) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        (text_lid, unit_id, "A1", "Lesetext: Ein Brief aus Berlin", "Reading: A Letter from Berlin",
+         lesson_sort, "text", json.dumps(TEXT_LESSON_FAMILY, ensure_ascii=False)),
+    )
+    lesson_sort += 1
+
+    # ── Story Lesson (Interaktive Geschichte) ──
+    story_lid = reg.lesson_id("a1_family_story_1")
+    cur.execute(
+        "INSERT INTO lessons "
+        "(id, unit_id, level, title_de, title_en, sort_order, lesson_type, content_json) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        (story_lid, unit_id, "A1", "Geschichte: Der Überraschungsbesuch", "Story: The Surprise Visit",
+         lesson_sort, "story", json.dumps(STORY_LESSON_FAMILY, ensure_ascii=False)),
     )
     lesson_sort += 1
 

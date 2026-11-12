@@ -68,6 +68,15 @@ class ContentRepository {
     }
   }
 
+  /// Get lesson by ID
+  CurriculumLesson? getLessonById(int id) {
+    try {
+      return _lessons.firstWhere((l) => l.id == id);
+    } catch (_) {
+      return null;
+    }
+  }
+
   /// Get all units for a given CEFR level (e.g. 'A1')
   List<CurriculumUnit> getUnitsForLevel(String level) {
     return _units.where((u) => u.level.toUpperCase() == level.toUpperCase()).toList()

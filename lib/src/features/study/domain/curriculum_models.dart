@@ -46,7 +46,9 @@ enum LessonType {
   grammar,
   review,
   unitTest,
-  levelTest;
+  levelTest,
+  text,
+  story;
 
   static LessonType fromString(String val) {
     switch (val) {
@@ -58,6 +60,10 @@ enum LessonType {
         return LessonType.unitTest;
       case 'level_test':
         return LessonType.levelTest;
+      case 'text':
+        return LessonType.text;
+      case 'story':
+        return LessonType.story;
       case 'vocabulary':
       default:
         return LessonType.vocabulary;
@@ -77,6 +83,7 @@ class CurriculumLesson {
     required this.type,
     this.passThreshold = 0.70,
     this.grammarContent,
+    this.contentJson,
   });
 
   final int id;
@@ -88,6 +95,7 @@ class CurriculumLesson {
   final LessonType type;
   final double passThreshold;
   final String? grammarContent;
+  final String? contentJson;
 
   String localizedTitle(String languageCode) {
     if (languageCode == 'ar') {
@@ -102,6 +110,10 @@ class CurriculumLesson {
           return 'اختبار الوحدة';
         case LessonType.levelTest:
           return 'اختبار اجتياز المستوى $level';
+        case LessonType.text:
+          return 'نص: $titleDe';
+        case LessonType.story:
+          return 'قصة: $titleDe';
       }
     }
     return titleEn;
@@ -118,6 +130,7 @@ class CurriculumLesson {
       type: LessonType.fromString(json['lesson_type'] as String? ?? 'vocabulary'),
       passThreshold: (json['pass_threshold'] as num?)?.toDouble() ?? 0.70,
       grammarContent: json['grammar_content'] as String?,
+      contentJson: json['content_json'] as String?,
     );
   }
 }
