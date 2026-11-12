@@ -1,0 +1,66 @@
+lemma	pos	gender	plural	translation_en	translation_ar
+Mutter	noun	die	Mütter	mother	أمّ
+Vater	noun	der	Väter	father	أب
+Eltern	noun	die		parents	والِدان
+Kind	noun	das	Kinder	child	طفل
+Sohn	noun	der	Söhne	son	ابن
+Tochter	noun	die	Töchter	daughter	ابنة
+Bruder	noun	der	Brüder	brother	أخ
+Schwester	noun	die	Schwestern	sister	أخت
+Großmutter	noun	die	Großmütter	grandmother	جدّة
+Großvater	noun	der	Großväter	grandfather	جدّ
+Onkel	noun	der	Onkel	uncle	عمّ / خال
+Tante	noun	die	Tanten	aunt	عمّة / خالة
+Cousin	noun	der	Cousins	male cousin	ابن عمّ / ابن خال
+Cousine	noun	die	Cousinen	female cousin	بنت عمّ / بنت خال
+Enkel	noun	der	Enkel	grandson	حفيد
+Enkelin	noun	die	Enkelinnen	granddaughter	حفيدة
+Neffe	noun	der	Neffen	nephew	ابن الأخ / ابن الأخت
+Nichte	noun	die	Nichten	niece	بنت الأخ / بنت الأخت
+Ehemann	noun	der	Ehemänner	husband	زوج
+Ehefrau	noun	die	Ehefrauen	wife	زوجة
+Baby	noun	das	Babys	baby	رضيع
+Familie	noun	die	Familien	family	عائلة
+Mensch	noun	der	Menschen	person / human	إنسان
+Frau	noun	die	Frauen	woman	امرأة
+Mann	noun	der	Männer	man	رجل
+Mädchen	noun	das	Mädchen	girl	فتاة
+Junge	noun	der	Jungen	boy	ولد
+Freund	noun	der	Freunde	friend (male)	صديق
+Freundin	noun	die	Freundinnen	friend (female)	صديقة
+Nachbar	noun	der	Nachbarn	neighbor (male)	جار
+Nachbarin	noun	die	Nachbarinnen	neighbor (female)	جارة
+Hochzeit	noun	die	Hochzeiten	wedding	حفل زفاف
+Geburtstag	noun	der	Geburtstage	birthday	عيد ميلاد
+Geburt	noun	die	Geburten	birth	ولادة
+Zuhause	noun	das		home	بيت / منزل
+Name	noun	der	Namen	name	اسم
+Alter	noun	das		age	عمر / سِنّ
+lieben	verb			to love	يُحِبّ
+heiraten	verb			to marry	يتزوّج
+kennen	verb			to know (a person)	يعرف
+besuchen	verb			to visit	يزور
+helfen	verb			to help	يُساعِد
+spielen	verb			to play	يلعب
+wohnen	verb			to live / reside	يسكن
+leben	verb			to live / be alive	يعيش
+sprechen	verb			to speak	يتكلّم
+einladen	verb			to invite	يدعو
+vorstellen	verb			to introduce	يُقدِّم
+kümmern	verb			to take care of	يعتني بِـ
+sorgen	verb			to care / worry	يهتمّ بِـ
+vermissen	verb			to miss (someone)	يشتاق إلى
+erziehen	verb			to raise / bring up	يُربّي
+streiten	verb			to argue	يتشاجر
+jung	adj			young	شابّ
+alt	adj			old	كبير في السنّ
+verheiratet	adj			married	متزوّج
+ledig	adj			single / unmarried	أعزب
+schwanger	adj			pregnant	حامل
+nett	adj			nice / kind	لطيف
+freundlich	adj			friendly	ودود
+lieb	adj			dear / sweet	حبيب / عزيز
+erwachsen	adj			adult / grown-up	بالِغ
+verwandt	adj			related	قريب (من العائلة)
+zusammen	adv			together	معاً
+allein	adv			alone	وحيداً

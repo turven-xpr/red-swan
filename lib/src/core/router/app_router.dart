@@ -17,6 +17,7 @@ import '../../features/reading/presentation/reading_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
 import '../../features/profile/presentation/settings_screen.dart';
 import '../../features/study/presentation/study_screen.dart';
+import '../../features/study/presentation/lesson_player_screen.dart';
 import '../../features/tests/presentation/tests_screen.dart';
 import '../../features/ai_tutor/presentation/ai_tutor_screen.dart';
 import '../../features/games/presentation/games_home_screen.dart';
@@ -76,6 +77,12 @@ final goRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/games/word-chain',
         builder: (_, _) => const WordChainScreen(),
+      ),
+      GoRoute(
+        path: '/study/lesson/:id',
+        builder: (_, state) => LessonPlayerScreen(
+          lessonId: int.parse(state.pathParameters['id']!),
+        ),
       ),
       ShellRoute(
         builder: (context, state, child) => AppShell(child: child),

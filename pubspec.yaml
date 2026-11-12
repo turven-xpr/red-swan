@@ -61,3 +61,5 @@ flutter:
     - assets/brand/logo.png
     - assets/brand/google_logo.png
     - assets/splash/splash_logo.png
+    - assets/deutschy_content.db
+    - assets/deutschy_content.json
