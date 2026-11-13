@@ -231,26 +231,70 @@ class _AppShellState extends ConsumerState<AppShell> {
           mainAxisSize: MainAxisSize.min,
           children: [
             const AdsStrip(),
-            Divider(
-              height: 1,
-              thickness: 1,
-              color: isDark ? const Color(0xFF222228) : const Color(0xFFEAEAEA),
-            ),
-            NavigationBar(
-              selectedIndex: index,
-              onDestinationSelected: (i) {
-                if (i != index) {
-                  context.go(_tabs[i].route);
-                }
-              },
-              destinations: [
-                for (final t in _tabs)
-                  NavigationDestination(
-                    label: isArabic ? t.labelAr : t.label,
-                    icon: Icon(t.icon),
-                    selectedIcon: Icon(t.activeIcon),
+            Container(
+              decoration: BoxDecoration(
+                color: isDark ? AppColors.surfaceDark : Colors.white,
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: isDark ? 0.35 : 0.08),
+                    blurRadius: 16,
+                    offset: const Offset(0, -4),
                   ),
-              ],
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+                child: NavigationBarTheme(
+                  data: NavigationBarThemeData(
+                    backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
+                    elevation: 0,
+                    indicatorColor: isDark
+                        ? AppColors.primary.withValues(alpha: 0.22)
+                        : AppColors.primary.withValues(alpha: 0.14),
+                    iconTheme: WidgetStateProperty.resolveWith((states) {
+                      if (states.contains(WidgetState.selected)) {
+                        return const IconThemeData(color: AppColors.primary);
+                      }
+                      return IconThemeData(
+                        color: isDark ? Colors.white60 : Colors.black54,
+                      );
+                    }),
+                    labelTextStyle: WidgetStateProperty.resolveWith((states) {
+                      if (states.contains(WidgetState.selected)) {
+                        return const TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                          color: AppColors.primary,
+                        );
+                      }
+                      return TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500,
+                        color: isDark ? Colors.white60 : Colors.black54,
+                      );
+                    }),
+                  ),
+                  child: NavigationBar(
+                    backgroundColor: Colors.transparent,
+                    elevation: 0,
+                    selectedIndex: index,
+                    onDestinationSelected: (i) {
+                      if (i != index) {
+                        context.go(_tabs[i].route);
+                      }
+                    },
+                    destinations: [
+                      for (final t in _tabs)
+                        NavigationDestination(
+                          label: isArabic ? t.labelAr : t.label,
+                          icon: Icon(t.icon),
+                          selectedIcon: Icon(t.activeIcon),
+                        ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ],
         ),

@@ -516,12 +516,6 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
               ),
             ),
           ),
-          const SizedBox(width: 6),
-          IconButton(
-            tooltip: isArabic ? 'جلسات الاستماع' : 'Listening Sessions',
-            icon: const Icon(Icons.headphones_rounded, color: AppColors.primary, size: 22),
-            onPressed: () => context.go('/listening'),
-          ),
         ],
       ),
     );
@@ -535,71 +529,8 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
       controller: _scrollController,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       children: [
-        // Listening Sessions Card
-        GestureDetector(
-          onTap: () => context.go('/listening'),
-          child: Container(
-            margin: const EdgeInsets.only(bottom: 20),
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: isDark
-                    ? [const Color(0xFF1E2638), const Color(0xFF171B26)]
-                    : [const Color(0xFFE8F0FE), const Color(0xFFD6E4FF)],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: const Color(0xFF2962FF).withValues(alpha: 0.25),
-              ),
-            ),
-            child: Row(
-              children: [
-                Container(
-                  width: 44,
-                  height: 44,
-                  decoration: const BoxDecoration(
-                    color: Color(0xFF2962FF),
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Icon(Icons.headphones_rounded, color: Colors.white, size: 22),
-                ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        isArabic ? 'جلسات الاستماع (15 / 30 / 60 دقيقة)' : 'Listening Sessions (15/30/60m)',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w800,
-                          fontSize: 14.5,
-                          color: isDark ? Colors.white : const Color(0xFF1A365D),
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        isArabic ? 'استماع متواصل في الخلفية لتقوية الأذن' : 'Continuous background audio immersion',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: isDark ? Colors.white70 : const Color(0xFF2B6CB0),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Icon(
-                  Icons.arrow_forward_ios_rounded,
-                  size: 16,
-                  color: isDark ? Colors.white60 : const Color(0xFF2962FF),
-                ),
-              ],
-            ),
-          ),
-        ),
         for (final section in _syllabusLevels) ...[
-          // Section Level Banner (A0, A1, A2...)
+          // Section Level Banner (Intro, A1, A2...)
           Container(
             key: _levelKeys[section.level],
             child: _buildSectionBanner(section, isDark, isArabic),
