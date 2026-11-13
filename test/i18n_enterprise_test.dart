@@ -23,11 +23,15 @@ void main() {
       expect(BidiUtils.formatStreakDays(103, true), '103 أيام');
     });
 
-    test('English plural handles 1 vs many correctly', () {
+    test('English and Spanish plurals handle 1 vs many correctly', () {
       expect(BidiUtils.formatStreakDays(1, false), '1 day');
       expect(BidiUtils.formatStreakDays(5, false), '5 days');
       expect(BidiUtils.formatUnitCount(1, false), '1 Unit');
       expect(BidiUtils.formatUnitCount(3, false), '3 Units');
+      expect(BidiUtils.formatStreakDays(1, false, 'es'), '1 día');
+      expect(BidiUtils.formatStreakDays(5, false, 'es'), '5 días');
+      expect(BidiUtils.formatUnitCount(1, false, 'es'), '1 Unidad');
+      expect(BidiUtils.formatUnitCount(3, false, 'es'), '3 Unidades');
     });
 
     test('Unicode BiDi isolate wraps text with U+2066 and U+2069', () {

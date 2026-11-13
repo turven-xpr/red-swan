@@ -25,6 +25,7 @@ class _AppShellState extends ConsumerState<AppShell> {
       route: '/study',
       label: 'Study',
       labelAr: 'دراسة',
+      labelEs: 'Estudio',
       icon: Icons.school_outlined,
       activeIcon: Icons.school_rounded,
     ),
@@ -32,6 +33,7 @@ class _AppShellState extends ConsumerState<AppShell> {
       route: '/listening',
       label: 'Listening',
       labelAr: 'استماع',
+      labelEs: 'Escucha',
       icon: Icons.headphones_outlined,
       activeIcon: Icons.headphones_rounded,
     ),
@@ -39,6 +41,7 @@ class _AppShellState extends ConsumerState<AppShell> {
       route: '/tests',
       label: 'Tests',
       labelAr: 'اختبارات',
+      labelEs: 'Exámenes',
       icon: Icons.assignment_outlined,
       activeIcon: Icons.assignment_rounded,
     ),
@@ -46,6 +49,7 @@ class _AppShellState extends ConsumerState<AppShell> {
       route: '/ai-tutor',
       label: 'AI Tutor',
       labelAr: 'المعلم الذكي',
+      labelEs: 'Tutor IA',
       icon: Icons.smart_toy_outlined,
       activeIcon: Icons.smart_toy_rounded,
     ),
@@ -53,6 +57,7 @@ class _AppShellState extends ConsumerState<AppShell> {
       route: '/profile',
       label: 'Profile',
       labelAr: 'حسابي',
+      labelEs: 'Perfil',
       icon: Icons.person_outline_rounded,
       activeIcon: Icons.person_rounded,
     ),
@@ -301,7 +306,7 @@ class _AppShellState extends ConsumerState<AppShell> {
                     destinations: [
                       for (final t in _tabs)
                         NavigationDestination(
-                          label: isArabic ? t.labelAr : t.label,
+                          label: t.localizedLabel(locale.languageCode),
                           icon: Icon(t.icon),
                           selectedIcon: Icon(t.activeIcon),
                         ),
@@ -322,12 +327,20 @@ class _TabSpec {
     required this.route,
     required this.label,
     required this.labelAr,
+    required this.labelEs,
     required this.icon,
     required this.activeIcon,
   });
   final String route;
   final String label;
   final String labelAr;
+  final String labelEs;
   final IconData icon;
   final IconData activeIcon;
+
+  String localizedLabel(String languageCode) {
+    if (languageCode == 'ar') return labelAr;
+    if (languageCode == 'es') return labelEs;
+    return label;
+  }
 }

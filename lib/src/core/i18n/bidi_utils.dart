@@ -49,36 +49,42 @@ class BidiUtils {
     return '$count $other';
   }
 
-  /// Helper for streak days in both Arabic and English.
-  static String formatStreakDays(int days, bool isArabic) {
-    if (!isArabic) {
-      return '$days ${days == 1 ? "day" : "days"}';
+  /// Helper for streak days in Arabic, English, and Spanish.
+  static String formatStreakDays(int days, bool isArabic, [String? languageCode]) {
+    if (isArabic || languageCode == 'ar') {
+      return pluralizeArabic(
+        count: days,
+        zero: '0 يوم',
+        one: 'يوم واحد',
+        two: 'يومان',
+        few: 'أيام',
+        many: 'يومًا',
+        other: 'يوم',
+      );
     }
-    return pluralizeArabic(
-      count: days,
-      zero: '0 يوم',
-      one: 'يوم واحد',
-      two: 'يومان',
-      few: 'أيام',
-      many: 'يومًا',
-      other: 'يوم',
-    );
+    if (languageCode == 'es') {
+      return '$days ${days == 1 ? "día" : "días"}';
+    }
+    return '$days ${days == 1 ? "day" : "days"}';
   }
 
   /// Helper for unit count badge.
-  static String formatUnitCount(int units, bool isArabic) {
-    if (!isArabic) {
-      return '$units ${units == 1 ? "Unit" : "Units"}';
+  static String formatUnitCount(int units, bool isArabic, [String? languageCode]) {
+    if (isArabic || languageCode == 'ar') {
+      return pluralizeArabic(
+        count: units,
+        zero: 'بدون وحدات',
+        one: 'وحدة واحدة',
+        two: 'وحدتان',
+        few: 'وحدات',
+        many: 'وحدة',
+        other: 'وحدة',
+      );
     }
-    return pluralizeArabic(
-      count: units,
-      zero: 'بدون وحدات',
-      one: 'وحدة واحدة',
-      two: 'وحدتان',
-      few: 'وحدات',
-      many: 'وحدة',
-      other: 'وحدة',
-    );
+    if (languageCode == 'es') {
+      return '$units ${units == 1 ? "Unidad" : "Unidades"}';
+    }
+    return '$units ${units == 1 ? "Unit" : "Units"}';
   }
 
   /// Safe fallback helper: if [arabic] text is null or empty, falls back to [fallbackEnglish],

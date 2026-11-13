@@ -259,11 +259,11 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
         desc: 'تعلم اللغة الألمانية مع شروحات باللغة العربية وترجمة كاملة',
       ),
       (
-        code: 'fr',
-        name: 'French',
-        nativeName: 'Français',
-        flag: '🇫🇷',
-        desc: 'Apprenez l\'allemand avec des explications et exemples en français',
+        code: 'es',
+        name: 'Spanish',
+        nativeName: 'Español',
+        flag: '🇪🇸',
+        desc: 'Aprende alemán con explicaciones y traducciones en español',
       ),
     ];
 

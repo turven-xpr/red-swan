@@ -83,10 +83,9 @@ class LanguageControl extends ConsumerWidget {
     final active = ref.watch(appLocaleProvider);
     final theme = Theme.of(context);
     final locales = [
-      const Locale(LocaleCode.german),
       const Locale(LocaleCode.english),
-      const Locale(LocaleCode.french),
       const Locale(LocaleCode.arabic),
+      const Locale(LocaleCode.spanish),
     ];
     return Wrap(
       spacing: 8,

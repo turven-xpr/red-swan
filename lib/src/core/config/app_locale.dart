@@ -64,12 +64,14 @@ class AppLocale {
   /// language picker UI.
   static String label(Locale locale) {
     switch (locale.languageCode) {
+      case LocaleCode.arabic:
+        return 'العربية';
+      case LocaleCode.spanish:
+        return 'Español';
       case LocaleCode.german:
         return 'Deutsch';
       case LocaleCode.french:
         return 'Français';
-      case LocaleCode.arabic:
-        return 'العربية';
       default:
         return 'English';
     }
@@ -78,8 +80,11 @@ class AppLocale {
 
 class LocaleCode {
   const LocaleCode._();
-  static const String german = 'de';
   static const String english = 'en';
-  static const String french = 'fr';
   static const String arabic = 'ar';
+  static const String spanish = 'es';
+
+  // Legacy fallback support
+  static const String german = 'de';
+  static const String french = 'fr';
 }
