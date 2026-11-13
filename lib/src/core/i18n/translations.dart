@@ -472,12 +472,658 @@ const Map<String, _Group> _table = {
     fr: 'Plus',
     ar: 'المزيد',
   ),
+
+  // Shell & Navigation
+  Str.learningPath: (
+    de: 'Lernpfad:',
+    en: 'Learning Path:',
+    fr: 'Parcours d\'apprentissage :',
+    ar: 'مسار التعلم:',
+  ),
+  Str.streakActiveTooltip: (
+    de: 'Tägliche Serie: Übe jeden Tag, um deine Serie auszubauen!',
+    en: 'Daily Streak: Practice every day to build your streak!',
+    fr: 'Série quotidienne : Entraînez-vous chaque jour pour maintenir votre série !',
+    ar: 'الحماسة اليومية: تدرب يوميًا لزيادة أيام حماستك المستمرة!',
+  ),
+  Str.streakExtendedToast: (
+    de: '🔥 Serie aktiv! Lerne täglich weiter.',
+    en: '🔥 Streak active! Keep learning daily to extend it.',
+    fr: '🔥 Série active ! Continuez à apprendre chaque jour.',
+    ar: '🔥 الحماسة نشطة! استمر في التعلم يوميًا لزيادتها.',
+  ),
+  Str.xpPoints: (
+    de: '%s XP',
+    en: '%s XP',
+    fr: '%s XP',
+    ar: '%s نقطة',
+  ),
+
+  // Study Screen & Checkpoints
+  Str.unitLabel: (
+    de: 'Einheit %s',
+    en: 'Unit %s',
+    fr: 'Unité %s',
+    ar: 'الوحدة %s',
+  ),
+  Str.readyToStudy: (
+    de: 'Bereit zum Lernen',
+    en: 'Ready to learn',
+    fr: 'Prêt à étudier',
+    ar: 'جاهز للدراسة',
+  ),
+  Str.lessonsComingSoon: (
+    de: 'Lektionen für diese Einheit werden bald freigeschaltet',
+    en: 'Lessons for this unit will be unlocked soon',
+    fr: 'Les leçons de cette unité seront bientôt débloquées',
+    ar: 'دروس هذه الوحدة قيد الإعداد والإضافة قريبًا',
+  ),
+  Str.checkpointIntro: (
+    de: 'Grundlagen-Checkpoint (Intro)',
+    en: 'Intro Foundations Checkpoint',
+    fr: 'Point de contrôle des bases',
+    ar: 'نقطة تثبيت الأساسيات (Intro)',
+  ),
+  Str.checkpointGate: (
+    de: '%s Niveau-Abschlusstest',
+    en: '%s Gate Test Checkpoint',
+    fr: 'Test de validation du niveau %s',
+    ar: 'اختبار اجتياز المستوى %s',
+  ),
+  Str.checkpointIntroSub: (
+    de: 'Erreiche 75%, um die Grundlagen zu meistern und A1 freizuschalten',
+    en: 'Score 75% to master the basics & unlock Level A1',
+    fr: 'Obtenez 75% pour maîtriser les bases et débloquer le niveau A1',
+    ar: 'احصل على 75% لتثبيت الأساسيات وفتح المستوى A1',
+  ),
+  Str.checkpointGateSub: (
+    de: 'Erreiche 75%, um das nächste Niveau freizuschalten',
+    en: 'Score 75% to pass & unlock the next level',
+    fr: 'Obtenez 75% pour passer et débloquer le niveau suivant',
+    ar: 'احصل على 75% لاجتياز الاختبار وفتح المستوى التالي',
+  ),
+  Str.skillListen: (
+    de: '%s Hören',
+    en: '%s Listen',
+    fr: '%s Écoute',
+    ar: '%s استماع',
+  ),
+  Str.skillRead: (
+    de: '%s Lesen',
+    en: '%s Read',
+    fr: '%s Lecture',
+    ar: '%s قراءة',
+  ),
+  Str.skillWrite: (
+    de: '%s Schreiben',
+    en: '%s Write',
+    fr: '%s Écriture',
+    ar: '%s كتابة',
+  ),
+  Str.skillSpeak: (
+    de: '%s Sprechen',
+    en: '%s Speak',
+    fr: '%s Expression',
+    ar: '%s محادثة',
+  ),
+  Str.startIntroCheckpoint: (
+    de: 'Intro-Checkpoint starten',
+    en: 'Start Intro Checkpoint',
+    fr: 'Commencer le point de contrôle',
+    ar: 'ابدأ اختبار الأساسيات',
+  ),
+  Str.startGateTest: (
+    de: 'Abschlusstest %s starten',
+    en: 'Start %s Gate Test',
+    fr: 'Commencer le test %s',
+    ar: 'ابدأ اختبار المستوى %s',
+  ),
+
+  // Lesson Player
+  Str.chooseCorrectAnswer: (
+    de: 'Wähle die richtige Antwort',
+    en: 'Choose the correct answer',
+    fr: 'Choisissez la bonne réponse',
+    ar: 'اختر الإجابة الصحيحة',
+  ),
+  Str.pronouncedCorrectly: (
+    de: 'Richtig ausgesprochen',
+    en: 'I pronounced it correctly',
+    fr: 'Je l\'ai bien prononcé',
+    ar: 'نطقتها بصوت صحيح',
+  ),
+  Str.checkAnswer: (
+    de: 'Antwort prüfen',
+    en: 'Check Answer',
+    fr: 'Vérifier la réponse',
+    ar: 'تحقق من الإجابة',
+  ),
+  Str.correctFeedback: (
+    de: 'Richtig! Sehr gut 👏',
+    en: 'Correct! Great job 👏',
+    fr: 'Correct ! Bravo 👏',
+    ar: 'إجابة صحيحة! أحسنت 👏',
+  ),
+  Str.incorrectFeedback: (
+    de: 'Nicht ganz richtig',
+    en: 'Incorrect',
+    fr: 'Incorrect',
+    ar: 'إجابة غير صحيحة، حاول مجددًا',
+  ),
+  Str.correctAnswerLabel: (
+    de: 'Richtige Antwort:',
+    en: 'Correct answer:',
+    fr: 'Bonne réponse :',
+    ar: 'الإجابة الصحيحة:',
+  ),
+  Str.continueButton: (
+    de: 'Weiter',
+    en: 'Continue',
+    fr: 'Continuer',
+    ar: 'المتابعة',
+  ),
+  Str.finishReading: (
+    de: 'Lesen abgeschlossen',
+    en: 'Finished Reading',
+    fr: 'Lecture terminée',
+    ar: 'أنهيت قراءة الدرس',
+  ),
+  Str.completeTextLesson: (
+    de: 'Textlektion abschließen',
+    en: 'Complete Reading Lesson',
+    fr: 'Terminer la leçon de lecture',
+    ar: 'إتمام درس النص',
+  ),
+  Str.completeStoryLesson: (
+    de: 'Geschichte abschließen',
+    en: 'Complete Story Lesson',
+    fr: 'Terminer l\'histoire',
+    ar: 'إتمام درس القصة',
+  ),
+  Str.lessonCompletedTitle: (
+    de: 'Fantastisch! Lektion abgeschlossen',
+    en: 'Awesome! Lesson Completed',
+    fr: 'Bravo ! Leçon terminée',
+    ar: 'أحسنت! أتممت الدرس بنجاح',
+  ),
+  Str.lessonCompletedSub: (
+    de: 'Du hast wichtige Fortschritte gemacht!',
+    en: 'You\'ve made great progress today!',
+    fr: 'Vous avez fait de grands progrès aujourd\'hui !',
+    ar: 'لقد حققت تقدمًا ممتازًا وملموسًا في تعلم الألمانية!',
+  ),
+
+  // Placeholder Screens
+  Str.testsTitle: (
+    de: 'Prüfungen & Zertifikate',
+    en: 'Tests & Exams',
+    fr: 'Tests et examens',
+    ar: 'الاختبارات والشهادات الرسمية',
+  ),
+  Str.testsDesc: (
+    de: 'Offizielle Goethe-Zertifikat-, telc- und Modellprüfungen werden hier verfügbar sein.',
+    en: 'Official Goethe-Institut, telc, and level certification practice exams will be built here.',
+    fr: 'Les examens blancs officiels du Goethe-Institut, telc et certifications seront disponibles ici.',
+    ar: 'نماذج وتدريبات امتحانات معهد جوته، telc، واختبارات قياس الكفاءة الرسمية ستكون هنا قريبًا.',
+  ),
+  Str.aiTutorTitle: (
+    de: 'KI-Deutschlehrer',
+    en: 'AI German Teacher',
+    fr: 'Professeur d\'allemand IA',
+    ar: 'المعلم الذكي للألمانية (AI)',
+  ),
+  Str.aiTutorDesc: (
+    de: 'Personalisierte KI-Chat-Gespräche mit Live-Grammatikkorrektur und Sprachpraxis werden hier bereitgestellt.',
+    en: 'Personalized AI chat conversations with live grammar corrections and speech practice will be built here.',
+    fr: 'Des conversations personnalisées par chat IA avec corrections en direct et pratique orale seront disponibles ici.',
+    ar: 'محادثات تفاعلية ذكية مع تصحيح فوري للقواعد وتدريب النطق بالذكاء الاصطناعي قريبًا.',
+  ),
+  Str.profileStatsTitle: (
+    de: 'Lernstatistiken & Erfolge',
+    en: 'Learning Stats & Achievements',
+    fr: 'Statistiques et réussites',
+    ar: 'إحصائيات التعلم والإنجازات',
+  ),
+  Str.profileStatsDesc: (
+    de: 'Tages-Serien, GER-Niveaufortschritt und Testergebnisse werden hier angezeigt.',
+    en: 'Daily streak counters, CEFR level progression, and test scores will be built here.',
+    fr: 'Les séries quotidiennes, la progression CECR et les scores aux tests apparaîtront ici.',
+    ar: 'عدادات الحماسة اليومية، التقدم بمستويات الإطار الأوروبي، ونتائج الاختبارات ستظهر هنا.',
+  ),
+  Str.profileSettingsBtn: (
+    de: 'App-Einstellungen & Sprache',
+    en: 'App Settings & Language',
+    fr: 'Paramètres et langue',
+    ar: 'إعدادات التطبيق واللغة',
+  ),
+  Str.settingsAudioSpeed: (
+    de: 'Audio-Geschwindigkeit',
+    en: 'Audio Speed',
+    fr: 'Vitesse audio',
+    ar: 'سرعة نطق الصوت',
+  ),
+
+  // Onboarding
+  Str.onboardingStep1Title: (
+    de: 'Welche Sprache sprichst du?',
+    en: 'What language do you speak?',
+    fr: 'Quelle est votre langue maternelle ?',
+    ar: 'ما هي لغتك الأم؟',
+  ),
+  Str.onboardingStep1Sub: (
+    de: 'Wähle die Sprache, mit der du Deutsch lernen möchtest.',
+    en: 'Choose the language you will use to learn German.',
+    fr: 'Choisissez la langue que vous utiliserez pour apprendre l\'allemand.',
+    ar: 'اختر اللغة التي تفضل استخدامها لشرح وتعلم الألمانية.',
+  ),
+  Str.onboardingStep2Title: (
+    de: 'Warum lernst du Deutsch?',
+    en: 'Why are you learning German?',
+    fr: 'Pourquoi apprenez-vous l\'allemand ?',
+    ar: 'ما هو هدفك الأساسي من تعلم الألمانية؟',
+  ),
+  Str.onboardingStep2Sub: (
+    de: 'Wir passen deine Lektionen an dein persönliches Ziel an.',
+    en: 'We customize your lessons to match your goal.',
+    fr: 'Nous adaptons vos leçons selon votre objectif.',
+    ar: 'سنخصص لك خطة الدروس والمفردات لتناسب هدفك بدقة.',
+  ),
+  Str.onboardingStep3Title: (
+    de: 'Wie gut ist dein Deutsch?',
+    en: 'How much German do you know?',
+    fr: 'Quel est votre niveau actuel en allemand ?',
+    ar: 'ما هو مستواك الحالي في اللغة الألمانية؟',
+  ),
+  Str.onboardingStep3Sub: (
+    de: 'Keine Sorge, wir starten genau dort, wo du dich wohlfühlst.',
+    en: 'Don\'t worry, we start exactly where you feel comfortable.',
+    fr: 'Pas d\'inquiétude, nous commençons exactement à votre niveau.',
+    ar: 'لا تقلق، سنبدأ معك بدقة من المستوى المناسب لمعرفتك.',
+  ),
+  Str.onboardingStep4Title: (
+    de: 'Was ist dein tägliches Ziel?',
+    en: 'What is your daily goal?',
+    fr: 'Quel est votre objectif quotidien ?',
+    ar: 'ما هو هدف دراستك اليومي؟',
+  ),
+  Str.onboardingStep4Sub: (
+    de: 'Schon wenige Minuten pro Tag reichen für große Fortschritte!',
+    en: 'Even a few minutes a day make a huge difference!',
+    fr: 'Même quelques minutes par jour font une grande différence !',
+    ar: 'بضع دقائق يوميًا كافية لصنع فارق حقيقي ومستمر!',
+  ),
+  Str.onboardingReasonStudy: (
+    de: 'Studium an der Universität',
+    en: 'University & Academic Study',
+    fr: 'Études universitaires',
+    ar: 'الدراسة والجامعة في ألمانيا',
+  ),
+  Str.onboardingReasonStudyDesc: (
+    de: 'Vorbereitung auf DSH/TestDaF und akademischen Erfolg',
+    en: 'Prepare for DSH/TestDaF and university success',
+    fr: 'Préparation au DSH/TestDaF et études',
+    ar: 'التحضير لشهادات DSH/TestDaF والالتحاق بالجامعات',
+  ),
+  Str.onboardingReasonAusbildung: (
+    de: 'Duale Ausbildung',
+    en: 'Apprenticeship (Ausbildung)',
+    fr: 'Formation professionnelle (Ausbildung)',
+    ar: 'التدريب المهني (Ausbildung)',
+  ),
+  Str.onboardingReasonAusbildungDesc: (
+    de: 'Praktischer Berufsalltag und Fachsprache',
+    en: 'Vocational training and workplace language',
+    fr: 'Formation en alternance et vocabulaire professionnel',
+    ar: 'الاستعداد للتدريب المهني ولغة العمل الحرفية والمهنية',
+  ),
+  Str.onboardingReasonJob: (
+    de: 'Karriere & Arbeit',
+    en: 'Work & Career in Germany',
+    fr: 'Travail et carrière en Allemagne',
+    ar: 'العمل والوظيفة في ألمانيا',
+  ),
+  Str.onboardingReasonJobDesc: (
+    de: 'Chancen auf dem deutschen Arbeitsmarkt nutzen',
+    en: 'Professional opportunities and career growth',
+    fr: 'Opportunités professionnelles et carrière',
+    ar: 'الحصول على وظيفة وتطوير المسار المهني مع الشركات الألمانية',
+  ),
+  Str.onboardingReasonTravel: (
+    de: 'Reisen & Kultur',
+    en: 'Travel, Tourism & Culture',
+    fr: 'Voyages et tourisme',
+    ar: 'السفر، السياحة، واستكشاف الثقافة',
+  ),
+  Str.onboardingReasonTravelDesc: (
+    de: 'Souverän im Alltag und Urlaub verständigen',
+    en: 'Communicate smoothly while traveling',
+    fr: 'Communiquer facilement en voyage',
+    ar: 'التواصل بثقة في الحياة اليومية وأثناء السفر والتنقل',
+  ),
+  Str.onboardingReasonFun: (
+    de: 'Neugier & Gehirnjogging',
+    en: 'Personal Interest & Brain Training',
+    fr: 'Intérêt personnel et culture',
+    ar: 'شغف باللغات وتنشيط الذاكرة',
+  ),
+  Str.onboardingReasonFunDesc: (
+    de: 'Eine der wichtigsten Sprachen Europas lernen',
+    en: 'Enjoy learning one of Europe\'s key languages',
+    fr: 'Apprendre une langue européenne majeure par plaisir',
+    ar: 'متعة تعلم إحدى أهم لغات أوروبا كمهارة جديدة',
+  ),
+  Str.onboardingBtnContinue: (
+    de: 'Weiter',
+    en: 'Continue',
+    fr: 'Continuer',
+    ar: 'متابعة',
+  ),
+  Str.onboardingBtnBack: (
+    de: 'Zurück',
+    en: 'Back',
+    fr: 'Retour',
+    ar: 'رجوع',
+  ),
+  Str.onboardingBtnStart: (
+    de: 'Jetzt starten',
+    en: 'Start Learning',
+    fr: 'Commencer',
+    ar: 'ابدأ التعلم الآن',
+  ),
+  Str.onboardingLevelIntroTitle: (
+    de: 'Intro · Absoluter Anfänger',
+    en: 'Intro · Absolute Beginner',
+    fr: 'Intro · Grand Débutant',
+    ar: 'مقدمة · مبتدئ تماماً',
+  ),
+  Str.onboardingLevelIntroDesc: (
+    de: 'Ich kann kein Deutsch oder nur wenige einfache Wörter',
+    en: 'I know zero German or just a few basic words',
+    fr: 'Je ne connais pas l\'allemand ou juste quelques mots de base',
+    ar: 'لا أعرف أي ألمانية أو فقط بضع كلمات أساسية',
+  ),
+  Str.onboardingLevelA1Title: (
+    de: 'A1 · Anfänger',
+    en: 'A1 · Beginner',
+    fr: 'A1 · Débutant',
+    ar: 'A1 · مبتدئ',
+  ),
+  Str.onboardingLevelA1Desc: (
+    de: 'Ich kann mich vorstellen und einfache Alltagssätze verstehen',
+    en: 'I can introduce myself and understand simple daily phrases',
+    fr: 'Je peux me présenter et comprendre des phrases simples du quotidien',
+    ar: 'أستطيع تقديم نفسي وفهم عبارات يومية بسيطة',
+  ),
+  Str.onboardingLevelA2Title: (
+    de: 'A2 · Grundlegende Kenntnisse',
+    en: 'A2 · Elementary',
+    fr: 'A2 · Élémentaire',
+    ar: 'A2 · أساسي',
+  ),
+  Str.onboardingLevelA2Desc: (
+    de: 'Ich kann mich in einfachen Alltagssituationen verständigen',
+    en: 'I can communicate in simple everyday situations & routines',
+    fr: 'Je peux communiquer dans des situations simples de la vie quotidienne',
+    ar: 'أستطيع التواصل في المواقف اليومية البسيطة والروتينية',
+  ),
+  Str.onboardingLevelB1Title: (
+    de: 'B1 · Mittelstufe',
+    en: 'B1 · Intermediate',
+    fr: 'B1 · Intermédiaire',
+    ar: 'B1 · متوسط',
+  ),
+  Str.onboardingLevelB1Desc: (
+    de: 'Ich kann meine Meinung äußern und Hauptaussagen verstehen',
+    en: 'I can express opinions, understand main ideas & speak steadily',
+    fr: 'Je peux exprimer des opinions, comprendre les idées principales et parler régulièrement',
+    ar: 'أستطيع التعبير عن الآراء وفهم الأفكار الرئيسية والتحدث بثبات',
+  ),
+  Str.onboardingLevelB2Title: (
+    de: 'B2 · Gute Mittelstufe',
+    en: 'B2 · Upper Intermediate',
+    fr: 'B2 · Intermédiaire supérieur',
+    ar: 'B2 · فوق المتوسط',
+  ),
+  Str.onboardingLevelB2Desc: (
+    de: 'Ich beherrsche Fachgespräche und komplexe Texte',
+    en: 'I can handle technical/work conversations & complex texts',
+    fr: 'Je peux gérer des conversations techniques/professionnelles et des textes complexes',
+    ar: 'أستطيع التعامل مع المحادثات التقنية/العمل والنصوص المعقدة',
+  ),
+  Str.onboardingGoal3MinTitle: (
+    de: '3 Min. / Tag · Gelegentlich',
+    en: '3 min / day · Casual',
+    fr: '3 min / jour · Décontracté',
+    ar: '3 دقائق / يوم · مريح',
+  ),
+  Str.onboardingGoal3MinDesc: (
+    de: 'Schnelle Mikrogewohnheit für dein Gehirn',
+    en: 'Quick micro-habit to keep your brain active',
+    fr: 'Micro-habitude rapide pour garder l\'esprit vif',
+    ar: 'عادة صغيرة وسريعة لتنشيط العقل',
+  ),
+  Str.onboardingGoal5MinTitle: (
+    de: '5 Min. / Tag · Regelmäßig',
+    en: '5 min / day · Regular',
+    fr: '5 min / jour · منتظم',
+    ar: '5 دقائق / يوم · منتظم',
+  ),
+  Str.onboardingGoal5MinDesc: (
+    de: 'Stetige tägliche Übung für deine Serie',
+    en: 'Steady daily practice to build your streak',
+    fr: 'Pratique quotidienne régulière pour maintenir votre série',
+    ar: 'تمرين يومي منتظم لبناء حماسك المتواصل',
+  ),
+  Str.onboardingGoal15MinTitle: (
+    de: '15 Min. / Tag · Engagiert (Empfohlen)',
+    en: '15 min / day · Committed (Recommended)',
+    fr: '15 min / jour · Engagé (Recommandé)',
+    ar: '15 دقيقة / يوم · ملتزم (موصى به)',
+  ),
+  Str.onboardingGoal15MinDesc: (
+    de: 'Optimales Tempo für Behalten und Wortschatzaufbau',
+    en: 'Optimal daily pace for solid retention and vocabulary growth',
+    fr: 'Rythme quotidien optimal pour une mémorisation solide et enrichir le vocabulaire',
+    ar: 'الوتيرة اليومية المثالية لتثبيت المعلومات وبناء المفردات',
+  ),
+  Str.onboardingGoal30MinTitle: (
+    de: '30 Min. / Tag · Ernsthaft',
+    en: '30 min / day · Serious',
+    fr: '30 min / jour · Sérieux',
+    ar: '30 دقيقة / يوم · جاد',
+  ),
+  Str.onboardingGoal30MinDesc: (
+    de: 'Schnellere Deutsch-Flüssigkeit für Beruf oder Studium',
+    en: 'Fast-track your German fluency for work or study',
+    fr: 'Accélérez votre maîtrise de l\'allemand pour le travail ou les études',
+    ar: 'مسار سريع لإتقان الألمانية للعمل أو الدراسة',
+  ),
+  Str.onboardingGoal60MinTitle: (
+    de: '1 Std. / Tag · Intensiv',
+    en: '1 Hour / day · Intensive',
+    fr: '1 heure / jour · Intensif',
+    ar: 'ساعة واحدة / يوم · مكثف',
+  ),
+  Str.onboardingGoal60MinDesc: (
+    de: 'Umfassendes Lernen: Grammatik, Sprechen & Tests',
+    en: 'Comprehensive study covering grammar, speaking & tests',
+    fr: 'Étude complète : grammaire, expression orale et tests',
+    ar: 'دراسة شاملة تشمل القواعد والمحادثة والاختبارات',
+  ),
+  Str.onboardingGoal120MinTitle: (
+    de: '2 Std. / Tag · Super Intensiv',
+    en: '2 Hours / day · Super Intensive',
+    fr: '2 heures / jour · Super intensif',
+    ar: 'ساعتان / يوم · فائق الكثافة',
+  ),
+  Str.onboardingGoal120MinDesc: (
+    de: 'Schnellster Weg zum Bestehen von Goethe- / telc-Prüfungen',
+    en: 'Fastest route to passing Goethe / telc exams',
+    fr: 'La voie la plus rapide pour réussir les examens Goethe / telc',
+    ar: 'أسرع طريق لاجتياز اختبارات Goethe / telc',
+  ),
+
+  // ── Lesson Player – remaining keys ────────────────────────────────
+  Str.noExercisesFound: (
+    de: 'Keine Übungen für diese Lektion gefunden.',
+    en: 'No exercises found for this lesson.',
+    fr: 'Aucun exercice trouvé pour cette leçon.',
+    ar: 'لا توجد تمارين متاحة حالياً.',
+  ),
+  Str.tapToListen: (
+    de: 'Tippe zum Anhören',
+    en: 'Tap to listen',
+    fr: 'Appuyez pour écouter',
+    ar: 'اضغط للاستماع',
+  ),
+  Str.typeWordHint: (
+    de: 'Wort hier eingeben…',
+    en: 'Type word here...',
+    fr: 'Tapez le mot ici…',
+    ar: 'اكتب الكلمة هنا...',
+  ),
+  Str.toggleTranslations: (
+    de: 'Übersetzungen ein-/ausblenden',
+    en: 'Toggle Translations',
+    fr: 'Afficher / masquer les traductions',
+    ar: 'إظهار / إخفاء الترجمة',
+  ),
+  Str.readFullText: (
+    de: 'Volltext vorlesen',
+    en: 'Read Full Text',
+    fr: 'Lire le texte complet',
+    ar: 'قراءة النص كاملاً',
+  ),
+  Str.textLessonSubtitle: (
+    de: 'Höre jeden Satz und lies die Übersetzung',
+    en: 'Read & listen sentence by sentence',
+    fr: 'Lire et écouter phrase par phrase',
+    ar: 'استمع إلى كل جملة، واقرأ الترجمة والشروحات',
+  ),
+  Str.vocabGrammarNotes: (
+    de: 'Vokabeln & Grammatikhinweise',
+    en: 'Vocabulary & Grammar Notes',
+    fr: 'Vocabulaire et notes de grammaire',
+    ar: 'المفردات وقواعد النص',
+  ),
+  Str.comprehensionCheck: (
+    de: 'Verständnisfragen',
+    en: 'Comprehension Check',
+    fr: 'Questions de compréhension',
+    ar: 'أسئلة فهم النص',
+  ),
+  Str.autoReadStory: (
+    de: 'Geschichte vorlesen',
+    en: 'Auto Read Story',
+    fr: 'Lecture automatique',
+    ar: 'استماع وتتبع القصة',
+  ),
+  Str.storyComprehension: (
+    de: 'Geschichte-Verständnis',
+    en: 'Story Comprehension',
+    fr: 'Compréhension de l\'histoire',
+    ar: 'أسئلة فهم القصة',
+  ),
+  Str.yourScore: (
+    de: 'Dein Ergebnis',
+    en: 'Your Score',
+    fr: 'Votre score',
+    ar: 'نتيجتك',
+  ),
+
+  // ── Study Screen – remaining ──────────────────────────────────────
+  Str.unitsCount: (
+    de: '%s Einheiten',
+    en: '%s Units',
+    fr: '%s Unités',
+    ar: '%s وحدات',
+  ),
+
+  // ── Listening Sessions ────────────────────────────────────────────
+  Str.listeningSessions: (
+    de: 'Hörsitzungen',
+    en: 'Listening Sessions',
+    fr: 'Sessions d\'écoute',
+    ar: 'جلسات الاستماع',
+  ),
+  Str.listeningSubtitle: (
+    de: 'Hintergrund-Audio zum Eintauchen',
+    en: 'Background audio immersion practice',
+    fr: 'Pratique d\'immersion audio en arrière-plan',
+    ar: 'استماع متواصل في الخلفية لتقوية الأذن',
+  ),
+  Str.minutesShort: (
+    de: '%s Min.',
+    en: '%s Min',
+    fr: '%s min',
+    ar: '%s دقيقة',
+  ),
+  Str.comprehensionQuiz: (
+    de: 'Verständnis-Quiz',
+    en: 'Comprehension Quiz',
+    fr: 'Quiz de compréhension',
+    ar: 'اختبر فهمك',
+  ),
+  Str.quickComprehensionCheck: (
+    de: 'Schnelle Verständnisfrage',
+    en: 'Quick Comprehension Check',
+    fr: 'Vérification rapide de la compréhension',
+    ar: 'سؤال فهم سريع',
+  ),
+  Str.correctAnswer: (
+    de: 'Richtige Antwort! 🎉',
+    en: 'Correct answer! 🎉',
+    fr: 'Bonne réponse ! 🎉',
+    ar: 'إجابة صحيحة ممتاز! 🎉',
+  ),
+  Str.incorrectTryAgain: (
+    de: 'Falsch, versuche es nochmal!',
+    en: 'Incorrect, try again!',
+    fr: 'Incorrect, réessayez !',
+    ar: 'إجابة غير صحيحة، حاول مجدداً!',
+  ),
+
+  // ── Settings & Profile ────────────────────────────────────────────
+  Str.settingsTitle: (
+    de: 'Einstellungen',
+    en: 'Settings',
+    fr: 'Paramètres',
+    ar: 'الإعدادات',
+  ),
+  Str.settingsLoadError: (
+    de: 'Einstellungen konnten nicht geladen werden',
+    en: 'Settings could not be loaded',
+    fr: 'Les paramètres n\'ont pas pu être chargés',
+    ar: 'تعذر تحميل الإعدادات',
+  ),
+  Str.retryButton: (
+    de: 'Wiederholen',
+    en: 'Retry',
+    fr: 'Réessayer',
+    ar: 'إعادة المحاولة',
+  ),
+  Str.learnerFallback: (
+    de: 'Lernende(r)',
+    en: 'Learner',
+    fr: 'Apprenant(e)',
+    ar: 'متعلّم',
+  ),
+  Str.profileStatsPlaceholder: (
+    de: 'Tagessträhne, CEFR-Level und Testergebnisse werden hier erstellt.',
+    en: 'Daily streak counters, CEFR level progression, and test scores will be built here.',
+    fr: 'Compteurs de série, progression CEFR et scores de tests seront ajoutés ici.',
+    ar: 'سيتم إنشاء عدادات الخطوط اليومية وتقدم مستويات CEFR ونتائج الاختبارات هنا.',
+  ),
 };
 
-/// One string lookup.  Returns the entry for the active locale, or
+/// One string lookup. Returns the entry for the active locale, or
 /// the German copy if the key is missing.
-String t(BuildContext context, String key,
-    {List<String> args = const <String>[]}) {
+String t(
+  BuildContext context,
+  String key, {
+  List<String> args = const <String>[],
+  Map<String, String>? namedArgs,
+}) {
   final code = AppLocale.localeOf(context).languageCode;
   final group = _table[key] ?? _table[Str.appName]!;
   String raw;
@@ -494,10 +1140,15 @@ String t(BuildContext context, String key,
     default:
       raw = group.de;
   }
-  // Lightweight %s/%d positional fill — not as fancy as intl but
-  // covers every key in the table without bringing in a dependency.
+  // Positional %s / %d replacement
   for (var i = 0; i < args.length; i++) {
     raw = raw.replaceFirst(RegExp(r'%[sd]'), args[i]);
+  }
+  // Named {key} replacement for enterprise-grade flexibility
+  if (namedArgs != null && namedArgs.isNotEmpty) {
+    namedArgs.forEach((k, v) {
+      raw = raw.replaceAll('{$k}', v);
+    });
   }
   return raw;
 }

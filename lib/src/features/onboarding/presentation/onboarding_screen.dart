@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/config/app_locale.dart';
 import '../../../core/config/onboarding_pref.dart';
+import '../../../core/i18n/strings.dart';
+import '../../../core/i18n/translations.dart';
 import '../../../core/providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/animations/premium_animations.dart';
@@ -271,9 +273,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       children: [
         const SizedBox(height: 8),
         _buildHeader(
-          title: 'What language do you speak?',
-          subtitle:
-              'Choose the language you will use to learn German.',
+          title: t(context, Str.onboardingStep1Title),
+          subtitle: t(context, Str.onboardingStep1Sub),
           textPrimary: textPrimary,
           textSecondary: textSecondary,
         ),
@@ -315,36 +316,36 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final reasons = [
       (
         reason: LearningReason.ausbildung,
-        title: 'For Ausbildung',
-        subtitle: 'Vocational training & German apprenticeships',
+        title: t(context, Str.onboardingReasonAusbildung),
+        subtitle: t(context, Str.onboardingReasonAusbildungDesc),
         icon: Icons.handyman_rounded,
         emoji: '🛠️',
       ),
       (
         reason: LearningReason.study,
-        title: 'For Study',
-        subtitle: 'University admission, exams (TestDaF/DSH) & degrees',
+        title: t(context, Str.onboardingReasonStudy),
+        subtitle: t(context, Str.onboardingReasonStudyDesc),
         icon: Icons.school_rounded,
         emoji: '🎓',
       ),
       (
         reason: LearningReason.job,
-        title: 'For Job / Career',
-        subtitle: 'Work in Germany, medical/tech career & interviews',
+        title: t(context, Str.onboardingReasonJob),
+        subtitle: t(context, Str.onboardingReasonJobDesc),
         icon: Icons.business_center_rounded,
         emoji: '💼',
       ),
       (
         reason: LearningReason.travel,
-        title: 'For Travel',
-        subtitle: 'Tourism, navigating cities, culture & everyday life',
+        title: t(context, Str.onboardingReasonTravel),
+        subtitle: t(context, Str.onboardingReasonTravelDesc),
         icon: Icons.flight_takeoff_rounded,
         emoji: '✈️',
       ),
       (
         reason: LearningReason.fun,
-        title: 'For Fun & Hobby',
-        subtitle: 'Personal growth, brain training & love for languages',
+        title: t(context, Str.onboardingReasonFun),
+        subtitle: t(context, Str.onboardingReasonFunDesc),
         icon: Icons.emoji_emotions_rounded,
         emoji: '🌟',
       ),
@@ -356,9 +357,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       children: [
         const SizedBox(height: 8),
         _buildHeader(
-          title: 'Why are you learning German?',
-          subtitle:
-              'We will tailor your vocabulary, exercises and dialogues to match your goals.',
+          title: t(context, Str.onboardingStep2Title),
+          subtitle: t(context, Str.onboardingStep2Sub),
           textPrimary: textPrimary,
           textSecondary: textSecondary,
         ),
@@ -391,32 +391,32 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       (
         level: StartLevel.a0,
         code: 'Intro',
-        title: 'Intro · Absolute Beginner',
-        desc: 'I know zero German or just a few basic words',
+        title: t(context, Str.onboardingLevelIntroTitle),
+        desc: t(context, Str.onboardingLevelIntroDesc),
       ),
       (
         level: StartLevel.a1,
         code: 'A1',
-        title: 'A1 · Beginner',
-        desc: 'I can introduce myself and understand simple daily phrases',
+        title: t(context, Str.onboardingLevelA1Title),
+        desc: t(context, Str.onboardingLevelA1Desc),
       ),
       (
         level: StartLevel.a2,
         code: 'A2',
-        title: 'A2 · Elementary',
-        desc: 'I can communicate in simple everyday situations & routines',
+        title: t(context, Str.onboardingLevelA2Title),
+        desc: t(context, Str.onboardingLevelA2Desc),
       ),
       (
         level: StartLevel.b1,
         code: 'B1',
-        title: 'B1 · Intermediate',
-        desc: 'I can express opinions, understand main ideas & speak steadily',
+        title: t(context, Str.onboardingLevelB1Title),
+        desc: t(context, Str.onboardingLevelB1Desc),
       ),
       (
         level: StartLevel.b2,
         code: 'B2',
-        title: 'B2 · Upper Intermediate',
-        desc: 'I can handle technical/work conversations & complex texts',
+        title: t(context, Str.onboardingLevelB2Title),
+        desc: t(context, Str.onboardingLevelB2Desc),
       ),
     ];
 
@@ -426,9 +426,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       children: [
         const SizedBox(height: 8),
         _buildHeader(
-          title: 'What is your German level?',
-          subtitle:
-              'Choose your current proficiency to start at the right difficulty.',
+          title: t(context, Str.onboardingStep3Title),
+          subtitle: t(context, Str.onboardingStep3Sub),
           textPrimary: textPrimary,
           textSecondary: textSecondary,
         ),
@@ -460,38 +459,38 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final goals = [
       (
         minutes: 3,
-        title: '3 min / day · Casual',
-        subtitle: 'Quick micro-habit to keep your brain active',
+        title: t(context, Str.onboardingGoal3MinTitle),
+        subtitle: t(context, Str.onboardingGoal3MinDesc),
         emoji: '⚡',
       ),
       (
         minutes: 5,
-        title: '5 min / day · Regular',
-        subtitle: 'Steady daily practice to build your streak',
+        title: t(context, Str.onboardingGoal5MinTitle),
+        subtitle: t(context, Str.onboardingGoal5MinDesc),
         emoji: '⏱️',
       ),
       (
         minutes: 15,
-        title: '15 min / day · Committed (Recommended)',
-        subtitle: 'Optimal daily pace for solid retention and vocabulary growth',
+        title: t(context, Str.onboardingGoal15MinTitle),
+        subtitle: t(context, Str.onboardingGoal15MinDesc),
         emoji: '🎯',
       ),
       (
         minutes: 30,
-        title: '30 min / day · Serious',
-        subtitle: 'Fast-track your German fluency for work or study',
+        title: t(context, Str.onboardingGoal30MinTitle),
+        subtitle: t(context, Str.onboardingGoal30MinDesc),
         emoji: '🔥',
       ),
       (
         minutes: 60,
-        title: '1 Hour / day · Intensive',
-        subtitle: 'Comprehensive study covering grammar, speaking & tests',
+        title: t(context, Str.onboardingGoal60MinTitle),
+        subtitle: t(context, Str.onboardingGoal60MinDesc),
         emoji: '🚀',
       ),
       (
         minutes: 120,
-        title: '2 Hours / day · Super Intensive',
-        subtitle: 'Fastest route to passing Goethe / telc exams',
+        title: t(context, Str.onboardingGoal120MinTitle),
+        subtitle: t(context, Str.onboardingGoal120MinDesc),
         emoji: '🏆',
       ),
     ];
@@ -502,9 +501,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       children: [
         const SizedBox(height: 8),
         _buildHeader(
-          title: 'What is your daily goal?',
-          subtitle:
-              'Set a realistic goal. Consistency builds fluency faster than cramming.',
+          title: t(context, Str.onboardingStep4Title),
+          subtitle: t(context, Str.onboardingStep4Sub),
           textPrimary: textPrimary,
           textSecondary: textSecondary,
         ),
@@ -562,7 +560,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   // Bottom Continue / Commit Button
   Widget _buildBottomBar(BuildContext context, bool isDark) {
     final isLastStep = _currentStep == _totalSteps - 1;
-    final ctaLabel = isLastStep ? 'Start Learning' : 'Continue';
+    final ctaLabel = isLastStep ? t(context, Str.onboardingBtnStart) : t(context, Str.onboardingBtnContinue);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),

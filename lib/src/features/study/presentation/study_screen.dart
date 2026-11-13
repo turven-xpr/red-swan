@@ -3,6 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/config/app_locale.dart';
+import '../../../core/i18n/bidi_utils.dart';
+import '../../../core/i18n/strings.dart';
+import '../../../core/i18n/translations.dart';
 import '../../../core/theme/app_theme.dart';
 import '../data/content_repository.dart';
 import '../domain/curriculum_models.dart';
@@ -467,7 +470,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
       child: Row(
         children: [
           Text(
-            isArabic ? 'المسار التعليمي:' : 'Learning Path:',
+            t(context, Str.learningPath),
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w700,
@@ -657,7 +660,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                           ),
                           const SizedBox(width: 3),
                           Text(
-                            '${section.units.length} ${isArabic ? 'وحدات' : 'Units'}',
+                            t(context, Str.unitsCount, args: [section.units.length.toString()]),
                             style: TextStyle(
                               color: secondaryTextColor,
                               fontSize: 11.5,
@@ -830,7 +833,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                         Row(
                           children: [
                             Text(
-                              'Unit ${unitDef.unitNumber}',
+                              t(context, Str.unitLabel, args: [unitDef.unitNumber.toString()]),
                               style: TextStyle(
                                 fontSize: 11,
                                 fontWeight: FontWeight.w700,
@@ -848,7 +851,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Text(
-                                  isArabic ? 'جاهز للدراسة' : 'Ready',
+                                  t(context, Str.readyToStudy),
                                   style: const TextStyle(
                                     fontSize: 10,
                                     fontWeight: FontWeight.w700,
@@ -921,9 +924,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      isArabic
-                          ? 'دروس هذه الوحدة قيد الإعداد والإضافة'
-                          : 'Lessons for this unit will be unlocked soon',
+                      t(context, Str.lessonsComingSoon),
                       style: TextStyle(
                         fontSize: 12,
                         color: isDark ? Colors.white38 : Colors.black38,
@@ -989,7 +990,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
         ),
         child: Icon(icon, color: iconColor, size: 18),
       ),
-      title: Text(
+      title: GermanText(
         lesson.titleDe,
         style: TextStyle(
           fontSize: 14,
@@ -998,13 +999,21 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
         ),
       ),
       subtitle: Text(
-        lesson.localizedTitle(isArabic ? 'ar' : 'en'),
+        BidiUtils.safeLocalized(
+          arabic: lesson.titleAr,
+          fallbackEnglish: lesson.titleEn,
+          isArabic: isArabic,
+        ),
         style: TextStyle(
           fontSize: 11,
           color: isDark ? Colors.white60 : Colors.black54,
         ),
       ),
-      trailing: const Icon(Icons.chevron_right_rounded, color: Colors.grey, size: 20),
+      trailing: Icon(
+        isArabic ? Icons.chevron_left_rounded : Icons.chevron_right_rounded,
+        color: Colors.grey,
+        size: 20,
+      ),
       onTap: () {
         context.push('/study/lesson/${lesson.id}');
       },
@@ -1062,10 +1071,8 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                   children: [
                     Text(
                       isIntro
-                          ? (isArabic ? 'نقطة تثبيت الأساسيات (Intro Checkpoint)' : 'Intro Checkpoint')
-                          : (isArabic
-                              ? 'اختبار اجتياز المستوى ${section.level}'
-                              : '${section.level} Gate Test Checkpoint'),
+                          ? t(context, Str.checkpointIntro)
+                          : t(context, Str.checkpointGate, args: [section.level]),
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w800,
@@ -1075,12 +1082,8 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                     const SizedBox(height: 2),
                     Text(
                       isIntro
-                          ? (isArabic
-                              ? 'احصل على 75% لتثبيت الأساسيات وفتح المستوى A1'
-                              : 'Score 75% to master the basics & unlock Level A1')
-                          : (isArabic
-                              ? 'احصل على 75% لفتح المستوى التالي وتثبيت شهادتك'
-                              : 'Score 75% to pass & unlock the next level'),
+                          ? t(context, Str.checkpointIntroSub)
+                          : t(context, Str.checkpointGateSub),
                       style: TextStyle(
                         fontSize: 11,
                         color: isDark ? Colors.white60 : Colors.black54,
@@ -1095,10 +1098,10 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _buildSkillPill(Icons.headphones_rounded, '25% Listen', Colors.blue),
-              _buildSkillPill(Icons.menu_book_rounded, '25% Read', Colors.teal),
-              _buildSkillPill(Icons.edit_note_rounded, '25% Write', Colors.purple),
-              _buildSkillPill(Icons.record_voice_over_rounded, '25% Speak', Colors.orange),
+              _buildSkillPill(Icons.headphones_rounded, t(context, Str.skillListen, args: ['25%']), Colors.blue),
+              _buildSkillPill(Icons.menu_book_rounded, t(context, Str.skillRead, args: ['25%']), Colors.teal),
+              _buildSkillPill(Icons.edit_note_rounded, t(context, Str.skillWrite, args: ['25%']), Colors.purple),
+              _buildSkillPill(Icons.record_voice_over_rounded, t(context, Str.skillSpeak, args: ['25%']), Colors.orange),
             ],
           ),
           const SizedBox(height: 14),
@@ -1115,10 +1118,8 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
             },
             child: Text(
               isIntro
-                  ? (isArabic ? 'بدء اختبار الأساسيات' : 'Start Intro Checkpoint')
-                  : (isArabic
-                      ? 'بدء اختبار اجتياز ${section.level}'
-                      : 'Start ${section.level} Gate Test'),
+                  ? t(context, Str.startIntroCheckpoint)
+                  : t(context, Str.startGateTest, args: [section.level]),
               style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 13),
             ),
           ),

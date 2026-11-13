@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/i18n/strings.dart';
+import '../../../core/i18n/translations.dart';
 import '../../../core/theme/app_theme.dart';
 
 /// Empty placeholder for AI Tutor Page (Personalized AI conversational chat)
@@ -35,7 +37,7 @@ class AiTutorScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 24),
               Text(
-                'AI German Teacher',
+                t(context, Str.aiTutorTitle),
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.w800,
@@ -44,7 +46,7 @@ class AiTutorScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 10),
               Text(
-                'Personalized AI chat conversations with live grammar corrections and speech practice will be built here.',
+                t(context, Str.aiTutorDesc),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 14,

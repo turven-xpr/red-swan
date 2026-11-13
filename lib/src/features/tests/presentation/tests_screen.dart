@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/i18n/strings.dart';
+import '../../../core/i18n/translations.dart';
 import '../../../core/theme/app_theme.dart';
 
-/// Empty placeholder for Tests Page (Goethe-Institut, telc, and mock exam practice)
+/// Placeholder for Tests Page (Goethe-Institut, telc, and mock exam practice)
 class TestsScreen extends ConsumerWidget {
   const TestsScreen({super.key});
 
@@ -13,7 +15,7 @@ class TestsScreen extends ConsumerWidget {
     final isDark = theme.brightness == Brightness.dark;
 
     return Scaffold(
-      backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
+      backgroundColor: isDark ? AppColors.surfaceDark : const Color(0xFFF7F8FA),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32),
@@ -35,7 +37,8 @@ class TestsScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 24),
               Text(
-                'Tests & Exams',
+                t(context, Str.testsTitle),
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.w800,
@@ -44,7 +47,7 @@ class TestsScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 10),
               Text(
-                'Official Goethe-Institut, telc, and level certification practice exams will be built here.',
+                t(context, Str.testsDesc),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 14,

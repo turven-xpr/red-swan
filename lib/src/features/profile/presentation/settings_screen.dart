@@ -20,11 +20,11 @@ class SettingsScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings'),
+        title: Text(t(context, Str.settingsTitle)),
       ),
       body: userAsync.when(
         data: (user) => SingleChildScrollView(
-          padding: const EdgeInsets.only(left: 20, right: 20, top: 16, bottom: 120),
+          padding: const EdgeInsetsDirectional.only(start: 20, end: 20, top: 16, bottom: 120),
           child: StaggerCascade(
             delayMs: 70,
             children: [
@@ -39,7 +39,7 @@ class SettingsScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 16),
               SettingsSection(
-                title: 'Audio-Geschwindigkeit',
+                title: t(context, Str.settingsAudioSpeed),
                 child: const AudioSpeedPicker(),
               ),
               const SizedBox(height: 16),
@@ -66,12 +66,12 @@ class SettingsScreen extends ConsumerWidget {
               children: [
                 Icon(Icons.error_outline_rounded, size: 48, color: theme.colorScheme.error),
                 const SizedBox(height: 12),
-                Text('Settings could not be loaded', style: theme.textTheme.bodyLarge),
+                Text(t(context, Str.settingsLoadError), style: theme.textTheme.bodyLarge),
                 const SizedBox(height: 12),
                 FilledButton.tonalIcon(
                   onPressed: () => ref.invalidate(currentUserProvider),
                   icon: const Icon(Icons.refresh),
-                  label: const Text('Retry'),
+                  label: Text(t(context, Str.retryButton)),
                 ),
               ],
             ),

@@ -97,6 +97,8 @@ class CurriculumLesson {
   final String? grammarContent;
   final String? contentJson;
 
+  String? get titleAr => localizedTitle('ar');
+
   String localizedTitle(String languageCode) {
     if (languageCode == 'ar') {
       switch (type) {

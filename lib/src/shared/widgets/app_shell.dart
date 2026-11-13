@@ -4,6 +4,9 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/config/app_locale.dart';
 import '../../core/config/onboarding_pref.dart';
+import '../../core/i18n/bidi_utils.dart';
+import '../../core/i18n/strings.dart';
+import '../../core/i18n/translations.dart';
 import '../../core/theme/app_theme.dart';
 import '../../features/monetization/ad_widgets.dart';
 
@@ -157,14 +160,14 @@ class _AppShellState extends ConsumerState<AppShell> {
 
                         // Right: Streak Counter System Pill
                         Tooltip(
-                          message: 'Daily Streak: Practice every day to build your streak!',
+                          message: t(context, Str.streakActiveTooltip),
                           child: InkWell(
                             borderRadius: BorderRadius.circular(20),
                             onTap: () {
                               ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('🔥 Streak active! Keep learning daily to extend it.'),
-                                  duration: Duration(seconds: 2),
+                                SnackBar(
+                                  content: Text(t(context, Str.streakExtendedToast)),
+                                  duration: const Duration(seconds: 2),
                                 ),
                               );
                             },
@@ -184,7 +187,7 @@ class _AppShellState extends ConsumerState<AppShell> {
                                   const Text('🔥', style: TextStyle(fontSize: 14)),
                                   const SizedBox(width: 4),
                                   Text(
-                                    '0 d',
+                                    BidiUtils.formatStreakDays(0, isArabic),
                                     style: TextStyle(
                                       fontWeight: FontWeight.w800,
                                       fontSize: 13,
@@ -211,7 +214,7 @@ class _AppShellState extends ConsumerState<AppShell> {
                               const Text('⚡', style: TextStyle(fontSize: 13)),
                               const SizedBox(width: 4),
                               Text(
-                                '0 XP',
+                                t(context, Str.xpPoints, args: ['0']),
                                 style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 12.5,

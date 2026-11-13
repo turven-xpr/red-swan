@@ -5,6 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/config/app_locale.dart';
+import '../../../core/i18n/bidi_utils.dart';
+import '../../../core/i18n/strings.dart';
+import '../../../core/i18n/translations.dart';
 import '../../../core/providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../data/content_repository.dart';
@@ -142,7 +145,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
         appBar: AppBar(title: Text(lesson.titleDe)),
         body: Center(
           child: Text(
-            isArabic ? 'لا توجد تمارين متاحة حالياً.' : 'No exercises found for this lesson.',
+            t(context, Str.noExercisesFound),
           ),
         ),
       );
@@ -277,9 +280,11 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
 
   Widget _buildExerciseContent(CurriculumExercise exercise, bool isDark, bool isArabic) {
     final promptMap = exercise.promptJson;
-    final questionText = isArabic
-        ? (promptMap['question_ar'] as String? ?? 'اختر الإجابة الصحيحة')
-        : (promptMap['question_en'] as String? ?? 'Choose the correct answer');
+    final questionText = BidiUtils.safeLocalized(
+      arabic: promptMap['question_ar'] as String?,
+      fallbackEnglish: promptMap['question_en'] as String? ?? t(context, Str.chooseCorrectAnswer),
+      isArabic: isArabic,
+    );
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -315,7 +320,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                     const SizedBox(width: 10),
                     Text(
                       exercise.skill == 'listening' && exercise.exerciseType == 'listen_choose'
-                          ? (isArabic ? 'اضغط للاستماع' : 'Tap to listen')
+                          ? t(context, Str.tapToListen)
                           : (promptMap['de'] ?? exercise.audioText!),
                       style: const TextStyle(
                         fontSize: 18,
@@ -409,7 +414,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             decoration: InputDecoration(
-              hintText: isArabic ? 'اكتب الكلمة هنا...' : 'Type word here...',
+              hintText: t(context, Str.typeWordHint),
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(14)),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(14),
@@ -451,7 +456,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
               ),
               icon: const Icon(Icons.mic_rounded, size: 24),
               label: Text(
-                isArabic ? 'نطقتها بصوت صحيح' : 'I pronounced it correctly',
+                t(context, Str.pronouncedCorrectly),
                 style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               onPressed: () {
@@ -479,7 +484,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
         ),
         onPressed: () => _checkWrittenAnswer(exercise.correctAnswer),
         child: Text(
-          isArabic ? 'تحقق من الإجابة' : 'Check Answer',
+          t(context, Str.checkAnswer),
           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
       );
@@ -510,8 +515,8 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                     children: [
                       Text(
                         _isCorrect
-                            ? (isArabic ? 'إجابة صحيحة! أحسنت 👏' : 'Correct! Great job 👏')
-                            : (isArabic ? 'إجابة غير صحيحة' : 'Incorrect'),
+                            ? t(context, Str.correctFeedback)
+                            : t(context, Str.incorrectFeedback),
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w800,
@@ -520,7 +525,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                       ),
                       if (!_isCorrect)
                         Text(
-                          '${isArabic ? "الإجابة الصحيحة" : "Correct answer"}: ${exercise.correctAnswer}',
+                          '${t(context, Str.correctAnswerLabel)} ${BidiUtils.isolateGerman(exercise.correctAnswer)}',
                           style: TextStyle(
                             fontSize: 14,
                             color: isDark ? Colors.white70 : Colors.black87,
@@ -543,7 +548,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                 ),
                 onPressed: () => _nextStep(totalSteps),
                 child: Text(
-                  isArabic ? 'المتابعة' : 'Continue',
+                  t(context, Str.continueButton),
                   style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -590,7 +595,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                 ),
                 onPressed: () => context.pop(),
                 child: Text(
-                  isArabic ? 'أنهيت قراءة الدرس' : 'Finished Reading',
+                  t(context, Str.finishReading),
                   style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -629,7 +634,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
         ),
         actions: [
           IconButton(
-            tooltip: isArabic ? 'إظهار / إخفاء الترجمة' : 'Toggle Translations',
+            tooltip: t(context, Str.toggleTranslations),
             icon: Icon(
               _showTextTranslations ? Icons.subtitles_rounded : Icons.subtitles_off_rounded,
               color: _showTextTranslations ? AppColors.primary : Colors.grey,
@@ -637,7 +642,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
             onPressed: () => setState(() => _showTextTranslations = !_showTextTranslations),
           ),
           IconButton(
-            tooltip: isArabic ? 'قراءة النص كاملاً' : 'Read Full Text',
+            tooltip: t(context, Str.readFullText),
             icon: const Icon(Icons.volume_up_rounded, color: AppColors.primary),
             onPressed: () {
               final fullText = sentences.map((s) => s['de'] as String? ?? '').join(' ');
@@ -688,7 +693,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            isArabic ? 'استمع إلى كل جملة، واقرأ الترجمة والشروحات' : 'Read & listen sentence by sentence',
+                            t(context, Str.textLessonSubtitle),
                             style: TextStyle(
                               fontSize: 12,
                               color: isDark ? Colors.white70 : const Color(0xFF3B82F6),
@@ -790,7 +795,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
               if (vocabularyNotes.isNotEmpty) ...[
                 const SizedBox(height: 16),
                 Text(
-                  isArabic ? 'المفردات وقواعد النص' : 'Vocabulary & Grammar Notes',
+                  t(context, Str.vocabGrammarNotes),
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w900,
@@ -876,7 +881,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
               if (questions.isNotEmpty) ...[
                 const SizedBox(height: 24),
                 Text(
-                  isArabic ? 'أسئلة فهم النص' : 'Comprehension Check',
+                  t(context, Str.comprehensionCheck),
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w900,
@@ -999,14 +1004,14 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text(
-                        isArabic ? 'أحسنت! أتممت دراسة النص بنجاح 🎉 +15 XP' : 'Great job! Reading completed 🎉 +15 XP',
+                        '${t(context, Str.lessonCompletedTitle)} 🎉 +15 XP',
                       ),
                       backgroundColor: Colors.green,
                     ),
                   );
                 },
                 child: Text(
-                  isArabic ? 'إتمام درس النص' : 'Complete Reading Lesson',
+                  t(context, Str.completeTextLesson),
                   style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -1047,7 +1052,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
         ),
         actions: [
           IconButton(
-            tooltip: isArabic ? 'استماع وتتبع القصة' : 'Auto Read Story',
+            tooltip: t(context, Str.autoReadStory),
             icon: Icon(
               _isStoryPlaying ? Icons.pause_circle_filled_rounded : Icons.play_circle_fill_rounded,
               color: AppColors.primary,
@@ -1221,7 +1226,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
               if (questions.isNotEmpty) ...[
                 const SizedBox(height: 24),
                 Text(
-                  isArabic ? 'أسئلة فهم القصة' : 'Story Comprehension',
+                  t(context, Str.storyComprehension),
                   style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.w900,
@@ -1345,14 +1350,14 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text(
-                        isArabic ? 'أحسنت! أتممت دراسة القصة بنجاح 🎉 +20 XP' : 'Congratulations! Story finished 🎉 +20 XP',
+                        '${t(context, Str.lessonCompletedTitle)} 🎉 +20 XP',
                       ),
                       backgroundColor: Colors.green,
                     ),
                   );
                 },
                 child: Text(
-                  isArabic ? 'إنهاء القصة وحفظ التقدّم' : 'Finish Story & Save Progress',
+                  t(context, Str.completeStoryLesson),
                   style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -1528,8 +1533,8 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                 const SizedBox(height: 24),
                 Text(
                   passed
-                      ? (isArabic ? 'أحسنت! أتممت الدرس بنجاح' : 'Awesome! Lesson Completed')
-                      : (isArabic ? 'تحتاج إلى مراجعة بسيطة' : 'Keep Practicing'),
+                      ? t(context, Str.lessonCompletedTitle)
+                      : t(context, Str.lessonCompletedSub),
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 24,
@@ -1539,7 +1544,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                 ),
                 const SizedBox(height: 12),
                 Text(
-                  '${isArabic ? "درجتك" : "Your Score"}: $_score / $total ($percentage%)',
+                  '${t(context, Str.yourScore)}: $_score / $total ($percentage%)',
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
@@ -1550,9 +1555,9 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('⚡ +15 XP', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.amber)),
+                    Text('⚡ +15 ${t(context, Str.xpPoints, args: [""]).trim()}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.amber)),
                     const SizedBox(width: 16),
-                    const Text('🔥 Streak +1', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange)),
+                    Text('🔥 ${BidiUtils.formatStreakDays(1, isArabic)}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.orange)),
                   ],
                 ),
                 const SizedBox(height: 36),
@@ -1567,7 +1572,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                     ),
                     onPressed: () => context.pop(),
                     child: Text(
-                      isArabic ? 'العودة إلى شاشة الدراسة' : 'Return to Study',
+                      t(context, Str.continueButton),
                       style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),

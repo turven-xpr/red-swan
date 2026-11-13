@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/i18n/strings.dart';
+import '../../../core/i18n/translations.dart';
 import '../../../core/providers.dart';
 import '../../../core/theme/app_theme.dart';
 
@@ -16,7 +18,7 @@ class ProfileScreen extends ConsumerWidget {
     final isDark = theme.brightness == Brightness.dark;
 
     final user = userAsync.value;
-    final displayName = user?.displayName?.trim() ?? 'Learner';
+    final displayName = user?.displayName?.trim() ?? t(context, Str.learnerFallback);
     final email = user?.email ?? '';
 
     return Scaffold(
@@ -73,7 +75,7 @@ class ProfileScreen extends ConsumerWidget {
                 child: Column(
                   children: [
                     Text(
-                      'Learning Stats & Achievements',
+                      t(context, Str.profileStatsTitle),
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
@@ -82,7 +84,7 @@ class ProfileScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Daily streak counters, CEFR level progression, and test scores will be built here.',
+                      t(context, Str.profileStatsPlaceholder),
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 13.5,
@@ -96,7 +98,7 @@ class ProfileScreen extends ConsumerWidget {
               const SizedBox(height: 24),
               OutlinedButton.icon(
                 icon: const Icon(Icons.settings_outlined, size: 18),
-                label: const Text('App Settings & Language'),
+                label: Text(t(context, Str.profileSettingsBtn)),
                 onPressed: () => context.push('/settings'),
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/config/app_locale.dart';
+import '../../../core/i18n/strings.dart';
+import '../../../core/i18n/translations.dart';
 import '../../../core/providers.dart';
 import '../../../core/theme/app_theme.dart';
 
@@ -225,7 +227,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        isArabic ? 'جلسات الاستماع' : 'Listening Sessions',
+                        t(context, Str.listeningSessions),
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w900,
@@ -235,7 +237,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        isArabic ? 'استماع متواصل في الخلفية لتقوية الأذن' : 'Background audio immersion practice',
+                        t(context, Str.listeningSubtitle),
                         style: TextStyle(
                           fontSize: 12,
                           color: isDark ? Colors.white60 : Colors.black54,
@@ -245,7 +247,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
                   ),
                   const Spacer(),
                   IconButton(
-                    tooltip: isArabic ? 'إظهار / إخفاء الترجمة' : 'Toggle Translations',
+                    tooltip: t(context, Str.toggleTranslations),
                     icon: Icon(
                       _showTranslation ? Icons.subtitles_rounded : Icons.subtitles_off_rounded,
                       color: _showTranslation ? AppColors.primary : Colors.grey,
@@ -282,7 +284,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
                           ),
                           child: Center(
                             child: Text(
-                              '$mins ${isArabic ? "دقيقة" : "Min"}',
+                              t(context, Str.minutesShort, args: [mins.toString()]),
                               style: TextStyle(
                                 color: selected
                                     ? Colors.white
@@ -561,7 +563,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
                       // Listen Comprehension Quiz Modal
                       IconButton(
                         icon: const Icon(Icons.quiz_rounded, size: 24, color: Colors.teal),
-                        tooltip: isArabic ? 'اختبر فهمك' : 'Comprehension Quiz',
+                        tooltip: t(context, Str.comprehensionQuiz),
                         onPressed: () => _showQuickQuiz(context, isDark, isArabic),
                       ),
                     ],
@@ -589,7 +591,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
-                isArabic ? 'سؤال فهم سريع' : 'Quick Comprehension Check',
+                t(context, Str.quickComprehensionCheck),
                 style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 12),
@@ -615,8 +617,8 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
                         SnackBar(
                           content: Text(
                             isCorrect
-                                ? (isArabic ? 'إجابة صحيحة ممتاز! 🎉' : 'Correct answer! 🎉')
-                                : (isArabic ? 'إجابة غير صحيحة، حاول مجدداً!' : 'Incorrect, try again!'),
+                                ? t(context, Str.correctAnswer)
+                                : t(context, Str.incorrectTryAgain),
                           ),
                           backgroundColor: isCorrect ? Colors.green : Colors.red,
                         ),

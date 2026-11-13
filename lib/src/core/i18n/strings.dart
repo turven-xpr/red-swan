@@ -102,4 +102,126 @@ class Str {
   static const String readingTitle = 'readingTitle';
   static const String loginGuest = 'loginGuest';
   static const String navMore = 'navMore';
+
+  // Shell & Navigation
+  static const String learningPath = 'learningPath';
+  static const String streakActiveTooltip = 'streakActiveTooltip';
+  static const String streakExtendedToast = 'streakExtendedToast';
+  static const String xpPoints = 'xpPoints';
+
+  // Study Screen & Checkpoints
+  static const String unitLabel = 'unitLabel';
+  static const String readyToStudy = 'readyToStudy';
+  static const String lessonsComingSoon = 'lessonsComingSoon';
+  static const String checkpointIntro = 'checkpointIntro';
+  static const String checkpointGate = 'checkpointGate';
+  static const String checkpointIntroSub = 'checkpointIntroSub';
+  static const String checkpointGateSub = 'checkpointGateSub';
+  static const String skillListen = 'skillListen';
+  static const String skillRead = 'skillRead';
+  static const String skillWrite = 'skillWrite';
+  static const String skillSpeak = 'skillSpeak';
+  static const String startIntroCheckpoint = 'startIntroCheckpoint';
+  static const String startGateTest = 'startGateTest';
+
+  // Lesson Player
+  static const String chooseCorrectAnswer = 'chooseCorrectAnswer';
+  static const String pronouncedCorrectly = 'pronouncedCorrectly';
+  static const String checkAnswer = 'checkAnswer';
+  static const String correctFeedback = 'correctFeedback';
+  static const String incorrectFeedback = 'incorrectFeedback';
+  static const String correctAnswerLabel = 'correctAnswerLabel';
+  static const String continueButton = 'continueButton';
+  static const String finishReading = 'finishReading';
+  static const String completeTextLesson = 'completeTextLesson';
+  static const String completeStoryLesson = 'completeStoryLesson';
+  static const String lessonCompletedTitle = 'lessonCompletedTitle';
+  static const String lessonCompletedSub = 'lessonCompletedSub';
+
+  // Placeholder Screens
+  static const String testsTitle = 'testsTitle';
+  static const String testsDesc = 'testsDesc';
+  static const String aiTutorTitle = 'aiTutorTitle';
+  static const String aiTutorDesc = 'aiTutorDesc';
+  static const String profileStatsTitle = 'profileStatsTitle';
+  static const String profileStatsDesc = 'profileStatsDesc';
+  static const String profileSettingsBtn = 'profileSettingsBtn';
+  static const String settingsAudioSpeed = 'settingsAudioSpeed';
+
+  // Onboarding
+  static const String onboardingStep1Title = 'onboardingStep1Title';
+  static const String onboardingStep1Sub = 'onboardingStep1Sub';
+  static const String onboardingStep2Title = 'onboardingStep2Title';
+  static const String onboardingStep2Sub = 'onboardingStep2Sub';
+  static const String onboardingStep3Title = 'onboardingStep3Title';
+  static const String onboardingStep3Sub = 'onboardingStep3Sub';
+  static const String onboardingStep4Title = 'onboardingStep4Title';
+  static const String onboardingStep4Sub = 'onboardingStep4Sub';
+  static const String onboardingReasonStudy = 'onboardingReasonStudy';
+  static const String onboardingReasonStudyDesc = 'onboardingReasonStudyDesc';
+  static const String onboardingReasonAusbildung = 'onboardingReasonAusbildung';
+  static const String onboardingReasonAusbildungDesc = 'onboardingReasonAusbildungDesc';
+  static const String onboardingReasonJob = 'onboardingReasonJob';
+  static const String onboardingReasonJobDesc = 'onboardingReasonJobDesc';
+  static const String onboardingReasonTravel = 'onboardingReasonTravel';
+  static const String onboardingReasonTravelDesc = 'onboardingReasonTravelDesc';
+  static const String onboardingReasonFun = 'onboardingReasonFun';
+  static const String onboardingReasonFunDesc = 'onboardingReasonFunDesc';
+  static const String onboardingBtnContinue = 'onboardingBtnContinue';
+  static const String onboardingBtnBack = 'onboardingBtnBack';
+  static const String onboardingBtnStart = 'onboardingBtnStart';
+  static const String onboardingLevelIntroTitle = 'onboardingLevelIntroTitle';
+  static const String onboardingLevelIntroDesc = 'onboardingLevelIntroDesc';
+  static const String onboardingLevelA1Title = 'onboardingLevelA1Title';
+  static const String onboardingLevelA1Desc = 'onboardingLevelA1Desc';
+  static const String onboardingLevelA2Title = 'onboardingLevelA2Title';
+  static const String onboardingLevelA2Desc = 'onboardingLevelA2Desc';
+  static const String onboardingLevelB1Title = 'onboardingLevelB1Title';
+  static const String onboardingLevelB1Desc = 'onboardingLevelB1Desc';
+  static const String onboardingLevelB2Title = 'onboardingLevelB2Title';
+  static const String onboardingLevelB2Desc = 'onboardingLevelB2Desc';
+  static const String onboardingGoal3MinTitle = 'onboardingGoal3MinTitle';
+  static const String onboardingGoal3MinDesc = 'onboardingGoal3MinDesc';
+  static const String onboardingGoal5MinTitle = 'onboardingGoal5MinTitle';
+  static const String onboardingGoal5MinDesc = 'onboardingGoal5MinDesc';
+  static const String onboardingGoal15MinTitle = 'onboardingGoal15MinTitle';
+  static const String onboardingGoal15MinDesc = 'onboardingGoal15MinDesc';
+  static const String onboardingGoal30MinTitle = 'onboardingGoal30MinTitle';
+  static const String onboardingGoal30MinDesc = 'onboardingGoal30MinDesc';
+  static const String onboardingGoal60MinTitle = 'onboardingGoal60MinTitle';
+  static const String onboardingGoal60MinDesc = 'onboardingGoal60MinDesc';
+  static const String onboardingGoal120MinTitle = 'onboardingGoal120MinTitle';
+  static const String onboardingGoal120MinDesc = 'onboardingGoal120MinDesc';
+
+  // Lesson Player – remaining keys
+  static const String noExercisesFound = 'noExercisesFound';
+  static const String tapToListen = 'tapToListen';
+  static const String typeWordHint = 'typeWordHint';
+  static const String toggleTranslations = 'toggleTranslations';
+  static const String readFullText = 'readFullText';
+  static const String textLessonSubtitle = 'textLessonSubtitle';
+  static const String vocabGrammarNotes = 'vocabGrammarNotes';
+  static const String comprehensionCheck = 'comprehensionCheck';
+  static const String autoReadStory = 'autoReadStory';
+  static const String storyComprehension = 'storyComprehension';
+  static const String yourScore = 'yourScore';
+
+  // Study Screen – remaining
+  static const String unitsCount = 'unitsCount';
+
+  // Listening Sessions
+  static const String listeningSessions = 'listeningSessions';
+  static const String listeningSubtitle = 'listeningSubtitle';
+  static const String minutesShort = 'minutesShort';
+  static const String comprehensionQuiz = 'comprehensionQuiz';
+  static const String quickComprehensionCheck = 'quickComprehensionCheck';
+  static const String correctAnswer = 'correctAnswer';
+  static const String incorrectTryAgain = 'incorrectTryAgain';
+
+  // Settings & Profile
+  static const String settingsTitle = 'settingsTitle';
+  static const String settingsLoadError = 'settingsLoadError';
+  static const String retryButton = 'retryButton';
+  static const String learnerFallback = 'learnerFallback';
+  static const String profileStatsPlaceholder = 'profileStatsPlaceholder';
 }
