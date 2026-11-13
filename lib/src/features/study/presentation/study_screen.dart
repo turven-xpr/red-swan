@@ -520,7 +520,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
           IconButton(
             tooltip: isArabic ? 'جلسات الاستماع' : 'Listening Sessions',
             icon: const Icon(Icons.headphones_rounded, color: AppColors.primary, size: 22),
-            onPressed: () => context.push('/listening'),
+            onPressed: () => context.go('/listening'),
           ),
         ],
       ),
@@ -537,7 +537,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
       children: [
         // Listening Sessions Card
         GestureDetector(
-          onTap: () => context.push('/listening'),
+          onTap: () => context.go('/listening'),
           child: Container(
             margin: const EdgeInsets.only(bottom: 20),
             padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),

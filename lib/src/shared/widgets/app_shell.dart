@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/config/app_locale.dart';
 import '../../core/config/onboarding_pref.dart';
 import '../../core/theme/app_theme.dart';
 import '../../features/monetization/ad_widgets.dart';
@@ -20,24 +21,35 @@ class _AppShellState extends ConsumerState<AppShell> {
     _TabSpec(
       route: '/study',
       label: 'Study',
+      labelAr: 'دراسة',
       icon: Icons.school_outlined,
       activeIcon: Icons.school_rounded,
     ),
     _TabSpec(
+      route: '/listening',
+      label: 'Listening',
+      labelAr: 'استماع',
+      icon: Icons.headphones_outlined,
+      activeIcon: Icons.headphones_rounded,
+    ),
+    _TabSpec(
       route: '/tests',
       label: 'Tests',
+      labelAr: 'اختبارات',
       icon: Icons.assignment_outlined,
       activeIcon: Icons.assignment_rounded,
     ),
     _TabSpec(
       route: '/ai-tutor',
       label: 'AI Tutor',
+      labelAr: 'المعلم الذكي',
       icon: Icons.smart_toy_outlined,
       activeIcon: Icons.smart_toy_rounded,
     ),
     _TabSpec(
       route: '/profile',
       label: 'Profile',
+      labelAr: 'حسابي',
       icon: Icons.person_outline_rounded,
       activeIcon: Icons.person_rounded,
     ),
@@ -62,6 +74,8 @@ class _AppShellState extends ConsumerState<AppShell> {
         .toString();
     final index = _currentIndex;
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final locale = ref.watch(appLocaleProvider);
+    final isArabic = locale.languageCode == 'ar';
     final onboarding = ref.watch(onboardingPrefsProvider);
     final rawLevel = onboarding.startLevel?.name.toUpperCase() ?? 'INTRO';
     final levelCode = rawLevel == 'A0' ? 'INTRO' : rawLevel;
@@ -232,7 +246,7 @@ class _AppShellState extends ConsumerState<AppShell> {
               destinations: [
                 for (final t in _tabs)
                   NavigationDestination(
-                    label: t.label,
+                    label: isArabic ? t.labelAr : t.label,
                     icon: Icon(t.icon),
                     selectedIcon: Icon(t.activeIcon),
                   ),
@@ -249,11 +263,13 @@ class _TabSpec {
   const _TabSpec({
     required this.route,
     required this.label,
+    required this.labelAr,
     required this.icon,
     required this.activeIcon,
   });
   final String route;
   final String label;
+  final String labelAr;
   final IconData icon;
   final IconData activeIcon;
 }

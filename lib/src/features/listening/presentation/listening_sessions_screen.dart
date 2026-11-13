@@ -213,25 +213,49 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
 
     return Scaffold(
       backgroundColor: isDark ? AppColors.surfaceDark : const Color(0xFFF8F9FD),
-      appBar: AppBar(
-        title: Text(
-          isArabic ? 'جلسات الاستماع المتواصل' : 'Listening Sessions',
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
-        actions: [
-          IconButton(
-            tooltip: isArabic ? 'إظهار / إخفاء الترجمة' : 'Toggle Translations',
-            icon: Icon(
-              _showTranslation ? Icons.subtitles_rounded : Icons.subtitles_off_rounded,
-              color: _showTranslation ? AppColors.primary : Colors.grey,
-            ),
-            onPressed: () => setState(() => _showTranslation = !_showTranslation),
-          ),
-        ],
-      ),
       body: SafeArea(
         child: Column(
           children: [
+            // Screen Header Bar
+            Padding(
+              padding: const EdgeInsets.fromLTRB(18, 12, 14, 6),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isArabic ? 'جلسات الاستماع' : 'Listening Sessions',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w900,
+                          color: isDark ? Colors.white : AppColors.secondary,
+                          letterSpacing: -0.3,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        isArabic ? 'استماع متواصل في الخلفية لتقوية الأذن' : 'Background audio immersion practice',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: isDark ? Colors.white60 : Colors.black54,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const Spacer(),
+                  IconButton(
+                    tooltip: isArabic ? 'إظهار / إخفاء الترجمة' : 'Toggle Translations',
+                    icon: Icon(
+                      _showTranslation ? Icons.subtitles_rounded : Icons.subtitles_off_rounded,
+                      color: _showTranslation ? AppColors.primary : Colors.grey,
+                    ),
+                    onPressed: () => setState(() => _showTranslation = !_showTranslation),
+                  ),
+                ],
+              ),
+            ),
+
             // Top duration selector: 15 / 30 / 60 min
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),

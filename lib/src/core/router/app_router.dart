@@ -85,16 +85,16 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           lessonId: int.parse(state.pathParameters['id']!),
         ),
       ),
-      GoRoute(
-        path: '/listening',
-        builder: (_, _) => const ListeningSessionsScreen(),
-      ),
       ShellRoute(
         builder: (context, state, child) => AppShell(child: child),
         routes: [
           GoRoute(
             path: '/study',
             builder: (_, _) => const StudyScreen(),
+          ),
+          GoRoute(
+            path: '/listening',
+            builder: (_, _) => const ListeningSessionsScreen(),
           ),
           GoRoute(
             path: '/tests',
