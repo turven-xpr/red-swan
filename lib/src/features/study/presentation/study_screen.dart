@@ -527,7 +527,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
 
     return ListView(
       controller: _scrollController,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
       children: [
         for (final section in _syllabusLevels) ...[
           // Section Level Banner (Intro, A1, A2...)

@@ -96,6 +96,7 @@ class _AppShellState extends ConsumerState<AppShell> {
         return false;
       },
       child: Scaffold(
+        backgroundColor: isDark ? AppColors.surfaceDark : const Color(0xFFF7F8FA),
         appBar: isMainTab
             ? PreferredSize(
                 preferredSize: const Size.fromHeight(56),
@@ -234,19 +235,29 @@ class _AppShellState extends ConsumerState<AppShell> {
             Container(
               decoration: BoxDecoration(
                 color: isDark ? AppColors.surfaceDark : Colors.white,
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+                border: Border.all(
+                  color: isDark ? const Color(0xFF282C38) : const Color(0xFFE2E5EB),
+                  width: 1.2,
+                ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withValues(alpha: isDark ? 0.35 : 0.08),
-                    blurRadius: 16,
-                    offset: const Offset(0, -4),
+                    color: Colors.black.withValues(alpha: isDark ? 0.45 : 0.08),
+                    blurRadius: 20,
+                    offset: const Offset(0, -6),
+                  ),
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: isDark ? 0.20 : 0.03),
+                    blurRadius: 4,
+                    offset: const Offset(0, -1),
                   ),
                 ],
               ),
               child: ClipRRect(
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
                 child: NavigationBarTheme(
                   data: NavigationBarThemeData(
+                    height: 70,
                     backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
                     elevation: 0,
                     indicatorColor: isDark

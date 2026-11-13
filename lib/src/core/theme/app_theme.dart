@@ -78,7 +78,7 @@ class AppTheme {
       useMaterial3: true,
       brightness: brightness,
       colorScheme: cs,
-      scaffoldBackgroundColor: cs.surface,
+      scaffoldBackgroundColor: isLight ? const Color(0xFFF7F8FA) : AppColors.surfaceDark,
       visualDensity: VisualDensity.standard,
       splashFactory: InkSparkle.splashFactory,
     );
