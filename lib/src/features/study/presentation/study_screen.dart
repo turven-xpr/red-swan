@@ -18,6 +18,7 @@ class _SyllabusUnitDef {
     required this.titleDe,
     required this.titleEn,
     required this.titleAr,
+    required this.titleEs,
     required this.icon,
   });
 
@@ -26,9 +27,14 @@ class _SyllabusUnitDef {
   final String titleDe;
   final String titleEn;
   final String titleAr;
+  final String titleEs;
   final IconData icon;
 
-  String localizedTitle(bool isArabic) => isArabic ? titleAr : titleEn;
+  String localizedTitle(String languageCode) {
+    if (languageCode == 'ar') return titleAr;
+    if (languageCode == 'es') return titleEs;
+    return titleEn;
+  }
 }
 
 class _SyllabusLevelDef {
@@ -38,8 +44,10 @@ class _SyllabusLevelDef {
     required this.titleDe,
     required this.titleEn,
     required this.titleAr,
+    required this.titleEs,
     required this.subtitleEn,
     required this.subtitleAr,
+    required this.subtitleEs,
     required this.cardBgColor,
     required this.cardDarkBgColor,
     required this.textColor,
@@ -54,8 +62,10 @@ class _SyllabusLevelDef {
   final String titleDe;
   final String titleEn;
   final String titleAr;
+  final String titleEs;
   final String subtitleEn;
   final String subtitleAr;
+  final String subtitleEs;
   final Color cardBgColor;
   final Color cardDarkBgColor;
   final Color textColor;
@@ -63,6 +73,18 @@ class _SyllabusLevelDef {
   final String? badgeAsset;
   final IconData? badgeIcon;
   final List<_SyllabusUnitDef> units;
+
+  String localizedTitle(String languageCode) {
+    if (languageCode == 'ar') return titleAr;
+    if (languageCode == 'es') return titleEs;
+    return titleDe;
+  }
+
+  String localizedSubtitle(String languageCode) {
+    if (languageCode == 'ar') return subtitleAr;
+    if (languageCode == 'es') return subtitleEs;
+    return subtitleEn;
+  }
 
   String get descriptionEn => subtitleEn;
   String get descriptionAr => subtitleAr;
@@ -77,8 +99,10 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     titleDe: 'Einführung',
     titleEn: 'Intro',
     titleAr: 'المقدمة',
+    titleEs: 'Introducción',
     subtitleEn: 'Alphabet, pronunciation & first words',
     subtitleAr: 'الأبجدية وقواعد النطق والأرقام الأولى',
+    subtitleEs: 'Alfabeto, pronunciación y primeras palabras',
     cardBgColor: Color(0xFFFDE8E4), // Warm soft rose/peach like template card 1
     cardDarkBgColor: Color(0xFF2C1E1B),
     textColor: Color(0xFFC0392B), // Deep reddish/rust tone
@@ -91,6 +115,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Das Alphabet & Aussprache',
         titleEn: 'Alphabet & Pronunciation',
         titleAr: 'الأبجدية وقواعد النطق',
+        titleEs: 'El alfabeto y la pronunciación',
         icon: Icons.abc_rounded,
       ),
       _SyllabusUnitDef(
@@ -99,6 +124,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Erste Wörter & Zahlen',
         titleEn: 'First Words & Numbers',
         titleAr: 'الكلمات الأولى والأرقام',
+        titleEs: 'Primeras palabras y números',
         icon: Icons.pin_outlined,
       ),
     ],
@@ -111,8 +137,10 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     titleDe: 'A1 · Anfänger',
     titleEn: 'A1 · Beginner',
     titleAr: 'A1 · المستوى المبتدئ',
+    titleEs: 'A1 · Principiante',
     subtitleEn: 'Daily life, family, food & routine',
     subtitleAr: 'الحياة اليومية، العائلة، الطعام والروتين',
+    subtitleEs: 'Vida diaria, familia, comida y rutina',
     cardBgColor: Color(0xFFE3EDFD), // Soft baby blue like template card 2
     cardDarkBgColor: Color(0xFF1B2333),
     textColor: Color(0xFF2962FF), // Deep vibrant blue
@@ -125,6 +153,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Familie & Leute',
         titleEn: 'Family & People',
         titleAr: 'العائلة والناس',
+        titleEs: 'Familia y personas',
         icon: Icons.people_alt_rounded,
       ),
       _SyllabusUnitDef(
@@ -133,6 +162,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Essen & Trinken',
         titleEn: 'Food & Drinks',
         titleAr: 'الطعام والشراب',
+        titleEs: 'Comida y bebidas',
         icon: Icons.restaurant_rounded,
       ),
       _SyllabusUnitDef(
@@ -141,6 +171,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Zuhause & Wohnen',
         titleEn: 'Home & Living',
         titleAr: 'المنزل والسكن',
+        titleEs: 'Hogar y vivienda',
         icon: Icons.home_rounded,
       ),
       _SyllabusUnitDef(
@@ -149,6 +180,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Tagesablauf & Zeit',
         titleEn: 'Daily Routine & Time',
         titleAr: 'الروتين اليومي والوقت',
+        titleEs: 'Rutina diaria y la hora',
         icon: Icons.access_time_filled_rounded,
       ),
       _SyllabusUnitDef(
@@ -157,6 +189,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Schule & Beruf',
         titleEn: 'School & Work',
         titleAr: 'الدراسة والعمل',
+        titleEs: 'Estudios y profesión',
         icon: Icons.work_rounded,
       ),
       _SyllabusUnitDef(
@@ -165,6 +198,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Einkaufen & Geld',
         titleEn: 'Shopping & Money',
         titleAr: 'التسوق والمال',
+        titleEs: 'Compras y dinero',
         icon: Icons.shopping_bag_rounded,
       ),
       _SyllabusUnitDef(
@@ -173,6 +207,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Körper & Gesundheit',
         titleEn: 'Body & Health',
         titleAr: 'الجسم والصحة',
+        titleEs: 'Cuerpo y salud',
         icon: Icons.favorite_rounded,
       ),
       _SyllabusUnitDef(
@@ -181,6 +216,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Wetter & Jahreszeiten',
         titleEn: 'Weather & Seasons',
         titleAr: 'الطقس وفصول السنة',
+        titleEs: 'Clima y estaciones del año',
         icon: Icons.wb_sunny_rounded,
       ),
       _SyllabusUnitDef(
@@ -189,6 +225,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Weg & Verkehr',
         titleEn: 'Directions & Transport',
         titleAr: 'الاتجاهات والمواصلات',
+        titleEs: 'Direcciones y transporte',
         icon: Icons.directions_transit_rounded,
       ),
     ],
@@ -201,8 +238,10 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     titleDe: 'A2 · Grundstufe',
     titleEn: 'A2 · Elementary',
     titleAr: 'A2 · المستوى الأساسي',
+    titleEs: 'A2 · Elemental',
     subtitleEn: 'Travel, past tense & hobbies',
     subtitleAr: 'السفر، زمن الماضي، والهوايات والمشاعر',
+    subtitleEs: 'Viajes, tiempo pasado y aficiones',
     cardBgColor: Color(0xFFFDF0D5), // Soft pastel amber/sand like template card 3
     cardDarkBgColor: Color(0xFF2C2415),
     textColor: Color(0xFFB76E00), // Rich amber brown
@@ -215,6 +254,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Reisen & Urlaub',
         titleEn: 'Travel & Holidays',
         titleAr: 'السفر والعطلات',
+        titleEs: 'Viajes y vacaciones',
         icon: Icons.flight_takeoff_rounded,
       ),
       _SyllabusUnitDef(
@@ -223,6 +263,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Hobbys & Freizeit',
         titleEn: 'Hobbies & Leisure',
         titleAr: 'الهوايات وأوقات الفراغ',
+        titleEs: 'Aficiones y tiempo libre',
         icon: Icons.sports_soccer_rounded,
       ),
       _SyllabusUnitDef(
@@ -231,6 +272,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Kleidung & Mode',
         titleEn: 'Clothing & Fashion',
         titleAr: 'الملابس والموضة',
+        titleEs: 'Ropa y moda',
         icon: Icons.checkroom_rounded,
       ),
       _SyllabusUnitDef(
@@ -239,6 +281,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Stadt & Land',
         titleEn: 'City & Countryside',
         titleAr: 'المدينة والريف',
+        titleEs: 'Ciudad y campo',
         icon: Icons.location_city_rounded,
       ),
       _SyllabusUnitDef(
@@ -247,6 +290,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Gefühle & Meinungen',
         titleEn: 'Feelings & Opinions',
         titleAr: 'المشاعر وإبداء الرأي',
+        titleEs: 'Emociones y opiniones',
         icon: Icons.sentiment_satisfied_alt_rounded,
       ),
       _SyllabusUnitDef(
@@ -255,6 +299,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Medien & Kommunikation',
         titleEn: 'Media & Tech',
         titleAr: 'الإعلام والتواصل',
+        titleEs: 'Medios y tecnología',
         icon: Icons.phone_android_rounded,
       ),
       _SyllabusUnitDef(
@@ -263,6 +308,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Natur & Tiere',
         titleEn: 'Nature & Animals',
         titleAr: 'الطبيعة والحيوانات',
+        titleEs: 'Naturaleza y animales',
         icon: Icons.pets_rounded,
       ),
       _SyllabusUnitDef(
@@ -271,6 +317,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Feste & Traditionen',
         titleEn: 'Celebrations & Culture',
         titleAr: 'الأعياد والتقاليد',
+        titleEs: 'Fiestas y tradiciones',
         icon: Icons.celebration_rounded,
       ),
       _SyllabusUnitDef(
@@ -279,6 +326,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Technik & Internet',
         titleEn: 'Technology & Web',
         titleAr: 'التكنولوجيا والإنترنت',
+        titleEs: 'Tecnología e internet',
         icon: Icons.computer_rounded,
       ),
       _SyllabusUnitDef(
@@ -287,6 +335,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Kochen & Rezepte',
         titleEn: 'Cooking & Recipes',
         titleAr: 'الطبخ والوصفات',
+        titleEs: 'Cocina y recetas',
         icon: Icons.soup_kitchen_rounded,
       ),
     ],
@@ -299,8 +348,10 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     titleDe: 'B1 · Mittelstufe',
     titleEn: 'B1 · Intermediate',
     titleAr: 'B1 · المستوى المتوسط',
+    titleEs: 'B1 · Intermedio',
     subtitleEn: 'Ausbildung ready, work & fluent discussions',
     subtitleAr: 'جاهزية الأوسبيلدونغ، العمل والحوارات المتقدمة',
+    subtitleEs: 'Listo para formación, trabajo y charlas fluidas',
     cardBgColor: Color(0xFFE8F5E9), // Soft fresh mint green
     cardDarkBgColor: Color(0xFF17291B),
     textColor: Color(0xFF2E7D32), // Deep forest green
@@ -313,6 +364,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Arbeitswelt & Bewerbung',
         titleEn: 'Work & Job Applications',
         titleAr: 'عالم العمل والتقديم للوظائف',
+        titleEs: 'Mundo laboral y solicitudes',
         icon: Icons.badge_rounded,
       ),
       _SyllabusUnitDef(
@@ -321,6 +373,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Umwelt & Klima',
         titleEn: 'Environment & Climate',
         titleAr: 'البيئة والمناخ',
+        titleEs: 'Medio ambiente y clima',
         icon: Icons.eco_rounded,
       ),
       _SyllabusUnitDef(
@@ -329,6 +382,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Gesundheitswesen & Medizin',
         titleEn: 'Healthcare & Medicine',
         titleAr: 'الرعاية الصحية والطب',
+        titleEs: 'Salud y medicina',
         icon: Icons.medical_services_rounded,
       ),
     ],
@@ -341,8 +395,10 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     titleDe: 'B2 · Fortgeschritten',
     titleEn: 'B2 · Upper Intermediate',
     titleAr: 'B2 · المستوى المتقدم',
+    titleEs: 'B2 · Avanzado',
     subtitleEn: 'University, professional & academic fluency',
     subtitleAr: 'الدراسة الجامعية، المصطلحات التخصصية والطلاقة',
+    subtitleEs: 'Fluidez universitaria, profesional y académica',
     cardBgColor: Color(0xFFF3E8FF), // Soft lavender purple
     cardDarkBgColor: Color(0xFF261A35),
     textColor: Color(0xFF7E22CE), // Rich royal purple
@@ -355,6 +411,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Wirtschaft & Finanzen',
         titleEn: 'Economy & Finance',
         titleAr: 'الاقتصاد والمالية',
+        titleEs: 'Economía y finanzas',
         icon: Icons.account_balance_rounded,
       ),
       _SyllabusUnitDef(
@@ -363,6 +420,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleDe: 'Wissenschaft & Forschung',
         titleEn: 'Science & Research',
         titleAr: 'العلوم والبحث العلمي',
+        titleEs: 'Ciencia e investigación',
         icon: Icons.biotech_rounded,
       ),
     ],
@@ -439,7 +497,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                 error: (err, _) => Center(
                   child: Text('Error loading curriculum: $err'),
                 ),
-                data: (_) => _buildContinuousPath(context, isDark, isArabic),
+                data: (_) => _buildContinuousPath(context, isDark, isArabic, locale.languageCode),
               ),
             ),
           ],
@@ -525,7 +583,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
   }
 
   /// Single continuous scroll view showing Intro -> A1 -> A2 -> B1 -> B2 in one fluid path
-  Widget _buildContinuousPath(BuildContext context, bool isDark, bool isArabic) {
+  Widget _buildContinuousPath(BuildContext context, bool isDark, bool isArabic, String languageCode) {
     final repo = ref.watch(contentRepositoryProvider);
 
     return ListView(
@@ -536,13 +594,13 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
           // Section Level Banner (Intro, A1, A2...)
           Container(
             key: _levelKeys[section.level],
-            child: _buildSectionBanner(section, isDark, isArabic),
+            child: _buildSectionBanner(section, isDark, isArabic, languageCode),
           ),
           const SizedBox(height: 14),
 
           // Units in this section
           for (final unitDef in section.units) ...[
-            _buildUnitNode(context, unitDef, repo, isDark, isArabic),
+            _buildUnitNode(context, unitDef, repo, isDark, isArabic, languageCode),
             const SizedBox(height: 12),
           ],
 
@@ -559,7 +617,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
   /// - Bold colored title + subtitle
   /// - Meta row: rating, units/time, level badge
   /// - Outer & inner circular "dish" badge on the right (with intro.png for Intro)
-  Widget _buildSectionBanner(_SyllabusLevelDef section, bool isDark, bool isArabic) {
+  Widget _buildSectionBanner(_SyllabusLevelDef section, bool isDark, bool isArabic, String languageCode) {
     final bgColor = isDark ? section.cardDarkBgColor : section.cardBgColor;
     final primaryTextColor = isDark ? Colors.white : section.textColor;
     final secondaryTextColor = isDark ? Colors.white70 : section.textColor.withValues(alpha: 0.78);
@@ -611,7 +669,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                     children: [
                       // Level Title (Bold & Colored)
                       Text(
-                        isArabic ? section.titleAr : section.titleDe,
+                        section.localizedTitle(languageCode),
                         style: TextStyle(
                           color: primaryTextColor,
                           fontWeight: FontWeight.w900,
@@ -623,7 +681,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
 
                       // Subtitle / Description
                       Text(
-                        isArabic ? section.subtitleAr : section.subtitleEn,
+                        section.localizedSubtitle(languageCode),
                         style: TextStyle(
                           color: secondaryTextColor,
                           fontSize: 12.5,
@@ -776,6 +834,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
     ContentRepository repo,
     bool isDark,
     bool isArabic,
+    String languageCode,
   ) {
     // Check if this unit is live in the database (e.g. Unit 3)
     final realLessons = repo.getLessonsForUnit(unitDef.unitNumber);
@@ -872,7 +931,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                           ),
                         ),
                         Text(
-                          unitDef.localizedTitle(isArabic),
+                          unitDef.localizedTitle(languageCode),
                           style: TextStyle(
                             fontSize: 12,
                             color: isDark ? Colors.white60 : Colors.black54,
@@ -908,7 +967,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                 ),
                 itemBuilder: (context, idx) {
                   final lesson = realLessons[idx];
-                  return _buildLessonRow(context, lesson, isDark, isArabic);
+                  return _buildLessonRow(context, lesson, isDark, isArabic, languageCode);
                 },
               )
             else
@@ -944,6 +1003,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
     CurriculumLesson lesson,
     bool isDark,
     bool isArabic,
+    String languageCode,
   ) {
     IconData icon;
     Color iconColor;
@@ -999,11 +1059,7 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
         ),
       ),
       subtitle: Text(
-        BidiUtils.safeLocalized(
-          arabic: lesson.titleAr,
-          fallbackEnglish: lesson.titleEn,
-          isArabic: isArabic,
-        ),
+        lesson.localizedTitle(languageCode),
         style: TextStyle(
           fontSize: 11,
           color: isDark ? Colors.white60 : Colors.black54,

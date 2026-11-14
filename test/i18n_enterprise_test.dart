@@ -24,10 +24,12 @@ void main() {
     });
 
     test('English and Spanish plurals handle 1 vs many correctly', () {
+      expect(BidiUtils.formatStreakDays(0, false), '0 days');
       expect(BidiUtils.formatStreakDays(1, false), '1 day');
       expect(BidiUtils.formatStreakDays(5, false), '5 days');
       expect(BidiUtils.formatUnitCount(1, false), '1 Unit');
       expect(BidiUtils.formatUnitCount(3, false), '3 Units');
+      expect(BidiUtils.formatStreakDays(0, false, 'es'), '0 días');
       expect(BidiUtils.formatStreakDays(1, false, 'es'), '1 día');
       expect(BidiUtils.formatStreakDays(5, false, 'es'), '5 días');
       expect(BidiUtils.formatUnitCount(1, false, 'es'), '1 Unidad');
@@ -42,7 +44,7 @@ void main() {
       expect(isolated.contains(germanPhrase), isTrue);
     });
 
-    test('Safe fallback provides English if Arabic is null or blank', () {
+    test('Safe fallback provides English if Arabic or Spanish is null or blank', () {
       expect(
         BidiUtils.safeLocalized(arabic: null, fallbackEnglish: 'Letters', isArabic: true),
         'Letters',
@@ -57,6 +59,14 @@ void main() {
       );
       expect(
         BidiUtils.safeLocalized(arabic: 'الحروف والأصوات', fallbackEnglish: 'Letters', isArabic: false),
+        'Letters',
+      );
+      expect(
+        BidiUtils.safeLocalized(spanish: 'Letras', fallbackEnglish: 'Letters', isArabic: false, languageCode: 'es'),
+        'Letras',
+      );
+      expect(
+        BidiUtils.safeLocalized(spanish: null, fallbackEnglish: 'Letters', isArabic: false, languageCode: 'es'),
         'Letters',
       );
     });

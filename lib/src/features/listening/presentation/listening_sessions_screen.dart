@@ -8,12 +8,13 @@ import '../../../core/i18n/translations.dart';
 import '../../../core/providers.dart';
 import '../../../core/theme/app_theme.dart';
 
-/// A session audio item with German sentence, Arabic and English translations
+/// A session audio item with German sentence, Arabic, Spanish, and English translations
 class ListeningSentence {
   const ListeningSentence({
     required this.speaker,
     required this.de,
     required this.ar,
+    required this.es,
     required this.en,
     this.topic = 'Alltag',
   });
@@ -21,8 +22,15 @@ class ListeningSentence {
   final String speaker;
   final String de;
   final String ar;
+  final String es;
   final String en;
   final String topic;
+
+  String localized(String languageCode) {
+    if (languageCode == 'ar') return ar;
+    if (languageCode == 'es') return es;
+    return en;
+  }
 }
 
 class ListeningSessionsScreen extends ConsumerStatefulWidget {
@@ -46,6 +54,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Anna',
       de: 'Guten Morgen! Hast du heute gut geschlafen?',
       ar: 'صباح الخير! هل نمت جيداً اليوم؟',
+      es: '¡Buenos días! ¿Dormiste bien hoy?',
       en: 'Good morning! Did you sleep well today?',
       topic: 'Begrüßung',
     ),
@@ -53,6 +62,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Ben',
       de: 'Ja, danke! Ich habe wunderbar geschlafen. Und du?',
       ar: 'نعم شكراً لك! لقد نمت بشكل رائع. وأنت؟',
+      es: '¡Sí, gracias! Dormí de maravilla. ¿Y tú?',
       en: 'Yes, thank you! I slept wonderfully. And you?',
       topic: 'Begrüßung',
     ),
@@ -60,6 +70,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Anna',
       de: 'Ich auch. Möchtest du eine Tasse frischen Kaffee oder lieber Tee?',
       ar: 'أنا أيضاً. هل ترغب في فنجان قهوة طازجة أم تفضل الشاي؟',
+      es: 'Yo también. ¿Te gustaría una taza de café recién hecho o prefieres té?',
       en: 'Me too. Would you like a cup of fresh coffee or rather tea?',
       topic: 'Frühstück',
     ),
@@ -67,6 +78,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Ben',
       de: 'Kaffee mit etwas Milch wäre perfekt, danke dir!',
       ar: 'قهوة مع قليل من الحليب ستكون مثالية، شكراً جزيلاً!',
+      es: 'Un café con un poco de leche sería perfecto, ¡muchas gracias!',
       en: 'Coffee with some milk would be perfect, thank you!',
       topic: 'Frühstück',
     ),
@@ -74,6 +86,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Anna',
       de: 'Bitte sehr! Was hast du heute Nachmittag vor?',
       ar: 'تفضل على الرحب! ما هي خططك بعد ظهر اليوم؟',
+      es: '¡De nada! ¿Qué planes tienes para esta tarde?',
       en: 'Here you go! What are your plans for this afternoon?',
       topic: 'Pläne',
     ),
@@ -81,6 +94,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Ben',
       de: 'Ich muss zuerst zum Supermarkt gehen und Gemüse und Brot kaufen.',
       ar: 'عليّ أولاً الذهاب إلى السوبرماركت وشراء الخضار والخبز.',
+      es: 'Primero tengo que ir al supermercado y comprar verduras y pan.',
       en: 'First I need to go to the supermarket and buy vegetables and bread.',
       topic: 'Einkaufen',
     ),
@@ -88,6 +102,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Anna',
       de: 'Vergiss bitte nicht, auch Butter und Mineralwasser mitzubringen.',
       ar: 'من فضلك لا تنسَ أن تجلب معك الزبدة والمياه المعدنية أيضاً.',
+      es: 'Por favor, no olvides traer también mantequilla y agua mineral.',
       en: 'Please don\'t forget to also bring butter and mineral water.',
       topic: 'Einkaufen',
     ),
@@ -95,6 +110,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Ben',
       de: 'Alles klar, ich schreibe es direkt auf meine Einkaufsliste.',
       ar: 'حسناً تماماً، سأكتب ذلك فوراً في قائمة مشترياتي.',
+      es: 'Entendido, lo anoto directamente en mi lista de compras.',
       en: 'All right, I will write it directly on my shopping list.',
       topic: 'Einkaufen',
     ),
@@ -102,6 +118,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Anna',
       de: 'Danach können wir einen gemütlichen Spaziergang im Park machen.',
       ar: 'بعد ذلك يمكننا القيام بنزهة مشي مريحة وممتعة في الحديقة العامة.',
+      es: 'Después podemos dar un agradable paseo por el parque.',
       en: 'Afterwards we can take a relaxing walk in the park.',
       topic: 'Freizeit',
     ),
@@ -109,6 +126,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Ben',
       de: 'Das ist eine tolle Idee! Das Wetter heute ist sonnig und angenehm mild.',
       ar: 'إنها فكرة رائعة! الطقس اليوم مشمس ومعتدل ولطيف.',
+      es: '¡Es una gran idea! El clima hoy está soleado y agradablemente templado.',
       en: 'That is a great idea! The weather today is sunny and pleasantly mild.',
       topic: 'Wetter',
     ),
@@ -116,6 +134,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Anna',
       de: 'Perfekt! Treffen wir uns um 16 Uhr vor der Bibliothek?',
       ar: 'ممتاز! هل نلتقي في الساعة الرابعة عصراً أمام المكتبة؟',
+      es: '¡Perfecto! ¿Nos vemos a las 16:00 frente a la biblioteca?',
       en: 'Perfect! Shall we meet at 4 PM in front of the library?',
       topic: 'Verabredung',
     ),
@@ -123,6 +142,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
       speaker: 'Ben',
       de: 'Abgemacht! Bis später, Anna.',
       ar: 'اتفقنا! إلى اللقاء لاحقاً يا آنا.',
+      es: '¡Trato hecho! Hasta luego, Anna.',
       en: 'Deal! See you later, Anna.',
       topic: 'Verabredung',
     ),
@@ -426,7 +446,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
                                 if (_showTranslation) ...[
                                   const SizedBox(height: 4),
                                   Text(
-                                    isArabic ? item.ar : item.en,
+                                    item.localized(locale.languageCode),
                                     style: TextStyle(
                                       fontSize: 12.5,
                                       color: isDark ? Colors.white60 : Colors.black54,

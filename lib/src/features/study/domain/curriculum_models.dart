@@ -9,6 +9,7 @@ class CurriculumUnit {
     required this.titleDe,
     required this.titleEn,
     this.titleAr,
+    this.titleEs,
     required this.topicKey,
   });
 
@@ -18,11 +19,15 @@ class CurriculumUnit {
   final String titleDe;
   final String titleEn;
   final String? titleAr;
+  final String? titleEs;
   final String topicKey;
 
   String localizedTitle(String languageCode) {
     if (languageCode == 'ar' && titleAr != null && titleAr!.isNotEmpty) {
       return titleAr!;
+    }
+    if (languageCode == 'es' && titleEs != null && titleEs!.isNotEmpty) {
+      return titleEs!;
     }
     return titleEn;
   }
@@ -35,6 +40,7 @@ class CurriculumUnit {
       titleDe: json['title_de'] as String,
       titleEn: json['title_en'] as String,
       titleAr: json['title_ar'] as String?,
+      titleEs: json['title_es'] as String?,
       topicKey: json['topic_key'] as String,
     );
   }
@@ -118,6 +124,24 @@ class CurriculumLesson {
           return 'قصة: $titleDe';
       }
     }
+    if (languageCode == 'es') {
+      switch (type) {
+        case LessonType.vocabulary:
+          return 'Vocabulario $sortOrder';
+        case LessonType.grammar:
+          return 'Gramática: $titleDe';
+        case LessonType.review:
+          return 'Repaso de consolidación';
+        case LessonType.unitTest:
+          return 'Examen de unidad';
+        case LessonType.levelTest:
+          return 'Examen de nivel $level';
+        case LessonType.text:
+          return 'Texto: $titleDe';
+        case LessonType.story:
+          return 'Historia: $titleDe';
+      }
+    }
     return titleEn;
   }
 
@@ -150,6 +174,7 @@ class CurriculumWord {
     this.conjugation,
     required this.translationEn,
     required this.translationAr,
+    this.translationEs,
     this.frequencyRank,
   });
 
@@ -163,10 +188,14 @@ class CurriculumWord {
   final String? conjugation;
   final String translationEn;
   final String translationAr;
+  final String? translationEs;
   final int? frequencyRank;
 
   String localizedTranslation(String languageCode) {
     if (languageCode == 'ar') return translationAr;
+    if (languageCode == 'es' && translationEs != null && translationEs!.isNotEmpty) {
+      return translationEs!;
+    }
     return translationEn;
   }
 
@@ -182,6 +211,7 @@ class CurriculumWord {
       conjugation: json['conjugation'] as String?,
       translationEn: json['translation_en'] as String,
       translationAr: json['translation_ar'] as String,
+      translationEs: json['translation_es'] as String?,
       frequencyRank: json['frequency_rank'] as int?,
     );
   }

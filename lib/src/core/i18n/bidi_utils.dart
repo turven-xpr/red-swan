@@ -87,11 +87,20 @@ class BidiUtils {
     return '$units ${units == 1 ? "Unit" : "Units"}';
   }
 
-  /// Safe fallback helper: if [arabic] text is null or empty, falls back to [fallbackEnglish],
+  /// Safe fallback helper: if localized text in target language is null or empty, falls back to [fallbackEnglish],
   /// never leaving a blank space in the UI.
-  static String safeLocalized({String? arabic, required String fallbackEnglish, required bool isArabic}) {
-    if (isArabic && arabic != null && arabic.trim().isNotEmpty) {
+  static String safeLocalized({
+    String? arabic,
+    String? spanish,
+    required String fallbackEnglish,
+    required bool isArabic,
+    String? languageCode,
+  }) {
+    if ((isArabic || languageCode == 'ar') && arabic != null && arabic.trim().isNotEmpty) {
       return arabic.trim();
+    }
+    if (languageCode == 'es' && spanish != null && spanish.trim().isNotEmpty) {
+      return spanish.trim();
     }
     return fallbackEnglish.trim();
   }

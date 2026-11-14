@@ -192,7 +192,7 @@ class _AppShellState extends ConsumerState<AppShell> {
                                   const Text('🔥', style: TextStyle(fontSize: 14)),
                                   const SizedBox(width: 4),
                                   Text(
-                                    BidiUtils.formatStreakDays(0, isArabic),
+                                    BidiUtils.formatStreakDays(0, isArabic, locale.languageCode),
                                     style: TextStyle(
                                       fontWeight: FontWeight.w800,
                                       fontSize: 13,

@@ -153,7 +153,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
 
     // Results screen
     if (_currentIndex >= exercises.length) {
-      return _buildResultsScreen(context, exercises.length, isDark, isArabic);
+      return _buildResultsScreen(context, exercises.length, isDark, isArabic, locale.languageCode);
     }
 
     final exercise = exercises[_currentIndex];
@@ -1502,7 +1502,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     );
   }
 
-  Widget _buildResultsScreen(BuildContext context, int total, bool isDark, bool isArabic) {
+  Widget _buildResultsScreen(BuildContext context, int total, bool isDark, bool isArabic, String languageCode) {
     final percentage = (total > 0 ? (_score / total * 100) : 0).round();
     final passed = percentage >= 70;
 
@@ -1557,7 +1557,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   children: [
                     Text('⚡ +15 ${t(context, Str.xpPoints, args: [""]).trim()}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.amber)),
                     const SizedBox(width: 16),
-                    Text('🔥 ${BidiUtils.formatStreakDays(1, isArabic)}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.orange)),
+                    Text('🔥 ${BidiUtils.formatStreakDays(1, isArabic, languageCode)}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.orange)),
                   ],
                 ),
                 const SizedBox(height: 36),
