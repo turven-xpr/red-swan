@@ -855,10 +855,8 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
         color: isDark ? AppColors.surfaceDark : Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: hasRealLessons
-              ? AppColors.primary.withValues(alpha: 0.35)
-              : (isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.06)),
-          width: hasRealLessons ? 1.5 : 1,
+          color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.06),
+          width: 1,
         ),
         boxShadow: [
           BoxShadow(
@@ -882,14 +880,12 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                     width: 42,
                     height: 42,
                     decoration: BoxDecoration(
-                      color: hasRealLessons
-                          ? AppColors.primary.withValues(alpha: 0.12)
-                          : (isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.05)),
+                      color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.05),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(
                       unitDef.icon,
-                      color: hasRealLessons ? AppColors.primary : Colors.grey,
+                      color: Colors.grey,
                       size: 22,
                     ),
                   ),
@@ -905,29 +901,9 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                               style: TextStyle(
                                 fontSize: 11,
                                 fontWeight: FontWeight.w700,
-                                color: hasRealLessons
-                                    ? AppColors.primary
-                                    : (isDark ? Colors.white38 : Colors.black38),
+                                color: isDark ? Colors.white38 : Colors.black38,
                               ),
                             ),
-                            if (hasRealLessons) ...[
-                              const SizedBox(width: 6),
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                                decoration: BoxDecoration(
-                                  color: Colors.green.withValues(alpha: 0.12),
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                child: Text(
-                                  t(context, Str.readyToStudy),
-                                  style: const TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w700,
-                                    color: Colors.green,
-                                  ),
-                                ),
-                              ),
-                            ],
                           ],
                         ),
                         const SizedBox(height: 2),

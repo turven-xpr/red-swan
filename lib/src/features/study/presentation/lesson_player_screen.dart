@@ -12,6 +12,7 @@ import '../../../core/providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../data/content_repository.dart';
 import '../domain/curriculum_models.dart';
+import '../domain/exercise_localizer.dart';
 
 class LessonPlayerScreen extends ConsumerStatefulWidget {
   const LessonPlayerScreen({super.key, required this.lessonId});
@@ -116,7 +117,8 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
   Widget build(BuildContext context) {
     final repo = ref.watch(contentRepositoryProvider);
     final locale = ref.watch(appLocaleProvider);
-    final isArabic = locale.languageCode == 'ar';
+    final languageCode = locale.languageCode;
+    final isArabic = languageCode == 'ar';
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final lesson = repo.getLessonById(widget.lessonId) ?? CurriculumLesson(
@@ -130,19 +132,19 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
 
     // Specialized curriculum lesson views
     if (lesson.type == LessonType.grammar) {
-      return _buildGrammarView(context, lesson, isDark, isArabic);
+      return _buildGrammarView(context, lesson, isDark, isArabic, languageCode);
     }
     if (lesson.type == LessonType.text) {
-      return _buildTextView(context, lesson, isDark, isArabic);
+      return _buildTextView(context, lesson, isDark, isArabic, languageCode);
     }
     if (lesson.type == LessonType.story) {
-      return _buildStoryView(context, lesson, isDark, isArabic);
+      return _buildStoryView(context, lesson, isDark, isArabic, languageCode);
     }
 
     final exercises = repo.getExercisesForLesson(widget.lessonId);
     if (exercises.isEmpty) {
       return Scaffold(
-        appBar: AppBar(title: Text(lesson.titleDe)),
+        appBar: AppBar(title: Text(lesson.localizedTitle(languageCode))),
         body: Center(
           child: Text(
             t(context, Str.noExercisesFound),
@@ -153,7 +155,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
 
     // Results screen
     if (_currentIndex >= exercises.length) {
-      return _buildResultsScreen(context, exercises.length, isDark, isArabic, locale.languageCode);
+      return _buildResultsScreen(context, exercises.length, isDark, isArabic, languageCode);
     }
 
     final exercise = exercises[_currentIndex];
@@ -199,18 +201,18 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // Skill badge
-              _buildSkillBadge(exercise.skill, isDark),
+              _buildSkillBadge(exercise.skill, isDark, languageCode),
               const SizedBox(height: 16),
 
               // Main exercise content
               Expanded(
                 child: SingleChildScrollView(
-                  child: _buildExerciseContent(exercise, isDark, isArabic),
+                  child: _buildExerciseContent(exercise, isDark, isArabic, languageCode),
                 ),
               ),
 
               // Bottom check / continue button
-              _buildBottomAction(exercise, exercises.length, isDark, isArabic),
+              _buildBottomAction(exercise, exercises.length, isDark, isArabic, languageCode),
             ],
           ),
         ),
@@ -218,37 +220,33 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     );
   }
 
-  Widget _buildSkillBadge(String skill, bool isDark) {
+  Widget _buildSkillBadge(String skill, bool isDark, String languageCode) {
     IconData icon;
-    String label;
     Color color;
 
     switch (skill) {
       case 'listening':
         icon = Icons.headphones_rounded;
-        label = 'Listening';
         color = Colors.blue;
         break;
       case 'reading':
         icon = Icons.menu_book_rounded;
-        label = 'Reading';
         color = Colors.teal;
         break;
       case 'writing':
         icon = Icons.edit_note_rounded;
-        label = 'Writing';
         color = Colors.purple;
         break;
       case 'speaking':
         icon = Icons.record_voice_over_rounded;
-        label = 'Speaking';
         color = Colors.orange;
         break;
       default:
         icon = Icons.lightbulb_outline_rounded;
-        label = 'Practice';
         color = AppColors.primary;
     }
+
+    final label = ExerciseLocalizer.localizeSkill(skill, languageCode);
 
     return Row(
       children: [
@@ -278,12 +276,12 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     );
   }
 
-  Widget _buildExerciseContent(CurriculumExercise exercise, bool isDark, bool isArabic) {
+  Widget _buildExerciseContent(CurriculumExercise exercise, bool isDark, bool isArabic, String languageCode) {
     final promptMap = exercise.promptJson;
-    final questionText = BidiUtils.safeLocalized(
-      arabic: promptMap['question_ar'] as String?,
-      fallbackEnglish: promptMap['question_en'] as String? ?? t(context, Str.chooseCorrectAnswer),
-      isArabic: isArabic,
+    final questionText = ExerciseLocalizer.localizeQuestion(
+      promptMap,
+      languageCode,
+      t(context, Str.chooseCorrectAnswer),
     );
 
     return Column(
@@ -341,6 +339,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
           ...exercise.options!.map((opt) {
             final isSelected = _selectedOption == opt;
             final isCorrectOpt = opt.trim().toLowerCase() == exercise.correctAnswer.trim().toLowerCase();
+            final localizedOpt = ExerciseLocalizer.localizeOption(opt, languageCode);
 
             Color borderColor = isDark ? Colors.white12 : Colors.black12;
             Color bgColor = Colors.transparent;
@@ -373,7 +372,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                     children: [
                       Expanded(
                         child: Text(
-                          opt,
+                          localizedOpt,
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
@@ -396,7 +395,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
         if (exercise.exerciseType == 'type_fill_blank') ...[
           if (promptMap['sentence_de'] != null)
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16),
+              padding: const EdgeInsets.only(top: 16, bottom: 4),
               child: Text(
                 promptMap['sentence_de'] as String,
                 textAlign: TextAlign.center,
@@ -407,6 +406,24 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                 ),
               ),
             ),
+          Builder(builder: (context) {
+            final hint = ExerciseLocalizer.localizeHint(promptMap, languageCode);
+            if (hint != null && hint.isNotEmpty) {
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 16),
+                child: Text(
+                  hint,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: isDark ? Colors.white60 : Colors.black54,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              );
+            }
+            return const SizedBox(height: 12);
+          }),
           TextField(
             controller: _textController,
             enabled: !_answered,
@@ -445,7 +462,25 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
 
         // Speaking repetition exercise
         if (exercise.exerciseType == 'repeat_prompt') ...[
-          const SizedBox(height: 20),
+          Builder(builder: (context) {
+            final hint = ExerciseLocalizer.localizeHint(promptMap, languageCode);
+            if (hint != null && hint.isNotEmpty) {
+              return Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: Text(
+                  hint,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: isDark ? Colors.white60 : Colors.black54,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              );
+            }
+            return const SizedBox.shrink();
+          }),
+          const SizedBox(height: 16),
           Center(
             child: ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
@@ -473,7 +508,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     );
   }
 
-  Widget _buildBottomAction(CurriculumExercise exercise, int totalSteps, bool isDark, bool isArabic) {
+  Widget _buildBottomAction(CurriculumExercise exercise, int totalSteps, bool isDark, bool isArabic, String languageCode) {
     if (!_answered && exercise.exerciseType == 'type_fill_blank') {
       return ElevatedButton(
         style: ElevatedButton.styleFrom(
@@ -525,7 +560,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                       ),
                       if (!_isCorrect)
                         Text(
-                          '${t(context, Str.correctAnswerLabel)} ${BidiUtils.isolateGerman(exercise.correctAnswer)}',
+                          '${t(context, Str.correctAnswerLabel)} ${BidiUtils.isolateGerman(ExerciseLocalizer.localizeOption(exercise.correctAnswer, languageCode))}',
                           style: TextStyle(
                             fontSize: 14,
                             color: isDark ? Colors.white70 : Colors.black87,
@@ -561,11 +596,11 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     return const SizedBox.shrink();
   }
 
-  Widget _buildGrammarView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic) {
+  Widget _buildGrammarView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic, String languageCode) {
     return Scaffold(
       backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
       appBar: AppBar(
-        title: Text(lesson.titleDe),
+        title: Text(lesson.localizedTitle(languageCode)),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () => context.pop(),
@@ -611,7 +646,8 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
   /// - Arabic translation for every sentence
   /// - Vocabulary & grammar callout notes
   /// - Comprehension exercises
-  Widget _buildTextView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic) {
+  Widget _buildTextView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic, String languageCode) {
+    final isSpanish = languageCode == 'es';
     Map<String, dynamic> data = {};
     if (lesson.contentJson != null && lesson.contentJson!.isNotEmpty) {
       try {
@@ -622,7 +658,11 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     final sentences = (data['sentences'] as List?)?.cast<Map<String, dynamic>>() ?? [];
     final vocabularyNotes = (data['vocabulary_notes'] as List?)?.cast<Map<String, dynamic>>() ?? [];
     final questions = (data['questions'] as List?)?.cast<Map<String, dynamic>>() ?? [];
-    final title = isArabic ? (data['title_ar'] ?? lesson.titleDe) : (data['title_en'] ?? lesson.titleDe);
+    final title = isArabic
+        ? (data['title_ar'] ?? lesson.localizedTitle(languageCode))
+        : (isSpanish
+            ? (data['title_es'] ?? data['title_en'] ?? lesson.localizedTitle(languageCode))
+            : (data['title_en'] ?? lesson.localizedTitle(languageCode)));
 
     return Scaffold(
       backgroundColor: isDark ? AppColors.surfaceDark : const Color(0xFFF9FAFC),
@@ -777,7 +817,9 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                         Padding(
                           padding: const EdgeInsets.only(left: 32),
                           child: Text(
-                            isArabic ? ar : en,
+                            isArabic
+                                ? ar
+                                : (isSpanish ? (s['es'] as String? ?? ExerciseLocalizer.localizeSentence(en)) : en),
                             style: TextStyle(
                               fontSize: 13,
                               color: isDark ? Colors.white60 : Colors.black54,
@@ -859,7 +901,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                           ),
                           const SizedBox(width: 6),
                           Text(
-                            '· ${isArabic ? ar : en}',
+                            '· ${isArabic ? ar : (isSpanish ? (vocab['es'] as String? ?? ExerciseLocalizer.localizeOption(en, 'es')) : en)}',
                             style: TextStyle(
                               fontSize: 11.5,
                               color: isDark ? Colors.white60 : Colors.black54,
@@ -893,7 +935,9 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   final q = questions[qIdx];
                   final questionText = isArabic
                       ? (q['question_ar'] ?? q['question_de'])
-                      : (q['question_en'] ?? q['question_de']);
+                      : (isSpanish
+                          ? (q['question_es'] ?? q['question_en'] ?? q['question_de'])
+                          : (q['question_en'] ?? q['question_de']));
                   final options = (q['options'] as List?)?.cast<String>() ?? [];
                   final correct = q['correct'] as String? ?? '';
                   final userChoice = _textAnswers[qIdx];
@@ -1027,7 +1071,8 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
   /// - Karaoka-style synchronized read along
   /// - Interactive tap on ANY word to view full definition, gender & audio
   /// - Comprehension exercises
-  Widget _buildStoryView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic) {
+  Widget _buildStoryView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic, String languageCode) {
+    final isSpanish = languageCode == 'es';
     Map<String, dynamic> data = {};
     if (lesson.contentJson != null && lesson.contentJson!.isNotEmpty) {
       try {
@@ -1037,7 +1082,11 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
 
     final chapters = (data['chapters'] as List?)?.cast<Map<String, dynamic>>() ?? [];
     final questions = (data['questions'] as List?)?.cast<Map<String, dynamic>>() ?? [];
-    final title = isArabic ? (data['title_ar'] ?? lesson.titleDe) : (data['title_en'] ?? lesson.titleDe);
+    final title = isArabic
+        ? (data['title_ar'] ?? lesson.localizedTitle(languageCode))
+        : (isSpanish
+            ? (data['title_es'] ?? data['title_en'] ?? lesson.localizedTitle(languageCode))
+            : (data['title_en'] ?? lesson.localizedTitle(languageCode)));
 
     return Scaffold(
       backgroundColor: isDark ? AppColors.surfaceDark : const Color(0xFFFAF7F2),
@@ -1106,7 +1155,9 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                           Text(
                             isArabic
                                 ? 'اضغط على أي كلمة في القصة لمعرفة معناها ونطقها فوراً'
-                                : 'Tap on any word to look up its definition and audio',
+                                : (isSpanish
+                                    ? 'Toca cualquier palabra para ver su definición y pronunciación'
+                                    : 'Tap on any word to look up its definition and audio'),
                             style: TextStyle(
                               fontSize: 11.5,
                               color: isDark ? Colors.white70 : const Color(0xFFB45309),
@@ -1172,7 +1223,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                           if (gender == 'das') underColor = Colors.green;
 
                           return InkWell(
-                            onTap: () => _showTokenModal(context, token, isDark, isArabic),
+                            onTap: () => _showTokenModal(context, token, isDark, isArabic, languageCode),
                             borderRadius: BorderRadius.circular(6),
                             child: Container(
                               padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
@@ -1207,7 +1258,11 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                           ),
                           Expanded(
                             child: Text(
-                              isArabic ? sentenceAr : sentenceEn,
+                              isArabic
+                                  ? sentenceAr
+                                  : (isSpanish
+                                      ? (ch['sentence_es'] as String? ?? ExerciseLocalizer.localizeSentence(sentenceEn))
+                                      : sentenceEn),
                               style: TextStyle(
                                 fontSize: 13,
                                 color: isDark ? Colors.white60 : Colors.black54,
@@ -1238,7 +1293,9 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   final q = questions[qIdx];
                   final questionText = isArabic
                       ? (q['question_ar'] ?? q['question_de'])
-                      : (q['question_en'] ?? q['question_de']);
+                      : (isSpanish
+                          ? (q['question_es'] ?? q['question_en'] ?? q['question_de'])
+                          : (q['question_en'] ?? q['question_de']));
                   final options = (q['options'] as List?)?.cast<String>() ?? [];
                   final correct = q['correct'] as String? ?? '';
                   final userChoice = _storyAnswers[qIdx];
@@ -1406,12 +1463,13 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     });
   }
 
-  void _showTokenModal(BuildContext context, Map<String, dynamic> token, bool isDark, bool isArabic) {
+  void _showTokenModal(BuildContext context, Map<String, dynamic> token, bool isDark, bool isArabic, String languageCode) {
     final text = token['text'] as String? ?? '';
     final lemma = token['lemma'] as String? ?? text;
     final gender = token['gender'] as String? ?? '';
     final ar = token['ar'] as String? ?? '';
     final en = token['en'] as String? ?? '';
+    final es = token['es'] as String? ?? ExerciseLocalizer.localizeOption(en, 'es');
 
     Color genderColor = Colors.grey;
     if (gender == 'der') genderColor = Colors.blue;
@@ -1489,6 +1547,18 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   Expanded(
                     child: Text(
                       en.isNotEmpty ? en : '—',
+                      style: TextStyle(fontSize: 14, color: Colors.grey.shade700),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  const Text('🇪🇸  ', style: TextStyle(fontSize: 18)),
+                  Expanded(
+                    child: Text(
+                      es.isNotEmpty ? es : '—',
                       style: TextStyle(fontSize: 14, color: Colors.grey.shade700),
                     ),
                   ),
