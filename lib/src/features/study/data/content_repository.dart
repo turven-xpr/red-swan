@@ -83,9 +83,14 @@ class ContentRepository {
       ..sort((a, b) => a.unitNumber.compareTo(b.unitNumber));
   }
 
-  /// Get all lessons for a specific unit
+  /// Get all lessons for a specific unit (by unit id or unit number)
   List<CurriculumLesson> getLessonsForUnit(int unitId) {
-    return _lessons.where((l) => l.unitId == unitId).toList()
+    final matchingUnit = _units.cast<CurriculumUnit?>().firstWhere(
+      (u) => u?.unitNumber == unitId || u?.id == unitId,
+      orElse: () => null,
+    );
+    final targetId = matchingUnit?.id ?? unitId;
+    return _lessons.where((l) => l.unitId == targetId || l.unitId == unitId).toList()
       ..sort((a, b) => a.sortOrder.compareTo(b.sortOrder));
   }
 

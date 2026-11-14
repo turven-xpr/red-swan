@@ -100,9 +100,9 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     titleEn: 'Intro',
     titleAr: 'المقدمة',
     titleEs: 'Introducción',
-    subtitleEn: 'Alphabet, pronunciation & first words',
-    subtitleAr: 'الأبجدية وقواعد النطق والأرقام الأولى',
-    subtitleEs: 'Alfabeto, pronunciación y primeras palabras',
+    subtitleEn: 'Alphabet, pronunciation, first words & greetings',
+    subtitleAr: 'الأبجدية وقواعد النطق والكلمات الأولى والتحيات',
+    subtitleEs: 'Alfabeto, pronunciación, primeras palabras y saludos',
     cardBgColor: Color(0xFFFDE8E4), // Warm soft rose/peach like template card 1
     cardDarkBgColor: Color(0xFF2C1E1B),
     textColor: Color(0xFFC0392B), // Deep reddish/rust tone
@@ -127,6 +127,15 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         titleEs: 'Primeras palabras y números',
         icon: Icons.pin_outlined,
       ),
+      _SyllabusUnitDef(
+        unitNumber: 3,
+        level: 'Intro',
+        titleDe: 'Begrüßung & Erste Sätze',
+        titleEn: 'Greetings & First Phrases',
+        titleAr: 'التحيات والعبارات الأولى',
+        titleEs: 'Saludos y primeras frases',
+        icon: Icons.waving_hand_rounded,
+      ),
     ],
   ),
 
@@ -148,7 +157,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     badgeIcon: Icons.translate_rounded,
     units: [
       _SyllabusUnitDef(
-        unitNumber: 3,
+        unitNumber: 4,
         level: 'A1',
         titleDe: 'Familie & Leute',
         titleEn: 'Family & People',
@@ -157,7 +166,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.people_alt_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 4,
+        unitNumber: 5,
         level: 'A1',
         titleDe: 'Essen & Trinken',
         titleEn: 'Food & Drinks',
@@ -166,7 +175,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.restaurant_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 5,
+        unitNumber: 6,
         level: 'A1',
         titleDe: 'Zuhause & Wohnen',
         titleEn: 'Home & Living',
@@ -175,7 +184,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.home_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 6,
+        unitNumber: 7,
         level: 'A1',
         titleDe: 'Tagesablauf & Zeit',
         titleEn: 'Daily Routine & Time',
@@ -184,7 +193,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.access_time_filled_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 7,
+        unitNumber: 8,
         level: 'A1',
         titleDe: 'Schule & Beruf',
         titleEn: 'School & Work',
@@ -193,7 +202,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.work_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 8,
+        unitNumber: 9,
         level: 'A1',
         titleDe: 'Einkaufen & Geld',
         titleEn: 'Shopping & Money',
@@ -202,7 +211,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.shopping_bag_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 9,
+        unitNumber: 10,
         level: 'A1',
         titleDe: 'Körper & Gesundheit',
         titleEn: 'Body & Health',
@@ -211,7 +220,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.favorite_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 10,
+        unitNumber: 11,
         level: 'A1',
         titleDe: 'Wetter & Jahreszeiten',
         titleEn: 'Weather & Seasons',
@@ -220,7 +229,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.wb_sunny_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 11,
+        unitNumber: 12,
         level: 'A1',
         titleDe: 'Weg & Verkehr',
         titleEn: 'Directions & Transport',
@@ -249,7 +258,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     badgeIcon: Icons.explore_rounded,
     units: [
       _SyllabusUnitDef(
-        unitNumber: 12,
+        unitNumber: 13,
         level: 'A2',
         titleDe: 'Reisen & Urlaub',
         titleEn: 'Travel & Holidays',
@@ -258,7 +267,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.flight_takeoff_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 13,
+        unitNumber: 14,
         level: 'A2',
         titleDe: 'Hobbys & Freizeit',
         titleEn: 'Hobbies & Leisure',
@@ -267,7 +276,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.sports_soccer_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 14,
+        unitNumber: 15,
         level: 'A2',
         titleDe: 'Kleidung & Mode',
         titleEn: 'Clothing & Fashion',
@@ -276,7 +285,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.checkroom_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 15,
+        unitNumber: 16,
         level: 'A2',
         titleDe: 'Stadt & Land',
         titleEn: 'City & Countryside',
@@ -285,7 +294,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.location_city_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 16,
+        unitNumber: 17,
         level: 'A2',
         titleDe: 'Gefühle & Meinungen',
         titleEn: 'Feelings & Opinions',
@@ -294,7 +303,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.sentiment_satisfied_alt_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 17,
+        unitNumber: 18,
         level: 'A2',
         titleDe: 'Medien & Kommunikation',
         titleEn: 'Media & Tech',
@@ -303,7 +312,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.phone_android_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 18,
+        unitNumber: 19,
         level: 'A2',
         titleDe: 'Natur & Tiere',
         titleEn: 'Nature & Animals',
@@ -312,7 +321,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.pets_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 19,
+        unitNumber: 20,
         level: 'A2',
         titleDe: 'Feste & Traditionen',
         titleEn: 'Celebrations & Culture',
@@ -321,7 +330,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.celebration_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 20,
+        unitNumber: 21,
         level: 'A2',
         titleDe: 'Technik & Internet',
         titleEn: 'Technology & Web',
@@ -330,7 +339,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.computer_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 21,
+        unitNumber: 22,
         level: 'A2',
         titleDe: 'Kochen & Rezepte',
         titleEn: 'Cooking & Recipes',
@@ -359,7 +368,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     badgeIcon: Icons.psychology_rounded,
     units: [
       _SyllabusUnitDef(
-        unitNumber: 22,
+        unitNumber: 23,
         level: 'B1',
         titleDe: 'Arbeitswelt & Bewerbung',
         titleEn: 'Work & Job Applications',
@@ -368,7 +377,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.badge_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 23,
+        unitNumber: 24,
         level: 'B1',
         titleDe: 'Umwelt & Klima',
         titleEn: 'Environment & Climate',
@@ -377,7 +386,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.eco_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 24,
+        unitNumber: 25,
         level: 'B1',
         titleDe: 'Gesundheitswesen & Medizin',
         titleEn: 'Healthcare & Medicine',
@@ -406,7 +415,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
     badgeIcon: Icons.school_rounded,
     units: [
       _SyllabusUnitDef(
-        unitNumber: 25,
+        unitNumber: 26,
         level: 'B2',
         titleDe: 'Wirtschaft & Finanzen',
         titleEn: 'Economy & Finance',
@@ -415,7 +424,7 @@ const List<_SyllabusLevelDef> _syllabusLevels = [
         icon: Icons.account_balance_rounded,
       ),
       _SyllabusUnitDef(
-        unitNumber: 26,
+        unitNumber: 27,
         level: 'B2',
         titleDe: 'Wissenschaft & Forschung',
         titleEn: 'Science & Research',
