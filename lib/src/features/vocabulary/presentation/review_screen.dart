@@ -259,7 +259,7 @@ class _FlashcardViewState extends ConsumerState<FlashcardView>
 
   @override
   Widget build(BuildContext context) {
-    final tts = ref.watch(ttsServiceProvider);
+    final tts = ref.watch(audioPlaybackServiceProvider);
     final c = widget.card;
     final theme = Theme.of(context);
     final showingFront = !widget.showBack;

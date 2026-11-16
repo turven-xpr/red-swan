@@ -1,0 +1,86 @@
+# Extra clips for level 0 (one per line).  Format:   text      or      voicekey|text
+# IMPORTANT: the text must match EXACTLY what the lesson shows, otherwise the app will not find the clip.
+# Single letters (A, B, Ä, ß ...) and sounds (sch, ch, ü) are NOT here on purpose:
+# record them with a native speaker (or use Wiktionary recordings) -- TTS often gets them wrong.
+
+# --- Numbers
+null
+eins
+zwei
+drei
+vier
+fünf
+sechs
+sieben
+acht
+neun
+zehn
+elf
+zwölf
+dreizehn
+vierzehn
+fünfzehn
+sechzehn
+siebzehn
+achtzehn
+neunzehn
+zwanzig
+dreißig
+vierzig
+fünfzig
+sechzig
+siebzig
+achtzig
+neunzig
+hundert
+
+# --- Days
+Montag
+Dienstag
+Mittwoch
+Donnerstag
+Freitag
+Samstag
+Sonntag
+
+# --- Colors
+rot
+blau
+grün
+gelb
+schwarz
+weiß
+orange
+braun
+grau
+rosa
+lila
+
+# --- Politeness
+Ja
+Nein
+Bitte
+Danke
+Entschuldigung
+
+# --- Greetings
+Hallo
+Guten Morgen
+Guten Tag
+Guten Abend
+Gute Nacht
+Tschüss
+Auf Wiedersehen
+Bis bald
+
+# --- First phrases
+Wie geht's?
+Gut, danke.
+Nicht so gut.
+Ich heiße Karim.
+Woher kommst du?
+Ich komme aus Marokko.
+Ich verstehe nicht.
+Noch einmal, bitte.
+Langsamer, bitte.
+Sprechen Sie Englisch?

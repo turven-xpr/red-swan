@@ -1,0 +1,84 @@
+# Unit 3 — Familie & Leute (A1)
+# Format:  lemma | pos | article | plural | English | Arabic | review-flag
+#   pos          : noun / verb / adj / adv
+#   article      : der / die / das  (nouns only; leave empty otherwise)
+#   plural       : plural form (nouns only; "-" = no plural in normal use)
+#   review-flag  : put H when the Arabic was checked by a human.
+#                  Empty = AI-drafted Arabic (stored with is_ai_ar = 1).
+# Plural-only nouns (Eltern, Großeltern, Leute) keep their article "die".
+# Arabic below is an AI DRAFT: have a native speaker review it before release.
+
+# ---------------- Nouns: family ----------------
+Familie | noun | die | Familien | family | عائلة
+Mutter | noun | die | Mütter | mother | أم
+Vater | noun | der | Väter | father | أب
+Eltern | noun | die | Eltern | parents | الوالدان
+Kind | noun | das | Kinder | child | طفل
+Sohn | noun | der | Söhne | son | ابن
+Tochter | noun | die | Töchter | daughter | ابنة
+Bruder | noun | der | Brüder | brother | أخ
+Schwester | noun | die | Schwestern | sister | أخت
+Geschwister | noun | die | Geschwister | siblings (brothers and sisters) | الإخوة والأخوات
+Großmutter | noun | die | Großmütter | grandmother | جدة
+Großvater | noun | der | Großväter | grandfather | جد
+Großeltern | noun | die | Großeltern | grandparents | الأجداد
+Oma | noun | die | Omas | grandma (informal) | جدّة (للتحبّب)
+Opa | noun | der | Opas | grandpa (informal) | جدّ (للتحبّب)
+Enkel | noun | der | Enkel | grandson; grandchild | حفيد
+Onkel | noun | der | Onkel | uncle | عم / خال
+Tante | noun | die | Tanten | aunt | عمة / خالة
+Cousin | noun | der | Cousins | cousin (male) | ابن العم / ابن الخال
+Cousine | noun | die | Cousinen | cousin (female) | ابنة العم / ابنة الخال
+Neffe | noun | der | Neffen | nephew | ابن الأخ / ابن الأخت
+Nichte | noun | die | Nichten | niece | ابنة الأخ / ابنة الأخت
+Ehemann | noun | der | Ehemänner | husband | زوج
+Ehefrau | noun | die | Ehefrauen | wife | زوجة
+Baby | noun | das | Babys | baby | رضيع
+Paar | noun | das | Paare | couple | زوجان
+
+# ---------------- Nouns: people ----------------
+Mann | noun | der | Männer | man | رجل
+Frau | noun | die | Frauen | woman; Mrs. | امرأة؛ سيدة
+Junge | noun | der | Jungen | boy | ولد
+Mädchen | noun | das | Mädchen | girl | بنت
+Freund | noun | der | Freunde | friend (male); boyfriend | صديق
+Freundin | noun | die | Freundinnen | friend (female); girlfriend | صديقة
+Nachbar | noun | der | Nachbarn | neighbor (male) | جار
+Nachbarin | noun | die | Nachbarinnen | neighbor (female) | جارة
+Partner | noun | der | Partner | partner | شريك
+Gast | noun | der | Gäste | guest | ضيف
+Leute | noun | die | Leute | people | ناس
+Mensch | noun | der | Menschen | human being | إنسان
+Person | noun | die | Personen | person | شخص
+Herr | noun | der | Herren | Mr.; gentleman | السيد
+Name | noun | der | Namen | name | اسم
+Vorname | noun | der | Vornamen | first name | الاسم الأول
+Nachname | noun | der | Nachnamen | last name | اسم العائلة
+Alter | noun | das | - | age | العمر
+Geburtstag | noun | der | Geburtstage | birthday | عيد ميلاد
+Hochzeit | noun | die | Hochzeiten | wedding | زفاف
+
+# ---------------- Verbs ----------------
+heißen | verb | | | to be called | اسمه / تُسمّى
+leben | verb | | | to live | يعيش
+wohnen | verb | | | to live (at a place) | يسكن
+kennen | verb | | | to know (a person) | يعرف (شخصًا)
+heiraten | verb | | | to marry | يتزوّج
+lieben | verb | | | to love | يحب
+mögen | verb | | | to like | يُعجَبُ بـ / يحب
+besuchen | verb | | | to visit | يزور
+helfen | verb | | | to help | يساعد
+
+# ---------------- Adjectives & adverbs ----------------
+alt | adj | | | old | قديم / كبير في السن
+jung | adj | | | young | شاب / صغير في السن
+klein | adj | | | small | صغير
+groß | adj | | | big; tall | كبير؛ طويل
+verheiratet | adj | | | married | متزوّج
+ledig | adj | | | single (not married) | أعزب
+geschieden | adj | | | divorced | مطلّق
+nett | adj | | | nice | لطيف
+freundlich | adj | | | friendly | ودود
+glücklich | adj | | | happy | سعيد
+zusammen | adv | | | together | معًا
+allein | adv | | | alone | وحيد / بمفرده

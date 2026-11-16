@@ -1,0 +1,107 @@
+{
+  "slug": "a1_family_text",
+  "kind": "text",
+  "level": "A1",
+  "unit": "family",
+  "title_de": "Meine Familie",
+  "title_ar": "عائلتي",
+  "summary_ar": "كريم يقدّم نفسه وعائلته: الاسم والعمر ومكان السكن والأب والأم والإخوة.",
+  "segments": [
+    {
+      "de": "Hallo! Ich heiße Karim.",
+      "ar": "مرحبًا! اسمي كريم.",
+      "note_ar": "للتعريف بالاسم نقول: Ich heiße ... (حرفيًا: أُسمّى ...). يمكنك أيضًا: Mein Name ist ..."
+    },
+    {
+      "de": "Ich bin 25 Jahre alt und wohne in Berlin.",
+      "ar": "عمري 25 سنة وأسكن في برلين.",
+      "note_ar": "العمر: Ich bin ... Jahre alt. لاحظ أن الفعل wohnen جاء بصيغة wohne مع ich.",
+      "glossary": [{"w": "Jahre", "ar": "سنوات"}]
+    },
+    {
+      "de": "Meine Familie ist nicht groß.",
+      "ar": "عائلتي ليست كبيرة.",
+      "note_ar": "nicht تنفي الصفة: nicht groß = ليست كبيرة. وmeine لأن Familie مؤنثة (die Familie)."
+    },
+    {
+      "de": "Mein Vater heißt Ahmed und meine Mutter heißt Laila.",
+      "ar": "اسم أبي أحمد واسم أمي ليلى.",
+      "note_ar": "نقول mein مع المذكر (der Vater) وmeine مع المؤنث (die Mutter). الفعل heißen يأتي بصيغة heißt مع er/sie."
+    },
+    {
+      "de": "Ich habe einen Bruder und eine Schwester.",
+      "ar": "لديّ أخ وأخت.",
+      "note_ar": "بعد haben يأتي المفعول به (Akkusativ): der Bruder تصبح einen Bruder، أما die Schwester فتبقى eine Schwester."
+    },
+    {
+      "de": "Mein Bruder ist verheiratet. Seine Frau heißt Sara.",
+      "ar": "أخي متزوج. اسم زوجته سارة.",
+      "note_ar": "seine Frau = زوجته. كلمة Frau تعني «امرأة» و«زوجة» حسب السياق."
+    },
+    {
+      "de": "Meine Schwester ist noch jung. Sie wohnt noch zu Hause.",
+      "ar": "أختي ما زالت صغيرة. ما زالت تسكن في البيت (مع الأهل).",
+      "note_ar": "noch = ما زال / بعدُ. وzu Hause عبارة ثابتة تعني «في البيت».",
+      "glossary": [{"w": "zu Hause", "ar": "في البيت"}]
+    },
+    {
+      "de": "Am Wochenende besuchen wir zusammen unsere Großeltern.",
+      "ar": "في عطلة نهاية الأسبوع نزور معًا جدّينا.",
+      "note_ar": "الفعل في الجملة الخبرية يأتي دائمًا في المكان الثاني: Am Wochenende (1) besuchen (2) wir. وGroßeltern = الجدّ والجدّة معًا.",
+      "glossary": [
+        {"w": "Wochenende", "ar": "عطلة نهاية الأسبوع"},
+        {"w": "unsere", "ar": "خاصتنا / لنا"}
+      ]
+    },
+    {
+      "de": "Wir sind eine glückliche Familie.",
+      "ar": "نحن عائلة سعيدة.",
+      "note_ar": "ستتعلم لاحقًا لماذا انتهت glücklich بحرف e: glückliche (نهايات الصفات في A2)."
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "reading", "type": "comprehension_mc",
+      "prompt": "Wie alt ist Karim?",
+      "options": ["20 Jahre", "25 Jahre", "30 Jahre"],
+      "answer": "25 Jahre",
+      "explain_ar": "في الجملة الثانية: Ich bin 25 Jahre alt."
+    },
+    {
+      "skill": "reading", "type": "comprehension_mc",
+      "prompt": "Wo wohnt Karim?",
+      "options": ["In Berlin", "In München", "In Hamburg"],
+      "answer": "In Berlin",
+      "explain_ar": "Ich bin 25 Jahre alt und wohne in Berlin."
+    },
+    {
+      "skill": "reading", "type": "true_false",
+      "prompt": "Karim hat zwei Brüder.",
+      "answer": false,
+      "explain_ar": "لدى كريم أخ واحد وأخت واحدة: einen Bruder und eine Schwester."
+    },
+    {
+      "skill": "reading", "type": "true_false",
+      "prompt": "Karims Bruder ist verheiratet.",
+      "answer": true,
+      "explain_ar": "Mein Bruder ist verheiratet."
+    },
+    {
+      "skill": "reading", "type": "match_pairs",
+      "prompt": "",
+      "pairs": [["Bruder", "أخ"], ["Schwester", "أخت"], ["Großeltern", "الجدّان"], ["verheiratet", "متزوج"]]
+    },
+    {
+      "skill": "writing", "type": "type_fill_blank",
+      "prompt": "Ich ___ einen Bruder und eine Schwester.",
+      "answer": "habe",
+      "explain_ar": "haben مع ich تصبح habe."
+    },
+    {
+      "skill": "speaking", "type": "answer_prompt",
+      "prompt": "قدّم نفسك بثلاث جمل: اسمك وعمرك وأين تسكن.",
+      "answer": "Ich heiße ... Ich bin ... Jahre alt. Ich wohne in ...",
+      "explain_ar": "استخدم الجمل الثلاث التي في بداية النص."
+    }
+  ]
+}

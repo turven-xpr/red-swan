@@ -45,11 +45,12 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
   void dispose() {
     _storyTimer?.cancel();
     _textController.dispose();
+    ref.read(audioPlaybackServiceProvider).stop();
     super.dispose();
   }
 
-  void _playAudio(String text) {
-    ref.read(ttsServiceProvider).speak(text);
+  void _playAudio(String text, {String? voice}) {
+    ref.read(audioPlaybackServiceProvider).speak(text, voice: voice);
   }
 
   void _checkMultipleChoice(String chosen, String correct) {
@@ -1254,7 +1255,10 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                         children: [
                           IconButton(
                             icon: const Icon(Icons.volume_up_rounded, color: AppColors.primary, size: 20),
-                            onPressed: () => _playAudio(sentenceDe),
+                            onPressed: () {
+                              final voice = ch['speaker'] as String? ?? ch['voice'] as String?;
+                              _playAudio(sentenceDe, voice: voice);
+                            },
                           ),
                           Expanded(
                             child: Text(
@@ -1429,7 +1433,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
   void _toggleStoryPlay(List<Map<String, dynamic>> chapters) {
     if (_isStoryPlaying) {
       _storyTimer?.cancel();
-      ref.read(ttsServiceProvider).stop();
+      ref.read(audioPlaybackServiceProvider).stop();
       setState(() {
         _isStoryPlaying = false;
         _activeStorySentenceIndex = null;
@@ -1454,7 +1458,8 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
 
     setState(() => _activeStorySentenceIndex = step);
     final text = chapters[step]['sentence_de'] as String? ?? '';
-    _playAudio(text);
+    final voice = chapters[step]['speaker'] as String? ?? chapters[step]['voice'] as String?;
+    _playAudio(text, voice: voice);
 
     final delay = (text.length / 10).clamp(3, 7).toInt();
     _storyTimer = Timer(Duration(seconds: delay), () {

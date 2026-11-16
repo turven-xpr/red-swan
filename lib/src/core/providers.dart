@@ -8,6 +8,7 @@ import '../data/seed/a2_deck.dart';
 import '../data/seed/b1_deck.dart';
 import '../data/seed/in_memory_deck.dart';
 import 'audio/tts_service.dart';
+import 'audio/audio_playback_service.dart';
 import 'audio/stt_service.dart';
 import 'config/app_config.dart';
 import '../features/auth/application/auth_service.dart';
@@ -180,10 +181,26 @@ final geminiClientProvider = Provider<GeminiClient>((ref) {
   );
 });
 
-final ttsServiceProvider = Provider<TtsService>((ref) {
+/// Internal fallback TTS service provider.
+final internalTtsServiceProvider = Provider<TtsService>((ref) {
   final svc = TtsService();
   ref.onDispose(svc.dispose);
   return svc;
+});
+
+/// Primary audio playback service with pre-baked MP3 support and TTS fallback.
+final audioPlaybackServiceProvider = Provider<AudioPlaybackService>((ref) {
+  final tts = ref.watch(internalTtsServiceProvider);
+  final svc = AudioPlaybackService(ttsService: tts);
+  ref.onDispose(svc.dispose);
+  return svc;
+});
+
+/// Backwards-compatible provider proxy for callers expecting [TtsService].
+/// Delegates all playback seamlessly to [AudioPlaybackService].
+final ttsServiceProvider = Provider<TtsService>((ref) {
+  final audioPlayback = ref.watch(audioPlaybackServiceProvider);
+  return AudioPlaybackTtsProxy(audioPlayback);
 });
 
 final sttServiceProvider = Provider<SttService>((ref) => SttService());

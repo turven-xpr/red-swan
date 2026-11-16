@@ -165,7 +165,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
   void _playCurrentTrack() {
     setState(() => _isPlaying = true);
     final current = _playlist[_currentTrackIndex];
-    ref.read(ttsServiceProvider).speak(current.de);
+    ref.read(audioPlaybackServiceProvider).speak(current.de);
 
     _playbackTimer?.cancel();
     // Simulate natural speaking delay + gap based on text length and speed
@@ -193,7 +193,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
 
   void _pause() {
     _playbackTimer?.cancel();
-    ref.read(ttsServiceProvider).stop();
+    ref.read(audioPlaybackServiceProvider).stop();
     setState(() => _isPlaying = false);
   }
 
@@ -216,7 +216,7 @@ class _ListeningSessionsScreenState extends ConsumerState<ListeningSessionsScree
     if (_isPlaying) {
       _playCurrentTrack();
     } else {
-      ref.read(ttsServiceProvider).speak(_playlist[index].de);
+      ref.read(audioPlaybackServiceProvider).speak(_playlist[index].de);
     }
   }
 

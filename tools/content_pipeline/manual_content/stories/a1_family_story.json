@@ -1,0 +1,130 @@
+{
+  "slug": "a1_family_story_besuch",
+  "kind": "story",
+  "level": "A1",
+  "unit": "family",
+  "title_de": "Der Besuch bei den Großeltern",
+  "title_ar": "زيارة الجدّين",
+  "summary_ar": "في يوم أحد يزور كريم وأخته لينا جدّيهما، ويجتمع الجميع حول الطعام.",
+  "segments": [
+    {
+      "de": "Es ist Sonntag. Karim und seine Schwester Lina besuchen die Großeltern.",
+      "ar": "إنه يوم الأحد. كريم وأخته لينا يزوران الجدّين.",
+      "note_ar": "Es ist ... نستخدمها للحديث عن الأيام والطقس والوقت: Es ist Sonntag.",
+      "glossary": [{"w": "Sonntag", "ar": "الأحد"}]
+    },
+    {
+      "de": "Oma steht in der Küche.",
+      "ar": "الجدّة تقف في المطبخ.",
+      "note_ar": "Oma وOpa كلمتان للتحبّب؛ الرسمي: Großmutter وGroßvater. وin der Küche تجيب عن السؤال «أين؟».",
+      "glossary": [{"w": "steht", "ar": "تقف", "lemma": "stehen"}, {"w": "Küche", "ar": "مطبخ"}]
+    },
+    {
+      "de": "„Hallo, ihr zwei!“, sagt sie freundlich.",
+      "ar": "«مرحبًا، أنتما!» تقول بودّ.",
+      "glossary": [{"w": "ihr zwei", "ar": "أنتما"}, {"w": "sagt", "ar": "تقول", "lemma": "sagen"}]
+    },
+    {
+      "de": "Opa sitzt im Wohnzimmer. Er ist alt, aber er ist sehr nett.",
+      "ar": "الجدّ يجلس في غرفة المعيشة. هو كبير في السن لكنه لطيف جدًّا.",
+      "glossary": [{"w": "sitzt", "ar": "يجلس", "lemma": "sitzen"}, {"w": "Wohnzimmer", "ar": "غرفة المعيشة"}]
+    },
+    {
+      "de": "„Wie geht es euch?“, fragt Opa.",
+      "ar": "«كيف حالكما؟» يسأل الجدّ.",
+      "note_ar": "السؤال عن الحال يختلف حسب المخاطَب: dir (شخص واحد)، euch (عدة أشخاص)، Ihnen (بشكل رسمي).",
+      "glossary": [{"w": "euch", "ar": "لكم / لكما"}, {"w": "fragt", "ar": "يسأل", "lemma": "fragen"}]
+    },
+    {
+      "de": "„Gut, danke!“, sagt Lina. „Und wie geht es dir?“",
+      "ar": "«بخير، شكرًا!» تقول لينا. «وأنت، كيف حالك؟»",
+      "glossary": [{"w": "Gut", "ar": "بخير / جيد"}, {"w": "danke", "ar": "شكرًا"}, {"w": "dir", "ar": "لك"}]
+    },
+    {
+      "de": "„Mir geht es gut“, sagt Opa.",
+      "ar": "«أنا بخير» يقول الجدّ.",
+      "note_ar": "Mir geht es gut = أنا بخير (حرفيًا: لي يسير الأمر جيدًا). تعبير ثابت يُحفظ كما هو.",
+      "glossary": [{"w": "Mir geht es gut", "ar": "أنا بخير"}]
+    },
+    {
+      "de": "Dann essen alle zusammen. Es gibt Suppe und Brot.",
+      "ar": "ثم يأكل الجميع معًا. يوجد حساء وخبز.",
+      "note_ar": "es gibt = يوجد / هناك. وبعدها يأتي الشيء الموجود (Suppe, Brot).",
+      "glossary": [
+        {"w": "essen", "ar": "يأكلون", "lemma": "essen"},
+        {"w": "Es gibt", "ar": "يوجد"},
+        {"w": "Suppe", "ar": "حساء"},
+        {"w": "Brot", "ar": "خبز"}
+      ]
+    },
+    {
+      "de": "Am Abend sagt Karim: „Wir haben eine tolle Familie!“",
+      "ar": "في المساء يقول كريم: «لدينا عائلة رائعة!»",
+      "glossary": [{"w": "Abend", "ar": "مساء"}, {"w": "tolle", "ar": "رائعة", "lemma": "toll"}]
+    },
+    {
+      "de": "Oma lächelt glücklich.",
+      "ar": "الجدّة تبتسم بسعادة.",
+      "glossary": [{"w": "lächelt", "ar": "تبتسم", "lemma": "lächeln"}]
+    }
+  ],
+  "exercises": [
+    {
+      "skill": "reading", "type": "comprehension_mc",
+      "prompt": "Wer besucht die Großeltern?",
+      "options": ["Karim und Lina", "Karim und Sara", "Lina und Laila"],
+      "answer": "Karim und Lina",
+      "explain_ar": "الجملة الأولى: Karim und seine Schwester Lina besuchen die Großeltern."
+    },
+    {
+      "skill": "reading", "type": "comprehension_mc",
+      "prompt": "Wo steht Oma?",
+      "options": ["In der Küche", "Im Wohnzimmer", "Im Garten"],
+      "answer": "In der Küche",
+      "explain_ar": "Oma steht in der Küche."
+    },
+    {
+      "skill": "reading", "type": "comprehension_mc",
+      "prompt": "Wie ist Opa?",
+      "options": ["alt und nett", "jung und groß", "klein und freundlich"],
+      "answer": "alt und nett",
+      "explain_ar": "Er ist alt, aber er ist sehr nett."
+    },
+    {
+      "skill": "reading", "type": "true_false",
+      "prompt": "Es ist Samstag.",
+      "answer": false,
+      "explain_ar": "اليوم هو Sonntag (الأحد)."
+    },
+    {
+      "skill": "reading", "type": "order_events",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "answer": [
+        "Karim und Lina besuchen die Großeltern.",
+        "Opa fragt: Wie geht es euch?",
+        "Alle essen zusammen Suppe und Brot.",
+        "Karim sagt: Wir haben eine tolle Familie!"
+      ],
+      "explain_ar": "رتّب الأحداث كما وردت في القصة."
+    },
+    {
+      "skill": "reading", "type": "vocab_in_context",
+      "prompt": "Was bedeutet „lächelt“?",
+      "options": ["تبتسم", "تبكي", "تقف"],
+      "answer": "تبتسم",
+      "explain_ar": "Oma lächelt glücklich = الجدّة تبتسم بسعادة."
+    },
+    {
+      "skill": "writing", "type": "type_fill_blank",
+      "prompt": "Opa sitzt im ___.",
+      "answer": "Wohnzimmer",
+      "explain_ar": "Opa sitzt im Wohnzimmer."
+    },
+    {
+      "skill": "speaking", "type": "answer_prompt",
+      "prompt": "أجب بالألمانية عن السؤال: Wie geht es dir?",
+      "answer": "Gut, danke! Und dir?",
+      "explain_ar": "هذا الجواب الأشهر لهذا السؤال."
+    }
+  ]
+}

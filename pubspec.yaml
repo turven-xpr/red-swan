@@ -17,7 +17,9 @@ dependencies:
   sqlite3_flutter_libs: ^0.5.24
   path_provider: ^2.1.3
   path: ^1.9.0
+  crypto: ^3.0.3
   flutter_tts: ^4.2.5
+  audioplayers: ^6.1.0
   speech_to_text: ^7.4.0
   google_mobile_ads: ^9.0.0
   google_sign_in: ^7.2.0
@@ -64,3 +66,5 @@ flutter:
     - assets/splash/splash_logo.png
     - assets/deutschy_content.db
     - assets/deutschy_content.json
+    - assets/audio/
+    - assets/audio/manifest.json

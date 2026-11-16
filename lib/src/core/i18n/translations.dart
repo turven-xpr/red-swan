@@ -1128,6 +1128,9 @@ String t(
     case LocaleCode.arabic:
       raw = group.ar;
       break;
+    case LocaleCode.german:
+      raw = group.de;
+      break;
     case LocaleCode.spanish:
       raw = group.es;
       break;

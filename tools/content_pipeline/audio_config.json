@@ -1,0 +1,50 @@
+{
+  "provider": "fake",
+
+  "voice_pool": ["f1", "m1"],
+  "word_voice": null,
+  "speaker_voice": {"Karim": "m1", "Lina": "f1", "Oma": "f2", "Opa": "m2"},
+
+  "fake": {
+    "voices": {
+      "f1": "fake-f1",
+      "m1": "fake-m1",
+      "f2": "fake-f2",
+      "m2": "fake-m2"
+    }
+  },
+
+  "azure": {
+    "region": "westeurope",
+    "rpm": 18,
+    "rate": "-10%",
+    "voices": {
+      "f1": "de-DE-KatjaNeural",
+      "m1": "de-DE-ConradNeural",
+      "f2": "de-DE-AmalaNeural",
+      "m2": "de-DE-KillianNeural"
+    }
+  },
+
+  "google": {
+    "rpm": 60,
+    "speaking_rate": 0.9,
+    "voices": {
+      "f1": "CHANGE-ME (run: python generate_audio.py --list-voices --provider google)",
+      "m1": "CHANGE-ME",
+      "f2": "CHANGE-ME",
+      "m2": "CHANGE-ME"
+    }
+  },
+
+  "piper": {
+    "executable": "piper",
+    "length_scale": 1.1,
+    "voices": {
+      "f1": "models/de_DE-kerstin-low.onnx",
+      "m1": "models/de_DE-thorsten-medium.onnx",
+      "f2": "models/de_DE-kerstin-low.onnx",
+      "m2": "models/de_DE-thorsten-high.onnx"
+    }
+  }
+}
