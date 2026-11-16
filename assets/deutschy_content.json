@@ -8376,7 +8376,7 @@
       "passage_id": null,
       "skill": "reading",
       "exercise_type": "match_pairs",
-      "prompt": "{\"de\": \"Hotel\", \"question_en\": \"What does 'Hotel' mean in English?\", \"question_ar\": \"ما معنى كلمة 'Hotel' بالإنجليزية؟\", \"question_es\": \"¿Qué significa 'Hotel' en inglés?\"}",
+      "prompt": "{\"de\": \"Hotel\", \"question_en\": \"What does 'Hotel' mean?\", \"question_ar\": \"ما معنى كلمة 'Hotel'؟\", \"question_es\": \"¿Qué significa 'Hotel'?\"}",
       "audio_text": "Hotel",
       "correct_answer": "hotel",
       "options": "[\"school\", \"station\", \"hotel\", \"hospital\"]",
