@@ -11,6 +11,7 @@ import '../../../core/i18n/translations.dart';
 import '../../../core/providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../data/content_repository.dart';
+import '../data/lesson_progress_provider.dart';
 import '../domain/curriculum_models.dart';
 import '../domain/exercise_localizer.dart';
 
@@ -629,7 +630,10 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                 ),
-                onPressed: () => context.pop(),
+                onPressed: () {
+                  ref.read(lessonProgressProvider.notifier).markLessonCompleted(lesson.id);
+                  context.pop();
+                },
                 child: Text(
                   t(context, Str.finishReading),
                   style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -1045,6 +1049,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                 ),
                 onPressed: () {
+                  ref.read(lessonProgressProvider.notifier).markLessonCompleted(lesson.id);
                   context.pop();
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
@@ -1406,6 +1411,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                 ),
                 onPressed: () {
+                  ref.read(lessonProgressProvider.notifier).markLessonCompleted(lesson.id);
                   _storyTimer?.cancel();
                   context.pop();
                   ScaffoldMessenger.of(context).showSnackBar(
@@ -1645,7 +1651,12 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                     ),
-                    onPressed: () => context.pop(),
+                    onPressed: () {
+                      if (passed) {
+                        ref.read(lessonProgressProvider.notifier).markLessonCompleted(widget.lessonId);
+                      }
+                      context.pop();
+                    },
                     child: Text(
                       t(context, Str.continueButton),
                       style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),

@@ -649,6 +649,24 @@ const Map<String, _Group> _table = {
     es: '¡Buen esfuerzo! Revisa los errores y sigue practicando.',
     ar: 'لقد حققت تقدمًا ممتازًا وملموسًا في تعلم الألمانية!',
   ),
+  Str.nextStepBadge: (
+    de: 'Weiter',
+    en: 'Next',
+    es: 'Siguiente',
+    ar: 'التالي',
+  ),
+  Str.completedBadge: (
+    de: 'Abgeschlossen',
+    en: 'Completed',
+    es: 'Completado',
+    ar: 'مكتمل',
+  ),
+  Str.startButton: (
+    de: 'Start',
+    en: 'Start',
+    es: 'Empezar',
+    ar: 'ابدأ',
+  ),
 
   // Placeholder Screens
   Str.testsTitle: (

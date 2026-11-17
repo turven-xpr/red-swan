@@ -137,6 +137,9 @@ class Str {
   static const String completeStoryLesson = 'completeStoryLesson';
   static const String lessonCompletedTitle = 'lessonCompletedTitle';
   static const String lessonCompletedSub = 'lessonCompletedSub';
+  static const String nextStepBadge = 'nextStepBadge';
+  static const String completedBadge = 'completedBadge';
+  static const String startButton = 'startButton';
 
   // Placeholder Screens
   static const String testsTitle = 'testsTitle';

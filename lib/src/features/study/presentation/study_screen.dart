@@ -8,6 +8,7 @@ import '../../../core/i18n/strings.dart';
 import '../../../core/i18n/translations.dart';
 import '../../../core/theme/app_theme.dart';
 import '../data/content_repository.dart';
+import '../data/lesson_progress_provider.dart';
 import '../domain/curriculum_models.dart';
 
 /// Syllabus metadata for the complete A0-B2 Duolingo-style continuous scroll path.
@@ -845,17 +846,24 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
     bool isArabic,
     String languageCode,
   ) {
-    // Check if this unit is live in the database (e.g. Unit 3)
+    // Check if this unit is live in the database (e.g. Unit 1, 2, 3)
     final realLessons = repo.getLessonsForUnit(unitDef.unitNumber);
     final hasRealLessons = realLessons.isNotEmpty;
     final isExpanded = _expandedUnits.contains(unitDef.unitNumber);
+    final completedLessonIds = ref.watch(lessonProgressProvider);
+    final completedInUnit = realLessons.where((l) => completedLessonIds.contains(l.id)).length;
+    final isUnitFullyCompleted = hasRealLessons && completedInUnit == realLessons.length;
+    final unitProgressRatio = hasRealLessons ? (completedInUnit / realLessons.length) : 0.0;
+    final nextLessonIndex = realLessons.indexWhere((l) => !completedLessonIds.contains(l.id));
 
     return Container(
       decoration: BoxDecoration(
         color: isDark ? AppColors.surfaceDark : Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.06),
+          color: isUnitFullyCompleted
+              ? const Color(0xFF10B981).withValues(alpha: 0.3)
+              : (isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.06)),
           width: 1,
         ),
         boxShadow: [
@@ -880,12 +888,18 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                     width: 42,
                     height: 42,
                     decoration: BoxDecoration(
-                      color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.05),
+                      color: isUnitFullyCompleted
+                          ? const Color(0xFF10B981).withValues(alpha: 0.12)
+                          : (completedInUnit > 0
+                              ? AppColors.primary.withValues(alpha: 0.10)
+                              : (isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.05))),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(
-                      unitDef.icon,
-                      color: Colors.grey,
+                      isUnitFullyCompleted ? Icons.check_circle_rounded : unitDef.icon,
+                      color: isUnitFullyCompleted
+                          ? const Color(0xFF10B981)
+                          : (completedInUnit > 0 ? AppColors.primary : Colors.grey),
                       size: 22,
                     ),
                   ),
@@ -904,6 +918,34 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
                                 color: isDark ? Colors.white38 : Colors.black38,
                               ),
                             ),
+                            if (hasRealLessons) ...[
+                              const SizedBox(width: 8),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: isUnitFullyCompleted
+                                      ? const Color(0xFF10B981).withValues(alpha: 0.12)
+                                      : (completedInUnit > 0
+                                          ? AppColors.primary.withValues(alpha: 0.10)
+                                          : (isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.05))),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Text(
+                                  isUnitFullyCompleted
+                                      ? '✓ ${t(context, Str.completedBadge)}'
+                                      : '$completedInUnit/${realLessons.length}',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w800,
+                                    color: isUnitFullyCompleted
+                                        ? const Color(0xFF10B981)
+                                        : (completedInUnit > 0
+                                            ? AppColors.primary
+                                            : (isDark ? Colors.white60 : Colors.black54)),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ],
                         ),
                         const SizedBox(height: 2),
@@ -934,6 +976,19 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
             ),
           ),
 
+          if (hasRealLessons && completedInUnit > 0 && !isExpanded)
+            ClipRRect(
+              borderRadius: const BorderRadius.vertical(bottom: Radius.circular(16)),
+              child: LinearProgressIndicator(
+                value: unitProgressRatio,
+                minHeight: 3,
+                backgroundColor: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.05),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                  isUnitFullyCompleted ? const Color(0xFF10B981) : AppColors.primary,
+                ),
+              ),
+            ),
+
           // Expanded Lessons List
           if (isExpanded) ...[
             Divider(
@@ -944,15 +999,22 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
               ListView.separated(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                 itemCount: realLessons.length,
-                separatorBuilder: (_, _) => Divider(
-                  height: 1,
-                  color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.04),
-                ),
+                separatorBuilder: (_, _) => const SizedBox(height: 6),
                 itemBuilder: (context, idx) {
                   final lesson = realLessons[idx];
-                  return _buildLessonRow(context, lesson, isDark, isArabic, languageCode);
+                  final isCompleted = completedLessonIds.contains(lesson.id);
+                  final isNext = !isCompleted && idx == nextLessonIndex;
+                  return _buildLessonRow(
+                    context,
+                    lesson,
+                    isDark,
+                    isArabic,
+                    languageCode,
+                    isCompleted: isCompleted,
+                    isNext: isNext,
+                  );
                 },
               )
             else
@@ -988,8 +1050,10 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
     CurriculumLesson lesson,
     bool isDark,
     bool isArabic,
-    String languageCode,
-  ) {
+    String languageCode, {
+    required bool isCompleted,
+    required bool isNext,
+  }) {
     IconData icon;
     Color iconColor;
 
@@ -1024,40 +1088,260 @@ class _StudyScreenState extends ConsumerState<StudyScreen> {
         break;
     }
 
-    return ListTile(
-      contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-      leading: Container(
-        width: 34,
-        height: 34,
-        decoration: BoxDecoration(
-          color: iconColor.withValues(alpha: 0.12),
-          borderRadius: BorderRadius.circular(10),
+    // 1. Next / Active Step (Highlighted & Game-like)
+    if (isNext) {
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 2),
+        child: InkWell(
+          onTap: () => context.push('/study/lesson/${lesson.id}'),
+          borderRadius: BorderRadius.circular(16),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+            decoration: BoxDecoration(
+              color: isDark ? AppColors.primary.withValues(alpha: 0.16) : const Color(0xFFFFF6F3),
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(color: AppColors.primary, width: 2),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.primary.withValues(alpha: 0.20),
+                  blurRadius: 8,
+                  offset: const Offset(0, 2),
+                ),
+              ],
+            ),
+            child: Row(
+              children: [
+                Container(
+                  width: 38,
+                  height: 38,
+                  decoration: BoxDecoration(
+                    color: AppColors.primary,
+                    borderRadius: BorderRadius.circular(11),
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppColors.primary.withValues(alpha: 0.35),
+                        blurRadius: 4,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: Icon(icon, color: Colors.white, size: 20),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      GermanText(
+                        lesson.titleDe,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w900,
+                          color: isDark ? Colors.white : AppColors.primaryDark,
+                        ),
+                      ),
+                      const SizedBox(height: 1),
+                      Text(
+                        lesson.localizedTitle(languageCode),
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w600,
+                          color: isDark ? Colors.white70 : AppColors.primary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: AppColors.primary,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppColors.primary.withValues(alpha: 0.3),
+                        blurRadius: 4,
+                        offset: const Offset(0, 1),
+                      ),
+                    ],
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        t(context, Str.startButton),
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 11,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      const SizedBox(width: 3),
+                      Icon(
+                        isArabic ? Icons.chevron_left_rounded : Icons.chevron_right_rounded,
+                        color: Colors.white,
+                        size: 16,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
-        child: Icon(icon, color: iconColor, size: 18),
-      ),
-      title: GermanText(
-        lesson.titleDe,
-        style: TextStyle(
-          fontSize: 14,
-          fontWeight: FontWeight.w700,
-          color: isDark ? Colors.white : Colors.black87,
+      );
+    }
+
+    // 2. Completed / Passed Step (Less shiny, soft muted calm state)
+    if (isCompleted) {
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 2),
+        child: InkWell(
+          onTap: () => context.push('/study/lesson/${lesson.id}'),
+          borderRadius: BorderRadius.circular(12),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+            decoration: BoxDecoration(
+              color: isDark ? Colors.white.withValues(alpha: 0.02) : Colors.black.withValues(alpha: 0.015),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.04),
+                width: 1,
+              ),
+            ),
+            child: Row(
+              children: [
+                Container(
+                  width: 34,
+                  height: 34,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF10B981).withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Icon(
+                    Icons.check_circle_rounded,
+                    color: Color(0xFF10B981),
+                    size: 20,
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      GermanText(
+                        lesson.titleDe,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          color: isDark ? Colors.white60 : Colors.black54,
+                        ),
+                      ),
+                      const SizedBox(height: 1),
+                      Text(
+                        lesson.localizedTitle(languageCode),
+                        style: TextStyle(
+                          fontSize: 11,
+                          color: isDark ? Colors.white38 : Colors.black38,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF10B981).withValues(alpha: 0.08),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.check_rounded, color: Color(0xFF10B981), size: 14),
+                      const SizedBox(width: 4),
+                      Text(
+                        t(context, Str.completedBadge),
+                        style: const TextStyle(
+                          color: Color(0xFF10B981),
+                          fontSize: 10,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
+    // 3. Upcoming Step (Neutral)
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: InkWell(
+        onTap: () => context.push('/study/lesson/${lesson.id}'),
+        borderRadius: BorderRadius.circular(12),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+          decoration: BoxDecoration(
+            color: isDark ? Colors.transparent : Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: isDark ? Colors.white10 : Colors.black.withValues(alpha: 0.04),
+              width: 1,
+            ),
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 34,
+                height: 34,
+                decoration: BoxDecoration(
+                  color: iconColor.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Icon(icon, color: iconColor, size: 18),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    GermanText(
+                      lesson.titleDe,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: isDark ? Colors.white : Colors.black87,
+                      ),
+                    ),
+                    const SizedBox(height: 1),
+                    Text(
+                      lesson.localizedTitle(languageCode),
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: isDark ? Colors.white60 : Colors.black54,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(
+                isArabic ? Icons.chevron_left_rounded : Icons.chevron_right_rounded,
+                color: isDark ? Colors.white38 : Colors.black26,
+                size: 20,
+              ),
+            ],
+          ),
         ),
       ),
-      subtitle: Text(
-        lesson.localizedTitle(languageCode),
-        style: TextStyle(
-          fontSize: 11,
-          color: isDark ? Colors.white60 : Colors.black54,
-        ),
-      ),
-      trailing: Icon(
-        isArabic ? Icons.chevron_left_rounded : Icons.chevron_right_rounded,
-        color: Colors.grey,
-        size: 20,
-      ),
-      onTap: () {
-        context.push('/study/lesson/${lesson.id}');
-      },
     );
   }
 
