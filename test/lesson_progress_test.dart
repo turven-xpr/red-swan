@@ -36,3 +36,4 @@ void main() {
     expect(notifier.isCompleted(10101), isFalse);
   });
 }
+

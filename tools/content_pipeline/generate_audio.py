@@ -203,6 +203,18 @@ def collect(con, cfg, level, extra_file):
                 add(t, voice=v.strip())
             else:
                 add(line, is_word=True)
+
+    json_path = Path(__file__).resolve().parent.parent.parent / "assets" / "deutschy_content.json"
+    if json_path.exists():
+        try:
+            content_data = json.loads(json_path.read_text(encoding="utf-8"))
+            for e in content_data.get("exercises", []):
+                t = e.get("audio_text")
+                if t and t.strip():
+                    add(t.strip())
+        except Exception as err:
+            print("Warning reading deutschy_content.json:", err)
+
     return list(jobs)
 
 

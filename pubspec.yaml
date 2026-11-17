@@ -68,3 +68,7 @@ flutter:
     - assets/deutschy_content.json
     - assets/audio/
     - assets/audio/manifest.json
+    - assets/audio/f1/
+    - assets/audio/m1/
+    - assets/audio/f2/
+    - assets/audio/m2/
