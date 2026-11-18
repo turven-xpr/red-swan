@@ -528,6 +528,8 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     }
 
     if (_answered) {
+      final feedbackTranslation = ExerciseLocalizer.resolveFeedbackTranslation(exercise, languageCode);
+
       return Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
@@ -537,6 +539,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
               children: [
@@ -573,6 +576,82 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
                 ),
               ],
             ),
+            if (feedbackTranslation != null) ...[
+              const SizedBox(height: 12),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
+                decoration: BoxDecoration(
+                  color: isDark
+                      ? Colors.white.withValues(alpha: 0.08)
+                      : Colors.white.withValues(alpha: 0.88),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: _isCorrect
+                        ? Colors.green.withValues(alpha: 0.25)
+                        : Colors.red.withValues(alpha: 0.25),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(6),
+                      decoration: BoxDecoration(
+                        color: (_isCorrect ? Colors.green : AppColors.primary)
+                            .withValues(alpha: 0.12),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        Icons.translate_rounded,
+                        size: 16,
+                        color: _isCorrect ? Colors.green : AppColors.primary,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          if (feedbackTranslation.german.isNotEmpty &&
+                              feedbackTranslation.german.trim().toLowerCase() !=
+                                  feedbackTranslation.translation.trim().toLowerCase())
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 2),
+                              child: Text(
+                                BidiUtils.isolateGerman(feedbackTranslation.german),
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w600,
+                                  color: isDark ? Colors.white60 : Colors.black54,
+                                ),
+                              ),
+                            ),
+                          Text(
+                            feedbackTranslation.translation,
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? Colors.white : Colors.black87,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    if (feedbackTranslation.audioText != null &&
+                        feedbackTranslation.audioText!.isNotEmpty)
+                      IconButton(
+                        icon: const Icon(Icons.volume_up_rounded, size: 22),
+                        color: _isCorrect ? Colors.green : AppColors.primary,
+                        tooltip: 'Listen',
+                        visualDensity: VisualDensity.compact,
+                        padding: EdgeInsets.zero,
+                        constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                        onPressed: () => _playAudio(feedbackTranslation.audioText!),
+                      ),
+                  ],
+                ),
+              ),
+            ],
             const SizedBox(height: 14),
             SizedBox(
               width: double.infinity,

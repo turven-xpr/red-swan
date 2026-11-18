@@ -613,6 +613,12 @@ const Map<String, _Group> _table = {
     es: 'Respuesta correcta:',
     ar: 'الإجابة الصحيحة:',
   ),
+  Str.translationLabel: (
+    de: 'Übersetzung:',
+    en: 'Translation:',
+    es: 'Traducción:',
+    ar: 'الترجمة:',
+  ),
   Str.continueButton: (
     de: 'Weiter',
     en: 'Continue',

@@ -131,6 +131,7 @@ class Str {
   static const String correctFeedback = 'correctFeedback';
   static const String incorrectFeedback = 'incorrectFeedback';
   static const String correctAnswerLabel = 'correctAnswerLabel';
+  static const String translationLabel = 'translationLabel';
   static const String continueButton = 'continueButton';
   static const String finishReading = 'finishReading';
   static const String completeTextLesson = 'completeTextLesson';

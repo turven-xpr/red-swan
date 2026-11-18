@@ -1,3 +1,19 @@
+import 'curriculum_models.dart';
+import 'feedback_translations_data.dart';
+
+/// Representation of a translated item shown in the feedback card after answering.
+class FeedbackTranslation {
+  const FeedbackTranslation({
+    required this.german,
+    required this.translation,
+    this.audioText,
+  });
+
+  final String german;
+  final String translation;
+  final String? audioText;
+}
+
 /// Comprehensive localization utility for curriculum exercises, question prompts,
 /// vocabulary options, sentence hints, and skill badges across English, Arabic, and Spanish.
 class ExerciseLocalizer {
@@ -439,5 +455,147 @@ class ExerciseLocalizer {
         if (languageCode == 'es') return 'Práctica';
         return 'Practice';
     }
+  }
+
+  /// Resolves the canonical feedback translation displayed above the continue button.
+  static FeedbackTranslation? resolveFeedbackTranslation(
+    CurriculumExercise exercise,
+    String languageCode,
+  ) {
+    final promptMap = exercise.promptJson;
+    final exType = exercise.exerciseType;
+
+    // 1. type_fill_blank: Complete sentence with the correct answer
+    if (exType == 'type_fill_blank') {
+      final template = (promptMap['sentence_de'] as String?) ?? '';
+      String fullGerman = template;
+      if (template.contains('___')) {
+        fullGerman = template.replaceAll('___', exercise.correctAnswer);
+      }
+      if (fullGerman.contains('(') && fullGerman.contains(')')) {
+        fullGerman = fullGerman.replaceAll(RegExp(r'\s*\([^)]*\)'), '').trim();
+      }
+      if (fullGerman.isEmpty) {
+        fullGerman = exercise.audioText ?? exercise.correctAnswer;
+      }
+
+      String? trans;
+      if (languageCode == 'ar') {
+        trans = promptMap['hint_ar'] as String?;
+      } else if (languageCode == 'es') {
+        trans = (promptMap['hint_es'] as String?) ??
+            (promptMap['hint_en'] != null ? localizeSentence(promptMap['hint_en'] as String) : null);
+      } else {
+        trans = promptMap['hint_en'] as String?;
+      }
+
+      if (trans == null || trans.trim().isEmpty) {
+        final lookup = _lookupGermanTranslation(fullGerman, languageCode);
+        if (lookup != null) {
+          trans = lookup.translation;
+        }
+      }
+
+      if (trans != null && trans.trim().isNotEmpty) {
+        return FeedbackTranslation(
+          german: fullGerman.trim(),
+          translation: trans.trim(),
+          audioText: exercise.audioText,
+        );
+      }
+    }
+
+    // 2. repeat_prompt: Spoken sentence / phrase
+    if (exType == 'repeat_prompt') {
+      final fullGerman = exercise.audioText ??
+          (promptMap['sentence_de'] as String?) ??
+          (promptMap['de'] as String?) ??
+          exercise.correctAnswer;
+
+      String? trans;
+      if (languageCode == 'ar') {
+        trans = promptMap['hint_ar'] as String?;
+      } else if (languageCode == 'es') {
+        trans = (promptMap['hint_es'] as String?) ??
+            (promptMap['hint_en'] != null ? localizeSentence(promptMap['hint_en'] as String) : null);
+      } else {
+        trans = promptMap['hint_en'] as String?;
+      }
+
+      if (trans == null || trans.trim().isEmpty) {
+        final lookup = _lookupGermanTranslation(fullGerman, languageCode);
+        if (lookup != null) {
+          trans = lookup.translation;
+        }
+      }
+
+      if (trans != null && trans.trim().isNotEmpty) {
+        return FeedbackTranslation(
+          german: fullGerman.trim(),
+          translation: trans.trim(),
+          audioText: exercise.audioText ?? fullGerman,
+        );
+      }
+    }
+
+    // 3. match_pairs: Vocabulary or grammar matching
+    if (exType == 'match_pairs') {
+      final deTarget = (promptMap['de'] as String?) ?? exercise.audioText ?? '';
+      final localizedCorrect = localizeOption(exercise.correctAnswer, languageCode);
+      if (deTarget.isNotEmpty) {
+        return FeedbackTranslation(
+          german: deTarget.trim(),
+          translation: localizedCorrect.trim(),
+          audioText: exercise.audioText,
+        );
+      }
+    }
+
+    // 4. General lookup (listen_choose, reading, quizzes)
+    final candidates = [
+      exercise.correctAnswer,
+      exercise.audioText,
+      promptMap['de'] as String?,
+    ].whereType<String>().where((s) => s.trim().isNotEmpty).toList();
+
+    for (final cand in candidates) {
+      final lookup = _lookupGermanTranslation(cand, languageCode);
+      if (lookup != null) {
+        return FeedbackTranslation(
+          german: lookup.german,
+          translation: lookup.translation,
+          audioText: exercise.audioText ?? lookup.german,
+        );
+      }
+    }
+
+    // 5. Fallback: localizeOption for correctAnswer
+    final localized = localizeOption(exercise.correctAnswer, languageCode);
+    final fallbackGerman = (promptMap['de'] as String?) ?? exercise.audioText ?? exercise.correctAnswer;
+    return FeedbackTranslation(
+      german: fallbackGerman.trim(),
+      translation: localized.trim(),
+      audioText: exercise.audioText,
+    );
+  }
+
+  static ({String german, String translation})? _lookupGermanTranslation(
+    String query,
+    String languageCode,
+  ) {
+    final clean = query.trim().toLowerCase();
+    final entry = kGermanTranslations[clean];
+    if (entry != null) {
+      String trans;
+      if (languageCode == 'ar') {
+        trans = entry.ar;
+      } else if (languageCode == 'es') {
+        trans = entry.es.isNotEmpty ? entry.es : entry.en;
+      } else {
+        trans = entry.en;
+      }
+      return (german: entry.de, translation: trans);
+    }
+    return null;
   }
 }
