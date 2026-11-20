@@ -4039,6 +4039,1518 @@
       "provider": "google",
       "voice_id": "de-DE-Neural2-G",
       "bytes": 6336
+    },
+    "m1|Bad": {
+      "file": "m1/961e248c9c23be0f.mp3",
+      "text": "Bad",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "f1|Balkon": {
+      "file": "f1/79937dae3ecba83f.mp3",
+      "text": "Balkon",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7680
+    },
+    "m1|Bett": {
+      "file": "m1/925f6e3b9e916b13.mp3",
+      "text": "Bett",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5376
+    },
+    "f1|Bruder": {
+      "file": "f1/758069233086d1be.mp3",
+      "text": "Bruder",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|Cousine": {
+      "file": "m1/73977f6f867a17b4.mp3",
+      "text": "Cousine",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "m1|Darf ich mich vorstellen?": {
+      "file": "m1/b5806b3504c6f23f.mp3",
+      "text": "Darf ich mich vorstellen?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11520
+    },
+    "f1|Das Baby schläft.": {
+      "file": "f1/6e3a1db4485d8ad4.mp3",
+      "text": "Das Baby schläft.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13248
+    },
+    "m1|Das Mädchen lacht.": {
+      "file": "m1/e3a30554aee25c22.mp3",
+      "text": "Das Mädchen lacht.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10752
+    },
+    "f1|Das Mädchen liest gern.": {
+      "file": "f1/1a0cbf21709b1851.mp3",
+      "text": "Das Mädchen liest gern.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14400
+    },
+    "m1|Das ist ein Kind.": {
+      "file": "m1/b599fa70f91cda67.mp3",
+      "text": "Das ist ein Kind.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10176
+    },
+    "m1|Das ist eine Frau.": {
+      "file": "m1/998bf6522d7e7633.mp3",
+      "text": "Das ist eine Frau.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10368
+    },
+    "m1|Der Mann trinkt Kaffee.": {
+      "file": "m1/86ec47e39a11ced4.mp3",
+      "text": "Der Mann trinkt Kaffee.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13056
+    },
+    "f1|Der Mensch braucht Wasser.": {
+      "file": "f1/403b3136ada14bb3.mp3",
+      "text": "Der Mensch braucht Wasser.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14592
+    },
+    "m1|Der Nachbar hat einen Hund.": {
+      "file": "m1/6c152745d0046eae.mp3",
+      "text": "Der Nachbar hat einen Hund.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15552
+    },
+    "f1|Der Onkel kommt zu Besuch.": {
+      "file": "f1/88d993f4d2b900c2.mp3",
+      "text": "Der Onkel kommt zu Besuch.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17856
+    },
+    "m1|Deutsch": {
+      "file": "m1/ffd97a81f7099199.mp3",
+      "text": "Deutsch",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|Deutschland": {
+      "file": "f1/b8764fb708546e0f.mp3",
+      "text": "Deutschland",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "f1|Die Familie isst zusammen.": {
+      "file": "f1/14bc1e3ded0fefea.mp3",
+      "text": "Die Familie isst zusammen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16320
+    },
+    "m1|Die Frau liest ein Buch.": {
+      "file": "m1/c52b9f3789fa5d36.mp3",
+      "text": "Die Frau liest ein Buch.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14400
+    },
+    "m1|Die Hochzeit ist im Juni.": {
+      "file": "m1/439bd2f3627470be.mp3",
+      "text": "Die Hochzeit ist im Juni.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15360
+    },
+    "f1|Die Kinder spielen draußen.": {
+      "file": "f1/2434d1bafa02350d.mp3",
+      "text": "Die Kinder spielen draußen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15744
+    },
+    "m1|Die Lampe ist neu.": {
+      "file": "m1/2e612e4d32e04df7.mp3",
+      "text": "Die Lampe ist neu.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11520
+    },
+    "m1|Die Miete ist 650 Euro.": {
+      "file": "m1/c943e08383285c35.mp3",
+      "text": "Die Miete ist 650 Euro.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 21696
+    },
+    "f1|Die Mutter ist noch jung.": {
+      "file": "f1/4ae070e8e3ed95ac.mp3",
+      "text": "Die Mutter ist noch jung.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14976
+    },
+    "m1|Die Mutter liest ein Buch.": {
+      "file": "m1/624618e8b080eb98.mp3",
+      "text": "Die Mutter liest ein Buch.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14592
+    },
+    "f1|Die Tante bringt Geschenke.": {
+      "file": "f1/fa9060f44e793bc4.mp3",
+      "text": "Die Tante bringt Geschenke.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16128
+    },
+    "m1|Die Tochter hilft der Mutter.": {
+      "file": "m1/1bbbec2d04fb1700.mp3",
+      "text": "Die Tochter hilft der Mutter.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15360
+    },
+    "f1|Die Tochter ist fünf Jahre alt.": {
+      "file": "f1/2b581656dd32e1d7.mp3",
+      "text": "Die Tochter ist fünf Jahre alt.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19968
+    },
+    "m1|Die Wohnung hat drei Zimmer.": {
+      "file": "m1/229f21fb157af90d.mp3",
+      "text": "Die Wohnung hat drei Zimmer.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15936
+    },
+    "f1|Die Wohnung ist groß und ruhig.": {
+      "file": "f1/0f13a7abd2afed4c.mp3",
+      "text": "Die Wohnung ist groß und ruhig.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 20928
+    },
+    "m1|Die Wohnung ist sehr hell.": {
+      "file": "m1/5eb53a1cde3259d4.mp3",
+      "text": "Die Wohnung ist sehr hell.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14784
+    },
+    "m1|Er ruft seine Mutter an.": {
+      "file": "m1/ad68b96b0aa18eda.mp3",
+      "text": "Er ruft seine Mutter an.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13440
+    },
+    "f1|Er wohnt allein.": {
+      "file": "f1/3433eb5df7ede81f.mp3",
+      "text": "Er wohnt allein.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10560
+    },
+    "m1|Es gibt ein Bad.": {
+      "file": "m1/9715249e86f33688.mp3",
+      "text": "Es gibt ein Bad.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10752
+    },
+    "f1|Es gibt eine Küche.": {
+      "file": "f1/1bd31adac005fa7b.mp3",
+      "text": "Es gibt eine Küche.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13056
+    },
+    "m1|Es gibt einen Balkon und ein Bad.": {
+      "file": "m1/67be8dc25066a5fa.mp3",
+      "text": "Es gibt einen Balkon und ein Bad.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18816
+    },
+    "f1|Es gibt einen Balkon.": {
+      "file": "f1/6adac185f2735c6f.mp3",
+      "text": "Es gibt einen Balkon.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13632
+    },
+    "m1|Es gibt einen Garten.": {
+      "file": "m1/d5e43d586426efc7.mp3",
+      "text": "Es gibt einen Garten.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11904
+    },
+    "f1|Fenster": {
+      "file": "f1/1cb92faca8893c48.mp3",
+      "text": "Fenster",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|Fisch": {
+      "file": "m1/2520414b6dd14d86.mp3",
+      "text": "Fisch",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|Formular": {
+      "file": "f1/30be07df40fe20d0.mp3",
+      "text": "Formular",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "m1|Frau": {
+      "file": "m1/dbb24fde1c32aae5.mp3",
+      "text": "Frau",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5760
+    },
+    "f1|Freundin": {
+      "file": "f1/9280805944b7d30f.mp3",
+      "text": "Freundin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8256
+    },
+    "m1|Garten": {
+      "file": "m1/fc8fc0bac757e335.mp3",
+      "text": "Garten",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|Geburt": {
+      "file": "f1/4464f53b428ff8c7.mp3",
+      "text": "Geburt",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7680
+    },
+    "m1|Geburtsdatum": {
+      "file": "m1/2153a34d9119aebf.mp3",
+      "text": "Geburtsdatum",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10176
+    },
+    "f1|Geburtsort": {
+      "file": "f1/460fe0cf33289cdd.mp3",
+      "text": "Geburtsort",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10368
+    },
+    "f1|Gibt es hier einen Tisch?": {
+      "file": "f1/3d788ebe686275f7.mp3",
+      "text": "Gibt es hier einen Tisch?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14976
+    },
+    "m1|Haus": {
+      "file": "m1/3d86ca11cd2059d9.mp3",
+      "text": "Haus",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|Hausnummer": {
+      "file": "f1/dffb8e8f3ebdccd0.mp3",
+      "text": "Hausnummer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "m1|Heute ist mein Geburtstag.": {
+      "file": "m1/4b1f9b9700de8c65.mp3",
+      "text": "Heute ist mein Geburtstag.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14400
+    },
+    "f1|Hochzeit": {
+      "file": "f1/7f5411b21d3b70ba.mp3",
+      "text": "Hochzeit",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "m1|Hotel": {
+      "file": "m1/84a97f0df06296ef.mp3",
+      "text": "Hotel",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|Ich bin verheiratet.": {
+      "file": "f1/2201c1c54bc287e1.mp3",
+      "text": "Ich bin verheiratet.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13248
+    },
+    "m1|Ich habe ein Kind.": {
+      "file": "m1/971baa4941b55b45.mp3",
+      "text": "Ich habe ein Kind.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10560
+    },
+    "f1|Ich habe eine Schwester.": {
+      "file": "f1/8e82c655bfb5a258.mp3",
+      "text": "Ich habe eine Schwester.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13440
+    },
+    "m1|Ich habe einen Bruder.": {
+      "file": "m1/95429c3d6a018738.mp3",
+      "text": "Ich habe einen Bruder.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11520
+    },
+    "f1|Ich habe keine Geschwister.": {
+      "file": "f1/d1a5e7143afb54f4.mp3",
+      "text": "Ich habe keine Geschwister.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15168
+    },
+    "m1|Ich habe keinen Sohn.": {
+      "file": "m1/a42d41a9f465e8f2.mp3",
+      "text": "Ich habe keinen Sohn.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11520
+    },
+    "f1|Ich heiße Karim.": {
+      "file": "f1/e12613528a17021d.mp3",
+      "text": "Ich heiße Karim.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11520
+    },
+    "m1|Ich kenne diese Familie.": {
+      "file": "m1/b8b317e3b1f6ec38.mp3",
+      "text": "Ich kenne diese Familie.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13248
+    },
+    "f1|Ich komme aus Deutschland.": {
+      "file": "f1/7b819ce498d2a35b.mp3",
+      "text": "Ich komme aus Deutschland.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14208
+    },
+    "m1|Ich komme aus Marokko.": {
+      "file": "m1/9e1a3620ffd1c8d5.mp3",
+      "text": "Ich komme aus Marokko.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12480
+    },
+    "f1|Ich komme aus Syrien.": {
+      "file": "f1/d572b07479bab9c8.mp3",
+      "text": "Ich komme aus Syrien.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13056
+    },
+    "m1|Ich lade dich ein.": {
+      "file": "m1/2522a15665414aca.mp3",
+      "text": "Ich lade dich ein.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10368
+    },
+    "m1|Ich möchte": {
+      "file": "m1/49bf3600891fd038.mp3",
+      "text": "Ich möchte",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "f1|Ich möchte Deutsch lernen.": {
+      "file": "f1/268a86b09932b8fe.mp3",
+      "text": "Ich möchte Deutsch lernen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13824
+    },
+    "m1|Ich möchte bitte ein Formular ausfüllen.": {
+      "file": "m1/e6dbf5e5fd0e7fe4.mp3",
+      "text": "Ich möchte bitte ein Formular ausfüllen.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 19776
+    },
+    "f1|Ich möchte einen Kaffee, bitte.": {
+      "file": "f1/46e9dd1a6c4a783b.mp3",
+      "text": "Ich möchte einen Kaffee, bitte.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19392
+    },
+    "m1|Ich möchte einen Kaffee.": {
+      "file": "m1/dea1fdf1b958e3c9.mp3",
+      "text": "Ich möchte einen Kaffee.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12096
+    },
+    "f1|Ich möchte mich vorstellen.": {
+      "file": "f1/9654710359b12f01.mp3",
+      "text": "Ich möchte mich vorstellen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14016
+    },
+    "m1|Ich spreche Deutsch und Arabisch.": {
+      "file": "m1/533125ad698539f0.mp3",
+      "text": "Ich spreche Deutsch und Arabisch.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18432
+    },
+    "f1|Ich stehe um 7 Uhr auf.": {
+      "file": "f1/9bf8f0a3a28e51e7.mp3",
+      "text": "Ich stehe um 7 Uhr auf.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18240
+    },
+    "f1|Im Wohnzimmer steht ein großes Sofa.": {
+      "file": "f1/8a35086d4c91726d.mp3",
+      "text": "Im Wohnzimmer steht ein großes Sofa.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 23040
+    },
+    "m1|In der Wohnung gibt es einen Balkon.": {
+      "file": "m1/dab44a3f786c1f4d.mp3",
+      "text": "In der Wohnung gibt es einen Balkon.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18432
+    },
+    "f1|Karim räumt sein Zimmer auf.": {
+      "file": "f1/0e153fee172a0717.mp3",
+      "text": "Karim räumt sein Zimmer auf.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18816
+    },
+    "m1|Kind": {
+      "file": "m1/622689f4f0a009b8.mp3",
+      "text": "Kind",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|Küche": {
+      "file": "f1/c556bd2b86caa23c.mp3",
+      "text": "Küche",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7104
+    },
+    "f1|Meine Wohnung ist sehr schön.": {
+      "file": "f1/12cdc68c27b11947.mp3",
+      "text": "Meine Wohnung ist sehr schön.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18048
+    },
+    "f1|Miete": {
+      "file": "f1/2ea386cca8ad5131.mp3",
+      "text": "Miete",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Schrank": {
+      "file": "m1/e5f8102d60cbd781.mp3",
+      "text": "Schrank",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "m1|Schüler": {
+      "file": "m1/d951d3432c725e7f.mp3",
+      "text": "Schüler",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|Seine Ehefrau ist Ingenieurin.": {
+      "file": "f1/9bb4c2a1d9fda8a2.mp3",
+      "text": "Seine Ehefrau ist Ingenieurin.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 20736
+    },
+    "m1|Sie heiraten im Sommer.": {
+      "file": "m1/4fc6e80638056287.mp3",
+      "text": "Sie heiraten im Sommer.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13056
+    },
+    "m1|Sofa": {
+      "file": "m1/b629a9a615311aa0.mp3",
+      "text": "Sofa",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "m1|Stuhl": {
+      "file": "m1/4bd6b922c684a09d.mp3",
+      "text": "Stuhl",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|Syrien": {
+      "file": "f1/58b5c127a98dd2a8.mp3",
+      "text": "Syrien",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|Tante": {
+      "file": "m1/4cea63d522f8bdc4.mp3",
+      "text": "Tante",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "f1|Taxi": {
+      "file": "f1/80cf1e93e884752e.mp3",
+      "text": "Taxi",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7680
+    },
+    "m1|Tee": {
+      "file": "m1/4120b970edbbe2c3.mp3",
+      "text": "Tee",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 4992
+    },
+    "f1|Telefon": {
+      "file": "f1/32a14a853cb2e06f.mp3",
+      "text": "Telefon",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "m1|Tisch": {
+      "file": "m1/fe0b2e179735aa80.mp3",
+      "text": "Tisch",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "f1|Tür": {
+      "file": "f1/509f746bd496eda9.mp3",
+      "text": "Tür",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6144
+    },
+    "f1|Unterschrift": {
+      "file": "f1/2e7017a8db3644ec.mp3",
+      "text": "Unterschrift",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10176
+    },
+    "m1|Vater": {
+      "file": "m1/b047c70a0a8ee038.mp3",
+      "text": "Vater",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|Vorname": {
+      "file": "f1/f57f8a9e1da7fa17.mp3",
+      "text": "Vorname",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "m1|Was möchtest du trinken?": {
+      "file": "m1/00e0f1ce1ea574dd.mp3",
+      "text": "Was möchtest du trinken?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11904
+    },
+    "f1|Wie geht's?": {
+      "file": "f1/fc8bfcde6ebc225c.mp3",
+      "text": "Wie geht's?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|Wie heißen Sie?": {
+      "file": "m1/416fbcea7cf42ea9.mp3",
+      "text": "Wie heißen Sie?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9408
+    },
+    "f1|Wie heißt du?": {
+      "file": "f1/3d1a79844b068aa9.mp3",
+      "text": "Wie heißt du?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "m1|Wie ist Ihr Alter?": {
+      "file": "m1/4af482c94357c4e7.mp3",
+      "text": "Wie ist Ihr Alter?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10560
+    },
+    "f1|Wie ist Ihr Name?": {
+      "file": "f1/3ee26fbb0153cc0d.mp3",
+      "text": "Wie ist Ihr Name?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11712
+    },
+    "m1|Wir besuchen Freunde.": {
+      "file": "m1/bf6452f605318c31.mp3",
+      "text": "Wir besuchen Freunde.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12288
+    },
+    "m1|Wir haben zwei Kinder.": {
+      "file": "m1/a433bcc1cdae7a1c.mp3",
+      "text": "Wir haben zwei Kinder.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12480
+    },
+    "f1|Wir leben in Deutschland.": {
+      "file": "f1/dbe369cbfbbe2355.mp3",
+      "text": "Wir leben in Deutschland.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14976
+    },
+    "f1|Wir möchten": {
+      "file": "f1/8006def51d535a64.mp3",
+      "text": "Wir möchten",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "m1|Wir sehen am Abend fern.": {
+      "file": "m1/85c72b7902393b14.mp3",
+      "text": "Wir sehen am Abend fern.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14400
+    },
+    "m1|Wohnung": {
+      "file": "m1/646be3d694f4efe8.mp3",
+      "text": "Wohnung",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "f1|Zimmer": {
+      "file": "f1/cc40b3a4ebc9d009.mp3",
+      "text": "Zimmer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "m1|aufräumen": {
+      "file": "m1/5cceec6241cd948f.mp3",
+      "text": "aufräumen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8064
+    },
+    "f1|aufstehen": {
+      "file": "f1/eb75a077e3add31b.mp3",
+      "text": "aufstehen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "f1|billig": {
+      "file": "f1/e89539fab714a57c.mp3",
+      "text": "billig",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|das Alter": {
+      "file": "m1/10496692e33742cf.mp3",
+      "text": "das Alter",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8064
+    },
+    "f1|das Arabisch": {
+      "file": "f1/2d5f530f33bd30d1.mp3",
+      "text": "das Arabisch",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11136
+    },
+    "m1|das Baby": {
+      "file": "m1/0d00b0b20cf0b539.mp3",
+      "text": "das Baby",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8064
+    },
+    "f1|das Bad": {
+      "file": "f1/1fd1775f3120a8e1.mp3",
+      "text": "das Bad",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|das Bett": {
+      "file": "m1/740a82cd24596a80.mp3",
+      "text": "das Bett",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7296
+    },
+    "f1|das Café": {
+      "file": "f1/959545963572f448.mp3",
+      "text": "das Café",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "m1|das Deutsch": {
+      "file": "m1/8fcff7aad3754bd8.mp3",
+      "text": "das Deutsch",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "f1|das Deutschland": {
+      "file": "f1/4914545d2cbba569.mp3",
+      "text": "das Deutschland",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10752
+    },
+    "m1|das Englisch": {
+      "file": "m1/23c80d97f683af07.mp3",
+      "text": "das Englisch",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8832
+    },
+    "f1|das Fenster": {
+      "file": "f1/d489fd1d856a79b7.mp3",
+      "text": "das Fenster",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9984
+    },
+    "m1|das Haus": {
+      "file": "m1/4b283975437d6fda.mp3",
+      "text": "das Haus",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8064
+    },
+    "f1|das Hotel": {
+      "file": "f1/39332f47c1f6f065.mp3",
+      "text": "das Hotel",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "f1|das Marokko": {
+      "file": "f1/ee43bc621659498d.mp3",
+      "text": "das Marokko",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10368
+    },
+    "m1|das Mädchen": {
+      "file": "m1/efa7a6b2fc7473a6.mp3",
+      "text": "das Mädchen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "f1|das Radio": {
+      "file": "f1/4ba2a59ceae5acca.mp3",
+      "text": "das Radio",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10368
+    },
+    "m1|das Sofa": {
+      "file": "m1/18798360320abdd1.mp3",
+      "text": "das Sofa",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8256
+    },
+    "f1|das Zimmer": {
+      "file": "f1/9a624e038e3e7014.mp3",
+      "text": "das Zimmer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "f1|das Ägypten": {
+      "file": "f1/7bb66991358e54fe.mp3",
+      "text": "das Ägypten",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10560
+    },
+    "m1|der Balkon": {
+      "file": "m1/9c625a1de44ca9d3.mp3",
+      "text": "der Balkon",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8256
+    },
+    "m1|der Garten": {
+      "file": "m1/c0f37ee2c0e651a2.mp3",
+      "text": "der Garten",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|der Geburtsort": {
+      "file": "f1/8de4671ca3db8ccc.mp3",
+      "text": "der Geburtsort",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11904
+    },
+    "m1|der Geburtstag": {
+      "file": "m1/d991b67999bab348.mp3",
+      "text": "der Geburtstag",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10176
+    },
+    "f1|der Großvater": {
+      "file": "f1/5128df0d0ba557e0.mp3",
+      "text": "der Großvater",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11904
+    },
+    "m1|der Junge": {
+      "file": "m1/91c79fea612765e8.mp3",
+      "text": "der Junge",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7104
+    },
+    "f1|der Kaffee": {
+      "file": "f1/a59b2dfc46935fe9.mp3",
+      "text": "der Kaffee",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "m1|der Mann": {
+      "file": "m1/02fdffb364ff452e.mp3",
+      "text": "der Mann",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "m1|der Mittwoch": {
+      "file": "m1/1e2915f53f7fd195.mp3",
+      "text": "der Mittwoch",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "f1|der Montag": {
+      "file": "f1/75139c4651b8379e.mp3",
+      "text": "der Montag",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9984
+    },
+    "m1|der Nachbar": {
+      "file": "m1/2c27c1e85d9ea191.mp3",
+      "text": "der Nachbar",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "f1|der Nachname": {
+      "file": "f1/f696df1bc4e54e11.mp3",
+      "text": "der Nachname",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10944
+    },
+    "m1|der Name": {
+      "file": "m1/b27446088583ecaf.mp3",
+      "text": "der Name",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|der Neffe": {
+      "file": "f1/7a71c4f3332f13c0.mp3",
+      "text": "der Neffe",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|der Samstag": {
+      "file": "f1/9ee5b5d1c801f561.mp3",
+      "text": "der Samstag",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10752
+    },
+    "m1|der Schrank": {
+      "file": "m1/61fbb84197792baf.mp3",
+      "text": "der Schrank",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|der Stuhl": {
+      "file": "f1/5cf890b50f97c0b6.mp3",
+      "text": "der Stuhl",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|der Tee": {
+      "file": "m1/59d51c202b21ea53.mp3",
+      "text": "der Tee",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "f1|der Tisch": {
+      "file": "f1/59543954a87fd49f.mp3",
+      "text": "der Tisch",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|die Küche": {
+      "file": "f1/3db35da2c827111e.mp3",
+      "text": "die Küche",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|die Lampe": {
+      "file": "m1/4995c1f0e5a28501.mp3",
+      "text": "die Lampe",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|die Miete": {
+      "file": "f1/c9adf6cffc61721a.mp3",
+      "text": "die Miete",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|die Musik": {
+      "file": "m1/2056140656787d6f.mp3",
+      "text": "die Musik",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|die Mutter": {
+      "file": "f1/dd03405566609335.mp3",
+      "text": "die Mutter",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|die Postleitzahl": {
+      "file": "m1/8b0b21810ae0adc4.mp3",
+      "text": "die Postleitzahl",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11136
+    },
+    "f1|die Schwester": {
+      "file": "f1/daf73b74ab05d999.mp3",
+      "text": "die Schwester",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "m1|die Staatsangehörigkeit": {
+      "file": "m1/4cf6acf3d4b7c23d.mp3",
+      "text": "die Staatsangehörigkeit",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14976
+    },
+    "f1|die Straße": {
+      "file": "f1/f0a11e910e987e2e.mp3",
+      "text": "die Straße",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "f1|die Tochter": {
+      "file": "f1/8e79dbda1d079fb2.mp3",
+      "text": "die Tochter",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "m1|die Tür": {
+      "file": "m1/14bdded78eaa53d6.mp3",
+      "text": "die Tür",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "m1|die Wohnung": {
+      "file": "m1/1943e75026c7bb08.mp3",
+      "text": "die Wohnung",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "f1|drei": {
+      "file": "f1/bd1cee1e64631865.mp3",
+      "text": "drei",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6528
+    },
+    "m1|dunkel": {
+      "file": "m1/c172a40b2d13fe52.mp3",
+      "text": "dunkel",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "m1|es gibt": {
+      "file": "m1/a839aa17dadac5ce.mp3",
+      "text": "es gibt",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7104
+    },
+    "f1|fernsehen": {
+      "file": "f1/3fd01b67e19f3cf3.mp3",
+      "text": "fernsehen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "f1|groß": {
+      "file": "f1/fcea1a644c334453.mp3",
+      "text": "groß",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|grün": {
+      "file": "m1/652811fb6d0d8ca8.mp3",
+      "text": "grün",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "f1|hell": {
+      "file": "f1/6af5c278bde300e5.mp3",
+      "text": "hell",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6144
+    },
+    "f1|klein": {
+      "file": "f1/e4c88368dfe37c94.mp3",
+      "text": "klein",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|kümmern": {
+      "file": "m1/603ec403b312751a.mp3",
+      "text": "kümmern",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "f1|leben": {
+      "file": "f1/2e41b9592c1fa65e.mp3",
+      "text": "leben",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7104
+    },
+    "m1|ledig": {
+      "file": "m1/1c29ced019157614.mp3",
+      "text": "ledig",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "f1|lieb": {
+      "file": "f1/94c0214047ac0f67.mp3",
+      "text": "lieb",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 5952
+    },
+    "f1|lila": {
+      "file": "f1/88291b3be5e30426.mp3",
+      "text": "lila",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7104
+    },
+    "m1|möchten": {
+      "file": "m1/d7c334c2a9be69df.mp3",
+      "text": "möchten",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|nett": {
+      "file": "f1/afea1f6d8dfd5afe.mp3",
+      "text": "nett",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6144
+    },
+    "f1|neunzehn": {
+      "file": "f1/6600666801607d10.mp3",
+      "text": "neunzehn",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "f1|null": {
+      "file": "f1/7927ac43137e6cc1.mp3",
+      "text": "null",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6336
+    },
+    "m1|orange": {
+      "file": "m1/8d0a699ae9d9aa7c.mp3",
+      "text": "orange",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "m1|rot": {
+      "file": "m1/5cd5562f2546c862.mp3",
+      "text": "rot",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|schwanger": {
+      "file": "f1/95edb62d67c6280f.mp3",
+      "text": "schwanger",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "f1|schön": {
+      "file": "f1/58a2300d3e1c29b9.mp3",
+      "text": "schön",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6720
+    },
+    "f1|sechzehn": {
+      "file": "f1/74d76648f26abfd1.mp3",
+      "text": "sechzehn",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "m1|siebzehn": {
+      "file": "m1/59a37ac24ac9ad8f.mp3",
+      "text": "siebzehn",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|siebzig": {
+      "file": "f1/40b77cc1b92b28f8.mp3",
+      "text": "siebzig",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "m1|sorgen": {
+      "file": "m1/b23307c00051ea75.mp3",
+      "text": "sorgen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "m1|sprechen": {
+      "file": "m1/cd34f2aff279c667.mp3",
+      "text": "sprechen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7104
+    },
+    "m1|teuer": {
+      "file": "m1/e4a07f5536567d75.mp3",
+      "text": "teuer",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "m1|Die Schwester ist sehr nett.": {
+      "file": "m1/259f0ad3fb3107db.mp3",
+      "text": "Die Schwester ist sehr nett.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15168
     }
   }
 }
