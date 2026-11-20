@@ -1,0 +1,1603 @@
+{
+  "meta": {
+    "standard": "Goethe-Zertifikat A1: Start Deutsch 1",
+    "target_lemmas": 650,
+    "version": "1.0",
+    "audited_lemmas_count": 221
+  },
+  "categories": {
+    "personal_data": {
+      "unit": "Unit 3B",
+      "lemmas": [
+        {
+          "de": "Name",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "اسم",
+          "en": "name"
+        },
+        {
+          "de": "Vorname",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "الاسم الأول",
+          "en": "first name"
+        },
+        {
+          "de": "Nachname",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "اسم العائلة",
+          "en": "last name"
+        },
+        {
+          "de": "Alter",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "عمر",
+          "en": "age"
+        },
+        {
+          "de": "Geburtsdatum",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "تاريخ الميلاد",
+          "en": "date of birth"
+        },
+        {
+          "de": "Geburtsort",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "مكان الميلاد",
+          "en": "place of birth"
+        },
+        {
+          "de": "Staatsangehörigkeit",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "الجنسية",
+          "en": "nationality"
+        },
+        {
+          "de": "Familienstand",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "الحالة الاجتماعية",
+          "en": "marital status"
+        },
+        {
+          "de": "Adresse",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "عنوان",
+          "en": "address"
+        },
+        {
+          "de": "Straße",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "شارع",
+          "en": "street"
+        },
+        {
+          "de": "Hausnummer",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "رقم المنزل",
+          "en": "house number"
+        },
+        {
+          "de": "Postleitzahl",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "الرمز البريدي",
+          "en": "postal code"
+        },
+        {
+          "de": "Wohnort",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "مكان الإقامة",
+          "en": "place of residence"
+        },
+        {
+          "de": "Telefon",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "هاتف",
+          "en": "telephone"
+        },
+        {
+          "de": "E-Mail",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "بريد إلكتروني",
+          "en": "email"
+        },
+        {
+          "de": "Unterschrift",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "توقيع",
+          "en": "signature"
+        },
+        {
+          "de": "Formular",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "استمارة",
+          "en": "form"
+        },
+        {
+          "de": "ausfüllen",
+          "pos": "verb",
+          "ar": "يملأ استمارة",
+          "en": "to fill out"
+        },
+        {
+          "de": "wohnen",
+          "pos": "verb",
+          "ar": "يسكن",
+          "en": "to live/reside"
+        },
+        {
+          "de": "kommen",
+          "pos": "verb",
+          "ar": "يأتي",
+          "en": "to come"
+        },
+        {
+          "de": "heißen",
+          "pos": "verb",
+          "ar": "يُدعى",
+          "en": "to be called"
+        },
+        {
+          "de": "sprechen",
+          "pos": "verb",
+          "ar": "يتحدث",
+          "en": "to speak"
+        },
+        {
+          "de": "Sprache",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "لغة",
+          "en": "language"
+        },
+        {
+          "de": "Land",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "بلد",
+          "en": "country"
+        },
+        {
+          "de": "Stadt",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "مدينة",
+          "en": "city"
+        },
+        {
+          "de": "Deutschland",
+          "pos": "proper",
+          "ar": "ألمانيا",
+          "en": "Germany"
+        },
+        {
+          "de": "Deutsch",
+          "pos": "proper",
+          "ar": "الألمانية",
+          "en": "German"
+        },
+        {
+          "de": "möchten",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يرغب / يودّ",
+          "en": "would like"
+        },
+        {
+          "de": "bitte",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "من فضلك",
+          "en": "please"
+        },
+        {
+          "de": "danke",
+          "pos": "interjection",
+          "gender": null,
+          "ar": "شكراً",
+          "en": "thank you"
+        },
+        {
+          "de": "vorstellen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يُعرّف / يقدّم نفسه",
+          "en": "to introduce"
+        },
+        {
+          "de": "Arabisch",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "العربية",
+          "en": "Arabic"
+        },
+        {
+          "de": "Englisch",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "الإنجليزية",
+          "en": "English"
+        },
+        {
+          "de": "Spanisch",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "الإسبانية",
+          "en": "Spanish"
+        },
+        {
+          "de": "Marokko",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "المغرب",
+          "en": "Morocco"
+        },
+        {
+          "de": "Syrien",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "سوريا",
+          "en": "Syria"
+        },
+        {
+          "de": "Spanien",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "إسبانيا",
+          "en": "Spain"
+        },
+        {
+          "de": "Ägypten",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "مصر",
+          "en": "Egypt"
+        },
+        {
+          "de": "Beruf",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "مهنة / عمل",
+          "en": "profession / occupation"
+        },
+        {
+          "de": "Student",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "طالب جامعي",
+          "en": "university student (m)"
+        },
+        {
+          "de": "Schüler",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "تلميذ مدرسي",
+          "en": "school pupil (m)"
+        }
+      ]
+    },
+    "family_and_people": {
+      "unit": "Unit 4",
+      "lemmas": [
+        {
+          "de": "Familie",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "عائلة",
+          "en": "family"
+        },
+        {
+          "de": "Mutter",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "أم",
+          "en": "mother"
+        },
+        {
+          "de": "Vater",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "أب",
+          "en": "father"
+        },
+        {
+          "de": "Eltern",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "والدان",
+          "en": "parents"
+        },
+        {
+          "de": "Kind",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "طفل",
+          "en": "child"
+        },
+        {
+          "de": "Sohn",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "ابن",
+          "en": "son"
+        },
+        {
+          "de": "Tochter",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "ابنة",
+          "en": "daughter"
+        },
+        {
+          "de": "Bruder",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "أخ",
+          "en": "brother"
+        },
+        {
+          "de": "Schwester",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "أخت",
+          "en": "sister"
+        },
+        {
+          "de": "Geschwister",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "إخوة وأخوات",
+          "en": "siblings"
+        },
+        {
+          "de": "Großmutter",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "جدة",
+          "en": "grandmother"
+        },
+        {
+          "de": "Großvater",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "جد",
+          "en": "grandfather"
+        },
+        {
+          "de": "Großeltern",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "أجداد",
+          "en": "grandparents"
+        },
+        {
+          "de": "Oma",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "جدة",
+          "en": "grandma"
+        },
+        {
+          "de": "Opa",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "جد",
+          "en": "grandpa"
+        },
+        {
+          "de": "Onkel",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "عم / خال",
+          "en": "uncle"
+        },
+        {
+          "de": "Tante",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "عمة / خالة",
+          "en": "aunt"
+        },
+        {
+          "de": "Cousin",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "ابن عم / خال",
+          "en": "cousin (m)"
+        },
+        {
+          "de": "Cousine",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "بنت عم / خالة",
+          "en": "cousin (f)"
+        },
+        {
+          "de": "Mann",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "رجل / زوج",
+          "en": "man / husband"
+        },
+        {
+          "de": "Frau",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "امرأة / زوجة",
+          "en": "woman / wife"
+        },
+        {
+          "de": "Baby",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "رضيع",
+          "en": "baby"
+        },
+        {
+          "de": "Mädchen",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "فتاة",
+          "en": "girl"
+        },
+        {
+          "de": "Junge",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "ولد",
+          "en": "boy"
+        },
+        {
+          "de": "Freund",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "صديق",
+          "en": "friend (m)"
+        },
+        {
+          "de": "Freundin",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "صديقة",
+          "en": "friend (f)"
+        },
+        {
+          "de": "Nachbar",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "جار",
+          "en": "neighbor (m)"
+        },
+        {
+          "de": "Nachbarin",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "جارة",
+          "en": "neighbor (f)"
+        },
+        {
+          "de": "verheiratet",
+          "pos": "adj",
+          "ar": "متزوج",
+          "en": "married"
+        },
+        {
+          "de": "ledig",
+          "pos": "adj",
+          "ar": "أعزب",
+          "en": "single"
+        },
+        {
+          "de": "geschieden",
+          "pos": "adj",
+          "ar": "مطلق",
+          "en": "divorced"
+        },
+        {
+          "de": "zusammen",
+          "pos": "adv",
+          "ar": "معاً",
+          "en": "together"
+        },
+        {
+          "de": "allein",
+          "pos": "adv",
+          "ar": "وحيداً / بمفرده",
+          "en": "alone"
+        }
+      ]
+    },
+    "home_and_living": {
+      "unit": "Unit 5",
+      "description": "Housing, rooms, furniture, 'es gibt' & household routines",
+      "lemmas": [
+        {
+          "de": "Wohnung",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "شقة",
+          "en": "apartment"
+        },
+        {
+          "de": "Haus",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "منزل",
+          "en": "house"
+        },
+        {
+          "de": "Zimmer",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "غرفة",
+          "en": "room"
+        },
+        {
+          "de": "Küche",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "مطبخ",
+          "en": "kitchen"
+        },
+        {
+          "de": "Bad",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "حمام",
+          "en": "bathroom"
+        },
+        {
+          "de": "Balkon",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "شرفة",
+          "en": "balcony"
+        },
+        {
+          "de": "Garten",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "حديقة",
+          "en": "garden"
+        },
+        {
+          "de": "Tisch",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "طاولة",
+          "en": "table"
+        },
+        {
+          "de": "Stuhl",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "كرسي",
+          "en": "chair"
+        },
+        {
+          "de": "Bett",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "سرير",
+          "en": "bed"
+        },
+        {
+          "de": "Schrank",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "خزانة",
+          "en": "wardrobe / cupboard"
+        },
+        {
+          "de": "Sofa",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "أريكة",
+          "en": "sofa"
+        },
+        {
+          "de": "Lampe",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "مصباح",
+          "en": "lamp"
+        },
+        {
+          "de": "Tür",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "باب",
+          "en": "door"
+        },
+        {
+          "de": "Fenster",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "نافذة",
+          "en": "window"
+        },
+        {
+          "de": "Miete",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "إيجار",
+          "en": "rent"
+        },
+        {
+          "de": "groß",
+          "pos": "adj",
+          "gender": null,
+          "ar": "كبير",
+          "en": "big / large"
+        },
+        {
+          "de": "klein",
+          "pos": "adj",
+          "gender": null,
+          "ar": "صغير",
+          "en": "small"
+        },
+        {
+          "de": "hell",
+          "pos": "adj",
+          "gender": null,
+          "ar": "مضيء / مشرق",
+          "en": "bright"
+        },
+        {
+          "de": "dunkel",
+          "pos": "adj",
+          "gender": null,
+          "ar": "مظلم",
+          "en": "dark"
+        },
+        {
+          "de": "teuer",
+          "pos": "adj",
+          "gender": null,
+          "ar": "غالٍ",
+          "en": "expensive"
+        },
+        {
+          "de": "billig",
+          "pos": "adj",
+          "gender": null,
+          "ar": "رخيص",
+          "en": "cheap"
+        },
+        {
+          "de": "aufstehen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يستيقظ / ينهض",
+          "en": "to get up"
+        },
+        {
+          "de": "aufräumen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يرتّب / ينظف",
+          "en": "to tidy up"
+        },
+        {
+          "de": "fernsehen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يشاهد التلفاز",
+          "en": "to watch TV"
+        },
+        {
+          "de": "anrufen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يتصل هاتفياً",
+          "en": "to call (phone)"
+        }
+      ]
+    },
+    "food_and_drinks": {
+      "unit": "Unit 6",
+      "description": "Food, groceries, beverages, supermarket & preferences (gern/lieber)",
+      "lemmas": [
+        {
+          "de": "Essen",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "طعام",
+          "en": "food / meal"
+        },
+        {
+          "de": "Getränk",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "مشروب",
+          "en": "drink / beverage"
+        },
+        {
+          "de": "Brot",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "خبز",
+          "en": "bread"
+        },
+        {
+          "de": "Brötchen",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "خبز صغير / لفة",
+          "en": "bread roll"
+        },
+        {
+          "de": "Wasser",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "ماء",
+          "en": "water"
+        },
+        {
+          "de": "Milch",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "حليب",
+          "en": "milk"
+        },
+        {
+          "de": "Kaffee",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "قهوة",
+          "en": "coffee"
+        },
+        {
+          "de": "Tee",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "شاي",
+          "en": "tea"
+        },
+        {
+          "de": "Saft",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "عصير",
+          "en": "juice"
+        },
+        {
+          "de": "Apfel",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "تفاحة",
+          "en": "apple"
+        },
+        {
+          "de": "Banane",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "موزة",
+          "en": "banana"
+        },
+        {
+          "de": "Käse",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "جبن",
+          "en": "cheese"
+        },
+        {
+          "de": "Fleisch",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "لحم",
+          "en": "meat"
+        },
+        {
+          "de": "Fisch",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "سمك",
+          "en": "fish"
+        },
+        {
+          "de": "Ei",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "بيضة",
+          "en": "egg"
+        },
+        {
+          "de": "Zucker",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "سكر",
+          "en": "sugar"
+        },
+        {
+          "de": "Salz",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "ملح",
+          "en": "salt"
+        },
+        {
+          "de": "Supermarkt",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "سوبرماركت",
+          "en": "supermarket"
+        },
+        {
+          "de": "Markt",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "سوق",
+          "en": "market"
+        },
+        {
+          "de": "kaufen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يشتري",
+          "en": "to buy"
+        },
+        {
+          "de": "trinken",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يشرب",
+          "en": "to drink"
+        },
+        {
+          "de": "essen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يأكل",
+          "en": "to eat"
+        },
+        {
+          "de": "kochen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يطبخ",
+          "en": "to cook"
+        },
+        {
+          "de": "schmecken",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يعجب المذاق / يستسيغ",
+          "en": "to taste good"
+        },
+        {
+          "de": "gern",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "برغبة / بسرور",
+          "en": "gladly / with pleasure"
+        },
+        {
+          "de": "lieber",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "يُفضّل",
+          "en": "rather / prefer"
+        }
+      ]
+    },
+    "time_and_appointments": {
+      "unit": "Unit 7",
+      "description": "Time, schedule, appointments, modal verbs & written correspondence formulas",
+      "lemmas": [
+        {
+          "de": "Uhr",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "ساعة (آلة أو توقيت)",
+          "en": "clock / o'clock"
+        },
+        {
+          "de": "Stunde",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "ساعة (مدة)",
+          "en": "hour"
+        },
+        {
+          "de": "Minute",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "دقيقة",
+          "en": "minute"
+        },
+        {
+          "de": "Tag",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "يوم",
+          "en": "day"
+        },
+        {
+          "de": "Woche",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "أسبوع",
+          "en": "week"
+        },
+        {
+          "de": "Monat",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "شهر",
+          "en": "month"
+        },
+        {
+          "de": "Jahr",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "سنة / عام",
+          "en": "year"
+        },
+        {
+          "de": "Termin",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "موعد",
+          "en": "appointment"
+        },
+        {
+          "de": "Zeit",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "وقت",
+          "en": "time"
+        },
+        {
+          "de": "heute",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "اليوم",
+          "en": "today"
+        },
+        {
+          "de": "morgen",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "غداً",
+          "en": "tomorrow"
+        },
+        {
+          "de": "gestern",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "أمس",
+          "en": "yesterday"
+        },
+        {
+          "de": "früh",
+          "pos": "adj",
+          "gender": null,
+          "ar": "مبكراً",
+          "en": "early"
+        },
+        {
+          "de": "spät",
+          "pos": "adj",
+          "gender": null,
+          "ar": "متأخراً",
+          "en": "late"
+        },
+        {
+          "de": "können",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يستطيع",
+          "en": "can / to be able"
+        },
+        {
+          "de": "müssen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يجب / يتعين",
+          "en": "must / to have to"
+        },
+        {
+          "de": "wollen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يريد",
+          "en": "to want"
+        },
+        {
+          "de": "Brief",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "رسالة",
+          "en": "letter"
+        },
+        {
+          "de": "Grüße",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "تحيات",
+          "en": "greetings"
+        },
+        {
+          "de": "einladen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يدعو",
+          "en": "to invite"
+        },
+        {
+          "de": "Einladung",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "دعوة",
+          "en": "invitation"
+        }
+      ]
+    },
+    "city_and_transport": {
+      "unit": "Unit 8",
+      "description": "City navigation, orientation, transit & du-imperative",
+      "lemmas": [
+        {
+          "de": "Bahnhof",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "محطة القطار",
+          "en": "train station"
+        },
+        {
+          "de": "Zug",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "قطار",
+          "en": "train"
+        },
+        {
+          "de": "Bus",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "حافلة",
+          "en": "bus"
+        },
+        {
+          "de": "Flughafen",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "مطار",
+          "en": "airport"
+        },
+        {
+          "de": "Flugzeug",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "طائرة",
+          "en": "airplane"
+        },
+        {
+          "de": "Fahrkarte",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "تذكرة سفر",
+          "en": "ticket"
+        },
+        {
+          "de": "Gleis",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "رصيف القطار / سكة",
+          "en": "track / platform"
+        },
+        {
+          "de": "Haltestelle",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "موقف الحافلة",
+          "en": "bus stop"
+        },
+        {
+          "de": "Apotheke",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "صيدلية",
+          "en": "pharmacy"
+        },
+        {
+          "de": "Bank",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "مصرف / بنك",
+          "en": "bank"
+        },
+        {
+          "de": "Post",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "مكتب البريد",
+          "en": "post office"
+        },
+        {
+          "de": "rechts",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "يميناً",
+          "en": "right"
+        },
+        {
+          "de": "links",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "يساراً",
+          "en": "left"
+        },
+        {
+          "de": "geradeaus",
+          "pos": "adverb",
+          "gender": null,
+          "ar": "إلى الأمام مباشرة",
+          "en": "straight ahead"
+        },
+        {
+          "de": "fahren",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يقود / يسافر بوسيلة",
+          "en": "to drive / ride"
+        },
+        {
+          "de": "gehen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يمشي / يذهب",
+          "en": "to walk / go"
+        },
+        {
+          "de": "abfahren",
+          "pos": "verb",
+          "gender": null,
+          "ar": "ينطلق / يغادر",
+          "en": "to depart"
+        },
+        {
+          "de": "ankommen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يصل",
+          "en": "to arrive"
+        }
+      ]
+    },
+    "work_and_professions": {
+      "unit": "Unit 9",
+      "description": "Professions, workplace & past of sein/haben (war/hatte)",
+      "lemmas": [
+        {
+          "de": "Arbeit",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "عمل / شغل",
+          "en": "work / job"
+        },
+        {
+          "de": "Arzt",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "طبيب",
+          "en": "doctor (m)"
+        },
+        {
+          "de": "Ärztin",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "طبيبة",
+          "en": "doctor (f)"
+        },
+        {
+          "de": "Lehrer",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "معلم",
+          "en": "teacher (m)"
+        },
+        {
+          "de": "Lehrerin",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "معلمة",
+          "en": "teacher (f)"
+        },
+        {
+          "de": "Kollege",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "زميل عمل",
+          "en": "colleague (m)"
+        },
+        {
+          "de": "Kollegin",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "زميلة عمل",
+          "en": "colleague (f)"
+        },
+        {
+          "de": "Büro",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "مكتب",
+          "en": "office"
+        },
+        {
+          "de": "Firma",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "شركة",
+          "en": "company"
+        },
+        {
+          "de": "arbeiten",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يعمل",
+          "en": "to work"
+        },
+        {
+          "de": "suchen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يبحث عن",
+          "en": "to search / look for"
+        },
+        {
+          "de": "finden",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يجد",
+          "en": "to find"
+        }
+      ]
+    },
+    "health_and_body": {
+      "unit": "Unit 10",
+      "description": "Body parts, health advice, 'man' & permission/prohibition ('dürfen')",
+      "lemmas": [
+        {
+          "de": "Körper",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "جسم / جسد",
+          "en": "body"
+        },
+        {
+          "de": "Kopf",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "رأس",
+          "en": "head"
+        },
+        {
+          "de": "Auge",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "عين",
+          "en": "eye"
+        },
+        {
+          "de": "Ohr",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "أذن",
+          "en": "ear"
+        },
+        {
+          "de": "Mund",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "فم",
+          "en": "mouth"
+        },
+        {
+          "de": "Hand",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "يد",
+          "en": "hand"
+        },
+        {
+          "de": "Arm",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "ذراع",
+          "en": "arm"
+        },
+        {
+          "de": "Bein",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "ساق",
+          "en": "leg"
+        },
+        {
+          "de": "Fuß",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "قدم",
+          "en": "foot"
+        },
+        {
+          "de": "Bauch",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "بطن",
+          "en": "belly / stomach"
+        },
+        {
+          "de": "Schmerz",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "ألم / وجع",
+          "en": "pain"
+        },
+        {
+          "de": "Fieber",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "حمى / حرارة",
+          "en": "fever"
+        },
+        {
+          "de": "Medikament",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "دواء",
+          "en": "medication"
+        },
+        {
+          "de": "Krankenhaus",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "مستشفى",
+          "en": "hospital"
+        },
+        {
+          "de": "krank",
+          "pos": "adj",
+          "gender": null,
+          "ar": "مريض",
+          "en": "sick / ill"
+        },
+        {
+          "de": "gesund",
+          "pos": "adj",
+          "gender": null,
+          "ar": "سليم / بصحة جيدة",
+          "en": "healthy"
+        },
+        {
+          "de": "wehtun",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يؤلم",
+          "en": "to hurt / ache"
+        },
+        {
+          "de": "dürfen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يُسمح له",
+          "en": "may / to be allowed to"
+        }
+      ]
+    },
+    "clothing_and_weather": {
+      "unit": "Unit 11",
+      "description": "Clothing, weather, seasons & demonstratives",
+      "lemmas": [
+        {
+          "de": "Kleidung",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "ملابس",
+          "en": "clothing"
+        },
+        {
+          "de": "Hose",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "بنطال",
+          "en": "trousers / pants"
+        },
+        {
+          "de": "Hemd",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "قميص",
+          "en": "shirt"
+        },
+        {
+          "de": "T-Shirt",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "تي شيرت",
+          "en": "t-shirt"
+        },
+        {
+          "de": "Jacke",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "سترة / جاكيت",
+          "en": "jacket"
+        },
+        {
+          "de": "Mantel",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "معطف",
+          "en": "coat"
+        },
+        {
+          "de": "Schuh",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "حذاء",
+          "en": "shoe"
+        },
+        {
+          "de": "Kleid",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "فستان",
+          "en": "dress"
+        },
+        {
+          "de": "Wetter",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "طقس",
+          "en": "weather"
+        },
+        {
+          "de": "Sonne",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "شمس",
+          "en": "sun"
+        },
+        {
+          "de": "Regen",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "مطر",
+          "en": "rain"
+        },
+        {
+          "de": "Schnee",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "ثلج",
+          "en": "snow"
+        },
+        {
+          "de": "Wind",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "رياح",
+          "en": "wind"
+        },
+        {
+          "de": "warm",
+          "pos": "adj",
+          "gender": null,
+          "ar": "دافئ",
+          "en": "warm"
+        },
+        {
+          "de": "kalt",
+          "pos": "adj",
+          "gender": null,
+          "ar": "بارد",
+          "en": "cold"
+        },
+        {
+          "de": "regnen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "تمطر",
+          "en": "to rain"
+        },
+        {
+          "de": "scheinen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "تسطع / تشرق",
+          "en": "to shine"
+        }
+      ]
+    },
+    "travel_and_accommodation": {
+      "unit": "Unit 12",
+      "description": "Travel, vacations, hotel booking & conversational past bridge (Perfekt)",
+      "lemmas": [
+        {
+          "de": "Reise",
+          "pos": "noun",
+          "gender": "die",
+          "ar": "رحلة / سفر",
+          "en": "trip / journey"
+        },
+        {
+          "de": "Urlaub",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "عطلة / إجازة",
+          "en": "vacation / holiday"
+        },
+        {
+          "de": "Hotel",
+          "pos": "noun",
+          "gender": "das",
+          "ar": "فندق",
+          "en": "hotel"
+        },
+        {
+          "de": "Koffer",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "حقيبة سفر",
+          "en": "suitcase"
+        },
+        {
+          "de": "Pass",
+          "pos": "noun",
+          "gender": "der",
+          "ar": "جواز سفر",
+          "en": "passport"
+        },
+        {
+          "de": "reisen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يسافر",
+          "en": "to travel"
+        },
+        {
+          "de": "buchen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يحجز",
+          "en": "to book / reserve"
+        },
+        {
+          "de": "reservieren",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يحجز",
+          "en": "to reserve"
+        },
+        {
+          "de": "besuchen",
+          "pos": "verb",
+          "gender": null,
+          "ar": "يزور",
+          "en": "to visit"
+        }
+      ]
+    }
+  }
+}
