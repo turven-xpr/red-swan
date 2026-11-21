@@ -11975,6 +11975,1022 @@
       "provider": "google",
       "voice_id": "de-DE-Neural2-H",
       "bytes": 23616
+    },
+    "m1|Achtung an Gleis 2: Der ICE nach München fährt ein.": {
+      "file": "m1/7899411795cea8b1.mp3",
+      "text": "Achtung an Gleis 2: Der ICE nach München fährt ein.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 38208
+    },
+    "m1|Ampel": {
+      "file": "m1/fc508e1612b130e1.mp3",
+      "text": "Ampel",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|An der Ampel biegen Sie nach rechts ab.": {
+      "file": "f1/ed654bd3c9534129.mp3",
+      "text": "An der Ampel biegen Sie nach rechts ab.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 21504
+    },
+    "m1|Angebot": {
+      "file": "m1/56dafcf10f8b6f66.mp3",
+      "text": "Angebot",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8256
+    },
+    "m1|Apotheke": {
+      "file": "m1/51b115cb7640b9b1.mp3",
+      "text": "Apotheke",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "f1|Arm": {
+      "file": "f1/5d54f0d95c8b09d0.mp3",
+      "text": "Arm",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 5952
+    },
+    "m1|Auge": {
+      "file": "m1/0ecd276602d73767.mp3",
+      "text": "Auge",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|Auto": {
+      "file": "f1/48a372d76982314d.mp3",
+      "text": "Auto",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7104
+    },
+    "m1|Bahnhof": {
+      "file": "m1/f00748a9e675e3e2.mp3",
+      "text": "Bahnhof",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "m1|Bauch": {
+      "file": "m1/b237ff7216fa2256.mp3",
+      "text": "Bauch",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|Bein": {
+      "file": "f1/32892c62183baa37.mp3",
+      "text": "Bein",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6144
+    },
+    "m1|Bieg nach links ab!": {
+      "file": "m1/4348d687341514d2.mp3",
+      "text": "Bieg nach links ab!",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11136
+    },
+    "f1|Das Restaurant ist gleich an der Ecke.": {
+      "file": "f1/65839d03767a0132.mp3",
+      "text": "Das Restaurant ist gleich an der Ecke.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 22080
+    },
+    "m1|Das Wetter ist heute wunderschön.": {
+      "file": "m1/e056402790d5e223.mp3",
+      "text": "Das Wetter ist heute wunderschön.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 17664
+    },
+    "f1|Das Wetter ist leider sehr schlecht.": {
+      "file": "f1/ec726e4b1742cbd7.mp3",
+      "text": "Das Wetter ist leider sehr schlecht.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 20352
+    },
+    "m1|Das ist ein tolles Angebot!": {
+      "file": "m1/96b3ff756f6fb429.mp3",
+      "text": "Das ist ein tolles Angebot!",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15936
+    },
+    "m1|Das ist mir leider zu teuer.": {
+      "file": "m1/93a7f2dcc44f6360.mp3",
+      "text": "Das ist mir leider zu teuer.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15552
+    },
+    "f1|Das kostet 29 Euro und 50 Cent.": {
+      "file": "f1/5e9f35ead6c16800.mp3",
+      "text": "Das kostet 29 Euro und 50 Cent.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 30528
+    },
+    "m1|Der Arzt gibt mir ein Rezept.": {
+      "file": "m1/f2eb3e5b5b25bbbe.mp3",
+      "text": "Der Arzt gibt mir ein Rezept.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 17280
+    },
+    "f1|Der Herbst kommt nach dem Sommer.": {
+      "file": "f1/a4c99cf7777b5995.mp3",
+      "text": "Der Herbst kommt nach dem Sommer.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18432
+    },
+    "f1|Der Zug fährt von Gleis 4 ab.": {
+      "file": "f1/a87766beb5768c6b.mp3",
+      "text": "Der Zug fährt von Gleis 4 ab.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 21120
+    },
+    "m1|Der Zug ist pünktlich angekommen.": {
+      "file": "m1/f7895f12d7079557.mp3",
+      "text": "Der Zug ist pünktlich angekommen.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 19008
+    },
+    "f1|Die Temperatur liegt bei 30 Grad.": {
+      "file": "f1/51897ca2910c2610.mp3",
+      "text": "Die Temperatur liegt bei 30 Grad.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 24384
+    },
+    "m1|Diese Schuhe sind sehr bequem.": {
+      "file": "m1/d76e8cafd2d30b6b.mp3",
+      "text": "Diese Schuhe sind sehr bequem.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16896
+    },
+    "f1|Dieser Pullover gefällt mir sehr gut.": {
+      "file": "f1/f392674d237d37ba.mp3",
+      "text": "Dieser Pullover gefällt mir sehr gut.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 22080
+    },
+    "m1|Dieses Kleid steht dir ausgezeichnet!": {
+      "file": "m1/99a240625a2ea476.mp3",
+      "text": "Dieses Kleid steht dir ausgezeichnet!",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 20544
+    },
+    "m1|Ecke": {
+      "file": "m1/749879cefb11f47f.mp3",
+      "text": "Ecke",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5568
+    },
+    "m1|Eine Fahrkarte nach Hamburg, bitte.": {
+      "file": "m1/38510ce39298f47a.mp3",
+      "text": "Eine Fahrkarte nach Hamburg, bitte.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 21312
+    },
+    "m1|Entschuldigung, wo ist der Bahnhof?": {
+      "file": "m1/1b556353385214af.mp3",
+      "text": "Entschuldigung, wo ist der Bahnhof?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 19968
+    },
+    "m1|Fahr bitte vorsichtig!": {
+      "file": "m1/2620618400872ea1.mp3",
+      "text": "Fahr bitte vorsichtig!",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12480
+    },
+    "f1|Fahr mit der U-Bahn, das ist schneller.": {
+      "file": "f1/bb21e9cb38a5a5c5.mp3",
+      "text": "Fahr mit der U-Bahn, das ist schneller.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 23040
+    },
+    "m1|Fahrkarte": {
+      "file": "m1/06b5533518d60dcf.mp3",
+      "text": "Fahrkarte",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8640
+    },
+    "f1|Fahrrad": {
+      "file": "f1/0164bb507ebe2238.mp3",
+      "text": "Fahrrad",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|Flughafen": {
+      "file": "m1/a873e8840d4ff8c2.mp3",
+      "text": "Flughafen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8640
+    },
+    "f1|Flugzeug": {
+      "file": "f1/c2b847ed07b254b0.mp3",
+      "text": "Flugzeug",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9984
+    },
+    "m1|Geh geradeaus bis zur Kreuzung!": {
+      "file": "m1/babb1b07bd853e8b.mp3",
+      "text": "Geh geradeaus bis zur Kreuzung!",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18624
+    },
+    "f1|Gehen Sie immer geradeaus.": {
+      "file": "f1/9e9aad2a6aabc24a.mp3",
+      "text": "Gehen Sie immer geradeaus.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16512
+    },
+    "m1|Gleis": {
+      "file": "m1/3ed33e5427e2e42b.mp3",
+      "text": "Gleis",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|Grad": {
+      "file": "f1/d6c309c40615b598.mp3",
+      "text": "Grad",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "f1|Haltestelle": {
+      "file": "f1/f96e51441804c410.mp3",
+      "text": "Haltestelle",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10368
+    },
+    "m1|Ich bin gestern nach Berlin gefahren.": {
+      "file": "m1/2657d68630057182.mp3",
+      "text": "Ich bin gestern nach Berlin gefahren.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18432
+    },
+    "f1|Ich bin gut angekommen.": {
+      "file": "f1/856741d77e767efa.mp3",
+      "text": "Ich bin gut angekommen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14400
+    },
+    "m1|Ich brauche eine Fahrkarte nach Frankfurt.": {
+      "file": "m1/69098d036111d82c.mp3",
+      "text": "Ich brauche eine Fahrkarte nach Frankfurt.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 21504
+    },
+    "m1|Ich fahre gerne mit dem Fahrrad.": {
+      "file": "m1/9d893cc6ac98917c.mp3",
+      "text": "Ich fahre gerne mit dem Fahrrad.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 17472
+    },
+    "f1|Ist die Bank in der Nähe?": {
+      "file": "f1/8c55988411e2f5a8.mp3",
+      "text": "Ist die Bank in der Nähe?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15360
+    },
+    "m1|Jahreszeit": {
+      "file": "m1/43f5639219e717d8.mp3",
+      "text": "Jahreszeit",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9792
+    },
+    "m1|Kann ich Ihnen helfen?": {
+      "file": "m1/02f9c8b964dcebe2.mp3",
+      "text": "Kann ich Ihnen helfen?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10752
+    },
+    "f1|Kann ich bitte die Quittung haben?": {
+      "file": "f1/9300e7a7595d2481.mp3",
+      "text": "Kann ich bitte die Quittung haben?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18048
+    },
+    "m1|Kann ich das anprobieren?": {
+      "file": "m1/28d18237290770e3.mp3",
+      "text": "Kann ich das anprobieren?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12288
+    },
+    "m1|Kannst du morgen mitkommen?": {
+      "file": "m1/7e564b153d2a9e08.mp3",
+      "text": "Kannst du morgen mitkommen?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12288
+    },
+    "m1|Kasse": {
+      "file": "m1/c41e9ef3a1dc3b44.mp3",
+      "text": "Kasse",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "m1|Kleid": {
+      "file": "m1/bd8d34d91411ef41.mp3",
+      "text": "Kleid",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "f1|Kollege": {
+      "file": "f1/b19570c5d1ecbaac.mp3",
+      "text": "Kollege",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|Kollegin": {
+      "file": "m1/0a9d89045cdb0472.mp3",
+      "text": "Kollegin",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|Kopf": {
+      "file": "f1/fc3550114d544890.mp3",
+      "text": "Kopf",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Krankenhaus": {
+      "file": "m1/354e998f6e9de507.mp3",
+      "text": "Krankenhaus",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9600
+    },
+    "f1|Kunde": {
+      "file": "f1/ad02a5269a3bc52a.mp3",
+      "text": "Kunde",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "m1|Kundin": {
+      "file": "m1/ac9839c33599a294.mp3",
+      "text": "Kundin",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "m1|Körper": {
+      "file": "m1/0fe941026ea01360.mp3",
+      "text": "Körper",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "f1|Medikament": {
+      "file": "f1/bf6c48c4abf9bae9.mp3",
+      "text": "Medikament",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11136
+    },
+    "f1|Mein Geburtstag ist im Mai.": {
+      "file": "f1/799cde28f0508be8.mp3",
+      "text": "Mein Geburtstag ist im Mai.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18624
+    },
+    "m1|Mein Großvater ist alt.": {
+      "file": "m1/4e20c5c78e72eab9.mp3",
+      "text": "Mein Großvater ist alt.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14208
+    },
+    "m1|Mein Kollege ist sehr fleißig.": {
+      "file": "m1/d0a96d92650552bc.mp3",
+      "text": "Mein Kollege ist sehr fleißig.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18624
+    },
+    "f1|Mein Kopf tut weh.": {
+      "file": "f1/fb1809973df10700.mp3",
+      "text": "Mein Kopf tut weh.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13056
+    },
+    "m1|Mein Rücken ___ weh.": {
+      "file": "m1/ceb9f40d4169dfdb.mp3",
+      "text": "Mein Rücken ___ weh.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 26688
+    },
+    "f1|Mein Rücken tut weh.": {
+      "file": "f1/91e8c403b8bec578.mp3",
+      "text": "Mein Rücken tut weh.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13056
+    },
+    "f1|Meine Augen tun weh.": {
+      "file": "f1/8786365d1b15c850.mp3",
+      "text": "Meine Augen tun weh.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13824
+    },
+    "m1|Meine Beine ___ weh.": {
+      "file": "m1/0c47ead736d03b98.mp3",
+      "text": "Meine Beine ___ weh.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 27264
+    },
+    "f1|Meine Beine tun weh.": {
+      "file": "f1/721c49353109d1d7.mp3",
+      "text": "Meine Beine tun weh.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14016
+    },
+    "m1|Meine Kollegen sind sehr nett.": {
+      "file": "m1/6ddd49b8218a7c8d.mp3",
+      "text": "Meine Kollegen sind sehr nett.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16320
+    },
+    "f1|Meine Lieblingsjahreszeit ist der Frühling.": {
+      "file": "f1/dbde9d6926f0616e.mp3",
+      "text": "Meine Lieblingsjahreszeit ist der Frühling.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 25344
+    },
+    "m1|Morgen wird es wieder schön.": {
+      "file": "m1/33c6bce8ba785868.mp3",
+      "text": "Morgen wird es wieder schön.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14784
+    },
+    "f1|Morgen wird es windig und regnerisch.": {
+      "file": "f1/0ea1a6ac572e49ed.mp3",
+      "text": "Morgen wird es windig und regnerisch.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 22848
+    },
+    "f1|Nimm deinen Regenschirm mit, es regnet!": {
+      "file": "f1/87c17da83c6faa92.mp3",
+      "text": "Nimm deinen Regenschirm mit, es regnet!",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 24576
+    },
+    "f1|Nähe": {
+      "file": "f1/8d2ea82393f47d1b.mp3",
+      "text": "Nähe",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6336
+    },
+    "f1|Sie müssen an der Haltestelle Stadtmitte aussteigen.": {
+      "file": "f1/4d19c865882ab62c.mp3",
+      "text": "Sie müssen an der Haltestelle Stadtmitte aussteigen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 27840
+    },
+    "m1|Sie sind nach Spanien gereist.": {
+      "file": "m1/bf92bb46495dfa0a.mp3",
+      "text": "Sie sind nach Spanien gereist.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16512
+    },
+    "m1|Wann fährt der nächste Bus?": {
+      "file": "m1/ca675bcf83be229d.mp3",
+      "text": "Wann fährt der nächste Bus?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14976
+    },
+    "m1|Was fehlt Ihnen denn?": {
+      "file": "m1/300e56ac54c00cf7.mp3",
+      "text": "Was fehlt Ihnen denn?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10752
+    },
+    "m1|Welche Größe möchten Sie?": {
+      "file": "m1/2dc3d423f337d300.mp3",
+      "text": "Welche Größe möchten Sie?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14016
+    },
+    "f1|Welches Hemd möchten Sie kaufen?": {
+      "file": "f1/b27bb3dd394afe62.mp3",
+      "text": "Welches Hemd möchten Sie kaufen?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19392
+    },
+    "m1|Wetter": {
+      "file": "m1/58fbe4288236120f.mp3",
+      "text": "Wetter",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|Wie ist das Wetter heute?": {
+      "file": "f1/4c835f70a93872b5.mp3",
+      "text": "Wie ist das Wetter heute?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15936
+    },
+    "m1|Wie viel Grad haben wir heute?": {
+      "file": "m1/e901146a05dfa96a.mp3",
+      "text": "Wie viel Grad haben wir heute?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16320
+    },
+    "m1|Wind": {
+      "file": "m1/f20984cb07a44bd1.mp3",
+      "text": "Wind",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "f1|Winter": {
+      "file": "f1/cd69015ddcbac68b.mp3",
+      "text": "Winter",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "f1|Wir fahren mit dem Bus zur Arbeit.": {
+      "file": "f1/3f55288c7b74e11e.mp3",
+      "text": "Wir fahren mit dem Bus zur Arbeit.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 20928
+    },
+    "m1|Wir haben eine Fahrkarte gekauft.": {
+      "file": "m1/04d7604ddbe71d25.mp3",
+      "text": "Wir haben eine Fahrkarte gekauft.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18816
+    },
+    "f1|Wir machen am Wochenende einen Ausflug in die Berge.": {
+      "file": "f1/3088a9a35441299c.mp3",
+      "text": "Wir machen am Wochenende einen Ausflug in die Berge.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 28608
+    },
+    "f1|Wir müssen in Hannover umsteigen.": {
+      "file": "f1/7236d75d4a23bbf2.mp3",
+      "text": "Wir müssen in Hannover umsteigen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19776
+    },
+    "f1|Zug": {
+      "file": "f1/5fe6b6c689ad551f.mp3",
+      "text": "Zug",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "f1|abfahren": {
+      "file": "f1/49d6c1f4fa053b33.mp3",
+      "text": "abfahren",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|ankommen": {
+      "file": "m1/2e7fa79f9c79d966.mp3",
+      "text": "ankommen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7296
+    },
+    "f1|aussteigen": {
+      "file": "f1/8572b44f06ff510f.mp3",
+      "text": "aussteigen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "f1|das Auto": {
+      "file": "f1/6547b62d8b8dd497.mp3",
+      "text": "das Auto",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "m1|das Bein": {
+      "file": "m1/1730179a922b7f5d.mp3",
+      "text": "das Bein",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7296
+    },
+    "f1|das Fahrrad": {
+      "file": "f1/d59ba61d50380c91.mp3",
+      "text": "das Fahrrad",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10368
+    },
+    "f1|das Flugzeug": {
+      "file": "f1/c70b1666295372a0.mp3",
+      "text": "das Flugzeug",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11520
+    },
+    "m1|das Geld": {
+      "file": "m1/903744932b2c4d59.mp3",
+      "text": "das Geld",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "m1|das Gleis": {
+      "file": "m1/53e74994120854bc.mp3",
+      "text": "das Gleis",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8640
+    },
+    "m1|der Bahnhof": {
+      "file": "m1/1e982900484407d8.mp3",
+      "text": "der Bahnhof",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9024
+    },
+    "m1|der Bauch": {
+      "file": "m1/97d129ceb8f593b8.mp3",
+      "text": "der Bauch",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|der Cent": {
+      "file": "f1/f003d2833f930bb7.mp3",
+      "text": "der Cent",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "m1|der Euro": {
+      "file": "m1/d98fdca66cf798fb.mp3",
+      "text": "der Euro",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "m1|der Flughafen": {
+      "file": "m1/35ca722a67760892.mp3",
+      "text": "der Flughafen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9984
+    },
+    "m1|der Zug": {
+      "file": "m1/3fd6f2db69bc30fa.mp3",
+      "text": "der Zug",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "m1|die Ampel": {
+      "file": "m1/618c079b988b4ef8.mp3",
+      "text": "die Ampel",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|die Ecke": {
+      "file": "f1/ca0fe1388c6ceae9.mp3",
+      "text": "die Ecke",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|die Fahrkarte": {
+      "file": "f1/2baaf27717668b5b.mp3",
+      "text": "die Fahrkarte",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11136
+    },
+    "m1|die Haltestelle": {
+      "file": "m1/271cc9f35fa1d457.mp3",
+      "text": "die Haltestelle",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10176
+    },
+    "f1|die Jahreszeit": {
+      "file": "f1/0fa4293c700e08fd.mp3",
+      "text": "die Jahreszeit",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 12480
+    },
+    "m1|die Kasse": {
+      "file": "m1/c99deaf6ac20ab39.mp3",
+      "text": "die Kasse",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|die Kollegin": {
+      "file": "f1/3f3e4c2a28c1f51e.mp3",
+      "text": "die Kollegin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10368
+    },
+    "m1|die Kundin": {
+      "file": "m1/a7af183380ee3e50.mp3",
+      "text": "die Kundin",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|die Nähe": {
+      "file": "f1/48d961c7a9f5f644.mp3",
+      "text": "die Nähe",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7872
+    },
+    "f1|einsteigen": {
+      "file": "f1/0a5e2524464b8e3b.mp3",
+      "text": "einsteigen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "f1|geradeaus": {
+      "file": "f1/6130dbc5a4a03a44.mp3",
+      "text": "geradeaus",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11136
+    },
+    "f1|links": {
+      "file": "f1/c76f83693bb2ec48.mp3",
+      "text": "links",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|müde": {
+      "file": "m1/5b141191c4c33618.mp3",
+      "text": "müde",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "m1|nah": {
+      "file": "m1/f3f4aa278b10e3d8.mp3",
+      "text": "nah",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 4992
+    },
+    "f1|rechts": {
+      "file": "f1/b20c7bd07608fed8.mp3",
+      "text": "rechts",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|regnen": {
+      "file": "m1/3d464c17d5660780.mp3",
+      "text": "regnen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|reisen": {
+      "file": "f1/12f33d4ca65506c8.mp3",
+      "text": "reisen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7872
+    },
+    "m1|umsteigen": {
+      "file": "m1/cf22fd6f742f1763.mp3",
+      "text": "umsteigen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "m1|warm": {
+      "file": "m1/3c3173cbf28df87f.mp3",
+      "text": "warm",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5760
+    },
+    "f1|wehtun": {
+      "file": "f1/1ec0a3dc1e82e3d2.mp3",
+      "text": "wehtun",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8256
+    },
+    "m1|weit": {
+      "file": "m1/1a40724147e58750.mp3",
+      "text": "weit",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
     }
   }
 }
