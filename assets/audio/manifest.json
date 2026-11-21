@@ -7991,6 +7991,838 @@
       "provider": "google",
       "voice_id": "de-DE-Neural2-G",
       "bytes": 9216
+    },
+    "f1|Arbeit": {
+      "file": "f1/3632f44d1cef1f98.mp3",
+      "text": "Arbeit",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8064
+    },
+    "m1|Arzt": {
+      "file": "m1/32d64c4cab8d8acf.mp3",
+      "text": "Arzt",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|Büro": {
+      "file": "f1/f271931045e90815.mp3",
+      "text": "Büro",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7104
+    },
+    "f1|Chef": {
+      "file": "f1/c07dd72cbd7e5471.mp3",
+      "text": "Chef",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Die Arbeit beginnt um 8 Uhr.": {
+      "file": "m1/fab1fdd821233a72.mp3",
+      "text": "Die Arbeit beginnt um 8 Uhr.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 17856
+    },
+    "f1|Die Arbeitszeit ist von 8 bis 17 Uhr.": {
+      "file": "f1/45a514d1f1e38c8d.mp3",
+      "text": "Die Arbeitszeit ist von 8 bis 17 Uhr.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 28224
+    },
+    "f1|Die Kinder gehen in die Schule.": {
+      "file": "f1/1c73a832b813b80a.mp3",
+      "text": "Die Kinder gehen in die Schule.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17280
+    },
+    "m1|Du musst heute lange arbeiten.": {
+      "file": "m1/676375adcef39428.mp3",
+      "text": "Du musst heute lange arbeiten.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15552
+    },
+    "m1|Ei": {
+      "file": "m1/75e091465d81588f.mp3",
+      "text": "Ei",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5376
+    },
+    "f1|Einladung": {
+      "file": "f1/818018138380df5c.mp3",
+      "text": "Einladung",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "m1|Er arbeitet ___ Siemens.": {
+      "file": "m1/87c9e6bca666ee13.mp3",
+      "text": "Er arbeitet ___ Siemens.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 28800
+    },
+    "f1|Er arbeitet bei Siemens.": {
+      "file": "f1/44ac97b2f4ea213d.mp3",
+      "text": "Er arbeitet bei Siemens.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15936
+    },
+    "m1|Er hatte gestern viel Arbeit.": {
+      "file": "m1/ebba15c5d73cd934.mp3",
+      "text": "Er hatte gestern viel Arbeit.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16320
+    },
+    "m1|Firma": {
+      "file": "m1/ffd731f14754c18b.mp3",
+      "text": "Firma",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|Gestern hatte ich frei.": {
+      "file": "f1/affd3f4b65f51a03.mp3",
+      "text": "Gestern hatte ich frei.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13056
+    },
+    "f1|Ich ___ gestern nicht im Büro.": {
+      "file": "f1/53c6cd3e97d5fa42.mp3",
+      "text": "Ich ___ gestern nicht im Büro.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 33792
+    },
+    "m1|Ich arbeite ___ Arzt.": {
+      "file": "m1/bce137bf66628aca.mp3",
+      "text": "Ich arbeite ___ Arzt.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 27840
+    },
+    "f1|Ich arbeite als Arzt.": {
+      "file": "f1/004dc5797d0e3d11.mp3",
+      "text": "Ich arbeite als Arzt.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15744
+    },
+    "m1|Ich arbeite in einem Büro.": {
+      "file": "m1/9e7e2baf8e2bfffe.mp3",
+      "text": "Ich arbeite in einem Büro.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15744
+    },
+    "m1|Ich habe die Stelle gefunden.": {
+      "file": "m1/d0e5f9d28e479a71.mp3",
+      "text": "Ich habe die Stelle gefunden.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15168
+    },
+    "m1|Ich habe heute einen Termin beim Arzt.": {
+      "file": "m1/2bbeeb390d188786.mp3",
+      "text": "Ich habe heute einen Termin beim Arzt.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 20160
+    },
+    "m1|Ich hatte gestern keine Zeit.": {
+      "file": "m1/8b4d10f2a1888b50.mp3",
+      "text": "Ich hatte gestern keine Zeit.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16320
+    },
+    "m1|Ich mache ein Praktikum in Deutschland.": {
+      "file": "m1/13c5b616a701792c.mp3",
+      "text": "Ich mache ein Praktikum in Deutschland.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 19776
+    },
+    "f1|Ich möchte bitte bestellen.": {
+      "file": "f1/4c0cf8f1efc9bdf0.mp3",
+      "text": "Ich möchte bitte bestellen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14208
+    },
+    "m1|Ich nehme einen Kaffee.": {
+      "file": "m1/7eef75889b4556ca.mp3",
+      "text": "Ich nehme einen Kaffee.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12480
+    },
+    "f1|Ich nehme einen Orangensaft, bitte.": {
+      "file": "f1/07acd2bb3eeb8f47.mp3",
+      "text": "Ich nehme einen Orangensaft, bitte.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 23616
+    },
+    "f1|Ich stehe jeden Tag um 7 Uhr auf.": {
+      "file": "f1/cca86310b4c47cbf.mp3",
+      "text": "Ich stehe jeden Tag um 7 Uhr auf.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 24384
+    },
+    "f1|Ich studiere an der Universität Informatik.": {
+      "file": "f1/35672853ecb82a44.mp3",
+      "text": "Ich studiere an der Universität Informatik.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 26688
+    },
+    "m1|Ich suche eine neue Stelle.": {
+      "file": "m1/290b446732fe34d4.mp3",
+      "text": "Ich suche eine neue Stelle.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15552
+    },
+    "f1|Ich war gestern nicht im Büro.": {
+      "file": "f1/08635dd0cce26b48.mp3",
+      "text": "Ich war gestern nicht im Büro.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17856
+    },
+    "m1|Kollege": {
+      "file": "m1/e5bb1c1b0cea74d9.mp3",
+      "text": "Kollege",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "f1|Kollegin": {
+      "file": "f1/6f6ba5b74d280cde.mp3",
+      "text": "Kollegin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|Lehrer": {
+      "file": "m1/d5e2fe2a4fecaf39.mp3",
+      "text": "Lehrer",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "f1|Lehrerin": {
+      "file": "f1/fe222a91c5c04880.mp3",
+      "text": "Lehrerin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "f1|Mein Kollege ist sehr fleißig.": {
+      "file": "f1/56a39669dc4b4f83.mp3",
+      "text": "Mein Kollege ist sehr fleißig.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 21120
+    },
+    "m1|Mein Mann arbeitet viel.": {
+      "file": "m1/5244de19027ec0be.mp3",
+      "text": "Mein Mann arbeitet viel.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13248
+    },
+    "m1|Mein Name ist Deutschy.": {
+      "file": "m1/dcee59ba9e56daf9.mp3",
+      "text": "Mein Name ist Deutschy.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13056
+    },
+    "f1|Mein Vater arbeitet in Berlin.": {
+      "file": "f1/3056a5cfe9d2c4af.mp3",
+      "text": "Mein Vater arbeitet in Berlin.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19776
+    },
+    "m1|Mein Vorname ist Karim.": {
+      "file": "m1/458e4867bdbc390d.mp3",
+      "text": "Mein Vorname ist Karim.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14400
+    },
+    "f1|Meine Cousine ist Lehrerin.": {
+      "file": "f1/722d3abce979eb66.mp3",
+      "text": "Meine Cousine ist Lehrerin.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17280
+    },
+    "m1|Meine Eltern kommen aus Syrien.": {
+      "file": "m1/e1f1306a3e9664dd.mp3",
+      "text": "Meine Eltern kommen aus Syrien.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 17088
+    },
+    "f1|Meine Freundin kommt heute.": {
+      "file": "f1/7e7f3d4a520a1912.mp3",
+      "text": "Meine Freundin kommt heute.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15744
+    },
+    "f1|Meine Kollegen sind sehr nett.": {
+      "file": "f1/51a82bd5119d48da.mp3",
+      "text": "Meine Kollegen sind sehr nett.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18624
+    },
+    "m1|Pause": {
+      "file": "m1/279e0f85345fd014.mp3",
+      "text": "Pause",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|Praktikum": {
+      "file": "f1/654ec0c8470e6ff1.mp3",
+      "text": "Praktikum",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9984
+    },
+    "m1|Schule": {
+      "file": "m1/e7ada1a3f0925e67.mp3",
+      "text": "Schule",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "m1|Sie arbeitet als Lehrerin in Köln.": {
+      "file": "m1/9d70f02064985ea5.mp3",
+      "text": "Sie arbeitet als Lehrerin in Köln.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 20160
+    },
+    "f1|Stelle": {
+      "file": "f1/3340d67a50fb593a.mp3",
+      "text": "Stelle",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "f1|Stunde": {
+      "file": "f1/fb69a3760c6da00a.mp3",
+      "text": "Stunde",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7680
+    },
+    "m1|Tag": {
+      "file": "m1/64b55ad7382e48af.mp3",
+      "text": "Tag",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5760
+    },
+    "f1|Termin": {
+      "file": "f1/fe426fb983900320.mp3",
+      "text": "Termin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "f1|Um wie viel Uhr beginnt der Kurs?": {
+      "file": "f1/55c9fd8bf4817638.mp3",
+      "text": "Um wie viel Uhr beginnt der Kurs?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 20160
+    },
+    "m1|Universität": {
+      "file": "m1/116b06bf3418125c.mp3",
+      "text": "Universität",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10368
+    },
+    "f1|Was machst du beruflich?": {
+      "file": "f1/6b258d762d903a8b.mp3",
+      "text": "Was machst du beruflich?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 14784
+    },
+    "m1|Was sind Sie von Beruf?": {
+      "file": "m1/a4c33865b269dc6b.mp3",
+      "text": "Was sind Sie von Beruf?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14016
+    },
+    "m1|Wir machen eine Pause.": {
+      "file": "m1/6461582d6cfa2e08.mp3",
+      "text": "Wir machen eine Pause.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12672
+    },
+    "m1|Wir möchten bitte bezahlen.": {
+      "file": "m1/124ea919a97234b3.mp3",
+      "text": "Wir möchten bitte bezahlen.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13440
+    },
+    "f1|Wir sehen am Abend fern.": {
+      "file": "f1/353152b1726ada22.mp3",
+      "text": "Wir sehen am Abend fern.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16320
+    },
+    "m1|Wir suchen ab sofort einen Verkäufer.": {
+      "file": "m1/496fc54b55b083ca.mp3",
+      "text": "Wir suchen ab sofort einen Verkäufer.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 20544
+    },
+    "m1|Wir waren gestern in Berlin.": {
+      "file": "m1/f0499fb011668ec2.mp3",
+      "text": "Wir waren gestern in Berlin.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15744
+    },
+    "f1|Wir wollen eine Reise machen.": {
+      "file": "f1/8d579b1daf442a67.mp3",
+      "text": "Wir wollen eine Reise machen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16704
+    },
+    "m1|Wir zahlen zusammen.": {
+      "file": "m1/b861c34eb95636c0.mp3",
+      "text": "Wir zahlen zusammen.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11520
+    },
+    "f1|Wo warst du gestern Abend?": {
+      "file": "f1/54f23b893c13b5e8.mp3",
+      "text": "Wo warst du gestern Abend?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18240
+    },
+    "f1|arbeiten": {
+      "file": "f1/433a742102c5010d.mp3",
+      "text": "arbeiten",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "m1|arbeitslos": {
+      "file": "m1/0c117ea0619b8675.mp3",
+      "text": "arbeitslos",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9792
+    },
+    "f1|das Büro": {
+      "file": "f1/f51cc480d41bb631.mp3",
+      "text": "das Büro",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "f1|das Ei": {
+      "file": "f1/a38789f95d05820c.mp3",
+      "text": "das Ei",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "f1|das Essen": {
+      "file": "f1/ae2e66ea96e1c2b2.mp3",
+      "text": "das Essen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|das Fenster": {
+      "file": "m1/7c815a7756ffa3ab.mp3",
+      "text": "das Fenster",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8832
+    },
+    "f1|das Fleisch": {
+      "file": "f1/2a0f98de28d820f1.mp3",
+      "text": "das Fleisch",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "m1|das Getränk": {
+      "file": "m1/8427025b6ea6b398.mp3",
+      "text": "das Getränk",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8832
+    },
+    "f1|das Haus": {
+      "file": "f1/c32b06f08289e5b6.mp3",
+      "text": "das Haus",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "f1|das Jahr": {
+      "file": "f1/fb6dc36407147d39.mp3",
+      "text": "das Jahr",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7872
+    },
+    "f1|das Praktikum": {
+      "file": "f1/d046708ef2741f31.mp3",
+      "text": "das Praktikum",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11712
+    },
+    "m1|der Arzt": {
+      "file": "m1/39d0adb330f04774.mp3",
+      "text": "der Arzt",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "f1|der Balkon": {
+      "file": "f1/9c737b0631dd8901.mp3",
+      "text": "der Balkon",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "m1|der Beruf": {
+      "file": "m1/79bd04fc675594cb.mp3",
+      "text": "der Beruf",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8256
+    },
+    "f1|der Brief": {
+      "file": "f1/4143cf7685e82fa1.mp3",
+      "text": "der Brief",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|der Chef": {
+      "file": "m1/0a7299c73a948be7.mp3",
+      "text": "der Chef",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "f1|der Kollege": {
+      "file": "f1/054e0c59973d2ebc.mp3",
+      "text": "der Kollege",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10176
+    },
+    "f1|der Lehrer": {
+      "file": "f1/a33f805da2c51837.mp3",
+      "text": "der Lehrer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|die Arbeit": {
+      "file": "m1/dce0d209e5623aea.mp3",
+      "text": "die Arbeit",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8640
+    },
+    "m1|die Einladung": {
+      "file": "m1/4ad68bbdb2f0268d.mp3",
+      "text": "die Einladung",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9600
+    },
+    "f1|die Firma": {
+      "file": "f1/250d716ac50454a6.mp3",
+      "text": "die Firma",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|die Kollegin": {
+      "file": "m1/856dc98ecdcdbc8d.mp3",
+      "text": "die Kollegin",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9024
+    },
+    "f1|die Lehrerin": {
+      "file": "f1/0de64246fb50d58d.mp3",
+      "text": "die Lehrerin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9792
+    },
+    "f1|die Pause": {
+      "file": "f1/e2f0cb188795e3cc.mp3",
+      "text": "die Pause",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|die Schule": {
+      "file": "m1/2d4a6d022b233277.mp3",
+      "text": "die Schule",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "f1|die Stelle": {
+      "file": "f1/282d0e49df640bd6.mp3",
+      "text": "die Stelle",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|die Stunde": {
+      "file": "f1/c55e974126c09ad8.mp3",
+      "text": "die Stunde",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "f1|die Uhr": {
+      "file": "f1/63856f2de6a19a9c.mp3",
+      "text": "die Uhr",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7680
+    },
+    "m1|die Universität": {
+      "file": "m1/59048ee4b409ce0a.mp3",
+      "text": "die Universität",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11520
+    },
+    "f1|die Ärztin": {
+      "file": "f1/29a40e2104fb4879.mp3",
+      "text": "die Ärztin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9984
+    },
+    "m1|finden": {
+      "file": "m1/3a26a35828ed890f.mp3",
+      "text": "finden",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|fleißig": {
+      "file": "f1/c21e98398f2261c7.mp3",
+      "text": "fleißig",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "f1|gestern": {
+      "file": "f1/cc0f3889b7a61efc.mp3",
+      "text": "gestern",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|heute": {
+      "file": "m1/ff4ed31ce7ea0acd.mp3",
+      "text": "heute",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|können": {
+      "file": "f1/2317c7da9658a0fd.mp3",
+      "text": "können",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6720
+    },
+    "f1|lernen": {
+      "file": "f1/3ba290ec6d0dc540.mp3",
+      "text": "lernen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "m1|studieren": {
+      "file": "m1/1391961b4b1617f2.mp3",
+      "text": "studieren",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8064
+    },
+    "f1|suchen": {
+      "file": "f1/80e8d5b4b90f731e.mp3",
+      "text": "suchen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7872
+    },
+    "f1|verdienen": {
+      "file": "f1/6dd4d4f9f1a8dbdc.mp3",
+      "text": "verdienen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|wichtig": {
+      "file": "m1/bc7f6b041117bc55.mp3",
+      "text": "wichtig",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7104
+    },
+    "f1|Ärztin": {
+      "file": "f1/01db143a8635da4c.mp3",
+      "text": "Ärztin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8256
     }
   }
 }
