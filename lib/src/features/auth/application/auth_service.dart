@@ -178,7 +178,10 @@ class AuthService {
 
     if (SupabaseConfig.isConfigured) {
       await for (final data in SupabaseConfig.client.auth.onAuthStateChange) {
-        yield _userFromSupabase(data.session?.user);
+        final user = _userFromSupabase(data.session?.user);
+        if (user != null || _cachedUser?.provider != AuthProvider.local) {
+          yield user;
+        }
       }
     } else {
       // Idle stream to keep provider active
@@ -346,6 +349,18 @@ class AuthService {
       return user;
     } catch (e) {
       debugPrint('[AuthService] Anonymous sign-in error: $e');
+      if (_cachedUser == null) {
+        final guest = AuthUser(
+          uid: 'guest_${DateTime.now().millisecondsSinceEpoch % 100000}',
+          displayName: 'Deutschy Learner',
+          email: null,
+          photoUrl: null,
+          provider: AuthProvider.local,
+        );
+        _cachedUser = guest;
+        await _persist(guest);
+        _dispatch(guest);
+      }
       return _cachedUser;
     }
   }

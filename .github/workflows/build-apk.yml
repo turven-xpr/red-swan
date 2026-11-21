@@ -50,6 +50,16 @@ jobs:
           }
           EOF
 
+      - name: Set up signing keystore
+        run: |
+          mkdir -p ~/.android
+          if [ -n "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" ]; then
+            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > ~/.android/debug.keystore
+            echo "Configured custom debug keystore from secrets."
+          else
+            echo "No DEBUG_KEYSTORE_BASE64 secret provided; using default Gradle debug keystore."
+          fi
+
       - name: Install dependencies
         run: flutter pub get
 

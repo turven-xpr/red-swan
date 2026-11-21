@@ -55,7 +55,7 @@ const String kSupportEmail = 'support@deutschy.app';
 const String kGoogleServerClientId = String.fromEnvironment(
   'GOOGLE_SERVER_CLIENT_ID',
   defaultValue:
-      '621256358025-9hk3cbfp85b2uo8m6sbv554i4kqo582m.apps.googleusercontent.com',
+      '139495496763-p2vatm4ci6bqad00n72bdmlvkjj539ii.apps.googleusercontent.com',
 );
 
 /// App version (kept in Dart so we can show it in the Profile screen
