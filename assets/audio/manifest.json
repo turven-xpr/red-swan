@@ -10039,6 +10039,974 @@
       "provider": "google",
       "voice_id": "de-DE-Neural2-G",
       "bytes": 7104
+    },
+    "f1|Apotheke": {
+      "file": "f1/66366bc53f0b00a5.mp3",
+      "text": "Apotheke",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9792
+    },
+    "m1|Arm": {
+      "file": "m1/89aa2fad3a4e27d0.mp3",
+      "text": "Arm",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5376
+    },
+    "f1|Auge": {
+      "file": "f1/177953e355f8969e.mp3",
+      "text": "Auge",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6720
+    },
+    "f1|Bauch": {
+      "file": "f1/dae65fc421328bcc.mp3",
+      "text": "Bauch",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Bein": {
+      "file": "m1/bb593879559487b0.mp3",
+      "text": "Bein",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5376
+    },
+    "f1|Bleiben Sie drei Tage im Bett.": {
+      "file": "f1/a9e7be765b6cef16.mp3",
+      "text": "Bleiben Sie drei Tage im Bett.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19008
+    },
+    "m1|Darf ich eine Frage stellen?": {
+      "file": "m1/b5c324856b50a9f5.mp3",
+      "text": "Darf ich eine Frage stellen?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 14784
+    },
+    "f1|Darf ich hier parken?": {
+      "file": "f1/eba856357f878ef1.mp3",
+      "text": "Darf ich hier parken?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 12672
+    },
+    "f1|Der Arzt gibt mir ein Rezept.": {
+      "file": "f1/a67d985556c2c9f3.mp3",
+      "text": "Der Arzt gibt mir ein Rezept.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19584
+    },
+    "m1|Der Zahn tut weh.": {
+      "file": "m1/535a281052f7abdc.mp3",
+      "text": "Der Zahn tut weh.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11328
+    },
+    "f1|Fieber": {
+      "file": "f1/23b5018dddf292d8.mp3",
+      "text": "Fieber",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "m1|Fuß": {
+      "file": "m1/cdec01a63e437331.mp3",
+      "text": "Fuß",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "m1|Gute Besserung!": {
+      "file": "m1/1aa65cdaab4705b1.mp3",
+      "text": "Gute Besserung!",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9216
+    },
+    "f1|Haben Sie das auch in einer anderen Farbe?": {
+      "file": "f1/3e6383bee8f8b882.mp3",
+      "text": "Haben Sie das auch in einer anderen Farbe?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 22464
+    },
+    "m1|Haben Sie diese Jacke in Schwarz?": {
+      "file": "m1/9eacf679ec995742.mp3",
+      "text": "Haben Sie diese Jacke in Schwarz?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 17664
+    },
+    "m1|Hals": {
+      "file": "m1/86904fc7c08341ed.mp3",
+      "text": "Hals",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "f1|Hand": {
+      "file": "f1/e547315fd8d15e25.mp3",
+      "text": "Hand",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Hemd": {
+      "file": "m1/879928843f659713.mp3",
+      "text": "Hemd",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|Heute gibt es 20 Prozent Rabatt.": {
+      "file": "f1/0ee7fb86e39f1590.mp3",
+      "text": "Heute gibt es 20 Prozent Rabatt.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 23424
+    },
+    "f1|Hier ___ man nicht rauchen.": {
+      "file": "f1/07c78282194ab103.mp3",
+      "text": "Hier ___ man nicht rauchen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 30144
+    },
+    "m1|Hier darf man keinen Alkohol trinken.": {
+      "file": "m1/2fc3dd3bd6534be1.mp3",
+      "text": "Hier darf man keinen Alkohol trinken.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 19200
+    },
+    "f1|Hier darf man nicht rauchen.": {
+      "file": "f1/83e88512f75bace0.mp3",
+      "text": "Hier darf man nicht rauchen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16128
+    },
+    "m1|Ich fühle mich heute sehr krank.": {
+      "file": "m1/7f6d34e151bda9c5.mp3",
+      "text": "Ich fühle mich heute sehr krank.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16512
+    },
+    "f1|Ich habe 38,5 Grad Fieber.": {
+      "file": "f1/44c3382c2f606c12.mp3",
+      "text": "Ich habe 38,5 Grad Fieber.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 26880
+    },
+    "f1|Ich habe starke Halsschmerzen.": {
+      "file": "f1/2405451ca3df84c7.mp3",
+      "text": "Ich habe starke Halsschmerzen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17664
+    },
+    "m1|Ich habe starke Kopfschmerzen.": {
+      "file": "m1/d6cf9f07feff8e00.mp3",
+      "text": "Ich habe starke Kopfschmerzen.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15168
+    },
+    "m1|Ich kann heute leider nicht zur Arbeit kommen, weil ich krank bin.": {
+      "file": "m1/26ce8993c7c5ad4a.mp3",
+      "text": "Ich kann heute leider nicht zur Arbeit kommen, weil ich krank bin.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 31680
+    },
+    "f1|Ich muss zum Arzt gehen.": {
+      "file": "f1/6e0deaf548b88af1.mp3",
+      "text": "Ich muss zum Arzt gehen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15744
+    },
+    "f1|Ich schicke Ihnen die Krankmeldung per E-Mail.": {
+      "file": "f1/9a139bba97a7d909.mp3",
+      "text": "Ich schicke Ihnen die Krankmeldung per E-Mail.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 24576
+    },
+    "m1|Im Krankenhaus darf man nicht laut sein.": {
+      "file": "m1/5cf682f9354e9f51.mp3",
+      "text": "Im Krankenhaus darf man nicht laut sein.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 20928
+    },
+    "m1|Kopf": {
+      "file": "m1/5afc120e179937c1.mp3",
+      "text": "Kopf",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|Krankenhaus": {
+      "file": "f1/f24333520b3bdfbf.mp3",
+      "text": "Krankenhaus",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11136
+    },
+    "f1|Körper": {
+      "file": "f1/eb603c603ba36d08.mp3",
+      "text": "Körper",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "f1|Lehrer": {
+      "file": "f1/1c2c18e87614d67a.mp3",
+      "text": "Lehrer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "m1|Lehrerin": {
+      "file": "m1/47c4a69ff2e39d6e.mp3",
+      "text": "Lehrerin",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "f1|Liebe Anna, wie geht es dir?": {
+      "file": "f1/84e06e3c135f07f7.mp3",
+      "text": "Liebe Anna, wie geht es dir?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19008
+    },
+    "m1|Lieber Thomas, vielen Dank für deinen Brief!": {
+      "file": "m1/d8221d071336dd12.mp3",
+      "text": "Lieber Thomas, vielen Dank für deinen Brief!",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 24384
+    },
+    "m1|Medikament": {
+      "file": "m1/11dcc1d52244e35e.mp3",
+      "text": "Medikament",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9600
+    },
+    "m1|Mein Kopf tut weh.": {
+      "file": "m1/cb227b34383c06fe.mp3",
+      "text": "Mein Kopf tut weh.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11520
+    },
+    "f1|Mein Rücken ___ weh.": {
+      "file": "f1/2d64666280c3fdf8.mp3",
+      "text": "Mein Rücken ___ weh.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 30528
+    },
+    "m1|Mein Rücken tut weh.": {
+      "file": "m1/3b706f6d1bb7b031.mp3",
+      "text": "Mein Rücken tut weh.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11520
+    },
+    "m1|Meine Augen tun weh.": {
+      "file": "m1/77adf6de2b4a4460.mp3",
+      "text": "Meine Augen tun weh.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12096
+    },
+    "f1|Meine Beine ___ weh.": {
+      "file": "f1/1e5a4721e39db489.mp3",
+      "text": "Meine Beine ___ weh.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 31488
+    },
+    "m1|Meine Beine tun weh.": {
+      "file": "m1/62f508268caf5e29.mp3",
+      "text": "Meine Beine tun weh.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 12288
+    },
+    "m1|Mund": {
+      "file": "m1/1d9d9e8f7cc474cd.mp3",
+      "text": "Mund",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "m1|Nacht": {
+      "file": "m1/254f69f97efba3d2.mp3",
+      "text": "Nacht",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "f1|Nehmen Sie diese Tabletten dreimal täglich.": {
+      "file": "f1/829d0e7dca1f3240.mp3",
+      "text": "Nehmen Sie diese Tabletten dreimal täglich.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 25152
+    },
+    "m1|Ohr": {
+      "file": "m1/419bccb88b841ebe.mp3",
+      "text": "Ohr",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5376
+    },
+    "f1|Pause": {
+      "file": "f1/21621de72beec334.mp3",
+      "text": "Pause",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "m1|Praktikum": {
+      "file": "m1/3bdf0663cb73a8bd.mp3",
+      "text": "Praktikum",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8640
+    },
+    "f1|Preis": {
+      "file": "f1/bcec4b533cda7455.mp3",
+      "text": "Preis",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|Rezept": {
+      "file": "m1/90e89c24a8f6dd7b.mp3",
+      "text": "Rezept",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|Rücken": {
+      "file": "f1/da2f747043ece046.mp3",
+      "text": "Rücken",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6720
+    },
+    "f1|Schmerz": {
+      "file": "f1/dc4e68a05cc72bbb.mp3",
+      "text": "Schmerz",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|Sie dürfen wieder Sport machen.": {
+      "file": "f1/da63a5e4b48bc42f.mp3",
+      "text": "Sie dürfen wieder Sport machen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17280
+    },
+    "m1|Stelle": {
+      "file": "m1/31739b75519d0ccf.mp3",
+      "text": "Stelle",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|Tablette": {
+      "file": "f1/466572409205e767.mp3",
+      "text": "Tablette",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "f1|Trinken Sie viel Wasser und Tee.": {
+      "file": "f1/e3e60b2b5469ea47.mp3",
+      "text": "Trinken Sie viel Wasser und Tee.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19008
+    },
+    "f1|Verkäufer": {
+      "file": "f1/a0dcd978dfd68b4c.mp3",
+      "text": "Verkäufer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9600
+    },
+    "m1|Verkäuferin": {
+      "file": "m1/5e122064a09f3b7b.mp3",
+      "text": "Verkäuferin",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9600
+    },
+    "f1|Was fehlt Ihnen denn?": {
+      "file": "f1/7f60c24e7cbaadfa.mp3",
+      "text": "Was fehlt Ihnen denn?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 12480
+    },
+    "m1|Zahn": {
+      "file": "m1/f1f516f05b95f115.mp3",
+      "text": "Zahn",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6144
+    },
+    "f1|anprobieren": {
+      "file": "f1/8078ed5abcd31ac9.mp3",
+      "text": "anprobieren",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10560
+    },
+    "m1|arbeiten": {
+      "file": "m1/b942ab6a2db1519b.mp3",
+      "text": "arbeiten",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|arbeitslos": {
+      "file": "f1/784e8ee2522afb67.mp3",
+      "text": "arbeitslos",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11328
+    },
+    "m1|aufhören": {
+      "file": "m1/0efa30bcaeb26aaf.mp3",
+      "text": "aufhören",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|aufräumen": {
+      "file": "f1/738854f6f48db9f8.mp3",
+      "text": "aufräumen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "m1|aufstehen": {
+      "file": "m1/2ca0908568d42bde.mp3",
+      "text": "aufstehen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|aus Deutschland": {
+      "file": "f1/6455bcf52c795c35.mp3",
+      "text": "aus Deutschland",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10944
+    },
+    "m1|ausfüllen": {
+      "file": "m1/e18f1ed1d327aee7.mp3",
+      "text": "ausfüllen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "f1|besuchen": {
+      "file": "f1/980aee0c2352a78e.mp3",
+      "text": "besuchen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|bezahlen": {
+      "file": "m1/a1cf512f59b51e23.mp3",
+      "text": "bezahlen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|brauchen": {
+      "file": "f1/a6f69849a4cbcb52.mp3",
+      "text": "brauchen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7680
+    },
+    "m1|das Angebot": {
+      "file": "m1/e4582fb9499be5e8.mp3",
+      "text": "das Angebot",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9600
+    },
+    "m1|das Auge": {
+      "file": "m1/0651e72085b874d6.mp3",
+      "text": "das Auge",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|das Bein": {
+      "file": "f1/5b2fdd665ff14f23.mp3",
+      "text": "das Bein",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|das Fieber": {
+      "file": "f1/3c04dfad2e086602.mp3",
+      "text": "das Fieber",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "f1|das Krankenhaus": {
+      "file": "f1/5b0a3e9460d3ae37.mp3",
+      "text": "das Krankenhaus",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 12480
+    },
+    "f1|das Medikament": {
+      "file": "f1/bef1a36db44b4b43.mp3",
+      "text": "das Medikament",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13056
+    },
+    "f1|das Ohr": {
+      "file": "f1/a87581363d78d7d6.mp3",
+      "text": "das Ohr",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|das Praktikum": {
+      "file": "m1/0e1a8a20cf6eca6e.mp3",
+      "text": "das Praktikum",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10368
+    },
+    "f1|das Rezept": {
+      "file": "f1/7ecc001cc2f40226.mp3",
+      "text": "das Rezept",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10560
+    },
+    "m1|der Arm": {
+      "file": "m1/5a2cf64ac6a4a54d.mp3",
+      "text": "der Arm",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "f1|der Arzt": {
+      "file": "f1/9abe845147ead95a.mp3",
+      "text": "der Arzt",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "f1|der Bauch": {
+      "file": "f1/475eb970b1e80a15.mp3",
+      "text": "der Bauch",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "f1|der Fuß": {
+      "file": "f1/f0e7ff13fc014999.mp3",
+      "text": "der Fuß",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "m1|der Hals": {
+      "file": "m1/c87f96b8a0cc759e.mp3",
+      "text": "der Hals",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8064
+    },
+    "m1|der Kopf": {
+      "file": "m1/483359c17e226b1a.mp3",
+      "text": "der Kopf",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|der Kunde": {
+      "file": "f1/dce9ab88e730266d.mp3",
+      "text": "der Kunde",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "f1|der Körper": {
+      "file": "f1/02b0cfb1e9bb856c.mp3",
+      "text": "der Körper",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "m1|der Mund": {
+      "file": "m1/8f8d191c3cb74855.mp3",
+      "text": "der Mund",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "m1|der Preis": {
+      "file": "m1/909578b2c464a8e7.mp3",
+      "text": "der Preis",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "f1|der Rücken": {
+      "file": "f1/084a4506b9e8b6cc.mp3",
+      "text": "der Rücken",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|der Schmerz": {
+      "file": "m1/4d461fa51e033dc2.mp3",
+      "text": "der Schmerz",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8832
+    },
+    "m1|der Schuh": {
+      "file": "m1/263a07b7b8c82d1e.mp3",
+      "text": "der Schuh",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "m1|der Verkäufer": {
+      "file": "m1/df04bc7cf5115bba.mp3",
+      "text": "der Verkäufer",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10176
+    },
+    "f1|der Zahn": {
+      "file": "f1/c92077fb1020a7ac.mp3",
+      "text": "der Zahn",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|die Apotheke": {
+      "file": "m1/ac983be6bd08936e.mp3",
+      "text": "die Apotheke",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9792
+    },
+    "f1|die Arbeit": {
+      "file": "f1/bfd1836812d1cb9d.mp3",
+      "text": "die Arbeit",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9792
+    },
+    "m1|die Farbe": {
+      "file": "m1/49b835376bfd94f7.mp3",
+      "text": "die Farbe",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "m1|die Größe": {
+      "file": "m1/da85d88f178a558e.mp3",
+      "text": "die Größe",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8064
+    },
+    "f1|die Hand": {
+      "file": "f1/640e4f115d2133f3.mp3",
+      "text": "die Hand",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8256
+    },
+    "f1|die Tablette": {
+      "file": "f1/09d6107efb111dd0.mp3",
+      "text": "die Tablette",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10176
+    },
+    "f1|die Tasche": {
+      "file": "f1/a7a3fb66d283adcf.mp3",
+      "text": "die Tasche",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "f1|die Universität": {
+      "file": "f1/27a6b1becf9d1f33.mp3",
+      "text": "die Universität",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 13632
+    },
+    "f1|die Verkäuferin": {
+      "file": "f1/2f76746f8041d11e.mp3",
+      "text": "die Verkäuferin",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 12096
+    },
+    "m1|dürfen": {
+      "file": "m1/246601e130351444.mp3",
+      "text": "dürfen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|gesund": {
+      "file": "f1/f8d2f90f6ab50ac8.mp3",
+      "text": "gesund",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7872
+    },
+    "f1|günstig": {
+      "file": "f1/b160a52293b9b48f.mp3",
+      "text": "günstig",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|kosten": {
+      "file": "m1/0140911a2a849b3e.mp3",
+      "text": "kosten",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "f1|krank": {
+      "file": "f1/e19862d1b4de6448.mp3",
+      "text": "krank",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "f1|müde": {
+      "file": "f1/67e99c3dc1fe7528.mp3",
+      "text": "müde",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "m1|passen": {
+      "file": "m1/dd919e0fab8292f2.mp3",
+      "text": "passen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|schlafen": {
+      "file": "f1/9dd80bc21af62619.mp3",
+      "text": "schlafen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7872
+    },
+    "f1|spät": {
+      "file": "f1/2e4e4eaae10ac1fa.mp3",
+      "text": "spät",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "f1|studieren": {
+      "file": "f1/535a21c335fd2f2d.mp3",
+      "text": "studieren",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9024
+    },
+    "m1|suchen": {
+      "file": "m1/5c1de648e92dca5f.mp3",
+      "text": "suchen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "f1|teuer": {
+      "file": "f1/6d1abe8dd888a0f6.mp3",
+      "text": "teuer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|trinken": {
+      "file": "m1/1087d8d9fab8715e.mp3",
+      "text": "trinken",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "m1|verdienen": {
+      "file": "m1/d44cec0fef192944.mp3",
+      "text": "verdienen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7296
+    },
+    "m1|wehtun": {
+      "file": "m1/51e280419edff201.mp3",
+      "text": "wehtun",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7104
     }
   }
 }
