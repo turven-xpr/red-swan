@@ -11007,6 +11007,974 @@
       "provider": "google",
       "voice_id": "de-DE-Neural2-H",
       "bytes": 7104
+    },
+    "f1|Das Wetter ist heute wunderschön.": {
+      "file": "f1/3c809166310f3887.mp3",
+      "text": "Das Wetter ist heute wunderschön.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 19776
+    },
+    "m1|Das Wetter ist leider sehr schlecht.": {
+      "file": "m1/112f066fa86bd0cf.mp3",
+      "text": "Das Wetter ist leider sehr schlecht.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18048
+    },
+    "m1|Der Herbst kommt nach dem Sommer.": {
+      "file": "m1/be56d0cc41b92e3c.mp3",
+      "text": "Der Herbst kommt nach dem Sommer.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16896
+    },
+    "f1|Der Zahn tut weh.": {
+      "file": "f1/cd3f1205a60e7afc.mp3",
+      "text": "Der Zahn tut weh.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 12864
+    },
+    "f1|Die Hose passt mir perfekt!": {
+      "file": "f1/6b32ab61863db9bd.mp3",
+      "text": "Die Hose passt mir perfekt!",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17664
+    },
+    "m1|Die Kinder gehen in die Schule.": {
+      "file": "m1/61721844dfef87fc.mp3",
+      "text": "Die Kinder gehen in die Schule.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15936
+    },
+    "m1|Die Temperatur liegt bei 30 Grad.": {
+      "file": "m1/c6914ee65f159147.mp3",
+      "text": "Die Temperatur liegt bei 30 Grad.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 21696
+    },
+    "f1|Es ist heute sehr heiß.": {
+      "file": "f1/5f3fb1775053bfa4.mp3",
+      "text": "Es ist heute sehr heiß.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16320
+    },
+    "m1|Es regnet heute sehr stark.": {
+      "file": "m1/b5af30c46f48d72b.mp3",
+      "text": "Es regnet heute sehr stark.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16512
+    },
+    "f1|Es sind 25 Grad.": {
+      "file": "f1/3dde67adebe22443.mp3",
+      "text": "Es sind 25 Grad.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18624
+    },
+    "f1|Euro": {
+      "file": "f1/3e75eba4774fac01.mp3",
+      "text": "Euro",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Farbe": {
+      "file": "m1/9b9508457bf7a4b4.mp3",
+      "text": "Farbe",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "m1|Fieber": {
+      "file": "m1/51db6b2b7268b3cd.mp3",
+      "text": "Fieber",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6528
+    },
+    "f1|Frühling": {
+      "file": "f1/433aaf1b299da035.mp3",
+      "text": "Frühling",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7872
+    },
+    "m1|Grad": {
+      "file": "m1/80223a2699871744.mp3",
+      "text": "Grad",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|Größe": {
+      "file": "f1/92e779a523de3cd7.mp3",
+      "text": "Größe",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7680
+    },
+    "f1|Gute Besserung!": {
+      "file": "f1/fb23153370e95205.mp3",
+      "text": "Gute Besserung!",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 10368
+    },
+    "f1|Hals": {
+      "file": "f1/d70536891e691bdf.mp3",
+      "text": "Hals",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|Hand": {
+      "file": "m1/4c741b7a0bcd907f.mp3",
+      "text": "Hand",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "m1|Herbst": {
+      "file": "m1/197fa28db83e919c.mp3",
+      "text": "Herbst",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "m1|Heute ist es sehr kalt draußen.": {
+      "file": "m1/1c47adee557c2a0f.mp3",
+      "text": "Heute ist es sehr kalt draußen.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 17088
+    },
+    "m1|Heute scheint die Sonne.": {
+      "file": "m1/c696c260f719600a.mp3",
+      "text": "Heute scheint die Sonne.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11904
+    },
+    "m1|Himmel": {
+      "file": "m1/824560ecf2827f88.mp3",
+      "text": "Himmel",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5760
+    },
+    "m1|Hose": {
+      "file": "m1/6b698685a38fab57.mp3",
+      "text": "Hose",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "m1|Ich ___ gestern nicht im Büro.": {
+      "file": "m1/8095830d5ecf11f1.mp3",
+      "text": "Ich ___ gestern nicht im Büro.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 30336
+    },
+    "f1|Ich arbeite ___ Arzt.": {
+      "file": "f1/8abf36b3410abd49.mp3",
+      "text": "Ich arbeite ___ Arzt.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 32064
+    },
+    "m1|Ich arbeite als Arzt.": {
+      "file": "m1/e3349e744fc89e49.mp3",
+      "text": "Ich arbeite als Arzt.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13824
+    },
+    "f1|Ich arbeite in einem Büro.": {
+      "file": "f1/aca2d8a78f98e14b.mp3",
+      "text": "Ich arbeite in einem Büro.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17088
+    },
+    "f1|Ich brauche ein weißes Hemd.": {
+      "file": "f1/d7b06bc875a19165.mp3",
+      "text": "Ich brauche ein weißes Hemd.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17856
+    },
+    "f1|Ich fühle mich heute sehr krank.": {
+      "file": "f1/e471d0e12bbb2798.mp3",
+      "text": "Ich fühle mich heute sehr krank.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18048
+    },
+    "m1|Ich habe 38,5 Grad Fieber.": {
+      "file": "m1/a3b73da88d6b8c30.mp3",
+      "text": "Ich habe 38,5 Grad Fieber.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 23232
+    },
+    "m1|Ich habe starke Halsschmerzen.": {
+      "file": "m1/bf325325305e4602.mp3",
+      "text": "Ich habe starke Halsschmerzen.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15168
+    },
+    "f1|Ich habe starke Kopfschmerzen.": {
+      "file": "f1/2789efe0296ce281.mp3",
+      "text": "Ich habe starke Kopfschmerzen.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17472
+    },
+    "f1|Ich kann heute leider nicht zur Arbeit kommen, weil ich krank bin.": {
+      "file": "f1/8bb22d8ceace805d.mp3",
+      "text": "Ich kann heute leider nicht zur Arbeit kommen, weil ich krank bin.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 35136
+    },
+    "f1|Ich liebe sonniges Wetter.": {
+      "file": "f1/bb86872889d632cc.mp3",
+      "text": "Ich liebe sonniges Wetter.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 15360
+    },
+    "f1|Im Krankenhaus darf man nicht laut sein.": {
+      "file": "f1/8c045ff8026ca060.mp3",
+      "text": "Im Krankenhaus darf man nicht laut sein.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 23232
+    },
+    "m1|Im Sommer ist es in Deutschland warm.": {
+      "file": "m1/886f79b507449b84.mp3",
+      "text": "Im Sommer ist es in Deutschland warm.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 18624
+    },
+    "f1|Im Süden gibt es heute viel Sonne.": {
+      "file": "f1/e0df294f3ddf96f3.mp3",
+      "text": "Im Süden gibt es heute viel Sonne.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 20544
+    },
+    "m1|Im Winter schneit es oft.": {
+      "file": "m1/1c9dd951806a37cc.mp3",
+      "text": "Im Winter schneit es oft.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15360
+    },
+    "m1|In Spanien ist es im Sommer sehr heiß.": {
+      "file": "m1/eb8777aecf3942f0.mp3",
+      "text": "In Spanien ist es im Sommer sehr heiß.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 21504
+    },
+    "f1|Jahreszeit": {
+      "file": "f1/e104e71f302c76fe.mp3",
+      "text": "Jahreszeit",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11328
+    },
+    "m1|Meine Lieblingsjahreszeit ist der Frühling.": {
+      "file": "m1/3cc2847425614c72.mp3",
+      "text": "Meine Lieblingsjahreszeit ist der Frühling.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 22272
+    },
+    "f1|Meine Mutter kocht sehr gut.": {
+      "file": "f1/9c1bc95daba867c0.mp3",
+      "text": "Meine Mutter kocht sehr gut.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 17856
+    },
+    "m1|Meine Schwester wohnt in München.": {
+      "file": "m1/48c4ad9d34224667.mp3",
+      "text": "Meine Schwester wohnt in München.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16896
+    },
+    "f1|Meine Staatsangehörigkeit ist marokkanisch.": {
+      "file": "f1/e210f7859187b76f.mp3",
+      "text": "Meine Staatsangehörigkeit ist marokkanisch.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 26112
+    },
+    "m1|Meine Tante hat drei Kinder.": {
+      "file": "m1/dac450d5aa5a2ac9.mp3",
+      "text": "Meine Tante hat drei Kinder.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 16896
+    },
+    "f1|Meine Tochter lernt Deutsch.": {
+      "file": "f1/5a8df9b9b0bb0a9c.mp3",
+      "text": "Meine Tochter lernt Deutsch.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16128
+    },
+    "m1|Meine Wohnung ist sehr schön.": {
+      "file": "m1/e7a9081de71f2339.mp3",
+      "text": "Meine Wohnung ist sehr schön.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15936
+    },
+    "m1|Miete": {
+      "file": "m1/862713514ee0506e.mp3",
+      "text": "Miete",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5952
+    },
+    "f1|Milch": {
+      "file": "f1/5f16b621a4de09d2.mp3",
+      "text": "Milch",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7488
+    },
+    "m1|Mit freundlichen Grüßen": {
+      "file": "m1/5c8a085f86ba2501.mp3",
+      "text": "Mit freundlichen Grüßen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13248
+    },
+    "m1|Monat": {
+      "file": "m1/5beb5e9edad4ff1e.mp3",
+      "text": "Monat",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7104
+    },
+    "m1|Morgen": {
+      "file": "m1/01162d7f904cc40a.mp3",
+      "text": "Morgen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "f1|Morgen wird es wieder schön.": {
+      "file": "f1/043e03bc9c761ca5.mp3",
+      "text": "Morgen wird es wieder schön.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 16320
+    },
+    "m1|Morgen wird es windig und regnerisch.": {
+      "file": "m1/f591963c6ce19f56.mp3",
+      "text": "Morgen wird es windig und regnerisch.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 20544
+    },
+    "f1|Mund": {
+      "file": "f1/b7c372fded6bfb45.mp3",
+      "text": "Mund",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Nehmen Sie diese Tabletten dreimal täglich.": {
+      "file": "m1/c61f93128927f5bb.mp3",
+      "text": "Nehmen Sie diese Tabletten dreimal täglich.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 22272
+    },
+    "m1|Nimm deinen Regenschirm mit, es regnet!": {
+      "file": "m1/a76d40b1e505e5de.mp3",
+      "text": "Nimm deinen Regenschirm mit, es regnet!",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 22272
+    },
+    "f1|Regen": {
+      "file": "f1/eea59932716e37d2.mp3",
+      "text": "Regen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7104
+    },
+    "m1|Regenschirm": {
+      "file": "m1/e11282287986e519.mp3",
+      "text": "Regenschirm",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "m1|Schnee": {
+      "file": "m1/85e8217e75c4973e.mp3",
+      "text": "Schnee",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5568
+    },
+    "m1|Schuh": {
+      "file": "m1/cd9dbd36928cd364.mp3",
+      "text": "Schuh",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 5376
+    },
+    "f1|Schule": {
+      "file": "f1/7efaffd7c368ff77.mp3",
+      "text": "Schule",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7296
+    },
+    "f1|Sie arbeitet als Lehrerin in Köln.": {
+      "file": "f1/1679e346bafb9caf.mp3",
+      "text": "Sie arbeitet als Lehrerin in Köln.",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 22464
+    },
+    "m1|Sie dürfen wieder Sport machen.": {
+      "file": "m1/4e194a159d8ac73f.mp3",
+      "text": "Sie dürfen wieder Sport machen.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 15552
+    },
+    "f1|Sommer": {
+      "file": "f1/97af84cf72276c8c.mp3",
+      "text": "Sommer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7104
+    },
+    "f1|Wetter": {
+      "file": "f1/25538ce0dd60a580.mp3",
+      "text": "Wetter",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Wie ist das Wetter heute?": {
+      "file": "m1/0fbe67869fffa039.mp3",
+      "text": "Wie ist das Wetter heute?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 13824
+    },
+    "f1|Wie viel Grad haben wir heute?": {
+      "file": "f1/f72382efe3127a97.mp3",
+      "text": "Wie viel Grad haben wir heute?",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 18432
+    },
+    "f1|Wind": {
+      "file": "f1/e434537450e6f98e.mp3",
+      "text": "Wind",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Winter": {
+      "file": "m1/8b1bfc706dc966fb.mp3",
+      "text": "Winter",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "m1|Wir machen am Wochenende einen Ausflug in die Berge.": {
+      "file": "m1/f3ba3b7265e3381c.mp3",
+      "text": "Wir machen am Wochenende einen Ausflug in die Berge.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 25728
+    },
+    "f1|Wolke": {
+      "file": "f1/d1f2976e126f2856.mp3",
+      "text": "Wolke",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7872
+    },
+    "m1|Zahlen Sie bar oder mit Karte?": {
+      "file": "m1/8dc0f3de75b973d7.mp3",
+      "text": "Zahlen Sie bar oder mit Karte?",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 17856
+    },
+    "f1|Zahn": {
+      "file": "f1/02cca670a1029663.mp3",
+      "text": "Zahn",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6720
+    },
+    "f1|bewölkt": {
+      "file": "f1/614805974e6bd312.mp3",
+      "text": "bewölkt",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|das Grad": {
+      "file": "f1/ca60aa28e25827d4.mp3",
+      "text": "das Grad",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "f1|das Hemd": {
+      "file": "f1/8ce339ad42a35844.mp3",
+      "text": "das Hemd",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "f1|das Kleid": {
+      "file": "f1/11e4640cefa77bfc.mp3",
+      "text": "das Kleid",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "m1|das Krankenhaus": {
+      "file": "m1/c680f36e44bd2b52.mp3",
+      "text": "das Krankenhaus",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10944
+    },
+    "m1|das Medikament": {
+      "file": "m1/7f757f00d8786beb.mp3",
+      "text": "das Medikament",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 11136
+    },
+    "m1|das Ohr": {
+      "file": "m1/39c6cad2a4e4fd5a.mp3",
+      "text": "das Ohr",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7296
+    },
+    "m1|das Rezept": {
+      "file": "m1/d40383c7c5c8c634.mp3",
+      "text": "das Rezept",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9216
+    },
+    "f1|das Wetter": {
+      "file": "f1/eb9ca71873ad70f0.mp3",
+      "text": "das Wetter",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "f1|der Frühling": {
+      "file": "f1/cd7779b62be9a971.mp3",
+      "text": "der Frühling",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "m1|der Fuß": {
+      "file": "m1/a1b056d9b5bde6c2.mp3",
+      "text": "der Fuß",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "f1|der Hals": {
+      "file": "f1/15026c86f4cce3bd.mp3",
+      "text": "der Hals",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9216
+    },
+    "m1|der Herbst": {
+      "file": "m1/31b196b7b7143f8a.mp3",
+      "text": "der Herbst",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8256
+    },
+    "f1|der Himmel": {
+      "file": "f1/5edd2ff6be66471d.mp3",
+      "text": "der Himmel",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|der Kollege": {
+      "file": "m1/59a467caaee17109.mp3",
+      "text": "der Kollege",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9024
+    },
+    "f1|der Kopf": {
+      "file": "f1/0b3e28226358057e.mp3",
+      "text": "der Kopf",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|der Körper": {
+      "file": "m1/a4cc382f271febc1.mp3",
+      "text": "der Körper",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 8448
+    },
+    "f1|der Mund": {
+      "file": "f1/71490df3708822c4.mp3",
+      "text": "der Mund",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8640
+    },
+    "m1|der Regen": {
+      "file": "m1/a5924240d110b6f5.mp3",
+      "text": "der Regen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7488
+    },
+    "f1|der Regenschirm": {
+      "file": "f1/e9267ee532388651.mp3",
+      "text": "der Regenschirm",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11136
+    },
+    "m1|der Rücken": {
+      "file": "m1/21b51b6774a74984.mp3",
+      "text": "der Rücken",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7104
+    },
+    "f1|der Schmerz": {
+      "file": "f1/1a03de9d6e4abe89.mp3",
+      "text": "der Schmerz",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9984
+    },
+    "m1|der Schnee": {
+      "file": "m1/a9af8ea1b47ff81a.mp3",
+      "text": "der Schnee",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7296
+    },
+    "f1|der Sommer": {
+      "file": "f1/bcf31add34dcb866.mp3",
+      "text": "der Sommer",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|der Wind": {
+      "file": "f1/4c1dfad8f4bf0302.mp3",
+      "text": "der Wind",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "m1|der Winter": {
+      "file": "m1/e5ef71cbfe021802.mp3",
+      "text": "der Winter",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7872
+    },
+    "m1|der Zahn": {
+      "file": "m1/3c9150c872da126a.mp3",
+      "text": "der Zahn",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7680
+    },
+    "f1|die Apotheke": {
+      "file": "f1/b54e692e830bcddd.mp3",
+      "text": "die Apotheke",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 11328
+    },
+    "m1|die Hand": {
+      "file": "m1/c5d1b27d24f8131c.mp3",
+      "text": "die Hand",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 7104
+    },
+    "f1|die Hose": {
+      "file": "f1/50418291279f545e.mp3",
+      "text": "die Hose",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8832
+    },
+    "m1|die Jahreszeit": {
+      "file": "m1/740f449643f5cc5c.mp3",
+      "text": "die Jahreszeit",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 10752
+    },
+    "f1|die Sonne": {
+      "file": "f1/25650f7530c75574.mp3",
+      "text": "die Sonne",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8256
+    },
+    "m1|die Tablette": {
+      "file": "m1/36b0dea09b2abc20.mp3",
+      "text": "die Tablette",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 9024
+    },
+    "f1|die Wolke": {
+      "file": "f1/c1270a1ee4c1cd54.mp3",
+      "text": "die Wolke",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 9408
+    },
+    "f1|heiß": {
+      "file": "f1/a86ead9795afe4f4.mp3",
+      "text": "heiß",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "f1|kalt": {
+      "file": "f1/fd07220144d850e1.mp3",
+      "text": "kalt",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7104
+    },
+    "f1|regnen": {
+      "file": "f1/ac8d7d38715eb081.mp3",
+      "text": "regnen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 7680
+    },
+    "m1|scheinen": {
+      "file": "m1/1d4fa7c1f4f4517a.mp3",
+      "text": "scheinen",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "m1|schlecht": {
+      "file": "m1/032d09956e4ab9e7.mp3",
+      "text": "schlecht",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "m1|schneien": {
+      "file": "m1/fa1366ec02ab4ebb.mp3",
+      "text": "schneien",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6336
+    },
+    "m1|sonnig": {
+      "file": "m1/e5b4c906cfed46d7.mp3",
+      "text": "sonnig",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6720
+    },
+    "f1|warm": {
+      "file": "f1/c8dc1be84bf5b05b.mp3",
+      "text": "warm",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6336
+    },
+    "f1|windig": {
+      "file": "f1/046144b3791ee6e6.mp3",
+      "text": "windig",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 8448
+    },
+    "f1|wollen": {
+      "file": "f1/ede676c7f1f68dcf.mp3",
+      "text": "wollen",
+      "voice": "f1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-G",
+      "bytes": 6912
+    },
+    "m1|Ärztin": {
+      "file": "m1/575334e4d41720dc.mp3",
+      "text": "Ärztin",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 6912
+    },
+    "m1|Im Herbst wird es kühler und es regnet oft.": {
+      "file": "m1/dd9f170d963de2d8.mp3",
+      "text": "Im Herbst wird es kühler und es regnet oft.",
+      "voice": "m1",
+      "provider": "google",
+      "voice_id": "de-DE-Neural2-H",
+      "bytes": 23616
     }
   }
 }
