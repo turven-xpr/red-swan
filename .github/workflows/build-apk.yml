@@ -23,43 +23,6 @@ jobs:
           flutter-version: '3.38.6'
           channel: 'stable'
 
-      - name: Create google-services.json stub
-        run: |
-          cat > android/app/google-services.json << 'EOF'
-          {
-            "project_info": {
-              "project_number": "000000000000",
-              "project_id": "deutschy-ci-stub",
-              "storage_bucket": "deutschy-ci-stub.appspot.com"
-            },
-            "client": [
-              {
-                "client_info": {
-                  "mobilesdk_app_id": "1:000000000000:android:0000000000000000",
-                  "android_client_info": {
-                    "package_name": "com.deutschy.app"
-                  }
-                },
-                "api_key": [
-                  { "current_key": "CI_BUILD_STUB_KEY" }
-                ],
-                "services": {}
-              }
-            ],
-            "configuration_version": "1"
-          }
-          EOF
-
-      - name: Set up signing keystore
-        run: |
-          mkdir -p ~/.android
-          if [ -n "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" ]; then
-            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > ~/.android/debug.keystore
-            echo "Configured custom debug keystore from secrets."
-          else
-            echo "No DEBUG_KEYSTORE_BASE64 secret provided; using default Gradle debug keystore."
-          fi
-
       - name: Install dependencies
         run: flutter pub get
 

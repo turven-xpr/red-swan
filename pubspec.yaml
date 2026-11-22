@@ -43,11 +43,6 @@ dependencies:
   # files by hand so a custom dictionary (with German, English,
   # French, Arabic copies of every visible string) ships without any
   # codegen step.  See `lib/src/core/i18n/strings.dart`.
-  # Firebase Auth — backs Google & Apple social login via Firebase project
-  # `deutschy-87c8e`.  All keys live in google-services.json + the iOS
-  # GoogleService-Info.plist — never in this repository's source code.
-  firebase_core: ^3.6.0
-  firebase_auth: ^5.3.1
   supabase_flutter: ^2.18.3
 
 dev_dependencies:
