@@ -13031,7 +13031,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"sentence_de\": \"Vielen ___! (Letter D)\", \"hint_en\": \"Dank\", \"hint_ar\": \"Dank\", \"hint_es\": \"Dank\", \"question_en\": \"Type the missing word.\", \"question_ar\": \"اكتب الكلمة الناقصة.\", \"question_es\": \"Escribe la palabra que falta.\"}",
+      "prompt": "{\"sentence_de\": \"Vielen ___!\", \"hint_en\": \"Dank\", \"hint_ar\": \"Dank\", \"hint_es\": \"Dank\", \"question_en\": \"Type the missing word.\", \"question_ar\": \"اكتب الكلمة الناقصة.\", \"question_es\": \"Escribe la palabra que falta.\"}",
       "audio_text": "Danke",
       "correct_answer": "Dank",
       "options": null,
@@ -13143,7 +13143,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"sentence_de\": \"___! Wie geht's? (Greeting starting with H)\", \"hint_en\": \"Hallo\", \"hint_ar\": \"Hallo\", \"hint_es\": \"Hallo\", \"question_en\": \"Type the missing word.\", \"question_ar\": \"اكتب الكلمة الناقصة.\", \"question_es\": \"Escribe la palabra que falta.\"}",
+      "prompt": "{\"sentence_de\": \"___! Wie geht's?\", \"hint_en\": \"Hallo\", \"hint_ar\": \"Hallo\", \"hint_es\": \"Hallo\", \"question_en\": \"Type the missing word.\", \"question_ar\": \"اكتب الكلمة الناقصة.\", \"question_es\": \"Escribe la palabra que falta.\"}",
       "audio_text": "Hallo",
       "correct_answer": "Hallo",
       "options": null,
@@ -13255,7 +13255,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"sentence_de\": \"Ja oder ___? (Yes or no?)\", \"hint_en\": \"Nein\", \"hint_ar\": \"Nein\", \"hint_es\": \"Nein\", \"question_en\": \"Type the missing word.\", \"question_ar\": \"اكتب الكلمة الناقصة.\", \"question_es\": \"Escribe la palabra que falta.\"}",
+      "prompt": "{\"sentence_de\": \"Ja oder ___?\", \"hint_en\": \"Nein\", \"hint_ar\": \"Nein\", \"hint_es\": \"Nein\", \"question_en\": \"Type the missing word.\", \"question_ar\": \"اكتب الكلمة الناقصة.\", \"question_es\": \"Escribe la palabra que falta.\"}",
       "audio_text": "Nein",
       "correct_answer": "Nein",
       "options": null,
@@ -16377,7 +16377,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"de\": \"Ich bin ___ und habe zwei Kinder. (verheiratet)\", \"question_en\": \"Fill in 'verheiratet' (married).\", \"question_ar\": \"املأ الفراغ بالصفة 'متزوج': ⁦'verheiratet'⁩.\", \"question_es\": \"Rellena con 'verheiratet'.\"}",
+      "prompt": "{\"de\": \"Ich bin ___ und habe zwei Kinder.\", \"question_en\": \"Fill in 'verheiratet' (married).\", \"question_ar\": \"املأ الفراغ بالصفة 'متزوج'.\", \"question_es\": \"Rellena con 'verheiratet'.\"}",
       "audio_text": "Ich bin verheiratet.",
       "correct_answer": "verheiratet",
       "options": "[\"verheiratet\", \"ledig\", \"geschieden\", \"Student\"]",
@@ -16419,7 +16419,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"de\": \"Ich ___ Deutsch lernen. (möchte)\", \"question_en\": \"Fill in the correct modal form: 'möchte'.\", \"question_ar\": \"املأ الفراغ بتصريف الفعل المساعد مع الضمير ⁦ich⁩: ⁦'möchte'⁩.\", \"question_es\": \"Rellena con la forma correcta de 'möchte'.\"}",
+      "prompt": "{\"de\": \"Ich ___ Deutsch lernen.\", \"question_en\": \"Fill in the correct modal form: 'möchte'.\", \"question_ar\": \"املأ الفراغ بتصريف الفعل المساعد مع الضمير ⁦ich⁩.\", \"question_es\": \"Rellena con la forma correcta de 'möchte'.\"}",
       "audio_text": "Ich möchte Deutsch lernen.",
       "correct_answer": "möchte",
       "options": "[\"möchte\", \"möchten\", \"möchtest\", \"mag\"]",
@@ -16433,7 +16433,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"de\": \"Ich möchte bitte ein Formular ___. (ausfüllen)\", \"question_en\": \"Complete the bracket with infinitive: 'ausfüllen'.\", \"question_ar\": \"أكمل القوس الجملي بوضع الفعل في المصدر في نهاية الجملة: ⁦'ausfüllen'⁩.\", \"question_es\": \"Completa el paréntesis de la frase con el infinitivo: 'ausfüllen'.\"}",
+      "prompt": "{\"de\": \"Ich möchte bitte ein Formular ___.\", \"question_en\": \"Complete the bracket with infinitive: 'ausfüllen'.\", \"question_ar\": \"أكمل القوس الجملي بوضع الفعل في المصدر في نهاية الجملة.\", \"question_es\": \"Completa el paréntesis de la frase con el infinitivo: 'ausfüllen'.\"}",
       "audio_text": "Ich möchte bitte ein Formular ausfüllen.",
       "correct_answer": "ausfüllen",
       "options": "[\"ausfüllen\", \"ausfüllt\", \"füllen\", \"gefüllt\"]",
@@ -16489,7 +16489,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"de\": \"Was ___ du trinken? (möchtest)\", \"question_en\": \"Fill in the du-conjugation: 'möchtest'.\", \"question_ar\": \"املأ الفراغ بتصريف الفعل مع الضمير ⁦du⁩: ⁦'möchtest'⁩.\", \"question_es\": \"Rellena con la conjugación para 'du': 'möchtest'.\"}",
+      "prompt": "{\"de\": \"Was ___ du trinken?\", \"question_en\": \"Fill in the du-conjugation: 'möchtest'.\", \"question_ar\": \"املأ الفراغ بتصريف الفعل مع الضمير ⁦du⁩.\", \"question_es\": \"Rellena con la conjugación para 'du': 'möchtest'.\"}",
       "audio_text": "Was möchtest du trinken?",
       "correct_answer": "möchtest",
       "options": "[\"möchtest\", \"möchte\", \"möchten\", \"magst\"]",
@@ -16573,7 +16573,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"de\": \"Bitte hier unterschreiben: die ___ (Unterschrift)\", \"question_en\": \"Fill in the field name for signature.\", \"question_ar\": \"املأ الفراغ بالاسم الرسمي لخانة التوقيع: ⁦'Unterschrift'⁩.\", \"question_es\": \"Rellena con 'Unterschrift'.\"}",
+      "prompt": "{\"de\": \"Bitte hier unterschreiben: die ___\", \"question_en\": \"Fill in the field name for signature.\", \"question_ar\": \"املأ الفراغ بالاسم الرسمي لخانة التوقيع.\", \"question_es\": \"Rellena con 'Unterschrift'.\"}",
       "audio_text": "Unterschrift",
       "correct_answer": "Unterschrift",
       "options": "[\"Unterschrift\", \"Adresse\", \"Straße\", \"Formular\"]",
@@ -22075,7 +22075,7 @@
       "passage_id": null,
       "skill": "writing",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"de\": \"Hier fehlt noch Ihre ___ . (Unterschrift)\", \"question_en\": \"Fill in 'Unterschrift' (signature).\", \"question_ar\": \"املأ الفراغ بكلمة توقيع: ⁦'Unterschrift'⁩.\", \"question_es\": \"Rellena con 'Unterschrift'.\"}",
+      "prompt": "{\"de\": \"Hier fehlt noch Ihre ___ .\", \"question_en\": \"Fill in 'Unterschrift' (signature).\", \"question_ar\": \"املأ الفراغ بكلمة توقيع.\", \"question_es\": \"Rellena con 'Unterschrift'.\"}",
       "audio_text": "Hier fehlt noch Ihre Unterschrift.",
       "correct_answer": "Unterschrift",
       "options": "[\"Unterschrift\", \"Adresse\", \"Nummer\", \"Stadt\"]",
@@ -22523,7 +22523,7 @@
       "passage_id": null,
       "skill": "reading",
       "exercise_type": "type_fill_blank",
-      "prompt": "{\"de\": \"Hier fehlt noch Ihre Unterschrift.\", \"question_en\": \"Goethe A1 Mock Exam (10/10): Fill in 'Unterschrift'.\", \"question_ar\": \"امتحان جوته التجريبي A1 (10/10): املأ الفراغ بكلمة التوقيع: ⁦'Unterschrift'⁩.\", \"question_es\": \"Examen de prueba Goethe A1 (10/10): Rellena con 'Unterschrift'.\"}",
+      "prompt": "{\"de\": \"Hier fehlt noch Ihre Unterschrift.\", \"question_en\": \"Goethe A1 Mock Exam (10/10): Fill in 'Unterschrift'.\", \"question_ar\": \"امتحان جوته التجريبي A1 (10/10): املأ الفراغ بكلمة التوقيع.\", \"question_es\": \"Examen de prueba Goethe A1 (10/10): Rellena con 'Unterschrift'.\"}",
       "audio_text": "Hier fehlt noch Ihre Unterschrift.",
       "correct_answer": "Unterschrift",
       "options": "[\"Unterschrift\", \"Adresse\", \"Nummer\", \"Stadt\"]",
@@ -22642,74 +22642,2142 @@
   ],
   "learn_cards": [
     {
-      "id": "card_u1_l10101_1",
+      "id": "card_10101_1",
       "lesson_id": 10101,
       "card_type": "concept",
       "sort_order": 1,
-      "custom_prompt_de": "Hallo! Willkommen auf Deutsch!",
+      "custom_prompt_de": "das Hotel",
       "data_json": {
-        "chunk_de": "Hallo! Willkommen auf Deutsch!",
-        "sentence_en": "Hello! Welcome to German!",
-        "sentence_ar": "⁦مرحباً! أهلاً بك في الألمانية!⁩",
-        "sentence_es": "¡Hola! ¡Bienvenido al alemán!",
-        "example_sentence_de": "Guten Tag! Ich lerne Deutsch."
+        "chunk_de": "das Hotel",
+        "sentence_en": "hotel",
+        "sentence_ar": "⁦فندق⁩",
+        "sentence_es": "hotel",
+        "example_sentence_de": "Das Hotel ist modern."
       }
     },
     {
-      "id": "card_u1_l10101_2",
+      "id": "card_10101_2",
       "lesson_id": 10101,
-      "card_type": "phonetic",
+      "card_type": "concept",
       "sort_order": 2,
-      "custom_prompt_de": "ch",
+      "custom_prompt_de": "das Taxi",
       "data_json": {
-        "mouth_tip_en": "Soft 'ch' (ich): smile and whisper 'yes'. Hard 'ch' (ach): back of throat like clearing throat.",
-        "mouth_tip_ar": "⁦صوت 'ch' ناعم بعد (e, i) كالهمس، وخشن بعد (a, o, u) من مؤخرة الحلق.⁩",
-        "mouth_tip_es": "'ch' suave tras e/i; 'ch' áspera tras a/o/u en la garganta.",
-        "contrast_pairs": [
-          {
-            "word_a": "ich",
-            "word_b": "ach"
-          },
-          {
-            "word_a": "Milch",
-            "word_b": "Buch"
-          }
-        ],
-        "sample_words": [
-          "ich",
-          "nicht",
-          "Milch",
-          "Buch",
-          "auch"
-        ]
+        "chunk_de": "das Taxi",
+        "sentence_en": "taxi",
+        "sentence_ar": "⁦سيارة أجرة⁩",
+        "sentence_es": "taxi",
+        "example_sentence_de": "Das Taxi kommt gleich."
       }
     },
     {
-      "id": "card_u1_l10102_1",
+      "id": "card_10101_3",
+      "lesson_id": 10101,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "das Radio",
+      "data_json": {
+        "chunk_de": "das Radio",
+        "sentence_en": "radio",
+        "sentence_ar": "⁦مذياع⁩",
+        "sentence_es": "radio",
+        "example_sentence_de": "Das Radio spielt Musik."
+      }
+    },
+    {
+      "id": "card_10101_4",
+      "lesson_id": 10101,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "der Bus",
+      "data_json": {
+        "chunk_de": "der Bus",
+        "sentence_en": "bus",
+        "sentence_ar": "⁦حافلة⁩",
+        "sentence_es": "autobús",
+        "example_sentence_de": "Der Bus fährt nach Berlin."
+      }
+    },
+    {
+      "id": "card_10101_5",
+      "lesson_id": 10101,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "die Musik",
+      "data_json": {
+        "chunk_de": "die Musik",
+        "sentence_en": "music",
+        "sentence_ar": "⁦موسيقى⁩",
+        "sentence_es": "música",
+        "example_sentence_de": "Wir hören gerne Musik."
+      }
+    },
+    {
+      "id": "card_10101_6",
+      "lesson_id": 10101,
+      "card_type": "concept",
+      "sort_order": 6,
+      "custom_prompt_de": "das Café",
+      "data_json": {
+        "chunk_de": "das Café",
+        "sentence_en": "café",
+        "sentence_ar": "⁦مقهى⁩",
+        "sentence_es": "cafetería",
+        "example_sentence_de": "Das Café ist geöffnet."
+      }
+    },
+    {
+      "id": "card_10102_1",
       "lesson_id": 10102,
       "card_type": "phonetic",
       "sort_order": 1,
-      "custom_prompt_de": "ä · ö · ü · ß",
+      "custom_prompt_de": "A a",
       "data_json": {
-        "mouth_tip_en": "ä = like 'bed'. ö = round lips and say 'ay'. ü = round lips and say 'ee'. ß = sharp double 's'.",
-        "mouth_tip_ar": "⁦حروف الإمالة الألمانية: ä كالفتحة الممتدة، ö و ü بتدوير الشفتين، و ß تعادل حرفي ss.⁩",
-        "mouth_tip_es": "ä suena como e abierta; ö y ü con labios redondeados; ß es una s sorda.",
-        "contrast_pairs": [
-          {
-            "word_a": "schon",
-            "word_b": "schön"
-          },
-          {
-            "word_a": "Mutter",
-            "word_b": "Mütter"
-          }
-        ],
-        "sample_words": [
-          "Äpfel",
-          "schön",
-          "über",
-          "groß"
-        ]
+        "chunk_de": "A wie Apfel",
+        "anchor_word_de": "der Apfel",
+        "anchor_word_en": "apple",
+        "anchor_word_ar": "⁦تفاحة⁩",
+        "anchor_word_es": "manzana",
+        "example_sentence_de": "Der Apfel ist rot."
+      }
+    },
+    {
+      "id": "card_10102_2",
+      "lesson_id": 10102,
+      "card_type": "phonetic",
+      "sort_order": 2,
+      "custom_prompt_de": "B b",
+      "data_json": {
+        "chunk_de": "B wie Ball",
+        "anchor_word_de": "der Ball",
+        "anchor_word_en": "ball",
+        "anchor_word_ar": "⁦كرة⁩",
+        "anchor_word_es": "pelota",
+        "example_sentence_de": "Der Ball ist rund."
+      }
+    },
+    {
+      "id": "card_10102_3",
+      "lesson_id": 10102,
+      "card_type": "phonetic",
+      "sort_order": 3,
+      "custom_prompt_de": "C c",
+      "data_json": {
+        "chunk_de": "C wie Computer",
+        "anchor_word_de": "der Computer",
+        "anchor_word_en": "computer",
+        "anchor_word_ar": "⁦حاسوب⁩",
+        "anchor_word_es": "ordenador",
+        "example_sentence_de": "Der Computer ist neu."
+      }
+    },
+    {
+      "id": "card_10102_4",
+      "lesson_id": 10102,
+      "card_type": "phonetic",
+      "sort_order": 4,
+      "custom_prompt_de": "D d",
+      "data_json": {
+        "chunk_de": "D wie Danke",
+        "anchor_word_de": "Danke",
+        "anchor_word_en": "thank you",
+        "anchor_word_ar": "⁦شكراً⁩",
+        "anchor_word_es": "gracias",
+        "example_sentence_de": "Vielen Dank!"
+      }
+    },
+    {
+      "id": "card_10102_5",
+      "lesson_id": 10102,
+      "card_type": "phonetic",
+      "sort_order": 5,
+      "custom_prompt_de": "E e",
+      "data_json": {
+        "chunk_de": "E wie Elefant",
+        "anchor_word_de": "der Elefant",
+        "anchor_word_en": "elephant",
+        "anchor_word_ar": "⁦فيل⁩",
+        "anchor_word_es": "elefante",
+        "example_sentence_de": "Der Elefant ist groß."
+      }
+    },
+    {
+      "id": "card_10102_6",
+      "lesson_id": 10102,
+      "card_type": "phonetic",
+      "sort_order": 6,
+      "custom_prompt_de": "F f",
+      "data_json": {
+        "chunk_de": "F wie Fahrrad",
+        "anchor_word_de": "das Fahrrad",
+        "anchor_word_en": "bicycle",
+        "anchor_word_ar": "⁦دراجة⁩",
+        "anchor_word_es": "bicicleta",
+        "example_sentence_de": "Das Fahrrad fährt schnell."
+      }
+    },
+    {
+      "id": "card_10103_1",
+      "lesson_id": 10103,
+      "card_type": "phonetic",
+      "sort_order": 1,
+      "custom_prompt_de": "G g",
+      "data_json": {
+        "chunk_de": "G wie Garten",
+        "anchor_word_de": "der Garten",
+        "anchor_word_en": "garden",
+        "anchor_word_ar": "⁦حديقة⁩",
+        "anchor_word_es": "jardín",
+        "example_sentence_de": "Der Garten ist schön."
+      }
+    },
+    {
+      "id": "card_10103_2",
+      "lesson_id": 10103,
+      "card_type": "phonetic",
+      "sort_order": 2,
+      "custom_prompt_de": "H h",
+      "data_json": {
+        "chunk_de": "H wie Hallo",
+        "anchor_word_de": "Hallo",
+        "anchor_word_en": "hello",
+        "anchor_word_ar": "⁦مرحباً⁩",
+        "anchor_word_es": "hola",
+        "example_sentence_de": "Hallo! Wie geht's?"
+      }
+    },
+    {
+      "id": "card_10103_3",
+      "lesson_id": 10103,
+      "card_type": "phonetic",
+      "sort_order": 3,
+      "custom_prompt_de": "I i",
+      "data_json": {
+        "chunk_de": "I wie Insel",
+        "anchor_word_de": "die Insel",
+        "anchor_word_en": "island",
+        "anchor_word_ar": "⁦جزيرة⁩",
+        "anchor_word_es": "isla",
+        "example_sentence_de": "Die Insel ist ruhig."
+      }
+    },
+    {
+      "id": "card_10103_4",
+      "lesson_id": 10103,
+      "card_type": "phonetic",
+      "sort_order": 4,
+      "custom_prompt_de": "J j",
+      "data_json": {
+        "chunk_de": "J wie Ja",
+        "anchor_word_de": "Ja",
+        "anchor_word_en": "yes",
+        "anchor_word_ar": "⁦نعم⁩",
+        "anchor_word_es": "sí",
+        "example_sentence_de": "Ja, bitte."
+      }
+    },
+    {
+      "id": "card_10103_5",
+      "lesson_id": 10103,
+      "card_type": "phonetic",
+      "sort_order": 5,
+      "custom_prompt_de": "K k",
+      "data_json": {
+        "chunk_de": "K wie Kaffee",
+        "anchor_word_de": "der Kaffee",
+        "anchor_word_en": "coffee",
+        "anchor_word_ar": "⁦قهوة⁩",
+        "anchor_word_es": "café",
+        "example_sentence_de": "Der Kaffee ist heiß."
+      }
+    },
+    {
+      "id": "card_10103_6",
+      "lesson_id": 10103,
+      "card_type": "phonetic",
+      "sort_order": 6,
+      "custom_prompt_de": "L l",
+      "data_json": {
+        "chunk_de": "L wie Lampe",
+        "anchor_word_de": "die Lampe",
+        "anchor_word_en": "lamp",
+        "anchor_word_ar": "⁦مصباح⁩",
+        "anchor_word_es": "lámpara",
+        "example_sentence_de": "Die Lampe ist hell."
+      }
+    },
+    {
+      "id": "card_10104_1",
+      "lesson_id": 10104,
+      "card_type": "phonetic",
+      "sort_order": 1,
+      "custom_prompt_de": "M m",
+      "data_json": {
+        "chunk_de": "M wie Milch",
+        "anchor_word_de": "die Milch",
+        "anchor_word_en": "milk",
+        "anchor_word_ar": "⁦حليب⁩",
+        "anchor_word_es": "leche",
+        "example_sentence_de": "Ich trinke Milch."
+      }
+    },
+    {
+      "id": "card_10104_2",
+      "lesson_id": 10104,
+      "card_type": "phonetic",
+      "sort_order": 2,
+      "custom_prompt_de": "N n",
+      "data_json": {
+        "chunk_de": "N wie Nein",
+        "anchor_word_de": "Nein",
+        "anchor_word_en": "no",
+        "anchor_word_ar": "⁦لا⁩",
+        "anchor_word_es": "no",
+        "example_sentence_de": "Nein, danke."
+      }
+    },
+    {
+      "id": "card_10104_3",
+      "lesson_id": 10104,
+      "card_type": "phonetic",
+      "sort_order": 3,
+      "custom_prompt_de": "O o",
+      "data_json": {
+        "chunk_de": "O wie Orange",
+        "anchor_word_de": "die Orange",
+        "anchor_word_en": "orange",
+        "anchor_word_ar": "⁦برتقال⁩",
+        "anchor_word_es": "naranja",
+        "example_sentence_de": "Die Orange schmeckt gut."
+      }
+    },
+    {
+      "id": "card_10104_4",
+      "lesson_id": 10104,
+      "card_type": "phonetic",
+      "sort_order": 4,
+      "custom_prompt_de": "P p",
+      "data_json": {
+        "chunk_de": "P wie Post",
+        "anchor_word_de": "die Post",
+        "anchor_word_en": "post office",
+        "anchor_word_ar": "⁦بريد⁩",
+        "anchor_word_es": "correos",
+        "example_sentence_de": "Die Post ist da."
+      }
+    },
+    {
+      "id": "card_10104_5",
+      "lesson_id": 10104,
+      "card_type": "phonetic",
+      "sort_order": 5,
+      "custom_prompt_de": "Q q",
+      "data_json": {
+        "chunk_de": "Q wie Quelle",
+        "anchor_word_de": "die Quelle",
+        "anchor_word_en": "source",
+        "anchor_word_ar": "⁦ينبوع⁩",
+        "anchor_word_es": "fuente",
+        "example_sentence_de": "Die Quelle ist frisch."
+      }
+    },
+    {
+      "id": "card_10104_6",
+      "lesson_id": 10104,
+      "card_type": "phonetic",
+      "sort_order": 6,
+      "custom_prompt_de": "R r",
+      "data_json": {
+        "chunk_de": "R wie rot",
+        "anchor_word_de": "rot",
+        "anchor_word_en": "red",
+        "anchor_word_ar": "⁦أحمر⁩",
+        "anchor_word_es": "rojo",
+        "example_sentence_de": "Der Apfel ist rot."
+      }
+    },
+    {
+      "id": "card_10105_1",
+      "lesson_id": 10105,
+      "card_type": "phonetic",
+      "sort_order": 1,
+      "custom_prompt_de": "S s",
+      "data_json": {
+        "chunk_de": "S wie Sonne",
+        "anchor_word_de": "die Sonne",
+        "anchor_word_en": "sun",
+        "anchor_word_ar": "⁦شمس⁩",
+        "anchor_word_es": "sol",
+        "example_sentence_de": "Die Sonne scheint."
+      }
+    },
+    {
+      "id": "card_10105_2",
+      "lesson_id": 10105,
+      "card_type": "phonetic",
+      "sort_order": 2,
+      "custom_prompt_de": "T t",
+      "data_json": {
+        "chunk_de": "T wie Tee",
+        "anchor_word_de": "der Tee",
+        "anchor_word_en": "tea",
+        "anchor_word_ar": "⁦شاي⁩",
+        "anchor_word_es": "té",
+        "example_sentence_de": "Der Tee ist warm."
+      }
+    },
+    {
+      "id": "card_10105_3",
+      "lesson_id": 10105,
+      "card_type": "phonetic",
+      "sort_order": 3,
+      "custom_prompt_de": "U u",
+      "data_json": {
+        "chunk_de": "U wie Uhr",
+        "anchor_word_de": "die Uhr",
+        "anchor_word_en": "clock / watch",
+        "anchor_word_ar": "⁦ساعة⁩",
+        "anchor_word_es": "reloj",
+        "example_sentence_de": "Wie viel Uhr ist es?"
+      }
+    },
+    {
+      "id": "card_10105_4",
+      "lesson_id": 10105,
+      "card_type": "phonetic",
+      "sort_order": 4,
+      "custom_prompt_de": "Zahlen",
+      "data_json": {
+        "chunk_de": "Die Zahl 7",
+        "anchor_word_de": "sieben",
+        "anchor_word_en": "seven (7)",
+        "anchor_word_ar": "⁦سبعة (7)⁩",
+        "anchor_word_es": "siete (7)",
+        "example_sentence_de": "Ich habe sieben Bücher."
+      }
+    },
+    {
+      "id": "card_10105_5",
+      "lesson_id": 10105,
+      "card_type": "phonetic",
+      "sort_order": 5,
+      "custom_prompt_de": "Gruß",
+      "data_json": {
+        "chunk_de": "Begrüßung",
+        "anchor_word_de": "Guten Tag",
+        "anchor_word_en": "good day",
+        "anchor_word_ar": "⁦يوم سعيد⁩",
+        "anchor_word_es": "buenos días",
+        "example_sentence_de": "Guten Tag, Herr Müller!"
+      }
+    },
+    {
+      "id": "card_10106_1",
+      "lesson_id": 10106,
+      "card_type": "phonetic",
+      "sort_order": 1,
+      "custom_prompt_de": "V v",
+      "data_json": {
+        "chunk_de": "V wie vier",
+        "anchor_word_de": "vier",
+        "anchor_word_en": "four (pronounced like 'F')",
+        "anchor_word_ar": "⁦أربعة (يُنطق مثل حرف الفاء F)⁩",
+        "anchor_word_es": "cuatro (suena como F)",
+        "example_sentence_de": "Vier Tassen Kaffee."
+      }
+    },
+    {
+      "id": "card_10106_2",
+      "lesson_id": 10106,
+      "card_type": "phonetic",
+      "sort_order": 2,
+      "custom_prompt_de": "W w",
+      "data_json": {
+        "chunk_de": "W wie Wasser",
+        "anchor_word_de": "das Wasser",
+        "anchor_word_en": "water (pronounced like English 'V')",
+        "anchor_word_ar": "⁦ماء (يُنطق مثل V الإنجليزية)⁩",
+        "anchor_word_es": "agua (suena como V)",
+        "example_sentence_de": "Das Wasser ist kalt."
+      }
+    },
+    {
+      "id": "card_10106_3",
+      "lesson_id": 10106,
+      "card_type": "phonetic",
+      "sort_order": 3,
+      "custom_prompt_de": "X x",
+      "data_json": {
+        "chunk_de": "X im Taxi",
+        "anchor_word_de": "das Taxi",
+        "anchor_word_en": "taxi (contains 'ks' sound)",
+        "anchor_word_ar": "⁦تاكسي (صوت 'كس')⁩",
+        "anchor_word_es": "taxi",
+        "example_sentence_de": "Ich nehme ein Taxi."
+      }
+    },
+    {
+      "id": "card_10106_4",
+      "lesson_id": 10106,
+      "card_type": "phonetic",
+      "sort_order": 4,
+      "custom_prompt_de": "Y y",
+      "data_json": {
+        "chunk_de": "Y wie Yoga",
+        "anchor_word_de": "das Yoga",
+        "anchor_word_en": "yoga",
+        "anchor_word_ar": "⁦يوغا⁩",
+        "anchor_word_es": "yoga",
+        "example_sentence_de": "Yoga macht fit."
+      }
+    },
+    {
+      "id": "card_10106_5",
+      "lesson_id": 10106,
+      "card_type": "phonetic",
+      "sort_order": 5,
+      "custom_prompt_de": "Z z",
+      "data_json": {
+        "chunk_de": "Z wie Zug",
+        "anchor_word_de": "der Zug",
+        "anchor_word_en": "train (pronounced like 'ts')",
+        "anchor_word_ar": "⁦قطار (يُنطق مثل 'تس' ts)⁩",
+        "anchor_word_es": "tren (suena como ts)",
+        "example_sentence_de": "Der Zug kommt jetzt."
+      }
+    },
+    {
+      "id": "card_10107_1",
+      "lesson_id": 10107,
+      "card_type": "phonetic",
+      "sort_order": 1,
+      "custom_prompt_de": "Ä ä",
+      "data_json": {
+        "chunk_de": "Ä wie Käse",
+        "anchor_word_de": "der Käse",
+        "anchor_word_en": "cheese (ä sounds like 'e' in bed)",
+        "anchor_word_ar": "⁦جبن (ä تنطق كالفتحة الممتدة)⁩",
+        "anchor_word_es": "queso",
+        "example_sentence_de": "Der Käse schmeckt gut.",
+        "mouth_tip_en": "Mund leicht geöffnet wie beim 'e'",
+        "mouth_tip_ar": "⁦نصيحة النطق: Mund leicht geöffnet wie beim 'e'⁩"
+      }
+    },
+    {
+      "id": "card_10107_2",
+      "lesson_id": 10107,
+      "card_type": "phonetic",
+      "sort_order": 2,
+      "custom_prompt_de": "Ö ö",
+      "data_json": {
+        "chunk_de": "Ö in schön",
+        "anchor_word_de": "schön",
+        "anchor_word_en": "beautiful (round lips and say 'ay')",
+        "anchor_word_ar": "⁦جميل (تدوير الشفتين ونطق 'إي')⁩",
+        "anchor_word_es": "hermoso",
+        "example_sentence_de": "Das Bild ist schön.",
+        "mouth_tip_en": "Lippen runden wie für 'o', aber 'e' sprechen",
+        "mouth_tip_ar": "⁦نصيحة النطق: Lippen runden wie für 'o', aber 'e' sprechen⁩"
+      }
+    },
+    {
+      "id": "card_10107_3",
+      "lesson_id": 10107,
+      "card_type": "phonetic",
+      "sort_order": 3,
+      "custom_prompt_de": "Ü ü",
+      "data_json": {
+        "chunk_de": "Ü in fünf",
+        "anchor_word_de": "fünf",
+        "anchor_word_en": "five (round lips and say 'ee')",
+        "anchor_word_ar": "⁦خمسة (تدوير الشفتين ونطق 'ي')⁩",
+        "anchor_word_es": "cinco",
+        "example_sentence_de": "Es ist fünf Uhr.",
+        "mouth_tip_en": "Lippen spitzen wie für 'u', aber 'i' sprechen",
+        "mouth_tip_ar": "⁦نصيحة النطق: Lippen spitzen wie für 'u', aber 'i' sprechen⁩"
+      }
+    },
+    {
+      "id": "card_10107_4",
+      "lesson_id": 10107,
+      "card_type": "phonetic",
+      "sort_order": 4,
+      "custom_prompt_de": "ß",
+      "data_json": {
+        "chunk_de": "ß in weiß",
+        "anchor_word_de": "weiß",
+        "anchor_word_en": "white (sharp double 'ss')",
+        "anchor_word_ar": "⁦أبيض (حرف سين مشدد حاد)⁩",
+        "anchor_word_es": "blanco",
+        "example_sentence_de": "Das Hemd ist weiß.",
+        "mouth_tip_en": "Wird wie ein scharfes 'ss' gesprochen",
+        "mouth_tip_ar": "⁦نصيحة النطق: Wird wie ein scharfes 'ss' gesprochen⁩"
+      }
+    },
+    {
+      "id": "card_10108_1",
+      "lesson_id": 10108,
+      "card_type": "phonetic",
+      "sort_order": 1,
+      "custom_prompt_de": "ei",
+      "data_json": {
+        "chunk_de": "ei wie eins",
+        "anchor_word_de": "eins",
+        "anchor_word_en": "one (sounds like 'eye')",
+        "anchor_word_ar": "⁦واحد (يُنطق مثل eye)⁩",
+        "anchor_word_es": "uno",
+        "example_sentence_de": "Eins, zwei, drei."
+      }
+    },
+    {
+      "id": "card_10108_2",
+      "lesson_id": 10108,
+      "card_type": "phonetic",
+      "sort_order": 2,
+      "custom_prompt_de": "ie",
+      "data_json": {
+        "chunk_de": "ie wie sieben",
+        "anchor_word_de": "sieben",
+        "anchor_word_en": "seven (long 'ee' sound)",
+        "anchor_word_ar": "⁦سبعة (ياء ممدودة طويلة)⁩",
+        "anchor_word_es": "siete",
+        "example_sentence_de": "Sieben Tage."
+      }
+    },
+    {
+      "id": "card_10108_3",
+      "lesson_id": 10108,
+      "card_type": "phonetic",
+      "sort_order": 3,
+      "custom_prompt_de": "eu",
+      "data_json": {
+        "chunk_de": "eu wie Euro",
+        "anchor_word_de": "Euro",
+        "anchor_word_en": "euro (sounds like 'oy')",
+        "anchor_word_ar": "⁦يورو (يُنطق مثل 'أوي')⁩",
+        "anchor_word_es": "euro",
+        "example_sentence_de": "Drei Euro."
+      }
+    },
+    {
+      "id": "card_10108_4",
+      "lesson_id": 10108,
+      "card_type": "phonetic",
+      "sort_order": 4,
+      "custom_prompt_de": "au",
+      "data_json": {
+        "chunk_de": "au wie Auto",
+        "anchor_word_de": "das Auto",
+        "anchor_word_en": "car (sounds like 'ow')",
+        "anchor_word_ar": "⁦سيارة (يُنطق مثل 'أو')⁩",
+        "anchor_word_es": "coche",
+        "example_sentence_de": "Das Auto fährt schnell."
+      }
+    },
+    {
+      "id": "card_10108_5",
+      "lesson_id": 10108,
+      "card_type": "phonetic",
+      "sort_order": 5,
+      "custom_prompt_de": "sch",
+      "data_json": {
+        "chunk_de": "sch wie Schule",
+        "anchor_word_de": "die Schule",
+        "anchor_word_en": "school (sounds like 'sh')",
+        "anchor_word_ar": "⁦مدرسة (يُنطق مثل حرف الشين)⁩",
+        "anchor_word_es": "escuela",
+        "example_sentence_de": "Die Schule ist groß."
+      }
+    },
+    {
+      "id": "card_10108_6",
+      "lesson_id": 10108,
+      "card_type": "phonetic",
+      "sort_order": 6,
+      "custom_prompt_de": "ch",
+      "data_json": {
+        "chunk_de": "Laut ch",
+        "anchor_word_de": "ich / ach",
+        "anchor_word_en": "soft after e/i, hard after a/o/u",
+        "anchor_word_ar": "⁦ناعم بعد e/i وخشن بعد a/o/u⁩",
+        "anchor_word_es": "ch suave y dura",
+        "example_sentence_de": "Ich bin hier. Das Buch ist alt."
+      }
+    },
+    {
+      "id": "card_10109_1",
+      "lesson_id": 10109,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Buchstabieren",
+      "data_json": {
+        "chunk_de": "Wie buchstabiert man das?",
+        "sentence_en": "How do you spell that?",
+        "sentence_ar": "⁦كيف تتهجى ذلك؟⁩",
+        "sentence_es": "¿Cómo se deletrea eso?",
+        "example_sentence_de": "H-O-T-E-L: Hotel."
+      }
+    },
+    {
+      "id": "card_10201_1",
+      "lesson_id": 10201,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Danke",
+      "data_json": {
+        "chunk_de": "Danke",
+        "sentence_en": "thank you",
+        "sentence_ar": "⁦شكراً⁩",
+        "sentence_es": "gracias",
+        "example_sentence_de": "Danke schön!"
+      }
+    },
+    {
+      "id": "card_10201_2",
+      "lesson_id": 10201,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "Bitte",
+      "data_json": {
+        "chunk_de": "Bitte",
+        "sentence_en": "please / you're welcome",
+        "sentence_ar": "⁦من فضلك / عفواً⁩",
+        "sentence_es": "por favor / de nada",
+        "example_sentence_de": "Bitte sehr!"
+      }
+    },
+    {
+      "id": "card_10201_3",
+      "lesson_id": 10201,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "Hallo",
+      "data_json": {
+        "chunk_de": "Hallo",
+        "sentence_en": "hello",
+        "sentence_ar": "⁦مرحباً⁩",
+        "sentence_es": "hola",
+        "example_sentence_de": "Hallo! Schön dich zu sehen."
+      }
+    },
+    {
+      "id": "card_10201_4",
+      "lesson_id": 10201,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "Tschüss",
+      "data_json": {
+        "chunk_de": "Tschüss",
+        "sentence_en": "bye",
+        "sentence_ar": "⁦مع السلامة⁩",
+        "sentence_es": "adiós",
+        "example_sentence_de": "Tschüss! Bis morgen."
+      }
+    },
+    {
+      "id": "card_10201_5",
+      "lesson_id": 10201,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "Entschuldigung",
+      "data_json": {
+        "chunk_de": "Entschuldigung",
+        "sentence_en": "excuse me / sorry",
+        "sentence_ar": "⁦معذرة / عذراً⁩",
+        "sentence_es": "disculpe",
+        "example_sentence_de": "Entschuldigung, wo ist der Bahnhof?"
+      }
+    },
+    {
+      "id": "card_10202_1",
+      "lesson_id": 10202,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "0 · null",
+      "data_json": {
+        "chunk_de": "null",
+        "sentence_en": "0 = zero",
+        "sentence_ar": "⁦0 = صفر⁩",
+        "sentence_es": "0 = cero",
+        "example_sentence_de": "Ich zähle: null."
+      }
+    },
+    {
+      "id": "card_10202_2",
+      "lesson_id": 10202,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "1 · eins",
+      "data_json": {
+        "chunk_de": "eins",
+        "sentence_en": "1 = one",
+        "sentence_ar": "⁦1 = واحد⁩",
+        "sentence_es": "1 = uno",
+        "example_sentence_de": "Ich zähle: eins."
+      }
+    },
+    {
+      "id": "card_10202_3",
+      "lesson_id": 10202,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "2 · zwei",
+      "data_json": {
+        "chunk_de": "zwei",
+        "sentence_en": "2 = two",
+        "sentence_ar": "⁦2 = اثنان⁩",
+        "sentence_es": "2 = dos",
+        "example_sentence_de": "Ich zähle: zwei."
+      }
+    },
+    {
+      "id": "card_10202_4",
+      "lesson_id": 10202,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "3 · drei",
+      "data_json": {
+        "chunk_de": "drei",
+        "sentence_en": "3 = three",
+        "sentence_ar": "⁦3 = ثلاثة⁩",
+        "sentence_es": "3 = tres",
+        "example_sentence_de": "Ich zähle: drei."
+      }
+    },
+    {
+      "id": "card_10202_5",
+      "lesson_id": 10202,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "4 · vier",
+      "data_json": {
+        "chunk_de": "vier",
+        "sentence_en": "4 = four",
+        "sentence_ar": "⁦4 = أربعة⁩",
+        "sentence_es": "4 = cuatro",
+        "example_sentence_de": "Ich zähle: vier."
+      }
+    },
+    {
+      "id": "card_10202_6",
+      "lesson_id": 10202,
+      "card_type": "concept",
+      "sort_order": 6,
+      "custom_prompt_de": "5 · fünf",
+      "data_json": {
+        "chunk_de": "fünf",
+        "sentence_en": "5 = five",
+        "sentence_ar": "⁦5 = خمسة⁩",
+        "sentence_es": "5 = cinco",
+        "example_sentence_de": "Ich zähle: fünf."
+      }
+    },
+    {
+      "id": "card_10202_7",
+      "lesson_id": 10202,
+      "card_type": "concept",
+      "sort_order": 7,
+      "custom_prompt_de": "6 · sechs",
+      "data_json": {
+        "chunk_de": "sechs",
+        "sentence_en": "6 = six",
+        "sentence_ar": "⁦6 = ستة⁩",
+        "sentence_es": "6 = seis",
+        "example_sentence_de": "Ich zähle: sechs."
+      }
+    },
+    {
+      "id": "card_10203_1",
+      "lesson_id": 10203,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "7 · sieben",
+      "data_json": {
+        "chunk_de": "sieben",
+        "sentence_en": "7 = seven",
+        "sentence_ar": "⁦7 = سبعة⁩",
+        "sentence_es": "7 = siete",
+        "example_sentence_de": "Zimmer sieben."
+      }
+    },
+    {
+      "id": "card_10203_2",
+      "lesson_id": 10203,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "8 · acht",
+      "data_json": {
+        "chunk_de": "acht",
+        "sentence_en": "8 = eight",
+        "sentence_ar": "⁦8 = ثمانية⁩",
+        "sentence_es": "8 = ocho",
+        "example_sentence_de": "Zimmer acht."
+      }
+    },
+    {
+      "id": "card_10203_3",
+      "lesson_id": 10203,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "9 · neun",
+      "data_json": {
+        "chunk_de": "neun",
+        "sentence_en": "9 = nine",
+        "sentence_ar": "⁦9 = تسعة⁩",
+        "sentence_es": "9 = nueve",
+        "example_sentence_de": "Zimmer neun."
+      }
+    },
+    {
+      "id": "card_10203_4",
+      "lesson_id": 10203,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "10 · zehn",
+      "data_json": {
+        "chunk_de": "zehn",
+        "sentence_en": "10 = ten",
+        "sentence_ar": "⁦10 = عشرة⁩",
+        "sentence_es": "10 = diez",
+        "example_sentence_de": "Zimmer zehn."
+      }
+    },
+    {
+      "id": "card_10203_5",
+      "lesson_id": 10203,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "11 · elf",
+      "data_json": {
+        "chunk_de": "elf",
+        "sentence_en": "11 = eleven",
+        "sentence_ar": "⁦11 = أحد عشر⁩",
+        "sentence_es": "11 = once",
+        "example_sentence_de": "Zimmer elf."
+      }
+    },
+    {
+      "id": "card_10203_6",
+      "lesson_id": 10203,
+      "card_type": "concept",
+      "sort_order": 6,
+      "custom_prompt_de": "12 · zwölf",
+      "data_json": {
+        "chunk_de": "zwölf",
+        "sentence_en": "12 = twelve",
+        "sentence_ar": "⁦12 = اثنا عشر⁩",
+        "sentence_es": "12 = doce",
+        "example_sentence_de": "Zimmer zwölf."
+      }
+    },
+    {
+      "id": "card_10204_1",
+      "lesson_id": 10204,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "13 · dreizehn",
+      "data_json": {
+        "chunk_de": "dreizehn",
+        "sentence_en": "13 = thirteen",
+        "sentence_ar": "⁦13 = ثلاثة عشر⁩",
+        "sentence_es": "13 = trece",
+        "example_sentence_de": "Bus Nummer dreizehn."
+      }
+    },
+    {
+      "id": "card_10204_2",
+      "lesson_id": 10204,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "14 · vierzehn",
+      "data_json": {
+        "chunk_de": "vierzehn",
+        "sentence_en": "14 = fourteen",
+        "sentence_ar": "⁦14 = أربعة عشر⁩",
+        "sentence_es": "14 = catorce",
+        "example_sentence_de": "Bus Nummer vierzehn."
+      }
+    },
+    {
+      "id": "card_10204_3",
+      "lesson_id": 10204,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "15 · fünfzehn",
+      "data_json": {
+        "chunk_de": "fünfzehn",
+        "sentence_en": "15 = fifteen",
+        "sentence_ar": "⁦15 = خمسة عشر⁩",
+        "sentence_es": "15 = quince",
+        "example_sentence_de": "Bus Nummer fünfzehn."
+      }
+    },
+    {
+      "id": "card_10204_4",
+      "lesson_id": 10204,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "16 · sechzehn",
+      "data_json": {
+        "chunk_de": "sechzehn",
+        "sentence_en": "16 = sixteen",
+        "sentence_ar": "⁦16 = ستة عشر⁩",
+        "sentence_es": "16 = dieciséis",
+        "example_sentence_de": "Bus Nummer sechzehn."
+      }
+    },
+    {
+      "id": "card_10204_5",
+      "lesson_id": 10204,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "17 · siebzehn",
+      "data_json": {
+        "chunk_de": "siebzehn",
+        "sentence_en": "17 = seventeen",
+        "sentence_ar": "⁦17 = سبعة عشر⁩",
+        "sentence_es": "17 = diecisiete",
+        "example_sentence_de": "Bus Nummer siebzehn."
+      }
+    },
+    {
+      "id": "card_10204_6",
+      "lesson_id": 10204,
+      "card_type": "concept",
+      "sort_order": 6,
+      "custom_prompt_de": "20 · zwanzig",
+      "data_json": {
+        "chunk_de": "zwanzig",
+        "sentence_en": "20 = twenty",
+        "sentence_ar": "⁦20 = عشرون⁩",
+        "sentence_es": "20 = veinte",
+        "example_sentence_de": "Bus Nummer zwanzig."
+      }
+    },
+    {
+      "id": "card_10205_1",
+      "lesson_id": 10205,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "30 · dreißig",
+      "data_json": {
+        "chunk_de": "dreißig",
+        "sentence_en": "30 = thirty",
+        "sentence_ar": "⁦30 = ثلاثون⁩",
+        "sentence_es": "30 = treinta",
+        "example_sentence_de": "Das kostet dreißig Euro."
+      }
+    },
+    {
+      "id": "card_10205_2",
+      "lesson_id": 10205,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "40 · vierzig",
+      "data_json": {
+        "chunk_de": "vierzig",
+        "sentence_en": "40 = forty",
+        "sentence_ar": "⁦40 = أربعون⁩",
+        "sentence_es": "40 = cuarenta",
+        "example_sentence_de": "Das kostet vierzig Euro."
+      }
+    },
+    {
+      "id": "card_10205_3",
+      "lesson_id": 10205,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "50 · fünfzig",
+      "data_json": {
+        "chunk_de": "fünfzig",
+        "sentence_en": "50 = fifty",
+        "sentence_ar": "⁦50 = خمسون⁩",
+        "sentence_es": "50 = cincuenta",
+        "example_sentence_de": "Das kostet fünfzig Euro."
+      }
+    },
+    {
+      "id": "card_10205_4",
+      "lesson_id": 10205,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "60 · sechzig",
+      "data_json": {
+        "chunk_de": "sechzig",
+        "sentence_en": "60 = sixty",
+        "sentence_ar": "⁦60 = ستون⁩",
+        "sentence_es": "60 = sesenta",
+        "example_sentence_de": "Das kostet sechzig Euro."
+      }
+    },
+    {
+      "id": "card_10205_5",
+      "lesson_id": 10205,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "70 · siebzig",
+      "data_json": {
+        "chunk_de": "siebzig",
+        "sentence_en": "70 = seventy",
+        "sentence_ar": "⁦70 = سبعون⁩",
+        "sentence_es": "70 = setenta",
+        "example_sentence_de": "Das kostet siebzig Euro."
+      }
+    },
+    {
+      "id": "card_10205_6",
+      "lesson_id": 10205,
+      "card_type": "concept",
+      "sort_order": 6,
+      "custom_prompt_de": "80 · achtzig",
+      "data_json": {
+        "chunk_de": "achtzig",
+        "sentence_en": "80 = eighty",
+        "sentence_ar": "⁦80 = ثمانون⁩",
+        "sentence_es": "80 = ochenta",
+        "example_sentence_de": "Das kostet achtzig Euro."
+      }
+    },
+    {
+      "id": "card_10205_7",
+      "lesson_id": 10205,
+      "card_type": "concept",
+      "sort_order": 7,
+      "custom_prompt_de": "90 · neunzig",
+      "data_json": {
+        "chunk_de": "neunzig",
+        "sentence_en": "90 = ninety",
+        "sentence_ar": "⁦90 = تسعون⁩",
+        "sentence_es": "90 = noventa",
+        "example_sentence_de": "Das kostet neunzig Euro."
+      }
+    },
+    {
+      "id": "card_10205_8",
+      "lesson_id": 10205,
+      "card_type": "concept",
+      "sort_order": 8,
+      "custom_prompt_de": "100 · hundert",
+      "data_json": {
+        "chunk_de": "hundert",
+        "sentence_en": "100 = one hundred",
+        "sentence_ar": "⁦100 = مئة⁩",
+        "sentence_es": "100 = cien",
+        "example_sentence_de": "Das kostet hundert Euro."
+      }
+    },
+    {
+      "id": "card_10206_1",
+      "lesson_id": 10206,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Montag",
+      "data_json": {
+        "chunk_de": "Montag",
+        "sentence_en": "Monday",
+        "sentence_ar": "⁦الإثنين⁩",
+        "sentence_es": "lunes",
+        "example_sentence_de": "Heute ist Montag."
+      }
+    },
+    {
+      "id": "card_10206_2",
+      "lesson_id": 10206,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "Dienstag",
+      "data_json": {
+        "chunk_de": "Dienstag",
+        "sentence_en": "Tuesday",
+        "sentence_ar": "⁦الثلاثاء⁩",
+        "sentence_es": "martes",
+        "example_sentence_de": "Heute ist Dienstag."
+      }
+    },
+    {
+      "id": "card_10206_3",
+      "lesson_id": 10206,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "Mittwoch",
+      "data_json": {
+        "chunk_de": "Mittwoch",
+        "sentence_en": "Wednesday",
+        "sentence_ar": "⁦الأربعاء⁩",
+        "sentence_es": "miércoles",
+        "example_sentence_de": "Heute ist Mittwoch."
+      }
+    },
+    {
+      "id": "card_10206_4",
+      "lesson_id": 10206,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "Donnerstag",
+      "data_json": {
+        "chunk_de": "Donnerstag",
+        "sentence_en": "Thursday",
+        "sentence_ar": "⁦الخميس⁩",
+        "sentence_es": "jueves",
+        "example_sentence_de": "Heute ist Donnerstag."
+      }
+    },
+    {
+      "id": "card_10206_5",
+      "lesson_id": 10206,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "Freitag",
+      "data_json": {
+        "chunk_de": "Freitag",
+        "sentence_en": "Friday",
+        "sentence_ar": "⁦الجمعة⁩",
+        "sentence_es": "viernes",
+        "example_sentence_de": "Heute ist Freitag."
+      }
+    },
+    {
+      "id": "card_10206_6",
+      "lesson_id": 10206,
+      "card_type": "concept",
+      "sort_order": 6,
+      "custom_prompt_de": "Samstag",
+      "data_json": {
+        "chunk_de": "Samstag",
+        "sentence_en": "Saturday",
+        "sentence_ar": "⁦السبت⁩",
+        "sentence_es": "sábado",
+        "example_sentence_de": "Heute ist Samstag."
+      }
+    },
+    {
+      "id": "card_10206_7",
+      "lesson_id": 10206,
+      "card_type": "concept",
+      "sort_order": 7,
+      "custom_prompt_de": "Sonntag",
+      "data_json": {
+        "chunk_de": "Sonntag",
+        "sentence_en": "Sunday",
+        "sentence_ar": "⁦الأحد⁩",
+        "sentence_es": "domingo",
+        "example_sentence_de": "Heute ist Sonntag."
+      }
+    },
+    {
+      "id": "card_10207_1",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "blau",
+      "data_json": {
+        "chunk_de": "blau",
+        "swatch_hex": "#1E88E5",
+        "sentence_en": "blue",
+        "sentence_ar": "⁦أزرق⁩",
+        "sentence_es": "azul",
+        "example_sentence_de": "Der Himmel ist blau."
+      }
+    },
+    {
+      "id": "card_10207_2",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "rot",
+      "data_json": {
+        "chunk_de": "rot",
+        "swatch_hex": "#E53935",
+        "sentence_en": "red",
+        "sentence_ar": "⁦أحمر⁩",
+        "sentence_es": "rojo",
+        "example_sentence_de": "Der Apfel ist rot."
+      }
+    },
+    {
+      "id": "card_10207_3",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "grün",
+      "data_json": {
+        "chunk_de": "grün",
+        "swatch_hex": "#43A047",
+        "sentence_en": "green",
+        "sentence_ar": "⁦أخضر⁩",
+        "sentence_es": "verde",
+        "example_sentence_de": "Das Gras ist grün."
+      }
+    },
+    {
+      "id": "card_10207_4",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "gelb",
+      "data_json": {
+        "chunk_de": "gelb",
+        "swatch_hex": "#FDD835",
+        "sentence_en": "yellow",
+        "sentence_ar": "⁦أصفر⁩",
+        "sentence_es": "amarillo",
+        "example_sentence_de": "Die Sonne ist gelb."
+      }
+    },
+    {
+      "id": "card_10207_5",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "schwarz",
+      "data_json": {
+        "chunk_de": "schwarz",
+        "swatch_hex": "#212121",
+        "sentence_en": "black",
+        "sentence_ar": "⁦أسود⁩",
+        "sentence_es": "negro",
+        "example_sentence_de": "Der Kaffee ist schwarz."
+      }
+    },
+    {
+      "id": "card_10207_6",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 6,
+      "custom_prompt_de": "weiß",
+      "data_json": {
+        "chunk_de": "weiß",
+        "swatch_hex": "#EEEEEE",
+        "sentence_en": "white",
+        "sentence_ar": "⁦أبيض⁩",
+        "sentence_es": "blanco",
+        "example_sentence_de": "Der Schnee ist weiß."
+      }
+    },
+    {
+      "id": "card_10207_7",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 7,
+      "custom_prompt_de": "grau",
+      "data_json": {
+        "chunk_de": "grau",
+        "swatch_hex": "#9E9E9E",
+        "sentence_en": "gray",
+        "sentence_ar": "⁦رمادي⁩",
+        "sentence_es": "gris",
+        "example_sentence_de": "Die Wolke ist grau."
+      }
+    },
+    {
+      "id": "card_10207_8",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 8,
+      "custom_prompt_de": "braun",
+      "data_json": {
+        "chunk_de": "braun",
+        "swatch_hex": "#6D4C41",
+        "sentence_en": "brown",
+        "sentence_ar": "⁦بني⁩",
+        "sentence_es": "marrón",
+        "example_sentence_de": "Die Schokolade ist braun."
+      }
+    },
+    {
+      "id": "card_10207_9",
+      "lesson_id": 10207,
+      "card_type": "concept",
+      "sort_order": 9,
+      "custom_prompt_de": "orange",
+      "data_json": {
+        "chunk_de": "orange",
+        "swatch_hex": "#FB8C00",
+        "sentence_en": "orange",
+        "sentence_ar": "⁦برتقالي⁩",
+        "sentence_es": "naranja",
+        "example_sentence_de": "Die Orange ist orange."
+      }
+    },
+    {
+      "id": "card_10208_1",
+      "lesson_id": 10208,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Zahlen & Farben",
+      "data_json": {
+        "chunk_de": "Zahlen & Farben",
+        "sentence_en": "Numbers & Colors Review",
+        "sentence_ar": "⁦مراجعة الأرقام والألوان⁩",
+        "sentence_es": "Repaso de números y colores",
+        "example_sentence_de": "Drei rote Äpfel."
+      }
+    },
+    {
+      "id": "card_10301_1",
+      "lesson_id": 10301,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Guten Morgen",
+      "data_json": {
+        "chunk_de": "Guten Morgen",
+        "sentence_en": "Good morning (morning greeting)",
+        "sentence_ar": "⁦صباح الخير⁩",
+        "sentence_es": "Buenos días",
+        "example_sentence_de": "Guten Morgen! Haben Sie gut geschlafen?"
+      }
+    },
+    {
+      "id": "card_10301_2",
+      "lesson_id": 10301,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "Guten Tag",
+      "data_json": {
+        "chunk_de": "Guten Tag",
+        "sentence_en": "Good day (standard daytime greeting)",
+        "sentence_ar": "⁦يوم سعيد / مرحباً⁩",
+        "sentence_es": "Buenas tardes",
+        "example_sentence_de": "Guten Tag, Herr Meier!"
+      }
+    },
+    {
+      "id": "card_10301_3",
+      "lesson_id": 10301,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "Guten Abend",
+      "data_json": {
+        "chunk_de": "Guten Abend",
+        "sentence_en": "Good evening (evening greeting)",
+        "sentence_ar": "⁦مساء الخير⁩",
+        "sentence_es": "Buenas noches (al llegar)",
+        "example_sentence_de": "Guten Abend allerseits!"
+      }
+    },
+    {
+      "id": "card_10301_4",
+      "lesson_id": 10301,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "Gute Nacht",
+      "data_json": {
+        "chunk_de": "Gute Nacht",
+        "sentence_en": "Good night (said before sleeping)",
+        "sentence_ar": "⁦تصبح على خير⁩",
+        "sentence_es": "Buenas noches (al despedirse)",
+        "example_sentence_de": "Gute Nacht und schlaf gut!"
+      }
+    },
+    {
+      "id": "card_10301_5",
+      "lesson_id": 10301,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "Auf Wiedersehen",
+      "data_json": {
+        "chunk_de": "Auf Wiedersehen",
+        "sentence_en": "Goodbye (formal)",
+        "sentence_ar": "⁦إلى اللقاء (رسمي)⁩",
+        "sentence_es": "Hasta la vista",
+        "example_sentence_de": "Auf Wiedersehen, Frau Schmidt!"
+      }
+    },
+    {
+      "id": "card_10302_1",
+      "lesson_id": 10302,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Wie geht's?",
+      "data_json": {
+        "chunk_de": "Wie geht's?",
+        "sentence_en": "How are you? (informal)",
+        "sentence_ar": "⁦كيف حالك؟⁩",
+        "sentence_es": "¿Cómo estás?",
+        "example_sentence_de": "Hallo Anna, wie geht's?"
+      }
+    },
+    {
+      "id": "card_10302_2",
+      "lesson_id": 10302,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "Sehr gut, danke!",
+      "data_json": {
+        "chunk_de": "Sehr gut, danke!",
+        "sentence_en": "Very good, thank you!",
+        "sentence_ar": "⁦بخير جداً، شكراً!⁩",
+        "sentence_es": "¡Muy bien, gracias!",
+        "example_sentence_de": "Mir geht es sehr gut, danke!"
+      }
+    },
+    {
+      "id": "card_10302_3",
+      "lesson_id": 10302,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "Es geht.",
+      "data_json": {
+        "chunk_de": "Es geht.",
+        "sentence_en": "So-so / Not bad.",
+        "sentence_ar": "⁦على ما يرام / لا بأس.⁩",
+        "sentence_es": "Ahí vamos.",
+        "example_sentence_de": "Wie geht's? — Es geht."
+      }
+    },
+    {
+      "id": "card_10302_4",
+      "lesson_id": 10302,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "Nicht so gut.",
+      "data_json": {
+        "chunk_de": "Nicht so gut.",
+        "sentence_en": "Not so good.",
+        "sentence_ar": "⁦لست بخير / ليس جيداً.⁩",
+        "sentence_es": "No tan bien.",
+        "example_sentence_de": "Heute geht es mir nicht so gut."
+      }
+    },
+    {
+      "id": "card_10303_1",
+      "lesson_id": 10303,
+      "card_type": "phrase_chunk",
+      "sort_order": 1,
+      "custom_prompt_de": "Ich heiße Karim.",
+      "data_json": {
+        "chunk_de": "Ich heiße Karim.",
+        "highlight_token": "Ich heiße",
+        "sentence_en": "My name is Karim.",
+        "sentence_ar": "⁦اسمي كريم.⁩",
+        "sentence_es": "Me llamo Karim.",
+        "grammatical_note_en": "Verb 'heißen' (to be called): ich heiße Karim.",
+        "grammatical_note_ar": "⁦Verb 'heißen' (to be called): ich heiße Karim.⁩"
+      }
+    },
+    {
+      "id": "card_10303_2",
+      "lesson_id": 10303,
+      "card_type": "phrase_chunk",
+      "sort_order": 2,
+      "custom_prompt_de": "Wie heißen Sie?",
+      "data_json": {
+        "chunk_de": "Wie heißen Sie?",
+        "highlight_token": "Wie heißen Sie",
+        "sentence_en": "What is your name? (formal)",
+        "sentence_ar": "⁦ما اسم حضرتك؟ (رسمي)⁩",
+        "sentence_es": "¿Cómo se llama usted?",
+        "grammatical_note_en": "Formelle Frage nach dem Namen.",
+        "grammatical_note_ar": "⁦Formelle Frage nach dem Namen.⁩"
+      }
+    },
+    {
+      "id": "card_10303_3",
+      "lesson_id": 10303,
+      "card_type": "phrase_chunk",
+      "sort_order": 3,
+      "custom_prompt_de": "Ich bin Anna.",
+      "data_json": {
+        "chunk_de": "Ich bin Anna.",
+        "highlight_token": "Ich bin",
+        "sentence_en": "I am Anna.",
+        "sentence_ar": "⁦أنا آنّا.⁩",
+        "sentence_es": "Soy Anna.",
+        "grammatical_note_en": "Verb 'sein' (to be): ich bin Anna.",
+        "grammatical_note_ar": "⁦Verb 'sein' (to be): ich bin Anna.⁩"
+      }
+    },
+    {
+      "id": "card_10304_1",
+      "lesson_id": 10304,
+      "card_type": "phrase_chunk",
+      "sort_order": 1,
+      "custom_prompt_de": "Woher kommst du?",
+      "data_json": {
+        "chunk_de": "Woher kommst du?",
+        "highlight_token": "Woher kommst du",
+        "sentence_en": "Where do you come from? (informal)",
+        "sentence_ar": "⁦من أين أنت؟ (غير رسمي)⁩",
+        "sentence_es": "¿De dónde eres?",
+        "grammatical_note_en": "Frage nach der Herkunft (du).",
+        "grammatical_note_ar": "⁦Frage nach der Herkunft (du).⁩"
+      }
+    },
+    {
+      "id": "card_10304_2",
+      "lesson_id": 10304,
+      "card_type": "phrase_chunk",
+      "sort_order": 2,
+      "custom_prompt_de": "Woher kommen Sie?",
+      "data_json": {
+        "chunk_de": "Woher kommen Sie?",
+        "highlight_token": "Woher kommen Sie",
+        "sentence_en": "Where do you come from? (formal)",
+        "sentence_ar": "⁦من أين حضرتك؟ (رسمي)⁩",
+        "sentence_es": "¿De dónde es usted?",
+        "grammatical_note_en": "Formelle Frage nach der Herkunft (Sie).",
+        "grammatical_note_ar": "⁦Formelle Frage nach der Herkunft (Sie).⁩"
+      }
+    },
+    {
+      "id": "card_10304_3",
+      "lesson_id": 10304,
+      "card_type": "phrase_chunk",
+      "sort_order": 3,
+      "custom_prompt_de": "Ich komme aus Syrien.",
+      "data_json": {
+        "chunk_de": "Ich komme aus Syrien.",
+        "highlight_token": "komme aus",
+        "sentence_en": "I come from Syria.",
+        "sentence_ar": "⁦أنا قادم من سوريا.⁩",
+        "sentence_es": "Vengo de Siria.",
+        "grammatical_note_en": "Präposition 'aus' für das Herkunftsland.",
+        "grammatical_note_ar": "⁦Präposition 'aus' für das Herkunftsland.⁩"
+      }
+    },
+    {
+      "id": "card_10304_4",
+      "lesson_id": 10304,
+      "card_type": "phrase_chunk",
+      "sort_order": 4,
+      "custom_prompt_de": "Ich komme aus Marokko.",
+      "data_json": {
+        "chunk_de": "Ich komme aus Marokko.",
+        "highlight_token": "komme aus",
+        "sentence_en": "I come from Morocco.",
+        "sentence_ar": "⁦أنا قادم من المغرب.⁩",
+        "sentence_es": "Vengo de Marruecos.",
+        "grammatical_note_en": "Präposition 'aus'.",
+        "grammatical_note_ar": "⁦Präposition 'aus'.⁩"
+      }
+    },
+    {
+      "id": "card_10305_1",
+      "lesson_id": 10305,
+      "card_type": "phrase_chunk",
+      "sort_order": 1,
+      "custom_prompt_de": "Das ist ein Mann.",
+      "data_json": {
+        "chunk_de": "Das ist ein Mann.",
+        "highlight_token": "ein Mann",
+        "sentence_en": "This is a man.",
+        "sentence_ar": "⁦هذا رجل.⁩",
+        "sentence_es": "Este es un hombre.",
+        "grammatical_note_en": "Maskulin: ein Mann (der Mann)",
+        "grammatical_note_ar": "⁦Maskulin: ein Mann (der Mann)⁩"
+      }
+    },
+    {
+      "id": "card_10305_2",
+      "lesson_id": 10305,
+      "card_type": "phrase_chunk",
+      "sort_order": 2,
+      "custom_prompt_de": "Das ist eine Frau.",
+      "data_json": {
+        "chunk_de": "Das ist eine Frau.",
+        "highlight_token": "eine Frau",
+        "sentence_en": "This is a woman.",
+        "sentence_ar": "⁦هذه امرأة.⁩",
+        "sentence_es": "Esta es una mujer.",
+        "grammatical_note_en": "Feminin: eine Frau (die Frau)",
+        "grammatical_note_ar": "⁦Feminin: eine Frau (die Frau)⁩"
+      }
+    },
+    {
+      "id": "card_10305_3",
+      "lesson_id": 10305,
+      "card_type": "phrase_chunk",
+      "sort_order": 3,
+      "custom_prompt_de": "Das ist ein Kind.",
+      "data_json": {
+        "chunk_de": "Das ist ein Kind.",
+        "highlight_token": "ein Kind",
+        "sentence_en": "This is a child.",
+        "sentence_ar": "⁦هذا طفل.⁩",
+        "sentence_es": "Este es un niño.",
+        "grammatical_note_en": "Neutral: ein Kind (das Kind)",
+        "grammatical_note_ar": "⁦Neutral: ein Kind (das Kind)⁩"
+      }
+    },
+    {
+      "id": "card_10306_1",
+      "lesson_id": 10306,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Ich verstehe nicht.",
+      "data_json": {
+        "chunk_de": "Ich verstehe nicht.",
+        "sentence_en": "I do not understand.",
+        "sentence_ar": "⁦أنا لا أفهم.⁩",
+        "sentence_es": "No entiendo.",
+        "example_sentence_de": "Ich verstehe nicht."
+      }
+    },
+    {
+      "id": "card_10306_2",
+      "lesson_id": 10306,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "Sprechen Sie Englisch?",
+      "data_json": {
+        "chunk_de": "Sprechen Sie Englisch?",
+        "sentence_en": "Do you speak English?",
+        "sentence_ar": "⁦هل تتحدث الإنجليزية؟⁩",
+        "sentence_es": "¿Habla inglés?",
+        "example_sentence_de": "Entschuldigung, sprechen Sie Englisch?"
+      }
+    },
+    {
+      "id": "card_10306_3",
+      "lesson_id": 10306,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "Bitte langsamer.",
+      "data_json": {
+        "chunk_de": "Bitte langsamer.",
+        "sentence_en": "Please more slowly.",
+        "sentence_ar": "⁦من فضلك تحدث ببطء أكثر.⁩",
+        "sentence_es": "Más despacio, por favor.",
+        "example_sentence_de": "Können Sie bitte langsamer sprechen?"
+      }
+    },
+    {
+      "id": "card_10306_4",
+      "lesson_id": 10306,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "Wie bitte?",
+      "data_json": {
+        "chunk_de": "Wie bitte?",
+        "sentence_en": "Pardon? / Could you repeat?",
+        "sentence_ar": "⁦عفواً؟ ماذا قلت؟⁩",
+        "sentence_es": "¿Cómo?",
+        "example_sentence_de": "Wie bitte? Ich habe das nicht gehört."
+      }
+    },
+    {
+      "id": "card_10307_1",
+      "lesson_id": 10307,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Erstes Gespräch",
+      "data_json": {
+        "chunk_de": "Guten Tag! Ich heiße Karim. Und wie heißen Sie?",
+        "sentence_en": "Good day! My name is Karim. And what is your name?",
+        "sentence_ar": "⁦يوم سعيد! اسمي كريم. وما اسم حضرتك؟⁩",
+        "sentence_es": "¡Buenos días! Me llamo Karim. ¿Y cómo se llama usted?",
+        "example_sentence_de": "Ich heiße Anna. Freut mich!"
+      }
+    },
+    {
+      "id": "card_10308_1",
+      "lesson_id": 10308,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Begrüßung & Verben",
+      "data_json": {
+        "chunk_de": "Begrüßung & Verben Checkpoint",
+        "sentence_en": "Greetings & Verbs Mastery Check",
+        "sentence_ar": "⁦اختبار التحيات وتصريف الأفعال⁩",
+        "sentence_es": "Examen de saludos y verbos",
+        "example_sentence_de": "Hallo, ich heiße Karim und komme aus Syrien."
+      }
+    },
+    {
+      "id": "card_10311_1",
+      "lesson_id": 10311,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Deutschland",
+      "data_json": {
+        "chunk_de": "Deutschland",
+        "sentence_en": "Germany",
+        "sentence_ar": "⁦ألمانيا⁩",
+        "sentence_es": "Alemania",
+        "example_sentence_de": "Deutschland ist in Europa."
+      }
+    },
+    {
+      "id": "card_10311_2",
+      "lesson_id": 10311,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "Deutsch",
+      "data_json": {
+        "chunk_de": "Deutsch",
+        "sentence_en": "German (language)",
+        "sentence_ar": "⁦اللغة الألمانية⁩",
+        "sentence_es": "alemán",
+        "example_sentence_de": "Ich lerne Deutsch."
+      }
+    },
+    {
+      "id": "card_10311_3",
+      "lesson_id": 10311,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "Syrien",
+      "data_json": {
+        "chunk_de": "Syrien",
+        "sentence_en": "Syria",
+        "sentence_ar": "⁦سوريا⁩",
+        "sentence_es": "Siria",
+        "example_sentence_de": "Er kommt aus Syrien."
+      }
+    },
+    {
+      "id": "card_10311_4",
+      "lesson_id": 10311,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "Marokko",
+      "data_json": {
+        "chunk_de": "Marokko",
+        "sentence_en": "Morocco",
+        "sentence_ar": "⁦المغرب⁩",
+        "sentence_es": "Marruecos",
+        "example_sentence_de": "Sie kommt aus Marokko."
+      }
+    },
+    {
+      "id": "card_10311_5",
+      "lesson_id": 10311,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "Arabisch",
+      "data_json": {
+        "chunk_de": "Arabisch",
+        "sentence_en": "Arabic (language)",
+        "sentence_ar": "⁦اللغة العربية⁩",
+        "sentence_es": "árabe",
+        "example_sentence_de": "Meine Muttersprache ist Arabisch."
+      }
+    },
+    {
+      "id": "card_10311_6",
+      "lesson_id": 10311,
+      "card_type": "concept",
+      "sort_order": 6,
+      "custom_prompt_de": "Englisch",
+      "data_json": {
+        "chunk_de": "Englisch",
+        "sentence_en": "English (language)",
+        "sentence_ar": "⁦اللغة الإنجليزية⁩",
+        "sentence_es": "inglés",
+        "example_sentence_de": "Wir sprechen Englisch."
+      }
+    },
+    {
+      "id": "card_10312_1",
+      "lesson_id": 10312,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "der Vorname",
+      "data_json": {
+        "chunk_de": "der Vorname",
+        "sentence_en": "first name",
+        "sentence_ar": "⁦الاسم الأول / الشخصي⁩",
+        "sentence_es": "nombre de pila",
+        "example_sentence_de": "Mein Vorname ist Karim."
+      }
+    },
+    {
+      "id": "card_10312_2",
+      "lesson_id": 10312,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "der Familienname",
+      "data_json": {
+        "chunk_de": "der Familienname",
+        "sentence_en": "surname / last name",
+        "sentence_ar": "⁦اللقب / اسم العائلة⁩",
+        "sentence_es": "apellido",
+        "example_sentence_de": "Mein Familienname ist Mansour."
+      }
+    },
+    {
+      "id": "card_10312_3",
+      "lesson_id": 10312,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "das Alter",
+      "data_json": {
+        "chunk_de": "das Alter",
+        "sentence_en": "age",
+        "sentence_ar": "⁦العمر / السن⁩",
+        "sentence_es": "edad",
+        "example_sentence_de": "Mein Alter ist 25 Jahre."
+      }
+    },
+    {
+      "id": "card_10312_4",
+      "lesson_id": 10312,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "der Wohnort",
+      "data_json": {
+        "chunk_de": "der Wohnort",
+        "sentence_en": "place of residence",
+        "sentence_ar": "⁦مكان الإقامة⁩",
+        "sentence_es": "lugar de residencia",
+        "example_sentence_de": "Mein Wohnort ist Berlin."
+      }
+    },
+    {
+      "id": "card_10313_1",
+      "lesson_id": 10313,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "die Straße",
+      "data_json": {
+        "chunk_de": "die Straße",
+        "sentence_en": "street",
+        "sentence_ar": "⁦الشارع⁩",
+        "sentence_es": "calle",
+        "example_sentence_de": "Ich wohne in der Goethestraße."
+      }
+    },
+    {
+      "id": "card_10313_2",
+      "lesson_id": 10313,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "die Hausnummer",
+      "data_json": {
+        "chunk_de": "die Hausnummer",
+        "sentence_en": "house number",
+        "sentence_ar": "⁦رقم المنزل⁩",
+        "sentence_es": "número de casa",
+        "example_sentence_de": "Meine Hausnummer ist 14."
+      }
+    },
+    {
+      "id": "card_10313_3",
+      "lesson_id": 10313,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "die Postleitzahl",
+      "data_json": {
+        "chunk_de": "die Postleitzahl",
+        "sentence_en": "postal code (PLZ)",
+        "sentence_ar": "⁦الرمز البريدي⁩",
+        "sentence_es": "código postal",
+        "example_sentence_de": "Die Postleitzahl ist 10115."
+      }
+    },
+    {
+      "id": "card_10313_4",
+      "lesson_id": 10313,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "die Telefonnummer",
+      "data_json": {
+        "chunk_de": "die Telefonnummer",
+        "sentence_en": "phone number",
+        "sentence_ar": "⁦رقم الهاتف⁩",
+        "sentence_es": "número de teléfono",
+        "example_sentence_de": "Meine Telefonnummer ist 0151..."
+      }
+    },
+    {
+      "id": "card_10313_5",
+      "lesson_id": 10313,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "die E-Mail-Adresse",
+      "data_json": {
+        "chunk_de": "die E-Mail-Adresse",
+        "sentence_en": "email address",
+        "sentence_ar": "⁦عنوان البريد الإلكتروني⁩",
+        "sentence_es": "correo electrónico",
+        "example_sentence_de": "Meine E-Mail-Adresse ist..."
+      }
+    },
+    {
+      "id": "card_10314_1",
+      "lesson_id": 10314,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "ledig",
+      "data_json": {
+        "chunk_de": "ledig",
+        "sentence_en": "single (unmarried)",
+        "sentence_ar": "⁦أعزب / عزباء⁩",
+        "sentence_es": "soltero/a",
+        "example_sentence_de": "Ich bin ledig."
+      }
+    },
+    {
+      "id": "card_10314_2",
+      "lesson_id": 10314,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "verheiratet",
+      "data_json": {
+        "chunk_de": "verheiratet",
+        "sentence_en": "married",
+        "sentence_ar": "⁦متزوج / متزوجة⁩",
+        "sentence_es": "casado/a",
+        "example_sentence_de": "Er ist verheiratet."
+      }
+    },
+    {
+      "id": "card_10314_3",
+      "lesson_id": 10314,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "der Student",
+      "data_json": {
+        "chunk_de": "der Student",
+        "sentence_en": "student (male)",
+        "sentence_ar": "⁦طالب جامعي⁩",
+        "sentence_es": "estudiante (m)",
+        "example_sentence_de": "Ich bin Student an der Universität."
+      }
+    },
+    {
+      "id": "card_10314_4",
+      "lesson_id": 10314,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "der Arzt",
+      "data_json": {
+        "chunk_de": "der Arzt",
+        "sentence_en": "doctor (physician)",
+        "sentence_ar": "⁦طبيب⁩",
+        "sentence_es": "médico",
+        "example_sentence_de": "Der Arzt arbeitet im Krankenhaus."
+      }
+    },
+    {
+      "id": "card_10315_1",
+      "lesson_id": 10315,
+      "card_type": "phrase_chunk",
+      "sort_order": 1,
+      "custom_prompt_de": "Ich möchte einen Kaffee.",
+      "data_json": {
+        "chunk_de": "Ich möchte einen Kaffee.",
+        "highlight_token": "Ich möchte",
+        "sentence_en": "I would like a coffee.",
+        "sentence_ar": "⁦أود فنجان قهوة.⁩",
+        "sentence_es": "Quisiera un café.",
+        "grammatical_note_en": "Höflicher Wunsch mit 'möchten'.",
+        "grammatical_note_ar": "⁦Höflicher Wunsch mit 'möchten'.⁩"
+      }
+    },
+    {
+      "id": "card_10315_2",
+      "lesson_id": 10315,
+      "card_type": "phrase_chunk",
+      "sort_order": 2,
+      "custom_prompt_de": "Ich möchte Deutsch lernen.",
+      "data_json": {
+        "chunk_de": "Ich möchte Deutsch lernen.",
+        "highlight_token": "lernen",
+        "sentence_en": "I would like to learn German.",
+        "sentence_ar": "⁦أود أن أتعلم الألمانية.⁩",
+        "sentence_es": "Quisiera aprender alemán.",
+        "grammatical_note_en": "Satzklammer: Hilfsverb an Position 2, Infinitiv am Ende.",
+        "grammatical_note_ar": "⁦Satzklammer: Hilfsverb an Position 2, Infinitiv am Ende.⁩"
+      }
+    },
+    {
+      "id": "card_10315_3",
+      "lesson_id": 10315,
+      "card_type": "phrase_chunk",
+      "sort_order": 3,
+      "custom_prompt_de": "Möchten Sie etwas trinken?",
+      "data_json": {
+        "chunk_de": "Möchten Sie etwas trinken?",
+        "highlight_token": "Möchten Sie",
+        "sentence_en": "Would you like something to drink?",
+        "sentence_ar": "⁦هل تود حضرتك شرب شيء؟⁩",
+        "sentence_es": "¿Quisiera tomar algo?",
+        "grammatical_note_en": "Höfliche Frage an den Gast.",
+        "grammatical_note_ar": "⁦Höfliche Frage an den Gast.⁩"
+      }
+    },
+    {
+      "id": "card_10316_1",
+      "lesson_id": 10316,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "das Formular",
+      "data_json": {
+        "chunk_de": "das Formular",
+        "sentence_en": "form",
+        "sentence_ar": "⁦استمارة رسمية⁩",
+        "sentence_es": "formulario",
+        "example_sentence_de": "Bitte füllen Sie das Formular aus."
+      }
+    },
+    {
+      "id": "card_10316_2",
+      "lesson_id": 10316,
+      "card_type": "concept",
+      "sort_order": 2,
+      "custom_prompt_de": "ausfüllen",
+      "data_json": {
+        "chunk_de": "ausfüllen",
+        "sentence_en": "to fill out",
+        "sentence_ar": "⁦يملأ استمارة⁩",
+        "sentence_es": "rellenar / completar",
+        "example_sentence_de": "Ich fülle das Anmeldeformular aus."
+      }
+    },
+    {
+      "id": "card_10316_3",
+      "lesson_id": 10316,
+      "card_type": "concept",
+      "sort_order": 3,
+      "custom_prompt_de": "der Geburtsort",
+      "data_json": {
+        "chunk_de": "der Geburtsort",
+        "sentence_en": "place of birth",
+        "sentence_ar": "⁦مكان الولادة⁩",
+        "sentence_es": "lugar de nacimiento",
+        "example_sentence_de": "Mein Geburtsort ist Damaskus."
+      }
+    },
+    {
+      "id": "card_10316_4",
+      "lesson_id": 10316,
+      "card_type": "concept",
+      "sort_order": 4,
+      "custom_prompt_de": "das Geburtsdatum",
+      "data_json": {
+        "chunk_de": "das Geburtsdatum",
+        "sentence_en": "date of birth",
+        "sentence_ar": "⁦تاريخ الولادة⁩",
+        "sentence_es": "fecha de nacimiento",
+        "example_sentence_de": "Mein Geburtsdatum ist 12.05.1998."
+      }
+    },
+    {
+      "id": "card_10316_5",
+      "lesson_id": 10316,
+      "card_type": "concept",
+      "sort_order": 5,
+      "custom_prompt_de": "die Unterschrift",
+      "data_json": {
+        "chunk_de": "die Unterschrift",
+        "sentence_en": "signature",
+        "sentence_ar": "⁦التوقيع⁩",
+        "sentence_es": "firma",
+        "example_sentence_de": "Ihre Unterschrift bitte hier unten."
+      }
+    },
+    {
+      "id": "card_10317_1",
+      "lesson_id": 10317,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Intro Checkpoint",
+      "data_json": {
+        "chunk_de": "Intro Level Checkpoint",
+        "sentence_en": "You are ready for the Intro Checkpoint!",
+        "sentence_ar": "⁦أنت الآن مستعد لاختبار إنهاء المستوى التمهيدي!⁩",
+        "sentence_es": "¡Estás listo para el examen de nivel Intro!",
+        "example_sentence_de": "Ich möchte mich vorstellen: Mein Name ist Karim."
       }
     },
     {

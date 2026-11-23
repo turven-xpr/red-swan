@@ -385,6 +385,11 @@ class CurriculumLearnCard {
   String? get grammaticalNoteDe => dataJson['grammatical_note_de'] as String?;
   String? get grammaticalNoteEn => dataJson['grammatical_note_en'] as String?;
   String? get grammaticalNoteAr => dataJson['grammatical_note_ar'] as String?;
+  String? get anchorWordDe => dataJson['anchor_word_de'] as String?;
+  String? get anchorWordEn => dataJson['anchor_word_en'] as String?;
+  String? get anchorWordAr => dataJson['anchor_word_ar'] as String?;
+  String? get anchorWordEs => dataJson['anchor_word_es'] as String?;
+  String? get phoneticNote => dataJson['phonetic_note'] as String?;
 
   List<String> get tileTokens =>
       (dataJson['tile_tokens'] as List?)?.map((e) => e.toString()).toList() ?? const [];

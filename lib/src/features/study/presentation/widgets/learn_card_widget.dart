@@ -93,6 +93,68 @@ class _PhoneticCard extends ConsumerWidget {
           _AudioChip(text: primaryText, ref: ref, isDark: isDark),
           const SizedBox(height: 16),
 
+          // Anchor word with translation (e.g., A wie Apfel -> der Apfel / apple)
+          if (card.anchorWordDe != null && card.anchorWordDe!.isNotEmpty) ...[
+            Container(
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(
+                color: isDark ? Colors.white.withValues(alpha: 0.05) : const Color(0xFFF8FAFC),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(
+                  color: AppColors.primary.withValues(alpha: 0.2),
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Directionality(
+                        textDirection: TextDirection.ltr,
+                        child: Text(
+                          card.anchorWordDe!,
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w800,
+                            color: isDark ? Colors.white : Colors.black87,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      _AudioIconButton(
+                        text: card.anchorWordDe!,
+                        ref: ref,
+                      ),
+                    ],
+                  ),
+                  if (_localizedAnchorTranslation != null) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      _localizedAnchorTranslation!,
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: isDark ? Colors.white70 : Colors.black54,
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+            const SizedBox(height: 14),
+          ],
+
+          // Example sentence (e.g. Der Apfel ist rot.)
+          if (card.exampleSentenceDe != null && card.exampleSentenceDe!.isNotEmpty) ...[
+            _ExampleSentence(
+              german: card.exampleSentenceDe!,
+              translation: _localizedSentence,
+              ref: ref,
+              isDark: isDark,
+            ),
+            const SizedBox(height: 14),
+          ],
+
           // Mouth / tongue tip
           if (mouthTip != null && mouthTip.isNotEmpty)
             _TipBox(text: mouthTip, isDark: isDark, icon: Icons.tips_and_updates_rounded),
@@ -150,6 +212,28 @@ class _PhoneticCard extends ConsumerWidget {
         return card.mouthTipEs ?? card.mouthTipEn;
       default:
         return card.mouthTipEn;
+    }
+  }
+
+  String? get _localizedAnchorTranslation {
+    switch (languageCode) {
+      case 'ar':
+        return card.anchorWordAr ?? card.anchorWordEn;
+      case 'es':
+        return card.anchorWordEs ?? card.anchorWordEn;
+      default:
+        return card.anchorWordEn;
+    }
+  }
+
+  String? get _localizedSentence {
+    switch (languageCode) {
+      case 'ar':
+        return card.sentenceAr ?? card.sentenceEn;
+      case 'es':
+        return card.sentenceEs ?? card.sentenceEn;
+      default:
+        return card.sentenceEn;
     }
   }
 

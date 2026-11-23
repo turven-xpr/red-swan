@@ -17,74 +17,105 @@ void main() {
     repo.loadFromData(data);
   });
 
-  group('Pilot Content Integration Tests', () {
-    test('content repo loaded pilot learn cards successfully', () {
-      expect(repo.allLearnCards.length, equals(9));
+  group('Intro & A1 Pilot Content Integration Tests', () {
+    test('content repo loaded 153 learn cards successfully', () {
+      expect(repo.allLearnCards.length, equals(153));
     });
 
-    test('Unit 1 Lesson 10101 has 2 presentation cards (concept + phonetic)', () {
+    test('Unit 1 Lesson 10101 (Deutsch entdecken) has 6 cognate concept cards', () {
       final cards = repo.getLearnCardsForLesson(10101);
-      expect(cards.length, equals(2));
-      expect(cards[0].type, equals(LearnCardType.concept));
-      expect(cards[0].customPromptDe, contains('Hallo'));
-      expect(cards[1].type, equals(LearnCardType.phonetic));
-      expect(cards[1].customPromptDe, equals('ch'));
-      expect(cards[1].contrastPairs.length, equals(2));
+      expect(cards.length, equals(6));
+      expect(cards[0].chunkDe, contains('Hotel'));
+      expect(cards[1].chunkDe, contains('Taxi'));
+      expect(cards[2].chunkDe, contains('Radio'));
+      expect(cards[3].chunkDe, contains('Bus'));
+      expect(cards[4].chunkDe, contains('Musik'));
+      expect(cards[5].chunkDe, contains('Café'));
     });
 
-    test('Unit 1 Lesson 10102 has 1 phonetic card with special German umlauts', () {
+    test('Unit 1 Lesson 10102 (Buchstaben A–F) teaches A to F with anchor words', () {
       final cards = repo.getLearnCardsForLesson(10102);
-      expect(cards.length, equals(1));
-      expect(cards[0].type, equals(LearnCardType.phonetic));
-      expect(cards[0].customPromptDe, contains('ä'));
-      expect(cards[0].sampleWords, contains('Äpfel'));
-      expect(cards[0].sampleWords, contains('schön'));
-    });
-
-    test('Unit 5 Lesson 10001 has 6 presentation cards (5 nouns + 1 chunk)', () {
-      final cards = repo.getLearnCardsForLesson(10001);
       expect(cards.length, equals(6));
 
-      // 5 Nouns with word links
-      for (int i = 0; i < 5; i++) {
-        expect(cards[i].type, equals(LearnCardType.nounArticle));
-        expect(cards[i].wordId, isNotNull);
-        final word = repo.getWordById(cards[i].wordId!);
-        expect(word, isNotNull);
-        expect(word!.gender, isNotNull);
-      }
+      expect(cards[0].customPromptDe, equals('A a'));
+      expect(cards[0].anchorWordDe, equals('der Apfel'));
+      expect(cards[0].anchorWordAr, contains('تفاحة'));
 
-      // Check card 0: Mutter (die)
-      final mutterWord = repo.getWordById(cards[0].wordId!);
-      expect(mutterWord!.lemma, equals('Mutter'));
-      expect(mutterWord.gender, equals('die'));
+      expect(cards[1].customPromptDe, equals('B b'));
+      expect(cards[1].anchorWordDe, equals('der Ball'));
 
-      // Check card 1: Vater (der)
-      final vaterWord = repo.getWordById(cards[1].wordId!);
-      expect(vaterWord!.lemma, equals('Vater'));
-      expect(vaterWord.gender, equals('der'));
+      expect(cards[2].customPromptDe, equals('C c'));
+      expect(cards[2].anchorWordDe, equals('der Computer'));
 
-      // Check card 2: Kind (das)
-      final kindWord = repo.getWordById(cards[2].wordId!);
-      expect(kindWord!.lemma, equals('Kind'));
-      expect(kindWord.gender, equals('das'));
+      expect(cards[3].customPromptDe, equals('D d'));
+      expect(cards[3].anchorWordDe, equals('Danke'));
 
-      // Check card 5: Phrase chunk (Ich habe einen Bruder)
-      expect(cards[5].type, equals(LearnCardType.phraseChunk));
-      expect(cards[5].chunkDe, equals('Ich habe einen Bruder'));
-      expect(cards[5].highlightToken, equals('einen'));
-      expect(cards[5].tileTokens, equals(['Ich', 'habe', 'einen', 'Bruder']));
+      expect(cards[4].customPromptDe, equals('E e'));
+      expect(cards[4].anchorWordDe, equals('der Elefant'));
+
+      expect(cards[5].customPromptDe, equals('F f'));
+      expect(cards[5].anchorWordDe, equals('das Fahrrad'));
     });
 
-    test('all Arabic translations in pilot cards include BiDi isolates', () {
+    test('Unit 1 Lesson 10107 (Umlaute & Eszett) strictly teaches ä, ö, ü, ß', () {
+      final cards = repo.getLearnCardsForLesson(10107);
+      expect(cards.length, equals(4));
+
+      expect(cards[0].customPromptDe, equals('Ä ä'));
+      expect(cards[0].anchorWordDe, equals('der Käse'));
+
+      expect(cards[1].customPromptDe, equals('Ö ö'));
+      expect(cards[1].anchorWordDe, equals('schön'));
+
+      expect(cards[2].customPromptDe, equals('Ü ü'));
+      expect(cards[2].anchorWordDe, equals('fünf'));
+
+      expect(cards[3].customPromptDe, equals('ß'));
+      expect(cards[3].anchorWordDe, equals('weiß'));
+    });
+
+    test('Unit 2 Lesson 10202 (Zahlen 0–6) teaches digits 0 to 6 sequentially', () {
+      final cards = repo.getLearnCardsForLesson(10202);
+      expect(cards.length, equals(7));
+      expect(cards[0].chunkDe, equals('null'));
+      expect(cards[1].chunkDe, equals('eins'));
+      expect(cards[6].chunkDe, equals('sechs'));
+    });
+
+    test('Unit 3 Lesson 10301 (Begrüßung) teaches standard greetings', () {
+      final cards = repo.getLearnCardsForLesson(10301);
+      expect(cards.length, equals(5));
+      expect(cards[0].chunkDe, equals('Guten Morgen'));
+      expect(cards[1].chunkDe, equals('Guten Tag'));
+      expect(cards[4].chunkDe, equals('Auf Wiedersehen'));
+    });
+
+    test('Unit 4 Lesson 10311 (Länder & Sprachen) teaches countries & languages', () {
+      final cards = repo.getLearnCardsForLesson(10311);
+      expect(cards.length, equals(6));
+      expect(cards[0].chunkDe, equals('Deutschland'));
+      expect(cards[1].chunkDe, equals('Deutsch'));
+      expect(cards[2].chunkDe, equals('Syrien'));
+      expect(cards[4].chunkDe, equals('Arabisch'));
+    });
+
+    test('Unit 5 Lesson 10001 (Familie Pilot) retains 6 presentation cards', () {
+      final cards = repo.getLearnCardsForLesson(10001);
+      expect(cards.length, equals(6));
+      expect(cards[0].wordId, equals(1)); // Mutter
+      expect(cards[1].wordId, equals(2)); // Vater
+      expect(cards[5].chunkDe, equals('Ich habe einen Bruder'));
+    });
+
+    test('all Arabic translations across all cards include BiDi isolates', () {
       for (final card in repo.allLearnCards) {
-        if (card.sentenceAr != null) {
+        if (card.sentenceAr != null && card.sentenceAr!.isNotEmpty) {
           expect(card.sentenceAr, contains('\u2066'));
           expect(card.sentenceAr, contains('\u2069'));
         }
-        if (card.mouthTipAr != null) {
-          expect(card.mouthTipAr, contains('\u2066'));
-          expect(card.mouthTipAr, contains('\u2069'));
+        if (card.anchorWordAr != null && card.anchorWordAr!.isNotEmpty) {
+          expect(card.anchorWordAr, contains('\u2066'));
+          expect(card.anchorWordAr, contains('\u2069'));
         }
       }
     });

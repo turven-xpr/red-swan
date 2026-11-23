@@ -112,6 +112,38 @@ void main() {
       expect(fakeAudio.lastSpoken, equals('Milch'));
     });
 
+    testWidgets('renders phonetic card with anchor word, translation, and example sentence', (tester) async {
+      final card = CurriculumLearnCard(
+        id: 'p_a1',
+        lessonId: 10102,
+        type: LearnCardType.phonetic,
+        sortOrder: 1,
+        customPromptDe: 'A a',
+        dataJson: {
+          'chunk_de': 'A wie Apfel',
+          'anchor_word_de': 'der Apfel',
+          'anchor_word_en': 'apple',
+          'anchor_word_ar': '\u2066تفاحة\u2069',
+          'example_sentence_de': 'Der Apfel ist rot.',
+          'sentence_en': 'The apple is red.',
+        },
+      );
+
+      await tester.pumpWidget(buildTestableWidget(LearnCardWidget(card: card, languageCode: 'en')));
+      await tester.pump();
+
+      expect(find.text('A a'), findsOneWidget);
+      expect(find.text('der Apfel'), findsOneWidget);
+      expect(find.text('apple'), findsOneWidget);
+      expect(find.text('Der Apfel ist rot.'), findsOneWidget);
+      expect(find.text('The apple is red.'), findsOneWidget);
+
+      // Tap anchor word audio button (second volume icon: 0=letter chip, 1=anchor word, 2=example sentence)
+      await tester.tap(find.byIcon(Icons.volume_up_rounded).at(1));
+      await tester.pump();
+      expect(fakeAudio.lastSpoken, equals('der Apfel'));
+    });
+
     testWidgets('renders noun_article card with gender colors and text badge', (tester) async {
       final card = CurriculumLearnCard(
         id: 'n1',
