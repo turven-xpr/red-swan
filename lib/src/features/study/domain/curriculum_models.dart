@@ -377,7 +377,13 @@ class CurriculumLearnCard {
   String? get mouthTipEs => dataJson['mouth_tip_es'] as String?;
   String? get swatchHex => dataJson['swatch_hex'] as String?;
   String? get chunkDe => dataJson['chunk_de'] as String?;
+  String? get translationEn => (dataJson['translation_en'] ?? dataJson['concept_en']) as String?;
+  String? get translationAr => (dataJson['translation_ar'] ?? dataJson['concept_ar']) as String?;
+  String? get translationEs => (dataJson['translation_es'] ?? dataJson['concept_es']) as String?;
   String? get exampleSentenceDe => dataJson['example_sentence_de'] as String?;
+  String? get exampleSentenceEn => (dataJson['example_sentence_en'] ?? dataJson['sentence_en']) as String?;
+  String? get exampleSentenceAr => (dataJson['example_sentence_ar'] ?? dataJson['sentence_ar']) as String?;
+  String? get exampleSentenceEs => (dataJson['example_sentence_es'] ?? dataJson['sentence_es']) as String?;
   String? get sentenceEn => dataJson['sentence_en'] as String?;
   String? get sentenceAr => dataJson['sentence_ar'] as String?;
   String? get sentenceEs => dataJson['sentence_es'] as String?;
@@ -390,6 +396,28 @@ class CurriculumLearnCard {
   String? get anchorWordAr => dataJson['anchor_word_ar'] as String?;
   String? get anchorWordEs => dataJson['anchor_word_es'] as String?;
   String? get phoneticNote => dataJson['phonetic_note'] as String?;
+
+  String? localizedExampleSentence(String languageCode) {
+    switch (languageCode) {
+      case 'ar':
+        return exampleSentenceAr ?? sentenceAr ?? sentenceEn;
+      case 'es':
+        return exampleSentenceEs ?? sentenceEs ?? sentenceEn;
+      default:
+        return exampleSentenceEn ?? sentenceEn;
+    }
+  }
+
+  String? localizedTranslation(String languageCode) {
+    switch (languageCode) {
+      case 'ar':
+        return translationAr ?? anchorWordAr ?? sentenceAr;
+      case 'es':
+        return translationEs ?? anchorWordEs ?? sentenceEs;
+      default:
+        return translationEn ?? anchorWordEn ?? sentenceEn;
+    }
+  }
 
   List<String> get tileTokens =>
       (dataJson['tile_tokens'] as List?)?.map((e) => e.toString()).toList() ?? const [];

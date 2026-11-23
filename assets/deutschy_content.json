@@ -22649,10 +22649,16 @@
       "custom_prompt_de": "das Hotel",
       "data_json": {
         "chunk_de": "das Hotel",
-        "sentence_en": "hotel",
-        "sentence_ar": "⁦فندق⁩",
-        "sentence_es": "hotel",
-        "example_sentence_de": "Das Hotel ist modern."
+        "translation_en": "hotel",
+        "translation_ar": "⁦فندق⁩",
+        "translation_es": "hotel",
+        "example_sentence_de": "Das Hotel ist modern.",
+        "example_sentence_en": "The hotel is modern.",
+        "example_sentence_ar": "⁦الفندق حديث.⁩",
+        "example_sentence_es": "El hotel es moderno.",
+        "sentence_en": "The hotel is modern.",
+        "sentence_ar": "⁦الفندق حديث.⁩",
+        "sentence_es": "El hotel es moderno."
       }
     },
     {
@@ -22663,10 +22669,16 @@
       "custom_prompt_de": "das Taxi",
       "data_json": {
         "chunk_de": "das Taxi",
-        "sentence_en": "taxi",
-        "sentence_ar": "⁦سيارة أجرة⁩",
-        "sentence_es": "taxi",
-        "example_sentence_de": "Das Taxi kommt gleich."
+        "translation_en": "taxi",
+        "translation_ar": "⁦سيارة أجرة⁩",
+        "translation_es": "taxi",
+        "example_sentence_de": "Das Taxi kommt gleich.",
+        "example_sentence_en": "The taxi is coming soon.",
+        "example_sentence_ar": "⁦سيارة الأجرة قادمة حالاً.⁩",
+        "example_sentence_es": "El taxi viene pronto.",
+        "sentence_en": "The taxi is coming soon.",
+        "sentence_ar": "⁦سيارة الأجرة قادمة حالاً.⁩",
+        "sentence_es": "El taxi viene pronto."
       }
     },
     {
@@ -22677,10 +22689,16 @@
       "custom_prompt_de": "das Radio",
       "data_json": {
         "chunk_de": "das Radio",
-        "sentence_en": "radio",
-        "sentence_ar": "⁦مذياع⁩",
-        "sentence_es": "radio",
-        "example_sentence_de": "Das Radio spielt Musik."
+        "translation_en": "radio",
+        "translation_ar": "⁦مذياع⁩",
+        "translation_es": "radio",
+        "example_sentence_de": "Das Radio spielt Musik.",
+        "example_sentence_en": "The radio is playing music.",
+        "example_sentence_ar": "⁦المذياع يعزف الموسيقى.⁩",
+        "example_sentence_es": "La radio reproduce música.",
+        "sentence_en": "The radio is playing music.",
+        "sentence_ar": "⁦المذياع يعزف الموسيقى.⁩",
+        "sentence_es": "La radio reproduce música."
       }
     },
     {
@@ -22691,10 +22709,16 @@
       "custom_prompt_de": "der Bus",
       "data_json": {
         "chunk_de": "der Bus",
-        "sentence_en": "bus",
-        "sentence_ar": "⁦حافلة⁩",
-        "sentence_es": "autobús",
-        "example_sentence_de": "Der Bus fährt nach Berlin."
+        "translation_en": "bus",
+        "translation_ar": "⁦حافلة⁩",
+        "translation_es": "autobús",
+        "example_sentence_de": "Der Bus fährt nach Berlin.",
+        "example_sentence_en": "The bus goes to Berlin.",
+        "example_sentence_ar": "⁦الحافلة تتجه إلى برلين.⁩",
+        "example_sentence_es": "El autobús va a Berlín.",
+        "sentence_en": "The bus goes to Berlin.",
+        "sentence_ar": "⁦الحافلة تتجه إلى برلين.⁩",
+        "sentence_es": "El autobús va a Berlín."
       }
     },
     {
@@ -22705,10 +22729,16 @@
       "custom_prompt_de": "die Musik",
       "data_json": {
         "chunk_de": "die Musik",
-        "sentence_en": "music",
-        "sentence_ar": "⁦موسيقى⁩",
-        "sentence_es": "música",
-        "example_sentence_de": "Wir hören gerne Musik."
+        "translation_en": "music",
+        "translation_ar": "⁦موسيقى⁩",
+        "translation_es": "música",
+        "example_sentence_de": "Wir hören gerne Musik.",
+        "example_sentence_en": "We like listening to music.",
+        "example_sentence_ar": "⁦نحن نحب الاستماع إلى الموسيقى.⁩",
+        "example_sentence_es": "Nos gusta escuchar música.",
+        "sentence_en": "We like listening to music.",
+        "sentence_ar": "⁦نحن نحب الاستماع إلى الموسيقى.⁩",
+        "sentence_es": "Nos gusta escuchar música."
       }
     },
     {
@@ -22719,10 +22749,16 @@
       "custom_prompt_de": "das Café",
       "data_json": {
         "chunk_de": "das Café",
-        "sentence_en": "café",
-        "sentence_ar": "⁦مقهى⁩",
-        "sentence_es": "cafetería",
-        "example_sentence_de": "Das Café ist geöffnet."
+        "translation_en": "café",
+        "translation_ar": "⁦مقهى⁩",
+        "translation_es": "cafetería",
+        "example_sentence_de": "Das Café ist geöffnet.",
+        "example_sentence_en": "The café is open.",
+        "example_sentence_ar": "⁦المقهى مفتوح.⁩",
+        "example_sentence_es": "La cafetería está abierta.",
+        "sentence_en": "The café is open.",
+        "sentence_ar": "⁦المقهى مفتوح.⁩",
+        "sentence_es": "La cafetería está abierta."
       }
     },
     {
@@ -22737,7 +22773,13 @@
         "anchor_word_en": "apple",
         "anchor_word_ar": "⁦تفاحة⁩",
         "anchor_word_es": "manzana",
-        "example_sentence_de": "Der Apfel ist rot."
+        "example_sentence_de": "Der Apfel ist rot.",
+        "example_sentence_en": "The apple is red.",
+        "example_sentence_ar": "⁦التفاحة حمراء.⁩",
+        "example_sentence_es": "La manzana es roja.",
+        "sentence_en": "The apple is red.",
+        "sentence_ar": "⁦التفاحة حمراء.⁩",
+        "sentence_es": "La manzana es roja."
       }
     },
     {
@@ -22752,7 +22794,13 @@
         "anchor_word_en": "ball",
         "anchor_word_ar": "⁦كرة⁩",
         "anchor_word_es": "pelota",
-        "example_sentence_de": "Der Ball ist rund."
+        "example_sentence_de": "Der Ball ist rund.",
+        "example_sentence_en": "The ball is round.",
+        "example_sentence_ar": "⁦الكرة مستديرة.⁩",
+        "example_sentence_es": "La pelota es redonda.",
+        "sentence_en": "The ball is round.",
+        "sentence_ar": "⁦الكرة مستديرة.⁩",
+        "sentence_es": "La pelota es redonda."
       }
     },
     {
@@ -22767,7 +22815,13 @@
         "anchor_word_en": "computer",
         "anchor_word_ar": "⁦حاسوب⁩",
         "anchor_word_es": "ordenador",
-        "example_sentence_de": "Der Computer ist neu."
+        "example_sentence_de": "Der Computer ist neu.",
+        "example_sentence_en": "The computer is new.",
+        "example_sentence_ar": "⁦الحاسوب جديد.⁩",
+        "example_sentence_es": "El ordenador es nuevo.",
+        "sentence_en": "The computer is new.",
+        "sentence_ar": "⁦الحاسوب جديد.⁩",
+        "sentence_es": "El ordenador es nuevo."
       }
     },
     {
@@ -22782,7 +22836,13 @@
         "anchor_word_en": "thank you",
         "anchor_word_ar": "⁦شكراً⁩",
         "anchor_word_es": "gracias",
-        "example_sentence_de": "Vielen Dank!"
+        "example_sentence_de": "Vielen Dank!",
+        "example_sentence_en": "Thank you very much!",
+        "example_sentence_ar": "⁦شكراً جزيلاً!⁩",
+        "example_sentence_es": "¡Muchas gracias!",
+        "sentence_en": "Thank you very much!",
+        "sentence_ar": "⁦شكراً جزيلاً!⁩",
+        "sentence_es": "¡Muchas gracias!"
       }
     },
     {
@@ -22797,7 +22857,13 @@
         "anchor_word_en": "elephant",
         "anchor_word_ar": "⁦فيل⁩",
         "anchor_word_es": "elefante",
-        "example_sentence_de": "Der Elefant ist groß."
+        "example_sentence_de": "Der Elefant ist groß.",
+        "example_sentence_en": "The elephant is big.",
+        "example_sentence_ar": "⁦الفيل ضخم.⁩",
+        "example_sentence_es": "El elefante es grande.",
+        "sentence_en": "The elephant is big.",
+        "sentence_ar": "⁦الفيل ضخم.⁩",
+        "sentence_es": "El elefante es grande."
       }
     },
     {
@@ -22812,7 +22878,13 @@
         "anchor_word_en": "bicycle",
         "anchor_word_ar": "⁦دراجة⁩",
         "anchor_word_es": "bicicleta",
-        "example_sentence_de": "Das Fahrrad fährt schnell."
+        "example_sentence_de": "Das Fahrrad fährt schnell.",
+        "example_sentence_en": "The bicycle goes fast.",
+        "example_sentence_ar": "⁦الدراجة تسير بسرعة.⁩",
+        "example_sentence_es": "La bicicleta va rápido.",
+        "sentence_en": "The bicycle goes fast.",
+        "sentence_ar": "⁦الدراجة تسير بسرعة.⁩",
+        "sentence_es": "La bicicleta va rápido."
       }
     },
     {
@@ -22827,7 +22899,13 @@
         "anchor_word_en": "garden",
         "anchor_word_ar": "⁦حديقة⁩",
         "anchor_word_es": "jardín",
-        "example_sentence_de": "Der Garten ist schön."
+        "example_sentence_de": "Der Garten ist schön.",
+        "example_sentence_en": "The garden is beautiful.",
+        "example_sentence_ar": "⁦الحديقة جميلة.⁩",
+        "example_sentence_es": "El jardín es hermoso.",
+        "sentence_en": "The garden is beautiful.",
+        "sentence_ar": "⁦الحديقة جميلة.⁩",
+        "sentence_es": "El jardín es hermoso."
       }
     },
     {
@@ -22842,7 +22920,13 @@
         "anchor_word_en": "hello",
         "anchor_word_ar": "⁦مرحباً⁩",
         "anchor_word_es": "hola",
-        "example_sentence_de": "Hallo! Wie geht's?"
+        "example_sentence_de": "Hallo! Wie geht's?",
+        "example_sentence_en": "Hello! How are you?",
+        "example_sentence_ar": "⁦مرحباً! كيف حالك؟⁩",
+        "example_sentence_es": "¡Hola! ¿Cómo estás?",
+        "sentence_en": "Hello! How are you?",
+        "sentence_ar": "⁦مرحباً! كيف حالك؟⁩",
+        "sentence_es": "¡Hola! ¿Cómo estás?"
       }
     },
     {
@@ -22857,7 +22941,13 @@
         "anchor_word_en": "island",
         "anchor_word_ar": "⁦جزيرة⁩",
         "anchor_word_es": "isla",
-        "example_sentence_de": "Die Insel ist ruhig."
+        "example_sentence_de": "Die Insel ist ruhig.",
+        "example_sentence_en": "The island is peaceful.",
+        "example_sentence_ar": "⁦الجزيرة هادئة.⁩",
+        "example_sentence_es": "La isla es tranquila.",
+        "sentence_en": "The island is peaceful.",
+        "sentence_ar": "⁦الجزيرة هادئة.⁩",
+        "sentence_es": "La isla es tranquila."
       }
     },
     {
@@ -22872,7 +22962,13 @@
         "anchor_word_en": "yes",
         "anchor_word_ar": "⁦نعم⁩",
         "anchor_word_es": "sí",
-        "example_sentence_de": "Ja, bitte."
+        "example_sentence_de": "Ja, bitte.",
+        "example_sentence_en": "Yes, please.",
+        "example_sentence_ar": "⁦نعم، من فضلك.⁩",
+        "example_sentence_es": "Sí, por favor.",
+        "sentence_en": "Yes, please.",
+        "sentence_ar": "⁦نعم، من فضلك.⁩",
+        "sentence_es": "Sí, por favor."
       }
     },
     {
@@ -22887,7 +22983,13 @@
         "anchor_word_en": "coffee",
         "anchor_word_ar": "⁦قهوة⁩",
         "anchor_word_es": "café",
-        "example_sentence_de": "Der Kaffee ist heiß."
+        "example_sentence_de": "Der Kaffee ist heiß.",
+        "example_sentence_en": "The coffee is hot.",
+        "example_sentence_ar": "⁦القهوة ساخنة.⁩",
+        "example_sentence_es": "El café está caliente.",
+        "sentence_en": "The coffee is hot.",
+        "sentence_ar": "⁦القهوة ساخنة.⁩",
+        "sentence_es": "El café está caliente."
       }
     },
     {
@@ -22902,7 +23004,13 @@
         "anchor_word_en": "lamp",
         "anchor_word_ar": "⁦مصباح⁩",
         "anchor_word_es": "lámpara",
-        "example_sentence_de": "Die Lampe ist hell."
+        "example_sentence_de": "Die Lampe ist hell.",
+        "example_sentence_en": "The lamp is bright.",
+        "example_sentence_ar": "⁦المصباح ساطع.⁩",
+        "example_sentence_es": "La lámpara es brillante.",
+        "sentence_en": "The lamp is bright.",
+        "sentence_ar": "⁦المصباح ساطع.⁩",
+        "sentence_es": "La lámpara es brillante."
       }
     },
     {
@@ -22917,7 +23025,13 @@
         "anchor_word_en": "milk",
         "anchor_word_ar": "⁦حليب⁩",
         "anchor_word_es": "leche",
-        "example_sentence_de": "Ich trinke Milch."
+        "example_sentence_de": "Ich trinke Milch.",
+        "example_sentence_en": "I drink milk.",
+        "example_sentence_ar": "⁦أنا أشرب الحليب.⁩",
+        "example_sentence_es": "Bebo leche.",
+        "sentence_en": "I drink milk.",
+        "sentence_ar": "⁦أنا أشرب الحليب.⁩",
+        "sentence_es": "Bebo leche."
       }
     },
     {
@@ -22932,7 +23046,13 @@
         "anchor_word_en": "no",
         "anchor_word_ar": "⁦لا⁩",
         "anchor_word_es": "no",
-        "example_sentence_de": "Nein, danke."
+        "example_sentence_de": "Nein, danke.",
+        "example_sentence_en": "No, thank you.",
+        "example_sentence_ar": "⁦لا، شكراً.⁩",
+        "example_sentence_es": "No, gracias.",
+        "sentence_en": "No, thank you.",
+        "sentence_ar": "⁦لا، شكراً.⁩",
+        "sentence_es": "No, gracias."
       }
     },
     {
@@ -22947,7 +23067,13 @@
         "anchor_word_en": "orange",
         "anchor_word_ar": "⁦برتقال⁩",
         "anchor_word_es": "naranja",
-        "example_sentence_de": "Die Orange schmeckt gut."
+        "example_sentence_de": "Die Orange schmeckt gut.",
+        "example_sentence_en": "The orange tastes good.",
+        "example_sentence_ar": "⁦البرتقالة طعمها لذيذ.⁩",
+        "example_sentence_es": "La naranja sabe bien.",
+        "sentence_en": "The orange tastes good.",
+        "sentence_ar": "⁦البرتقالة طعمها لذيذ.⁩",
+        "sentence_es": "La naranja sabe bien."
       }
     },
     {
@@ -22962,7 +23088,13 @@
         "anchor_word_en": "post office",
         "anchor_word_ar": "⁦بريد⁩",
         "anchor_word_es": "correos",
-        "example_sentence_de": "Die Post ist da."
+        "example_sentence_de": "Die Post ist da.",
+        "example_sentence_en": "The mail is here.",
+        "example_sentence_ar": "⁦وصل البريد.⁩",
+        "example_sentence_es": "El correo está aquí.",
+        "sentence_en": "The mail is here.",
+        "sentence_ar": "⁦وصل البريد.⁩",
+        "sentence_es": "El correo está aquí."
       }
     },
     {
@@ -22977,7 +23109,13 @@
         "anchor_word_en": "source",
         "anchor_word_ar": "⁦ينبوع⁩",
         "anchor_word_es": "fuente",
-        "example_sentence_de": "Die Quelle ist frisch."
+        "example_sentence_de": "Die Quelle ist frisch.",
+        "example_sentence_en": "The spring is fresh.",
+        "example_sentence_ar": "⁦ينبوع الماء عذب.⁩",
+        "example_sentence_es": "La fuente es fresca.",
+        "sentence_en": "The spring is fresh.",
+        "sentence_ar": "⁦ينبوع الماء عذب.⁩",
+        "sentence_es": "La fuente es fresca."
       }
     },
     {
@@ -22992,7 +23130,13 @@
         "anchor_word_en": "red",
         "anchor_word_ar": "⁦أحمر⁩",
         "anchor_word_es": "rojo",
-        "example_sentence_de": "Der Apfel ist rot."
+        "example_sentence_de": "Der Apfel ist rot.",
+        "example_sentence_en": "The apple is red.",
+        "example_sentence_ar": "⁦التفاحة حمراء.⁩",
+        "example_sentence_es": "La manzana es roja.",
+        "sentence_en": "The apple is red.",
+        "sentence_ar": "⁦التفاحة حمراء.⁩",
+        "sentence_es": "La manzana es roja."
       }
     },
     {
@@ -23007,7 +23151,13 @@
         "anchor_word_en": "sun",
         "anchor_word_ar": "⁦شمس⁩",
         "anchor_word_es": "sol",
-        "example_sentence_de": "Die Sonne scheint."
+        "example_sentence_de": "Die Sonne scheint.",
+        "example_sentence_en": "The sun is shining.",
+        "example_sentence_ar": "⁦الشمس مشرقة.⁩",
+        "example_sentence_es": "El sol brilla.",
+        "sentence_en": "The sun is shining.",
+        "sentence_ar": "⁦الشمس مشرقة.⁩",
+        "sentence_es": "El sol brilla."
       }
     },
     {
@@ -23022,7 +23172,13 @@
         "anchor_word_en": "tea",
         "anchor_word_ar": "⁦شاي⁩",
         "anchor_word_es": "té",
-        "example_sentence_de": "Der Tee ist warm."
+        "example_sentence_de": "Der Tee ist warm.",
+        "example_sentence_en": "The tea is warm.",
+        "example_sentence_ar": "⁦الشاي دافئ.⁩",
+        "example_sentence_es": "El té está caliente.",
+        "sentence_en": "The tea is warm.",
+        "sentence_ar": "⁦الشاي دافئ.⁩",
+        "sentence_es": "El té está caliente."
       }
     },
     {
@@ -23037,7 +23193,13 @@
         "anchor_word_en": "clock / watch",
         "anchor_word_ar": "⁦ساعة⁩",
         "anchor_word_es": "reloj",
-        "example_sentence_de": "Wie viel Uhr ist es?"
+        "example_sentence_de": "Wie viel Uhr ist es?",
+        "example_sentence_en": "What time is it?",
+        "example_sentence_ar": "⁦كم الساعة؟⁩",
+        "example_sentence_es": "¿Qué hora es?",
+        "sentence_en": "What time is it?",
+        "sentence_ar": "⁦كم الساعة؟⁩",
+        "sentence_es": "¿Qué hora es?"
       }
     },
     {
@@ -23052,7 +23214,13 @@
         "anchor_word_en": "seven (7)",
         "anchor_word_ar": "⁦سبعة (7)⁩",
         "anchor_word_es": "siete (7)",
-        "example_sentence_de": "Ich habe sieben Bücher."
+        "example_sentence_de": "Ich habe sieben Bücher.",
+        "example_sentence_en": "I have seven books.",
+        "example_sentence_ar": "⁦لدي سبعة كتب.⁩",
+        "example_sentence_es": "Tengo siete libros.",
+        "sentence_en": "I have seven books.",
+        "sentence_ar": "⁦لدي سبعة كتب.⁩",
+        "sentence_es": "Tengo siete libros."
       }
     },
     {
@@ -23067,7 +23235,13 @@
         "anchor_word_en": "good day",
         "anchor_word_ar": "⁦يوم سعيد⁩",
         "anchor_word_es": "buenos días",
-        "example_sentence_de": "Guten Tag, Herr Müller!"
+        "example_sentence_de": "Guten Tag, Herr Müller!",
+        "example_sentence_en": "Good day, Mr. Müller!",
+        "example_sentence_ar": "⁦يوم سعيد، سيد مولر!⁩",
+        "example_sentence_es": "¡Buenos días, señor Müller!",
+        "sentence_en": "Good day, Mr. Müller!",
+        "sentence_ar": "⁦يوم سعيد، سيد مولر!⁩",
+        "sentence_es": "¡Buenos días, señor Müller!"
       }
     },
     {
@@ -23082,7 +23256,13 @@
         "anchor_word_en": "four (pronounced like 'F')",
         "anchor_word_ar": "⁦أربعة (يُنطق مثل حرف الفاء F)⁩",
         "anchor_word_es": "cuatro (suena como F)",
-        "example_sentence_de": "Vier Tassen Kaffee."
+        "example_sentence_de": "Vier Tassen Kaffee.",
+        "example_sentence_en": "Four cups of coffee.",
+        "example_sentence_ar": "⁦أربعة فناجين قهوة.⁩",
+        "example_sentence_es": "Cuatro tazas de café.",
+        "sentence_en": "Four cups of coffee.",
+        "sentence_ar": "⁦أربعة فناجين قهوة.⁩",
+        "sentence_es": "Cuatro tazas de café."
       }
     },
     {
@@ -23097,7 +23277,13 @@
         "anchor_word_en": "water (pronounced like English 'V')",
         "anchor_word_ar": "⁦ماء (يُنطق مثل V الإنجليزية)⁩",
         "anchor_word_es": "agua (suena como V)",
-        "example_sentence_de": "Das Wasser ist kalt."
+        "example_sentence_de": "Das Wasser ist kalt.",
+        "example_sentence_en": "The water is cold.",
+        "example_sentence_ar": "⁦الماء بارد.⁩",
+        "example_sentence_es": "El agua está fría.",
+        "sentence_en": "The water is cold.",
+        "sentence_ar": "⁦الماء بارد.⁩",
+        "sentence_es": "El agua está fría."
       }
     },
     {
@@ -23112,7 +23298,13 @@
         "anchor_word_en": "taxi (contains 'ks' sound)",
         "anchor_word_ar": "⁦تاكسي (صوت 'كس')⁩",
         "anchor_word_es": "taxi",
-        "example_sentence_de": "Ich nehme ein Taxi."
+        "example_sentence_de": "Ich nehme ein Taxi.",
+        "example_sentence_en": "I'll take a taxi.",
+        "example_sentence_ar": "⁦سآخذ سيارة أجرة.⁩",
+        "example_sentence_es": "Tomo un taxi.",
+        "sentence_en": "I'll take a taxi.",
+        "sentence_ar": "⁦سآخذ سيارة أجرة.⁩",
+        "sentence_es": "Tomo un taxi."
       }
     },
     {
@@ -23127,7 +23319,13 @@
         "anchor_word_en": "yoga",
         "anchor_word_ar": "⁦يوغا⁩",
         "anchor_word_es": "yoga",
-        "example_sentence_de": "Yoga macht fit."
+        "example_sentence_de": "Yoga macht fit.",
+        "example_sentence_en": "Yoga keeps you fit.",
+        "example_sentence_ar": "⁦اليوغا تبقيك رشيقاً.⁩",
+        "example_sentence_es": "El yoga te pone en forma.",
+        "sentence_en": "Yoga keeps you fit.",
+        "sentence_ar": "⁦اليوغا تبقيك رشيقاً.⁩",
+        "sentence_es": "El yoga te pone en forma."
       }
     },
     {
@@ -23142,7 +23340,13 @@
         "anchor_word_en": "train (pronounced like 'ts')",
         "anchor_word_ar": "⁦قطار (يُنطق مثل 'تس' ts)⁩",
         "anchor_word_es": "tren (suena como ts)",
-        "example_sentence_de": "Der Zug kommt jetzt."
+        "example_sentence_de": "Der Zug kommt jetzt.",
+        "example_sentence_en": "The train is coming now.",
+        "example_sentence_ar": "⁦القطار قادم الآن.⁩",
+        "example_sentence_es": "El tren llega ahora.",
+        "sentence_en": "The train is coming now.",
+        "sentence_ar": "⁦القطار قادم الآن.⁩",
+        "sentence_es": "El tren llega ahora."
       }
     },
     {
@@ -23158,6 +23362,12 @@
         "anchor_word_ar": "⁦جبن (ä تنطق كالفتحة الممتدة)⁩",
         "anchor_word_es": "queso",
         "example_sentence_de": "Der Käse schmeckt gut.",
+        "example_sentence_en": "The cheese tastes good.",
+        "example_sentence_ar": "⁦الجبن طعمه لذيذ.⁩",
+        "example_sentence_es": "El queso sabe bien.",
+        "sentence_en": "The cheese tastes good.",
+        "sentence_ar": "⁦الجبن طعمه لذيذ.⁩",
+        "sentence_es": "El queso sabe bien.",
         "mouth_tip_en": "Mund leicht geöffnet wie beim 'e'",
         "mouth_tip_ar": "⁦نصيحة النطق: Mund leicht geöffnet wie beim 'e'⁩"
       }
@@ -23175,6 +23385,12 @@
         "anchor_word_ar": "⁦جميل (تدوير الشفتين ونطق 'إي')⁩",
         "anchor_word_es": "hermoso",
         "example_sentence_de": "Das Bild ist schön.",
+        "example_sentence_en": "The picture is beautiful.",
+        "example_sentence_ar": "⁦الصورة جميلة.⁩",
+        "example_sentence_es": "El cuadro es hermoso.",
+        "sentence_en": "The picture is beautiful.",
+        "sentence_ar": "⁦الصورة جميلة.⁩",
+        "sentence_es": "El cuadro es hermoso.",
         "mouth_tip_en": "Lippen runden wie für 'o', aber 'e' sprechen",
         "mouth_tip_ar": "⁦نصيحة النطق: Lippen runden wie für 'o', aber 'e' sprechen⁩"
       }
@@ -23192,6 +23408,12 @@
         "anchor_word_ar": "⁦خمسة (تدوير الشفتين ونطق 'ي')⁩",
         "anchor_word_es": "cinco",
         "example_sentence_de": "Es ist fünf Uhr.",
+        "example_sentence_en": "It is five o'clock.",
+        "example_sentence_ar": "⁦إنها الساعة الخامسة.⁩",
+        "example_sentence_es": "Son las cinco.",
+        "sentence_en": "It is five o'clock.",
+        "sentence_ar": "⁦إنها الساعة الخامسة.⁩",
+        "sentence_es": "Son las cinco.",
         "mouth_tip_en": "Lippen spitzen wie für 'u', aber 'i' sprechen",
         "mouth_tip_ar": "⁦نصيحة النطق: Lippen spitzen wie für 'u', aber 'i' sprechen⁩"
       }
@@ -23209,6 +23431,12 @@
         "anchor_word_ar": "⁦أبيض (حرف سين مشدد حاد)⁩",
         "anchor_word_es": "blanco",
         "example_sentence_de": "Das Hemd ist weiß.",
+        "example_sentence_en": "The shirt is white.",
+        "example_sentence_ar": "⁦القميص أبيض.⁩",
+        "example_sentence_es": "La camisa es blanca.",
+        "sentence_en": "The shirt is white.",
+        "sentence_ar": "⁦القميص أبيض.⁩",
+        "sentence_es": "La camisa es blanca.",
         "mouth_tip_en": "Wird wie ein scharfes 'ss' gesprochen",
         "mouth_tip_ar": "⁦نصيحة النطق: Wird wie ein scharfes 'ss' gesprochen⁩"
       }
@@ -23225,7 +23453,13 @@
         "anchor_word_en": "one (sounds like 'eye')",
         "anchor_word_ar": "⁦واحد (يُنطق مثل eye)⁩",
         "anchor_word_es": "uno",
-        "example_sentence_de": "Eins, zwei, drei."
+        "example_sentence_de": "Eins, zwei, drei.",
+        "example_sentence_en": "One, two, three.",
+        "example_sentence_ar": "⁦واحد، اثنان، ثلاثة.⁩",
+        "example_sentence_es": "Uno, dos, tres.",
+        "sentence_en": "One, two, three.",
+        "sentence_ar": "⁦واحد، اثنان، ثلاثة.⁩",
+        "sentence_es": "Uno, dos, tres."
       }
     },
     {
@@ -23240,7 +23474,13 @@
         "anchor_word_en": "seven (long 'ee' sound)",
         "anchor_word_ar": "⁦سبعة (ياء ممدودة طويلة)⁩",
         "anchor_word_es": "siete",
-        "example_sentence_de": "Sieben Tage."
+        "example_sentence_de": "Sieben Tage.",
+        "example_sentence_en": "Seven days.",
+        "example_sentence_ar": "⁦سبعة أيام.⁩",
+        "example_sentence_es": "Siete días.",
+        "sentence_en": "Seven days.",
+        "sentence_ar": "⁦سبعة أيام.⁩",
+        "sentence_es": "Siete días."
       }
     },
     {
@@ -23255,7 +23495,13 @@
         "anchor_word_en": "euro (sounds like 'oy')",
         "anchor_word_ar": "⁦يورو (يُنطق مثل 'أوي')⁩",
         "anchor_word_es": "euro",
-        "example_sentence_de": "Drei Euro."
+        "example_sentence_de": "Drei Euro.",
+        "example_sentence_en": "Three euros.",
+        "example_sentence_ar": "⁦ثلاثة يورو.⁩",
+        "example_sentence_es": "Tres euros.",
+        "sentence_en": "Three euros.",
+        "sentence_ar": "⁦ثلاثة يورو.⁩",
+        "sentence_es": "Tres euros."
       }
     },
     {
@@ -23270,7 +23516,13 @@
         "anchor_word_en": "car (sounds like 'ow')",
         "anchor_word_ar": "⁦سيارة (يُنطق مثل 'أو')⁩",
         "anchor_word_es": "coche",
-        "example_sentence_de": "Das Auto fährt schnell."
+        "example_sentence_de": "Das Auto fährt schnell.",
+        "example_sentence_en": "The car drives fast.",
+        "example_sentence_ar": "⁦السيارة تسير بسرعة.⁩",
+        "example_sentence_es": "El coche va rápido.",
+        "sentence_en": "The car drives fast.",
+        "sentence_ar": "⁦السيارة تسير بسرعة.⁩",
+        "sentence_es": "El coche va rápido."
       }
     },
     {
@@ -23285,7 +23537,13 @@
         "anchor_word_en": "school (sounds like 'sh')",
         "anchor_word_ar": "⁦مدرسة (يُنطق مثل حرف الشين)⁩",
         "anchor_word_es": "escuela",
-        "example_sentence_de": "Die Schule ist groß."
+        "example_sentence_de": "Die Schule ist groß.",
+        "example_sentence_en": "The school is big.",
+        "example_sentence_ar": "⁦المدرسة كبيرة.⁩",
+        "example_sentence_es": "La escuela es grande.",
+        "sentence_en": "The school is big.",
+        "sentence_ar": "⁦المدرسة كبيرة.⁩",
+        "sentence_es": "La escuela es grande."
       }
     },
     {
@@ -23300,7 +23558,13 @@
         "anchor_word_en": "soft after e/i, hard after a/o/u",
         "anchor_word_ar": "⁦ناعم بعد e/i وخشن بعد a/o/u⁩",
         "anchor_word_es": "ch suave y dura",
-        "example_sentence_de": "Ich bin hier. Das Buch ist alt."
+        "example_sentence_de": "Ich bin hier.",
+        "example_sentence_en": "I am here.",
+        "example_sentence_ar": "⁦أنا هنا.⁩",
+        "example_sentence_es": "Estoy aquí.",
+        "sentence_en": "I am here.",
+        "sentence_ar": "⁦أنا هنا.⁩",
+        "sentence_es": "Estoy aquí."
       }
     },
     {
@@ -23311,10 +23575,16 @@
       "custom_prompt_de": "Buchstabieren",
       "data_json": {
         "chunk_de": "Wie buchstabiert man das?",
-        "sentence_en": "How do you spell that?",
-        "sentence_ar": "⁦كيف تتهجى ذلك؟⁩",
-        "sentence_es": "¿Cómo se deletrea eso?",
-        "example_sentence_de": "H-O-T-E-L: Hotel."
+        "translation_en": "How do you spell that?",
+        "translation_ar": "⁦كيف تتهجى ذلك؟⁩",
+        "translation_es": "¿Cómo se deletrea eso?",
+        "example_sentence_de": "H-O-T-E-L: Hotel.",
+        "example_sentence_en": "H-O-T-E-L: Hotel.",
+        "example_sentence_ar": "⁦H-O-T-E-L: فندق.⁩",
+        "example_sentence_es": "H-O-T-E-L: Hotel.",
+        "sentence_en": "H-O-T-E-L: Hotel.",
+        "sentence_ar": "⁦H-O-T-E-L: فندق.⁩",
+        "sentence_es": "H-O-T-E-L: Hotel."
       }
     },
     {
@@ -23325,10 +23595,16 @@
       "custom_prompt_de": "Danke",
       "data_json": {
         "chunk_de": "Danke",
-        "sentence_en": "thank you",
-        "sentence_ar": "⁦شكراً⁩",
-        "sentence_es": "gracias",
-        "example_sentence_de": "Danke schön!"
+        "translation_en": "thank you",
+        "translation_ar": "⁦شكراً⁩",
+        "translation_es": "gracias",
+        "example_sentence_de": "Danke schön!",
+        "example_sentence_en": "Thank you very much!",
+        "example_sentence_ar": "⁦شكراً جزيلاً!⁩",
+        "example_sentence_es": "¡Muchas gracias!",
+        "sentence_en": "Thank you very much!",
+        "sentence_ar": "⁦شكراً جزيلاً!⁩",
+        "sentence_es": "¡Muchas gracias!"
       }
     },
     {
@@ -23339,10 +23615,16 @@
       "custom_prompt_de": "Bitte",
       "data_json": {
         "chunk_de": "Bitte",
-        "sentence_en": "please / you're welcome",
-        "sentence_ar": "⁦من فضلك / عفواً⁩",
-        "sentence_es": "por favor / de nada",
-        "example_sentence_de": "Bitte sehr!"
+        "translation_en": "please / you're welcome",
+        "translation_ar": "⁦من فضلك / عفواً⁩",
+        "translation_es": "por favor / de nada",
+        "example_sentence_de": "Bitte sehr!",
+        "example_sentence_en": "You're very welcome!",
+        "example_sentence_ar": "⁦على الرحب والسعة!⁩",
+        "example_sentence_es": "¡De nada!",
+        "sentence_en": "You're very welcome!",
+        "sentence_ar": "⁦على الرحب والسعة!⁩",
+        "sentence_es": "¡De nada!"
       }
     },
     {
@@ -23353,10 +23635,16 @@
       "custom_prompt_de": "Hallo",
       "data_json": {
         "chunk_de": "Hallo",
-        "sentence_en": "hello",
-        "sentence_ar": "⁦مرحباً⁩",
-        "sentence_es": "hola",
-        "example_sentence_de": "Hallo! Schön dich zu sehen."
+        "translation_en": "hello",
+        "translation_ar": "⁦مرحباً⁩",
+        "translation_es": "hola",
+        "example_sentence_de": "Hallo! Schön dich zu sehen.",
+        "example_sentence_en": "Hello! Nice to see you.",
+        "example_sentence_ar": "⁦مرحباً! يسعدني أن أراك.⁩",
+        "example_sentence_es": "¡Hola! Qué bueno verte.",
+        "sentence_en": "Hello! Nice to see you.",
+        "sentence_ar": "⁦مرحباً! يسعدني أن أراك.⁩",
+        "sentence_es": "¡Hola! Qué bueno verte."
       }
     },
     {
@@ -23367,10 +23655,16 @@
       "custom_prompt_de": "Tschüss",
       "data_json": {
         "chunk_de": "Tschüss",
-        "sentence_en": "bye",
-        "sentence_ar": "⁦مع السلامة⁩",
-        "sentence_es": "adiós",
-        "example_sentence_de": "Tschüss! Bis morgen."
+        "translation_en": "bye",
+        "translation_ar": "⁦مع السلامة⁩",
+        "translation_es": "adiós",
+        "example_sentence_de": "Tschüss! Bis morgen.",
+        "example_sentence_en": "Bye! See you tomorrow.",
+        "example_sentence_ar": "⁦مع السلامة! إلى الغد.⁩",
+        "example_sentence_es": "¡Adiós! Hasta mañana.",
+        "sentence_en": "Bye! See you tomorrow.",
+        "sentence_ar": "⁦مع السلامة! إلى الغد.⁩",
+        "sentence_es": "¡Adiós! Hasta mañana."
       }
     },
     {
@@ -23381,10 +23675,16 @@
       "custom_prompt_de": "Entschuldigung",
       "data_json": {
         "chunk_de": "Entschuldigung",
-        "sentence_en": "excuse me / sorry",
-        "sentence_ar": "⁦معذرة / عذراً⁩",
-        "sentence_es": "disculpe",
-        "example_sentence_de": "Entschuldigung, wo ist der Bahnhof?"
+        "translation_en": "excuse me / sorry",
+        "translation_ar": "⁦معذرة / عذراً⁩",
+        "translation_es": "disculpe",
+        "example_sentence_de": "Entschuldigung, wo ist der Bahnhof?",
+        "example_sentence_en": "Excuse me, where is the train station?",
+        "example_sentence_ar": "⁦عذراً، أين تقع محطة القطار؟⁩",
+        "example_sentence_es": "Disculpe, ¿dónde está la estación?",
+        "sentence_en": "Excuse me, where is the train station?",
+        "sentence_ar": "⁦عذراً، أين تقع محطة القطار؟⁩",
+        "sentence_es": "Disculpe, ¿dónde está la estación?"
       }
     },
     {
@@ -23395,10 +23695,16 @@
       "custom_prompt_de": "0 · null",
       "data_json": {
         "chunk_de": "null",
-        "sentence_en": "0 = zero",
-        "sentence_ar": "⁦0 = صفر⁩",
-        "sentence_es": "0 = cero",
-        "example_sentence_de": "Ich zähle: null."
+        "translation_en": "0 = zero",
+        "translation_ar": "⁦0 = صفر⁩",
+        "translation_es": "0 = cero",
+        "example_sentence_de": "Ich zähle: null.",
+        "example_sentence_en": "I count: zero.",
+        "example_sentence_ar": "⁦أنا أعد: صفر.⁩",
+        "example_sentence_es": "Cuento: cero.",
+        "sentence_en": "I count: zero.",
+        "sentence_ar": "⁦أنا أعد: صفر.⁩",
+        "sentence_es": "Cuento: cero."
       }
     },
     {
@@ -23409,10 +23715,16 @@
       "custom_prompt_de": "1 · eins",
       "data_json": {
         "chunk_de": "eins",
-        "sentence_en": "1 = one",
-        "sentence_ar": "⁦1 = واحد⁩",
-        "sentence_es": "1 = uno",
-        "example_sentence_de": "Ich zähle: eins."
+        "translation_en": "1 = one",
+        "translation_ar": "⁦1 = واحد⁩",
+        "translation_es": "1 = uno",
+        "example_sentence_de": "Ich zähle: eins.",
+        "example_sentence_en": "I count: one.",
+        "example_sentence_ar": "⁦أنا أعد: واحد.⁩",
+        "example_sentence_es": "Cuento: uno.",
+        "sentence_en": "I count: one.",
+        "sentence_ar": "⁦أنا أعد: واحد.⁩",
+        "sentence_es": "Cuento: uno."
       }
     },
     {
@@ -23423,10 +23735,16 @@
       "custom_prompt_de": "2 · zwei",
       "data_json": {
         "chunk_de": "zwei",
-        "sentence_en": "2 = two",
-        "sentence_ar": "⁦2 = اثنان⁩",
-        "sentence_es": "2 = dos",
-        "example_sentence_de": "Ich zähle: zwei."
+        "translation_en": "2 = two",
+        "translation_ar": "⁦2 = اثنان⁩",
+        "translation_es": "2 = dos",
+        "example_sentence_de": "Ich zähle: zwei.",
+        "example_sentence_en": "I count: two.",
+        "example_sentence_ar": "⁦أنا أعد: اثنان.⁩",
+        "example_sentence_es": "Cuento: dos.",
+        "sentence_en": "I count: two.",
+        "sentence_ar": "⁦أنا أعد: اثنان.⁩",
+        "sentence_es": "Cuento: dos."
       }
     },
     {
@@ -23437,10 +23755,16 @@
       "custom_prompt_de": "3 · drei",
       "data_json": {
         "chunk_de": "drei",
-        "sentence_en": "3 = three",
-        "sentence_ar": "⁦3 = ثلاثة⁩",
-        "sentence_es": "3 = tres",
-        "example_sentence_de": "Ich zähle: drei."
+        "translation_en": "3 = three",
+        "translation_ar": "⁦3 = ثلاثة⁩",
+        "translation_es": "3 = tres",
+        "example_sentence_de": "Ich zähle: drei.",
+        "example_sentence_en": "I count: three.",
+        "example_sentence_ar": "⁦أنا أعد: ثلاثة.⁩",
+        "example_sentence_es": "Cuento: tres.",
+        "sentence_en": "I count: three.",
+        "sentence_ar": "⁦أنا أعد: ثلاثة.⁩",
+        "sentence_es": "Cuento: tres."
       }
     },
     {
@@ -23451,10 +23775,16 @@
       "custom_prompt_de": "4 · vier",
       "data_json": {
         "chunk_de": "vier",
-        "sentence_en": "4 = four",
-        "sentence_ar": "⁦4 = أربعة⁩",
-        "sentence_es": "4 = cuatro",
-        "example_sentence_de": "Ich zähle: vier."
+        "translation_en": "4 = four",
+        "translation_ar": "⁦4 = أربعة⁩",
+        "translation_es": "4 = cuatro",
+        "example_sentence_de": "Ich zähle: vier.",
+        "example_sentence_en": "I count: four.",
+        "example_sentence_ar": "⁦أنا أعد: أربعة.⁩",
+        "example_sentence_es": "Cuento: cuatro.",
+        "sentence_en": "I count: four.",
+        "sentence_ar": "⁦أنا أعد: أربعة.⁩",
+        "sentence_es": "Cuento: cuatro."
       }
     },
     {
@@ -23465,10 +23795,16 @@
       "custom_prompt_de": "5 · fünf",
       "data_json": {
         "chunk_de": "fünf",
-        "sentence_en": "5 = five",
-        "sentence_ar": "⁦5 = خمسة⁩",
-        "sentence_es": "5 = cinco",
-        "example_sentence_de": "Ich zähle: fünf."
+        "translation_en": "5 = five",
+        "translation_ar": "⁦5 = خمسة⁩",
+        "translation_es": "5 = cinco",
+        "example_sentence_de": "Ich zähle: fünf.",
+        "example_sentence_en": "I count: five.",
+        "example_sentence_ar": "⁦أنا أعد: خمسة.⁩",
+        "example_sentence_es": "Cuento: cinco.",
+        "sentence_en": "I count: five.",
+        "sentence_ar": "⁦أنا أعد: خمسة.⁩",
+        "sentence_es": "Cuento: cinco."
       }
     },
     {
@@ -23479,10 +23815,16 @@
       "custom_prompt_de": "6 · sechs",
       "data_json": {
         "chunk_de": "sechs",
-        "sentence_en": "6 = six",
-        "sentence_ar": "⁦6 = ستة⁩",
-        "sentence_es": "6 = seis",
-        "example_sentence_de": "Ich zähle: sechs."
+        "translation_en": "6 = six",
+        "translation_ar": "⁦6 = ستة⁩",
+        "translation_es": "6 = seis",
+        "example_sentence_de": "Ich zähle: sechs.",
+        "example_sentence_en": "I count: six.",
+        "example_sentence_ar": "⁦أنا أعد: ستة.⁩",
+        "example_sentence_es": "Cuento: seis.",
+        "sentence_en": "I count: six.",
+        "sentence_ar": "⁦أنا أعد: ستة.⁩",
+        "sentence_es": "Cuento: seis."
       }
     },
     {
@@ -23493,10 +23835,16 @@
       "custom_prompt_de": "7 · sieben",
       "data_json": {
         "chunk_de": "sieben",
-        "sentence_en": "7 = seven",
-        "sentence_ar": "⁦7 = سبعة⁩",
-        "sentence_es": "7 = siete",
-        "example_sentence_de": "Zimmer sieben."
+        "translation_en": "7 = seven",
+        "translation_ar": "⁦7 = سبعة⁩",
+        "translation_es": "7 = siete",
+        "example_sentence_de": "Zimmer sieben.",
+        "example_sentence_en": "Room seven.",
+        "example_sentence_ar": "⁦غرفة سبعة.⁩",
+        "example_sentence_es": "Habitación siete.",
+        "sentence_en": "Room seven.",
+        "sentence_ar": "⁦غرفة سبعة.⁩",
+        "sentence_es": "Habitación siete."
       }
     },
     {
@@ -23507,10 +23855,16 @@
       "custom_prompt_de": "8 · acht",
       "data_json": {
         "chunk_de": "acht",
-        "sentence_en": "8 = eight",
-        "sentence_ar": "⁦8 = ثمانية⁩",
-        "sentence_es": "8 = ocho",
-        "example_sentence_de": "Zimmer acht."
+        "translation_en": "8 = eight",
+        "translation_ar": "⁦8 = ثمانية⁩",
+        "translation_es": "8 = ocho",
+        "example_sentence_de": "Zimmer acht.",
+        "example_sentence_en": "Room eight.",
+        "example_sentence_ar": "⁦غرفة ثمانية.⁩",
+        "example_sentence_es": "Habitación ocho.",
+        "sentence_en": "Room eight.",
+        "sentence_ar": "⁦غرفة ثمانية.⁩",
+        "sentence_es": "Habitación ocho."
       }
     },
     {
@@ -23521,10 +23875,16 @@
       "custom_prompt_de": "9 · neun",
       "data_json": {
         "chunk_de": "neun",
-        "sentence_en": "9 = nine",
-        "sentence_ar": "⁦9 = تسعة⁩",
-        "sentence_es": "9 = nueve",
-        "example_sentence_de": "Zimmer neun."
+        "translation_en": "9 = nine",
+        "translation_ar": "⁦9 = تسعة⁩",
+        "translation_es": "9 = nueve",
+        "example_sentence_de": "Zimmer neun.",
+        "example_sentence_en": "Room nine.",
+        "example_sentence_ar": "⁦غرفة تسعة.⁩",
+        "example_sentence_es": "Habitación nueve.",
+        "sentence_en": "Room nine.",
+        "sentence_ar": "⁦غرفة تسعة.⁩",
+        "sentence_es": "Habitación nueve."
       }
     },
     {
@@ -23535,10 +23895,16 @@
       "custom_prompt_de": "10 · zehn",
       "data_json": {
         "chunk_de": "zehn",
-        "sentence_en": "10 = ten",
-        "sentence_ar": "⁦10 = عشرة⁩",
-        "sentence_es": "10 = diez",
-        "example_sentence_de": "Zimmer zehn."
+        "translation_en": "10 = ten",
+        "translation_ar": "⁦10 = عشرة⁩",
+        "translation_es": "10 = diez",
+        "example_sentence_de": "Zimmer zehn.",
+        "example_sentence_en": "Room ten.",
+        "example_sentence_ar": "⁦غرفة عشرة.⁩",
+        "example_sentence_es": "Habitación diez.",
+        "sentence_en": "Room ten.",
+        "sentence_ar": "⁦غرفة عشرة.⁩",
+        "sentence_es": "Habitación diez."
       }
     },
     {
@@ -23549,10 +23915,16 @@
       "custom_prompt_de": "11 · elf",
       "data_json": {
         "chunk_de": "elf",
-        "sentence_en": "11 = eleven",
-        "sentence_ar": "⁦11 = أحد عشر⁩",
-        "sentence_es": "11 = once",
-        "example_sentence_de": "Zimmer elf."
+        "translation_en": "11 = eleven",
+        "translation_ar": "⁦11 = أحد عشر⁩",
+        "translation_es": "11 = once",
+        "example_sentence_de": "Zimmer elf.",
+        "example_sentence_en": "Room eleven.",
+        "example_sentence_ar": "⁦غرفة أحد عشر.⁩",
+        "example_sentence_es": "Habitación once.",
+        "sentence_en": "Room eleven.",
+        "sentence_ar": "⁦غرفة أحد عشر.⁩",
+        "sentence_es": "Habitación once."
       }
     },
     {
@@ -23563,10 +23935,16 @@
       "custom_prompt_de": "12 · zwölf",
       "data_json": {
         "chunk_de": "zwölf",
-        "sentence_en": "12 = twelve",
-        "sentence_ar": "⁦12 = اثنا عشر⁩",
-        "sentence_es": "12 = doce",
-        "example_sentence_de": "Zimmer zwölf."
+        "translation_en": "12 = twelve",
+        "translation_ar": "⁦12 = اثنا عشر⁩",
+        "translation_es": "12 = doce",
+        "example_sentence_de": "Zimmer zwölf.",
+        "example_sentence_en": "Room twelve.",
+        "example_sentence_ar": "⁦غرفة اثنا عشر.⁩",
+        "example_sentence_es": "Habitación doce.",
+        "sentence_en": "Room twelve.",
+        "sentence_ar": "⁦غرفة اثنا عشر.⁩",
+        "sentence_es": "Habitación doce."
       }
     },
     {
@@ -23577,10 +23955,16 @@
       "custom_prompt_de": "13 · dreizehn",
       "data_json": {
         "chunk_de": "dreizehn",
-        "sentence_en": "13 = thirteen",
-        "sentence_ar": "⁦13 = ثلاثة عشر⁩",
-        "sentence_es": "13 = trece",
-        "example_sentence_de": "Bus Nummer dreizehn."
+        "translation_en": "13 = thirteen",
+        "translation_ar": "⁦13 = ثلاثة عشر⁩",
+        "translation_es": "13 = trece",
+        "example_sentence_de": "Bus Nummer dreizehn.",
+        "example_sentence_en": "Bus number thirteen.",
+        "example_sentence_ar": "⁦حافلة رقم ثلاثة عشر.⁩",
+        "example_sentence_es": "Autobús número trece.",
+        "sentence_en": "Bus number thirteen.",
+        "sentence_ar": "⁦حافلة رقم ثلاثة عشر.⁩",
+        "sentence_es": "Autobús número trece."
       }
     },
     {
@@ -23591,10 +23975,16 @@
       "custom_prompt_de": "14 · vierzehn",
       "data_json": {
         "chunk_de": "vierzehn",
-        "sentence_en": "14 = fourteen",
-        "sentence_ar": "⁦14 = أربعة عشر⁩",
-        "sentence_es": "14 = catorce",
-        "example_sentence_de": "Bus Nummer vierzehn."
+        "translation_en": "14 = fourteen",
+        "translation_ar": "⁦14 = أربعة عشر⁩",
+        "translation_es": "14 = catorce",
+        "example_sentence_de": "Bus Nummer vierzehn.",
+        "example_sentence_en": "Bus number fourteen.",
+        "example_sentence_ar": "⁦حافلة رقم أربعة عشر.⁩",
+        "example_sentence_es": "Autobús número catorce.",
+        "sentence_en": "Bus number fourteen.",
+        "sentence_ar": "⁦حافلة رقم أربعة عشر.⁩",
+        "sentence_es": "Autobús número catorce."
       }
     },
     {
@@ -23605,10 +23995,16 @@
       "custom_prompt_de": "15 · fünfzehn",
       "data_json": {
         "chunk_de": "fünfzehn",
-        "sentence_en": "15 = fifteen",
-        "sentence_ar": "⁦15 = خمسة عشر⁩",
-        "sentence_es": "15 = quince",
-        "example_sentence_de": "Bus Nummer fünfzehn."
+        "translation_en": "15 = fifteen",
+        "translation_ar": "⁦15 = خمسة عشر⁩",
+        "translation_es": "15 = quince",
+        "example_sentence_de": "Bus Nummer fünfzehn.",
+        "example_sentence_en": "Bus number fifteen.",
+        "example_sentence_ar": "⁦حافلة رقم خمسة عشر.⁩",
+        "example_sentence_es": "Autobús número quince.",
+        "sentence_en": "Bus number fifteen.",
+        "sentence_ar": "⁦حافلة رقم خمسة عشر.⁩",
+        "sentence_es": "Autobús número quince."
       }
     },
     {
@@ -23619,10 +24015,16 @@
       "custom_prompt_de": "16 · sechzehn",
       "data_json": {
         "chunk_de": "sechzehn",
-        "sentence_en": "16 = sixteen",
-        "sentence_ar": "⁦16 = ستة عشر⁩",
-        "sentence_es": "16 = dieciséis",
-        "example_sentence_de": "Bus Nummer sechzehn."
+        "translation_en": "16 = sixteen",
+        "translation_ar": "⁦16 = ستة عشر⁩",
+        "translation_es": "16 = dieciséis",
+        "example_sentence_de": "Bus Nummer sechzehn.",
+        "example_sentence_en": "Bus number sixteen.",
+        "example_sentence_ar": "⁦حافلة رقم ستة عشر.⁩",
+        "example_sentence_es": "Autobús número dieciséis.",
+        "sentence_en": "Bus number sixteen.",
+        "sentence_ar": "⁦حافلة رقم ستة عشر.⁩",
+        "sentence_es": "Autobús número dieciséis."
       }
     },
     {
@@ -23633,10 +24035,16 @@
       "custom_prompt_de": "17 · siebzehn",
       "data_json": {
         "chunk_de": "siebzehn",
-        "sentence_en": "17 = seventeen",
-        "sentence_ar": "⁦17 = سبعة عشر⁩",
-        "sentence_es": "17 = diecisiete",
-        "example_sentence_de": "Bus Nummer siebzehn."
+        "translation_en": "17 = seventeen",
+        "translation_ar": "⁦17 = سبعة عشر⁩",
+        "translation_es": "17 = diecisiete",
+        "example_sentence_de": "Bus Nummer siebzehn.",
+        "example_sentence_en": "Bus number seventeen.",
+        "example_sentence_ar": "⁦حافلة رقم سبعة عشر.⁩",
+        "example_sentence_es": "Autobús número diecisiete.",
+        "sentence_en": "Bus number seventeen.",
+        "sentence_ar": "⁦حافلة رقم سبعة عشر.⁩",
+        "sentence_es": "Autobús número diecisiete."
       }
     },
     {
@@ -23647,10 +24055,16 @@
       "custom_prompt_de": "20 · zwanzig",
       "data_json": {
         "chunk_de": "zwanzig",
-        "sentence_en": "20 = twenty",
-        "sentence_ar": "⁦20 = عشرون⁩",
-        "sentence_es": "20 = veinte",
-        "example_sentence_de": "Bus Nummer zwanzig."
+        "translation_en": "20 = twenty",
+        "translation_ar": "⁦20 = عشرون⁩",
+        "translation_es": "20 = veinte",
+        "example_sentence_de": "Bus Nummer zwanzig.",
+        "example_sentence_en": "Bus number twenty.",
+        "example_sentence_ar": "⁦حافلة رقم عشرون.⁩",
+        "example_sentence_es": "Autobús número veinte.",
+        "sentence_en": "Bus number twenty.",
+        "sentence_ar": "⁦حافلة رقم عشرون.⁩",
+        "sentence_es": "Autobús número veinte."
       }
     },
     {
@@ -23661,10 +24075,16 @@
       "custom_prompt_de": "30 · dreißig",
       "data_json": {
         "chunk_de": "dreißig",
-        "sentence_en": "30 = thirty",
-        "sentence_ar": "⁦30 = ثلاثون⁩",
-        "sentence_es": "30 = treinta",
-        "example_sentence_de": "Das kostet dreißig Euro."
+        "translation_en": "30 = thirty",
+        "translation_ar": "⁦30 = ثلاثون⁩",
+        "translation_es": "30 = treinta",
+        "example_sentence_de": "Das kostet dreißig Euro.",
+        "example_sentence_en": "That costs thirty euros.",
+        "example_sentence_ar": "⁦هذا يكلف ثلاثون يورو.⁩",
+        "example_sentence_es": "Eso cuesta treinta euros.",
+        "sentence_en": "That costs thirty euros.",
+        "sentence_ar": "⁦هذا يكلف ثلاثون يورو.⁩",
+        "sentence_es": "Eso cuesta treinta euros."
       }
     },
     {
@@ -23675,10 +24095,16 @@
       "custom_prompt_de": "40 · vierzig",
       "data_json": {
         "chunk_de": "vierzig",
-        "sentence_en": "40 = forty",
-        "sentence_ar": "⁦40 = أربعون⁩",
-        "sentence_es": "40 = cuarenta",
-        "example_sentence_de": "Das kostet vierzig Euro."
+        "translation_en": "40 = forty",
+        "translation_ar": "⁦40 = أربعون⁩",
+        "translation_es": "40 = cuarenta",
+        "example_sentence_de": "Das kostet vierzig Euro.",
+        "example_sentence_en": "That costs forty euros.",
+        "example_sentence_ar": "⁦هذا يكلف أربعون يورو.⁩",
+        "example_sentence_es": "Eso cuesta cuarenta euros.",
+        "sentence_en": "That costs forty euros.",
+        "sentence_ar": "⁦هذا يكلف أربعون يورو.⁩",
+        "sentence_es": "Eso cuesta cuarenta euros."
       }
     },
     {
@@ -23689,10 +24115,16 @@
       "custom_prompt_de": "50 · fünfzig",
       "data_json": {
         "chunk_de": "fünfzig",
-        "sentence_en": "50 = fifty",
-        "sentence_ar": "⁦50 = خمسون⁩",
-        "sentence_es": "50 = cincuenta",
-        "example_sentence_de": "Das kostet fünfzig Euro."
+        "translation_en": "50 = fifty",
+        "translation_ar": "⁦50 = خمسون⁩",
+        "translation_es": "50 = cincuenta",
+        "example_sentence_de": "Das kostet fünfzig Euro.",
+        "example_sentence_en": "That costs fifty euros.",
+        "example_sentence_ar": "⁦هذا يكلف خمسون يورو.⁩",
+        "example_sentence_es": "Eso cuesta cincuenta euros.",
+        "sentence_en": "That costs fifty euros.",
+        "sentence_ar": "⁦هذا يكلف خمسون يورو.⁩",
+        "sentence_es": "Eso cuesta cincuenta euros."
       }
     },
     {
@@ -23703,10 +24135,16 @@
       "custom_prompt_de": "60 · sechzig",
       "data_json": {
         "chunk_de": "sechzig",
-        "sentence_en": "60 = sixty",
-        "sentence_ar": "⁦60 = ستون⁩",
-        "sentence_es": "60 = sesenta",
-        "example_sentence_de": "Das kostet sechzig Euro."
+        "translation_en": "60 = sixty",
+        "translation_ar": "⁦60 = ستون⁩",
+        "translation_es": "60 = sesenta",
+        "example_sentence_de": "Das kostet sechzig Euro.",
+        "example_sentence_en": "That costs sixty euros.",
+        "example_sentence_ar": "⁦هذا يكلف ستون يورو.⁩",
+        "example_sentence_es": "Eso cuesta sesenta euros.",
+        "sentence_en": "That costs sixty euros.",
+        "sentence_ar": "⁦هذا يكلف ستون يورو.⁩",
+        "sentence_es": "Eso cuesta sesenta euros."
       }
     },
     {
@@ -23717,10 +24155,16 @@
       "custom_prompt_de": "70 · siebzig",
       "data_json": {
         "chunk_de": "siebzig",
-        "sentence_en": "70 = seventy",
-        "sentence_ar": "⁦70 = سبعون⁩",
-        "sentence_es": "70 = setenta",
-        "example_sentence_de": "Das kostet siebzig Euro."
+        "translation_en": "70 = seventy",
+        "translation_ar": "⁦70 = سبعون⁩",
+        "translation_es": "70 = setenta",
+        "example_sentence_de": "Das kostet siebzig Euro.",
+        "example_sentence_en": "That costs seventy euros.",
+        "example_sentence_ar": "⁦هذا يكلف سبعون يورو.⁩",
+        "example_sentence_es": "Eso cuesta setenta euros.",
+        "sentence_en": "That costs seventy euros.",
+        "sentence_ar": "⁦هذا يكلف سبعون يورو.⁩",
+        "sentence_es": "Eso cuesta setenta euros."
       }
     },
     {
@@ -23731,10 +24175,16 @@
       "custom_prompt_de": "80 · achtzig",
       "data_json": {
         "chunk_de": "achtzig",
-        "sentence_en": "80 = eighty",
-        "sentence_ar": "⁦80 = ثمانون⁩",
-        "sentence_es": "80 = ochenta",
-        "example_sentence_de": "Das kostet achtzig Euro."
+        "translation_en": "80 = eighty",
+        "translation_ar": "⁦80 = ثمانون⁩",
+        "translation_es": "80 = ochenta",
+        "example_sentence_de": "Das kostet achtzig Euro.",
+        "example_sentence_en": "That costs eighty euros.",
+        "example_sentence_ar": "⁦هذا يكلف ثمانون يورو.⁩",
+        "example_sentence_es": "Eso cuesta ochenta euros.",
+        "sentence_en": "That costs eighty euros.",
+        "sentence_ar": "⁦هذا يكلف ثمانون يورو.⁩",
+        "sentence_es": "Eso cuesta ochenta euros."
       }
     },
     {
@@ -23745,10 +24195,16 @@
       "custom_prompt_de": "90 · neunzig",
       "data_json": {
         "chunk_de": "neunzig",
-        "sentence_en": "90 = ninety",
-        "sentence_ar": "⁦90 = تسعون⁩",
-        "sentence_es": "90 = noventa",
-        "example_sentence_de": "Das kostet neunzig Euro."
+        "translation_en": "90 = ninety",
+        "translation_ar": "⁦90 = تسعون⁩",
+        "translation_es": "90 = noventa",
+        "example_sentence_de": "Das kostet neunzig Euro.",
+        "example_sentence_en": "That costs ninety euros.",
+        "example_sentence_ar": "⁦هذا يكلف تسعون يورو.⁩",
+        "example_sentence_es": "Eso cuesta noventa euros.",
+        "sentence_en": "That costs ninety euros.",
+        "sentence_ar": "⁦هذا يكلف تسعون يورو.⁩",
+        "sentence_es": "Eso cuesta noventa euros."
       }
     },
     {
@@ -23759,10 +24215,16 @@
       "custom_prompt_de": "100 · hundert",
       "data_json": {
         "chunk_de": "hundert",
-        "sentence_en": "100 = one hundred",
-        "sentence_ar": "⁦100 = مئة⁩",
-        "sentence_es": "100 = cien",
-        "example_sentence_de": "Das kostet hundert Euro."
+        "translation_en": "100 = one hundred",
+        "translation_ar": "⁦100 = مئة⁩",
+        "translation_es": "100 = cien",
+        "example_sentence_de": "Das kostet hundert Euro.",
+        "example_sentence_en": "That costs one hundred euros.",
+        "example_sentence_ar": "⁦هذا يكلف مئة يورو.⁩",
+        "example_sentence_es": "Eso cuesta cien euros.",
+        "sentence_en": "That costs one hundred euros.",
+        "sentence_ar": "⁦هذا يكلف مئة يورو.⁩",
+        "sentence_es": "Eso cuesta cien euros."
       }
     },
     {
@@ -23773,10 +24235,16 @@
       "custom_prompt_de": "Montag",
       "data_json": {
         "chunk_de": "Montag",
-        "sentence_en": "Monday",
-        "sentence_ar": "⁦الإثنين⁩",
-        "sentence_es": "lunes",
-        "example_sentence_de": "Heute ist Montag."
+        "translation_en": "Monday",
+        "translation_ar": "⁦الإثنين⁩",
+        "translation_es": "lunes",
+        "example_sentence_de": "Heute ist Montag.",
+        "example_sentence_en": "Today is Monday.",
+        "example_sentence_ar": "⁦اليوم هو الإثنين.⁩",
+        "example_sentence_es": "Hoy es lunes.",
+        "sentence_en": "Today is Monday.",
+        "sentence_ar": "⁦اليوم هو الإثنين.⁩",
+        "sentence_es": "Hoy es lunes."
       }
     },
     {
@@ -23787,10 +24255,16 @@
       "custom_prompt_de": "Dienstag",
       "data_json": {
         "chunk_de": "Dienstag",
-        "sentence_en": "Tuesday",
-        "sentence_ar": "⁦الثلاثاء⁩",
-        "sentence_es": "martes",
-        "example_sentence_de": "Heute ist Dienstag."
+        "translation_en": "Tuesday",
+        "translation_ar": "⁦الثلاثاء⁩",
+        "translation_es": "martes",
+        "example_sentence_de": "Heute ist Dienstag.",
+        "example_sentence_en": "Today is Tuesday.",
+        "example_sentence_ar": "⁦اليوم هو الثلاثاء.⁩",
+        "example_sentence_es": "Hoy es martes.",
+        "sentence_en": "Today is Tuesday.",
+        "sentence_ar": "⁦اليوم هو الثلاثاء.⁩",
+        "sentence_es": "Hoy es martes."
       }
     },
     {
@@ -23801,10 +24275,16 @@
       "custom_prompt_de": "Mittwoch",
       "data_json": {
         "chunk_de": "Mittwoch",
-        "sentence_en": "Wednesday",
-        "sentence_ar": "⁦الأربعاء⁩",
-        "sentence_es": "miércoles",
-        "example_sentence_de": "Heute ist Mittwoch."
+        "translation_en": "Wednesday",
+        "translation_ar": "⁦الأربعاء⁩",
+        "translation_es": "miércoles",
+        "example_sentence_de": "Heute ist Mittwoch.",
+        "example_sentence_en": "Today is Wednesday.",
+        "example_sentence_ar": "⁦اليوم هو الأربعاء.⁩",
+        "example_sentence_es": "Hoy es miércoles.",
+        "sentence_en": "Today is Wednesday.",
+        "sentence_ar": "⁦اليوم هو الأربعاء.⁩",
+        "sentence_es": "Hoy es miércoles."
       }
     },
     {
@@ -23815,10 +24295,16 @@
       "custom_prompt_de": "Donnerstag",
       "data_json": {
         "chunk_de": "Donnerstag",
-        "sentence_en": "Thursday",
-        "sentence_ar": "⁦الخميس⁩",
-        "sentence_es": "jueves",
-        "example_sentence_de": "Heute ist Donnerstag."
+        "translation_en": "Thursday",
+        "translation_ar": "⁦الخميس⁩",
+        "translation_es": "jueves",
+        "example_sentence_de": "Heute ist Donnerstag.",
+        "example_sentence_en": "Today is Thursday.",
+        "example_sentence_ar": "⁦اليوم هو الخميس.⁩",
+        "example_sentence_es": "Hoy es jueves.",
+        "sentence_en": "Today is Thursday.",
+        "sentence_ar": "⁦اليوم هو الخميس.⁩",
+        "sentence_es": "Hoy es jueves."
       }
     },
     {
@@ -23829,10 +24315,16 @@
       "custom_prompt_de": "Freitag",
       "data_json": {
         "chunk_de": "Freitag",
-        "sentence_en": "Friday",
-        "sentence_ar": "⁦الجمعة⁩",
-        "sentence_es": "viernes",
-        "example_sentence_de": "Heute ist Freitag."
+        "translation_en": "Friday",
+        "translation_ar": "⁦الجمعة⁩",
+        "translation_es": "viernes",
+        "example_sentence_de": "Heute ist Freitag.",
+        "example_sentence_en": "Today is Friday.",
+        "example_sentence_ar": "⁦اليوم هو الجمعة.⁩",
+        "example_sentence_es": "Hoy es viernes.",
+        "sentence_en": "Today is Friday.",
+        "sentence_ar": "⁦اليوم هو الجمعة.⁩",
+        "sentence_es": "Hoy es viernes."
       }
     },
     {
@@ -23843,10 +24335,16 @@
       "custom_prompt_de": "Samstag",
       "data_json": {
         "chunk_de": "Samstag",
-        "sentence_en": "Saturday",
-        "sentence_ar": "⁦السبت⁩",
-        "sentence_es": "sábado",
-        "example_sentence_de": "Heute ist Samstag."
+        "translation_en": "Saturday",
+        "translation_ar": "⁦السبت⁩",
+        "translation_es": "sábado",
+        "example_sentence_de": "Heute ist Samstag.",
+        "example_sentence_en": "Today is Saturday.",
+        "example_sentence_ar": "⁦اليوم هو السبت.⁩",
+        "example_sentence_es": "Hoy es sábado.",
+        "sentence_en": "Today is Saturday.",
+        "sentence_ar": "⁦اليوم هو السبت.⁩",
+        "sentence_es": "Hoy es sábado."
       }
     },
     {
@@ -23857,10 +24355,16 @@
       "custom_prompt_de": "Sonntag",
       "data_json": {
         "chunk_de": "Sonntag",
-        "sentence_en": "Sunday",
-        "sentence_ar": "⁦الأحد⁩",
-        "sentence_es": "domingo",
-        "example_sentence_de": "Heute ist Sonntag."
+        "translation_en": "Sunday",
+        "translation_ar": "⁦الأحد⁩",
+        "translation_es": "domingo",
+        "example_sentence_de": "Heute ist Sonntag.",
+        "example_sentence_en": "Today is Sunday.",
+        "example_sentence_ar": "⁦اليوم هو الأحد.⁩",
+        "example_sentence_es": "Hoy es domingo.",
+        "sentence_en": "Today is Sunday.",
+        "sentence_ar": "⁦اليوم هو الأحد.⁩",
+        "sentence_es": "Hoy es domingo."
       }
     },
     {
@@ -23872,10 +24376,16 @@
       "data_json": {
         "chunk_de": "blau",
         "swatch_hex": "#1E88E5",
-        "sentence_en": "blue",
-        "sentence_ar": "⁦أزرق⁩",
-        "sentence_es": "azul",
-        "example_sentence_de": "Der Himmel ist blau."
+        "translation_en": "blue",
+        "translation_ar": "⁦أزرق⁩",
+        "translation_es": "azul",
+        "example_sentence_de": "Der Himmel ist blau.",
+        "example_sentence_en": "The sky is blue.",
+        "example_sentence_ar": "⁦السماء زرقاء.⁩",
+        "example_sentence_es": "El cielo es azul.",
+        "sentence_en": "The sky is blue.",
+        "sentence_ar": "⁦السماء زرقاء.⁩",
+        "sentence_es": "El cielo es azul."
       }
     },
     {
@@ -23887,10 +24397,16 @@
       "data_json": {
         "chunk_de": "rot",
         "swatch_hex": "#E53935",
-        "sentence_en": "red",
-        "sentence_ar": "⁦أحمر⁩",
-        "sentence_es": "rojo",
-        "example_sentence_de": "Der Apfel ist rot."
+        "translation_en": "red",
+        "translation_ar": "⁦أحمر⁩",
+        "translation_es": "rojo",
+        "example_sentence_de": "Der Apfel ist rot.",
+        "example_sentence_en": "The apple is red.",
+        "example_sentence_ar": "⁦التفاحة حمراء.⁩",
+        "example_sentence_es": "La manzana es roja.",
+        "sentence_en": "The apple is red.",
+        "sentence_ar": "⁦التفاحة حمراء.⁩",
+        "sentence_es": "La manzana es roja."
       }
     },
     {
@@ -23902,10 +24418,16 @@
       "data_json": {
         "chunk_de": "grün",
         "swatch_hex": "#43A047",
-        "sentence_en": "green",
-        "sentence_ar": "⁦أخضر⁩",
-        "sentence_es": "verde",
-        "example_sentence_de": "Das Gras ist grün."
+        "translation_en": "green",
+        "translation_ar": "⁦أخضر⁩",
+        "translation_es": "verde",
+        "example_sentence_de": "Das Gras ist grün.",
+        "example_sentence_en": "The grass is green.",
+        "example_sentence_ar": "⁦العشب أخضر.⁩",
+        "example_sentence_es": "La hierba es verde.",
+        "sentence_en": "The grass is green.",
+        "sentence_ar": "⁦العشب أخضر.⁩",
+        "sentence_es": "La hierba es verde."
       }
     },
     {
@@ -23917,10 +24439,16 @@
       "data_json": {
         "chunk_de": "gelb",
         "swatch_hex": "#FDD835",
-        "sentence_en": "yellow",
-        "sentence_ar": "⁦أصفر⁩",
-        "sentence_es": "amarillo",
-        "example_sentence_de": "Die Sonne ist gelb."
+        "translation_en": "yellow",
+        "translation_ar": "⁦أصفر⁩",
+        "translation_es": "amarillo",
+        "example_sentence_de": "Die Sonne ist gelb.",
+        "example_sentence_en": "The sun is yellow.",
+        "example_sentence_ar": "⁦الشمس صفراء.⁩",
+        "example_sentence_es": "El sol es amarillo.",
+        "sentence_en": "The sun is yellow.",
+        "sentence_ar": "⁦الشمس صفراء.⁩",
+        "sentence_es": "El sol es amarillo."
       }
     },
     {
@@ -23932,10 +24460,16 @@
       "data_json": {
         "chunk_de": "schwarz",
         "swatch_hex": "#212121",
-        "sentence_en": "black",
-        "sentence_ar": "⁦أسود⁩",
-        "sentence_es": "negro",
-        "example_sentence_de": "Der Kaffee ist schwarz."
+        "translation_en": "black",
+        "translation_ar": "⁦أسود⁩",
+        "translation_es": "negro",
+        "example_sentence_de": "Der Kaffee ist schwarz.",
+        "example_sentence_en": "The coffee is black.",
+        "example_sentence_ar": "⁦القهوة سوداء.⁩",
+        "example_sentence_es": "El café es negro.",
+        "sentence_en": "The coffee is black.",
+        "sentence_ar": "⁦القهوة سوداء.⁩",
+        "sentence_es": "El café es negro."
       }
     },
     {
@@ -23947,10 +24481,16 @@
       "data_json": {
         "chunk_de": "weiß",
         "swatch_hex": "#EEEEEE",
-        "sentence_en": "white",
-        "sentence_ar": "⁦أبيض⁩",
-        "sentence_es": "blanco",
-        "example_sentence_de": "Der Schnee ist weiß."
+        "translation_en": "white",
+        "translation_ar": "⁦أبيض⁩",
+        "translation_es": "blanco",
+        "example_sentence_de": "Der Schnee ist weiß.",
+        "example_sentence_en": "The snow is white.",
+        "example_sentence_ar": "⁦الثلج أبيض.⁩",
+        "example_sentence_es": "La nieve es blanca.",
+        "sentence_en": "The snow is white.",
+        "sentence_ar": "⁦الثلج أبيض.⁩",
+        "sentence_es": "La nieve es blanca."
       }
     },
     {
@@ -23962,10 +24502,16 @@
       "data_json": {
         "chunk_de": "grau",
         "swatch_hex": "#9E9E9E",
-        "sentence_en": "gray",
-        "sentence_ar": "⁦رمادي⁩",
-        "sentence_es": "gris",
-        "example_sentence_de": "Die Wolke ist grau."
+        "translation_en": "gray",
+        "translation_ar": "⁦رمادي⁩",
+        "translation_es": "gris",
+        "example_sentence_de": "Die Wolke ist grau.",
+        "example_sentence_en": "The cloud is gray.",
+        "example_sentence_ar": "⁦السحابة رمادية.⁩",
+        "example_sentence_es": "La nube es gris.",
+        "sentence_en": "The cloud is gray.",
+        "sentence_ar": "⁦السحابة رمادية.⁩",
+        "sentence_es": "La nube es gris."
       }
     },
     {
@@ -23977,10 +24523,16 @@
       "data_json": {
         "chunk_de": "braun",
         "swatch_hex": "#6D4C41",
-        "sentence_en": "brown",
-        "sentence_ar": "⁦بني⁩",
-        "sentence_es": "marrón",
-        "example_sentence_de": "Die Schokolade ist braun."
+        "translation_en": "brown",
+        "translation_ar": "⁦بني⁩",
+        "translation_es": "marrón",
+        "example_sentence_de": "Die Schokolade ist braun.",
+        "example_sentence_en": "The chocolate is brown.",
+        "example_sentence_ar": "⁦الشوكولاتة بنية.⁩",
+        "example_sentence_es": "El chocolate es marrón.",
+        "sentence_en": "The chocolate is brown.",
+        "sentence_ar": "⁦الشوكولاتة بنية.⁩",
+        "sentence_es": "El chocolate es marrón."
       }
     },
     {
@@ -23992,10 +24544,16 @@
       "data_json": {
         "chunk_de": "orange",
         "swatch_hex": "#FB8C00",
-        "sentence_en": "orange",
-        "sentence_ar": "⁦برتقالي⁩",
-        "sentence_es": "naranja",
-        "example_sentence_de": "Die Orange ist orange."
+        "translation_en": "orange",
+        "translation_ar": "⁦برتقالي⁩",
+        "translation_es": "naranja",
+        "example_sentence_de": "Die Orange ist orange.",
+        "example_sentence_en": "The orange is orange.",
+        "example_sentence_ar": "⁦البرتقالة برتقالية اللون.⁩",
+        "example_sentence_es": "La naranja es naranja.",
+        "sentence_en": "The orange is orange.",
+        "sentence_ar": "⁦البرتقالة برتقالية اللون.⁩",
+        "sentence_es": "La naranja es naranja."
       }
     },
     {
@@ -24006,10 +24564,16 @@
       "custom_prompt_de": "Zahlen & Farben",
       "data_json": {
         "chunk_de": "Zahlen & Farben",
-        "sentence_en": "Numbers & Colors Review",
-        "sentence_ar": "⁦مراجعة الأرقام والألوان⁩",
-        "sentence_es": "Repaso de números y colores",
-        "example_sentence_de": "Drei rote Äpfel."
+        "translation_en": "Numbers & Colors Review",
+        "translation_ar": "⁦مراجعة الأرقام والألوان⁩",
+        "translation_es": "Repaso de números y colores",
+        "example_sentence_de": "Drei rote Äpfel.",
+        "example_sentence_en": "Three red apples.",
+        "example_sentence_ar": "⁦ثلاث تفاحات حمراء.⁩",
+        "example_sentence_es": "Tres manzanas rojas.",
+        "sentence_en": "Three red apples.",
+        "sentence_ar": "⁦ثلاث تفاحات حمراء.⁩",
+        "sentence_es": "Tres manzanas rojas."
       }
     },
     {
@@ -24020,10 +24584,16 @@
       "custom_prompt_de": "Guten Morgen",
       "data_json": {
         "chunk_de": "Guten Morgen",
-        "sentence_en": "Good morning (morning greeting)",
-        "sentence_ar": "⁦صباح الخير⁩",
-        "sentence_es": "Buenos días",
-        "example_sentence_de": "Guten Morgen! Haben Sie gut geschlafen?"
+        "translation_en": "Good morning",
+        "translation_ar": "⁦صباح الخير⁩",
+        "translation_es": "Buenos días",
+        "example_sentence_de": "Guten Morgen! Haben Sie gut geschlafen?",
+        "example_sentence_en": "Good morning! Did you sleep well?",
+        "example_sentence_ar": "⁦صباح الخير! هل نمت جيداً؟⁩",
+        "example_sentence_es": "¡Buenos días! ¿Durmió bien?",
+        "sentence_en": "Good morning! Did you sleep well?",
+        "sentence_ar": "⁦صباح الخير! هل نمت جيداً؟⁩",
+        "sentence_es": "¡Buenos días! ¿Durmió bien?"
       }
     },
     {
@@ -24034,10 +24604,16 @@
       "custom_prompt_de": "Guten Tag",
       "data_json": {
         "chunk_de": "Guten Tag",
-        "sentence_en": "Good day (standard daytime greeting)",
-        "sentence_ar": "⁦يوم سعيد / مرحباً⁩",
-        "sentence_es": "Buenas tardes",
-        "example_sentence_de": "Guten Tag, Herr Meier!"
+        "translation_en": "Good day",
+        "translation_ar": "⁦يوم سعيد / مرحباً⁩",
+        "translation_es": "Buenas tardes",
+        "example_sentence_de": "Guten Tag, Herr Meier!",
+        "example_sentence_en": "Good day, Mr. Meier!",
+        "example_sentence_ar": "⁦يوم سعيد، سيد ماير!⁩",
+        "example_sentence_es": "¡Buenas tardes, señor Meier!",
+        "sentence_en": "Good day, Mr. Meier!",
+        "sentence_ar": "⁦يوم سعيد، سيد ماير!⁩",
+        "sentence_es": "¡Buenas tardes, señor Meier!"
       }
     },
     {
@@ -24048,10 +24624,16 @@
       "custom_prompt_de": "Guten Abend",
       "data_json": {
         "chunk_de": "Guten Abend",
-        "sentence_en": "Good evening (evening greeting)",
-        "sentence_ar": "⁦مساء الخير⁩",
-        "sentence_es": "Buenas noches (al llegar)",
-        "example_sentence_de": "Guten Abend allerseits!"
+        "translation_en": "Good evening",
+        "translation_ar": "⁦مساء الخير⁩",
+        "translation_es": "Buenas noches (al llegar)",
+        "example_sentence_de": "Guten Abend allerseits!",
+        "example_sentence_en": "Good evening everyone!",
+        "example_sentence_ar": "⁦مساء الخير للجميع!⁩",
+        "example_sentence_es": "¡Buenas noches a todos!",
+        "sentence_en": "Good evening everyone!",
+        "sentence_ar": "⁦مساء الخير للجميع!⁩",
+        "sentence_es": "¡Buenas noches a todos!"
       }
     },
     {
@@ -24062,10 +24644,16 @@
       "custom_prompt_de": "Gute Nacht",
       "data_json": {
         "chunk_de": "Gute Nacht",
-        "sentence_en": "Good night (said before sleeping)",
-        "sentence_ar": "⁦تصبح على خير⁩",
-        "sentence_es": "Buenas noches (al despedirse)",
-        "example_sentence_de": "Gute Nacht und schlaf gut!"
+        "translation_en": "Good night",
+        "translation_ar": "⁦تصبح على خير⁩",
+        "translation_es": "Buenas noches (al despedirse)",
+        "example_sentence_de": "Gute Nacht und schlaf gut!",
+        "example_sentence_en": "Good night and sleep well!",
+        "example_sentence_ar": "⁦تصبح على خير ونم جيداً!⁩",
+        "example_sentence_es": "¡Buenas noches y que duermas bien!",
+        "sentence_en": "Good night and sleep well!",
+        "sentence_ar": "⁦تصبح على خير ونم جيداً!⁩",
+        "sentence_es": "¡Buenas noches y que duermas bien!"
       }
     },
     {
@@ -24076,10 +24664,16 @@
       "custom_prompt_de": "Auf Wiedersehen",
       "data_json": {
         "chunk_de": "Auf Wiedersehen",
-        "sentence_en": "Goodbye (formal)",
-        "sentence_ar": "⁦إلى اللقاء (رسمي)⁩",
-        "sentence_es": "Hasta la vista",
-        "example_sentence_de": "Auf Wiedersehen, Frau Schmidt!"
+        "translation_en": "Goodbye",
+        "translation_ar": "⁦إلى اللقاء⁩",
+        "translation_es": "Hasta la vista",
+        "example_sentence_de": "Auf Wiedersehen, Frau Schmidt!",
+        "example_sentence_en": "Goodbye, Mrs. Schmidt!",
+        "example_sentence_ar": "⁦إلى اللقاء، سيدة شميت!⁩",
+        "example_sentence_es": "¡Hasta luego, señora Schmidt!",
+        "sentence_en": "Goodbye, Mrs. Schmidt!",
+        "sentence_ar": "⁦إلى اللقاء، سيدة شميت!⁩",
+        "sentence_es": "¡Hasta luego, señora Schmidt!"
       }
     },
     {
@@ -24090,10 +24684,16 @@
       "custom_prompt_de": "Wie geht's?",
       "data_json": {
         "chunk_de": "Wie geht's?",
-        "sentence_en": "How are you? (informal)",
-        "sentence_ar": "⁦كيف حالك؟⁩",
-        "sentence_es": "¿Cómo estás?",
-        "example_sentence_de": "Hallo Anna, wie geht's?"
+        "translation_en": "How are you?",
+        "translation_ar": "⁦كيف حالك؟⁩",
+        "translation_es": "¿Cómo estás?",
+        "example_sentence_de": "Hallo Anna, wie geht's?",
+        "example_sentence_en": "Hello Anna, how are you?",
+        "example_sentence_ar": "⁦مرحباً آنّا، كيف حالك؟⁩",
+        "example_sentence_es": "Hola Anna, ¿cómo estás?",
+        "sentence_en": "Hello Anna, how are you?",
+        "sentence_ar": "⁦مرحباً آنّا، كيف حالك؟⁩",
+        "sentence_es": "Hola Anna, ¿cómo estás?"
       }
     },
     {
@@ -24104,10 +24704,16 @@
       "custom_prompt_de": "Sehr gut, danke!",
       "data_json": {
         "chunk_de": "Sehr gut, danke!",
-        "sentence_en": "Very good, thank you!",
-        "sentence_ar": "⁦بخير جداً، شكراً!⁩",
-        "sentence_es": "¡Muy bien, gracias!",
-        "example_sentence_de": "Mir geht es sehr gut, danke!"
+        "translation_en": "Very good, thank you!",
+        "translation_ar": "⁦بخير جداً، شكراً!⁩",
+        "translation_es": "¡Muy bien, gracias!",
+        "example_sentence_de": "Mir geht es sehr gut, danke!",
+        "example_sentence_en": "I'm doing very well, thank you!",
+        "example_sentence_ar": "⁦أنا بأفضل حال، شكراً!⁩",
+        "example_sentence_es": "¡Me va muy bien, gracias!",
+        "sentence_en": "I'm doing very well, thank you!",
+        "sentence_ar": "⁦أنا بأفضل حال، شكراً!⁩",
+        "sentence_es": "¡Me va muy bien, gracias!"
       }
     },
     {
@@ -24118,10 +24724,16 @@
       "custom_prompt_de": "Es geht.",
       "data_json": {
         "chunk_de": "Es geht.",
-        "sentence_en": "So-so / Not bad.",
-        "sentence_ar": "⁦على ما يرام / لا بأس.⁩",
-        "sentence_es": "Ahí vamos.",
-        "example_sentence_de": "Wie geht's? — Es geht."
+        "translation_en": "So-so / Not bad.",
+        "translation_ar": "⁦على ما يرام / لا بأس.⁩",
+        "translation_es": "Ahí vamos.",
+        "example_sentence_de": "Wie geht's? — Es geht.",
+        "example_sentence_en": "How are you? — So-so.",
+        "example_sentence_ar": "⁦كيف الحال؟ — على ما يرام.⁩",
+        "example_sentence_es": "¿Cómo estás? — Ahí vamos.",
+        "sentence_en": "How are you? — So-so.",
+        "sentence_ar": "⁦كيف الحال؟ — على ما يرام.⁩",
+        "sentence_es": "¿Cómo estás? — Ahí vamos."
       }
     },
     {
@@ -24132,10 +24744,16 @@
       "custom_prompt_de": "Nicht so gut.",
       "data_json": {
         "chunk_de": "Nicht so gut.",
-        "sentence_en": "Not so good.",
-        "sentence_ar": "⁦لست بخير / ليس جيداً.⁩",
-        "sentence_es": "No tan bien.",
-        "example_sentence_de": "Heute geht es mir nicht so gut."
+        "translation_en": "Not so good.",
+        "translation_ar": "⁦لست بخير / ليس جيداً.⁩",
+        "translation_es": "No tan bien.",
+        "example_sentence_de": "Heute geht es mir nicht so gut.",
+        "example_sentence_en": "Today I'm not doing so well.",
+        "example_sentence_ar": "⁦اليوم لست بخير تماماً.⁩",
+        "example_sentence_es": "Hoy no me siento tan bien.",
+        "sentence_en": "Today I'm not doing so well.",
+        "sentence_ar": "⁦اليوم لست بخير تماماً.⁩",
+        "sentence_es": "Hoy no me siento tan bien."
       }
     },
     {
@@ -24306,10 +24924,16 @@
       "custom_prompt_de": "Ich verstehe nicht.",
       "data_json": {
         "chunk_de": "Ich verstehe nicht.",
+        "translation_en": "I do not understand.",
+        "translation_ar": "⁦أنا لا أفهم.⁩",
+        "translation_es": "No entiendo.",
+        "example_sentence_de": "Ich verstehe nicht.",
+        "example_sentence_en": "I do not understand.",
+        "example_sentence_ar": "⁦أنا لا أفهم.⁩",
+        "example_sentence_es": "No entiendo.",
         "sentence_en": "I do not understand.",
         "sentence_ar": "⁦أنا لا أفهم.⁩",
-        "sentence_es": "No entiendo.",
-        "example_sentence_de": "Ich verstehe nicht."
+        "sentence_es": "No entiendo."
       }
     },
     {
@@ -24320,10 +24944,16 @@
       "custom_prompt_de": "Sprechen Sie Englisch?",
       "data_json": {
         "chunk_de": "Sprechen Sie Englisch?",
-        "sentence_en": "Do you speak English?",
-        "sentence_ar": "⁦هل تتحدث الإنجليزية؟⁩",
-        "sentence_es": "¿Habla inglés?",
-        "example_sentence_de": "Entschuldigung, sprechen Sie Englisch?"
+        "translation_en": "Do you speak English?",
+        "translation_ar": "⁦هل تتحدث الإنجليزية؟⁩",
+        "translation_es": "¿Habla inglés?",
+        "example_sentence_de": "Entschuldigung, sprechen Sie Englisch?",
+        "example_sentence_en": "Excuse me, do you speak English?",
+        "example_sentence_ar": "⁦عذراً، هل تتحدث الإنجليزية؟⁩",
+        "example_sentence_es": "Disculpe, ¿habla inglés?",
+        "sentence_en": "Excuse me, do you speak English?",
+        "sentence_ar": "⁦عذراً، هل تتحدث الإنجليزية؟⁩",
+        "sentence_es": "Disculpe, ¿habla inglés?"
       }
     },
     {
@@ -24334,10 +24964,16 @@
       "custom_prompt_de": "Bitte langsamer.",
       "data_json": {
         "chunk_de": "Bitte langsamer.",
-        "sentence_en": "Please more slowly.",
-        "sentence_ar": "⁦من فضلك تحدث ببطء أكثر.⁩",
-        "sentence_es": "Más despacio, por favor.",
-        "example_sentence_de": "Können Sie bitte langsamer sprechen?"
+        "translation_en": "Please more slowly.",
+        "translation_ar": "⁦من فضلك تحدث ببطء أكثر.⁩",
+        "translation_es": "Más despacio, por favor.",
+        "example_sentence_de": "Können Sie bitte langsamer sprechen?",
+        "example_sentence_en": "Could you please speak more slowly?",
+        "example_sentence_ar": "⁦هل يمكنك التحدث ببطء أكثر من فضلك؟⁩",
+        "example_sentence_es": "¿Puede hablar más despacio, por favor?",
+        "sentence_en": "Could you please speak more slowly?",
+        "sentence_ar": "⁦هل يمكنك التحدث ببطء أكثر من فضلك؟⁩",
+        "sentence_es": "¿Puede hablar más despacio, por favor?"
       }
     },
     {
@@ -24348,10 +24984,16 @@
       "custom_prompt_de": "Wie bitte?",
       "data_json": {
         "chunk_de": "Wie bitte?",
-        "sentence_en": "Pardon? / Could you repeat?",
-        "sentence_ar": "⁦عفواً؟ ماذا قلت؟⁩",
-        "sentence_es": "¿Cómo?",
-        "example_sentence_de": "Wie bitte? Ich habe das nicht gehört."
+        "translation_en": "Pardon? / Could you repeat?",
+        "translation_ar": "⁦عفواً؟ ماذا قلت؟⁩",
+        "translation_es": "¿Cómo?",
+        "example_sentence_de": "Wie bitte? Ich habe das nicht gehört.",
+        "example_sentence_en": "Pardon? I didn't hear that.",
+        "example_sentence_ar": "⁦عفواً؟ لم أسمع ذلك.⁩",
+        "example_sentence_es": "¿Cómo? No escuché eso.",
+        "sentence_en": "Pardon? I didn't hear that.",
+        "sentence_ar": "⁦عفواً؟ لم أسمع ذلك.⁩",
+        "sentence_es": "¿Cómo? No escuché eso."
       }
     },
     {
@@ -24362,10 +25004,16 @@
       "custom_prompt_de": "Erstes Gespräch",
       "data_json": {
         "chunk_de": "Guten Tag! Ich heiße Karim. Und wie heißen Sie?",
-        "sentence_en": "Good day! My name is Karim. And what is your name?",
-        "sentence_ar": "⁦يوم سعيد! اسمي كريم. وما اسم حضرتك؟⁩",
-        "sentence_es": "¡Buenos días! Me llamo Karim. ¿Y cómo se llama usted?",
-        "example_sentence_de": "Ich heiße Anna. Freut mich!"
+        "translation_en": "Good day! My name is Karim. And what is your name?",
+        "translation_ar": "⁦يوم سعيد! اسمي كريم. وما اسم حضرتك؟⁩",
+        "translation_es": "¡Buenos días! Me llamo Karim. ¿Y cómo se llama usted?",
+        "example_sentence_de": "Ich heiße Anna. Freut mich!",
+        "example_sentence_en": "My name is Anna. Pleased to meet you!",
+        "example_sentence_ar": "⁦اسمي آنّا. تشرفت بمعرفتك!⁩",
+        "example_sentence_es": "Me llamo Anna. ¡Mucho gusto!",
+        "sentence_en": "My name is Anna. Pleased to meet you!",
+        "sentence_ar": "⁦اسمي آنّا. تشرفت بمعرفتك!⁩",
+        "sentence_es": "Me llamo Anna. ¡Mucho gusto!"
       }
     },
     {
@@ -24376,10 +25024,16 @@
       "custom_prompt_de": "Begrüßung & Verben",
       "data_json": {
         "chunk_de": "Begrüßung & Verben Checkpoint",
-        "sentence_en": "Greetings & Verbs Mastery Check",
-        "sentence_ar": "⁦اختبار التحيات وتصريف الأفعال⁩",
-        "sentence_es": "Examen de saludos y verbos",
-        "example_sentence_de": "Hallo, ich heiße Karim und komme aus Syrien."
+        "translation_en": "Greetings & Verbs Mastery Check",
+        "translation_ar": "⁦اختبار التحيات وتصريف الأفعال⁩",
+        "translation_es": "Examen de saludos y verbos",
+        "example_sentence_de": "Hallo, ich heiße Karim und komme aus Syrien.",
+        "example_sentence_en": "Hello, my name is Karim and I come from Syria.",
+        "example_sentence_ar": "⁦مرحباً، اسمي كريم وأنا من سوريا.⁩",
+        "example_sentence_es": "Hola, me llamo Karim y soy de Siria.",
+        "sentence_en": "Hello, my name is Karim and I come from Syria.",
+        "sentence_ar": "⁦مرحباً، اسمي كريم وأنا من سوريا.⁩",
+        "sentence_es": "Hola, me llamo Karim y soy de Siria."
       }
     },
     {
@@ -24390,10 +25044,16 @@
       "custom_prompt_de": "Deutschland",
       "data_json": {
         "chunk_de": "Deutschland",
-        "sentence_en": "Germany",
-        "sentence_ar": "⁦ألمانيا⁩",
-        "sentence_es": "Alemania",
-        "example_sentence_de": "Deutschland ist in Europa."
+        "translation_en": "Germany",
+        "translation_ar": "⁦ألمانيا⁩",
+        "translation_es": "Alemania",
+        "example_sentence_de": "Deutschland ist in Europa.",
+        "example_sentence_en": "Germany is in Europe.",
+        "example_sentence_ar": "⁦ألمانيا في أوروبا.⁩",
+        "example_sentence_es": "Alemania está en Europa.",
+        "sentence_en": "Germany is in Europe.",
+        "sentence_ar": "⁦ألمانيا في أوروبا.⁩",
+        "sentence_es": "Alemania está en Europa."
       }
     },
     {
@@ -24404,10 +25064,16 @@
       "custom_prompt_de": "Deutsch",
       "data_json": {
         "chunk_de": "Deutsch",
-        "sentence_en": "German (language)",
-        "sentence_ar": "⁦اللغة الألمانية⁩",
-        "sentence_es": "alemán",
-        "example_sentence_de": "Ich lerne Deutsch."
+        "translation_en": "German (language)",
+        "translation_ar": "⁦اللغة الألمانية⁩",
+        "translation_es": "alemán",
+        "example_sentence_de": "Ich lerne Deutsch.",
+        "example_sentence_en": "I am learning German.",
+        "example_sentence_ar": "⁦أنا أتعلم الألمانية.⁩",
+        "example_sentence_es": "Estoy aprendiendo alemán.",
+        "sentence_en": "I am learning German.",
+        "sentence_ar": "⁦أنا أتعلم الألمانية.⁩",
+        "sentence_es": "Estoy aprendiendo alemán."
       }
     },
     {
@@ -24418,10 +25084,16 @@
       "custom_prompt_de": "Syrien",
       "data_json": {
         "chunk_de": "Syrien",
-        "sentence_en": "Syria",
-        "sentence_ar": "⁦سوريا⁩",
-        "sentence_es": "Siria",
-        "example_sentence_de": "Er kommt aus Syrien."
+        "translation_en": "Syria",
+        "translation_ar": "⁦سوريا⁩",
+        "translation_es": "Siria",
+        "example_sentence_de": "Er kommt aus Syrien.",
+        "example_sentence_en": "He comes from Syria.",
+        "example_sentence_ar": "⁦هو من سوريا.⁩",
+        "example_sentence_es": "Él viene de Siria.",
+        "sentence_en": "He comes from Syria.",
+        "sentence_ar": "⁦هو من سوريا.⁩",
+        "sentence_es": "Él viene de Siria."
       }
     },
     {
@@ -24432,10 +25104,16 @@
       "custom_prompt_de": "Marokko",
       "data_json": {
         "chunk_de": "Marokko",
-        "sentence_en": "Morocco",
-        "sentence_ar": "⁦المغرب⁩",
-        "sentence_es": "Marruecos",
-        "example_sentence_de": "Sie kommt aus Marokko."
+        "translation_en": "Morocco",
+        "translation_ar": "⁦المغرب⁩",
+        "translation_es": "Marruecos",
+        "example_sentence_de": "Sie kommt aus Marokko.",
+        "example_sentence_en": "She comes from Morocco.",
+        "example_sentence_ar": "⁦هي من المغرب.⁩",
+        "example_sentence_es": "Ella viene de Marruecos.",
+        "sentence_en": "She comes from Morocco.",
+        "sentence_ar": "⁦هي من المغرب.⁩",
+        "sentence_es": "Ella viene de Marruecos."
       }
     },
     {
@@ -24446,10 +25124,16 @@
       "custom_prompt_de": "Arabisch",
       "data_json": {
         "chunk_de": "Arabisch",
-        "sentence_en": "Arabic (language)",
-        "sentence_ar": "⁦اللغة العربية⁩",
-        "sentence_es": "árabe",
-        "example_sentence_de": "Meine Muttersprache ist Arabisch."
+        "translation_en": "Arabic (language)",
+        "translation_ar": "⁦اللغة العربية⁩",
+        "translation_es": "árabe",
+        "example_sentence_de": "Meine Muttersprache ist Arabisch.",
+        "example_sentence_en": "My native language is Arabic.",
+        "example_sentence_ar": "⁦لغتي الأم هي العربية.⁩",
+        "example_sentence_es": "Mi lengua materna es el árabe.",
+        "sentence_en": "My native language is Arabic.",
+        "sentence_ar": "⁦لغتي الأم هي العربية.⁩",
+        "sentence_es": "Mi lengua materna es el árabe."
       }
     },
     {
@@ -24460,10 +25144,16 @@
       "custom_prompt_de": "Englisch",
       "data_json": {
         "chunk_de": "Englisch",
-        "sentence_en": "English (language)",
-        "sentence_ar": "⁦اللغة الإنجليزية⁩",
-        "sentence_es": "inglés",
-        "example_sentence_de": "Wir sprechen Englisch."
+        "translation_en": "English (language)",
+        "translation_ar": "⁦اللغة الإنجليزية⁩",
+        "translation_es": "inglés",
+        "example_sentence_de": "Wir sprechen Englisch.",
+        "example_sentence_en": "We speak English.",
+        "example_sentence_ar": "⁦نحن نتحدث الإنجليزية.⁩",
+        "example_sentence_es": "Hablamos inglés.",
+        "sentence_en": "We speak English.",
+        "sentence_ar": "⁦نحن نتحدث الإنجليزية.⁩",
+        "sentence_es": "Hablamos inglés."
       }
     },
     {
@@ -24474,10 +25164,16 @@
       "custom_prompt_de": "der Vorname",
       "data_json": {
         "chunk_de": "der Vorname",
-        "sentence_en": "first name",
-        "sentence_ar": "⁦الاسم الأول / الشخصي⁩",
-        "sentence_es": "nombre de pila",
-        "example_sentence_de": "Mein Vorname ist Karim."
+        "translation_en": "first name",
+        "translation_ar": "⁦الاسم الأول / الشخصي⁩",
+        "translation_es": "nombre de pila",
+        "example_sentence_de": "Mein Vorname ist Karim.",
+        "example_sentence_en": "My first name is Karim.",
+        "example_sentence_ar": "⁦اسمي الأول كريم.⁩",
+        "example_sentence_es": "Mi nombre de pila es Karim.",
+        "sentence_en": "My first name is Karim.",
+        "sentence_ar": "⁦اسمي الأول كريم.⁩",
+        "sentence_es": "Mi nombre de pila es Karim."
       }
     },
     {
@@ -24488,10 +25184,16 @@
       "custom_prompt_de": "der Familienname",
       "data_json": {
         "chunk_de": "der Familienname",
-        "sentence_en": "surname / last name",
-        "sentence_ar": "⁦اللقب / اسم العائلة⁩",
-        "sentence_es": "apellido",
-        "example_sentence_de": "Mein Familienname ist Mansour."
+        "translation_en": "surname / last name",
+        "translation_ar": "⁦اللقب / اسم العائلة⁩",
+        "translation_es": "apellido",
+        "example_sentence_de": "Mein Familienname ist Mansour.",
+        "example_sentence_en": "My last name is Mansour.",
+        "example_sentence_ar": "⁦لقب عائلتي منصور.⁩",
+        "example_sentence_es": "Mi apellido es Mansour.",
+        "sentence_en": "My last name is Mansour.",
+        "sentence_ar": "⁦لقب عائلتي منصور.⁩",
+        "sentence_es": "Mi apellido es Mansour."
       }
     },
     {
@@ -24502,10 +25204,16 @@
       "custom_prompt_de": "das Alter",
       "data_json": {
         "chunk_de": "das Alter",
-        "sentence_en": "age",
-        "sentence_ar": "⁦العمر / السن⁩",
-        "sentence_es": "edad",
-        "example_sentence_de": "Mein Alter ist 25 Jahre."
+        "translation_en": "age",
+        "translation_ar": "⁦العمر / السن⁩",
+        "translation_es": "edad",
+        "example_sentence_de": "Mein Alter ist 25 Jahre.",
+        "example_sentence_en": "My age is 25 years.",
+        "example_sentence_ar": "⁦عمري 25 سنة.⁩",
+        "example_sentence_es": "Mi edad es de 25 años.",
+        "sentence_en": "My age is 25 years.",
+        "sentence_ar": "⁦عمري 25 سنة.⁩",
+        "sentence_es": "Mi edad es de 25 años."
       }
     },
     {
@@ -24516,10 +25224,16 @@
       "custom_prompt_de": "der Wohnort",
       "data_json": {
         "chunk_de": "der Wohnort",
-        "sentence_en": "place of residence",
-        "sentence_ar": "⁦مكان الإقامة⁩",
-        "sentence_es": "lugar de residencia",
-        "example_sentence_de": "Mein Wohnort ist Berlin."
+        "translation_en": "place of residence",
+        "translation_ar": "⁦مكان الإقامة⁩",
+        "translation_es": "lugar de residencia",
+        "example_sentence_de": "Mein Wohnort ist Berlin.",
+        "example_sentence_en": "My place of residence is Berlin.",
+        "example_sentence_ar": "⁦مكان سكني برلين.⁩",
+        "example_sentence_es": "Mi lugar de residencia es Berlín.",
+        "sentence_en": "My place of residence is Berlin.",
+        "sentence_ar": "⁦مكان سكني برلين.⁩",
+        "sentence_es": "Mi lugar de residencia es Berlín."
       }
     },
     {
@@ -24530,10 +25244,16 @@
       "custom_prompt_de": "die Straße",
       "data_json": {
         "chunk_de": "die Straße",
-        "sentence_en": "street",
-        "sentence_ar": "⁦الشارع⁩",
-        "sentence_es": "calle",
-        "example_sentence_de": "Ich wohne in der Goethestraße."
+        "translation_en": "street",
+        "translation_ar": "⁦الشارع⁩",
+        "translation_es": "calle",
+        "example_sentence_de": "Ich wohne in der Goethestraße.",
+        "example_sentence_en": "I live in Goethe Street.",
+        "example_sentence_ar": "⁦أنا أسكن في شارع غوته.⁩",
+        "example_sentence_es": "Vivo en la calle Goethe.",
+        "sentence_en": "I live in Goethe Street.",
+        "sentence_ar": "⁦أنا أسكن في شارع غوته.⁩",
+        "sentence_es": "Vivo en la calle Goethe."
       }
     },
     {
@@ -24544,10 +25264,16 @@
       "custom_prompt_de": "die Hausnummer",
       "data_json": {
         "chunk_de": "die Hausnummer",
-        "sentence_en": "house number",
-        "sentence_ar": "⁦رقم المنزل⁩",
-        "sentence_es": "número de casa",
-        "example_sentence_de": "Meine Hausnummer ist 14."
+        "translation_en": "house number",
+        "translation_ar": "⁦رقم المنزل⁩",
+        "translation_es": "número de casa",
+        "example_sentence_de": "Meine Hausnummer ist 14.",
+        "example_sentence_en": "My house number is 14.",
+        "example_sentence_ar": "⁦رقم منزلي 14.⁩",
+        "example_sentence_es": "Mi número de casa es 14.",
+        "sentence_en": "My house number is 14.",
+        "sentence_ar": "⁦رقم منزلي 14.⁩",
+        "sentence_es": "Mi número de casa es 14."
       }
     },
     {
@@ -24558,10 +25284,16 @@
       "custom_prompt_de": "die Postleitzahl",
       "data_json": {
         "chunk_de": "die Postleitzahl",
-        "sentence_en": "postal code (PLZ)",
-        "sentence_ar": "⁦الرمز البريدي⁩",
-        "sentence_es": "código postal",
-        "example_sentence_de": "Die Postleitzahl ist 10115."
+        "translation_en": "postal code (PLZ)",
+        "translation_ar": "⁦الرمز البريدي⁩",
+        "translation_es": "código postal",
+        "example_sentence_de": "Die Postleitzahl ist 10115.",
+        "example_sentence_en": "The postal code is 10115.",
+        "example_sentence_ar": "⁦الرمز البريدي 10115.⁩",
+        "example_sentence_es": "El código postal es 10115.",
+        "sentence_en": "The postal code is 10115.",
+        "sentence_ar": "⁦الرمز البريدي 10115.⁩",
+        "sentence_es": "El código postal es 10115."
       }
     },
     {
@@ -24572,10 +25304,16 @@
       "custom_prompt_de": "die Telefonnummer",
       "data_json": {
         "chunk_de": "die Telefonnummer",
-        "sentence_en": "phone number",
-        "sentence_ar": "⁦رقم الهاتف⁩",
-        "sentence_es": "número de teléfono",
-        "example_sentence_de": "Meine Telefonnummer ist 0151..."
+        "translation_en": "phone number",
+        "translation_ar": "⁦رقم الهاتف⁩",
+        "translation_es": "número de teléfono",
+        "example_sentence_de": "Meine Telefonnummer ist 0151...",
+        "example_sentence_en": "My phone number is 0151...",
+        "example_sentence_ar": "⁦رقم هاتفي هو 0151...⁩",
+        "example_sentence_es": "Mi número de teléfono es 0151...",
+        "sentence_en": "My phone number is 0151...",
+        "sentence_ar": "⁦رقم هاتفي هو 0151...⁩",
+        "sentence_es": "Mi número de teléfono es 0151..."
       }
     },
     {
@@ -24586,10 +25324,16 @@
       "custom_prompt_de": "die E-Mail-Adresse",
       "data_json": {
         "chunk_de": "die E-Mail-Adresse",
-        "sentence_en": "email address",
-        "sentence_ar": "⁦عنوان البريد الإلكتروني⁩",
-        "sentence_es": "correo electrónico",
-        "example_sentence_de": "Meine E-Mail-Adresse ist..."
+        "translation_en": "email address",
+        "translation_ar": "⁦عنوان البريد الإلكتروني⁩",
+        "translation_es": "correo electrónico",
+        "example_sentence_de": "Meine E-Mail-Adresse ist...",
+        "example_sentence_en": "My email address is...",
+        "example_sentence_ar": "⁦عنوان بريدي الإلكتروني هو...⁩",
+        "example_sentence_es": "Mi dirección de correo electrónico es...",
+        "sentence_en": "My email address is...",
+        "sentence_ar": "⁦عنوان بريدي الإلكتروني هو...⁩",
+        "sentence_es": "Mi dirección de correo electrónico es..."
       }
     },
     {
@@ -24600,10 +25344,16 @@
       "custom_prompt_de": "ledig",
       "data_json": {
         "chunk_de": "ledig",
-        "sentence_en": "single (unmarried)",
-        "sentence_ar": "⁦أعزب / عزباء⁩",
-        "sentence_es": "soltero/a",
-        "example_sentence_de": "Ich bin ledig."
+        "translation_en": "single (unmarried)",
+        "translation_ar": "⁦أعزب / عزباء⁩",
+        "translation_es": "soltero/a",
+        "example_sentence_de": "Ich bin ledig.",
+        "example_sentence_en": "I am single.",
+        "example_sentence_ar": "⁦أنا أعزب.⁩",
+        "example_sentence_es": "Soy soltero/a.",
+        "sentence_en": "I am single.",
+        "sentence_ar": "⁦أنا أعزب.⁩",
+        "sentence_es": "Soy soltero/a."
       }
     },
     {
@@ -24614,10 +25364,16 @@
       "custom_prompt_de": "verheiratet",
       "data_json": {
         "chunk_de": "verheiratet",
-        "sentence_en": "married",
-        "sentence_ar": "⁦متزوج / متزوجة⁩",
-        "sentence_es": "casado/a",
-        "example_sentence_de": "Er ist verheiratet."
+        "translation_en": "married",
+        "translation_ar": "⁦متزوج / متزوجة⁩",
+        "translation_es": "casado/a",
+        "example_sentence_de": "Er ist verheiratet.",
+        "example_sentence_en": "He is married.",
+        "example_sentence_ar": "⁦هو متزوج.⁩",
+        "example_sentence_es": "Él está casado.",
+        "sentence_en": "He is married.",
+        "sentence_ar": "⁦هو متزوج.⁩",
+        "sentence_es": "Él está casado."
       }
     },
     {
@@ -24628,10 +25384,16 @@
       "custom_prompt_de": "der Student",
       "data_json": {
         "chunk_de": "der Student",
-        "sentence_en": "student (male)",
-        "sentence_ar": "⁦طالب جامعي⁩",
-        "sentence_es": "estudiante (m)",
-        "example_sentence_de": "Ich bin Student an der Universität."
+        "translation_en": "student (male)",
+        "translation_ar": "⁦طالب جامعي⁩",
+        "translation_es": "estudiante (m)",
+        "example_sentence_de": "Ich bin Student an der Universität.",
+        "example_sentence_en": "I am a student at the university.",
+        "example_sentence_ar": "⁦أنا طالب في الجامعة.⁩",
+        "example_sentence_es": "Soy estudiante en la universidad.",
+        "sentence_en": "I am a student at the university.",
+        "sentence_ar": "⁦أنا طالب في الجامعة.⁩",
+        "sentence_es": "Soy estudiante en la universidad."
       }
     },
     {
@@ -24642,10 +25404,16 @@
       "custom_prompt_de": "der Arzt",
       "data_json": {
         "chunk_de": "der Arzt",
-        "sentence_en": "doctor (physician)",
-        "sentence_ar": "⁦طبيب⁩",
-        "sentence_es": "médico",
-        "example_sentence_de": "Der Arzt arbeitet im Krankenhaus."
+        "translation_en": "doctor (physician)",
+        "translation_ar": "⁦طبيب⁩",
+        "translation_es": "médico",
+        "example_sentence_de": "Der Arzt arbeitet im Krankenhaus.",
+        "example_sentence_en": "The doctor works in the hospital.",
+        "example_sentence_ar": "⁦الطبيب يعمل في المستشفى.⁩",
+        "example_sentence_es": "El médico trabaja en el hospital.",
+        "sentence_en": "The doctor works in the hospital.",
+        "sentence_ar": "⁦الطبيب يعمل في المستشفى.⁩",
+        "sentence_es": "El médico trabaja en el hospital."
       }
     },
     {
@@ -24704,10 +25472,16 @@
       "custom_prompt_de": "das Formular",
       "data_json": {
         "chunk_de": "das Formular",
-        "sentence_en": "form",
-        "sentence_ar": "⁦استمارة رسمية⁩",
-        "sentence_es": "formulario",
-        "example_sentence_de": "Bitte füllen Sie das Formular aus."
+        "translation_en": "form",
+        "translation_ar": "⁦استمارة رسمية⁩",
+        "translation_es": "formulario",
+        "example_sentence_de": "Bitte füllen Sie das Formular aus.",
+        "example_sentence_en": "Please fill out the form.",
+        "example_sentence_ar": "⁦يرجى ملء الاستمارة.⁩",
+        "example_sentence_es": "Por favor complete el formulario.",
+        "sentence_en": "Please fill out the form.",
+        "sentence_ar": "⁦يرجى ملء الاستمارة.⁩",
+        "sentence_es": "Por favor complete el formulario."
       }
     },
     {
@@ -24718,10 +25492,16 @@
       "custom_prompt_de": "ausfüllen",
       "data_json": {
         "chunk_de": "ausfüllen",
-        "sentence_en": "to fill out",
-        "sentence_ar": "⁦يملأ استمارة⁩",
-        "sentence_es": "rellenar / completar",
-        "example_sentence_de": "Ich fülle das Anmeldeformular aus."
+        "translation_en": "to fill out",
+        "translation_ar": "⁦يملأ استمارة⁩",
+        "translation_es": "rellenar / completar",
+        "example_sentence_de": "Ich fülle das Anmeldeformular aus.",
+        "example_sentence_en": "I am filling out the registration form.",
+        "example_sentence_ar": "⁦أنا أملأ استمارة التسجيل.⁩",
+        "example_sentence_es": "Estoy completando el formulario de inscripción.",
+        "sentence_en": "I am filling out the registration form.",
+        "sentence_ar": "⁦أنا أملأ استمارة التسجيل.⁩",
+        "sentence_es": "Estoy completando el formulario de inscripción."
       }
     },
     {
@@ -24732,10 +25512,16 @@
       "custom_prompt_de": "der Geburtsort",
       "data_json": {
         "chunk_de": "der Geburtsort",
-        "sentence_en": "place of birth",
-        "sentence_ar": "⁦مكان الولادة⁩",
-        "sentence_es": "lugar de nacimiento",
-        "example_sentence_de": "Mein Geburtsort ist Damaskus."
+        "translation_en": "place of birth",
+        "translation_ar": "⁦مكان الولادة⁩",
+        "translation_es": "lugar de nacimiento",
+        "example_sentence_de": "Mein Geburtsort ist Damaskus.",
+        "example_sentence_en": "My place of birth is Damascus.",
+        "example_sentence_ar": "⁦مكان ولادتي دمشق.⁩",
+        "example_sentence_es": "Mi lugar de nacimiento es Damasco.",
+        "sentence_en": "My place of birth is Damascus.",
+        "sentence_ar": "⁦مكان ولادتي دمشق.⁩",
+        "sentence_es": "Mi lugar de nacimiento es Damasco."
       }
     },
     {
@@ -24746,10 +25532,16 @@
       "custom_prompt_de": "das Geburtsdatum",
       "data_json": {
         "chunk_de": "das Geburtsdatum",
-        "sentence_en": "date of birth",
-        "sentence_ar": "⁦تاريخ الولادة⁩",
-        "sentence_es": "fecha de nacimiento",
-        "example_sentence_de": "Mein Geburtsdatum ist 12.05.1998."
+        "translation_en": "date of birth",
+        "translation_ar": "⁦تاريخ الولادة⁩",
+        "translation_es": "fecha de nacimiento",
+        "example_sentence_de": "Mein Geburtsdatum ist 12.05.1998.",
+        "example_sentence_en": "My date of birth is 12.05.1998.",
+        "example_sentence_ar": "⁦تاريخ ولادتي 12.05.1998.⁩",
+        "example_sentence_es": "Mi fecha de nacimiento es 12.05.1998.",
+        "sentence_en": "My date of birth is 12.05.1998.",
+        "sentence_ar": "⁦تاريخ ولادتي 12.05.1998.⁩",
+        "sentence_es": "Mi fecha de nacimiento es 12.05.1998."
       }
     },
     {
@@ -24760,10 +25552,16 @@
       "custom_prompt_de": "die Unterschrift",
       "data_json": {
         "chunk_de": "die Unterschrift",
-        "sentence_en": "signature",
-        "sentence_ar": "⁦التوقيع⁩",
-        "sentence_es": "firma",
-        "example_sentence_de": "Ihre Unterschrift bitte hier unten."
+        "translation_en": "signature",
+        "translation_ar": "⁦التوقيع⁩",
+        "translation_es": "firma",
+        "example_sentence_de": "Ihre Unterschrift bitte hier unten.",
+        "example_sentence_en": "Your signature down here, please.",
+        "example_sentence_ar": "⁦توقيعك هنا بالأسفل من فضلك.⁩",
+        "example_sentence_es": "Su firma aquí abajo, por favor.",
+        "sentence_en": "Your signature down here, please.",
+        "sentence_ar": "⁦توقيعك هنا بالأسفل من فضلك.⁩",
+        "sentence_es": "Su firma aquí abajo, por favor."
       }
     },
     {
@@ -24774,10 +25572,16 @@
       "custom_prompt_de": "Intro Checkpoint",
       "data_json": {
         "chunk_de": "Intro Level Checkpoint",
-        "sentence_en": "You are ready for the Intro Checkpoint!",
-        "sentence_ar": "⁦أنت الآن مستعد لاختبار إنهاء المستوى التمهيدي!⁩",
-        "sentence_es": "¡Estás listo para el examen de nivel Intro!",
-        "example_sentence_de": "Ich möchte mich vorstellen: Mein Name ist Karim."
+        "translation_en": "You are ready for the Intro Checkpoint!",
+        "translation_ar": "⁦أنت الآن مستعد لاختبار إنهاء المستوى التمهيدي!⁩",
+        "translation_es": "¡Estás listo para el examen de nivel Intro!",
+        "example_sentence_de": "Ich möchte mich vorstellen: Mein Name ist Karim.",
+        "example_sentence_en": "I'd like to introduce myself: My name is Karim.",
+        "example_sentence_ar": "⁦أود أن أقدم نفسي: اسمي كريم.⁩",
+        "example_sentence_es": "Me gustaría presentarme: Mi nombre es Karim.",
+        "sentence_en": "I'd like to introduce myself: My name is Karim.",
+        "sentence_ar": "⁦أود أن أقدم نفسي: اسمي كريم.⁩",
+        "sentence_es": "Me gustaría presentarme: Mi nombre es Karim."
       }
     },
     {
@@ -24788,6 +25592,9 @@
       "word_id": 1,
       "data_json": {
         "example_sentence_de": "Meine Mutter kocht sehr gut.",
+        "example_sentence_en": "My mother cooks very well.",
+        "example_sentence_ar": "⁦أمي تطبخ بشكل جيد جداً.⁩",
+        "example_sentence_es": "Mi madre cocina muy bien.",
         "sentence_en": "My mother cooks very well.",
         "sentence_ar": "⁦أمي تطبخ بشكل جيد جداً.⁩",
         "sentence_es": "Mi madre cocina muy bien.",
@@ -24808,6 +25615,9 @@
       "word_id": 2,
       "data_json": {
         "example_sentence_de": "Mein Vater arbeitet gern.",
+        "example_sentence_en": "My father likes to work.",
+        "example_sentence_ar": "⁦أبي يحب العمل.⁩",
+        "example_sentence_es": "A mi padre le gusta trabajar.",
         "sentence_en": "My father likes to work.",
         "sentence_ar": "⁦أبي يحب العمل.⁩",
         "sentence_es": "A mi padre le gusta trabajar.",
@@ -24827,6 +25637,9 @@
       "word_id": 4,
       "data_json": {
         "example_sentence_de": "Das Kind spielt im Park.",
+        "example_sentence_en": "The child is playing in the park.",
+        "example_sentence_ar": "⁦الطفل يلعب في الحديقة.⁩",
+        "example_sentence_es": "El niño juega en el parque.",
         "sentence_en": "The child is playing in the park.",
         "sentence_ar": "⁦الطفل يلعب في الحديقة.⁩",
         "sentence_es": "El niño juega en el parque.",
@@ -24847,6 +25660,9 @@
       "word_id": 7,
       "data_json": {
         "example_sentence_de": "Mein Bruder wohnt in Berlin.",
+        "example_sentence_en": "My brother lives in Berlin.",
+        "example_sentence_ar": "⁦أخي يعيش في برلين.⁩",
+        "example_sentence_es": "Mi hermano vive en Berlín.",
         "sentence_en": "My brother lives in Berlin.",
         "sentence_ar": "⁦أخي يعيش في برلين.⁩",
         "sentence_es": "Mi hermano vive en Berlín.",
@@ -24867,6 +25683,9 @@
       "word_id": 8,
       "data_json": {
         "example_sentence_de": "Meine Schwester lernt Deutsch.",
+        "example_sentence_en": "My sister is learning German.",
+        "example_sentence_ar": "⁦أختي تتعلم الألمانية.⁩",
+        "example_sentence_es": "Mi hermana aprende alemán.",
         "sentence_en": "My sister is learning German.",
         "sentence_ar": "⁦أختي تتعلم الألمانية.⁩",
         "sentence_es": "Mi hermana aprende alemán.",

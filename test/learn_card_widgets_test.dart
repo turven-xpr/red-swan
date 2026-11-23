@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:deutschy/src/core/providers.dart';
 import 'package:deutschy/src/core/audio/audio_playback_service.dart';
 import 'package:deutschy/src/core/audio/tts_service.dart';
+import 'package:deutschy/src/core/theme/app_theme.dart';
 import 'package:deutschy/src/features/study/data/content_repository.dart';
 import 'package:deutschy/src/features/study/domain/curriculum_models.dart';
 import 'package:deutschy/src/features/study/presentation/widgets/learn_card_widget.dart';
@@ -135,13 +136,58 @@ void main() {
       expect(find.text('A a'), findsOneWidget);
       expect(find.text('der Apfel'), findsOneWidget);
       expect(find.text('apple'), findsOneWidget);
-      expect(find.text('Der Apfel ist rot.'), findsOneWidget);
+      expect(find.text('Der Apfel ist rot.', findRichText: true), findsOneWidget);
       expect(find.text('The apple is red.'), findsOneWidget);
 
       // Tap anchor word audio button (second volume icon: 0=letter chip, 1=anchor word, 2=example sentence)
       await tester.tap(find.byIcon(Icons.volume_up_rounded).at(1));
       await tester.pump();
       expect(fakeAudio.lastSpoken, equals('der Apfel'));
+    });
+
+    testWidgets('renders phonetic card for Letter O with highlighted anchor word and Arabic example translation', (tester) async {
+      final card = CurriculumLearnCard(
+        id: 'card_10104_3',
+        lessonId: 10104,
+        type: LearnCardType.phonetic,
+        sortOrder: 3,
+        customPromptDe: 'O o',
+        dataJson: {
+          'chunk_de': 'O wie Orange',
+          'anchor_word_de': 'die Orange',
+          'anchor_word_en': 'orange',
+          'anchor_word_ar': '\u2066برتقال\u2069',
+          'example_sentence_de': 'Die Orange schmeckt gut.',
+          'example_sentence_ar': '\u2066البرتقالة طعمها لذيذ.\u2069',
+          'example_sentence_en': 'The orange tastes good.',
+        },
+      );
+
+      await tester.pumpWidget(
+        buildTestableWidget(
+          LearnCardWidget(card: card, languageCode: 'ar'),
+          locale: const Locale('ar'),
+        ),
+      );
+      await tester.pump();
+
+      expect(find.text('O o'), findsOneWidget);
+      expect(find.text('die Orange'), findsOneWidget);
+      expect(find.text('\u2066برتقال\u2069'), findsOneWidget);
+      expect(find.text('Die Orange schmeckt gut.', findRichText: true), findsOneWidget);
+      expect(find.text('\u2066البرتقالة طعمها لذيذ.\u2069'), findsOneWidget);
+
+      final textRich = tester.widget<Text>(
+        find.byWidgetPredicate(
+          (w) => w is Text && w.textSpan?.toPlainText() == 'Die Orange schmeckt gut.',
+        ),
+      );
+      final span = textRich.textSpan! as TextSpan;
+      final highlightSpan = span.children!.firstWhere(
+        (s) => s.toPlainText() == 'Orange',
+      ) as TextSpan;
+      expect(highlightSpan.style?.color, equals(AppColors.primary));
+      expect(highlightSpan.style?.fontWeight, equals(FontWeight.w900));
     });
 
     testWidgets('renders noun_article card with gender colors and text badge', (tester) async {
@@ -165,7 +211,7 @@ void main() {
       expect(find.textContaining('Apfel'), findsAtLeastNWidgets(1));
       expect(find.text('apple'), findsOneWidget);
       expect(find.text('Pl: die Äpfel'), findsOneWidget);
-      expect(find.text('Der Apfel ist rot.'), findsOneWidget);
+      expect(find.text('Der Apfel ist rot.', findRichText: true), findsOneWidget);
       expect(find.text('The apple is red.'), findsOneWidget);
     });
 

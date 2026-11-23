@@ -4,6 +4,8 @@
 generate_intro_learn_cards.py
 Generates clean, focused, slide-by-slide Learn Cards for Level Intro (Units 1-4)
 and cleans spoiler prompts from exercises.
+Includes full trilingual (EN, AR with BiDi isolation, ES) translations for all anchor
+words and example sentences.
 """
 
 import json
@@ -23,14 +25,14 @@ def generate_intro_cards():
 
     # --- 10101: Deutsch entdecken (International Cognates) ---
     u1_cognates = [
-        ("Hotel", "das Hotel", "hotel", "فندق", "hotel", "Das Hotel ist modern."),
-        ("Taxi", "das Taxi", "taxi", "سيارة أجرة", "taxi", "Das Taxi kommt gleich."),
-        ("Radio", "das Radio", "radio", "مذياع", "radio", "Das Radio spielt Musik."),
-        ("Bus", "der Bus", "bus", "حافلة", "autobús", "Der Bus fährt nach Berlin."),
-        ("Musik", "die Musik", "music", "موسيقى", "música", "Wir hören gerne Musik."),
-        ("Café", "das Café", "café", "مقهى", "cafetería", "Das Café ist geöffnet."),
+        ("Hotel", "das Hotel", "hotel", "فندق", "hotel", "Das Hotel ist modern.", "The hotel is modern.", "الفندق حديث.", "El hotel es moderno."),
+        ("Taxi", "das Taxi", "taxi", "سيارة أجرة", "taxi", "Das Taxi kommt gleich.", "The taxi is coming soon.", "سيارة الأجرة قادمة حالاً.", "El taxi viene pronto."),
+        ("Radio", "das Radio", "radio", "مذياع", "radio", "Das Radio spielt Musik.", "The radio is playing music.", "المذياع يعزف الموسيقى.", "La radio reproduce música."),
+        ("Bus", "der Bus", "bus", "حافلة", "autobús", "Der Bus fährt nach Berlin.", "The bus goes to Berlin.", "الحافلة تتجه إلى برلين.", "El autobús va a Berlín."),
+        ("Musik", "die Musik", "music", "موسيقى", "música", "Wir hören gerne Musik.", "We like listening to music.", "نحن نحب الاستماع إلى الموسيقى.", "Nos gusta escuchar música."),
+        ("Café", "das Café", "café", "مقهى", "cafetería", "Das Café ist geöffnet.", "The café is open.", "المقهى مفتوح.", "La cafetería está abierta."),
     ]
-    for i, (short, de, en, ar, es, ex) in enumerate(u1_cognates, 1):
+    for i, (short, de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u1_cognates, 1):
         cards.append({
             "id": f"card_10101_{i}",
             "lesson_id": 10101,
@@ -39,23 +41,29 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10102: Buchstaben A–F ---
     u1_af = [
-        ("A a", "der Apfel", "apple", "تفاحة", "manzana", "A wie Apfel", "Der Apfel ist rot."),
-        ("B b", "der Ball", "ball", "كرة", "pelota", "B wie Ball", "Der Ball ist rund."),
-        ("C c", "der Computer", "computer", "حاسوب", "ordenador", "C wie Computer", "Der Computer ist neu."),
-        ("D d", "Danke", "thank you", "شكراً", "gracias", "D wie Danke", "Vielen Dank!"),
-        ("E e", "der Elefant", "elephant", "فيل", "elefante", "E wie Elefant", "Der Elefant ist groß."),
-        ("F f", "das Fahrrad", "bicycle", "دراجة", "bicicleta", "F wie Fahrrad", "Das Fahrrad fährt schnell."),
+        ("A a", "der Apfel", "apple", "تفاحة", "manzana", "A wie Apfel", "Der Apfel ist rot.", "The apple is red.", "التفاحة حمراء.", "La manzana es roja."),
+        ("B b", "der Ball", "ball", "كرة", "pelota", "B wie Ball", "Der Ball ist rund.", "The ball is round.", "الكرة مستديرة.", "La pelota es redonda."),
+        ("C c", "der Computer", "computer", "حاسوب", "ordenador", "C wie Computer", "Der Computer ist neu.", "The computer is new.", "الحاسوب جديد.", "El ordenador es nuevo."),
+        ("D d", "Danke", "thank you", "شكراً", "gracias", "D wie Danke", "Vielen Dank!", "Thank you very much!", "شكراً جزيلاً!", "¡Muchas gracias!"),
+        ("E e", "der Elefant", "elephant", "فيل", "elefante", "E wie Elefant", "Der Elefant ist groß.", "The elephant is big.", "الفيل ضخم.", "El elefante es grande."),
+        ("F f", "das Fahrrad", "bicycle", "دراجة", "bicicleta", "F wie Fahrrad", "Das Fahrrad fährt schnell.", "The bicycle goes fast.", "الدراجة تسير بسرعة.", "La bicicleta va rápido."),
     ]
-    for i, (letter, de, en, ar, es, anchor, ex) in enumerate(u1_af, 1):
+    for i, (letter, de, en, ar, es, anchor, ex_de, ex_en, ex_ar, ex_es) in enumerate(u1_af, 1):
         cards.append({
             "id": f"card_10102_{i}",
             "lesson_id": 10102,
@@ -68,20 +76,26 @@ def generate_intro_cards():
                 "anchor_word_en": en,
                 "anchor_word_ar": bidi(ar),
                 "anchor_word_es": es,
-                "example_sentence_de": ex,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10103: Buchstaben G–L ---
     u1_gl = [
-        ("G g", "der Garten", "garden", "حديقة", "jardín", "G wie Garten", "Der Garten ist schön."),
-        ("H h", "Hallo", "hello", "مرحباً", "hola", "H wie Hallo", "Hallo! Wie geht's?"),
-        ("I i", "die Insel", "island", "جزيرة", "isla", "I wie Insel", "Die Insel ist ruhig."),
-        ("J j", "Ja", "yes", "نعم", "sí", "J wie Ja", "Ja, bitte."),
-        ("K k", "der Kaffee", "coffee", "قهوة", "café", "K wie Kaffee", "Der Kaffee ist heiß."),
-        ("L l", "die Lampe", "lamp", "مصباح", "lámpara", "L wie Lampe", "Die Lampe ist hell."),
+        ("G g", "der Garten", "garden", "حديقة", "jardín", "G wie Garten", "Der Garten ist schön.", "The garden is beautiful.", "الحديقة جميلة.", "El jardín es hermoso."),
+        ("H h", "Hallo", "hello", "مرحباً", "hola", "H wie Hallo", "Hallo! Wie geht's?", "Hello! How are you?", "مرحباً! كيف حالك؟", "¡Hola! ¿Cómo estás?"),
+        ("I i", "die Insel", "island", "جزيرة", "isla", "I wie Insel", "Die Insel ist ruhig.", "The island is peaceful.", "الجزيرة هادئة.", "La isla es tranquila."),
+        ("J j", "Ja", "yes", "نعم", "sí", "J wie Ja", "Ja, bitte.", "Yes, please.", "نعم، من فضلك.", "Sí, por favor."),
+        ("K k", "der Kaffee", "coffee", "قهوة", "café", "K wie Kaffee", "Der Kaffee ist heiß.", "The coffee is hot.", "القهوة ساخنة.", "El café está caliente."),
+        ("L l", "die Lampe", "lamp", "مصباح", "lámpara", "L wie Lampe", "Die Lampe ist hell.", "The lamp is bright.", "المصباح ساطع.", "La lámpara es brillante."),
     ]
-    for i, (letter, de, en, ar, es, anchor, ex) in enumerate(u1_gl, 1):
+    for i, (letter, de, en, ar, es, anchor, ex_de, ex_en, ex_ar, ex_es) in enumerate(u1_gl, 1):
         cards.append({
             "id": f"card_10103_{i}",
             "lesson_id": 10103,
@@ -94,20 +108,26 @@ def generate_intro_cards():
                 "anchor_word_en": en,
                 "anchor_word_ar": bidi(ar),
                 "anchor_word_es": es,
-                "example_sentence_de": ex,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10104: Buchstaben M–R ---
     u1_mr = [
-        ("M m", "die Milch", "milk", "حليب", "leche", "M wie Milch", "Ich trinke Milch."),
-        ("N n", "Nein", "no", "لا", "no", "N wie Nein", "Nein, danke."),
-        ("O o", "die Orange", "orange", "برتقال", "naranja", "O wie Orange", "Die Orange schmeckt gut."),
-        ("P p", "die Post", "post office", "بريد", "correos", "P wie Post", "Die Post ist da."),
-        ("Q q", "die Quelle", "source", "ينبوع", "fuente", "Q wie Quelle", "Die Quelle ist frisch."),
-        ("R r", "rot", "red", "أحمر", "rojo", "R wie rot", "Der Apfel ist rot."),
+        ("M m", "die Milch", "milk", "حليب", "leche", "M wie Milch", "Ich trinke Milch.", "I drink milk.", "أنا أشرب الحليب.", "Bebo leche."),
+        ("N n", "Nein", "no", "لا", "no", "N wie Nein", "Nein, danke.", "No, thank you.", "لا، شكراً.", "No, gracias."),
+        ("O o", "die Orange", "orange", "برتقال", "naranja", "O wie Orange", "Die Orange schmeckt gut.", "The orange tastes good.", "البرتقالة طعمها لذيذ.", "La naranja sabe bien."),
+        ("P p", "die Post", "post office", "بريد", "correos", "P wie Post", "Die Post ist da.", "The mail is here.", "وصل البريد.", "El correo está aquí."),
+        ("Q q", "die Quelle", "source", "ينبوع", "fuente", "Q wie Quelle", "Die Quelle ist frisch.", "The spring is fresh.", "ينبوع الماء عذب.", "La fuente es fresca."),
+        ("R r", "rot", "red", "أحمر", "rojo", "R wie rot", "Der Apfel ist rot.", "The apple is red.", "التفاحة حمراء.", "La manzana es roja."),
     ]
-    for i, (letter, de, en, ar, es, anchor, ex) in enumerate(u1_mr, 1):
+    for i, (letter, de, en, ar, es, anchor, ex_de, ex_en, ex_ar, ex_es) in enumerate(u1_mr, 1):
         cards.append({
             "id": f"card_10104_{i}",
             "lesson_id": 10104,
@@ -120,19 +140,25 @@ def generate_intro_cards():
                 "anchor_word_en": en,
                 "anchor_word_ar": bidi(ar),
                 "anchor_word_es": es,
-                "example_sentence_de": ex,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10105: Buchstaben S–U ---
     u1_su = [
-        ("S s", "die Sonne", "sun", "شمس", "sol", "S wie Sonne", "Die Sonne scheint."),
-        ("T t", "der Tee", "tea", "شاي", "té", "T wie Tee", "Der Tee ist warm."),
-        ("U u", "die Uhr", "clock / watch", "ساعة", "reloj", "U wie Uhr", "Wie viel Uhr ist es?"),
-        ("Zahlen", "sieben", "seven (7)", "سبعة (7)", "siete (7)", "Die Zahl 7", "Ich habe sieben Bücher."),
-        ("Gruß", "Guten Tag", "good day", "يوم سعيد", "buenos días", "Begrüßung", "Guten Tag, Herr Müller!"),
+        ("S s", "die Sonne", "sun", "شمس", "sol", "S wie Sonne", "Die Sonne scheint.", "The sun is shining.", "الشمس مشرقة.", "El sol brilla."),
+        ("T t", "der Tee", "tea", "شاي", "té", "T wie Tee", "Der Tee ist warm.", "The tea is warm.", "الشاي دافئ.", "El té está caliente."),
+        ("U u", "die Uhr", "clock / watch", "ساعة", "reloj", "U wie Uhr", "Wie viel Uhr ist es?", "What time is it?", "كم الساعة؟", "¿Qué hora es?"),
+        ("Zahlen", "sieben", "seven (7)", "سبعة (7)", "siete (7)", "Die Zahl 7", "Ich habe sieben Bücher.", "I have seven books.", "لدي سبعة كتب.", "Tengo siete libros."),
+        ("Gruß", "Guten Tag", "good day", "يوم سعيد", "buenos días", "Begrüßung", "Guten Tag, Herr Müller!", "Good day, Mr. Müller!", "يوم سعيد، سيد مولر!", "¡Buenos días, señor Müller!"),
     ]
-    for i, (letter, de, en, ar, es, anchor, ex) in enumerate(u1_su, 1):
+    for i, (letter, de, en, ar, es, anchor, ex_de, ex_en, ex_ar, ex_es) in enumerate(u1_su, 1):
         cards.append({
             "id": f"card_10105_{i}",
             "lesson_id": 10105,
@@ -145,19 +171,25 @@ def generate_intro_cards():
                 "anchor_word_en": en,
                 "anchor_word_ar": bidi(ar),
                 "anchor_word_es": es,
-                "example_sentence_de": ex,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10106: Besondere Konsonanten (V, W, X, Y, Z) ---
     u1_vwxyz = [
-        ("V v", "vier", "four (pronounced like 'F')", "أربعة (يُنطق مثل حرف الفاء F)", "cuatro (suena como F)", "V wie vier", "Vier Tassen Kaffee."),
-        ("W w", "das Wasser", "water (pronounced like English 'V')", "ماء (يُنطق مثل V الإنجليزية)", "agua (suena como V)", "W wie Wasser", "Das Wasser ist kalt."),
-        ("X x", "das Taxi", "taxi (contains 'ks' sound)", "تاكسي (صوت 'كس')", "taxi", "X im Taxi", "Ich nehme ein Taxi."),
-        ("Y y", "das Yoga", "yoga", "يوغا", "yoga", "Y wie Yoga", "Yoga macht fit."),
-        ("Z z", "der Zug", "train (pronounced like 'ts')", "قطار (يُنطق مثل 'تس' ts)", "tren (suena como ts)", "Z wie Zug", "Der Zug kommt jetzt."),
+        ("V v", "vier", "four (pronounced like 'F')", "أربعة (يُنطق مثل حرف الفاء F)", "cuatro (suena como F)", "V wie vier", "Vier Tassen Kaffee.", "Four cups of coffee.", "أربعة فناجين قهوة.", "Cuatro tazas de café."),
+        ("W w", "das Wasser", "water (pronounced like English 'V')", "ماء (يُنطق مثل V الإنجليزية)", "agua (suena como V)", "W wie Wasser", "Das Wasser ist kalt.", "The water is cold.", "الماء بارد.", "El agua está fría."),
+        ("X x", "das Taxi", "taxi (contains 'ks' sound)", "تاكسي (صوت 'كس')", "taxi", "X im Taxi", "Ich nehme ein Taxi.", "I'll take a taxi.", "سآخذ سيارة أجرة.", "Tomo un taxi."),
+        ("Y y", "das Yoga", "yoga", "يوغا", "yoga", "Y wie Yoga", "Yoga macht fit.", "Yoga keeps you fit.", "اليوغا تبقيك رشيقاً.", "El yoga te pone en forma."),
+        ("Z z", "der Zug", "train (pronounced like 'ts')", "قطار (يُنطق مثل 'تس' ts)", "tren (suena como ts)", "Z wie Zug", "Der Zug kommt jetzt.", "The train is coming now.", "القطار قادم الآن.", "El tren llega ahora."),
     ]
-    for i, (letter, de, en, ar, es, anchor, ex) in enumerate(u1_vwxyz, 1):
+    for i, (letter, de, en, ar, es, anchor, ex_de, ex_en, ex_ar, ex_es) in enumerate(u1_vwxyz, 1):
         cards.append({
             "id": f"card_10106_{i}",
             "lesson_id": 10106,
@@ -170,18 +202,24 @@ def generate_intro_cards():
                 "anchor_word_en": en,
                 "anchor_word_ar": bidi(ar),
                 "anchor_word_es": es,
-                "example_sentence_de": ex,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10107: Umlaute (ä, ö, ü) & Eszett (ß) ---
     u1_umlaute = [
-        ("Ä ä", "der Käse", "cheese (ä sounds like 'e' in bed)", "جبن (ä تنطق كالفتحة الممتدة)", "queso", "Ä wie Käse", "Der Käse schmeckt gut.", "Mund leicht geöffnet wie beim 'e'"),
-        ("Ö ö", "schön", "beautiful (round lips and say 'ay')", "جميل (تدوير الشفتين ونطق 'إي')", "hermoso", "Ö in schön", "Das Bild ist schön.", "Lippen runden wie für 'o', aber 'e' sprechen"),
-        ("Ü ü", "fünf", "five (round lips and say 'ee')", "خمسة (تدوير الشفتين ونطق 'ي')", "cinco", "Ü in fünf", "Es ist fünf Uhr.", "Lippen spitzen wie für 'u', aber 'i' sprechen"),
-        ("ß", "weiß", "white (sharp double 'ss')", "أبيض (حرف سين مشدد حاد)", "blanco", "ß in weiß", "Das Hemd ist weiß.", "Wird wie ein scharfes 'ss' gesprochen"),
+        ("Ä ä", "der Käse", "cheese (ä sounds like 'e' in bed)", "جبن (ä تنطق كالفتحة الممتدة)", "queso", "Ä wie Käse", "Der Käse schmeckt gut.", "The cheese tastes good.", "الجبن طعمه لذيذ.", "El queso sabe bien.", "Mund leicht geöffnet wie beim 'e'"),
+        ("Ö ö", "schön", "beautiful (round lips and say 'ay')", "جميل (تدوير الشفتين ونطق 'إي')", "hermoso", "Ö in schön", "Das Bild ist schön.", "The picture is beautiful.", "الصورة جميلة.", "El cuadro es hermoso.", "Lippen runden wie für 'o', aber 'e' sprechen"),
+        ("Ü ü", "fünf", "five (round lips and say 'ee')", "خمسة (تدوير الشفتين ونطق 'ي')", "cinco", "Ü in fünf", "Es ist fünf Uhr.", "It is five o'clock.", "إنها الساعة الخامسة.", "Son las cinco.", "Lippen spitzen wie für 'u', aber 'i' sprechen"),
+        ("ß", "weiß", "white (sharp double 'ss')", "أبيض (حرف سين مشدد حاد)", "blanco", "ß in weiß", "Das Hemd ist weiß.", "The shirt is white.", "القميص أبيض.", "La camisa es blanca.", "Wird wie ein scharfes 'ss' gesprochen"),
     ]
-    for i, (letter, de, en, ar, es, anchor, ex, tip) in enumerate(u1_umlaute, 1):
+    for i, (letter, de, en, ar, es, anchor, ex_de, ex_en, ex_ar, ex_es, tip) in enumerate(u1_umlaute, 1):
         cards.append({
             "id": f"card_10107_{i}",
             "lesson_id": 10107,
@@ -194,7 +232,13 @@ def generate_intro_cards():
                 "anchor_word_en": en,
                 "anchor_word_ar": bidi(ar),
                 "anchor_word_es": es,
-                "example_sentence_de": ex,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
                 "mouth_tip_en": tip,
                 "mouth_tip_ar": bidi(f"نصيحة النطق: {tip}"),
             }
@@ -202,14 +246,14 @@ def generate_intro_cards():
 
     # --- 10108: Diphthonge & Laute (ei, ie, eu, au, sch, ch) ---
     u1_diphthongs = [
-        ("ei", "eins", "one (sounds like 'eye')", "واحد (يُنطق مثل eye)", "uno", "ei wie eins", "Eins, zwei, drei."),
-        ("ie", "sieben", "seven (long 'ee' sound)", "سبعة (ياء ممدودة طويلة)", "siete", "ie wie sieben", "Sieben Tage."),
-        ("eu", "Euro", "euro (sounds like 'oy')", "يورو (يُنطق مثل 'أوي')", "euro", "eu wie Euro", "Drei Euro."),
-        ("au", "das Auto", "car (sounds like 'ow')", "سيارة (يُنطق مثل 'أو')", "coche", "au wie Auto", "Das Auto fährt schnell."),
-        ("sch", "die Schule", "school (sounds like 'sh')", "مدرسة (يُنطق مثل حرف الشين)", "escuela", "sch wie Schule", "Die Schule ist groß."),
-        ("ch", "ich / ach", "soft after e/i, hard after a/o/u", "ناعم بعد e/i وخشن بعد a/o/u", "ch suave y dura", "Laut ch", "Ich bin hier. Das Buch ist alt."),
+        ("ei", "eins", "one (sounds like 'eye')", "واحد (يُنطق مثل eye)", "uno", "ei wie eins", "Eins, zwei, drei.", "One, two, three.", "واحد، اثنان، ثلاثة.", "Uno, dos, tres."),
+        ("ie", "sieben", "seven (long 'ee' sound)", "سبعة (ياء ممدودة طويلة)", "siete", "ie wie sieben", "Sieben Tage.", "Seven days.", "سبعة أيام.", "Siete días."),
+        ("eu", "Euro", "euro (sounds like 'oy')", "يورو (يُنطق مثل 'أوي')", "euro", "eu wie Euro", "Drei Euro.", "Three euros.", "ثلاثة يورو.", "Tres euros."),
+        ("au", "das Auto", "car (sounds like 'ow')", "سيارة (يُنطق مثل 'أو')", "coche", "au wie Auto", "Das Auto fährt schnell.", "The car drives fast.", "السيارة تسير بسرعة.", "El coche va rápido."),
+        ("sch", "die Schule", "school (sounds like 'sh')", "مدرسة (يُنطق مثل حرف الشين)", "escuela", "sch wie Schule", "Die Schule ist groß.", "The school is big.", "المدرسة كبيرة.", "La escuela es grande."),
+        ("ch", "ich / ach", "soft after e/i, hard after a/o/u", "ناعم بعد e/i وخشن بعد a/o/u", "ch suave y dura", "Laut ch", "Ich bin hier.", "I am here.", "أنا هنا.", "Estoy aquí."),
     ]
-    for i, (sound, de, en, ar, es, anchor, ex) in enumerate(u1_diphthongs, 1):
+    for i, (sound, de, en, ar, es, anchor, ex_de, ex_en, ex_ar, ex_es) in enumerate(u1_diphthongs, 1):
         cards.append({
             "id": f"card_10108_{i}",
             "lesson_id": 10108,
@@ -222,7 +266,13 @@ def generate_intro_cards():
                 "anchor_word_en": en,
                 "anchor_word_ar": bidi(ar),
                 "anchor_word_es": es,
-                "example_sentence_de": ex,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
@@ -235,10 +285,16 @@ def generate_intro_cards():
         "custom_prompt_de": "Buchstabieren",
         "data_json": {
             "chunk_de": "Wie buchstabiert man das?",
-            "sentence_en": "How do you spell that?",
-            "sentence_ar": bidi("كيف تتهجى ذلك؟"),
-            "sentence_es": "¿Cómo se deletrea eso?",
+            "translation_en": "How do you spell that?",
+            "translation_ar": bidi("كيف تتهجى ذلك؟"),
+            "translation_es": "¿Cómo se deletrea eso?",
             "example_sentence_de": "H-O-T-E-L: Hotel.",
+            "example_sentence_en": "H-O-T-E-L: Hotel.",
+            "example_sentence_ar": bidi("H-O-T-E-L: فندق."),
+            "example_sentence_es": "H-O-T-E-L: Hotel.",
+            "sentence_en": "H-O-T-E-L: Hotel.",
+            "sentence_ar": bidi("H-O-T-E-L: فندق."),
+            "sentence_es": "H-O-T-E-L: Hotel.",
         }
     })
 
@@ -248,13 +304,13 @@ def generate_intro_cards():
 
     # --- 10201: Höflichkeit ---
     u2_polite = [
-        ("Danke", "thank you", "شكراً", "gracias", "Danke schön!"),
-        ("Bitte", "please / you're welcome", "من فضلك / عفواً", "por favor / de nada", "Bitte sehr!"),
-        ("Hallo", "hello", "مرحباً", "hola", "Hallo! Schön dich zu sehen."),
-        ("Tschüss", "bye", "مع السلامة", "adiós", "Tschüss! Bis morgen."),
-        ("Entschuldigung", "excuse me / sorry", "معذرة / عذراً", "disculpe", "Entschuldigung, wo ist der Bahnhof?"),
+        ("Danke", "thank you", "شكراً", "gracias", "Danke schön!", "Thank you very much!", "شكراً جزيلاً!", "¡Muchas gracias!"),
+        ("Bitte", "please / you're welcome", "من فضلك / عفواً", "por favor / de nada", "Bitte sehr!", "You're very welcome!", "على الرحب والسعة!", "¡De nada!"),
+        ("Hallo", "hello", "مرحباً", "hola", "Hallo! Schön dich zu sehen.", "Hello! Nice to see you.", "مرحباً! يسعدني أن أراك.", "¡Hola! Qué bueno verte."),
+        ("Tschüss", "bye", "مع السلامة", "adiós", "Tschüss! Bis morgen.", "Bye! See you tomorrow.", "مع السلامة! إلى الغد.", "¡Adiós! Hasta mañana."),
+        ("Entschuldigung", "excuse me / sorry", "معذرة / عذراً", "disculpe", "Entschuldigung, wo ist der Bahnhof?", "Excuse me, where is the train station?", "عذراً، أين تقع محطة القطار؟", "Disculpe, ¿dónde está la estación?"),
     ]
-    for i, (word, en, ar, es, ex) in enumerate(u2_polite, 1):
+    for i, (word, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u2_polite, 1):
         cards.append({
             "id": f"card_10201_{i}",
             "lesson_id": 10201,
@@ -263,10 +319,16 @@ def generate_intro_cards():
             "custom_prompt_de": word,
             "data_json": {
                 "chunk_de": word,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
@@ -289,10 +351,16 @@ def generate_intro_cards():
             "custom_prompt_de": f"{digit} · {de}",
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": f"{digit} = {en}",
-                "sentence_ar": bidi(f"{digit} = {ar}"),
-                "sentence_es": f"{digit} = {es}",
+                "translation_en": f"{digit} = {en}",
+                "translation_ar": bidi(f"{digit} = {ar}"),
+                "translation_es": f"{digit} = {es}",
                 "example_sentence_de": f"Ich zähle: {de}.",
+                "example_sentence_en": f"I count: {en}.",
+                "example_sentence_ar": bidi(f"أنا أعد: {ar}."),
+                "example_sentence_es": f"Cuento: {es}.",
+                "sentence_en": f"I count: {en}.",
+                "sentence_ar": bidi(f"أنا أعد: {ar}."),
+                "sentence_es": f"Cuento: {es}.",
             }
         })
 
@@ -314,10 +382,16 @@ def generate_intro_cards():
             "custom_prompt_de": f"{digit} · {de}",
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": f"{digit} = {en}",
-                "sentence_ar": bidi(f"{digit} = {ar}"),
-                "sentence_es": f"{digit} = {es}",
+                "translation_en": f"{digit} = {en}",
+                "translation_ar": bidi(f"{digit} = {ar}"),
+                "translation_es": f"{digit} = {es}",
                 "example_sentence_de": f"Zimmer {de}.",
+                "example_sentence_en": f"Room {en}.",
+                "example_sentence_ar": bidi(f"غرفة {ar}."),
+                "example_sentence_es": f"Habitación {es}.",
+                "sentence_en": f"Room {en}.",
+                "sentence_ar": bidi(f"غرفة {ar}."),
+                "sentence_es": f"Habitación {es}.",
             }
         })
 
@@ -339,10 +413,16 @@ def generate_intro_cards():
             "custom_prompt_de": f"{digit} · {de}",
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": f"{digit} = {en}",
-                "sentence_ar": bidi(f"{digit} = {ar}"),
-                "sentence_es": f"{digit} = {es}",
+                "translation_en": f"{digit} = {en}",
+                "translation_ar": bidi(f"{digit} = {ar}"),
+                "translation_es": f"{digit} = {es}",
                 "example_sentence_de": f"Bus Nummer {de}.",
+                "example_sentence_en": f"Bus number {en}.",
+                "example_sentence_ar": bidi(f"حافلة رقم {ar}."),
+                "example_sentence_es": f"Autobús número {es}.",
+                "sentence_en": f"Bus number {en}.",
+                "sentence_ar": bidi(f"حافلة رقم {ar}."),
+                "sentence_es": f"Autobús número {es}.",
             }
         })
 
@@ -366,10 +446,16 @@ def generate_intro_cards():
             "custom_prompt_de": f"{digit} · {de}",
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": f"{digit} = {en}",
-                "sentence_ar": bidi(f"{digit} = {ar}"),
-                "sentence_es": f"{digit} = {es}",
+                "translation_en": f"{digit} = {en}",
+                "translation_ar": bidi(f"{digit} = {ar}"),
+                "translation_es": f"{digit} = {es}",
                 "example_sentence_de": f"Das kostet {de} Euro.",
+                "example_sentence_en": f"That costs {en} euros.",
+                "example_sentence_ar": bidi(f"هذا يكلف {ar} يورو."),
+                "example_sentence_es": f"Eso cuesta {es} euros.",
+                "sentence_en": f"That costs {en} euros.",
+                "sentence_ar": bidi(f"هذا يكلف {ar} يورو."),
+                "sentence_es": f"Eso cuesta {es} euros.",
             }
         })
 
@@ -392,26 +478,32 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
                 "example_sentence_de": f"Heute ist {de}.",
+                "example_sentence_en": f"Today is {en}.",
+                "example_sentence_ar": bidi(f"اليوم هو {ar}."),
+                "example_sentence_es": f"Hoy es {es}.",
+                "sentence_en": f"Today is {en}.",
+                "sentence_ar": bidi(f"اليوم هو {ar}."),
+                "sentence_es": f"Hoy es {es}.",
             }
         })
 
     # --- 10207: Farben ---
     u2_colors = [
-        ("blau", "#1E88E5", "blue", "أزرق", "azul", "Der Himmel ist blau."),
-        ("rot", "#E53935", "red", "أحمر", "rojo", "Der Apfel ist rot."),
-        ("grün", "#43A047", "green", "أخضر", "verde", "Das Gras ist grün."),
-        ("gelb", "#FDD835", "yellow", "أصفر", "amarillo", "Die Sonne ist gelb."),
-        ("schwarz", "#212121", "black", "أسود", "negro", "Der Kaffee ist schwarz."),
-        ("weiß", "#EEEEEE", "white", "أبيض", "blanco", "Der Schnee ist weiß."),
-        ("grau", "#9E9E9E", "gray", "رمادي", "gris", "Die Wolke ist grau."),
-        ("braun", "#6D4C41", "brown", "بني", "marrón", "Die Schokolade ist braun."),
-        ("orange", "#FB8C00", "orange", "برتقالي", "naranja", "Die Orange ist orange."),
+        ("blau", "#1E88E5", "blue", "أزرق", "azul", "Der Himmel ist blau.", "The sky is blue.", "السماء زرقاء.", "El cielo es azul."),
+        ("rot", "#E53935", "red", "أحمر", "rojo", "Der Apfel ist rot.", "The apple is red.", "التفاحة حمراء.", "La manzana es roja."),
+        ("grün", "#43A047", "green", "أخضر", "verde", "Das Gras ist grün.", "The grass is green.", "العشب أخضر.", "La hierba es verde."),
+        ("gelb", "#FDD835", "yellow", "أصفر", "amarillo", "Die Sonne ist gelb.", "The sun is yellow.", "الشمس صفراء.", "El sol es amarillo."),
+        ("schwarz", "#212121", "black", "أسود", "negro", "Der Kaffee ist schwarz.", "The coffee is black.", "القهوة سوداء.", "El café es negro."),
+        ("weiß", "#EEEEEE", "white", "أبيض", "blanco", "Der Schnee ist weiß.", "The snow is white.", "الثلج أبيض.", "La nieve es blanca."),
+        ("grau", "#9E9E9E", "gray", "رمادي", "gris", "Die Wolke ist grau.", "The cloud is gray.", "السحابة رمادية.", "La nube es gris."),
+        ("braun", "#6D4C41", "brown", "بني", "marrón", "Die Schokolade ist braun.", "The chocolate is brown.", "الشوكولاتة بنية.", "El chocolate es marrón."),
+        ("orange", "#FB8C00", "orange", "برتقالي", "naranja", "Die Orange ist orange.", "The orange is orange.", "البرتقالة برتقالية اللون.", "La naranja es naranja."),
     ]
-    for i, (de, hex_code, en, ar, es, ex) in enumerate(u2_colors, 1):
+    for i, (de, hex_code, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u2_colors, 1):
         cards.append({
             "id": f"card_10207_{i}",
             "lesson_id": 10207,
@@ -421,10 +513,16 @@ def generate_intro_cards():
             "data_json": {
                 "chunk_de": de,
                 "swatch_hex": hex_code,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
@@ -437,10 +535,16 @@ def generate_intro_cards():
         "custom_prompt_de": "Zahlen & Farben",
         "data_json": {
             "chunk_de": "Zahlen & Farben",
-            "sentence_en": "Numbers & Colors Review",
-            "sentence_ar": bidi("مراجعة الأرقام والألوان"),
-            "sentence_es": "Repaso de números y colores",
+            "translation_en": "Numbers & Colors Review",
+            "translation_ar": bidi("مراجعة الأرقام والألوان"),
+            "translation_es": "Repaso de números y colores",
             "example_sentence_de": "Drei rote Äpfel.",
+            "example_sentence_en": "Three red apples.",
+            "example_sentence_ar": bidi("ثلاث تفاحات حمراء."),
+            "example_sentence_es": "Tres manzanas rojas.",
+            "sentence_en": "Three red apples.",
+            "sentence_ar": bidi("ثلاث تفاحات حمراء."),
+            "sentence_es": "Tres manzanas rojas.",
         }
     })
 
@@ -450,13 +554,13 @@ def generate_intro_cards():
 
     # --- 10301: Begrüßung & Verabschiedung ---
     u3_greetings = [
-        ("Guten Morgen", "Good morning (morning greeting)", "صباح الخير", "Buenos días", "Guten Morgen! Haben Sie gut geschlafen?"),
-        ("Guten Tag", "Good day (standard daytime greeting)", "يوم سعيد / مرحباً", "Buenas tardes", "Guten Tag, Herr Meier!"),
-        ("Guten Abend", "Good evening (evening greeting)", "مساء الخير", "Buenas noches (al llegar)", "Guten Abend allerseits!"),
-        ("Gute Nacht", "Good night (said before sleeping)", "تصبح على خير", "Buenas noches (al despedirse)", "Gute Nacht und schlaf gut!"),
-        ("Auf Wiedersehen", "Goodbye (formal)", "إلى اللقاء (رسمي)", "Hasta la vista", "Auf Wiedersehen, Frau Schmidt!"),
+        ("Guten Morgen", "Good morning", "صباح الخير", "Buenos días", "Guten Morgen! Haben Sie gut geschlafen?", "Good morning! Did you sleep well?", "صباح الخير! هل نمت جيداً؟", "¡Buenos días! ¿Durmió bien?"),
+        ("Guten Tag", "Good day", "يوم سعيد / مرحباً", "Buenas tardes", "Guten Tag, Herr Meier!", "Good day, Mr. Meier!", "يوم سعيد، سيد ماير!", "¡Buenas tardes, señor Meier!"),
+        ("Guten Abend", "Good evening", "مساء الخير", "Buenas noches (al llegar)", "Guten Abend allerseits!", "Good evening everyone!", "مساء الخير للجميع!", "¡Buenas noches a todos!"),
+        ("Gute Nacht", "Good night", "تصبح على خير", "Buenas noches (al despedirse)", "Gute Nacht und schlaf gut!", "Good night and sleep well!", "تصبح على خير ونم جيداً!", "¡Buenas noches y que duermas bien!"),
+        ("Auf Wiedersehen", "Goodbye", "إلى اللقاء", "Hasta la vista", "Auf Wiedersehen, Frau Schmidt!", "Goodbye, Mrs. Schmidt!", "إلى اللقاء، سيدة شميت!", "¡Hasta luego, señora Schmidt!"),
     ]
-    for i, (de, en, ar, es, ex) in enumerate(u3_greetings, 1):
+    for i, (de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u3_greetings, 1):
         cards.append({
             "id": f"card_10301_{i}",
             "lesson_id": 10301,
@@ -465,21 +569,27 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10302: Wie geht's? ---
     u3_howareyou = [
-        ("Wie geht's?", "How are you? (informal)", "كيف حالك؟", "¿Cómo estás?", "Hallo Anna, wie geht's?"),
-        ("Sehr gut, danke!", "Very good, thank you!", "بخير جداً، شكراً!", "¡Muy bien, gracias!", "Mir geht es sehr gut, danke!"),
-        ("Es geht.", "So-so / Not bad.", "على ما يرام / لا بأس.", "Ahí vamos.", "Wie geht's? — Es geht."),
-        ("Nicht so gut.", "Not so good.", "لست بخير / ليس جيداً.", "No tan bien.", "Heute geht es mir nicht so gut."),
+        ("Wie geht's?", "How are you?", "كيف حالك؟", "¿Cómo estás?", "Hallo Anna, wie geht's?", "Hello Anna, how are you?", "مرحباً آنّا، كيف حالك؟", "Hola Anna, ¿cómo estás?"),
+        ("Sehr gut, danke!", "Very good, thank you!", "بخير جداً، شكراً!", "¡Muy bien, gracias!", "Mir geht es sehr gut, danke!", "I'm doing very well, thank you!", "أنا بأفضل حال، شكراً!", "¡Me va muy bien, gracias!"),
+        ("Es geht.", "So-so / Not bad.", "على ما يرام / لا بأس.", "Ahí vamos.", "Wie geht's? — Es geht.", "How are you? — So-so.", "كيف الحال؟ — على ما يرام.", "¿Cómo estás? — Ahí vamos."),
+        ("Nicht so gut.", "Not so good.", "لست بخير / ليس جيداً.", "No tan bien.", "Heute geht es mir nicht so gut.", "Today I'm not doing so well.", "اليوم لست بخير تماماً.", "Hoy no me siento tan bien."),
     ]
-    for i, (de, en, ar, es, ex) in enumerate(u3_howareyou, 1):
+    for i, (de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u3_howareyou, 1):
         cards.append({
             "id": f"card_10302_{i}",
             "lesson_id": 10302,
@@ -488,10 +598,16 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
@@ -570,12 +686,12 @@ def generate_intro_cards():
 
     # --- 10306: Überlebenssätze ---
     u3_survival = [
-        ("Ich verstehe nicht.", "I do not understand.", "أنا لا أفهم.", "No entiendo.", "Ich verstehe nicht."),
-        ("Sprechen Sie Englisch?", "Do you speak English?", "هل تتحدث الإنجليزية؟", "¿Habla inglés?", "Entschuldigung, sprechen Sie Englisch?"),
-        ("Bitte langsamer.", "Please more slowly.", "من فضلك تحدث ببطء أكثر.", "Más despacio, por favor.", "Können Sie bitte langsamer sprechen?"),
-        ("Wie bitte?", "Pardon? / Could you repeat?", "عفواً؟ ماذا قلت؟", "¿Cómo?", "Wie bitte? Ich habe das nicht gehört."),
+        ("Ich verstehe nicht.", "I do not understand.", "أنا لا أفهم.", "No entiendo.", "Ich verstehe nicht.", "I do not understand.", "أنا لا أفهم.", "No entiendo."),
+        ("Sprechen Sie Englisch?", "Do you speak English?", "هل تتحدث الإنجليزية؟", "¿Habla inglés?", "Entschuldigung, sprechen Sie Englisch?", "Excuse me, do you speak English?", "عذراً، هل تتحدث الإنجليزية؟", "Disculpe, ¿habla inglés?"),
+        ("Bitte langsamer.", "Please more slowly.", "من فضلك تحدث ببطء أكثر.", "Más despacio, por favor.", "Können Sie bitte langsamer sprechen?", "Could you please speak more slowly?", "هل يمكنك التحدث ببطء أكثر من فضلك؟", "¿Puede hablar más despacio, por favor?"),
+        ("Wie bitte?", "Pardon? / Could you repeat?", "عفواً؟ ماذا قلت؟", "¿Cómo?", "Wie bitte? Ich habe das nicht gehört.", "Pardon? I didn't hear that.", "عفواً؟ لم أسمع ذلك.", "¿Cómo? No escuché eso."),
     ]
-    for i, (de, en, ar, es, ex) in enumerate(u3_survival, 1):
+    for i, (de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u3_survival, 1):
         cards.append({
             "id": f"card_10306_{i}",
             "lesson_id": 10306,
@@ -584,10 +700,16 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
@@ -600,10 +722,16 @@ def generate_intro_cards():
         "custom_prompt_de": "Erstes Gespräch",
         "data_json": {
             "chunk_de": "Guten Tag! Ich heiße Karim. Und wie heißen Sie?",
-            "sentence_en": "Good day! My name is Karim. And what is your name?",
-            "sentence_ar": bidi("يوم سعيد! اسمي كريم. وما اسم حضرتك؟"),
-            "sentence_es": "¡Buenos días! Me llamo Karim. ¿Y cómo se llama usted?",
+            "translation_en": "Good day! My name is Karim. And what is your name?",
+            "translation_ar": bidi("يوم سعيد! اسمي كريم. وما اسم حضرتك؟"),
+            "translation_es": "¡Buenos días! Me llamo Karim. ¿Y cómo se llama usted?",
             "example_sentence_de": "Ich heiße Anna. Freut mich!",
+            "example_sentence_en": "My name is Anna. Pleased to meet you!",
+            "example_sentence_ar": bidi("اسمي آنّا. تشرفت بمعرفتك!"),
+            "example_sentence_es": "Me llamo Anna. ¡Mucho gusto!",
+            "sentence_en": "My name is Anna. Pleased to meet you!",
+            "sentence_ar": bidi("اسمي آنّا. تشرفت بمعرفتك!"),
+            "sentence_es": "Me llamo Anna. ¡Mucho gusto!",
         }
     })
 
@@ -616,10 +744,16 @@ def generate_intro_cards():
         "custom_prompt_de": "Begrüßung & Verben",
         "data_json": {
             "chunk_de": "Begrüßung & Verben Checkpoint",
-            "sentence_en": "Greetings & Verbs Mastery Check",
-            "sentence_ar": bidi("اختبار التحيات وتصريف الأفعال"),
-            "sentence_es": "Examen de saludos y verbos",
+            "translation_en": "Greetings & Verbs Mastery Check",
+            "translation_ar": bidi("اختبار التحيات وتصريف الأفعال"),
+            "translation_es": "Examen de saludos y verbos",
             "example_sentence_de": "Hallo, ich heiße Karim und komme aus Syrien.",
+            "example_sentence_en": "Hello, my name is Karim and I come from Syria.",
+            "example_sentence_ar": bidi("مرحباً، اسمي كريم وأنا من سوريا."),
+            "example_sentence_es": "Hola, me llamo Karim y soy de Siria.",
+            "sentence_en": "Hello, my name is Karim and I come from Syria.",
+            "sentence_ar": bidi("مرحباً، اسمي كريم وأنا من سوريا."),
+            "sentence_es": "Hola, me llamo Karim y soy de Siria.",
         }
     })
 
@@ -629,14 +763,14 @@ def generate_intro_cards():
 
     # --- 10311: Länder & Sprachen ---
     u4_countries = [
-        ("Deutschland", "Germany", "ألمانيا", "Alemania", "Deutschland ist in Europa."),
-        ("Deutsch", "German (language)", "اللغة الألمانية", "alemán", "Ich lerne Deutsch."),
-        ("Syrien", "Syria", "سوريا", "Siria", "Er kommt aus Syrien."),
-        ("Marokko", "Morocco", "المغرب", "Marruecos", "Sie kommt aus Marokko."),
-        ("Arabisch", "Arabic (language)", "اللغة العربية", "árabe", "Meine Muttersprache ist Arabisch."),
-        ("Englisch", "English (language)", "اللغة الإنجليزية", "inglés", "Wir sprechen Englisch."),
+        ("Deutschland", "Germany", "ألمانيا", "Alemania", "Deutschland ist in Europa.", "Germany is in Europe.", "ألمانيا في أوروبا.", "Alemania está en Europa."),
+        ("Deutsch", "German (language)", "اللغة الألمانية", "alemán", "Ich lerne Deutsch.", "I am learning German.", "أنا أتعلم الألمانية.", "Estoy aprendiendo alemán."),
+        ("Syrien", "Syria", "سوريا", "Siria", "Er kommt aus Syrien.", "He comes from Syria.", "هو من سوريا.", "Él viene de Siria."),
+        ("Marokko", "Morocco", "المغرب", "Marruecos", "Sie kommt aus Marokko.", "She comes from Morocco.", "هي من المغرب.", "Ella viene de Marruecos."),
+        ("Arabisch", "Arabic (language)", "اللغة العربية", "árabe", "Meine Muttersprache ist Arabisch.", "My native language is Arabic.", "لغتي الأم هي العربية.", "Mi lengua materna es el árabe."),
+        ("Englisch", "English (language)", "اللغة الإنجليزية", "inglés", "Wir sprechen Englisch.", "We speak English.", "نحن نتحدث الإنجليزية.", "Hablamos inglés."),
     ]
-    for i, (de, en, ar, es, ex) in enumerate(u4_countries, 1):
+    for i, (de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u4_countries, 1):
         cards.append({
             "id": f"card_10311_{i}",
             "lesson_id": 10311,
@@ -645,21 +779,27 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10312: Persönliche Angaben ---
     u4_personal = [
-        ("der Vorname", "first name", "الاسم الأول / الشخصي", "nombre de pila", "Mein Vorname ist Karim."),
-        ("der Familienname", "surname / last name", "اللقب / اسم العائلة", "apellido", "Mein Familienname ist Mansour."),
-        ("das Alter", "age", "العمر / السن", "edad", "Mein Alter ist 25 Jahre."),
-        ("der Wohnort", "place of residence", "مكان الإقامة", "lugar de residencia", "Mein Wohnort ist Berlin."),
+        ("der Vorname", "first name", "الاسم الأول / الشخصي", "nombre de pila", "Mein Vorname ist Karim.", "My first name is Karim.", "اسمي الأول كريم.", "Mi nombre de pila es Karim."),
+        ("der Familienname", "surname / last name", "اللقب / اسم العائلة", "apellido", "Mein Familienname ist Mansour.", "My last name is Mansour.", "لقب عائلتي منصور.", "Mi apellido es Mansour."),
+        ("das Alter", "age", "العمر / السن", "edad", "Mein Alter ist 25 Jahre.", "My age is 25 years.", "عمري 25 سنة.", "Mi edad es de 25 años."),
+        ("der Wohnort", "place of residence", "مكان الإقامة", "lugar de residencia", "Mein Wohnort ist Berlin.", "My place of residence is Berlin.", "مكان سكني برلين.", "Mi lugar de residencia es Berlín."),
     ]
-    for i, (de, en, ar, es, ex) in enumerate(u4_personal, 1):
+    for i, (de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u4_personal, 1):
         cards.append({
             "id": f"card_10312_{i}",
             "lesson_id": 10312,
@@ -668,22 +808,28 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10313: Adresse & Kontakt ---
     u4_contact = [
-        ("die Straße", "street", "الشارع", "calle", "Ich wohne in der Goethestraße."),
-        ("die Hausnummer", "house number", "رقم المنزل", "número de casa", "Meine Hausnummer ist 14."),
-        ("die Postleitzahl", "postal code (PLZ)", "الرمز البريدي", "código postal", "Die Postleitzahl ist 10115."),
-        ("die Telefonnummer", "phone number", "رقم الهاتف", "número de teléfono", "Meine Telefonnummer ist 0151..."),
-        ("die E-Mail-Adresse", "email address", "عنوان البريد الإلكتروني", "correo electrónico", "Meine E-Mail-Adresse ist..."),
+        ("die Straße", "street", "الشارع", "calle", "Ich wohne in der Goethestraße.", "I live in Goethe Street.", "أنا أسكن في شارع غوته.", "Vivo en la calle Goethe."),
+        ("die Hausnummer", "house number", "رقم المنزل", "número de casa", "Meine Hausnummer ist 14.", "My house number is 14.", "رقم منزلي 14.", "Mi número de casa es 14."),
+        ("die Postleitzahl", "postal code (PLZ)", "الرمز البريدي", "código postal", "Die Postleitzahl ist 10115.", "The postal code is 10115.", "الرمز البريدي 10115.", "El código postal es 10115."),
+        ("die Telefonnummer", "phone number", "رقم الهاتف", "número de teléfono", "Meine Telefonnummer ist 0151...", "My phone number is 0151...", "رقم هاتفي هو 0151...", "Mi número de teléfono es 0151..."),
+        ("die E-Mail-Adresse", "email address", "عنوان البريد الإلكتروني", "correo electrónico", "Meine E-Mail-Adresse ist...", "My email address is...", "عنوان بريدي الإلكتروني هو...", "Mi dirección de correo electrónico es..."),
     ]
-    for i, (de, en, ar, es, ex) in enumerate(u4_contact, 1):
+    for i, (de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u4_contact, 1):
         cards.append({
             "id": f"card_10313_{i}",
             "lesson_id": 10313,
@@ -692,21 +838,27 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
     # --- 10314: Familienstand & Beruf ---
     u4_status = [
-        ("ledig", "single (unmarried)", "أعزب / عزباء", "soltero/a", "Ich bin ledig."),
-        ("verheiratet", "married", "متزوج / متزوجة", "casado/a", "Er ist verheiratet."),
-        ("der Student", "student (male)", "طالب جامعي", "estudiante (m)", "Ich bin Student an der Universität."),
-        ("der Arzt", "doctor (physician)", "طبيب", "médico", "Der Arzt arbeitet im Krankenhaus."),
+        ("ledig", "single (unmarried)", "أعزب / عزباء", "soltero/a", "Ich bin ledig.", "I am single.", "أنا أعزب.", "Soy soltero/a."),
+        ("verheiratet", "married", "متزوج / متزوجة", "casado/a", "Er ist verheiratet.", "He is married.", "هو متزوج.", "Él está casado."),
+        ("der Student", "student (male)", "طالب جامعي", "estudiante (m)", "Ich bin Student an der Universität.", "I am a student at the university.", "أنا طالب في الجامعة.", "Soy estudiante en la universidad."),
+        ("der Arzt", "doctor (physician)", "طبيب", "médico", "Der Arzt arbeitet im Krankenhaus.", "The doctor works in the hospital.", "الطبيب يعمل في المستشفى.", "El médico trabaja en el hospital."),
     ]
-    for i, (de, en, ar, es, ex) in enumerate(u4_status, 1):
+    for i, (de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u4_status, 1):
         cards.append({
             "id": f"card_10314_{i}",
             "lesson_id": 10314,
@@ -715,10 +867,16 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
@@ -748,13 +906,13 @@ def generate_intro_cards():
 
     # --- 10316: Goethe Formular-Training ---
     u4_formular = [
-        ("das Formular", "form", "استمارة رسمية", "formulario", "Bitte füllen Sie das Formular aus."),
-        ("ausfüllen", "to fill out", "يملأ استمارة", "rellenar / completar", "Ich fülle das Anmeldeformular aus."),
-        ("der Geburtsort", "place of birth", "مكان الولادة", "lugar de nacimiento", "Mein Geburtsort ist Damaskus."),
-        ("das Geburtsdatum", "date of birth", "تاريخ الولادة", "fecha de nacimiento", "Mein Geburtsdatum ist 12.05.1998."),
-        ("die Unterschrift", "signature", "التوقيع", "firma", "Ihre Unterschrift bitte hier unten."),
+        ("das Formular", "form", "استمارة رسمية", "formulario", "Bitte füllen Sie das Formular aus.", "Please fill out the form.", "يرجى ملء الاستمارة.", "Por favor complete el formulario."),
+        ("ausfüllen", "to fill out", "يملأ استمارة", "rellenar / completar", "Ich fülle das Anmeldeformular aus.", "I am filling out the registration form.", "أنا أملأ استمارة التسجيل.", "Estoy completando el formulario de inscripción."),
+        ("der Geburtsort", "place of birth", "مكان الولادة", "lugar de nacimiento", "Mein Geburtsort ist Damaskus.", "My place of birth is Damascus.", "مكان ولادتي دمشق.", "Mi lugar de nacimiento es Damasco."),
+        ("das Geburtsdatum", "date of birth", "تاريخ الولادة", "fecha de nacimiento", "Mein Geburtsdatum ist 12.05.1998.", "My date of birth is 12.05.1998.", "تاريخ ولادتي 12.05.1998.", "Mi fecha de nacimiento es 12.05.1998."),
+        ("die Unterschrift", "signature", "التوقيع", "firma", "Ihre Unterschrift bitte hier unten.", "Your signature down here, please.", "توقيعك هنا بالأسفل من فضلك.", "Su firma aquí abajo, por favor."),
     ]
-    for i, (de, en, ar, es, ex) in enumerate(u4_formular, 1):
+    for i, (de, en, ar, es, ex_de, ex_en, ex_ar, ex_es) in enumerate(u4_formular, 1):
         cards.append({
             "id": f"card_10316_{i}",
             "lesson_id": 10316,
@@ -763,10 +921,16 @@ def generate_intro_cards():
             "custom_prompt_de": de,
             "data_json": {
                 "chunk_de": de,
-                "sentence_en": en,
-                "sentence_ar": bidi(ar),
-                "sentence_es": es,
-                "example_sentence_de": ex,
+                "translation_en": en,
+                "translation_ar": bidi(ar),
+                "translation_es": es,
+                "example_sentence_de": ex_de,
+                "example_sentence_en": ex_en,
+                "example_sentence_ar": bidi(ex_ar),
+                "example_sentence_es": ex_es,
+                "sentence_en": ex_en,
+                "sentence_ar": bidi(ex_ar),
+                "sentence_es": ex_es,
             }
         })
 
@@ -779,10 +943,16 @@ def generate_intro_cards():
         "custom_prompt_de": "Intro Checkpoint",
         "data_json": {
             "chunk_de": "Intro Level Checkpoint",
-            "sentence_en": "You are ready for the Intro Checkpoint!",
-            "sentence_ar": bidi("أنت الآن مستعد لاختبار إنهاء المستوى التمهيدي!"),
-            "sentence_es": "¡Estás listo para el examen de nivel Intro!",
+            "translation_en": "You are ready for the Intro Checkpoint!",
+            "translation_ar": bidi("أنت الآن مستعد لاختبار إنهاء المستوى التمهيدي!"),
+            "translation_es": "¡Estás listo para el examen de nivel Intro!",
             "example_sentence_de": "Ich möchte mich vorstellen: Mein Name ist Karim.",
+            "example_sentence_en": "I'd like to introduce myself: My name is Karim.",
+            "example_sentence_ar": bidi("أود أن أقدم نفسي: اسمي كريم."),
+            "example_sentence_es": "Me gustaría presentarme: Mi nombre es Karim.",
+            "sentence_en": "I'd like to introduce myself: My name is Karim.",
+            "sentence_ar": bidi("أود أن أقدم نفسي: اسمي كريم."),
+            "sentence_es": "Me gustaría presentarme: Mi nombre es Karim.",
         }
     })
 
@@ -798,6 +968,9 @@ def generate_intro_cards():
             "word_id": 1,  # Mutter (die)
             "data_json": {
                 "example_sentence_de": "Meine Mutter kocht sehr gut.",
+                "example_sentence_en": "My mother cooks very well.",
+                "example_sentence_ar": bidi("أمي تطبخ بشكل جيد جداً."),
+                "example_sentence_es": "Mi madre cocina muy bien.",
                 "sentence_en": "My mother cooks very well.",
                 "sentence_ar": bidi("أمي تطبخ بشكل جيد جداً."),
                 "sentence_es": "Mi madre cocina muy bien.",
@@ -812,6 +985,9 @@ def generate_intro_cards():
             "word_id": 2,  # Vater (der)
             "data_json": {
                 "example_sentence_de": "Mein Vater arbeitet gern.",
+                "example_sentence_en": "My father likes to work.",
+                "example_sentence_ar": bidi("أبي يحب العمل."),
+                "example_sentence_es": "A mi padre le gusta trabajar.",
                 "sentence_en": "My father likes to work.",
                 "sentence_ar": bidi("أبي يحب العمل."),
                 "sentence_es": "A mi padre le gusta trabajar.",
@@ -826,6 +1002,9 @@ def generate_intro_cards():
             "word_id": 4,  # Kind (das)
             "data_json": {
                 "example_sentence_de": "Das Kind spielt im Park.",
+                "example_sentence_en": "The child is playing in the park.",
+                "example_sentence_ar": bidi("الطفل يلعب في الحديقة."),
+                "example_sentence_es": "El niño juega en el parque.",
                 "sentence_en": "The child is playing in the park.",
                 "sentence_ar": bidi("الطفل يلعب في الحديقة."),
                 "sentence_es": "El niño juega en el parque.",
@@ -840,6 +1019,9 @@ def generate_intro_cards():
             "word_id": 7,  # Bruder (der)
             "data_json": {
                 "example_sentence_de": "Mein Bruder wohnt in Berlin.",
+                "example_sentence_en": "My brother lives in Berlin.",
+                "example_sentence_ar": bidi("أخي يعيش في برلين."),
+                "example_sentence_es": "Mi hermano vive en Berlín.",
                 "sentence_en": "My brother lives in Berlin.",
                 "sentence_ar": bidi("أخي يعيش في برلين."),
                 "sentence_es": "Mi hermano vive en Berlín.",
@@ -854,6 +1036,9 @@ def generate_intro_cards():
             "word_id": 8,  # Schwester (die)
             "data_json": {
                 "example_sentence_de": "Meine Schwester lernt Deutsch.",
+                "example_sentence_en": "My sister is learning German.",
+                "example_sentence_ar": bidi("أختي تتعلم الألمانية."),
+                "example_sentence_es": "Mi hermana aprende alemán.",
                 "sentence_en": "My sister is learning German.",
                 "sentence_ar": bidi("أختي تتعلم الألمانية."),
                 "sentence_es": "Mi hermana aprende alemán.",

@@ -107,11 +107,42 @@ void main() {
       expect(cards[5].chunkDe, equals('Ich habe einen Bruder'));
     });
 
+    test('card_10104_3 (Letter O) has trilingual translations for anchor word and example sentence', () {
+      final card = repo.allLearnCards.firstWhere((c) => c.id == 'card_10104_3');
+      expect(card.customPromptDe, equals('O o'));
+      expect(card.anchorWordDe, equals('die Orange'));
+      expect(card.anchorWordAr, contains('برتقال'));
+      expect(card.anchorWordEn, equals('orange'));
+      expect(card.anchorWordEs, equals('naranja'));
+
+      expect(card.exampleSentenceDe, equals('Die Orange schmeckt gut.'));
+      expect(card.localizedExampleSentence('en'), equals('The orange tastes good.'));
+      expect(card.localizedExampleSentence('ar'), contains('البرتقالة طعمها لذيذ.'));
+      expect(card.localizedExampleSentence('es'), equals('La naranja sabe bien.'));
+    });
+
+    test('concept cards have separate translations for chunk lemma and example sentence', () {
+      final card = repo.allLearnCards.firstWhere((c) => c.id == 'card_10101_1');
+      expect(card.chunkDe, equals('das Hotel'));
+      expect(card.localizedTranslation('ar'), contains('فندق'));
+      expect(card.localizedExampleSentence('ar'), contains('الفندق حديث.'));
+      expect(card.localizedExampleSentence('en'), equals('The hotel is modern.'));
+      expect(card.localizedExampleSentence('es'), equals('El hotel es moderno.'));
+    });
+
     test('all Arabic translations across all cards include BiDi isolates', () {
       for (final card in repo.allLearnCards) {
         if (card.sentenceAr != null && card.sentenceAr!.isNotEmpty) {
           expect(card.sentenceAr, contains('\u2066'));
           expect(card.sentenceAr, contains('\u2069'));
+        }
+        if (card.exampleSentenceAr != null && card.exampleSentenceAr!.isNotEmpty) {
+          expect(card.exampleSentenceAr, contains('\u2066'));
+          expect(card.exampleSentenceAr, contains('\u2069'));
+        }
+        if (card.translationAr != null && card.translationAr!.isNotEmpty) {
+          expect(card.translationAr, contains('\u2066'));
+          expect(card.translationAr, contains('\u2069'));
         }
         if (card.anchorWordAr != null && card.anchorWordAr!.isNotEmpty) {
           expect(card.anchorWordAr, contains('\u2066'));

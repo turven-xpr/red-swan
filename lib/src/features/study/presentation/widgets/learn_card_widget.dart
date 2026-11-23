@@ -148,7 +148,8 @@ class _PhoneticCard extends ConsumerWidget {
           if (card.exampleSentenceDe != null && card.exampleSentenceDe!.isNotEmpty) ...[
             _ExampleSentence(
               german: card.exampleSentenceDe!,
-              translation: _localizedSentence,
+              translation: card.localizedExampleSentence(languageCode),
+              highlightWord: _extractCoreWord(card.anchorWordDe),
               ref: ref,
               isDark: isDark,
             ),
@@ -223,17 +224,6 @@ class _PhoneticCard extends ConsumerWidget {
         return card.anchorWordEs ?? card.anchorWordEn;
       default:
         return card.anchorWordEn;
-    }
-  }
-
-  String? get _localizedSentence {
-    switch (languageCode) {
-      case 'ar':
-        return card.sentenceAr ?? card.sentenceEn;
-      case 'es':
-        return card.sentenceEs ?? card.sentenceEn;
-      default:
-        return card.sentenceEn;
     }
   }
 
@@ -344,6 +334,7 @@ class _ConceptCard extends ConsumerWidget {
             _ExampleSentence(
               german: card.exampleSentenceDe!,
               translation: _localizedSentence,
+              highlightWord: _extractCoreWord(card.chunkDe ?? card.customPromptDe),
               ref: ref,
               isDark: isDark,
             ),
@@ -354,25 +345,11 @@ class _ConceptCard extends ConsumerWidget {
   }
 
   String? get _localizedTranslation {
-    switch (languageCode) {
-      case 'ar':
-        return card.sentenceAr ?? card.sentenceEn;
-      case 'es':
-        return card.sentenceEs ?? card.sentenceEn;
-      default:
-        return card.sentenceEn;
-    }
+    return card.localizedTranslation(languageCode) ?? card.sentenceEn;
   }
 
   String? get _localizedSentence {
-    switch (languageCode) {
-      case 'ar':
-        return card.sentenceAr;
-      case 'es':
-        return card.sentenceEs;
-      default:
-        return card.sentenceEn;
-    }
+    return card.localizedExampleSentence(languageCode);
   }
 
   static Color _parseHex(String hex) {
@@ -527,6 +504,7 @@ class _NounArticleCard extends ConsumerWidget {
             _ExampleSentence(
               german: exampleDe,
               translation: exampleTranslation,
+              highlightWord: linkedWord?.lemma ?? _extractCoreWord(card.customPromptDe),
               ref: widgetRef,
               isDark: isDark,
               highlightColor: genderFg,
@@ -549,16 +527,7 @@ class _NounArticleCard extends ConsumerWidget {
     }
   }
 
-  String? get _resolveExampleTranslation {
-    switch (languageCode) {
-      case 'ar':
-        return card.sentenceAr ?? card.sentenceEn;
-      case 'es':
-        return card.sentenceEs ?? card.sentenceEn;
-      default:
-        return card.sentenceEn;
-    }
-  }
+  String? get _resolveExampleTranslation => card.localizedExampleSentence(languageCode);
 }
 
 // ─────────────────────────────────────────────────────────────────────
@@ -622,6 +591,18 @@ class _PhraseChunkCard extends ConsumerWidget {
               text: grammarNote,
               isDark: isDark,
               icon: Icons.lightbulb_outline_rounded,
+            ),
+          ],
+
+          // Example sentence (if provided)
+          if (card.exampleSentenceDe != null && card.exampleSentenceDe!.isNotEmpty) ...[
+            const SizedBox(height: 14),
+            _ExampleSentence(
+              german: card.exampleSentenceDe!,
+              translation: card.localizedExampleSentence(languageCode),
+              highlightWord: card.highlightToken ?? _extractCoreWord(chunkDe),
+              ref: ref,
+              isDark: isDark,
             ),
           ],
         ],
@@ -929,13 +910,30 @@ class _AudioWordChip extends StatelessWidget {
   }
 }
 
-/// Example sentence display with German + translation.
+/// Extracts the core noun or lemma by stripping leading German articles.
+String? _extractCoreWord(String? text) {
+  if (text == null || text.trim().isEmpty) return null;
+  final trimmed = text.trim();
+  final lower = trimmed.toLowerCase();
+  for (final article in [
+    'der ', 'die ', 'das ', 'den ', 'dem ', 'des ',
+    'ein ', 'eine ', 'einen ', 'einem ', 'einer ',
+  ]) {
+    if (lower.startsWith(article)) {
+      return trimmed.substring(article.length).trim();
+    }
+  }
+  return trimmed;
+}
+
+/// Example sentence display with German + translation, with the target word highlighted.
 class _ExampleSentence extends StatelessWidget {
   const _ExampleSentence({
     required this.german,
     this.translation,
     required this.ref,
     required this.isDark,
+    this.highlightWord,
     this.highlightColor,
   });
 
@@ -943,17 +941,36 @@ class _ExampleSentence extends StatelessWidget {
   final String? translation;
   final WidgetRef ref;
   final bool isDark;
+  final String? highlightWord;
   final Color? highlightColor;
 
   @override
   Widget build(BuildContext context) {
+    final effectiveHighlightColor = highlightColor ?? AppColors.primary;
+    final normalStyle = TextStyle(
+      fontSize: 15,
+      fontWeight: FontWeight.w600,
+      fontStyle: FontStyle.italic,
+      color: isDark ? Colors.white : Colors.black87,
+    );
+    final highlightStyle = TextStyle(
+      fontSize: 15,
+      fontWeight: FontWeight.w900,
+      fontStyle: FontStyle.italic,
+      color: effectiveHighlightColor,
+      backgroundColor: effectiveHighlightColor.withValues(alpha: isDark ? 0.20 : 0.10),
+      decoration: TextDecoration.underline,
+      decorationColor: effectiveHighlightColor.withValues(alpha: 0.6),
+      decorationThickness: 2,
+    );
+
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: isDark ? Colors.white.withValues(alpha: 0.04) : const Color(0xFFF9FAFB),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
-          color: (highlightColor ?? AppColors.primary).withValues(alpha: 0.15),
+          color: effectiveHighlightColor.withValues(alpha: 0.20),
         ),
       ),
       child: Column(
@@ -964,13 +981,9 @@ class _ExampleSentence extends StatelessWidget {
               Expanded(
                 child: Directionality(
                   textDirection: TextDirection.ltr,
-                  child: Text(
-                    german,
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                      fontStyle: FontStyle.italic,
-                      color: isDark ? Colors.white : Colors.black87,
+                  child: Text.rich(
+                    TextSpan(
+                      children: _buildSpans(german, highlightWord, normalStyle, highlightStyle),
                     ),
                   ),
                 ),
@@ -978,23 +991,62 @@ class _ExampleSentence extends StatelessWidget {
               _AudioIconButton(
                 text: german,
                 ref: ref,
-                color: highlightColor,
+                color: effectiveHighlightColor,
               ),
             ],
           ),
           if (translation != null && translation!.isNotEmpty) ...[
-            const SizedBox(height: 4),
+            const SizedBox(height: 6),
             Text(
               translation!,
               style: TextStyle(
-                fontSize: 13,
-                color: isDark ? Colors.white54 : Colors.black45,
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: isDark ? Colors.white70 : Colors.black54,
               ),
             ),
           ],
         ],
       ),
     );
+  }
+
+  static List<InlineSpan> _buildSpans(
+    String text,
+    String? target,
+    TextStyle normalStyle,
+    TextStyle highlightStyle,
+  ) {
+    if (target == null || target.trim().isEmpty) {
+      return [TextSpan(text: text, style: normalStyle)];
+    }
+
+    final cleanTarget = target.trim();
+    final lowerText = text.toLowerCase();
+    final lowerTarget = cleanTarget.toLowerCase();
+
+    if (!lowerText.contains(lowerTarget)) {
+      return [TextSpan(text: text, style: normalStyle)];
+    }
+
+    final spans = <InlineSpan>[];
+    int cursor = 0;
+    while (cursor < text.length) {
+      final idx = lowerText.indexOf(lowerTarget, cursor);
+      if (idx == -1) {
+        spans.add(TextSpan(text: text.substring(cursor), style: normalStyle));
+        break;
+      }
+      if (idx > cursor) {
+        spans.add(TextSpan(text: text.substring(cursor, idx), style: normalStyle));
+      }
+      spans.add(TextSpan(
+        text: text.substring(idx, idx + lowerTarget.length),
+        style: highlightStyle,
+      ));
+      cursor = idx + lowerTarget.length;
+    }
+    return spans;
   }
 }
 
