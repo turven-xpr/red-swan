@@ -313,3 +313,122 @@ class CurriculumReadingPassage {
   }
 }
 
+/// Supported presentation card variants in the Universal LearnCard engine
+enum LearnCardType {
+  phonetic,
+  concept,
+  nounArticle,
+  phraseChunk;
+
+  static LearnCardType fromString(String val) {
+    switch (val) {
+      case 'phonetic':
+        return LearnCardType.phonetic;
+      case 'concept':
+        return LearnCardType.concept;
+      case 'noun_article':
+        return LearnCardType.nounArticle;
+      case 'phrase_chunk':
+      default:
+        return LearnCardType.phraseChunk;
+    }
+  }
+
+  String toDbString() {
+    switch (this) {
+      case LearnCardType.phonetic:
+        return 'phonetic';
+      case LearnCardType.concept:
+        return 'concept';
+      case LearnCardType.nounArticle:
+        return 'noun_article';
+      case LearnCardType.phraseChunk:
+        return 'phrase_chunk';
+    }
+  }
+}
+
+/// Represents a presentation card shown before quizzes (PPP: Presentation phase)
+class CurriculumLearnCard {
+  const CurriculumLearnCard({
+    required this.id,
+    required this.lessonId,
+    required this.type,
+    required this.sortOrder,
+    this.wordId,
+    this.sentenceId,
+    this.customPromptDe,
+    required this.dataJson,
+  });
+
+  final String id;
+  final int lessonId;
+  final LearnCardType type;
+  final int sortOrder;
+  final int? wordId;
+  final int? sentenceId;
+  final String? customPromptDe;
+  final Map<String, dynamic> dataJson;
+
+  // Typed getters for polymorphic payloads
+  String? get mouthTipDe => dataJson['mouth_tip_de'] as String?;
+  String? get mouthTipEn => dataJson['mouth_tip_en'] as String?;
+  String? get mouthTipAr => dataJson['mouth_tip_ar'] as String?;
+  String? get mouthTipEs => dataJson['mouth_tip_es'] as String?;
+  String? get swatchHex => dataJson['swatch_hex'] as String?;
+  String? get chunkDe => dataJson['chunk_de'] as String?;
+  String? get exampleSentenceDe => dataJson['example_sentence_de'] as String?;
+  String? get sentenceEn => dataJson['sentence_en'] as String?;
+  String? get sentenceAr => dataJson['sentence_ar'] as String?;
+  String? get sentenceEs => dataJson['sentence_es'] as String?;
+  String? get highlightToken => dataJson['highlight_token'] as String?;
+  String? get grammaticalNoteDe => dataJson['grammatical_note_de'] as String?;
+  String? get grammaticalNoteEn => dataJson['grammatical_note_en'] as String?;
+  String? get grammaticalNoteAr => dataJson['grammatical_note_ar'] as String?;
+
+  List<String> get tileTokens =>
+      (dataJson['tile_tokens'] as List?)?.map((e) => e.toString()).toList() ?? const [];
+
+  List<Map<String, dynamic>> get contrastPairs =>
+      (dataJson['contrast_pairs'] as List?)
+          ?.map((e) => Map<String, dynamic>.from(e as Map))
+          .toList() ??
+      const [];
+
+  List<String> get sampleWords =>
+      (dataJson['sample_words'] as List?)?.map((e) => e.toString()).toList() ?? const [];
+
+  factory CurriculumLearnCard.fromJson(Map<String, dynamic> json) {
+    Map<String, dynamic> parsedData = {};
+    if (json['data_json'] is String) {
+      try {
+        parsedData = jsonDecode(json['data_json'] as String) as Map<String, dynamic>;
+      } catch (_) {}
+    } else if (json['data_json'] is Map) {
+      parsedData = Map<String, dynamic>.from(json['data_json'] as Map);
+    }
+
+    return CurriculumLearnCard(
+      id: json['id'].toString(),
+      lessonId: json['lesson_id'] as int,
+      type: LearnCardType.fromString((json['card_type'] ?? 'phrase_chunk') as String),
+      sortOrder: json['sort_order'] as int? ?? 1,
+      wordId: json['word_id'] as int?,
+      sentenceId: json['sentence_id'] as int?,
+      customPromptDe: json['custom_prompt_de'] as String?,
+      dataJson: parsedData,
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'lesson_id': lessonId,
+        'card_type': type.toDbString(),
+        'sort_order': sortOrder,
+        'word_id': wordId,
+        'sentence_id': sentenceId,
+        'custom_prompt_de': customPromptDe,
+        'data_json': jsonEncode(dataJson),
+      };
+}
+

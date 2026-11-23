@@ -1135,6 +1135,88 @@ const Map<String, _Group> _table = {
     es: 'Los contadores de racha, progresión MCER y resultados se mostrarán aquí.',
     ar: 'سيتم إنشاء عدادات الخطوط اليومية وتقدم مستويات CEFR ونتائج الاختبارات هنا.',
   ),
+
+  // ── LearnCard Presentation Phase ───────────────────────────────────
+  Str.learnPhaseTitle: (
+    de: 'Zuerst lernen',
+    en: 'Learn First',
+    es: 'Aprende primero',
+    ar: 'تعلّم أولاً',
+  ),
+  Str.learnPhaseSwipeHint: (
+    de: 'Wische für nächste Karte',
+    en: 'Swipe for next card',
+    es: 'Desliza para la siguiente tarjeta',
+    ar: 'اسحب للبطاقة التالية',
+  ),
+  Str.learnPhaseReady: (
+    de: 'Bereit zum Üben!',
+    en: 'Ready to practice!',
+    es: '¡Listo para practicar!',
+    ar: 'جاهز للتدريب!',
+  ),
+  Str.learnPhaseCounter: (
+    de: 'Karte %s von %s',
+    en: 'Card %s of %s',
+    es: 'Tarjeta %s de %s',
+    ar: 'بطاقة %s من %s',
+  ),
+
+  // ── Pronunciation Coach ──────────────────────────────────────────
+  Str.listenNative: (
+    de: 'Muttersprachler anhören',
+    en: 'Listen to native',
+    es: 'Escuchar nativo',
+    ar: 'استمع للنطق الأصلي',
+  ),
+  Str.tapToSpeak: (
+    de: 'Tippe zum Sprechen',
+    en: 'Tap to speak',
+    es: 'Toca para hablar',
+    ar: 'اضغط للتحدث',
+  ),
+  Str.listeningState: (
+    de: 'Zuhören …',
+    en: 'Listening …',
+    es: 'Escuchando…',
+    ar: 'جارٍ الاستماع …',
+  ),
+  Str.speechNotAvailable: (
+    de: 'Mikrofon nicht verfügbar — Selbstbewertung möglich',
+    en: 'Microphone not available — you can self-assess',
+    es: 'Micrófono no disponible — puedes autoevaluarte',
+    ar: 'الميكروفون غير متوفر — يمكنك التقييم الذاتي',
+  ),
+  Str.youSaid: (
+    de: 'Du hast gesagt: %s',
+    en: 'You said: %s',
+    es: 'Dijiste: %s',
+    ar: 'قلت: %s',
+  ),
+  Str.greatPronunciation: (
+    de: 'Tolle Aussprache!',
+    en: 'Great pronunciation!',
+    es: '¡Excelente pronunciación!',
+    ar: 'نطق ممتاز!',
+  ),
+  Str.goodTry: (
+    de: 'Guter Versuch!',
+    en: 'Good try!',
+    es: '¡Buen intento!',
+    ar: 'محاولة جيدة!',
+  ),
+  Str.markAsPracticed: (
+    de: 'Als geübt markieren',
+    en: 'Mark as practiced',
+    es: 'Marcar como practicado',
+    ar: 'تحديد كتم التدريب',
+  ),
+  Str.tryAgainCoach: (
+    de: 'Nochmal versuchen',
+    en: 'Try again',
+    es: 'Intentar de nuevo',
+    ar: 'حاول ثانية',
+  ),
 };
 
 /// One string lookup. Returns the entry for the active locale, or

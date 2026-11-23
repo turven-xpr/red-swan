@@ -222,6 +222,23 @@ class Str {
   static const String correctAnswer = 'correctAnswer';
   static const String incorrectTryAgain = 'incorrectTryAgain';
 
+  // LearnCard Presentation Phase
+  static const String learnPhaseTitle = 'learnPhaseTitle';
+  static const String learnPhaseSwipeHint = 'learnPhaseSwipeHint';
+  static const String learnPhaseReady = 'learnPhaseReady';
+  static const String learnPhaseCounter = 'learnPhaseCounter';
+
+  // Pronunciation Coach
+  static const String listenNative = 'listenNative';
+  static const String tapToSpeak = 'tapToSpeak';
+  static const String listeningState = 'listeningState';
+  static const String speechNotAvailable = 'speechNotAvailable';
+  static const String youSaid = 'youSaid';
+  static const String greatPronunciation = 'greatPronunciation';
+  static const String goodTry = 'goodTry';
+  static const String markAsPracticed = 'markAsPracticed';
+  static const String tryAgainCoach = 'tryAgainCoach';
+
   // Settings & Profile
   static const String settingsTitle = 'settingsTitle';
   static const String settingsLoadError = 'settingsLoadError';

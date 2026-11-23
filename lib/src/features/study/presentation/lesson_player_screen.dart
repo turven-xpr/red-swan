@@ -14,6 +14,8 @@ import '../data/content_repository.dart';
 import '../data/lesson_progress_provider.dart';
 import '../domain/curriculum_models.dart';
 import '../domain/exercise_localizer.dart';
+import 'widgets/learn_card_widget.dart';
+import 'widgets/pronunciation_coach_widget.dart';
 
 class LessonPlayerScreen extends ConsumerStatefulWidget {
   const LessonPlayerScreen({super.key, required this.lessonId});
@@ -41,6 +43,10 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
   int? _activeStorySentenceIndex;
   Timer? _storyTimer;
   bool _isStoryPlaying = false;
+
+  // State for Presentation (Learn Cards) phase
+  bool _presentationComplete = false;
+  int _learnCardIndex = 0;
 
   @override
   void dispose() {
@@ -144,6 +150,17 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     }
 
     final exercises = repo.getExercisesForLesson(widget.lessonId);
+
+    // ── PPP Presentation Phase: show Learn Cards before exercises ──
+    final learnCards = repo.getLearnCardsForLesson(widget.lessonId);
+    final hasLearnCards = learnCards.isNotEmpty;
+
+    if (hasLearnCards && !_presentationComplete) {
+      return _buildPresentationPhase(
+        context, learnCards, lesson, isDark, isArabic, languageCode,
+      );
+    }
+
     if (exercises.isEmpty) {
       return Scaffold(
         appBar: AppBar(title: Text(lesson.localizedTitle(languageCode))),
@@ -462,7 +479,7 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
           ),
         ],
 
-        // Speaking repetition exercise
+        // Speaking repetition exercise with Pronunciation Coach
         if (exercise.exerciseType == 'repeat_prompt') ...[
           Builder(builder: (context) {
             final hint = ExerciseLocalizer.localizeHint(promptMap, languageCode);
@@ -483,27 +500,19 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
             return const SizedBox.shrink();
           }),
           const SizedBox(height: 16),
-          Center(
-            child: ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-              ),
-              icon: const Icon(Icons.mic_rounded, size: 24),
-              label: Text(
-                t(context, Str.pronouncedCorrectly),
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
-              onPressed: () {
+          PronunciationCoachWidget(
+            targetText: (promptMap['de'] as String?) ?? exercise.correctAnswer,
+            audioText: exercise.audioText,
+            languageCode: languageCode,
+            onCompleted: (passed) {
+              if (!_answered) {
                 setState(() {
                   _answered = true;
-                  _isCorrect = true;
-                  _score++;
+                  _isCorrect = passed;
+                  if (passed) _score++;
                 });
-              },
-            ),
+              }
+            },
           ),
         ],
       ],
@@ -675,6 +684,213 @@ class _LessonPlayerScreenState extends ConsumerState<LessonPlayerScreen> {
     }
 
     return const SizedBox.shrink();
+  }
+
+  // ────────────────────────────────────────────────────────────────────
+  // PPP PRESENTATION PHASE – Learn Cards before exercises
+  // ────────────────────────────────────────────────────────────────────
+
+  Widget _buildPresentationPhase(
+    BuildContext context,
+    List<CurriculumLearnCard> cards,
+    CurriculumLesson lesson,
+    bool isDark,
+    bool isArabic,
+    String languageCode,
+  ) {
+    final total = cards.length;
+    final isLast = _learnCardIndex >= total - 1;
+    final cardIndex = _learnCardIndex.clamp(0, total - 1);
+    final currentCard = cards[cardIndex];
+    final progress = (cardIndex + 1) / total;
+
+    return Scaffold(
+      backgroundColor: isDark ? AppColors.surfaceDark : Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.close_rounded, color: isDark ? Colors.white : Colors.black87),
+          onPressed: () => context.pop(),
+        ),
+        title: ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: LinearProgressIndicator(
+            value: progress,
+            backgroundColor: isDark ? Colors.white12 : Colors.black12,
+            valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
+            minHeight: 10,
+          ),
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Center(
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  color: AppColors.primary.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.school_rounded, size: 14, color: AppColors.primary),
+                    const SizedBox(width: 4),
+                    Text(
+                      t(context, Str.learnPhaseCounter,
+                          args: ['${cardIndex + 1}', '$total']),
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.primary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            // Phase label
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+              child: Row(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(
+                      color: Colors.purple.withValues(alpha: 0.12),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(Icons.auto_stories_rounded, size: 14, color: Colors.purple),
+                        const SizedBox(width: 6),
+                        Text(
+                          t(context, Str.learnPhaseTitle),
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.purple,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            // Swipeable Learn Card
+            Expanded(
+              child: GestureDetector(
+                onHorizontalDragEnd: (details) {
+                  if (details.primaryVelocity == null) return;
+                  if (details.primaryVelocity! < -100 && !isLast) {
+                    // Swipe left → next
+                    setState(() => _learnCardIndex++);
+                  } else if (details.primaryVelocity! > 100 && _learnCardIndex > 0) {
+                    // Swipe right → previous
+                    setState(() => _learnCardIndex--);
+                  }
+                },
+                child: AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 300),
+                  switchInCurve: Curves.easeOutCubic,
+                  switchOutCurve: Curves.easeInCubic,
+                  child: SingleChildScrollView(
+                    key: ValueKey<int>(_learnCardIndex),
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                    child: LearnCardWidget(
+                      card: currentCard,
+                      languageCode: languageCode,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+            // Swipe hint
+            if (!isLast)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 4),
+                child: Text(
+                  t(context, Str.learnPhaseSwipeHint),
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: isDark ? Colors.white30 : Colors.black26,
+                  ),
+                ),
+              ),
+
+            // Navigation buttons
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 8, 20, 16),
+              child: Row(
+                children: [
+                  // Back button
+                  if (_learnCardIndex > 0)
+                    Padding(
+                      padding: const EdgeInsets.only(right: 12),
+                      child: OutlinedButton.icon(
+                        onPressed: () => setState(() => _learnCardIndex--),
+                        icon: const Icon(Icons.arrow_back_rounded, size: 18),
+                        label: const Text(''),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: isDark ? Colors.white60 : Colors.black54,
+                          side: BorderSide(color: isDark ? Colors.white24 : Colors.black12),
+                          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(14),
+                          ),
+                          minimumSize: const Size(48, 48),
+                        ),
+                      ),
+                    ),
+
+                  // Next / Start Practice button
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        if (isLast) {
+                          setState(() => _presentationComplete = true);
+                        } else {
+                          setState(() => _learnCardIndex++);
+                        }
+                      },
+                      icon: Icon(
+                        isLast ? Icons.play_arrow_rounded : Icons.arrow_forward_rounded,
+                        size: 20,
+                      ),
+                      label: Text(
+                        isLast
+                            ? t(context, Str.learnPhaseReady)
+                            : t(context, Str.continueButton),
+                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: isLast ? Colors.green : AppColors.primary,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   Widget _buildGrammarView(BuildContext context, CurriculumLesson lesson, bool isDark, bool isArabic, String languageCode) {
