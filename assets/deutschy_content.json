@@ -22639,5 +22639,197 @@
       "url": "https://deutschy.app",
       "attribution": "Sample sentences written for Deutschy prototype. © Deutschy."
     }
+  ],
+  "learn_cards": [
+    {
+      "id": "card_u1_l10101_1",
+      "lesson_id": 10101,
+      "card_type": "concept",
+      "sort_order": 1,
+      "custom_prompt_de": "Hallo! Willkommen auf Deutsch!",
+      "data_json": {
+        "chunk_de": "Hallo! Willkommen auf Deutsch!",
+        "sentence_en": "Hello! Welcome to German!",
+        "sentence_ar": "⁦مرحباً! أهلاً بك في الألمانية!⁩",
+        "sentence_es": "¡Hola! ¡Bienvenido al alemán!",
+        "example_sentence_de": "Guten Tag! Ich lerne Deutsch."
+      }
+    },
+    {
+      "id": "card_u1_l10101_2",
+      "lesson_id": 10101,
+      "card_type": "phonetic",
+      "sort_order": 2,
+      "custom_prompt_de": "ch",
+      "data_json": {
+        "mouth_tip_en": "Soft 'ch' (ich): smile and whisper 'yes'. Hard 'ch' (ach): back of throat like clearing throat.",
+        "mouth_tip_ar": "⁦صوت 'ch' ناعم بعد (e, i) كالهمس، وخشن بعد (a, o, u) من مؤخرة الحلق.⁩",
+        "mouth_tip_es": "'ch' suave tras e/i; 'ch' áspera tras a/o/u en la garganta.",
+        "contrast_pairs": [
+          {
+            "word_a": "ich",
+            "word_b": "ach"
+          },
+          {
+            "word_a": "Milch",
+            "word_b": "Buch"
+          }
+        ],
+        "sample_words": [
+          "ich",
+          "nicht",
+          "Milch",
+          "Buch",
+          "auch"
+        ]
+      }
+    },
+    {
+      "id": "card_u1_l10102_1",
+      "lesson_id": 10102,
+      "card_type": "phonetic",
+      "sort_order": 1,
+      "custom_prompt_de": "ä · ö · ü · ß",
+      "data_json": {
+        "mouth_tip_en": "ä = like 'bed'. ö = round lips and say 'ay'. ü = round lips and say 'ee'. ß = sharp double 's'.",
+        "mouth_tip_ar": "⁦حروف الإمالة الألمانية: ä كالفتحة الممتدة، ö و ü بتدوير الشفتين، و ß تعادل حرفي ss.⁩",
+        "mouth_tip_es": "ä suena como e abierta; ö y ü con labios redondeados; ß es una s sorda.",
+        "contrast_pairs": [
+          {
+            "word_a": "schon",
+            "word_b": "schön"
+          },
+          {
+            "word_a": "Mutter",
+            "word_b": "Mütter"
+          }
+        ],
+        "sample_words": [
+          "Äpfel",
+          "schön",
+          "über",
+          "groß"
+        ]
+      }
+    },
+    {
+      "id": "card_u5_l10001_1",
+      "lesson_id": 10001,
+      "card_type": "noun_article",
+      "sort_order": 1,
+      "word_id": 1,
+      "data_json": {
+        "example_sentence_de": "Meine Mutter kocht sehr gut.",
+        "sentence_en": "My mother cooks very well.",
+        "sentence_ar": "⁦أمي تطبخ بشكل جيد جداً.⁩",
+        "sentence_es": "Mi madre cocina muy bien.",
+        "tile_tokens": [
+          "Meine",
+          "Mutter",
+          "kocht",
+          "sehr",
+          "gut"
+        ]
+      }
+    },
+    {
+      "id": "card_u5_l10001_2",
+      "lesson_id": 10001,
+      "card_type": "noun_article",
+      "sort_order": 2,
+      "word_id": 2,
+      "data_json": {
+        "example_sentence_de": "Mein Vater arbeitet gern.",
+        "sentence_en": "My father likes to work.",
+        "sentence_ar": "⁦أبي يحب العمل.⁩",
+        "sentence_es": "A mi padre le gusta trabajar.",
+        "tile_tokens": [
+          "Mein",
+          "Vater",
+          "arbeitet",
+          "gern"
+        ]
+      }
+    },
+    {
+      "id": "card_u5_l10001_3",
+      "lesson_id": 10001,
+      "card_type": "noun_article",
+      "sort_order": 3,
+      "word_id": 4,
+      "data_json": {
+        "example_sentence_de": "Das Kind spielt im Park.",
+        "sentence_en": "The child is playing in the park.",
+        "sentence_ar": "⁦الطفل يلعب في الحديقة.⁩",
+        "sentence_es": "El niño juega en el parque.",
+        "tile_tokens": [
+          "Das",
+          "Kind",
+          "spielt",
+          "im",
+          "Park"
+        ]
+      }
+    },
+    {
+      "id": "card_u5_l10001_4",
+      "lesson_id": 10001,
+      "card_type": "noun_article",
+      "sort_order": 4,
+      "word_id": 7,
+      "data_json": {
+        "example_sentence_de": "Mein Bruder wohnt in Berlin.",
+        "sentence_en": "My brother lives in Berlin.",
+        "sentence_ar": "⁦أخي يعيش في برلين.⁩",
+        "sentence_es": "Mi hermano vive en Berlín.",
+        "tile_tokens": [
+          "Mein",
+          "Bruder",
+          "wohnt",
+          "in",
+          "Berlin"
+        ]
+      }
+    },
+    {
+      "id": "card_u5_l10001_5",
+      "lesson_id": 10001,
+      "card_type": "noun_article",
+      "sort_order": 5,
+      "word_id": 8,
+      "data_json": {
+        "example_sentence_de": "Meine Schwester lernt Deutsch.",
+        "sentence_en": "My sister is learning German.",
+        "sentence_ar": "⁦أختي تتعلم الألمانية.⁩",
+        "sentence_es": "Mi hermana aprende alemán.",
+        "tile_tokens": [
+          "Meine",
+          "Schwester",
+          "lernt",
+          "Deutsch"
+        ]
+      }
+    },
+    {
+      "id": "card_u5_l10001_6",
+      "lesson_id": 10001,
+      "card_type": "phrase_chunk",
+      "sort_order": 6,
+      "data_json": {
+        "chunk_de": "Ich habe einen Bruder",
+        "highlight_token": "einen",
+        "sentence_en": "I have a brother",
+        "sentence_ar": "⁦لدي أخ⁩",
+        "sentence_es": "Tengo un hermano",
+        "grammatical_note_en": "The direct object (accusative) changes masculine 'ein' to 'einen': Ich habe einen Bruder.",
+        "grammatical_note_ar": "⁦المفعول به (حالة النصب Akkusativ) يحول أداة التنكير للمذكر من ein إلى einen: Ich habe einen Bruder.⁩",
+        "tile_tokens": [
+          "Ich",
+          "habe",
+          "einen",
+          "Bruder"
+        ]
+      }
+    }
   ]
 }
