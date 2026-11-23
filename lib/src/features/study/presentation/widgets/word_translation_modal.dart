@@ -8,8 +8,8 @@ import '../../data/content_repository.dart';
 import '../../domain/curriculum_models.dart';
 import '../../domain/word_lookup_service.dart';
 
-/// Shows an isolated, accessible modal sheet with word-by-word trilingual translation
-/// when a learner taps any word in an example sentence.
+/// Shows an isolated, accessible modal sheet with word-by-word translation
+/// in the user's selected language (English, Arabic, or Spanish) when a learner taps any word.
 Future<void> showWordTranslationModal(
   BuildContext context, {
   required String rawToken,
@@ -124,19 +124,19 @@ class _WordTranslationSheet extends StatelessWidget {
                       IconButton.filledTonal(
                         onPressed: onSpeak,
                         icon: const Icon(Icons.volume_up_rounded, size: 22),
-                        tooltip: 'Aussprache / Pronunciation',
+                        tooltip: 'Aussprache / Audio',
                       ),
                       const SizedBox(width: 6),
                       IconButton(
                         onPressed: () => Navigator.of(context).pop(),
                         icon: const Icon(Icons.close_rounded, size: 22),
                         color: isDark ? Colors.white60 : Colors.black45,
-                        tooltip: 'Schließen / Close',
+                        tooltip: 'Schließen',
                       ),
                     ],
                   ),
 
-                  // Metadata Badges (Gender, POS, Lemma)
+                  // Metadata Badges (Gender, POS, Lemma) localized to user language
                   if (_hasMetadata) ...[
                     const SizedBox(height: 8),
                     Wrap(
@@ -147,23 +147,22 @@ class _WordTranslationSheet extends StatelessWidget {
                         if (result?.gender != null && result!.gender!.isNotEmpty)
                           _GenderBadge(
                             gender: result!.gender!,
+                            languageCode: primaryLang,
                             isDark: isDark,
                           ),
                         if (result?.pos != null && result!.pos!.isNotEmpty)
                           _PosBadge(
                             pos: result!.pos!,
+                            languageCode: primaryLang,
                             isDark: isDark,
                           ),
                         if (result?.lemma != null &&
                             result!.lemma!.isNotEmpty &&
                             result!.lemma!.toLowerCase() != germanWord.toLowerCase())
-                          Text(
-                            'Grundform: ${result!.lemma}',
-                            style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w500,
-                              color: isDark ? Colors.white54 : Colors.black54,
-                            ),
+                          _BaseFormBadge(
+                            lemma: result!.lemma!,
+                            languageCode: primaryLang,
+                            isDark: isDark,
                           ),
                       ],
                     ),
@@ -171,39 +170,32 @@ class _WordTranslationSheet extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // Primary translation card
+                  // Translation card in user's language only
                   Container(
-                    padding: const EdgeInsets.all(14),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                     decoration: BoxDecoration(
                       color: isDark
                           ? AppColors.primary.withValues(alpha: 0.12)
                           : AppColors.primary.withValues(alpha: 0.08),
-                      borderRadius: BorderRadius.circular(14),
+                      borderRadius: BorderRadius.circular(16),
                       border: Border.all(
                         color: AppColors.primary.withValues(alpha: 0.25),
                         width: 1.5,
                       ),
                     ),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      crossAxisAlignment: primaryLang == 'ar'
+                          ? CrossAxisAlignment.end
+                          : CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                            Text(
-                              _languageFlag(primaryLang),
-                              style: const TextStyle(fontSize: 16),
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              _languageHeader(primaryLang),
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w700,
-                                letterSpacing: 0.5,
-                                color: AppColors.primary,
-                              ),
-                            ),
-                          ],
+                        Text(
+                          _languageHeader(primaryLang),
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 0.5,
+                            color: AppColors.primary,
+                          ),
                         ),
                         const SizedBox(height: 6),
                         Directionality(
@@ -211,7 +203,7 @@ class _WordTranslationSheet extends StatelessWidget {
                           child: Text(
                             _primaryTranslation(primaryLang),
                             style: TextStyle(
-                              fontSize: 19,
+                              fontSize: 20,
                               fontWeight: FontWeight.w700,
                               color: isDark ? Colors.white : const Color(0xFF0F172A),
                             ),
@@ -221,33 +213,7 @@ class _WordTranslationSheet extends StatelessWidget {
                     ),
                   ),
 
-                  // Reference translations in the other 2 languages
-                  const SizedBox(height: 14),
-                  Text(
-                    _otherLanguagesLabel(primaryLang),
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 0.8,
-                      color: isDark ? Colors.white38 : Colors.black38,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                    decoration: BoxDecoration(
-                      color: isDark ? Colors.white.withValues(alpha: 0.04) : const Color(0xFFF8FAFC),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: isDark ? Colors.white12 : const Color(0xFFE2E8F0),
-                      ),
-                    ),
-                    child: Column(
-                      children: _buildSecondaryRows(primaryLang),
-                    ),
-                  ),
-
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 20),
 
                   // Close button
                   ElevatedButton(
@@ -292,92 +258,6 @@ class _WordTranslationSheet extends StatelessWidget {
     }
   }
 
-  List<Widget> _buildSecondaryRows(String primary) {
-    final list = <Widget>[];
-    final langs = ['en', 'ar', 'es']..remove(primary);
-
-    for (int i = 0; i < langs.length; i++) {
-      final l = langs[i];
-      final flag = _languageFlag(l);
-      final name = _languageName(l);
-      final text = _translationFor(l);
-
-      if (i > 0) {
-        list.add(Divider(
-          height: 12,
-          thickness: 0.6,
-          color: isDark ? Colors.white10 : Colors.black12,
-        ));
-      }
-
-      list.add(
-        Row(
-          children: [
-            Text(flag, style: const TextStyle(fontSize: 14)),
-            const SizedBox(width: 8),
-            Text(
-              name,
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
-                color: isDark ? Colors.white54 : Colors.black54,
-              ),
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Directionality(
-                textDirection: l == 'ar' ? TextDirection.rtl : TextDirection.ltr,
-                child: Text(
-                  text,
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                    color: isDark ? Colors.white : Colors.black87,
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      );
-    }
-    return list;
-  }
-
-  String _translationFor(String lang) {
-    if (result == null) return token;
-    switch (lang) {
-      case 'ar':
-        return result!.isolatedAr;
-      case 'es':
-        return result!.es.isNotEmpty ? result!.es : result!.en;
-      default:
-        return result!.en;
-    }
-  }
-
-  String _languageFlag(String lang) {
-    switch (lang) {
-      case 'ar':
-        return '🇸🇦';
-      case 'es':
-        return '🇪🇸';
-      default:
-        return '🇬🇧';
-    }
-  }
-
-  String _languageName(String lang) {
-    switch (lang) {
-      case 'ar':
-        return 'العربية';
-      case 'es':
-        return 'Español';
-      default:
-        return 'English';
-    }
-  }
-
   String _languageHeader(String lang) {
     switch (lang) {
       case 'ar':
@@ -386,17 +266,6 @@ class _WordTranslationSheet extends StatelessWidget {
         return 'TRADUCCIÓN';
       default:
         return 'TRANSLATION';
-    }
-  }
-
-  String _otherLanguagesLabel(String lang) {
-    switch (lang) {
-      case 'ar':
-        return 'لغات أخرى';
-      case 'es':
-        return 'OTROS IDIOMAS';
-      default:
-        return 'OTHER LANGUAGES';
     }
   }
 
@@ -412,10 +281,61 @@ class _WordTranslationSheet extends StatelessWidget {
   }
 }
 
+class _BaseFormBadge extends StatelessWidget {
+  const _BaseFormBadge({
+    required this.lemma,
+    required this.languageCode,
+    required this.isDark,
+  });
+
+  final String lemma;
+  final String languageCode;
+  final bool isDark;
+
+  @override
+  Widget build(BuildContext context) {
+    String prefix;
+    switch (languageCode.toLowerCase()) {
+      case 'ar':
+        prefix = 'الأصل';
+        break;
+      case 'es':
+        prefix = 'Forma base';
+        break;
+      default:
+        prefix = 'Base form';
+    }
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+      decoration: BoxDecoration(
+        color: isDark ? Colors.white10 : const Color(0xFFF1F5F9),
+        borderRadius: BorderRadius.circular(6),
+        border: Border.all(
+          color: isDark ? Colors.white12 : const Color(0xFFCBD5E1),
+        ),
+      ),
+      child: Text(
+        '$prefix: $lemma',
+        style: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w600,
+          color: isDark ? Colors.white70 : const Color(0xFF475569),
+        ),
+      ),
+    );
+  }
+}
+
 class _GenderBadge extends StatelessWidget {
-  const _GenderBadge({required this.gender, required this.isDark});
+  const _GenderBadge({
+    required this.gender,
+    required this.languageCode,
+    required this.isDark,
+  });
 
   final String gender;
+  final String languageCode;
   final bool isDark;
 
   @override
@@ -424,25 +344,26 @@ class _GenderBadge extends StatelessWidget {
     final bg = GenderColors.background(gender, isDark: isDark);
 
     String label;
+    final lang = languageCode.toLowerCase();
     switch (gender.toLowerCase()) {
       case 'der':
       case 'm':
       case 'masculine':
-        label = 'der · Maskulin';
+        label = lang == 'ar' ? 'مذكر (der)' : (lang == 'es' ? 'der · Masculino' : 'der · Masculine');
         break;
       case 'die':
       case 'f':
       case 'feminine':
-        label = 'die · Feminin';
+        label = lang == 'ar' ? 'مؤنث (die)' : (lang == 'es' ? 'die · Femenino' : 'die · Feminine');
         break;
       case 'das':
       case 'n':
       case 'neuter':
-        label = 'das · Neutrum';
+        label = lang == 'ar' ? 'محايد (das)' : (lang == 'es' ? 'das · Neutro' : 'das · Neuter');
         break;
       case 'plural':
       case 'pl':
-        label = 'die · Plural';
+        label = lang == 'ar' ? 'جمع (die)' : (lang == 'es' ? 'die · Plural' : 'die · Plural');
         break;
       default:
         label = gender;
@@ -468,51 +389,57 @@ class _GenderBadge extends StatelessWidget {
 }
 
 class _PosBadge extends StatelessWidget {
-  const _PosBadge({required this.pos, required this.isDark});
+  const _PosBadge({
+    required this.pos,
+    required this.languageCode,
+    required this.isDark,
+  });
 
   final String pos;
+  final String languageCode;
   final bool isDark;
 
   @override
   Widget build(BuildContext context) {
     String label;
+    final lang = languageCode.toLowerCase();
     switch (pos.toLowerCase()) {
       case 'noun':
-        label = 'Nomen';
+        label = lang == 'ar' ? 'اسم' : (lang == 'es' ? 'Sustantivo' : 'Noun');
         break;
       case 'verb':
-        label = 'Verb';
+        label = lang == 'ar' ? 'فعل' : (lang == 'es' ? 'Verbo' : 'Verb');
         break;
       case 'adj':
       case 'adjective':
-        label = 'Adjektiv';
+        label = lang == 'ar' ? 'صفة' : (lang == 'es' ? 'Adjetivo' : 'Adjective');
         break;
       case 'adv':
       case 'adverb':
-        label = 'Adverb';
+        label = lang == 'ar' ? 'ظرف' : (lang == 'es' ? 'Adverbio' : 'Adverb');
         break;
       case 'pron':
       case 'pronoun':
-        label = 'Pronomen';
+        label = lang == 'ar' ? 'ضمير' : (lang == 'es' ? 'Pronombre' : 'Pronoun');
         break;
       case 'prep':
       case 'preposition':
-        label = 'Präposition';
+        label = lang == 'ar' ? 'حرف جر' : (lang == 'es' ? 'Preposición' : 'Preposition');
         break;
       case 'art':
       case 'article':
-        label = 'Artikel';
+        label = lang == 'ar' ? 'أداة' : (lang == 'es' ? 'Artículo' : 'Article');
         break;
       case 'num':
       case 'number':
-        label = 'Zahl';
+        label = lang == 'ar' ? 'رقم' : (lang == 'es' ? 'Número' : 'Number');
         break;
       case 'conj':
       case 'conjunction':
-        label = 'Konjunktion';
+        label = lang == 'ar' ? 'حرف عطف' : (lang == 'es' ? 'Conjunción' : 'Conjunction');
         break;
       case 'phrase':
-        label = 'Redewendung';
+        label = lang == 'ar' ? 'تعبير' : (lang == 'es' ? 'Frase' : 'Phrase');
         break;
       default:
         label = pos;

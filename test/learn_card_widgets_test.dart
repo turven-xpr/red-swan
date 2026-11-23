@@ -308,16 +308,18 @@ void main() {
       (schmecktSpan.recognizer as TapGestureRecognizer).onTap!();
       await tester.pumpAndSettle();
 
-      // Verify modal opened with German word, audio playback, and trilingual translations
+      // Verify modal opened with German word, audio playback, and localized translation
       expect(find.text('schmeckt'), findsWidgets);
       expect(fakeAudio.lastSpoken, equals('schmeckt'));
       // Primary Arabic translation:
       expect(find.text('\u2066طعمه / مذاقه\u2069'), findsOneWidget);
-      // Secondary translations (English and Spanish):
-      expect(find.text('English'), findsOneWidget);
-      expect(find.text('tastes (good)'), findsOneWidget);
-      expect(find.text('Español'), findsOneWidget);
-      expect(find.text('sabe bien'), findsOneWidget);
+      // Localized part-of-speech badge:
+      expect(find.text('فعل'), findsOneWidget);
+      // Ensure other languages (English, Spanish) are NOT shown in the modal:
+      expect(find.text('English'), findsNothing);
+      expect(find.text('tastes (good)'), findsNothing);
+      expect(find.text('Español'), findsNothing);
+      expect(find.text('sabe bien'), findsNothing);
 
       // Verify close button dismisses modal
       await tester.tap(find.text('متابعة التعلم'));
