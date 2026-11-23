@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -7,6 +8,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/gender_colors.dart';
 import '../../data/content_repository.dart';
 import '../../domain/curriculum_models.dart';
+import 'word_translation_modal.dart';
 
 /// Universal presentation card widget for the PPP teaching engine.
 ///
@@ -150,6 +152,8 @@ class _PhoneticCard extends ConsumerWidget {
               german: card.exampleSentenceDe!,
               translation: card.localizedExampleSentence(languageCode),
               highlightWord: _extractCoreWord(card.anchorWordDe),
+              card: card,
+              languageCode: languageCode,
               ref: ref,
               isDark: isDark,
             ),
@@ -335,6 +339,8 @@ class _ConceptCard extends ConsumerWidget {
               german: card.exampleSentenceDe!,
               translation: _localizedSentence,
               highlightWord: _extractCoreWord(card.chunkDe ?? card.customPromptDe),
+              card: card,
+              languageCode: languageCode,
               ref: ref,
               isDark: isDark,
             ),
@@ -505,6 +511,8 @@ class _NounArticleCard extends ConsumerWidget {
               german: exampleDe,
               translation: exampleTranslation,
               highlightWord: linkedWord?.lemma ?? _extractCoreWord(card.customPromptDe),
+              card: card,
+              languageCode: languageCode,
               ref: widgetRef,
               isDark: isDark,
               highlightColor: genderFg,
@@ -601,6 +609,8 @@ class _PhraseChunkCard extends ConsumerWidget {
               german: card.exampleSentenceDe!,
               translation: card.localizedExampleSentence(languageCode),
               highlightWord: card.highlightToken ?? _extractCoreWord(chunkDe),
+              card: card,
+              languageCode: languageCode,
               ref: ref,
               isDark: isDark,
             ),
@@ -926,8 +936,9 @@ String? _extractCoreWord(String? text) {
   return trimmed;
 }
 
-/// Example sentence display with German + translation, with the target word highlighted.
-class _ExampleSentence extends StatelessWidget {
+/// Example sentence display with German + translation, with interactive word-by-word tap
+/// and anchor word highlight.
+class _ExampleSentence extends StatefulWidget {
   const _ExampleSentence({
     required this.german,
     this.translation,
@@ -935,6 +946,8 @@ class _ExampleSentence extends StatelessWidget {
     required this.isDark,
     this.highlightWord,
     this.highlightColor,
+    this.card,
+    required this.languageCode,
   });
 
   final String german;
@@ -943,22 +956,49 @@ class _ExampleSentence extends StatelessWidget {
   final bool isDark;
   final String? highlightWord;
   final Color? highlightColor;
+  final CurriculumLearnCard? card;
+  final String languageCode;
+
+  @override
+  State<_ExampleSentence> createState() => _ExampleSentenceState();
+}
+
+class _ExampleSentenceState extends State<_ExampleSentence> {
+  final List<TapGestureRecognizer> _recognizers = [];
+
+  @override
+  void dispose() {
+    for (final r in _recognizers) {
+      r.dispose();
+    }
+    _recognizers.clear();
+    super.dispose();
+  }
+
+  void _clearRecognizers() {
+    for (final r in _recognizers) {
+      r.dispose();
+    }
+    _recognizers.clear();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final effectiveHighlightColor = highlightColor ?? AppColors.primary;
+    _clearRecognizers();
+
+    final effectiveHighlightColor = widget.highlightColor ?? AppColors.primary;
     final normalStyle = TextStyle(
       fontSize: 15,
       fontWeight: FontWeight.w600,
       fontStyle: FontStyle.italic,
-      color: isDark ? Colors.white : Colors.black87,
+      color: widget.isDark ? Colors.white : Colors.black87,
     );
     final highlightStyle = TextStyle(
       fontSize: 15,
       fontWeight: FontWeight.w900,
       fontStyle: FontStyle.italic,
       color: effectiveHighlightColor,
-      backgroundColor: effectiveHighlightColor.withValues(alpha: isDark ? 0.20 : 0.10),
+      backgroundColor: effectiveHighlightColor.withValues(alpha: widget.isDark ? 0.20 : 0.10),
       decoration: TextDecoration.underline,
       decorationColor: effectiveHighlightColor.withValues(alpha: 0.6),
       decorationThickness: 2,
@@ -967,7 +1007,7 @@ class _ExampleSentence extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: isDark ? Colors.white.withValues(alpha: 0.04) : const Color(0xFFF9FAFB),
+        color: widget.isDark ? Colors.white.withValues(alpha: 0.04) : const Color(0xFFF9FAFB),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
           color: effectiveHighlightColor.withValues(alpha: 0.20),
@@ -983,70 +1023,121 @@ class _ExampleSentence extends StatelessWidget {
                   textDirection: TextDirection.ltr,
                   child: Text.rich(
                     TextSpan(
-                      children: _buildSpans(german, highlightWord, normalStyle, highlightStyle),
+                      children: _buildInteractiveSpans(
+                        widget.german,
+                        widget.highlightWord,
+                        normalStyle,
+                        highlightStyle,
+                      ),
                     ),
                   ),
                 ),
               ),
               _AudioIconButton(
-                text: german,
-                ref: ref,
+                text: widget.german,
+                ref: widget.ref,
                 color: effectiveHighlightColor,
               ),
             ],
           ),
-          if (translation != null && translation!.isNotEmpty) ...[
+          if (widget.translation != null && widget.translation!.isNotEmpty) ...[
             const SizedBox(height: 6),
             Text(
-              translation!,
+              widget.translation!,
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
-                color: isDark ? Colors.white70 : Colors.black54,
+                color: widget.isDark ? Colors.white70 : Colors.black54,
               ),
             ),
           ],
+          const SizedBox(height: 6),
+          Row(
+            children: [
+              Icon(
+                Icons.touch_app_rounded,
+                size: 13,
+                color: widget.isDark ? Colors.white38 : Colors.black38,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                _hintText(widget.languageCode),
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w500,
+                  color: widget.isDark ? Colors.white38 : Colors.black38,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
   }
 
-  static List<InlineSpan> _buildSpans(
+  List<InlineSpan> _buildInteractiveSpans(
     String text,
     String? target,
     TextStyle normalStyle,
     TextStyle highlightStyle,
   ) {
-    if (target == null || target.trim().isEmpty) {
-      return [TextSpan(text: text, style: normalStyle)];
-    }
-
-    final cleanTarget = target.trim();
-    final lowerText = text.toLowerCase();
-    final lowerTarget = cleanTarget.toLowerCase();
-
-    if (!lowerText.contains(lowerTarget)) {
-      return [TextSpan(text: text, style: normalStyle)];
-    }
-
     final spans = <InlineSpan>[];
-    int cursor = 0;
-    while (cursor < text.length) {
-      final idx = lowerText.indexOf(lowerTarget, cursor);
-      if (idx == -1) {
-        spans.add(TextSpan(text: text.substring(cursor), style: normalStyle));
-        break;
+    final cleanTarget = target?.trim().toLowerCase() ?? '';
+
+    // Match words (letters, digits, internal apostrophes/hyphens) vs separators
+    final tokenRegex = RegExp(r"([A-Za-zÄÖÜäöüß0-9'-]+)|([^A-Za-zÄÖÜäöüß0-9'-]+)");
+    final matches = tokenRegex.allMatches(text);
+
+    if (matches.isEmpty) {
+      return [TextSpan(text: text, style: normalStyle)];
+    }
+
+    for (final m in matches) {
+      final wordGroup = m.group(1);
+      final sepGroup = m.group(2);
+
+      if (sepGroup != null) {
+        spans.add(TextSpan(text: sepGroup, style: normalStyle));
+      } else if (wordGroup != null) {
+        final isHighlight = cleanTarget.isNotEmpty &&
+            (wordGroup.toLowerCase() == cleanTarget ||
+             wordGroup.toLowerCase().contains(cleanTarget) ||
+             cleanTarget.contains(wordGroup.toLowerCase()));
+
+        final recognizer = TapGestureRecognizer()
+          ..onTap = () {
+            showWordTranslationModal(
+              context,
+              rawToken: wordGroup,
+              ref: widget.ref,
+              languageCode: widget.languageCode,
+              isDark: widget.isDark,
+              card: widget.card,
+            );
+          };
+        _recognizers.add(recognizer);
+
+        spans.add(
+          TextSpan(
+            text: wordGroup,
+            style: isHighlight ? highlightStyle : normalStyle,
+            recognizer: recognizer,
+          ),
+        );
       }
-      if (idx > cursor) {
-        spans.add(TextSpan(text: text.substring(cursor, idx), style: normalStyle));
-      }
-      spans.add(TextSpan(
-        text: text.substring(idx, idx + lowerTarget.length),
-        style: highlightStyle,
-      ));
-      cursor = idx + lowerTarget.length;
     }
     return spans;
+  }
+
+  String _hintText(String lang) {
+    switch (lang.toLowerCase()) {
+      case 'ar':
+        return 'انقر على أي كلمة لعرض ترجمتها';
+      case 'es':
+        return 'Toca cualquier palabra para ver su traducción';
+      default:
+        return 'Tap any word for instant translation';
+    }
   }
 }
 

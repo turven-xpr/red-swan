@@ -22658,7 +22658,45 @@
         "example_sentence_es": "El hotel es moderno.",
         "sentence_en": "The hotel is modern.",
         "sentence_ar": "⁦الفندق حديث.⁩",
-        "sentence_es": "El hotel es moderno."
+        "sentence_es": "El hotel es moderno.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Hotel": {
+            "de": "Hotel",
+            "lemma": "das Hotel",
+            "gender": "das",
+            "pos": "noun",
+            "en": "hotel",
+            "ar": "⁦فندق⁩",
+            "es": "hotel"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "modern": {
+            "de": "modern",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "modern",
+            "ar": "⁦حديث / عصري⁩",
+            "es": "moderno"
+          }
+        }
       }
     },
     {
@@ -22678,7 +22716,45 @@
         "example_sentence_es": "El taxi viene pronto.",
         "sentence_en": "The taxi is coming soon.",
         "sentence_ar": "⁦سيارة الأجرة قادمة حالاً.⁩",
-        "sentence_es": "El taxi viene pronto."
+        "sentence_es": "El taxi viene pronto.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Taxi": {
+            "de": "Taxi",
+            "lemma": "das Taxi",
+            "gender": "das",
+            "pos": "noun",
+            "en": "taxi",
+            "ar": "⁦سيارة أجرة⁩",
+            "es": "taxi"
+          },
+          "kommt": {
+            "de": "kommt",
+            "lemma": "kommen",
+            "gender": "",
+            "pos": "verb",
+            "en": "comes / is arriving",
+            "ar": "⁦يأتي / قادم⁩",
+            "es": "viene / llega"
+          },
+          "gleich": {
+            "de": "gleich",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "soon / right away",
+            "ar": "⁦حالاً / بعد قليل⁩",
+            "es": "pronto / enseguida"
+          }
+        }
       }
     },
     {
@@ -22698,7 +22774,45 @@
         "example_sentence_es": "La radio reproduce música.",
         "sentence_en": "The radio is playing music.",
         "sentence_ar": "⁦المذياع يعزف الموسيقى.⁩",
-        "sentence_es": "La radio reproduce música."
+        "sentence_es": "La radio reproduce música.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Radio": {
+            "de": "Radio",
+            "lemma": "das Radio",
+            "gender": "das",
+            "pos": "noun",
+            "en": "radio",
+            "ar": "⁦مذياع⁩",
+            "es": "radio"
+          },
+          "spielt": {
+            "de": "spielt",
+            "lemma": "spielen",
+            "gender": "",
+            "pos": "verb",
+            "en": "plays",
+            "ar": "⁦يلعب / يعزف⁩",
+            "es": "juega / toca"
+          },
+          "Musik": {
+            "de": "Musik",
+            "lemma": "die Musik",
+            "gender": "die",
+            "pos": "noun",
+            "en": "music",
+            "ar": "⁦موسيقى⁩",
+            "es": "música"
+          }
+        }
       }
     },
     {
@@ -22718,7 +22832,54 @@
         "example_sentence_es": "El autobús va a Berlín.",
         "sentence_en": "The bus goes to Berlin.",
         "sentence_ar": "⁦الحافلة تتجه إلى برلين.⁩",
-        "sentence_es": "El autobús va a Berlín."
+        "sentence_es": "El autobús va a Berlín.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Bus": {
+            "de": "Bus",
+            "lemma": "der Bus",
+            "gender": "der",
+            "pos": "noun",
+            "en": "bus",
+            "ar": "⁦حافلة⁩",
+            "es": "autobús"
+          },
+          "fährt": {
+            "de": "fährt",
+            "lemma": "fahren",
+            "gender": "",
+            "pos": "verb",
+            "en": "drives / travels",
+            "ar": "⁦يسير / يقود / يسافر⁩",
+            "es": "conduce / viaja"
+          },
+          "nach": {
+            "de": "nach",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "to / towards",
+            "ar": "⁦إلى⁩",
+            "es": "hacia / a"
+          },
+          "Berlin": {
+            "de": "Berlin",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Berlin (capital of Germany)",
+            "ar": "⁦برلين (عاصمة ألمانيا)⁩",
+            "es": "Berlín"
+          }
+        }
       }
     },
     {
@@ -22738,7 +22899,45 @@
         "example_sentence_es": "Nos gusta escuchar música.",
         "sentence_en": "We like listening to music.",
         "sentence_ar": "⁦نحن نحب الاستماع إلى الموسيقى.⁩",
-        "sentence_es": "Nos gusta escuchar música."
+        "sentence_es": "Nos gusta escuchar música.",
+        "word_translations": {
+          "Wir": {
+            "de": "wir",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "we",
+            "ar": "⁦نحن⁩",
+            "es": "nosotros"
+          },
+          "hören": {
+            "de": "hören",
+            "lemma": "",
+            "gender": "",
+            "pos": "verb",
+            "en": "hear / listen",
+            "ar": "⁦نستمع / نسمع⁩",
+            "es": "escuchamos"
+          },
+          "gerne": {
+            "de": "gerne",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "gladly",
+            "ar": "⁦بسرور / بكل سرور⁩",
+            "es": "con gusto"
+          },
+          "Musik": {
+            "de": "Musik",
+            "lemma": "die Musik",
+            "gender": "die",
+            "pos": "noun",
+            "en": "music",
+            "ar": "⁦موسيقى⁩",
+            "es": "música"
+          }
+        }
       }
     },
     {
@@ -22758,7 +22957,45 @@
         "example_sentence_es": "La cafetería está abierta.",
         "sentence_en": "The café is open.",
         "sentence_ar": "⁦المقهى مفتوح.⁩",
-        "sentence_es": "La cafetería está abierta."
+        "sentence_es": "La cafetería está abierta.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Café": {
+            "de": "Café",
+            "lemma": "das Café",
+            "gender": "das",
+            "pos": "noun",
+            "en": "café",
+            "ar": "⁦مقهى⁩",
+            "es": "cafetería"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "geöffnet": {
+            "de": "geöffnet",
+            "lemma": "öffnen",
+            "gender": "",
+            "pos": "adj",
+            "en": "open",
+            "ar": "⁦مفتوح⁩",
+            "es": "abierto"
+          }
+        }
       }
     },
     {
@@ -22779,7 +23016,45 @@
         "example_sentence_es": "La manzana es roja.",
         "sentence_en": "The apple is red.",
         "sentence_ar": "⁦التفاحة حمراء.⁩",
-        "sentence_es": "La manzana es roja."
+        "sentence_es": "La manzana es roja.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Apfel": {
+            "de": "Apfel",
+            "lemma": "der Apfel",
+            "gender": "der",
+            "pos": "noun",
+            "en": "apple",
+            "ar": "⁦تفاحة⁩",
+            "es": "manzana"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "rot": {
+            "de": "rot",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "red",
+            "ar": "⁦أحمر⁩",
+            "es": "rojo"
+          }
+        }
       }
     },
     {
@@ -22800,7 +23075,45 @@
         "example_sentence_es": "La pelota es redonda.",
         "sentence_en": "The ball is round.",
         "sentence_ar": "⁦الكرة مستديرة.⁩",
-        "sentence_es": "La pelota es redonda."
+        "sentence_es": "La pelota es redonda.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Ball": {
+            "de": "Ball",
+            "lemma": "der Ball",
+            "gender": "der",
+            "pos": "noun",
+            "en": "ball",
+            "ar": "⁦كرة⁩",
+            "es": "pelota"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "rund": {
+            "de": "rund",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "round",
+            "ar": "⁦مستدير⁩",
+            "es": "redondo"
+          }
+        }
       }
     },
     {
@@ -22821,7 +23134,45 @@
         "example_sentence_es": "El ordenador es nuevo.",
         "sentence_en": "The computer is new.",
         "sentence_ar": "⁦الحاسوب جديد.⁩",
-        "sentence_es": "El ordenador es nuevo."
+        "sentence_es": "El ordenador es nuevo.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Computer": {
+            "de": "Computer",
+            "lemma": "der Computer",
+            "gender": "der",
+            "pos": "noun",
+            "en": "computer",
+            "ar": "⁦حاسوب⁩",
+            "es": "ordenador"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "neu": {
+            "de": "neu",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "new",
+            "ar": "⁦جديد⁩",
+            "es": "nuevo"
+          }
+        }
       }
     },
     {
@@ -22842,7 +23193,27 @@
         "example_sentence_es": "¡Muchas gracias!",
         "sentence_en": "Thank you very much!",
         "sentence_ar": "⁦شكراً جزيلاً!⁩",
-        "sentence_es": "¡Muchas gracias!"
+        "sentence_es": "¡Muchas gracias!",
+        "word_translations": {
+          "Vielen": {
+            "de": "vielen",
+            "lemma": "viel",
+            "gender": "",
+            "pos": "adj",
+            "en": "many (vielen Dank = thank you very much)",
+            "ar": "⁦جزيل / كثير⁩",
+            "es": "muchas"
+          },
+          "Dank": {
+            "de": "Dank",
+            "lemma": "",
+            "gender": "der",
+            "pos": "noun",
+            "en": "thanks",
+            "ar": "⁦شكر⁩",
+            "es": "agradecimiento"
+          }
+        }
       }
     },
     {
@@ -22863,7 +23234,45 @@
         "example_sentence_es": "El elefante es grande.",
         "sentence_en": "The elephant is big.",
         "sentence_ar": "⁦الفيل ضخم.⁩",
-        "sentence_es": "El elefante es grande."
+        "sentence_es": "El elefante es grande.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Elefant": {
+            "de": "Elefant",
+            "lemma": "der Elefant",
+            "gender": "der",
+            "pos": "noun",
+            "en": "elephant",
+            "ar": "⁦فيل⁩",
+            "es": "elefante"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "groß": {
+            "de": "groß",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "big / large",
+            "ar": "⁦كبير / ضخم⁩",
+            "es": "grande"
+          }
+        }
       }
     },
     {
@@ -22884,7 +23293,45 @@
         "example_sentence_es": "La bicicleta va rápido.",
         "sentence_en": "The bicycle goes fast.",
         "sentence_ar": "⁦الدراجة تسير بسرعة.⁩",
-        "sentence_es": "La bicicleta va rápido."
+        "sentence_es": "La bicicleta va rápido.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Fahrrad": {
+            "de": "Fahrrad",
+            "lemma": "das Fahrrad",
+            "gender": "das",
+            "pos": "noun",
+            "en": "bicycle",
+            "ar": "⁦دراجة هوائية⁩",
+            "es": "bicicleta"
+          },
+          "fährt": {
+            "de": "fährt",
+            "lemma": "fahren",
+            "gender": "",
+            "pos": "verb",
+            "en": "drives / travels",
+            "ar": "⁦يسير / يقود / يسافر⁩",
+            "es": "conduce / viaja"
+          },
+          "schnell": {
+            "de": "schnell",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "fast / quickly",
+            "ar": "⁦سريع / بسرعة⁩",
+            "es": "rápido"
+          }
+        }
       }
     },
     {
@@ -22905,7 +23352,45 @@
         "example_sentence_es": "El jardín es hermoso.",
         "sentence_en": "The garden is beautiful.",
         "sentence_ar": "⁦الحديقة جميلة.⁩",
-        "sentence_es": "El jardín es hermoso."
+        "sentence_es": "El jardín es hermoso.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Garten": {
+            "de": "Garten",
+            "lemma": "der Garten",
+            "gender": "der",
+            "pos": "noun",
+            "en": "garden",
+            "ar": "⁦حديقة⁩",
+            "es": "jardín"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "schön": {
+            "de": "schön",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "beautiful / nice",
+            "ar": "⁦جميل⁩",
+            "es": "hermoso / bonito"
+          }
+        }
       }
     },
     {
@@ -22926,7 +23411,36 @@
         "example_sentence_es": "¡Hola! ¿Cómo estás?",
         "sentence_en": "Hello! How are you?",
         "sentence_ar": "⁦مرحباً! كيف حالك؟⁩",
-        "sentence_es": "¡Hola! ¿Cómo estás?"
+        "sentence_es": "¡Hola! ¿Cómo estás?",
+        "word_translations": {
+          "Hallo": {
+            "de": "Hallo",
+            "lemma": "hallo",
+            "gender": "",
+            "pos": "part",
+            "en": "hello",
+            "ar": "⁦مرحباً⁩",
+            "es": "hola"
+          },
+          "Wie": {
+            "de": "wie",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "how / what",
+            "ar": "⁦كيف / ما⁩",
+            "es": "cómo"
+          },
+          "geht's": {
+            "de": "geht's",
+            "lemma": "gehen",
+            "gender": "",
+            "pos": "phrase",
+            "en": "how is it going",
+            "ar": "⁦كيف الحال⁩",
+            "es": "¿cómo va?"
+          }
+        }
       }
     },
     {
@@ -22947,7 +23461,45 @@
         "example_sentence_es": "La isla es tranquila.",
         "sentence_en": "The island is peaceful.",
         "sentence_ar": "⁦الجزيرة هادئة.⁩",
-        "sentence_es": "La isla es tranquila."
+        "sentence_es": "La isla es tranquila.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Insel": {
+            "de": "Insel",
+            "lemma": "die Insel",
+            "gender": "die",
+            "pos": "noun",
+            "en": "island",
+            "ar": "⁦جزيرة⁩",
+            "es": "isla"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "ruhig": {
+            "de": "ruhig",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "quiet / peaceful",
+            "ar": "⁦هادئ⁩",
+            "es": "tranquilo"
+          }
+        }
       }
     },
     {
@@ -22968,7 +23520,27 @@
         "example_sentence_es": "Sí, por favor.",
         "sentence_en": "Yes, please.",
         "sentence_ar": "⁦نعم، من فضلك.⁩",
-        "sentence_es": "Sí, por favor."
+        "sentence_es": "Sí, por favor.",
+        "word_translations": {
+          "Ja": {
+            "de": "Ja",
+            "lemma": "ja",
+            "gender": "",
+            "pos": "part",
+            "en": "yes",
+            "ar": "⁦نعم⁩",
+            "es": "sí"
+          },
+          "bitte": {
+            "de": "bitte",
+            "lemma": "",
+            "gender": "",
+            "pos": "part",
+            "en": "please / you are welcome",
+            "ar": "⁦من فضلك / تفضل⁩",
+            "es": "por favor / de nada"
+          }
+        }
       }
     },
     {
@@ -22989,7 +23561,45 @@
         "example_sentence_es": "El café está caliente.",
         "sentence_en": "The coffee is hot.",
         "sentence_ar": "⁦القهوة ساخنة.⁩",
-        "sentence_es": "El café está caliente."
+        "sentence_es": "El café está caliente.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Kaffee": {
+            "de": "Kaffee",
+            "lemma": "der Kaffee",
+            "gender": "der",
+            "pos": "noun",
+            "en": "coffee",
+            "ar": "⁦قهوة⁩",
+            "es": "café"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "heiß": {
+            "de": "heiß",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "hot",
+            "ar": "⁦ساخن⁩",
+            "es": "caliente"
+          }
+        }
       }
     },
     {
@@ -23010,7 +23620,45 @@
         "example_sentence_es": "La lámpara es brillante.",
         "sentence_en": "The lamp is bright.",
         "sentence_ar": "⁦المصباح ساطع.⁩",
-        "sentence_es": "La lámpara es brillante."
+        "sentence_es": "La lámpara es brillante.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Lampe": {
+            "de": "Lampe",
+            "lemma": "die Lampe",
+            "gender": "die",
+            "pos": "noun",
+            "en": "lamp",
+            "ar": "⁦مصباح⁩",
+            "es": "lámpara"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "hell": {
+            "de": "hell",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "bright",
+            "ar": "⁦ساطع / مضيء⁩",
+            "es": "brillante"
+          }
+        }
       }
     },
     {
@@ -23031,7 +23679,36 @@
         "example_sentence_es": "Bebo leche.",
         "sentence_en": "I drink milk.",
         "sentence_ar": "⁦أنا أشرب الحليب.⁩",
-        "sentence_es": "Bebo leche."
+        "sentence_es": "Bebo leche.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "trinke": {
+            "de": "trinke",
+            "lemma": "trinken",
+            "gender": "",
+            "pos": "verb",
+            "en": "drink",
+            "ar": "⁦أشرب⁩",
+            "es": "bebo"
+          },
+          "Milch": {
+            "de": "Milch",
+            "lemma": "die Milch",
+            "gender": "die",
+            "pos": "noun",
+            "en": "milk",
+            "ar": "⁦حليب⁩",
+            "es": "leche"
+          }
+        }
       }
     },
     {
@@ -23052,7 +23729,27 @@
         "example_sentence_es": "No, gracias.",
         "sentence_en": "No, thank you.",
         "sentence_ar": "⁦لا، شكراً.⁩",
-        "sentence_es": "No, gracias."
+        "sentence_es": "No, gracias.",
+        "word_translations": {
+          "Nein": {
+            "de": "Nein",
+            "lemma": "nein",
+            "gender": "",
+            "pos": "part",
+            "en": "no",
+            "ar": "⁦لا⁩",
+            "es": "no"
+          },
+          "danke": {
+            "de": "danke",
+            "lemma": "danken",
+            "gender": "",
+            "pos": "part",
+            "en": "thank you",
+            "ar": "⁦شكراً⁩",
+            "es": "gracias"
+          }
+        }
       }
     },
     {
@@ -23073,7 +23770,45 @@
         "example_sentence_es": "La naranja sabe bien.",
         "sentence_en": "The orange tastes good.",
         "sentence_ar": "⁦البرتقالة طعمها لذيذ.⁩",
-        "sentence_es": "La naranja sabe bien."
+        "sentence_es": "La naranja sabe bien.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Orange": {
+            "de": "Orange",
+            "lemma": "die Orange",
+            "gender": "die",
+            "pos": "noun",
+            "en": "orange",
+            "ar": "⁦برتقالة⁩",
+            "es": "naranja"
+          },
+          "schmeckt": {
+            "de": "schmeckt",
+            "lemma": "schmecken",
+            "gender": "",
+            "pos": "verb",
+            "en": "tastes (good)",
+            "ar": "⁦طعمه / مذاقه⁩",
+            "es": "sabe bien"
+          },
+          "gut": {
+            "de": "gut",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "good / well",
+            "ar": "⁦جيد / لذيذ / بخير⁩",
+            "es": "bueno / bien"
+          }
+        }
       }
     },
     {
@@ -23094,7 +23829,45 @@
         "example_sentence_es": "El correo está aquí.",
         "sentence_en": "The mail is here.",
         "sentence_ar": "⁦وصل البريد.⁩",
-        "sentence_es": "El correo está aquí."
+        "sentence_es": "El correo está aquí.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Post": {
+            "de": "Post",
+            "lemma": "die Post",
+            "gender": "die",
+            "pos": "noun",
+            "en": "post office / mail",
+            "ar": "⁦بريد⁩",
+            "es": "correo"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "da": {
+            "de": "da",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "there / here",
+            "ar": "⁦هنا / هناك⁩",
+            "es": "ahí / aquí"
+          }
+        }
       }
     },
     {
@@ -23115,7 +23888,45 @@
         "example_sentence_es": "La fuente es fresca.",
         "sentence_en": "The spring is fresh.",
         "sentence_ar": "⁦ينبوع الماء عذب.⁩",
-        "sentence_es": "La fuente es fresca."
+        "sentence_es": "La fuente es fresca.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Quelle": {
+            "de": "Quelle",
+            "lemma": "die Quelle",
+            "gender": "die",
+            "pos": "noun",
+            "en": "spring / source",
+            "ar": "⁦ينبوع⁩",
+            "es": "fuente"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "frisch": {
+            "de": "frisch",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "fresh",
+            "ar": "⁦عذب / طازج⁩",
+            "es": "fresco"
+          }
+        }
       }
     },
     {
@@ -23136,7 +23947,45 @@
         "example_sentence_es": "La manzana es roja.",
         "sentence_en": "The apple is red.",
         "sentence_ar": "⁦التفاحة حمراء.⁩",
-        "sentence_es": "La manzana es roja."
+        "sentence_es": "La manzana es roja.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Apfel": {
+            "de": "Apfel",
+            "lemma": "der Apfel",
+            "gender": "der",
+            "pos": "noun",
+            "en": "apple",
+            "ar": "⁦تفاحة⁩",
+            "es": "manzana"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "rot": {
+            "de": "rot",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "red",
+            "ar": "⁦أحمر⁩",
+            "es": "rojo"
+          }
+        }
       }
     },
     {
@@ -23157,7 +24006,36 @@
         "example_sentence_es": "El sol brilla.",
         "sentence_en": "The sun is shining.",
         "sentence_ar": "⁦الشمس مشرقة.⁩",
-        "sentence_es": "El sol brilla."
+        "sentence_es": "El sol brilla.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Sonne": {
+            "de": "Sonne",
+            "lemma": "die Sonne",
+            "gender": "die",
+            "pos": "noun",
+            "en": "sun",
+            "ar": "⁦شمس⁩",
+            "es": "sol"
+          },
+          "scheint": {
+            "de": "scheint",
+            "lemma": "scheinen",
+            "gender": "",
+            "pos": "verb",
+            "en": "shines",
+            "ar": "⁦تشرق / يسطع⁩",
+            "es": "brilla"
+          }
+        }
       }
     },
     {
@@ -23178,7 +24056,45 @@
         "example_sentence_es": "El té está caliente.",
         "sentence_en": "The tea is warm.",
         "sentence_ar": "⁦الشاي دافئ.⁩",
-        "sentence_es": "El té está caliente."
+        "sentence_es": "El té está caliente.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Tee": {
+            "de": "Tee",
+            "lemma": "der Tee",
+            "gender": "der",
+            "pos": "noun",
+            "en": "tea",
+            "ar": "⁦شاي⁩",
+            "es": "té"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "warm": {
+            "de": "warm",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "warm",
+            "ar": "⁦دافئ⁩",
+            "es": "cálido / tibio"
+          }
+        }
       }
     },
     {
@@ -23199,7 +24115,54 @@
         "example_sentence_es": "¿Qué hora es?",
         "sentence_en": "What time is it?",
         "sentence_ar": "⁦كم الساعة؟⁩",
-        "sentence_es": "¿Qué hora es?"
+        "sentence_es": "¿Qué hora es?",
+        "word_translations": {
+          "Wie": {
+            "de": "wie",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "how / what",
+            "ar": "⁦كيف / ما⁩",
+            "es": "cómo"
+          },
+          "viel": {
+            "de": "viel",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "much / how much",
+            "ar": "⁦كم / كثير⁩",
+            "es": "mucho"
+          },
+          "Uhr": {
+            "de": "Uhr",
+            "lemma": "die Uhr",
+            "gender": "die",
+            "pos": "noun",
+            "en": "clock / o’clock",
+            "ar": "⁦ساعة⁩",
+            "es": "reloj / hora"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "es": {
+            "de": "es",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "it",
+            "ar": "⁦هو / هي (للمحايد)⁩",
+            "es": "ello / él / ella"
+          }
+        }
       }
     },
     {
@@ -23220,7 +24183,45 @@
         "example_sentence_es": "Tengo siete libros.",
         "sentence_en": "I have seven books.",
         "sentence_ar": "⁦لدي سبعة كتب.⁩",
-        "sentence_es": "Tengo siete libros."
+        "sentence_es": "Tengo siete libros.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "habe": {
+            "de": "habe",
+            "lemma": "haben",
+            "gender": "",
+            "pos": "verb",
+            "en": "have (1st person)",
+            "ar": "⁦عندي / لدي⁩",
+            "es": "tengo"
+          },
+          "sieben": {
+            "de": "sieben",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "seven (7)",
+            "ar": "⁦سبعة (7)⁩",
+            "es": "siete"
+          },
+          "Bücher": {
+            "de": "Bücher",
+            "lemma": "das Buch",
+            "gender": "die",
+            "pos": "noun",
+            "en": "books",
+            "ar": "⁦كتب⁩",
+            "es": "libros"
+          }
+        }
       }
     },
     {
@@ -23241,7 +24242,45 @@
         "example_sentence_es": "¡Buenos días, señor Müller!",
         "sentence_en": "Good day, Mr. Müller!",
         "sentence_ar": "⁦يوم سعيد، سيد مولر!⁩",
-        "sentence_es": "¡Buenos días, señor Müller!"
+        "sentence_es": "¡Buenos días, señor Müller!",
+        "word_translations": {
+          "Guten": {
+            "de": "Guten",
+            "lemma": "gut",
+            "gender": "",
+            "pos": "adj",
+            "en": "good (accusative)",
+            "ar": "⁦سعيد / طيب⁩",
+            "es": "buenos / buen"
+          },
+          "Tag": {
+            "de": "Tag",
+            "lemma": "der Tag",
+            "gender": "der",
+            "pos": "noun",
+            "en": "day",
+            "ar": "⁦يوم⁩",
+            "es": "día"
+          },
+          "Herr": {
+            "de": "Herr",
+            "lemma": "der Herr",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Mr. / gentleman",
+            "ar": "⁦سيد⁩",
+            "es": "señor"
+          },
+          "Müller": {
+            "de": "Müller",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Müller (German surname)",
+            "ar": "⁦مولر (لقب ألماني)⁩",
+            "es": "Müller"
+          }
+        }
       }
     },
     {
@@ -23262,7 +24301,36 @@
         "example_sentence_es": "Cuatro tazas de café.",
         "sentence_en": "Four cups of coffee.",
         "sentence_ar": "⁦أربعة فناجين قهوة.⁩",
-        "sentence_es": "Cuatro tazas de café."
+        "sentence_es": "Cuatro tazas de café.",
+        "word_translations": {
+          "Vier": {
+            "de": "vier",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "four (4)",
+            "ar": "⁦أربعة (4)⁩",
+            "es": "cuatro"
+          },
+          "Tassen": {
+            "de": "Tassen",
+            "lemma": "die Tasse",
+            "gender": "die",
+            "pos": "noun",
+            "en": "cups",
+            "ar": "⁦فناجين⁩",
+            "es": "tazas"
+          },
+          "Kaffee": {
+            "de": "Kaffee",
+            "lemma": "der Kaffee",
+            "gender": "der",
+            "pos": "noun",
+            "en": "coffee",
+            "ar": "⁦قهوة⁩",
+            "es": "café"
+          }
+        }
       }
     },
     {
@@ -23283,7 +24351,45 @@
         "example_sentence_es": "El agua está fría.",
         "sentence_en": "The water is cold.",
         "sentence_ar": "⁦الماء بارد.⁩",
-        "sentence_es": "El agua está fría."
+        "sentence_es": "El agua está fría.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Wasser": {
+            "de": "Wasser",
+            "lemma": "das Wasser",
+            "gender": "das",
+            "pos": "noun",
+            "en": "water",
+            "ar": "⁦ماء⁩",
+            "es": "agua"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "kalt": {
+            "de": "kalt",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "cold",
+            "ar": "⁦بارد⁩",
+            "es": "frío"
+          }
+        }
       }
     },
     {
@@ -23304,7 +24410,45 @@
         "example_sentence_es": "Tomo un taxi.",
         "sentence_en": "I'll take a taxi.",
         "sentence_ar": "⁦سآخذ سيارة أجرة.⁩",
-        "sentence_es": "Tomo un taxi."
+        "sentence_es": "Tomo un taxi.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "nehme": {
+            "de": "nehme",
+            "lemma": "nehmen",
+            "gender": "",
+            "pos": "verb",
+            "en": "take",
+            "ar": "⁦آخذ⁩",
+            "es": "tomo"
+          },
+          "ein": {
+            "de": "ein",
+            "lemma": "",
+            "gender": "",
+            "pos": "art",
+            "en": "a / an (masculine / neuter)",
+            "ar": "⁦أداة تنكير (مذكر / محايد)⁩",
+            "es": "un"
+          },
+          "Taxi": {
+            "de": "Taxi",
+            "lemma": "das Taxi",
+            "gender": "das",
+            "pos": "noun",
+            "en": "taxi",
+            "ar": "⁦سيارة أجرة⁩",
+            "es": "taxi"
+          }
+        }
       }
     },
     {
@@ -23325,7 +24469,36 @@
         "example_sentence_es": "El yoga te pone en forma.",
         "sentence_en": "Yoga keeps you fit.",
         "sentence_ar": "⁦اليوغا تبقيك رشيقاً.⁩",
-        "sentence_es": "El yoga te pone en forma."
+        "sentence_es": "El yoga te pone en forma.",
+        "word_translations": {
+          "Yoga": {
+            "de": "Yoga",
+            "lemma": "das Yoga",
+            "gender": "das",
+            "pos": "noun",
+            "en": "yoga",
+            "ar": "⁦يوغا⁩",
+            "es": "yoga"
+          },
+          "macht": {
+            "de": "macht",
+            "lemma": "machen",
+            "gender": "",
+            "pos": "verb",
+            "en": "makes",
+            "ar": "⁦يجعل / يفعل⁩",
+            "es": "hace"
+          },
+          "fit": {
+            "de": "fit",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "fit",
+            "ar": "⁦رشيق⁩",
+            "es": "en forma"
+          }
+        }
       }
     },
     {
@@ -23346,7 +24519,45 @@
         "example_sentence_es": "El tren llega ahora.",
         "sentence_en": "The train is coming now.",
         "sentence_ar": "⁦القطار قادم الآن.⁩",
-        "sentence_es": "El tren llega ahora."
+        "sentence_es": "El tren llega ahora.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Zug": {
+            "de": "Zug",
+            "lemma": "der Zug",
+            "gender": "der",
+            "pos": "noun",
+            "en": "train",
+            "ar": "⁦قطار⁩",
+            "es": "tren"
+          },
+          "kommt": {
+            "de": "kommt",
+            "lemma": "kommen",
+            "gender": "",
+            "pos": "verb",
+            "en": "comes / is arriving",
+            "ar": "⁦يأتي / قادم⁩",
+            "es": "viene / llega"
+          },
+          "jetzt": {
+            "de": "jetzt",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "now",
+            "ar": "⁦الآن⁩",
+            "es": "ahora"
+          }
+        }
       }
     },
     {
@@ -23369,7 +24580,45 @@
         "sentence_ar": "⁦الجبن طعمه لذيذ.⁩",
         "sentence_es": "El queso sabe bien.",
         "mouth_tip_en": "Mund leicht geöffnet wie beim 'e'",
-        "mouth_tip_ar": "⁦نصيحة النطق: Mund leicht geöffnet wie beim 'e'⁩"
+        "mouth_tip_ar": "⁦نصيحة النطق: Mund leicht geöffnet wie beim 'e'⁩",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Käse": {
+            "de": "Käse",
+            "lemma": "der Käse",
+            "gender": "der",
+            "pos": "noun",
+            "en": "cheese",
+            "ar": "⁦جبن⁩",
+            "es": "queso"
+          },
+          "schmeckt": {
+            "de": "schmeckt",
+            "lemma": "schmecken",
+            "gender": "",
+            "pos": "verb",
+            "en": "tastes (good)",
+            "ar": "⁦طعمه / مذاقه⁩",
+            "es": "sabe bien"
+          },
+          "gut": {
+            "de": "gut",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "good / well",
+            "ar": "⁦جيد / لذيذ / بخير⁩",
+            "es": "bueno / bien"
+          }
+        }
       }
     },
     {
@@ -23392,7 +24641,45 @@
         "sentence_ar": "⁦الصورة جميلة.⁩",
         "sentence_es": "El cuadro es hermoso.",
         "mouth_tip_en": "Lippen runden wie für 'o', aber 'e' sprechen",
-        "mouth_tip_ar": "⁦نصيحة النطق: Lippen runden wie für 'o', aber 'e' sprechen⁩"
+        "mouth_tip_ar": "⁦نصيحة النطق: Lippen runden wie für 'o', aber 'e' sprechen⁩",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Bild": {
+            "de": "Bild",
+            "lemma": "das Bild",
+            "gender": "das",
+            "pos": "noun",
+            "en": "picture / painting",
+            "ar": "⁦صورة / لوحة⁩",
+            "es": "imagen / cuadro"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "schön": {
+            "de": "schön",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "beautiful / nice",
+            "ar": "⁦جميل⁩",
+            "es": "hermoso / bonito"
+          }
+        }
       }
     },
     {
@@ -23415,7 +24702,45 @@
         "sentence_ar": "⁦إنها الساعة الخامسة.⁩",
         "sentence_es": "Son las cinco.",
         "mouth_tip_en": "Lippen spitzen wie für 'u', aber 'i' sprechen",
-        "mouth_tip_ar": "⁦نصيحة النطق: Lippen spitzen wie für 'u', aber 'i' sprechen⁩"
+        "mouth_tip_ar": "⁦نصيحة النطق: Lippen spitzen wie für 'u', aber 'i' sprechen⁩",
+        "word_translations": {
+          "Es": {
+            "de": "es",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "it",
+            "ar": "⁦هو / هي (للمحايد)⁩",
+            "es": "ello / él / ella"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "fünf": {
+            "de": "fünf",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "five (5)",
+            "ar": "⁦خمسة (5)⁩",
+            "es": "cinco"
+          },
+          "Uhr": {
+            "de": "Uhr",
+            "lemma": "die Uhr",
+            "gender": "die",
+            "pos": "noun",
+            "en": "clock / o’clock",
+            "ar": "⁦ساعة⁩",
+            "es": "reloj / hora"
+          }
+        }
       }
     },
     {
@@ -23438,7 +24763,45 @@
         "sentence_ar": "⁦القميص أبيض.⁩",
         "sentence_es": "La camisa es blanca.",
         "mouth_tip_en": "Wird wie ein scharfes 'ss' gesprochen",
-        "mouth_tip_ar": "⁦نصيحة النطق: Wird wie ein scharfes 'ss' gesprochen⁩"
+        "mouth_tip_ar": "⁦نصيحة النطق: Wird wie ein scharfes 'ss' gesprochen⁩",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Hemd": {
+            "de": "Hemd",
+            "lemma": "das Hemd",
+            "gender": "das",
+            "pos": "noun",
+            "en": "shirt",
+            "ar": "⁦قميص⁩",
+            "es": "camisa"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "weiß": {
+            "de": "weiß",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "white",
+            "ar": "⁦أبيض⁩",
+            "es": "blanco"
+          }
+        }
       }
     },
     {
@@ -23459,7 +24822,36 @@
         "example_sentence_es": "Uno, dos, tres.",
         "sentence_en": "One, two, three.",
         "sentence_ar": "⁦واحد، اثنان، ثلاثة.⁩",
-        "sentence_es": "Uno, dos, tres."
+        "sentence_es": "Uno, dos, tres.",
+        "word_translations": {
+          "Eins": {
+            "de": "eins",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "one (1)",
+            "ar": "⁦واحد (1)⁩",
+            "es": "uno"
+          },
+          "zwei": {
+            "de": "zwei",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "two (2)",
+            "ar": "⁦اثنان (2)⁩",
+            "es": "dos"
+          },
+          "drei": {
+            "de": "drei",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "three (3)",
+            "ar": "⁦ثلاثة (3)⁩",
+            "es": "tres"
+          }
+        }
       }
     },
     {
@@ -23480,7 +24872,27 @@
         "example_sentence_es": "Siete días.",
         "sentence_en": "Seven days.",
         "sentence_ar": "⁦سبعة أيام.⁩",
-        "sentence_es": "Siete días."
+        "sentence_es": "Siete días.",
+        "word_translations": {
+          "Sieben": {
+            "de": "sieben",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "seven (7)",
+            "ar": "⁦سبعة (7)⁩",
+            "es": "siete"
+          },
+          "Tage": {
+            "de": "Tage",
+            "lemma": "der Tag",
+            "gender": "die",
+            "pos": "noun",
+            "en": "days",
+            "ar": "⁦أيام⁩",
+            "es": "días"
+          }
+        }
       }
     },
     {
@@ -23501,7 +24913,27 @@
         "example_sentence_es": "Tres euros.",
         "sentence_en": "Three euros.",
         "sentence_ar": "⁦ثلاثة يورو.⁩",
-        "sentence_es": "Tres euros."
+        "sentence_es": "Tres euros.",
+        "word_translations": {
+          "Drei": {
+            "de": "drei",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "three (3)",
+            "ar": "⁦ثلاثة (3)⁩",
+            "es": "tres"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -23522,7 +24954,45 @@
         "example_sentence_es": "El coche va rápido.",
         "sentence_en": "The car drives fast.",
         "sentence_ar": "⁦السيارة تسير بسرعة.⁩",
-        "sentence_es": "El coche va rápido."
+        "sentence_es": "El coche va rápido.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Auto": {
+            "de": "Auto",
+            "lemma": "das Auto",
+            "gender": "das",
+            "pos": "noun",
+            "en": "car",
+            "ar": "⁦سيارة⁩",
+            "es": "coche / auto"
+          },
+          "fährt": {
+            "de": "fährt",
+            "lemma": "fahren",
+            "gender": "",
+            "pos": "verb",
+            "en": "drives / travels",
+            "ar": "⁦يسير / يقود / يسافر⁩",
+            "es": "conduce / viaja"
+          },
+          "schnell": {
+            "de": "schnell",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "fast / quickly",
+            "ar": "⁦سريع / بسرعة⁩",
+            "es": "rápido"
+          }
+        }
       }
     },
     {
@@ -23543,7 +25013,45 @@
         "example_sentence_es": "La escuela es grande.",
         "sentence_en": "The school is big.",
         "sentence_ar": "⁦المدرسة كبيرة.⁩",
-        "sentence_es": "La escuela es grande."
+        "sentence_es": "La escuela es grande.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Schule": {
+            "de": "Schule",
+            "lemma": "die Schule",
+            "gender": "die",
+            "pos": "noun",
+            "en": "school",
+            "ar": "⁦مدرسة⁩",
+            "es": "escuela"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "groß": {
+            "de": "groß",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "big / large",
+            "ar": "⁦كبير / ضخم⁩",
+            "es": "grande"
+          }
+        }
       }
     },
     {
@@ -23564,7 +25072,36 @@
         "example_sentence_es": "Estoy aquí.",
         "sentence_en": "I am here.",
         "sentence_ar": "⁦أنا هنا.⁩",
-        "sentence_es": "Estoy aquí."
+        "sentence_es": "Estoy aquí.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "bin": {
+            "de": "bin",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "am",
+            "ar": "⁦أكون / أنا⁩",
+            "es": "soy / estoy"
+          },
+          "hier": {
+            "de": "hier",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "here",
+            "ar": "⁦هنا⁩",
+            "es": "aquí"
+          }
+        }
       }
     },
     {
@@ -23584,7 +25121,27 @@
         "example_sentence_es": "H-O-T-E-L: Hotel.",
         "sentence_en": "H-O-T-E-L: Hotel.",
         "sentence_ar": "⁦H-O-T-E-L: فندق.⁩",
-        "sentence_es": "H-O-T-E-L: Hotel."
+        "sentence_es": "H-O-T-E-L: Hotel.",
+        "word_translations": {
+          "H-O-T-E-L": {
+            "de": "H-O-T-E-L",
+            "lemma": "Hotel",
+            "gender": "",
+            "pos": "noun",
+            "en": "spelling of Hotel",
+            "ar": "⁦تهجئة كلمة فندق⁩",
+            "es": "deletreo de Hotel"
+          },
+          "Hotel": {
+            "de": "Hotel",
+            "lemma": "das Hotel",
+            "gender": "das",
+            "pos": "noun",
+            "en": "hotel",
+            "ar": "⁦فندق⁩",
+            "es": "hotel"
+          }
+        }
       }
     },
     {
@@ -23604,7 +25161,27 @@
         "example_sentence_es": "¡Muchas gracias!",
         "sentence_en": "Thank you very much!",
         "sentence_ar": "⁦شكراً جزيلاً!⁩",
-        "sentence_es": "¡Muchas gracias!"
+        "sentence_es": "¡Muchas gracias!",
+        "word_translations": {
+          "Danke": {
+            "de": "danke",
+            "lemma": "danken",
+            "gender": "",
+            "pos": "part",
+            "en": "thank you",
+            "ar": "⁦شكراً⁩",
+            "es": "gracias"
+          },
+          "schön": {
+            "de": "schön",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "beautiful / nice",
+            "ar": "⁦جميل⁩",
+            "es": "hermoso / bonito"
+          }
+        }
       }
     },
     {
@@ -23624,7 +25201,27 @@
         "example_sentence_es": "¡De nada!",
         "sentence_en": "You're very welcome!",
         "sentence_ar": "⁦على الرحب والسعة!⁩",
-        "sentence_es": "¡De nada!"
+        "sentence_es": "¡De nada!",
+        "word_translations": {
+          "Bitte": {
+            "de": "bitte",
+            "lemma": "",
+            "gender": "",
+            "pos": "part",
+            "en": "please / you are welcome",
+            "ar": "⁦من فضلك / تفضل⁩",
+            "es": "por favor / de nada"
+          },
+          "sehr": {
+            "de": "sehr",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "very",
+            "ar": "⁦جداً⁩",
+            "es": "muy"
+          }
+        }
       }
     },
     {
@@ -23644,7 +25241,54 @@
         "example_sentence_es": "¡Hola! Qué bueno verte.",
         "sentence_en": "Hello! Nice to see you.",
         "sentence_ar": "⁦مرحباً! يسعدني أن أراك.⁩",
-        "sentence_es": "¡Hola! Qué bueno verte."
+        "sentence_es": "¡Hola! Qué bueno verte.",
+        "word_translations": {
+          "Hallo": {
+            "de": "Hallo",
+            "lemma": "hallo",
+            "gender": "",
+            "pos": "part",
+            "en": "hello",
+            "ar": "⁦مرحباً⁩",
+            "es": "hola"
+          },
+          "Schön": {
+            "de": "schön",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "beautiful / nice",
+            "ar": "⁦جميل⁩",
+            "es": "hermoso / bonito"
+          },
+          "dich": {
+            "de": "dich",
+            "lemma": "du",
+            "gender": "",
+            "pos": "pron",
+            "en": "you (accusative)",
+            "ar": "⁦إياك / كاف المخاطب⁩",
+            "es": "te / a ti"
+          },
+          "zu": {
+            "de": "zu",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "to / at",
+            "ar": "⁦إلى / لـ⁩",
+            "es": "a / para"
+          },
+          "sehen": {
+            "de": "sehen",
+            "lemma": "",
+            "gender": "",
+            "pos": "verb",
+            "en": "to see",
+            "ar": "⁦أرى / رؤية⁩",
+            "es": "ver"
+          }
+        }
       }
     },
     {
@@ -23664,7 +25308,36 @@
         "example_sentence_es": "¡Adiós! Hasta mañana.",
         "sentence_en": "Bye! See you tomorrow.",
         "sentence_ar": "⁦مع السلامة! إلى الغد.⁩",
-        "sentence_es": "¡Adiós! Hasta mañana."
+        "sentence_es": "¡Adiós! Hasta mañana.",
+        "word_translations": {
+          "Tschüss": {
+            "de": "Tschüss",
+            "lemma": "tschüss",
+            "gender": "",
+            "pos": "part",
+            "en": "bye",
+            "ar": "⁦مع السلامة⁩",
+            "es": "adiós"
+          },
+          "Bis": {
+            "de": "bis",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "until (Bis morgen = see you tomorrow)",
+            "ar": "⁦حتى / إلى (إلى الغد)⁩",
+            "es": "hasta (hasta mañana)"
+          },
+          "morgen": {
+            "de": "morgen",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "tomorrow",
+            "ar": "⁦غداً⁩",
+            "es": "mañana"
+          }
+        }
       }
     },
     {
@@ -23684,7 +25357,54 @@
         "example_sentence_es": "Disculpe, ¿dónde está la estación?",
         "sentence_en": "Excuse me, where is the train station?",
         "sentence_ar": "⁦عذراً، أين تقع محطة القطار؟⁩",
-        "sentence_es": "Disculpe, ¿dónde está la estación?"
+        "sentence_es": "Disculpe, ¿dónde está la estación?",
+        "word_translations": {
+          "Entschuldigung": {
+            "de": "Entschuldigung",
+            "lemma": "",
+            "gender": "die",
+            "pos": "noun",
+            "en": "excuse me / sorry",
+            "ar": "⁦معذرة / عذراً⁩",
+            "es": "disculpe / perdón"
+          },
+          "wo": {
+            "de": "wo",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "where",
+            "ar": "⁦أين⁩",
+            "es": "dónde"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Bahnhof": {
+            "de": "Bahnhof",
+            "lemma": "der Bahnhof",
+            "gender": "der",
+            "pos": "noun",
+            "en": "train station",
+            "ar": "⁦محطة القطار⁩",
+            "es": "estación de tren"
+          }
+        }
       }
     },
     {
@@ -23704,7 +25424,36 @@
         "example_sentence_es": "Cuento: cero.",
         "sentence_en": "I count: zero.",
         "sentence_ar": "⁦أنا أعد: صفر.⁩",
-        "sentence_es": "Cuento: cero."
+        "sentence_es": "Cuento: cero.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "zähle": {
+            "de": "zähle",
+            "lemma": "zählen",
+            "gender": "",
+            "pos": "verb",
+            "en": "count",
+            "ar": "⁦أعد / أحصي⁩",
+            "es": "cuento"
+          },
+          "null": {
+            "de": "null",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "zero (0)",
+            "ar": "⁦صفر (0)⁩",
+            "es": "cero"
+          }
+        }
       }
     },
     {
@@ -23724,7 +25473,36 @@
         "example_sentence_es": "Cuento: uno.",
         "sentence_en": "I count: one.",
         "sentence_ar": "⁦أنا أعد: واحد.⁩",
-        "sentence_es": "Cuento: uno."
+        "sentence_es": "Cuento: uno.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "zähle": {
+            "de": "zähle",
+            "lemma": "zählen",
+            "gender": "",
+            "pos": "verb",
+            "en": "count",
+            "ar": "⁦أعد / أحصي⁩",
+            "es": "cuento"
+          },
+          "eins": {
+            "de": "eins",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "one (1)",
+            "ar": "⁦واحد (1)⁩",
+            "es": "uno"
+          }
+        }
       }
     },
     {
@@ -23744,7 +25522,36 @@
         "example_sentence_es": "Cuento: dos.",
         "sentence_en": "I count: two.",
         "sentence_ar": "⁦أنا أعد: اثنان.⁩",
-        "sentence_es": "Cuento: dos."
+        "sentence_es": "Cuento: dos.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "zähle": {
+            "de": "zähle",
+            "lemma": "zählen",
+            "gender": "",
+            "pos": "verb",
+            "en": "count",
+            "ar": "⁦أعد / أحصي⁩",
+            "es": "cuento"
+          },
+          "zwei": {
+            "de": "zwei",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "two (2)",
+            "ar": "⁦اثنان (2)⁩",
+            "es": "dos"
+          }
+        }
       }
     },
     {
@@ -23764,7 +25571,36 @@
         "example_sentence_es": "Cuento: tres.",
         "sentence_en": "I count: three.",
         "sentence_ar": "⁦أنا أعد: ثلاثة.⁩",
-        "sentence_es": "Cuento: tres."
+        "sentence_es": "Cuento: tres.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "zähle": {
+            "de": "zähle",
+            "lemma": "zählen",
+            "gender": "",
+            "pos": "verb",
+            "en": "count",
+            "ar": "⁦أعد / أحصي⁩",
+            "es": "cuento"
+          },
+          "drei": {
+            "de": "drei",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "three (3)",
+            "ar": "⁦ثلاثة (3)⁩",
+            "es": "tres"
+          }
+        }
       }
     },
     {
@@ -23784,7 +25620,36 @@
         "example_sentence_es": "Cuento: cuatro.",
         "sentence_en": "I count: four.",
         "sentence_ar": "⁦أنا أعد: أربعة.⁩",
-        "sentence_es": "Cuento: cuatro."
+        "sentence_es": "Cuento: cuatro.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "zähle": {
+            "de": "zähle",
+            "lemma": "zählen",
+            "gender": "",
+            "pos": "verb",
+            "en": "count",
+            "ar": "⁦أعد / أحصي⁩",
+            "es": "cuento"
+          },
+          "vier": {
+            "de": "vier",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "four (4)",
+            "ar": "⁦أربعة (4)⁩",
+            "es": "cuatro"
+          }
+        }
       }
     },
     {
@@ -23804,7 +25669,36 @@
         "example_sentence_es": "Cuento: cinco.",
         "sentence_en": "I count: five.",
         "sentence_ar": "⁦أنا أعد: خمسة.⁩",
-        "sentence_es": "Cuento: cinco."
+        "sentence_es": "Cuento: cinco.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "zähle": {
+            "de": "zähle",
+            "lemma": "zählen",
+            "gender": "",
+            "pos": "verb",
+            "en": "count",
+            "ar": "⁦أعد / أحصي⁩",
+            "es": "cuento"
+          },
+          "fünf": {
+            "de": "fünf",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "five (5)",
+            "ar": "⁦خمسة (5)⁩",
+            "es": "cinco"
+          }
+        }
       }
     },
     {
@@ -23824,7 +25718,36 @@
         "example_sentence_es": "Cuento: seis.",
         "sentence_en": "I count: six.",
         "sentence_ar": "⁦أنا أعد: ستة.⁩",
-        "sentence_es": "Cuento: seis."
+        "sentence_es": "Cuento: seis.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "zähle": {
+            "de": "zähle",
+            "lemma": "zählen",
+            "gender": "",
+            "pos": "verb",
+            "en": "count",
+            "ar": "⁦أعد / أحصي⁩",
+            "es": "cuento"
+          },
+          "sechs": {
+            "de": "sechs",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "six (6)",
+            "ar": "⁦ستة (6)⁩",
+            "es": "seis"
+          }
+        }
       }
     },
     {
@@ -23844,7 +25767,27 @@
         "example_sentence_es": "Habitación siete.",
         "sentence_en": "Room seven.",
         "sentence_ar": "⁦غرفة سبعة.⁩",
-        "sentence_es": "Habitación siete."
+        "sentence_es": "Habitación siete.",
+        "word_translations": {
+          "Zimmer": {
+            "de": "Zimmer",
+            "lemma": "das Zimmer",
+            "gender": "das",
+            "pos": "noun",
+            "en": "room",
+            "ar": "⁦غرفة⁩",
+            "es": "habitación"
+          },
+          "sieben": {
+            "de": "sieben",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "seven (7)",
+            "ar": "⁦سبعة (7)⁩",
+            "es": "siete"
+          }
+        }
       }
     },
     {
@@ -23864,7 +25807,27 @@
         "example_sentence_es": "Habitación ocho.",
         "sentence_en": "Room eight.",
         "sentence_ar": "⁦غرفة ثمانية.⁩",
-        "sentence_es": "Habitación ocho."
+        "sentence_es": "Habitación ocho.",
+        "word_translations": {
+          "Zimmer": {
+            "de": "Zimmer",
+            "lemma": "das Zimmer",
+            "gender": "das",
+            "pos": "noun",
+            "en": "room",
+            "ar": "⁦غرفة⁩",
+            "es": "habitación"
+          },
+          "acht": {
+            "de": "acht",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "eight (8)",
+            "ar": "⁦ثمانية (8)⁩",
+            "es": "ocho"
+          }
+        }
       }
     },
     {
@@ -23884,7 +25847,27 @@
         "example_sentence_es": "Habitación nueve.",
         "sentence_en": "Room nine.",
         "sentence_ar": "⁦غرفة تسعة.⁩",
-        "sentence_es": "Habitación nueve."
+        "sentence_es": "Habitación nueve.",
+        "word_translations": {
+          "Zimmer": {
+            "de": "Zimmer",
+            "lemma": "das Zimmer",
+            "gender": "das",
+            "pos": "noun",
+            "en": "room",
+            "ar": "⁦غرفة⁩",
+            "es": "habitación"
+          },
+          "neun": {
+            "de": "neun",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "nine (9)",
+            "ar": "⁦تسعة (9)⁩",
+            "es": "nueve"
+          }
+        }
       }
     },
     {
@@ -23904,7 +25887,27 @@
         "example_sentence_es": "Habitación diez.",
         "sentence_en": "Room ten.",
         "sentence_ar": "⁦غرفة عشرة.⁩",
-        "sentence_es": "Habitación diez."
+        "sentence_es": "Habitación diez.",
+        "word_translations": {
+          "Zimmer": {
+            "de": "Zimmer",
+            "lemma": "das Zimmer",
+            "gender": "das",
+            "pos": "noun",
+            "en": "room",
+            "ar": "⁦غرفة⁩",
+            "es": "habitación"
+          },
+          "zehn": {
+            "de": "zehn",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "ten (10)",
+            "ar": "⁦عشرة (10)⁩",
+            "es": "diez"
+          }
+        }
       }
     },
     {
@@ -23924,7 +25927,27 @@
         "example_sentence_es": "Habitación once.",
         "sentence_en": "Room eleven.",
         "sentence_ar": "⁦غرفة أحد عشر.⁩",
-        "sentence_es": "Habitación once."
+        "sentence_es": "Habitación once.",
+        "word_translations": {
+          "Zimmer": {
+            "de": "Zimmer",
+            "lemma": "das Zimmer",
+            "gender": "das",
+            "pos": "noun",
+            "en": "room",
+            "ar": "⁦غرفة⁩",
+            "es": "habitación"
+          },
+          "elf": {
+            "de": "elf",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "eleven (11)",
+            "ar": "⁦أحد عشر (11)⁩",
+            "es": "once"
+          }
+        }
       }
     },
     {
@@ -23944,7 +25967,27 @@
         "example_sentence_es": "Habitación doce.",
         "sentence_en": "Room twelve.",
         "sentence_ar": "⁦غرفة اثنا عشر.⁩",
-        "sentence_es": "Habitación doce."
+        "sentence_es": "Habitación doce.",
+        "word_translations": {
+          "Zimmer": {
+            "de": "Zimmer",
+            "lemma": "das Zimmer",
+            "gender": "das",
+            "pos": "noun",
+            "en": "room",
+            "ar": "⁦غرفة⁩",
+            "es": "habitación"
+          },
+          "zwölf": {
+            "de": "zwölf",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "twelve (12)",
+            "ar": "⁦اثنا عشر (12)⁩",
+            "es": "doce"
+          }
+        }
       }
     },
     {
@@ -23964,7 +26007,36 @@
         "example_sentence_es": "Autobús número trece.",
         "sentence_en": "Bus number thirteen.",
         "sentence_ar": "⁦حافلة رقم ثلاثة عشر.⁩",
-        "sentence_es": "Autobús número trece."
+        "sentence_es": "Autobús número trece.",
+        "word_translations": {
+          "Bus": {
+            "de": "Bus",
+            "lemma": "der Bus",
+            "gender": "der",
+            "pos": "noun",
+            "en": "bus",
+            "ar": "⁦حافلة⁩",
+            "es": "autobús"
+          },
+          "Nummer": {
+            "de": "Nummer",
+            "lemma": "die Nummer",
+            "gender": "die",
+            "pos": "noun",
+            "en": "number",
+            "ar": "⁦رقم⁩",
+            "es": "número"
+          },
+          "dreizehn": {
+            "de": "dreizehn",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "thirteen (13)",
+            "ar": "⁦ثلاثة عشر (13)⁩",
+            "es": "trece"
+          }
+        }
       }
     },
     {
@@ -23984,7 +26056,36 @@
         "example_sentence_es": "Autobús número catorce.",
         "sentence_en": "Bus number fourteen.",
         "sentence_ar": "⁦حافلة رقم أربعة عشر.⁩",
-        "sentence_es": "Autobús número catorce."
+        "sentence_es": "Autobús número catorce.",
+        "word_translations": {
+          "Bus": {
+            "de": "Bus",
+            "lemma": "der Bus",
+            "gender": "der",
+            "pos": "noun",
+            "en": "bus",
+            "ar": "⁦حافلة⁩",
+            "es": "autobús"
+          },
+          "Nummer": {
+            "de": "Nummer",
+            "lemma": "die Nummer",
+            "gender": "die",
+            "pos": "noun",
+            "en": "number",
+            "ar": "⁦رقم⁩",
+            "es": "número"
+          },
+          "vierzehn": {
+            "de": "vierzehn",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "fourteen (14)",
+            "ar": "⁦أربعة عشر (14)⁩",
+            "es": "catorce"
+          }
+        }
       }
     },
     {
@@ -24004,7 +26105,36 @@
         "example_sentence_es": "Autobús número quince.",
         "sentence_en": "Bus number fifteen.",
         "sentence_ar": "⁦حافلة رقم خمسة عشر.⁩",
-        "sentence_es": "Autobús número quince."
+        "sentence_es": "Autobús número quince.",
+        "word_translations": {
+          "Bus": {
+            "de": "Bus",
+            "lemma": "der Bus",
+            "gender": "der",
+            "pos": "noun",
+            "en": "bus",
+            "ar": "⁦حافلة⁩",
+            "es": "autobús"
+          },
+          "Nummer": {
+            "de": "Nummer",
+            "lemma": "die Nummer",
+            "gender": "die",
+            "pos": "noun",
+            "en": "number",
+            "ar": "⁦رقم⁩",
+            "es": "número"
+          },
+          "fünfzehn": {
+            "de": "fünfzehn",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "fifteen (15)",
+            "ar": "⁦خمسة عشر (15)⁩",
+            "es": "quince"
+          }
+        }
       }
     },
     {
@@ -24024,7 +26154,36 @@
         "example_sentence_es": "Autobús número dieciséis.",
         "sentence_en": "Bus number sixteen.",
         "sentence_ar": "⁦حافلة رقم ستة عشر.⁩",
-        "sentence_es": "Autobús número dieciséis."
+        "sentence_es": "Autobús número dieciséis.",
+        "word_translations": {
+          "Bus": {
+            "de": "Bus",
+            "lemma": "der Bus",
+            "gender": "der",
+            "pos": "noun",
+            "en": "bus",
+            "ar": "⁦حافلة⁩",
+            "es": "autobús"
+          },
+          "Nummer": {
+            "de": "Nummer",
+            "lemma": "die Nummer",
+            "gender": "die",
+            "pos": "noun",
+            "en": "number",
+            "ar": "⁦رقم⁩",
+            "es": "número"
+          },
+          "sechzehn": {
+            "de": "sechzehn",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "sixteen (16)",
+            "ar": "⁦ستة عشر (16)⁩",
+            "es": "dieciséis"
+          }
+        }
       }
     },
     {
@@ -24044,7 +26203,36 @@
         "example_sentence_es": "Autobús número diecisiete.",
         "sentence_en": "Bus number seventeen.",
         "sentence_ar": "⁦حافلة رقم سبعة عشر.⁩",
-        "sentence_es": "Autobús número diecisiete."
+        "sentence_es": "Autobús número diecisiete.",
+        "word_translations": {
+          "Bus": {
+            "de": "Bus",
+            "lemma": "der Bus",
+            "gender": "der",
+            "pos": "noun",
+            "en": "bus",
+            "ar": "⁦حافلة⁩",
+            "es": "autobús"
+          },
+          "Nummer": {
+            "de": "Nummer",
+            "lemma": "die Nummer",
+            "gender": "die",
+            "pos": "noun",
+            "en": "number",
+            "ar": "⁦رقم⁩",
+            "es": "número"
+          },
+          "siebzehn": {
+            "de": "siebzehn",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "seventeen (17)",
+            "ar": "⁦سبعة عشر (17)⁩",
+            "es": "diecisiete"
+          }
+        }
       }
     },
     {
@@ -24064,7 +26252,36 @@
         "example_sentence_es": "Autobús número veinte.",
         "sentence_en": "Bus number twenty.",
         "sentence_ar": "⁦حافلة رقم عشرون.⁩",
-        "sentence_es": "Autobús número veinte."
+        "sentence_es": "Autobús número veinte.",
+        "word_translations": {
+          "Bus": {
+            "de": "Bus",
+            "lemma": "der Bus",
+            "gender": "der",
+            "pos": "noun",
+            "en": "bus",
+            "ar": "⁦حافلة⁩",
+            "es": "autobús"
+          },
+          "Nummer": {
+            "de": "Nummer",
+            "lemma": "die Nummer",
+            "gender": "die",
+            "pos": "noun",
+            "en": "number",
+            "ar": "⁦رقم⁩",
+            "es": "número"
+          },
+          "zwanzig": {
+            "de": "zwanzig",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "twenty (20)",
+            "ar": "⁦عشرون (20)⁩",
+            "es": "veinte"
+          }
+        }
       }
     },
     {
@@ -24084,7 +26301,45 @@
         "example_sentence_es": "Eso cuesta treinta euros.",
         "sentence_en": "That costs thirty euros.",
         "sentence_ar": "⁦هذا يكلف ثلاثون يورو.⁩",
-        "sentence_es": "Eso cuesta treinta euros."
+        "sentence_es": "Eso cuesta treinta euros.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "kostet": {
+            "de": "kostet",
+            "lemma": "kosten",
+            "gender": "",
+            "pos": "verb",
+            "en": "costs",
+            "ar": "⁦يكلف / سعره⁩",
+            "es": "cuesta"
+          },
+          "dreißig": {
+            "de": "dreißig",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "thirty (30)",
+            "ar": "⁦ثلاثون (30)⁩",
+            "es": "treinta"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -24104,7 +26359,45 @@
         "example_sentence_es": "Eso cuesta cuarenta euros.",
         "sentence_en": "That costs forty euros.",
         "sentence_ar": "⁦هذا يكلف أربعون يورو.⁩",
-        "sentence_es": "Eso cuesta cuarenta euros."
+        "sentence_es": "Eso cuesta cuarenta euros.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "kostet": {
+            "de": "kostet",
+            "lemma": "kosten",
+            "gender": "",
+            "pos": "verb",
+            "en": "costs",
+            "ar": "⁦يكلف / سعره⁩",
+            "es": "cuesta"
+          },
+          "vierzig": {
+            "de": "vierzig",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "forty (40)",
+            "ar": "⁦أربعون (40)⁩",
+            "es": "cuarenta"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -24124,7 +26417,45 @@
         "example_sentence_es": "Eso cuesta cincuenta euros.",
         "sentence_en": "That costs fifty euros.",
         "sentence_ar": "⁦هذا يكلف خمسون يورو.⁩",
-        "sentence_es": "Eso cuesta cincuenta euros."
+        "sentence_es": "Eso cuesta cincuenta euros.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "kostet": {
+            "de": "kostet",
+            "lemma": "kosten",
+            "gender": "",
+            "pos": "verb",
+            "en": "costs",
+            "ar": "⁦يكلف / سعره⁩",
+            "es": "cuesta"
+          },
+          "fünfzig": {
+            "de": "fünfzig",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "fifty (50)",
+            "ar": "⁦خمسون (50)⁩",
+            "es": "cincuenta"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -24144,7 +26475,45 @@
         "example_sentence_es": "Eso cuesta sesenta euros.",
         "sentence_en": "That costs sixty euros.",
         "sentence_ar": "⁦هذا يكلف ستون يورو.⁩",
-        "sentence_es": "Eso cuesta sesenta euros."
+        "sentence_es": "Eso cuesta sesenta euros.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "kostet": {
+            "de": "kostet",
+            "lemma": "kosten",
+            "gender": "",
+            "pos": "verb",
+            "en": "costs",
+            "ar": "⁦يكلف / سعره⁩",
+            "es": "cuesta"
+          },
+          "sechzig": {
+            "de": "sechzig",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "sixty (60)",
+            "ar": "⁦ستون (60)⁩",
+            "es": "sesenta"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -24164,7 +26533,45 @@
         "example_sentence_es": "Eso cuesta setenta euros.",
         "sentence_en": "That costs seventy euros.",
         "sentence_ar": "⁦هذا يكلف سبعون يورو.⁩",
-        "sentence_es": "Eso cuesta setenta euros."
+        "sentence_es": "Eso cuesta setenta euros.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "kostet": {
+            "de": "kostet",
+            "lemma": "kosten",
+            "gender": "",
+            "pos": "verb",
+            "en": "costs",
+            "ar": "⁦يكلف / سعره⁩",
+            "es": "cuesta"
+          },
+          "siebzig": {
+            "de": "siebzig",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "seventy (70)",
+            "ar": "⁦سبعون (70)⁩",
+            "es": "setenta"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -24184,7 +26591,45 @@
         "example_sentence_es": "Eso cuesta ochenta euros.",
         "sentence_en": "That costs eighty euros.",
         "sentence_ar": "⁦هذا يكلف ثمانون يورو.⁩",
-        "sentence_es": "Eso cuesta ochenta euros."
+        "sentence_es": "Eso cuesta ochenta euros.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "kostet": {
+            "de": "kostet",
+            "lemma": "kosten",
+            "gender": "",
+            "pos": "verb",
+            "en": "costs",
+            "ar": "⁦يكلف / سعره⁩",
+            "es": "cuesta"
+          },
+          "achtzig": {
+            "de": "achtzig",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "eighty (80)",
+            "ar": "⁦ثمانون (80)⁩",
+            "es": "ochenta"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -24204,7 +26649,45 @@
         "example_sentence_es": "Eso cuesta noventa euros.",
         "sentence_en": "That costs ninety euros.",
         "sentence_ar": "⁦هذا يكلف تسعون يورو.⁩",
-        "sentence_es": "Eso cuesta noventa euros."
+        "sentence_es": "Eso cuesta noventa euros.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "kostet": {
+            "de": "kostet",
+            "lemma": "kosten",
+            "gender": "",
+            "pos": "verb",
+            "en": "costs",
+            "ar": "⁦يكلف / سعره⁩",
+            "es": "cuesta"
+          },
+          "neunzig": {
+            "de": "neunzig",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "ninety (90)",
+            "ar": "⁦تسعون (90)⁩",
+            "es": "noventa"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -24224,7 +26707,45 @@
         "example_sentence_es": "Eso cuesta cien euros.",
         "sentence_en": "That costs one hundred euros.",
         "sentence_ar": "⁦هذا يكلف مئة يورو.⁩",
-        "sentence_es": "Eso cuesta cien euros."
+        "sentence_es": "Eso cuesta cien euros.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "kostet": {
+            "de": "kostet",
+            "lemma": "kosten",
+            "gender": "",
+            "pos": "verb",
+            "en": "costs",
+            "ar": "⁦يكلف / سعره⁩",
+            "es": "cuesta"
+          },
+          "hundert": {
+            "de": "hundert",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "one hundred (100)",
+            "ar": "⁦مئة (100)⁩",
+            "es": "cien"
+          },
+          "Euro": {
+            "de": "Euro",
+            "lemma": "der Euro",
+            "gender": "der",
+            "pos": "noun",
+            "en": "euro",
+            "ar": "⁦يورو⁩",
+            "es": "euro"
+          }
+        }
       }
     },
     {
@@ -24244,7 +26765,36 @@
         "example_sentence_es": "Hoy es lunes.",
         "sentence_en": "Today is Monday.",
         "sentence_ar": "⁦اليوم هو الإثنين.⁩",
-        "sentence_es": "Hoy es lunes."
+        "sentence_es": "Hoy es lunes.",
+        "word_translations": {
+          "Heute": {
+            "de": "heute",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "today",
+            "ar": "⁦اليوم⁩",
+            "es": "hoy"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Montag": {
+            "de": "Montag",
+            "lemma": "",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Monday",
+            "ar": "⁦الإثنين⁩",
+            "es": "lunes"
+          }
+        }
       }
     },
     {
@@ -24264,7 +26814,36 @@
         "example_sentence_es": "Hoy es martes.",
         "sentence_en": "Today is Tuesday.",
         "sentence_ar": "⁦اليوم هو الثلاثاء.⁩",
-        "sentence_es": "Hoy es martes."
+        "sentence_es": "Hoy es martes.",
+        "word_translations": {
+          "Heute": {
+            "de": "heute",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "today",
+            "ar": "⁦اليوم⁩",
+            "es": "hoy"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Dienstag": {
+            "de": "Dienstag",
+            "lemma": "",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Tuesday",
+            "ar": "⁦الثلاثاء⁩",
+            "es": "martes"
+          }
+        }
       }
     },
     {
@@ -24284,7 +26863,36 @@
         "example_sentence_es": "Hoy es miércoles.",
         "sentence_en": "Today is Wednesday.",
         "sentence_ar": "⁦اليوم هو الأربعاء.⁩",
-        "sentence_es": "Hoy es miércoles."
+        "sentence_es": "Hoy es miércoles.",
+        "word_translations": {
+          "Heute": {
+            "de": "heute",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "today",
+            "ar": "⁦اليوم⁩",
+            "es": "hoy"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Mittwoch": {
+            "de": "Mittwoch",
+            "lemma": "",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Wednesday",
+            "ar": "⁦الأربعاء⁩",
+            "es": "miércoles"
+          }
+        }
       }
     },
     {
@@ -24304,7 +26912,36 @@
         "example_sentence_es": "Hoy es jueves.",
         "sentence_en": "Today is Thursday.",
         "sentence_ar": "⁦اليوم هو الخميس.⁩",
-        "sentence_es": "Hoy es jueves."
+        "sentence_es": "Hoy es jueves.",
+        "word_translations": {
+          "Heute": {
+            "de": "heute",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "today",
+            "ar": "⁦اليوم⁩",
+            "es": "hoy"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Donnerstag": {
+            "de": "Donnerstag",
+            "lemma": "",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Thursday",
+            "ar": "⁦الخميس⁩",
+            "es": "jueves"
+          }
+        }
       }
     },
     {
@@ -24324,7 +26961,36 @@
         "example_sentence_es": "Hoy es viernes.",
         "sentence_en": "Today is Friday.",
         "sentence_ar": "⁦اليوم هو الجمعة.⁩",
-        "sentence_es": "Hoy es viernes."
+        "sentence_es": "Hoy es viernes.",
+        "word_translations": {
+          "Heute": {
+            "de": "heute",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "today",
+            "ar": "⁦اليوم⁩",
+            "es": "hoy"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Freitag": {
+            "de": "Freitag",
+            "lemma": "",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Friday",
+            "ar": "⁦الجمعة⁩",
+            "es": "viernes"
+          }
+        }
       }
     },
     {
@@ -24344,7 +27010,36 @@
         "example_sentence_es": "Hoy es sábado.",
         "sentence_en": "Today is Saturday.",
         "sentence_ar": "⁦اليوم هو السبت.⁩",
-        "sentence_es": "Hoy es sábado."
+        "sentence_es": "Hoy es sábado.",
+        "word_translations": {
+          "Heute": {
+            "de": "heute",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "today",
+            "ar": "⁦اليوم⁩",
+            "es": "hoy"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Samstag": {
+            "de": "Samstag",
+            "lemma": "",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Saturday",
+            "ar": "⁦السبت⁩",
+            "es": "sábado"
+          }
+        }
       }
     },
     {
@@ -24364,7 +27059,36 @@
         "example_sentence_es": "Hoy es domingo.",
         "sentence_en": "Today is Sunday.",
         "sentence_ar": "⁦اليوم هو الأحد.⁩",
-        "sentence_es": "Hoy es domingo."
+        "sentence_es": "Hoy es domingo.",
+        "word_translations": {
+          "Heute": {
+            "de": "heute",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "today",
+            "ar": "⁦اليوم⁩",
+            "es": "hoy"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Sonntag": {
+            "de": "Sonntag",
+            "lemma": "",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Sunday",
+            "ar": "⁦الأحد⁩",
+            "es": "domingo"
+          }
+        }
       }
     },
     {
@@ -24385,7 +27109,45 @@
         "example_sentence_es": "El cielo es azul.",
         "sentence_en": "The sky is blue.",
         "sentence_ar": "⁦السماء زرقاء.⁩",
-        "sentence_es": "El cielo es azul."
+        "sentence_es": "El cielo es azul.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Himmel": {
+            "de": "Himmel",
+            "lemma": "der Himmel",
+            "gender": "der",
+            "pos": "noun",
+            "en": "sky",
+            "ar": "⁦سماء⁩",
+            "es": "cielo"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "blau": {
+            "de": "blau",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "blue",
+            "ar": "⁦أزرق⁩",
+            "es": "azul"
+          }
+        }
       }
     },
     {
@@ -24406,7 +27168,45 @@
         "example_sentence_es": "La manzana es roja.",
         "sentence_en": "The apple is red.",
         "sentence_ar": "⁦التفاحة حمراء.⁩",
-        "sentence_es": "La manzana es roja."
+        "sentence_es": "La manzana es roja.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Apfel": {
+            "de": "Apfel",
+            "lemma": "der Apfel",
+            "gender": "der",
+            "pos": "noun",
+            "en": "apple",
+            "ar": "⁦تفاحة⁩",
+            "es": "manzana"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "rot": {
+            "de": "rot",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "red",
+            "ar": "⁦أحمر⁩",
+            "es": "rojo"
+          }
+        }
       }
     },
     {
@@ -24427,7 +27227,45 @@
         "example_sentence_es": "La hierba es verde.",
         "sentence_en": "The grass is green.",
         "sentence_ar": "⁦العشب أخضر.⁩",
-        "sentence_es": "La hierba es verde."
+        "sentence_es": "La hierba es verde.",
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Gras": {
+            "de": "Gras",
+            "lemma": "das Gras",
+            "gender": "das",
+            "pos": "noun",
+            "en": "grass",
+            "ar": "⁦عشب⁩",
+            "es": "hierba / césped"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "grün": {
+            "de": "grün",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "green",
+            "ar": "⁦أخضر⁩",
+            "es": "verde"
+          }
+        }
       }
     },
     {
@@ -24448,7 +27286,45 @@
         "example_sentence_es": "El sol es amarillo.",
         "sentence_en": "The sun is yellow.",
         "sentence_ar": "⁦الشمس صفراء.⁩",
-        "sentence_es": "El sol es amarillo."
+        "sentence_es": "El sol es amarillo.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Sonne": {
+            "de": "Sonne",
+            "lemma": "die Sonne",
+            "gender": "die",
+            "pos": "noun",
+            "en": "sun",
+            "ar": "⁦شمس⁩",
+            "es": "sol"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "gelb": {
+            "de": "gelb",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "yellow",
+            "ar": "⁦أصفر⁩",
+            "es": "amarillo"
+          }
+        }
       }
     },
     {
@@ -24469,7 +27345,45 @@
         "example_sentence_es": "El café es negro.",
         "sentence_en": "The coffee is black.",
         "sentence_ar": "⁦القهوة سوداء.⁩",
-        "sentence_es": "El café es negro."
+        "sentence_es": "El café es negro.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Kaffee": {
+            "de": "Kaffee",
+            "lemma": "der Kaffee",
+            "gender": "der",
+            "pos": "noun",
+            "en": "coffee",
+            "ar": "⁦قهوة⁩",
+            "es": "café"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "schwarz": {
+            "de": "schwarz",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "black",
+            "ar": "⁦أسود⁩",
+            "es": "negro"
+          }
+        }
       }
     },
     {
@@ -24490,7 +27404,45 @@
         "example_sentence_es": "La nieve es blanca.",
         "sentence_en": "The snow is white.",
         "sentence_ar": "⁦الثلج أبيض.⁩",
-        "sentence_es": "La nieve es blanca."
+        "sentence_es": "La nieve es blanca.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Schnee": {
+            "de": "Schnee",
+            "lemma": "der Schnee",
+            "gender": "der",
+            "pos": "noun",
+            "en": "snow",
+            "ar": "⁦ثلج⁩",
+            "es": "nieve"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "weiß": {
+            "de": "weiß",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "white",
+            "ar": "⁦أبيض⁩",
+            "es": "blanco"
+          }
+        }
       }
     },
     {
@@ -24511,7 +27463,45 @@
         "example_sentence_es": "La nube es gris.",
         "sentence_en": "The cloud is gray.",
         "sentence_ar": "⁦السحابة رمادية.⁩",
-        "sentence_es": "La nube es gris."
+        "sentence_es": "La nube es gris.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Wolke": {
+            "de": "Wolke",
+            "lemma": "die Wolke",
+            "gender": "die",
+            "pos": "noun",
+            "en": "cloud",
+            "ar": "⁦سحابة⁩",
+            "es": "nube"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "grau": {
+            "de": "grau",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "gray",
+            "ar": "⁦رمادي⁩",
+            "es": "gris"
+          }
+        }
       }
     },
     {
@@ -24532,7 +27522,45 @@
         "example_sentence_es": "El chocolate es marrón.",
         "sentence_en": "The chocolate is brown.",
         "sentence_ar": "⁦الشوكولاتة بنية.⁩",
-        "sentence_es": "El chocolate es marrón."
+        "sentence_es": "El chocolate es marrón.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Schokolade": {
+            "de": "Schokolade",
+            "lemma": "die Schokolade",
+            "gender": "die",
+            "pos": "noun",
+            "en": "chocolate",
+            "ar": "⁦شوكولاتة⁩",
+            "es": "chocolate"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "braun": {
+            "de": "braun",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "brown",
+            "ar": "⁦بني⁩",
+            "es": "marrón"
+          }
+        }
       }
     },
     {
@@ -24553,7 +27581,45 @@
         "example_sentence_es": "La naranja es naranja.",
         "sentence_en": "The orange is orange.",
         "sentence_ar": "⁦البرتقالة برتقالية اللون.⁩",
-        "sentence_es": "La naranja es naranja."
+        "sentence_es": "La naranja es naranja.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Orange": {
+            "de": "Orange",
+            "lemma": "die Orange",
+            "gender": "die",
+            "pos": "noun",
+            "en": "orange",
+            "ar": "⁦برتقالة⁩",
+            "es": "naranja"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "orange": {
+            "de": "Orange",
+            "lemma": "die Orange",
+            "gender": "die",
+            "pos": "noun",
+            "en": "orange",
+            "ar": "⁦برتقالة⁩",
+            "es": "naranja"
+          }
+        }
       }
     },
     {
@@ -24573,7 +27639,36 @@
         "example_sentence_es": "Tres manzanas rojas.",
         "sentence_en": "Three red apples.",
         "sentence_ar": "⁦ثلاث تفاحات حمراء.⁩",
-        "sentence_es": "Tres manzanas rojas."
+        "sentence_es": "Tres manzanas rojas.",
+        "word_translations": {
+          "Drei": {
+            "de": "drei",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "three (3)",
+            "ar": "⁦ثلاثة (3)⁩",
+            "es": "tres"
+          },
+          "rote": {
+            "de": "rote",
+            "lemma": "rot",
+            "gender": "",
+            "pos": "adj",
+            "en": "red (inflected)",
+            "ar": "⁦حمراء⁩",
+            "es": "rojas / rojos"
+          },
+          "Äpfel": {
+            "de": "Äpfel",
+            "lemma": "der Apfel",
+            "gender": "die",
+            "pos": "noun",
+            "en": "apples",
+            "ar": "⁦تفاح⁩",
+            "es": "manzanas"
+          }
+        }
       }
     },
     {
@@ -24593,7 +27688,63 @@
         "example_sentence_es": "¡Buenos días! ¿Durmió bien?",
         "sentence_en": "Good morning! Did you sleep well?",
         "sentence_ar": "⁦صباح الخير! هل نمت جيداً؟⁩",
-        "sentence_es": "¡Buenos días! ¿Durmió bien?"
+        "sentence_es": "¡Buenos días! ¿Durmió bien?",
+        "word_translations": {
+          "Guten": {
+            "de": "Guten",
+            "lemma": "gut",
+            "gender": "",
+            "pos": "adj",
+            "en": "good (accusative)",
+            "ar": "⁦سعيد / طيب⁩",
+            "es": "buenos / buen"
+          },
+          "Morgen": {
+            "de": "Morgen",
+            "lemma": "der Morgen",
+            "gender": "der",
+            "pos": "noun",
+            "en": "morning",
+            "ar": "⁦صباح⁩",
+            "es": "mañana"
+          },
+          "Haben": {
+            "de": "haben",
+            "lemma": "",
+            "gender": "",
+            "pos": "verb",
+            "en": "have",
+            "ar": "⁦لديك / لديكم / يملكون⁩",
+            "es": "tienen / tiene"
+          },
+          "Sie": {
+            "de": "sie",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "she / they / You (formal)",
+            "ar": "⁦هي / هم / حضرتك⁩",
+            "es": "ella / ellos / usted"
+          },
+          "gut": {
+            "de": "gut",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "good / well",
+            "ar": "⁦جيد / لذيذ / بخير⁩",
+            "es": "bueno / bien"
+          },
+          "geschlafen": {
+            "de": "geschlafen",
+            "lemma": "schlafen",
+            "gender": "",
+            "pos": "verb",
+            "en": "slept",
+            "ar": "⁦نمت⁩",
+            "es": "dormido"
+          }
+        }
       }
     },
     {
@@ -24613,7 +27764,45 @@
         "example_sentence_es": "¡Buenas tardes, señor Meier!",
         "sentence_en": "Good day, Mr. Meier!",
         "sentence_ar": "⁦يوم سعيد، سيد ماير!⁩",
-        "sentence_es": "¡Buenas tardes, señor Meier!"
+        "sentence_es": "¡Buenas tardes, señor Meier!",
+        "word_translations": {
+          "Guten": {
+            "de": "Guten",
+            "lemma": "gut",
+            "gender": "",
+            "pos": "adj",
+            "en": "good (accusative)",
+            "ar": "⁦سعيد / طيب⁩",
+            "es": "buenos / buen"
+          },
+          "Tag": {
+            "de": "Tag",
+            "lemma": "der Tag",
+            "gender": "der",
+            "pos": "noun",
+            "en": "day",
+            "ar": "⁦يوم⁩",
+            "es": "día"
+          },
+          "Herr": {
+            "de": "Herr",
+            "lemma": "der Herr",
+            "gender": "der",
+            "pos": "noun",
+            "en": "Mr. / gentleman",
+            "ar": "⁦سيد⁩",
+            "es": "señor"
+          },
+          "Meier": {
+            "de": "Meier",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Meier (German surname)",
+            "ar": "⁦ماير (لقب ألماني)⁩",
+            "es": "Meier"
+          }
+        }
       }
     },
     {
@@ -24633,7 +27822,36 @@
         "example_sentence_es": "¡Buenas noches a todos!",
         "sentence_en": "Good evening everyone!",
         "sentence_ar": "⁦مساء الخير للجميع!⁩",
-        "sentence_es": "¡Buenas noches a todos!"
+        "sentence_es": "¡Buenas noches a todos!",
+        "word_translations": {
+          "Guten": {
+            "de": "Guten",
+            "lemma": "gut",
+            "gender": "",
+            "pos": "adj",
+            "en": "good (accusative)",
+            "ar": "⁦سعيد / طيب⁩",
+            "es": "buenos / buen"
+          },
+          "Abend": {
+            "de": "Abend",
+            "lemma": "der Abend",
+            "gender": "der",
+            "pos": "noun",
+            "en": "evening",
+            "ar": "⁦مساء⁩",
+            "es": "tarde / noche"
+          },
+          "allerseits": {
+            "de": "allerseits",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "everyone / all",
+            "ar": "⁦للجميع / كافّة⁩",
+            "es": "a todos"
+          }
+        }
       }
     },
     {
@@ -24653,7 +27871,54 @@
         "example_sentence_es": "¡Buenas noches y que duermas bien!",
         "sentence_en": "Good night and sleep well!",
         "sentence_ar": "⁦تصبح على خير ونم جيداً!⁩",
-        "sentence_es": "¡Buenas noches y que duermas bien!"
+        "sentence_es": "¡Buenas noches y que duermas bien!",
+        "word_translations": {
+          "Gute": {
+            "de": "Gute",
+            "lemma": "gut",
+            "gender": "",
+            "pos": "adj",
+            "en": "good (feminine)",
+            "ar": "⁦طيبة (ليلة طيبة)⁩",
+            "es": "buena (buenas noches)"
+          },
+          "Nacht": {
+            "de": "Nacht",
+            "lemma": "die Nacht",
+            "gender": "die",
+            "pos": "noun",
+            "en": "night",
+            "ar": "⁦ليلة⁩",
+            "es": "noche"
+          },
+          "und": {
+            "de": "und",
+            "lemma": "",
+            "gender": "",
+            "pos": "conj",
+            "en": "and",
+            "ar": "⁦و⁩",
+            "es": "y"
+          },
+          "schlaf": {
+            "de": "schlaf",
+            "lemma": "schlafen",
+            "gender": "",
+            "pos": "verb",
+            "en": "sleep (imperative)",
+            "ar": "⁦نَمْ⁩",
+            "es": "duerme"
+          },
+          "gut": {
+            "de": "gut",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "good / well",
+            "ar": "⁦جيد / لذيذ / بخير⁩",
+            "es": "bueno / bien"
+          }
+        }
       }
     },
     {
@@ -24673,7 +27938,45 @@
         "example_sentence_es": "¡Hasta luego, señora Schmidt!",
         "sentence_en": "Goodbye, Mrs. Schmidt!",
         "sentence_ar": "⁦إلى اللقاء، سيدة شميت!⁩",
-        "sentence_es": "¡Hasta luego, señora Schmidt!"
+        "sentence_es": "¡Hasta luego, señora Schmidt!",
+        "word_translations": {
+          "Auf": {
+            "de": "auf",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "on / until",
+            "ar": "⁦إلى / على⁩",
+            "es": "hasta / sobre"
+          },
+          "Wiedersehen": {
+            "de": "Wiedersehen",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "seeing again (Auf Wiedersehen = goodbye)",
+            "ar": "⁦لقاء (إلى اللقاء)⁩",
+            "es": "vista (hasta la vista)"
+          },
+          "Frau": {
+            "de": "Frau",
+            "lemma": "die Frau",
+            "gender": "die",
+            "pos": "noun",
+            "en": "Mrs. / woman",
+            "ar": "⁦سيدة / امرأة⁩",
+            "es": "señora / mujer"
+          },
+          "Schmidt": {
+            "de": "Schmidt",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Schmidt (German surname)",
+            "ar": "⁦شميت (لقب ألماني)⁩",
+            "es": "Schmidt"
+          }
+        }
       }
     },
     {
@@ -24693,7 +27996,45 @@
         "example_sentence_es": "Hola Anna, ¿cómo estás?",
         "sentence_en": "Hello Anna, how are you?",
         "sentence_ar": "⁦مرحباً آنّا، كيف حالك؟⁩",
-        "sentence_es": "Hola Anna, ¿cómo estás?"
+        "sentence_es": "Hola Anna, ¿cómo estás?",
+        "word_translations": {
+          "Hallo": {
+            "de": "Hallo",
+            "lemma": "hallo",
+            "gender": "",
+            "pos": "part",
+            "en": "hello",
+            "ar": "⁦مرحباً⁩",
+            "es": "hola"
+          },
+          "Anna": {
+            "de": "Anna",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Anna (personal name)",
+            "ar": "⁦آنّا (اسم شخصي)⁩",
+            "es": "Anna"
+          },
+          "wie": {
+            "de": "wie",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "how / what",
+            "ar": "⁦كيف / ما⁩",
+            "es": "cómo"
+          },
+          "geht's": {
+            "de": "geht's",
+            "lemma": "gehen",
+            "gender": "",
+            "pos": "phrase",
+            "en": "how is it going",
+            "ar": "⁦كيف الحال⁩",
+            "es": "¿cómo va?"
+          }
+        }
       }
     },
     {
@@ -24713,7 +28054,63 @@
         "example_sentence_es": "¡Me va muy bien, gracias!",
         "sentence_en": "I'm doing very well, thank you!",
         "sentence_ar": "⁦أنا بأفضل حال، شكراً!⁩",
-        "sentence_es": "¡Me va muy bien, gracias!"
+        "sentence_es": "¡Me va muy bien, gracias!",
+        "word_translations": {
+          "Mir": {
+            "de": "mir",
+            "lemma": "ich",
+            "gender": "",
+            "pos": "pron",
+            "en": "me (dative)",
+            "ar": "⁦لي / معي⁩",
+            "es": "a mí / me"
+          },
+          "geht": {
+            "de": "geht",
+            "lemma": "gehen",
+            "gender": "",
+            "pos": "verb",
+            "en": "goes / walks",
+            "ar": "⁦يسير / يمضي⁩",
+            "es": "va"
+          },
+          "es": {
+            "de": "es",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "it",
+            "ar": "⁦هو / هي (للمحايد)⁩",
+            "es": "ello / él / ella"
+          },
+          "sehr": {
+            "de": "sehr",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "very",
+            "ar": "⁦جداً⁩",
+            "es": "muy"
+          },
+          "gut": {
+            "de": "gut",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "good / well",
+            "ar": "⁦جيد / لذيذ / بخير⁩",
+            "es": "bueno / bien"
+          },
+          "danke": {
+            "de": "danke",
+            "lemma": "danken",
+            "gender": "",
+            "pos": "part",
+            "en": "thank you",
+            "ar": "⁦شكراً⁩",
+            "es": "gracias"
+          }
+        }
       }
     },
     {
@@ -24733,7 +28130,45 @@
         "example_sentence_es": "¿Cómo estás? — Ahí vamos.",
         "sentence_en": "How are you? — So-so.",
         "sentence_ar": "⁦كيف الحال؟ — على ما يرام.⁩",
-        "sentence_es": "¿Cómo estás? — Ahí vamos."
+        "sentence_es": "¿Cómo estás? — Ahí vamos.",
+        "word_translations": {
+          "Wie": {
+            "de": "wie",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "how / what",
+            "ar": "⁦كيف / ما⁩",
+            "es": "cómo"
+          },
+          "geht's": {
+            "de": "geht's",
+            "lemma": "gehen",
+            "gender": "",
+            "pos": "phrase",
+            "en": "how is it going",
+            "ar": "⁦كيف الحال⁩",
+            "es": "¿cómo va?"
+          },
+          "Es": {
+            "de": "es",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "it",
+            "ar": "⁦هو / هي (للمحايد)⁩",
+            "es": "ello / él / ella"
+          },
+          "geht": {
+            "de": "geht",
+            "lemma": "gehen",
+            "gender": "",
+            "pos": "verb",
+            "en": "goes / walks",
+            "ar": "⁦يسير / يمضي⁩",
+            "es": "va"
+          }
+        }
       }
     },
     {
@@ -24753,7 +28188,72 @@
         "example_sentence_es": "Hoy no me siento tan bien.",
         "sentence_en": "Today I'm not doing so well.",
         "sentence_ar": "⁦اليوم لست بخير تماماً.⁩",
-        "sentence_es": "Hoy no me siento tan bien."
+        "sentence_es": "Hoy no me siento tan bien.",
+        "word_translations": {
+          "Heute": {
+            "de": "heute",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "today",
+            "ar": "⁦اليوم⁩",
+            "es": "hoy"
+          },
+          "geht": {
+            "de": "geht",
+            "lemma": "gehen",
+            "gender": "",
+            "pos": "verb",
+            "en": "goes / walks",
+            "ar": "⁦يسير / يمضي⁩",
+            "es": "va"
+          },
+          "es": {
+            "de": "es",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "it",
+            "ar": "⁦هو / هي (للمحايد)⁩",
+            "es": "ello / él / ella"
+          },
+          "mir": {
+            "de": "mir",
+            "lemma": "ich",
+            "gender": "",
+            "pos": "pron",
+            "en": "me (dative)",
+            "ar": "⁦لي / معي⁩",
+            "es": "a mí / me"
+          },
+          "nicht": {
+            "de": "nicht",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "not",
+            "ar": "⁦لا / ليس⁩",
+            "es": "no"
+          },
+          "so": {
+            "de": "so",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "so / that",
+            "ar": "⁦هكذا / إلى هذا الحد⁩",
+            "es": "tan / así"
+          },
+          "gut": {
+            "de": "gut",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "good / well",
+            "ar": "⁦جيد / لذيذ / بخير⁩",
+            "es": "bueno / bien"
+          }
+        }
       }
     },
     {
@@ -24933,7 +28433,36 @@
         "example_sentence_es": "No entiendo.",
         "sentence_en": "I do not understand.",
         "sentence_ar": "⁦أنا لا أفهم.⁩",
-        "sentence_es": "No entiendo."
+        "sentence_es": "No entiendo.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "verstehe": {
+            "de": "verstehe",
+            "lemma": "verstehen",
+            "gender": "",
+            "pos": "verb",
+            "en": "understand",
+            "ar": "⁦أفهم⁩",
+            "es": "entiendo"
+          },
+          "nicht": {
+            "de": "nicht",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "not",
+            "ar": "⁦لا / ليس⁩",
+            "es": "no"
+          }
+        }
       }
     },
     {
@@ -24953,7 +28482,45 @@
         "example_sentence_es": "Disculpe, ¿habla inglés?",
         "sentence_en": "Excuse me, do you speak English?",
         "sentence_ar": "⁦عذراً، هل تتحدث الإنجليزية؟⁩",
-        "sentence_es": "Disculpe, ¿habla inglés?"
+        "sentence_es": "Disculpe, ¿habla inglés?",
+        "word_translations": {
+          "Entschuldigung": {
+            "de": "Entschuldigung",
+            "lemma": "",
+            "gender": "die",
+            "pos": "noun",
+            "en": "excuse me / sorry",
+            "ar": "⁦معذرة / عذراً⁩",
+            "es": "disculpe / perdón"
+          },
+          "sprechen": {
+            "de": "sprechen",
+            "lemma": "",
+            "gender": "",
+            "pos": "verb",
+            "en": "speak",
+            "ar": "⁦نتحدث / يتكلم⁩",
+            "es": "hablamos / habla"
+          },
+          "Sie": {
+            "de": "sie",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "she / they / You (formal)",
+            "ar": "⁦هي / هم / حضرتك⁩",
+            "es": "ella / ellos / usted"
+          },
+          "Englisch": {
+            "de": "Englisch",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "English (language)",
+            "ar": "⁦اللغة الإنجليزية⁩",
+            "es": "inglés"
+          }
+        }
       }
     },
     {
@@ -24973,7 +28540,54 @@
         "example_sentence_es": "¿Puede hablar más despacio, por favor?",
         "sentence_en": "Could you please speak more slowly?",
         "sentence_ar": "⁦هل يمكنك التحدث ببطء أكثر من فضلك؟⁩",
-        "sentence_es": "¿Puede hablar más despacio, por favor?"
+        "sentence_es": "¿Puede hablar más despacio, por favor?",
+        "word_translations": {
+          "Können": {
+            "de": "können",
+            "lemma": "",
+            "gender": "",
+            "pos": "verb",
+            "en": "can / could",
+            "ar": "⁦يمكنك / تستطيع⁩",
+            "es": "puede"
+          },
+          "Sie": {
+            "de": "sie",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "she / they / You (formal)",
+            "ar": "⁦هي / هم / حضرتك⁩",
+            "es": "ella / ellos / usted"
+          },
+          "bitte": {
+            "de": "bitte",
+            "lemma": "",
+            "gender": "",
+            "pos": "part",
+            "en": "please / you are welcome",
+            "ar": "⁦من فضلك / تفضل⁩",
+            "es": "por favor / de nada"
+          },
+          "langsamer": {
+            "de": "langsamer",
+            "lemma": "langsam",
+            "gender": "",
+            "pos": "adv",
+            "en": "more slowly",
+            "ar": "⁦ببطء أكثر⁩",
+            "es": "más despacio"
+          },
+          "sprechen": {
+            "de": "sprechen",
+            "lemma": "",
+            "gender": "",
+            "pos": "verb",
+            "en": "speak",
+            "ar": "⁦نتحدث / يتكلم⁩",
+            "es": "hablamos / habla"
+          }
+        }
       }
     },
     {
@@ -24993,7 +28607,72 @@
         "example_sentence_es": "¿Cómo? No escuché eso.",
         "sentence_en": "Pardon? I didn't hear that.",
         "sentence_ar": "⁦عفواً؟ لم أسمع ذلك.⁩",
-        "sentence_es": "¿Cómo? No escuché eso."
+        "sentence_es": "¿Cómo? No escuché eso.",
+        "word_translations": {
+          "Wie": {
+            "de": "wie",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "how / what",
+            "ar": "⁦كيف / ما⁩",
+            "es": "cómo"
+          },
+          "bitte": {
+            "de": "bitte",
+            "lemma": "",
+            "gender": "",
+            "pos": "part",
+            "en": "please / you are welcome",
+            "ar": "⁦من فضلك / تفضل⁩",
+            "es": "por favor / de nada"
+          },
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "habe": {
+            "de": "habe",
+            "lemma": "haben",
+            "gender": "",
+            "pos": "verb",
+            "en": "have (1st person)",
+            "ar": "⁦عندي / لدي⁩",
+            "es": "tengo"
+          },
+          "das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "nicht": {
+            "de": "nicht",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "not",
+            "ar": "⁦لا / ليس⁩",
+            "es": "no"
+          },
+          "gehört": {
+            "de": "gehört",
+            "lemma": "hören",
+            "gender": "",
+            "pos": "verb",
+            "en": "heard",
+            "ar": "⁦سمعت⁩",
+            "es": "oído / escuchado"
+          }
+        }
       }
     },
     {
@@ -25013,7 +28692,54 @@
         "example_sentence_es": "Me llamo Anna. ¡Mucho gusto!",
         "sentence_en": "My name is Anna. Pleased to meet you!",
         "sentence_ar": "⁦اسمي آنّا. تشرفت بمعرفتك!⁩",
-        "sentence_es": "Me llamo Anna. ¡Mucho gusto!"
+        "sentence_es": "Me llamo Anna. ¡Mucho gusto!",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "heiße": {
+            "de": "heiße",
+            "lemma": "heißen",
+            "gender": "",
+            "pos": "verb",
+            "en": "am called / my name is",
+            "ar": "⁦اسمي / أُدعى⁩",
+            "es": "me llamo"
+          },
+          "Anna": {
+            "de": "Anna",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Anna (personal name)",
+            "ar": "⁦آنّا (اسم شخصي)⁩",
+            "es": "Anna"
+          },
+          "Freut": {
+            "de": "freut",
+            "lemma": "freuen",
+            "gender": "",
+            "pos": "verb",
+            "en": "pleased (nice to meet you)",
+            "ar": "⁦يسعدني / تشرفت⁩",
+            "es": "mucho gusto / encantado"
+          },
+          "mich": {
+            "de": "mich",
+            "lemma": "ich",
+            "gender": "",
+            "pos": "pron",
+            "en": "me / myself (accusative)",
+            "ar": "⁦نفسي / ياء المتكلم⁩",
+            "es": "me / a mí"
+          }
+        }
       }
     },
     {
@@ -25033,7 +28759,81 @@
         "example_sentence_es": "Hola, me llamo Karim y soy de Siria.",
         "sentence_en": "Hello, my name is Karim and I come from Syria.",
         "sentence_ar": "⁦مرحباً، اسمي كريم وأنا من سوريا.⁩",
-        "sentence_es": "Hola, me llamo Karim y soy de Siria."
+        "sentence_es": "Hola, me llamo Karim y soy de Siria.",
+        "word_translations": {
+          "Hallo": {
+            "de": "Hallo",
+            "lemma": "hallo",
+            "gender": "",
+            "pos": "part",
+            "en": "hello",
+            "ar": "⁦مرحباً⁩",
+            "es": "hola"
+          },
+          "ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "heiße": {
+            "de": "heiße",
+            "lemma": "heißen",
+            "gender": "",
+            "pos": "verb",
+            "en": "am called / my name is",
+            "ar": "⁦اسمي / أُدعى⁩",
+            "es": "me llamo"
+          },
+          "Karim": {
+            "de": "Karim",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Karim (personal name)",
+            "ar": "⁦كريم (اسم شخصي)⁩",
+            "es": "Karim"
+          },
+          "und": {
+            "de": "und",
+            "lemma": "",
+            "gender": "",
+            "pos": "conj",
+            "en": "and",
+            "ar": "⁦و⁩",
+            "es": "y"
+          },
+          "komme": {
+            "de": "komme",
+            "lemma": "kommen",
+            "gender": "",
+            "pos": "verb",
+            "en": "come",
+            "ar": "⁦آتي / أنا قادم⁩",
+            "es": "vengo"
+          },
+          "aus": {
+            "de": "aus",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "from",
+            "ar": "⁦من⁩",
+            "es": "de / desde"
+          },
+          "Syrien": {
+            "de": "Syrien",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Syria",
+            "ar": "⁦سوريا⁩",
+            "es": "Siria"
+          }
+        }
       }
     },
     {
@@ -25053,7 +28853,45 @@
         "example_sentence_es": "Alemania está en Europa.",
         "sentence_en": "Germany is in Europe.",
         "sentence_ar": "⁦ألمانيا في أوروبا.⁩",
-        "sentence_es": "Alemania está en Europa."
+        "sentence_es": "Alemania está en Europa.",
+        "word_translations": {
+          "Deutschland": {
+            "de": "Deutschland",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Germany",
+            "ar": "⁦ألمانيا⁩",
+            "es": "Alemania"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "in": {
+            "de": "in",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "in",
+            "ar": "⁦في⁩",
+            "es": "en"
+          },
+          "Europa": {
+            "de": "Europa",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Europe",
+            "ar": "⁦أوروبا⁩",
+            "es": "Europa"
+          }
+        }
       }
     },
     {
@@ -25073,7 +28911,36 @@
         "example_sentence_es": "Estoy aprendiendo alemán.",
         "sentence_en": "I am learning German.",
         "sentence_ar": "⁦أنا أتعلم الألمانية.⁩",
-        "sentence_es": "Estoy aprendiendo alemán."
+        "sentence_es": "Estoy aprendiendo alemán.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "lerne": {
+            "de": "lerne",
+            "lemma": "lernen",
+            "gender": "",
+            "pos": "verb",
+            "en": "learn",
+            "ar": "⁦أتعلم⁩",
+            "es": "aprendo"
+          },
+          "Deutsch": {
+            "de": "Deutsch",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "German (language)",
+            "ar": "⁦اللغة الألمانية⁩",
+            "es": "alemán"
+          }
+        }
       }
     },
     {
@@ -25093,7 +28960,45 @@
         "example_sentence_es": "Él viene de Siria.",
         "sentence_en": "He comes from Syria.",
         "sentence_ar": "⁦هو من سوريا.⁩",
-        "sentence_es": "Él viene de Siria."
+        "sentence_es": "Él viene de Siria.",
+        "word_translations": {
+          "Er": {
+            "de": "er",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "he",
+            "ar": "⁦هو⁩",
+            "es": "él"
+          },
+          "kommt": {
+            "de": "kommt",
+            "lemma": "kommen",
+            "gender": "",
+            "pos": "verb",
+            "en": "comes / is arriving",
+            "ar": "⁦يأتي / قادم⁩",
+            "es": "viene / llega"
+          },
+          "aus": {
+            "de": "aus",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "from",
+            "ar": "⁦من⁩",
+            "es": "de / desde"
+          },
+          "Syrien": {
+            "de": "Syrien",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Syria",
+            "ar": "⁦سوريا⁩",
+            "es": "Siria"
+          }
+        }
       }
     },
     {
@@ -25113,7 +29018,45 @@
         "example_sentence_es": "Ella viene de Marruecos.",
         "sentence_en": "She comes from Morocco.",
         "sentence_ar": "⁦هي من المغرب.⁩",
-        "sentence_es": "Ella viene de Marruecos."
+        "sentence_es": "Ella viene de Marruecos.",
+        "word_translations": {
+          "Sie": {
+            "de": "sie",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "she / they / You (formal)",
+            "ar": "⁦هي / هم / حضرتك⁩",
+            "es": "ella / ellos / usted"
+          },
+          "kommt": {
+            "de": "kommt",
+            "lemma": "kommen",
+            "gender": "",
+            "pos": "verb",
+            "en": "comes / is arriving",
+            "ar": "⁦يأتي / قادم⁩",
+            "es": "viene / llega"
+          },
+          "aus": {
+            "de": "aus",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "from",
+            "ar": "⁦من⁩",
+            "es": "de / desde"
+          },
+          "Marokko": {
+            "de": "Marokko",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Morocco",
+            "ar": "⁦المغرب⁩",
+            "es": "Marruecos"
+          }
+        }
       }
     },
     {
@@ -25133,7 +29076,45 @@
         "example_sentence_es": "Mi lengua materna es el árabe.",
         "sentence_en": "My native language is Arabic.",
         "sentence_ar": "⁦لغتي الأم هي العربية.⁩",
-        "sentence_es": "Mi lengua materna es el árabe."
+        "sentence_es": "Mi lengua materna es el árabe.",
+        "word_translations": {
+          "Meine": {
+            "de": "meine",
+            "lemma": "mein",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (feminine / plural)",
+            "ar": "⁦ـي (ياء الملكية للمؤنث/الجمع)⁩",
+            "es": "mis / mi"
+          },
+          "Muttersprache": {
+            "de": "Muttersprache",
+            "lemma": "die Muttersprache",
+            "gender": "die",
+            "pos": "noun",
+            "en": "native language",
+            "ar": "⁦اللغة الأم⁩",
+            "es": "lengua materna"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Arabisch": {
+            "de": "Arabisch",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Arabic (language)",
+            "ar": "⁦اللغة العربية⁩",
+            "es": "árabe"
+          }
+        }
       }
     },
     {
@@ -25153,7 +29134,36 @@
         "example_sentence_es": "Hablamos inglés.",
         "sentence_en": "We speak English.",
         "sentence_ar": "⁦نحن نتحدث الإنجليزية.⁩",
-        "sentence_es": "Hablamos inglés."
+        "sentence_es": "Hablamos inglés.",
+        "word_translations": {
+          "Wir": {
+            "de": "wir",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "we",
+            "ar": "⁦نحن⁩",
+            "es": "nosotros"
+          },
+          "sprechen": {
+            "de": "sprechen",
+            "lemma": "",
+            "gender": "",
+            "pos": "verb",
+            "en": "speak",
+            "ar": "⁦نتحدث / يتكلم⁩",
+            "es": "hablamos / habla"
+          },
+          "Englisch": {
+            "de": "Englisch",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "English (language)",
+            "ar": "⁦اللغة الإنجليزية⁩",
+            "es": "inglés"
+          }
+        }
       }
     },
     {
@@ -25173,7 +29183,45 @@
         "example_sentence_es": "Mi nombre de pila es Karim.",
         "sentence_en": "My first name is Karim.",
         "sentence_ar": "⁦اسمي الأول كريم.⁩",
-        "sentence_es": "Mi nombre de pila es Karim."
+        "sentence_es": "Mi nombre de pila es Karim.",
+        "word_translations": {
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Vorname": {
+            "de": "Vorname",
+            "lemma": "der Vorname",
+            "gender": "der",
+            "pos": "noun",
+            "en": "first name",
+            "ar": "⁦الاسم الأول⁩",
+            "es": "nombre de pila"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Karim": {
+            "de": "Karim",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Karim (personal name)",
+            "ar": "⁦كريم (اسم شخصي)⁩",
+            "es": "Karim"
+          }
+        }
       }
     },
     {
@@ -25193,7 +29241,45 @@
         "example_sentence_es": "Mi apellido es Mansour.",
         "sentence_en": "My last name is Mansour.",
         "sentence_ar": "⁦لقب عائلتي منصور.⁩",
-        "sentence_es": "Mi apellido es Mansour."
+        "sentence_es": "Mi apellido es Mansour.",
+        "word_translations": {
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Familienname": {
+            "de": "Familienname",
+            "lemma": "der Familienname",
+            "gender": "der",
+            "pos": "noun",
+            "en": "last name / surname",
+            "ar": "⁦اللقب / اسم العائلة⁩",
+            "es": "apellido"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Mansour": {
+            "de": "Mansour",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Mansour (surname)",
+            "ar": "⁦منصور (لقب عائلي)⁩",
+            "es": "Mansour"
+          }
+        }
       }
     },
     {
@@ -25213,7 +29299,54 @@
         "example_sentence_es": "Mi edad es de 25 años.",
         "sentence_en": "My age is 25 years.",
         "sentence_ar": "⁦عمري 25 سنة.⁩",
-        "sentence_es": "Mi edad es de 25 años."
+        "sentence_es": "Mi edad es de 25 años.",
+        "word_translations": {
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Alter": {
+            "de": "Alter",
+            "lemma": "das Alter",
+            "gender": "das",
+            "pos": "noun",
+            "en": "age",
+            "ar": "⁦عمر / سن⁩",
+            "es": "edad"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "25": {
+            "de": "25",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "Number 25",
+            "ar": "⁦الرقم 25⁩",
+            "es": "Número 25"
+          },
+          "Jahre": {
+            "de": "Jahre",
+            "lemma": "das Jahr",
+            "gender": "die",
+            "pos": "noun",
+            "en": "years",
+            "ar": "⁦سنوات⁩",
+            "es": "años"
+          }
+        }
       }
     },
     {
@@ -25233,7 +29366,45 @@
         "example_sentence_es": "Mi lugar de residencia es Berlín.",
         "sentence_en": "My place of residence is Berlin.",
         "sentence_ar": "⁦مكان سكني برلين.⁩",
-        "sentence_es": "Mi lugar de residencia es Berlín."
+        "sentence_es": "Mi lugar de residencia es Berlín.",
+        "word_translations": {
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Wohnort": {
+            "de": "Wohnort",
+            "lemma": "der Wohnort",
+            "gender": "der",
+            "pos": "noun",
+            "en": "place of residence",
+            "ar": "⁦مكان السكن⁩",
+            "es": "lugar de residencia"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Berlin": {
+            "de": "Berlin",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Berlin (capital of Germany)",
+            "ar": "⁦برلين (عاصمة ألمانيا)⁩",
+            "es": "Berlín"
+          }
+        }
       }
     },
     {
@@ -25253,7 +29424,54 @@
         "example_sentence_es": "Vivo en la calle Goethe.",
         "sentence_en": "I live in Goethe Street.",
         "sentence_ar": "⁦أنا أسكن في شارع غوته.⁩",
-        "sentence_es": "Vivo en la calle Goethe."
+        "sentence_es": "Vivo en la calle Goethe.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "wohne": {
+            "de": "wohne",
+            "lemma": "wohnen",
+            "gender": "",
+            "pos": "verb",
+            "en": "live / reside",
+            "ar": "⁦أسكن / أعيش⁩",
+            "es": "vivo"
+          },
+          "in": {
+            "de": "in",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "in",
+            "ar": "⁦في⁩",
+            "es": "en"
+          },
+          "der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Goethestraße": {
+            "de": "Goethestraße",
+            "lemma": "die Goethestraße",
+            "gender": "die",
+            "pos": "noun",
+            "en": "Goethe Street",
+            "ar": "⁦شارع غوته⁩",
+            "es": "calle Goethe"
+          }
+        }
       }
     },
     {
@@ -25273,7 +29491,45 @@
         "example_sentence_es": "Mi número de casa es 14.",
         "sentence_en": "My house number is 14.",
         "sentence_ar": "⁦رقم منزلي 14.⁩",
-        "sentence_es": "Mi número de casa es 14."
+        "sentence_es": "Mi número de casa es 14.",
+        "word_translations": {
+          "Meine": {
+            "de": "meine",
+            "lemma": "mein",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (feminine / plural)",
+            "ar": "⁦ـي (ياء الملكية للمؤنث/الجمع)⁩",
+            "es": "mis / mi"
+          },
+          "Hausnummer": {
+            "de": "Hausnummer",
+            "lemma": "die Hausnummer",
+            "gender": "die",
+            "pos": "noun",
+            "en": "house number",
+            "ar": "⁦رقم المنزل⁩",
+            "es": "número de casa"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "14": {
+            "de": "14",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "Number 14",
+            "ar": "⁦الرقم 14⁩",
+            "es": "Número 14"
+          }
+        }
       }
     },
     {
@@ -25293,7 +29549,45 @@
         "example_sentence_es": "El código postal es 10115.",
         "sentence_en": "The postal code is 10115.",
         "sentence_ar": "⁦الرمز البريدي 10115.⁩",
-        "sentence_es": "El código postal es 10115."
+        "sentence_es": "El código postal es 10115.",
+        "word_translations": {
+          "Die": {
+            "de": "die",
+            "lemma": "",
+            "gender": "die",
+            "pos": "art",
+            "en": "the (feminine / plural)",
+            "ar": "⁦الـ (للمؤنث / الجمع)⁩",
+            "es": "la / las"
+          },
+          "Postleitzahl": {
+            "de": "Postleitzahl",
+            "lemma": "die Postleitzahl",
+            "gender": "die",
+            "pos": "noun",
+            "en": "postal code",
+            "ar": "⁦الرمز البريدي⁩",
+            "es": "código postal"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "10115": {
+            "de": "10115",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "Number 10115",
+            "ar": "⁦الرقم 10115⁩",
+            "es": "Número 10115"
+          }
+        }
       }
     },
     {
@@ -25313,7 +29607,45 @@
         "example_sentence_es": "Mi número de teléfono es 0151...",
         "sentence_en": "My phone number is 0151...",
         "sentence_ar": "⁦رقم هاتفي هو 0151...⁩",
-        "sentence_es": "Mi número de teléfono es 0151..."
+        "sentence_es": "Mi número de teléfono es 0151...",
+        "word_translations": {
+          "Meine": {
+            "de": "meine",
+            "lemma": "mein",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (feminine / plural)",
+            "ar": "⁦ـي (ياء الملكية للمؤنث/الجمع)⁩",
+            "es": "mis / mi"
+          },
+          "Telefonnummer": {
+            "de": "Telefonnummer",
+            "lemma": "die Telefonnummer",
+            "gender": "die",
+            "pos": "noun",
+            "en": "phone number",
+            "ar": "⁦رقم الهاتف⁩",
+            "es": "número de teléfono"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "0151": {
+            "de": "0151",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "Number 0151",
+            "ar": "⁦الرقم 0151⁩",
+            "es": "Número 0151"
+          }
+        }
       }
     },
     {
@@ -25333,7 +29665,36 @@
         "example_sentence_es": "Mi dirección de correo electrónico es...",
         "sentence_en": "My email address is...",
         "sentence_ar": "⁦عنوان بريدي الإلكتروني هو...⁩",
-        "sentence_es": "Mi dirección de correo electrónico es..."
+        "sentence_es": "Mi dirección de correo electrónico es...",
+        "word_translations": {
+          "Meine": {
+            "de": "meine",
+            "lemma": "mein",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (feminine / plural)",
+            "ar": "⁦ـي (ياء الملكية للمؤنث/الجمع)⁩",
+            "es": "mis / mi"
+          },
+          "E-Mail-Adresse": {
+            "de": "E-Mail-Adresse",
+            "lemma": "die E-Mail-Adresse",
+            "gender": "die",
+            "pos": "noun",
+            "en": "email address",
+            "ar": "⁦عنوان البريد الإلكتروني⁩",
+            "es": "dirección de correo electrónico"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          }
+        }
       }
     },
     {
@@ -25353,7 +29714,36 @@
         "example_sentence_es": "Soy soltero/a.",
         "sentence_en": "I am single.",
         "sentence_ar": "⁦أنا أعزب.⁩",
-        "sentence_es": "Soy soltero/a."
+        "sentence_es": "Soy soltero/a.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "bin": {
+            "de": "bin",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "am",
+            "ar": "⁦أكون / أنا⁩",
+            "es": "soy / estoy"
+          },
+          "ledig": {
+            "de": "ledig",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "single",
+            "ar": "⁦أعزب / عزباء⁩",
+            "es": "soltero/a"
+          }
+        }
       }
     },
     {
@@ -25373,7 +29763,36 @@
         "example_sentence_es": "Él está casado.",
         "sentence_en": "He is married.",
         "sentence_ar": "⁦هو متزوج.⁩",
-        "sentence_es": "Él está casado."
+        "sentence_es": "Él está casado.",
+        "word_translations": {
+          "Er": {
+            "de": "er",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "he",
+            "ar": "⁦هو⁩",
+            "es": "él"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "verheiratet": {
+            "de": "verheiratet",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "married",
+            "ar": "⁦متزوج / متزوجة⁩",
+            "es": "casado/a"
+          }
+        }
       }
     },
     {
@@ -25393,7 +29812,63 @@
         "example_sentence_es": "Soy estudiante en la universidad.",
         "sentence_en": "I am a student at the university.",
         "sentence_ar": "⁦أنا طالب في الجامعة.⁩",
-        "sentence_es": "Soy estudiante en la universidad."
+        "sentence_es": "Soy estudiante en la universidad.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "bin": {
+            "de": "bin",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "am",
+            "ar": "⁦أكون / أنا⁩",
+            "es": "soy / estoy"
+          },
+          "Student": {
+            "de": "Student",
+            "lemma": "der Student",
+            "gender": "der",
+            "pos": "noun",
+            "en": "student (male)",
+            "ar": "⁦طالب جامعي⁩",
+            "es": "estudiante"
+          },
+          "an": {
+            "de": "an",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "at / on",
+            "ar": "⁦في / عند⁩",
+            "es": "en"
+          },
+          "der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Universität": {
+            "de": "Universität",
+            "lemma": "die Universität",
+            "gender": "die",
+            "pos": "noun",
+            "en": "university",
+            "ar": "⁦جامعة⁩",
+            "es": "universidad"
+          }
+        }
       }
     },
     {
@@ -25413,7 +29888,54 @@
         "example_sentence_es": "El médico trabaja en el hospital.",
         "sentence_en": "The doctor works in the hospital.",
         "sentence_ar": "⁦الطبيب يعمل في المستشفى.⁩",
-        "sentence_es": "El médico trabaja en el hospital."
+        "sentence_es": "El médico trabaja en el hospital.",
+        "word_translations": {
+          "Der": {
+            "de": "der",
+            "lemma": "",
+            "gender": "der",
+            "pos": "art",
+            "en": "the (masculine)",
+            "ar": "⁦الـ (للمذكر)⁩",
+            "es": "el"
+          },
+          "Arzt": {
+            "de": "Arzt",
+            "lemma": "der Arzt",
+            "gender": "der",
+            "pos": "noun",
+            "en": "doctor / physician",
+            "ar": "⁦طبيب⁩",
+            "es": "médico"
+          },
+          "arbeitet": {
+            "de": "arbeitet",
+            "lemma": "arbeiten",
+            "gender": "",
+            "pos": "verb",
+            "en": "works",
+            "ar": "⁦يعمل⁩",
+            "es": "trabaja"
+          },
+          "im": {
+            "de": "im",
+            "lemma": "in dem",
+            "gender": "",
+            "pos": "prep",
+            "en": "in the",
+            "ar": "⁦في الـ⁩",
+            "es": "en el"
+          },
+          "Krankenhaus": {
+            "de": "Krankenhaus",
+            "lemma": "das Krankenhaus",
+            "gender": "das",
+            "pos": "noun",
+            "en": "hospital",
+            "ar": "⁦مستشفى⁩",
+            "es": "hospital"
+          }
+        }
       }
     },
     {
@@ -25481,7 +30003,63 @@
         "example_sentence_es": "Por favor complete el formulario.",
         "sentence_en": "Please fill out the form.",
         "sentence_ar": "⁦يرجى ملء الاستمارة.⁩",
-        "sentence_es": "Por favor complete el formulario."
+        "sentence_es": "Por favor complete el formulario.",
+        "word_translations": {
+          "Bitte": {
+            "de": "bitte",
+            "lemma": "",
+            "gender": "",
+            "pos": "part",
+            "en": "please / you are welcome",
+            "ar": "⁦من فضلك / تفضل⁩",
+            "es": "por favor / de nada"
+          },
+          "füllen": {
+            "de": "füllen",
+            "lemma": "ausfüllen",
+            "gender": "",
+            "pos": "verb",
+            "en": "fill out (formal)",
+            "ar": "⁦املأ / املؤوا⁩",
+            "es": "rellenen / complete"
+          },
+          "Sie": {
+            "de": "sie",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "she / they / You (formal)",
+            "ar": "⁦هي / هم / حضرتك⁩",
+            "es": "ella / ellos / usted"
+          },
+          "das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Formular": {
+            "de": "Formular",
+            "lemma": "das Formular",
+            "gender": "das",
+            "pos": "noun",
+            "en": "form",
+            "ar": "⁦استمارة رسمية⁩",
+            "es": "formulario"
+          },
+          "aus": {
+            "de": "aus",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "from",
+            "ar": "⁦من⁩",
+            "es": "de / desde"
+          }
+        }
       }
     },
     {
@@ -25501,7 +30079,54 @@
         "example_sentence_es": "Estoy completando el formulario de inscripción.",
         "sentence_en": "I am filling out the registration form.",
         "sentence_ar": "⁦أنا أملأ استمارة التسجيل.⁩",
-        "sentence_es": "Estoy completando el formulario de inscripción."
+        "sentence_es": "Estoy completando el formulario de inscripción.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "fülle": {
+            "de": "fülle",
+            "lemma": "ausfüllen",
+            "gender": "",
+            "pos": "verb",
+            "en": "fill out",
+            "ar": "⁦أملأ⁩",
+            "es": "completo / relleno"
+          },
+          "das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Anmeldeformular": {
+            "de": "Anmeldeformular",
+            "lemma": "das Anmeldeformular",
+            "gender": "das",
+            "pos": "noun",
+            "en": "registration form",
+            "ar": "⁦استمارة تسجيل⁩",
+            "es": "formulario de inscripción"
+          },
+          "aus": {
+            "de": "aus",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "from",
+            "ar": "⁦من⁩",
+            "es": "de / desde"
+          }
+        }
       }
     },
     {
@@ -25521,7 +30146,45 @@
         "example_sentence_es": "Mi lugar de nacimiento es Damasco.",
         "sentence_en": "My place of birth is Damascus.",
         "sentence_ar": "⁦مكان ولادتي دمشق.⁩",
-        "sentence_es": "Mi lugar de nacimiento es Damasco."
+        "sentence_es": "Mi lugar de nacimiento es Damasco.",
+        "word_translations": {
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Geburtsort": {
+            "de": "Geburtsort",
+            "lemma": "der Geburtsort",
+            "gender": "der",
+            "pos": "noun",
+            "en": "place of birth",
+            "ar": "⁦مكان الولادة⁩",
+            "es": "lugar de nacimiento"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Damaskus": {
+            "de": "Damaskus",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Damascus",
+            "ar": "⁦دمشق⁩",
+            "es": "Damasco"
+          }
+        }
       }
     },
     {
@@ -25541,7 +30204,45 @@
         "example_sentence_es": "Mi fecha de nacimiento es 12.05.1998.",
         "sentence_en": "My date of birth is 12.05.1998.",
         "sentence_ar": "⁦تاريخ ولادتي 12.05.1998.⁩",
-        "sentence_es": "Mi fecha de nacimiento es 12.05.1998."
+        "sentence_es": "Mi fecha de nacimiento es 12.05.1998.",
+        "word_translations": {
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Geburtsdatum": {
+            "de": "Geburtsdatum",
+            "lemma": "das Geburtsdatum",
+            "gender": "das",
+            "pos": "noun",
+            "en": "date of birth",
+            "ar": "⁦تاريخ الولادة⁩",
+            "es": "fecha de nacimiento"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "12.05.1998": {
+            "de": "12.05.1998",
+            "lemma": "",
+            "gender": "",
+            "pos": "num",
+            "en": "Date 12.05.1998",
+            "ar": "⁦تاريخ 12.05.1998⁩",
+            "es": "Fecha 12.05.1998"
+          }
+        }
       }
     },
     {
@@ -25561,7 +30262,54 @@
         "example_sentence_es": "Su firma aquí abajo, por favor.",
         "sentence_en": "Your signature down here, please.",
         "sentence_ar": "⁦توقيعك هنا بالأسفل من فضلك.⁩",
-        "sentence_es": "Su firma aquí abajo, por favor."
+        "sentence_es": "Su firma aquí abajo, por favor.",
+        "word_translations": {
+          "Ihre": {
+            "de": "Ihre",
+            "lemma": "ihr",
+            "gender": "",
+            "pos": "pron",
+            "en": "your (formal)",
+            "ar": "⁦خاص بحضرتك⁩",
+            "es": "su (de usted)"
+          },
+          "Unterschrift": {
+            "de": "Unterschrift",
+            "lemma": "die Unterschrift",
+            "gender": "die",
+            "pos": "noun",
+            "en": "signature",
+            "ar": "⁦توقيع⁩",
+            "es": "firma"
+          },
+          "bitte": {
+            "de": "bitte",
+            "lemma": "",
+            "gender": "",
+            "pos": "part",
+            "en": "please / you are welcome",
+            "ar": "⁦من فضلك / تفضل⁩",
+            "es": "por favor / de nada"
+          },
+          "hier": {
+            "de": "hier",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "here",
+            "ar": "⁦هنا⁩",
+            "es": "aquí"
+          },
+          "unten": {
+            "de": "unten",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "down below / at the bottom",
+            "ar": "⁦بالأسفل⁩",
+            "es": "abajo"
+          }
+        }
       }
     },
     {
@@ -25581,7 +30329,81 @@
         "example_sentence_es": "Me gustaría presentarme: Mi nombre es Karim.",
         "sentence_en": "I'd like to introduce myself: My name is Karim.",
         "sentence_ar": "⁦أود أن أقدم نفسي: اسمي كريم.⁩",
-        "sentence_es": "Me gustaría presentarme: Mi nombre es Karim."
+        "sentence_es": "Me gustaría presentarme: Mi nombre es Karim.",
+        "word_translations": {
+          "Ich": {
+            "de": "ich",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "I",
+            "ar": "⁦أنا⁩",
+            "es": "yo"
+          },
+          "möchte": {
+            "de": "möchte",
+            "lemma": "möchten",
+            "gender": "",
+            "pos": "verb",
+            "en": "would like",
+            "ar": "⁦أود / أرغب⁩",
+            "es": "quisiera / me gustaría"
+          },
+          "mich": {
+            "de": "mich",
+            "lemma": "ich",
+            "gender": "",
+            "pos": "pron",
+            "en": "me / myself (accusative)",
+            "ar": "⁦نفسي / ياء المتكلم⁩",
+            "es": "me / a mí"
+          },
+          "vorstellen": {
+            "de": "vorstellen",
+            "lemma": "",
+            "gender": "",
+            "pos": "verb",
+            "en": "introduce",
+            "ar": "⁦أُعرّف / أُقدّم نفسي⁩",
+            "es": "presentar"
+          },
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Name": {
+            "de": "Name",
+            "lemma": "der Name",
+            "gender": "der",
+            "pos": "noun",
+            "en": "name",
+            "ar": "⁦اسم⁩",
+            "es": "nombre"
+          },
+          "ist": {
+            "de": "ist",
+            "lemma": "sein",
+            "gender": "",
+            "pos": "verb",
+            "en": "is",
+            "ar": "⁦يكون / هو⁩",
+            "es": "es / está"
+          },
+          "Karim": {
+            "de": "Karim",
+            "lemma": "",
+            "gender": "",
+            "pos": "noun",
+            "en": "Karim (personal name)",
+            "ar": "⁦كريم (اسم شخصي)⁩",
+            "es": "Karim"
+          }
+        }
       }
     },
     {
@@ -25604,7 +30426,54 @@
           "kocht",
           "sehr",
           "gut"
-        ]
+        ],
+        "word_translations": {
+          "Meine": {
+            "de": "meine",
+            "lemma": "mein",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (feminine / plural)",
+            "ar": "⁦ـي (ياء الملكية للمؤنث/الجمع)⁩",
+            "es": "mis / mi"
+          },
+          "Mutter": {
+            "de": "Mutter",
+            "lemma": "die Mutter",
+            "gender": "die",
+            "pos": "noun",
+            "en": "mother",
+            "ar": "⁦أم⁩",
+            "es": "madre"
+          },
+          "kocht": {
+            "de": "kocht",
+            "lemma": "kochen",
+            "gender": "",
+            "pos": "verb",
+            "en": "cooks",
+            "ar": "⁦تطبخ / يطبخ⁩",
+            "es": "cocina"
+          },
+          "sehr": {
+            "de": "sehr",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "very",
+            "ar": "⁦جداً⁩",
+            "es": "muy"
+          },
+          "gut": {
+            "de": "gut",
+            "lemma": "",
+            "gender": "",
+            "pos": "adj",
+            "en": "good / well",
+            "ar": "⁦جيد / لذيذ / بخير⁩",
+            "es": "bueno / bien"
+          }
+        }
       }
     },
     {
@@ -25626,7 +30495,45 @@
           "Vater",
           "arbeitet",
           "gern"
-        ]
+        ],
+        "word_translations": {
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Vater": {
+            "de": "Vater",
+            "lemma": "der Vater",
+            "gender": "der",
+            "pos": "noun",
+            "en": "father",
+            "ar": "⁦أب⁩",
+            "es": "padre"
+          },
+          "arbeitet": {
+            "de": "arbeitet",
+            "lemma": "arbeiten",
+            "gender": "",
+            "pos": "verb",
+            "en": "works",
+            "ar": "⁦يعمل⁩",
+            "es": "trabaja"
+          },
+          "gern": {
+            "de": "gern",
+            "lemma": "",
+            "gender": "",
+            "pos": "adv",
+            "en": "gladly / likes to",
+            "ar": "⁦بسرور / يحب أن⁩",
+            "es": "con gusto"
+          }
+        }
       }
     },
     {
@@ -25649,7 +30556,54 @@
           "spielt",
           "im",
           "Park"
-        ]
+        ],
+        "word_translations": {
+          "Das": {
+            "de": "das",
+            "lemma": "",
+            "gender": "das",
+            "pos": "art",
+            "en": "the (neuter)",
+            "ar": "⁦الـ (للمحايد)⁩",
+            "es": "el / la (neutro)"
+          },
+          "Kind": {
+            "de": "Kind",
+            "lemma": "das Kind",
+            "gender": "das",
+            "pos": "noun",
+            "en": "child",
+            "ar": "⁦طفل⁩",
+            "es": "niño"
+          },
+          "spielt": {
+            "de": "spielt",
+            "lemma": "spielen",
+            "gender": "",
+            "pos": "verb",
+            "en": "plays",
+            "ar": "⁦يلعب / يعزف⁩",
+            "es": "juega / toca"
+          },
+          "im": {
+            "de": "im",
+            "lemma": "in dem",
+            "gender": "",
+            "pos": "prep",
+            "en": "in the",
+            "ar": "⁦في الـ⁩",
+            "es": "en el"
+          },
+          "Park": {
+            "de": "Park",
+            "lemma": "der Park",
+            "gender": "der",
+            "pos": "noun",
+            "en": "park",
+            "ar": "⁦حديقة عامة⁩",
+            "es": "parque"
+          }
+        }
       }
     },
     {
@@ -25672,7 +30626,54 @@
           "wohnt",
           "in",
           "Berlin"
-        ]
+        ],
+        "word_translations": {
+          "Mein": {
+            "de": "mein",
+            "lemma": "",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (masculine / neuter)",
+            "ar": "⁦ـي (ياء الملكية للمذكر/المحايد)⁩",
+            "es": "mi"
+          },
+          "Bruder": {
+            "de": "Bruder",
+            "lemma": "der Bruder",
+            "gender": "der",
+            "pos": "noun",
+            "en": "brother",
+            "ar": "⁦أخ⁩",
+            "es": "hermano"
+          },
+          "wohnt": {
+            "de": "wohnt",
+            "lemma": "wohnen",
+            "gender": "",
+            "pos": "verb",
+            "en": "lives / resides",
+            "ar": "⁦يسكن / يعيش⁩",
+            "es": "vive"
+          },
+          "in": {
+            "de": "in",
+            "lemma": "",
+            "gender": "",
+            "pos": "prep",
+            "en": "in",
+            "ar": "⁦في⁩",
+            "es": "en"
+          },
+          "Berlin": {
+            "de": "Berlin",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "Berlin (capital of Germany)",
+            "ar": "⁦برلين (عاصمة ألمانيا)⁩",
+            "es": "Berlín"
+          }
+        }
       }
     },
     {
@@ -25694,7 +30695,45 @@
           "Schwester",
           "lernt",
           "Deutsch"
-        ]
+        ],
+        "word_translations": {
+          "Meine": {
+            "de": "meine",
+            "lemma": "mein",
+            "gender": "",
+            "pos": "pron",
+            "en": "my (feminine / plural)",
+            "ar": "⁦ـي (ياء الملكية للمؤنث/الجمع)⁩",
+            "es": "mis / mi"
+          },
+          "Schwester": {
+            "de": "Schwester",
+            "lemma": "die Schwester",
+            "gender": "die",
+            "pos": "noun",
+            "en": "sister",
+            "ar": "⁦أخت⁩",
+            "es": "hermana"
+          },
+          "lernt": {
+            "de": "lernt",
+            "lemma": "lernen",
+            "gender": "",
+            "pos": "verb",
+            "en": "learns",
+            "ar": "⁦تتعلم / يتعلم⁩",
+            "es": "aprende"
+          },
+          "Deutsch": {
+            "de": "Deutsch",
+            "lemma": "",
+            "gender": "das",
+            "pos": "noun",
+            "en": "German (language)",
+            "ar": "⁦اللغة الألمانية⁩",
+            "es": "alemán"
+          }
+        }
       }
     },
     {

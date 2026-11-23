@@ -1,10 +1,10 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:deutschy/src/core/providers.dart';
 import 'package:deutschy/src/core/audio/audio_playback_service.dart';
-import 'package:deutschy/src/core/audio/tts_service.dart';
 import 'package:deutschy/src/core/theme/app_theme.dart';
 import 'package:deutschy/src/features/study/data/content_repository.dart';
 import 'package:deutschy/src/features/study/domain/curriculum_models.dart';
@@ -261,6 +261,68 @@ void main() {
 
       expect(find.text('I have a brother'), findsOneWidget);
       expect(find.text('Accusative masculine object uses "einen".'), findsOneWidget);
+    });
+
+    testWidgets('tapping word in example sentence opens trilingual translation modal', (tester) async {
+      final card = CurriculumLearnCard(
+        id: 'card_10104_3',
+        lessonId: 10104,
+        type: LearnCardType.phonetic,
+        sortOrder: 3,
+        customPromptDe: 'O o',
+        dataJson: {
+          'chunk_de': 'O wie Orange',
+          'anchor_word_de': 'die Orange',
+          'anchor_word_en': 'orange',
+          'anchor_word_ar': '\u2066برتقال\u2069',
+          'example_sentence_de': 'Die Orange schmeckt gut.',
+          'example_sentence_ar': '\u2066البرتقالة طعمها لذيذ.\u2069',
+          'example_sentence_en': 'The orange tastes good.',
+        },
+      );
+
+      await tester.pumpWidget(
+        buildTestableWidget(
+          LearnCardWidget(card: card, languageCode: 'ar'),
+          locale: const Locale('ar'),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // Find the rich text widget containing the sentence
+      final textRichFinder = find.byWidgetPredicate(
+        (w) => w is Text && w.textSpan?.toPlainText() == 'Die Orange schmeckt gut.',
+      );
+      expect(textRichFinder, findsOneWidget);
+
+      final textRich = tester.widget<Text>(textRichFinder);
+      final span = textRich.textSpan! as TextSpan;
+
+      // Find the 'schmeckt' span and assert recognizer exists
+      final schmecktSpan = span.children!.firstWhere(
+        (s) => s.toPlainText() == 'schmeckt',
+      ) as TextSpan;
+      expect(schmecktSpan.recognizer, isA<TapGestureRecognizer>());
+
+      // Trigger the tap gesture recognizer on 'schmeckt'
+      (schmecktSpan.recognizer as TapGestureRecognizer).onTap!();
+      await tester.pumpAndSettle();
+
+      // Verify modal opened with German word, audio playback, and trilingual translations
+      expect(find.text('schmeckt'), findsWidgets);
+      expect(fakeAudio.lastSpoken, equals('schmeckt'));
+      // Primary Arabic translation:
+      expect(find.text('\u2066طعمه / مذاقه\u2069'), findsOneWidget);
+      // Secondary translations (English and Spanish):
+      expect(find.text('English'), findsOneWidget);
+      expect(find.text('tastes (good)'), findsOneWidget);
+      expect(find.text('Español'), findsOneWidget);
+      expect(find.text('sabe bien'), findsOneWidget);
+
+      // Verify close button dismisses modal
+      await tester.tap(find.text('متابعة التعلم'));
+      await tester.pumpAndSettle();
+      expect(find.text('\u2066طعمه / مذاقه\u2069'), findsNothing);
     });
   });
 

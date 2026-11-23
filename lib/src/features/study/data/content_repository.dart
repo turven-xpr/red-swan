@@ -147,6 +147,20 @@ class ContentRepository {
     }
   }
 
+  /// Find a curriculum word by its lemma or inflected form
+  CurriculumWord? findWordByLemma(String lemma) {
+    final lower = lemma.toLowerCase().trim();
+    try {
+      return _words.firstWhere((w) {
+        if (w.lemma.toLowerCase() == lower) return true;
+        final cleanLemma = w.lemma.replaceAll(RegExp(r'^(der|die|das)\s+', caseSensitive: false), '').trim();
+        return cleanLemma.toLowerCase() == lower;
+      });
+    } catch (_) {
+      return null;
+    }
+  }
+
   /// All learn cards
   List<CurriculumLearnCard> get allLearnCards => List.unmodifiable(_learnCards);
 }
