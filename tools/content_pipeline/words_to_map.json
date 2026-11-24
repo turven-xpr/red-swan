@@ -1,0 +1,898 @@
+{
+  "Das": [
+    "Das Hotel ist modern.",
+    "Das Kind spielt im Park.",
+    "Das kostet achtzig Euro."
+  ],
+  "Hotel": [
+    "Das Hotel ist modern.",
+    "H-O-T-E-L: Hotel."
+  ],
+  "ist": [
+    "Das Hotel ist modern.",
+    "Der Elefant ist groß.",
+    "Die Sonne ist gelb."
+  ],
+  "modern": [
+    "Das Hotel ist modern."
+  ],
+  "Taxi": [
+    "Das Taxi kommt gleich.",
+    "Ich nehme ein Taxi."
+  ],
+  "kommt": [
+    "Sie kommt aus Marokko.",
+    "Das Taxi kommt gleich.",
+    "Der Zug kommt jetzt."
+  ],
+  "gleich": [
+    "Das Taxi kommt gleich."
+  ],
+  "Radio": [
+    "Das Radio spielt Musik."
+  ],
+  "spielt": [
+    "Das Radio spielt Musik.",
+    "Das Kind spielt im Park."
+  ],
+  "Musik": [
+    "Wir hören gerne Musik.",
+    "Das Radio spielt Musik."
+  ],
+  "Der": [
+    "Der Elefant ist groß.",
+    "Der Bus fährt nach Berlin.",
+    "Der Arzt arbeitet im Krankenhaus."
+  ],
+  "Bus": [
+    "Der Bus fährt nach Berlin.",
+    "Bus Nummer dreizehn.",
+    "Bus Nummer siebzehn."
+  ],
+  "fährt": [
+    "Das Auto fährt schnell.",
+    "Der Bus fährt nach Berlin.",
+    "Das Fahrrad fährt schnell."
+  ],
+  "nach": [
+    "Der Bus fährt nach Berlin."
+  ],
+  "Berlin": [
+    "Mein Wohnort ist Berlin.",
+    "Der Bus fährt nach Berlin.",
+    "Mein Bruder wohnt in Berlin."
+  ],
+  "Wir": [
+    "Wir hören gerne Musik.",
+    "Wir sprechen Englisch."
+  ],
+  "hören": [
+    "Wir hören gerne Musik."
+  ],
+  "gerne": [
+    "Wir hören gerne Musik."
+  ],
+  "Café": [
+    "Das Café ist geöffnet."
+  ],
+  "geöffnet": [
+    "Das Café ist geöffnet."
+  ],
+  "Apfel": [
+    "Der Apfel ist rot."
+  ],
+  "rot": [
+    "Der Apfel ist rot."
+  ],
+  "Ball": [
+    "Der Ball ist rund."
+  ],
+  "rund": [
+    "Der Ball ist rund."
+  ],
+  "Computer": [
+    "Der Computer ist neu."
+  ],
+  "neu": [
+    "Der Computer ist neu."
+  ],
+  "Vielen": [
+    "Vielen Dank!"
+  ],
+  "Dank": [
+    "Vielen Dank!"
+  ],
+  "Elefant": [
+    "Der Elefant ist groß."
+  ],
+  "groß": [
+    "Der Elefant ist groß.",
+    "Die Schule ist groß."
+  ],
+  "Fahrrad": [
+    "Das Fahrrad fährt schnell."
+  ],
+  "schnell": [
+    "Das Auto fährt schnell.",
+    "Das Fahrrad fährt schnell."
+  ],
+  "Garten": [
+    "Der Garten ist schön."
+  ],
+  "schön": [
+    "Das Bild ist schön.",
+    "Der Garten ist schön.",
+    "Danke schön!"
+  ],
+  "Hallo": [
+    "Hallo! Wie geht's?",
+    "Hallo! Schön dich zu sehen.",
+    "Hallo, ich heiße Karim und komme aus Syrien."
+  ],
+  "Wie": [
+    "Hallo! Wie geht's?",
+    "Wie geht's? — Es geht.",
+    "Wie bitte? Ich habe das nicht gehört."
+  ],
+  "geht's": [
+    "Hallo! Wie geht's?",
+    "Wie geht's? — Es geht.",
+    "Hallo Anna, wie geht's?"
+  ],
+  "Die": [
+    "Die Quelle ist frisch.",
+    "Die Postleitzahl ist 10115.",
+    "Die Sonne ist gelb."
+  ],
+  "Insel": [
+    "Die Insel ist ruhig."
+  ],
+  "ruhig": [
+    "Die Insel ist ruhig."
+  ],
+  "Ja": [
+    "Ja, bitte."
+  ],
+  "bitte": [
+    "Wie bitte? Ich habe das nicht gehört.",
+    "Ja, bitte.",
+    "Ihre Unterschrift bitte hier unten."
+  ],
+  "Kaffee": [
+    "Der Kaffee ist heiß.",
+    "Vier Tassen Kaffee.",
+    "Der Kaffee ist schwarz."
+  ],
+  "heiß": [
+    "Der Kaffee ist heiß."
+  ],
+  "Lampe": [
+    "Die Lampe ist hell."
+  ],
+  "hell": [
+    "Die Lampe ist hell."
+  ],
+  "Ich": [
+    "Ich heiße Anna. Freut mich!",
+    "Ich lerne Deutsch.",
+    "Ich verstehe nicht."
+  ],
+  "trinke": [
+    "Ich trinke Milch."
+  ],
+  "Milch": [
+    "Ich trinke Milch."
+  ],
+  "Nein": [
+    "Nein, danke."
+  ],
+  "danke": [
+    "Mir geht es sehr gut, danke!",
+    "Nein, danke."
+  ],
+  "Orange": [
+    "Die Orange ist orange.",
+    "Die Orange schmeckt gut."
+  ],
+  "schmeckt": [
+    "Der Käse schmeckt gut.",
+    "Die Orange schmeckt gut."
+  ],
+  "gut": [
+    "Gute Nacht und schlaf gut!",
+    "Der Käse schmeckt gut.",
+    "Guten Morgen! Haben Sie gut geschlafen?"
+  ],
+  "Post": [
+    "Die Post ist da."
+  ],
+  "da": [
+    "Die Post ist da."
+  ],
+  "Quelle": [
+    "Die Quelle ist frisch."
+  ],
+  "frisch": [
+    "Die Quelle ist frisch."
+  ],
+  "Sonne": [
+    "Die Sonne ist gelb.",
+    "Die Sonne scheint."
+  ],
+  "scheint": [
+    "Die Sonne scheint."
+  ],
+  "Tee": [
+    "Der Tee ist warm."
+  ],
+  "warm": [
+    "Der Tee ist warm."
+  ],
+  "viel": [
+    "Wie viel Uhr ist es?"
+  ],
+  "Uhr": [
+    "Es ist fünf Uhr.",
+    "Wie viel Uhr ist es?"
+  ],
+  "es": [
+    "Mir geht es sehr gut, danke!",
+    "Heute geht es mir nicht so gut.",
+    "Wie viel Uhr ist es?"
+  ],
+  "habe": [
+    "Wie bitte? Ich habe das nicht gehört.",
+    "Ich habe sieben Bücher."
+  ],
+  "sieben": [
+    "Zimmer sieben.",
+    "Ich habe sieben Bücher."
+  ],
+  "Bücher": [
+    "Ich habe sieben Bücher."
+  ],
+  "Guten": [
+    "Guten Tag, Herr Müller!",
+    "Guten Tag, Herr Meier!",
+    "Guten Abend allerseits!"
+  ],
+  "Tag": [
+    "Guten Tag, Herr Müller!",
+    "Guten Tag, Herr Meier!"
+  ],
+  "Herr": [
+    "Guten Tag, Herr Müller!",
+    "Guten Tag, Herr Meier!"
+  ],
+  "Müller": [
+    "Guten Tag, Herr Müller!"
+  ],
+  "Vier": [
+    "Vier Tassen Kaffee."
+  ],
+  "Tassen": [
+    "Vier Tassen Kaffee."
+  ],
+  "Wasser": [
+    "Das Wasser ist kalt."
+  ],
+  "kalt": [
+    "Das Wasser ist kalt."
+  ],
+  "nehme": [
+    "Ich nehme ein Taxi."
+  ],
+  "ein": [
+    "Ich nehme ein Taxi."
+  ],
+  "Yoga": [
+    "Yoga macht fit."
+  ],
+  "macht": [
+    "Yoga macht fit."
+  ],
+  "fit": [
+    "Yoga macht fit."
+  ],
+  "Zug": [
+    "Der Zug kommt jetzt."
+  ],
+  "jetzt": [
+    "Der Zug kommt jetzt."
+  ],
+  "Käse": [
+    "Der Käse schmeckt gut."
+  ],
+  "Bild": [
+    "Das Bild ist schön."
+  ],
+  "Es": [
+    "Wie geht's? — Es geht.",
+    "Es ist fünf Uhr."
+  ],
+  "fünf": [
+    "Ich zähle: fünf.",
+    "Es ist fünf Uhr."
+  ],
+  "Hemd": [
+    "Das Hemd ist weiß."
+  ],
+  "weiß": [
+    "Das Hemd ist weiß.",
+    "Der Schnee ist weiß."
+  ],
+  "Eins": [
+    "Eins, zwei, drei."
+  ],
+  "zwei": [
+    "Ich zähle: zwei.",
+    "Eins, zwei, drei."
+  ],
+  "drei": [
+    "Eins, zwei, drei.",
+    "Ich zähle: drei."
+  ],
+  "Sieben": [
+    "Sieben Tage."
+  ],
+  "Tage": [
+    "Sieben Tage."
+  ],
+  "Drei": [
+    "Drei Euro.",
+    "Drei rote Äpfel."
+  ],
+  "Euro": [
+    "Das kostet fünfzig Euro.",
+    "Das kostet siebzig Euro.",
+    "Drei Euro."
+  ],
+  "Auto": [
+    "Das Auto fährt schnell."
+  ],
+  "Schule": [
+    "Die Schule ist groß."
+  ],
+  "bin": [
+    "Ich bin Student an der Universität.",
+    "Ich bin ledig.",
+    "Ich bin hier."
+  ],
+  "hier": [
+    "Ihre Unterschrift bitte hier unten.",
+    "Ich bin hier."
+  ],
+  "H": [
+    "H-O-T-E-L: Hotel."
+  ],
+  "O": [
+    "H-O-T-E-L: Hotel."
+  ],
+  "T": [
+    "H-O-T-E-L: Hotel."
+  ],
+  "E": [
+    "Meine E-Mail-Adresse ist...",
+    "H-O-T-E-L: Hotel."
+  ],
+  "L": [
+    "H-O-T-E-L: Hotel."
+  ],
+  "Danke": [
+    "Danke schön!"
+  ],
+  "Bitte": [
+    "Bitte füllen Sie das Formular aus.",
+    "Bitte sehr!"
+  ],
+  "sehr": [
+    "Bitte sehr!",
+    "Mir geht es sehr gut, danke!",
+    "Meine Mutter kocht sehr gut."
+  ],
+  "Schön": [
+    "Hallo! Schön dich zu sehen."
+  ],
+  "dich": [
+    "Hallo! Schön dich zu sehen."
+  ],
+  "zu": [
+    "Hallo! Schön dich zu sehen."
+  ],
+  "sehen": [
+    "Hallo! Schön dich zu sehen."
+  ],
+  "Tschüss": [
+    "Tschüss! Bis morgen."
+  ],
+  "Bis": [
+    "Tschüss! Bis morgen."
+  ],
+  "morgen": [
+    "Tschüss! Bis morgen."
+  ],
+  "Entschuldigung": [
+    "Entschuldigung, wo ist der Bahnhof?",
+    "Entschuldigung, sprechen Sie Englisch?"
+  ],
+  "wo": [
+    "Entschuldigung, wo ist der Bahnhof?"
+  ],
+  "der": [
+    "Entschuldigung, wo ist der Bahnhof?",
+    "Ich bin Student an der Universität.",
+    "Ich wohne in der Goethestraße."
+  ],
+  "Bahnhof": [
+    "Entschuldigung, wo ist der Bahnhof?"
+  ],
+  "zähle": [
+    "Ich zähle: drei.",
+    "Ich zähle: zwei.",
+    "Ich zähle: sechs."
+  ],
+  "null": [
+    "Ich zähle: null."
+  ],
+  "eins": [
+    "Ich zähle: eins."
+  ],
+  "vier": [
+    "Ich zähle: vier."
+  ],
+  "sechs": [
+    "Ich zähle: sechs."
+  ],
+  "Zimmer": [
+    "Zimmer acht.",
+    "Zimmer sieben.",
+    "Zimmer zwölf."
+  ],
+  "acht": [
+    "Zimmer acht."
+  ],
+  "neun": [
+    "Zimmer neun."
+  ],
+  "zehn": [
+    "Zimmer zehn."
+  ],
+  "elf": [
+    "Zimmer elf."
+  ],
+  "zwölf": [
+    "Zimmer zwölf."
+  ],
+  "Nummer": [
+    "Bus Nummer siebzehn.",
+    "Bus Nummer dreizehn.",
+    "Bus Nummer sechzehn."
+  ],
+  "dreizehn": [
+    "Bus Nummer dreizehn."
+  ],
+  "vierzehn": [
+    "Bus Nummer vierzehn."
+  ],
+  "fünfzehn": [
+    "Bus Nummer fünfzehn."
+  ],
+  "sechzehn": [
+    "Bus Nummer sechzehn."
+  ],
+  "siebzehn": [
+    "Bus Nummer siebzehn."
+  ],
+  "zwanzig": [
+    "Bus Nummer zwanzig."
+  ],
+  "kostet": [
+    "Das kostet fünfzig Euro.",
+    "Das kostet siebzig Euro.",
+    "Das kostet achtzig Euro."
+  ],
+  "dreißig": [
+    "Das kostet dreißig Euro."
+  ],
+  "vierzig": [
+    "Das kostet vierzig Euro."
+  ],
+  "fünfzig": [
+    "Das kostet fünfzig Euro."
+  ],
+  "sechzig": [
+    "Das kostet sechzig Euro."
+  ],
+  "siebzig": [
+    "Das kostet siebzig Euro."
+  ],
+  "achtzig": [
+    "Das kostet achtzig Euro."
+  ],
+  "neunzig": [
+    "Das kostet neunzig Euro."
+  ],
+  "hundert": [
+    "Das kostet hundert Euro."
+  ],
+  "Heute": [
+    "Heute ist Mittwoch.",
+    "Heute ist Freitag.",
+    "Heute ist Sonntag."
+  ],
+  "Montag": [
+    "Heute ist Montag."
+  ],
+  "Dienstag": [
+    "Heute ist Dienstag."
+  ],
+  "Mittwoch": [
+    "Heute ist Mittwoch."
+  ],
+  "Donnerstag": [
+    "Heute ist Donnerstag."
+  ],
+  "Freitag": [
+    "Heute ist Freitag."
+  ],
+  "Samstag": [
+    "Heute ist Samstag."
+  ],
+  "Sonntag": [
+    "Heute ist Sonntag."
+  ],
+  "Himmel": [
+    "Der Himmel ist blau."
+  ],
+  "blau": [
+    "Der Himmel ist blau."
+  ],
+  "Gras": [
+    "Das Gras ist grün."
+  ],
+  "grün": [
+    "Das Gras ist grün."
+  ],
+  "gelb": [
+    "Die Sonne ist gelb."
+  ],
+  "schwarz": [
+    "Der Kaffee ist schwarz."
+  ],
+  "Schnee": [
+    "Der Schnee ist weiß."
+  ],
+  "Wolke": [
+    "Die Wolke ist grau."
+  ],
+  "grau": [
+    "Die Wolke ist grau."
+  ],
+  "Schokolade": [
+    "Die Schokolade ist braun."
+  ],
+  "braun": [
+    "Die Schokolade ist braun."
+  ],
+  "orange": [
+    "Die Orange ist orange."
+  ],
+  "rote": [
+    "Drei rote Äpfel."
+  ],
+  "Äpfel": [
+    "Drei rote Äpfel."
+  ],
+  "Morgen": [
+    "Guten Morgen! Haben Sie gut geschlafen?"
+  ],
+  "Haben": [
+    "Guten Morgen! Haben Sie gut geschlafen?"
+  ],
+  "Sie": [
+    "Bitte füllen Sie das Formular aus.",
+    "Guten Morgen! Haben Sie gut geschlafen?",
+    "Sie kommt aus Marokko."
+  ],
+  "geschlafen": [
+    "Guten Morgen! Haben Sie gut geschlafen?"
+  ],
+  "Meier": [
+    "Guten Tag, Herr Meier!"
+  ],
+  "Abend": [
+    "Guten Abend allerseits!"
+  ],
+  "allerseits": [
+    "Guten Abend allerseits!"
+  ],
+  "Gute": [
+    "Gute Nacht und schlaf gut!"
+  ],
+  "Nacht": [
+    "Gute Nacht und schlaf gut!"
+  ],
+  "und": [
+    "Gute Nacht und schlaf gut!",
+    "Hallo, ich heiße Karim und komme aus Syrien."
+  ],
+  "schlaf": [
+    "Gute Nacht und schlaf gut!"
+  ],
+  "Auf": [
+    "Auf Wiedersehen, Frau Schmidt!"
+  ],
+  "Wiedersehen": [
+    "Auf Wiedersehen, Frau Schmidt!"
+  ],
+  "Frau": [
+    "Auf Wiedersehen, Frau Schmidt!"
+  ],
+  "Schmidt": [
+    "Auf Wiedersehen, Frau Schmidt!"
+  ],
+  "Anna": [
+    "Ich heiße Anna. Freut mich!",
+    "Hallo Anna, wie geht's?"
+  ],
+  "wie": [
+    "Hallo Anna, wie geht's?"
+  ],
+  "Mir": [
+    "Mir geht es sehr gut, danke!"
+  ],
+  "geht": [
+    "Wie geht's? — Es geht.",
+    "Mir geht es sehr gut, danke!",
+    "Heute geht es mir nicht so gut."
+  ],
+  "—": [
+    "Wie geht's? — Es geht."
+  ],
+  "mir": [
+    "Heute geht es mir nicht so gut."
+  ],
+  "nicht": [
+    "Wie bitte? Ich habe das nicht gehört.",
+    "Heute geht es mir nicht so gut.",
+    "Ich verstehe nicht."
+  ],
+  "so": [
+    "Heute geht es mir nicht so gut."
+  ],
+  "verstehe": [
+    "Ich verstehe nicht."
+  ],
+  "sprechen": [
+    "Wir sprechen Englisch.",
+    "Können Sie bitte langsamer sprechen?",
+    "Entschuldigung, sprechen Sie Englisch?"
+  ],
+  "Englisch": [
+    "Wir sprechen Englisch.",
+    "Entschuldigung, sprechen Sie Englisch?"
+  ],
+  "Können": [
+    "Können Sie bitte langsamer sprechen?"
+  ],
+  "langsamer": [
+    "Können Sie bitte langsamer sprechen?"
+  ],
+  "das": [
+    "Wie bitte? Ich habe das nicht gehört.",
+    "Bitte füllen Sie das Formular aus.",
+    "Ich fülle das Anmeldeformular aus."
+  ],
+  "gehört": [
+    "Wie bitte? Ich habe das nicht gehört."
+  ],
+  "heiße": [
+    "Ich heiße Anna. Freut mich!",
+    "Hallo, ich heiße Karim und komme aus Syrien."
+  ],
+  "Freut": [
+    "Ich heiße Anna. Freut mich!"
+  ],
+  "mich": [
+    "Ich möchte mich vorstellen: Mein Name ist Karim.",
+    "Ich heiße Anna. Freut mich!"
+  ],
+  "ich": [
+    "Hallo, ich heiße Karim und komme aus Syrien."
+  ],
+  "Karim": [
+    "Ich möchte mich vorstellen: Mein Name ist Karim.",
+    "Hallo, ich heiße Karim und komme aus Syrien.",
+    "Mein Vorname ist Karim."
+  ],
+  "komme": [
+    "Hallo, ich heiße Karim und komme aus Syrien."
+  ],
+  "aus": [
+    "Bitte füllen Sie das Formular aus.",
+    "Er kommt aus Syrien.",
+    "Sie kommt aus Marokko."
+  ],
+  "Syrien": [
+    "Er kommt aus Syrien.",
+    "Hallo, ich heiße Karim und komme aus Syrien."
+  ],
+  "Deutschland": [
+    "Deutschland ist in Europa."
+  ],
+  "in": [
+    "Deutschland ist in Europa.",
+    "Mein Bruder wohnt in Berlin.",
+    "Ich wohne in der Goethestraße."
+  ],
+  "Europa": [
+    "Deutschland ist in Europa."
+  ],
+  "lerne": [
+    "Ich lerne Deutsch."
+  ],
+  "Deutsch": [
+    "Meine Schwester lernt Deutsch.",
+    "Ich lerne Deutsch."
+  ],
+  "Er": [
+    "Er kommt aus Syrien.",
+    "Er ist verheiratet."
+  ],
+  "Marokko": [
+    "Sie kommt aus Marokko."
+  ],
+  "Meine": [
+    "Meine Muttersprache ist Arabisch.",
+    "Meine E-Mail-Adresse ist...",
+    "Meine Hausnummer ist 14."
+  ],
+  "Muttersprache": [
+    "Meine Muttersprache ist Arabisch."
+  ],
+  "Arabisch": [
+    "Meine Muttersprache ist Arabisch."
+  ],
+  "Mein": [
+    "Mein Wohnort ist Berlin.",
+    "Mein Familienname ist Mansour.",
+    "Mein Geburtsdatum ist 12.05.1998."
+  ],
+  "Vorname": [
+    "Mein Vorname ist Karim."
+  ],
+  "Familienname": [
+    "Mein Familienname ist Mansour."
+  ],
+  "Mansour": [
+    "Mein Familienname ist Mansour."
+  ],
+  "Alter": [
+    "Mein Alter ist 25 Jahre."
+  ],
+  "Jahre": [
+    "Mein Alter ist 25 Jahre."
+  ],
+  "Wohnort": [
+    "Mein Wohnort ist Berlin."
+  ],
+  "wohne": [
+    "Ich wohne in der Goethestraße."
+  ],
+  "Goethestraße": [
+    "Ich wohne in der Goethestraße."
+  ],
+  "Hausnummer": [
+    "Meine Hausnummer ist 14."
+  ],
+  "Postleitzahl": [
+    "Die Postleitzahl ist 10115."
+  ],
+  "Telefonnummer": [
+    "Meine Telefonnummer ist 0151..."
+  ],
+  "Mail": [
+    "Meine E-Mail-Adresse ist..."
+  ],
+  "Adresse": [
+    "Meine E-Mail-Adresse ist..."
+  ],
+  "ledig": [
+    "Ich bin ledig."
+  ],
+  "verheiratet": [
+    "Er ist verheiratet."
+  ],
+  "Student": [
+    "Ich bin Student an der Universität."
+  ],
+  "an": [
+    "Ich bin Student an der Universität."
+  ],
+  "Universität": [
+    "Ich bin Student an der Universität."
+  ],
+  "Arzt": [
+    "Der Arzt arbeitet im Krankenhaus."
+  ],
+  "arbeitet": [
+    "Mein Vater arbeitet gern.",
+    "Der Arzt arbeitet im Krankenhaus."
+  ],
+  "im": [
+    "Der Arzt arbeitet im Krankenhaus.",
+    "Das Kind spielt im Park."
+  ],
+  "Krankenhaus": [
+    "Der Arzt arbeitet im Krankenhaus."
+  ],
+  "füllen": [
+    "Bitte füllen Sie das Formular aus."
+  ],
+  "Formular": [
+    "Bitte füllen Sie das Formular aus."
+  ],
+  "fülle": [
+    "Ich fülle das Anmeldeformular aus."
+  ],
+  "Anmeldeformular": [
+    "Ich fülle das Anmeldeformular aus."
+  ],
+  "Geburtsort": [
+    "Mein Geburtsort ist Damaskus."
+  ],
+  "Damaskus": [
+    "Mein Geburtsort ist Damaskus."
+  ],
+  "Geburtsdatum": [
+    "Mein Geburtsdatum ist 12.05.1998."
+  ],
+  "Ihre": [
+    "Ihre Unterschrift bitte hier unten."
+  ],
+  "Unterschrift": [
+    "Ihre Unterschrift bitte hier unten."
+  ],
+  "unten": [
+    "Ihre Unterschrift bitte hier unten."
+  ],
+  "möchte": [
+    "Ich möchte mich vorstellen: Mein Name ist Karim."
+  ],
+  "vorstellen": [
+    "Ich möchte mich vorstellen: Mein Name ist Karim."
+  ],
+  "Name": [
+    "Ich möchte mich vorstellen: Mein Name ist Karim."
+  ],
+  "Mutter": [
+    "Meine Mutter kocht sehr gut."
+  ],
+  "kocht": [
+    "Meine Mutter kocht sehr gut."
+  ],
+  "Vater": [
+    "Mein Vater arbeitet gern."
+  ],
+  "gern": [
+    "Mein Vater arbeitet gern."
+  ],
+  "Kind": [
+    "Das Kind spielt im Park."
+  ],
+  "Park": [
+    "Das Kind spielt im Park."
+  ],
+  "Bruder": [
+    "Mein Bruder wohnt in Berlin."
+  ],
+  "wohnt": [
+    "Mein Bruder wohnt in Berlin."
+  ],
+  "Schwester": [
+    "Meine Schwester lernt Deutsch."
+  ],
+  "lernt": [
+    "Meine Schwester lernt Deutsch."
+  ]
+}
